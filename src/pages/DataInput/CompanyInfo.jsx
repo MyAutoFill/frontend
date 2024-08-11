@@ -377,7 +377,7 @@ export default function CompanyInfo() {
   
     return (
       <>
-        <div size='large' style={{height: 600, padding: 50, overflow:'auto'}} class="banner-anim">
+        <div size='large' style={{height: 800, padding: 50, overflow:'auto'}} class="banner-anim">
           <Descriptions title="单位基本信息" bordered items={items} />
         </div>
       </>
