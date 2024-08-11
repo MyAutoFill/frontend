@@ -7,6 +7,7 @@ import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
 import { Badge, Descriptions, Input, Checkbox, DatePicker, Space, Tabs } from 'antd';
 import Fill from './Fill';
+import CompanyRunningSumInfo from './CompanyRunningSumInfo';
 import BasicCompanyInfo from './BasicCompanyInfo';
 // import type { DatePickerProps } from 'antd';
 
@@ -21,7 +22,7 @@ export default function DataInput() {
     {
       key: '2',
       label: '填写预览',
-      children: <BasicCompanyInfo />,
+      children: <CompanyRunningSumInfo />,
     },
     {
       key: '3',
