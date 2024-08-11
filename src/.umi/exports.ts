@@ -5,20 +5,20 @@
 export { defineApp } from './core/defineApp'
 export type { RuntimeConfig } from './core/defineApp'
 // plugins
-export { Access, useAccess, useAccessMarkedRoutes } from '/Users/kashingliu/frontend-main/src/.umi/plugin-access';
-export { addLocale, setLocale, getLocale, getIntl, useIntl, injectIntl, formatMessage, FormattedMessage, getAllLocales, FormattedDate, FormattedDateParts, FormattedDisplayName, FormattedHTMLMessage, FormattedList, FormattedNumber, FormattedNumberParts, FormattedPlural, FormattedRelativeTime, FormattedTime, FormattedTimeParts, IntlProvider, RawIntlProvider, SelectLang } from '/Users/kashingliu/frontend-main/src/.umi/plugin-locale';
-export { Provider, useModel } from '/Users/kashingliu/frontend-main/src/.umi/plugin-model';
-export { useRequest, UseRequestProvider, request, getRequestInstance } from '/Users/kashingliu/frontend-main/src/.umi/plugin-request';
+export { Access, useAccess, useAccessMarkedRoutes } from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-access';
+export { addLocale, setLocale, getLocale, getIntl, useIntl, injectIntl, formatMessage, FormattedMessage, getAllLocales, FormattedDate, FormattedDateParts, FormattedDisplayName, FormattedHTMLMessage, FormattedList, FormattedNumber, FormattedNumberParts, FormattedPlural, FormattedRelativeTime, FormattedTime, FormattedTimeParts, IntlProvider, RawIntlProvider, SelectLang } from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-locale';
+export { Provider, useModel } from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-model';
+export { useRequest, UseRequestProvider, request, getRequestInstance } from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-request';
 // plugins types.d.ts
-export * from '/Users/kashingliu/frontend-main/src/.umi/plugin-access/types.d';
-export * from '/Users/kashingliu/frontend-main/src/.umi/plugin-antd/types.d';
-export * from '/Users/kashingliu/frontend-main/src/.umi/plugin-layout/types.d';
-export * from '/Users/kashingliu/frontend-main/src/.umi/plugin-request/types.d';
+export * from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-access/types.d';
+export * from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-antd/types.d';
+export * from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-layout/types.d';
+export * from 'C:/Users/pengf/OneDrive/Documents/frontend/src/.umi/plugin-request/types.d';
 // @umijs/renderer-*
-export { createBrowserHistory, createHashHistory, createMemoryHistory, Helmet, HelmetProvider, createSearchParams, generatePath, matchPath, matchRoutes, Navigate, NavLink, Outlet, resolvePath, useLocation, useMatch, useNavigate, useOutlet, useOutletContext, useParams, useResolvedPath, useRoutes, useSearchParams, useAppData, useClientLoaderData, useLoaderData, useRouteProps, useSelectedRoutes, useServerLoaderData, renderClient, __getRoot, Link, useRouteData, __useFetcher, withRouter } from '/Users/kashingliu/frontend-main/node_modules/.store/@umijs+renderer-react@4.3.12/node_modules/@umijs/renderer-react';
-export type { History, ClientLoader } from '/Users/kashingliu/frontend-main/node_modules/.store/@umijs+renderer-react@4.3.12/node_modules/@umijs/renderer-react'
+export { createBrowserHistory, createHashHistory, createMemoryHistory, Helmet, HelmetProvider, createSearchParams, generatePath, matchPath, matchRoutes, Navigate, NavLink, Outlet, resolvePath, useLocation, useMatch, useNavigate, useOutlet, useOutletContext, useParams, useResolvedPath, useRoutes, useSearchParams, useAppData, useClientLoaderData, useLoaderData, useRouteProps, useSelectedRoutes, useServerLoaderData, renderClient, __getRoot, Link, useRouteData, __useFetcher, withRouter } from 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/@umijs/renderer-react';
+export type { History, ClientLoader } from 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/@umijs/renderer-react'
 // umi/client/client/plugin
-export { ApplyPluginsType, PluginManager } from '/Users/kashingliu/frontend-main/node_modules/.store/umi@4.3.12/node_modules/umi/client/client/plugin.js';
+export { ApplyPluginsType, PluginManager } from 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/umi/client/client/plugin.js';
 export { history, createHistory } from './core/history';
 export { terminal } from './core/terminal';
 // react ssr

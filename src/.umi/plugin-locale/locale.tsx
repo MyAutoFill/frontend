@@ -4,15 +4,15 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
 
-import moment from '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/bn-bd';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/en';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/fa';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/id';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/ja';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/pt-br';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/zh-cn';
-import '/Users/kashingliu/frontend-main/node_modules/.store/dayjs@1.11.12/node_modules/dayjs/locale/zh-tw';
+import moment from 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/bn-bd';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/en';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/fa';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/id';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/ja';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/pt-br';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/zh-cn';
+import 'C:/Users/pengf/OneDrive/Documents/frontend/node_modules/dayjs/locale/zh-tw';
 import { RawIntlProvider, getLocale, getDirection , setIntl, getIntl, localeInfo, event, LANG_CHANGE_EVENT } from './localeExports';
 
 
