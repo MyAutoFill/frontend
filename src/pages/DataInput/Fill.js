@@ -115,9 +115,8 @@ export default function Fill() {
 
   const menus = [
     {
-      key: 'sub1',
-      label: 'Navigation One',
-      icon: <MailOutlined />,
+      key: 'platform1',
+      label: '人社局',
       children: [
         {
           key: 'g1',
@@ -125,49 +124,24 @@ export default function Fill() {
           children: [
             {
               key: '1',
-              label: 'Option 1',
+              label: '单位就业登记信息',
             },
             {
               key: '2',
-              label: 'Option 2',
+              label: '以工代训补贴申领信息',
             },
             {
               key: '3',
-              label: 'Option 3',
+              label: '新增社保参保人员信息',
             },
             {
               key: '4',
-              label: 'Option 4',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      key: 'sub2',
-      label: 'Navigation Two',
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: '5',
-          label: 'Option 5',
-        },
-        {
-          key: '6',
-          label: 'Option 6',
-        },
-        {
-          key: 'sub3',
-          label: 'Submenu',
-          children: [
-            {
-              key: '7',
-              label: 'Option 7',
+              label: '单位参保信息',
             },
             {
-              key: '8',
-              label: 'Option 8',
-            },
+              key: '5',
+              label: '就业需求信息',
+            }
           ],
         },
       ],
@@ -176,41 +150,220 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'sub4',
-      label: 'Navigation Three',
-      icon: <SettingOutlined />,
+      key: 'platform2',
+      label: '统计局',
       children: [
         {
+          key: '6',
+          label: '单位基本信息',
+        },
+        {
+          key: '7',
+          label: '单位从业人员及工资总额信息',
+        },
+        {
+          key: '8',
+          label: '研究开发项目情况信息'
+        },
+        {
           key: '9',
-          label: 'Option 9',
+          label: '研究开发活动及相关情况信息'
         },
         {
           key: '10',
-          label: 'Option 10',
-        },
+          label: '财务状况信息'
+        }
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: 'platform3',
+      label: '医保局',
+      children: [
         {
           key: '11',
-          label: 'Option 11',
+          label: '单位基本信息',
         },
         {
           key: '12',
-          label: 'Option 12',
+          label: '单位参保登记信息',
+        },
+        {
+          key: '13',
+          label: '人员信息',
+        },
+        {
+          key: '14',
+          label: '在线增减员信息',
         },
       ],
     },
     {
-      key: 'grp',
-      label: 'Group',
-      type: 'group',
+      key: 'platform4',
+      label: '工商局',
       children: [
         {
-          key: '13',
-          label: 'Option 13',
+          key: '15',
+          label: '企业基本信息',
         },
         {
-          key: '14',
-          label: 'Option 14',
+          key: '16',
+          label: '资产状况信息',
         },
+        {
+          key: '17',
+          label: '对外提供保证担保信息',
+        },
+        {
+          key: '18',
+          label: '参保信息',
+        },
+      ],
+    },
+    {
+      key: 'platform5',
+      label: '公积金管理中心',
+      children: [
+        {
+          key: '19',
+          label: '个人账户信息',
+        },
+        {
+          key: '20',
+          label: '个人账户同城转移信息',
+        },
+        {
+          key: '21',
+          label: '汇缴登记信息',
+        },
+        {
+          key: '22',
+          label: '个人缴存明细信息',
+        },
+      ],
+    },
+    {
+      key: 'platform6',
+      label: '市总工会',
+      children: [
+        {
+          key: '23',
+          label: '住院医疗互助信息',
+        }
+      ],
+    },
+    {
+      key: 'platform7',
+      label: '电力交易中心',
+      children: [
+        {
+          key: '24',
+          label: '电力用户基本信息',
+        },
+        {
+          key: '25',
+          label: '用户申请/注销信息',
+        },
+        {
+          key: '26',
+          label: '电力用户身份认证信息',
+        }
+      ],
+    },
+    {
+      key: 'platform8',
+      label: '科技局',
+      children: [
+        {
+          key: '27',
+          label: '企业概况信息',
+        },
+        {
+          key: '28',
+          label: '企业经济概况信息',
+        },
+        {
+          key: '29',
+          label: '企业人员概况信息',
+        },
+        {
+          key: '30',
+          label: '研究开发项目状况信息',
+        },
+        {
+          key: '31',
+          label: '研究开发活动及相关情况信息'
+        },
+        {
+          key: '32',
+          label: '高新技术企业统计表信息'
+        }
+      ],
+    },
+    {
+      key: 'platform9',
+      label: '工信局',
+      children: [
+        {
+          key: '33',
+          label: '软件和信息技术服务业企业月报表信息',
+        }
+      ],
+    },
+    {
+      key: 'platform10',
+      label: '市政府',
+      children: [
+        {
+          key: '34',
+          label: '项目基本信息',
+        },
+        {
+          key: '35',
+          label: '项目法人/申报单位信息',
+        }
+      ],
+    },
+    {
+      key: 'platform11',
+      label: '科技局',
+      children: [
+        {
+          key: '27',
+          label: '企业概况信息',
+        },
+        {
+          key: '28',
+          label: '企业经济概况信息',
+        },
+        {
+          key: '29',
+          label: '企业人员概况信息',
+        },
+        {
+          key: '30',
+          label: '研究开发项目状况信息',
+        },
+        {
+          key: '31',
+          label: '研究开发活动及相关情况信息'
+        },
+        {
+          key: '32',
+          label: '高新技术企业统计表信息'
+        }
+      ],
+    },
+    {
+      key: 'platform12',
+      label: '税务局',
+      children: [
+        {
+          key: '27',
+          label: '单位税务信息',
+        }
       ],
     },
   ];
