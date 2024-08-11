@@ -1,11 +1,4 @@
-import React, { useState } from 'react';
-import DocumentTitle from 'react-document-title';
-import Header from './Header';
-import Footer from './Footer';
-import 'rc-banner-anim/assets/index.css';
-import BannerAnim from 'rc-banner-anim';
-import QueueAnim from 'rc-queue-anim';
-import { Badge, Descriptions, Input, Checkbox, DatePicker, Space, Radio } from 'antd';
+import { Descriptions, Input} from 'antd';
 
 
 export default function CompanyEmployedInfo() {
@@ -92,4 +85,4 @@ export default function CompanyEmployedInfo() {
         </div>
       </>
     );
-  }
+}

@@ -1,16 +1,20 @@
 import DocumentTitle from 'react-document-title';
 import Header from '../Header';
 import Footer from '../Footer';
+import { useState } from 'react';
 import BasicCompanyInfo from './BasicCompanyInfo'
+import CompanyEmployedInfo from './CompanyEmployedInfo'
+import CompanyInsuranceInfo from './CompanyInsuranceInfo'
+import CompanyRunningSumInfo from './CompanyRunningSumInfo'
 import 'rc-banner-anim/assets/index.css';
-import { Menu, Descriptions } from 'antd';
+import { Menu } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 
 export default function CompanyInfo() {
+  const [selectedKey, setSelectedKey] = useState('1');
 
   const menus = [
     {
-      key: 'sub1',
       label: '企业基本信息',
       icon: <MailOutlined />,
       children: [
@@ -21,7 +25,6 @@ export default function CompanyInfo() {
       ],
     },
     {
-      key: 'sub2',
       label: '企业参保信息',
       icon: <AppstoreOutlined />,
       children: [
@@ -32,7 +35,6 @@ export default function CompanyInfo() {
       ],
     },
     {
-      key: 'sub3',
       label: '企业从业人员信息',
       icon: <AppstoreOutlined />,
       children: [
@@ -43,7 +45,6 @@ export default function CompanyInfo() {
       ],
     },
     {
-      key: 'sub4',
       label: '企业从业人员基本信息',
       icon: <AppstoreOutlined />,
       children: [
@@ -54,12 +55,11 @@ export default function CompanyInfo() {
       ],
     },
     {
-      key: 'sub5',
+      key: '5',
       label: '企业从业人员参保信息',
       icon: <AppstoreOutlined />,
     },
     {
-      key: 'sub6',
       label: '企业经济状况信息',
       icon: <AppstoreOutlined />,
       children: [
@@ -70,7 +70,6 @@ export default function CompanyInfo() {
       ],
     },
     {
-      key: 'sub7',
       label: '企业研究开发项目概况信息',
       icon: <AppstoreOutlined />,
       children: [
@@ -81,11 +80,18 @@ export default function CompanyInfo() {
       ],
     },
     {
-      key: 'sub8',
+      key: '8',
       label: '企业研究开发及相关信息',
       icon: <AppstoreOutlined />,
     },
   ];
+
+  const pageMap = {
+    '1': <BasicCompanyInfo />,
+    '2': <CompanyInsuranceInfo />,
+    '3': <CompanyEmployedInfo />,
+    '6': <CompanyRunningSumInfo />,
+  }
 
   return (
     <>
@@ -105,11 +111,14 @@ export default function CompanyInfo() {
                     defaultOpenKeys={['sub1']}
                     mode="inline"
                     items={menus}
+                    onSelect={(key) => {
+                      setSelectedKey(key.key)
+                    }}
                   />
                 </div>
                 <div>
                   <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'scroll'}}>
-                    <BasicCompanyInfo />
+                    {pageMap[selectedKey]}
                   </div>
                 </div>
               </div>
