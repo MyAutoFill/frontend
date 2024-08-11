@@ -10,6 +10,9 @@ export const header = [
   },
   {
     title: '数据分析',
+  },
+  {
+    title: '企业基本信息',
   }
 ];
 export const banner = [
