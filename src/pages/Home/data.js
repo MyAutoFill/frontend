@@ -1,20 +1,3 @@
-export const header = [
-  {
-    title: '首页',
-  },
-  {
-    title: '使用指导',
-  },
-  {
-    title: '报表报送',
-  },
-  {
-    title: '数据分析',
-  },
-  {
-    title: '企业基本信息',
-  }
-];
 export const banner = [
   {
     img: 'https://gw.alipayobjects.com/zos/rmsportal/cTyLQiaRrpzxFAuWwoDQ.svg',

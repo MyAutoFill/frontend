@@ -37,6 +37,11 @@ export default [
     component: './Home',
   },
   {
+    path: '/company_info',
+    layout: false,
+    component: './CompanyInfo',
+  },
+  {
     path: '*',
     layout: false,
     component: './404',

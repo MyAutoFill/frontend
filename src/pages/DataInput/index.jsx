@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import DocumentTitle from 'react-document-title';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 import 'rc-banner-anim/assets/index.css';
 import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
 import { Badge, Descriptions, Input, Checkbox, DatePicker, Space, Tabs } from 'antd';
 import Fill from './Fill';
-import CompanyInfo from './CompanyInfo';
+import BasicCompanyInfo from './BasicCompanyInfo';
 // import type { DatePickerProps } from 'antd';
 
-export default function Home() {
+export default function DataInput() {
 
   const tabs = [
     {
@@ -21,7 +21,7 @@ export default function Home() {
     {
       key: '2',
       label: '填写预览',
-      children: <CompanyInfo />,
+      children: <BasicCompanyInfo />,
     },
     {
       key: '3',
