@@ -1,5 +1,5 @@
 import 'rc-banner-anim/assets/index.css';
-import { Badge, Descriptions, Input, Checkbox, DatePicker, Space, Radio } from 'antd';
+import { Badge, Descriptions, Input, Button, DatePicker, Space, Radio } from 'antd';
 
 
 export default function CompanyInsuranceInfo() {
@@ -101,6 +101,10 @@ export default function CompanyInsuranceInfo() {
       <>
         <div size='large' style={{height: 800, padding: 50, overflow:'auto'}} class="banner-anim">
           <Descriptions title="企业参保信息" bordered items={items} />
+          <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '330px', marginTop: '30px' }} >修改</Button>
+          <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }} >保存</Button>
+          <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }} >取消</Button>
+          <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}>检查</Button>
         </div>
       </>
     );

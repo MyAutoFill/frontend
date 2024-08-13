@@ -33,7 +33,7 @@ export default function DataInput() {
       <div style={{height: '100vh'}}>
         <Header key="header" className='show-shadow' />
         <div className="banner page-wrapper" >
-          <div className="page" style={{maxWidth: 2000, height: 'calc(100vh - 65px)'}}>
+          <div className="page" style={{maxWidth: 2000, height: 1100}}>
             <div className="logo" />
             <div style={{padding: 50, height: 1000}} class="banner-anim">
               <Tabs

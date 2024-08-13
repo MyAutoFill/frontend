@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Checkbox, DatePicker, Radio } from 'antd';
+import { Descriptions, Input, Checkbox, DatePicker, Radio, Button } from 'antd';
 
 
 export default function BasicCompanyInfo() {
@@ -24,60 +24,60 @@ export default function BasicCompanyInfo() {
         key: '1',
         label: '统一社会信用代码',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '2',
         label: '单位名称',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '3',
         label: '单位曾用名',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '4',
         label: '行业类别',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '5',
         label: '行业性质',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '6',
         label: '主要业务活动',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3,
+        span: 1,
       },
       {
         key: '7',
         label: '行业代码',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '8',
         label: '经营范围',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '9',
         label: '工商登记有效期限（年）',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '10',
         label: '组织机构代码',
-        children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+        children: <Input style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
         span: 3
       },
       {
@@ -113,6 +113,7 @@ export default function BasicCompanyInfo() {
                 <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
               </Radio.Group>
             </span>
+            <br></br>
             <Input addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginTop: '10px' }}/>
             <Input addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/>
             <Input addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/>
@@ -143,37 +144,37 @@ export default function BasicCompanyInfo() {
         key: '15',
         label: '法定代表人（单位负责人）',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '16',
         label: '法人证件类型',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '17',
         label: '法人证件号码',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '18',
         label: '法人联系电话',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '19',
         label: '企业负责人',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3
+        span: 1
       },
       {
         key: '20',
         label: '联系电话',
         children: <Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-        span: 3,
+        span: 1
       },
       {
         key: '21',
@@ -228,6 +229,7 @@ export default function BasicCompanyInfo() {
             <Radio value={'港澳台商投资'} style={{ marginLeft: '10px'}}>港澳台商投资</Radio>
             <Radio value={'外商投资'} style={{ marginLeft: '10px'}}>外商投资</Radio>
           </Radio.Group>
+          <br></br>
           {signUpTypeValue === '内资' ? 
             <Radio.Group style={{marginTop: '10px' }} onChange={(e) => setSignUpTypeSubValue(e.target.value)} value={signUpTypeSubValue}>
               <Radio value={'国有'} style={{ marginLeft: '20px'}}>国有</Radio>
@@ -369,6 +371,10 @@ export default function BasicCompanyInfo() {
     return (
       <>
         <Descriptions title="单位基本信息" bordered items={items} />
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '330px', marginTop: '30px' }} >修改</Button>
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }} >保存</Button>
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }} >取消</Button>
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}>检查</Button>
       </>
     );
   }

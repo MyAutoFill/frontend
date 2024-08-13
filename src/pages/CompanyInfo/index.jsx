@@ -6,6 +6,7 @@ import BasicCompanyInfo from './BasicCompanyInfo'
 import CompanyEmployedInfo from './CompanyEmployedInfo'
 import CompanyInsuranceInfo from './CompanyInsuranceInfo'
 import CompanyRunningSumInfo from './CompanyRunningSumInfo'
+import CompanyResearchInfo from './CompanyResearchInfo'
 import 'rc-banner-anim/assets/index.css';
 import { Menu } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
@@ -15,44 +16,39 @@ export default function CompanyInfo() {
 
   const menus = [
     {
+      type: 'divider',
+    },
+    {
       label: '企业基本信息',
-      icon: <MailOutlined />,
-      children: [
-        {
-          key: '1',
-          label: '单位基本信息',
-        },
-      ],
+      key: '1',
+      icon: <AppstoreOutlined />
+    },
+    {
+      type: 'divider',
     },
     {
       label: '企业参保信息',
+      key: '2',
       icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: '2',
-          label: '单位参保信息',
-        },
-      ],
+    },
+    {
+      type: 'divider',
     },
     {
       label: '企业从业人员信息',
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: '3',
-          label: '单位从业人员信息',
-        },
-      ],
+      key: '3',
+      icon: <AppstoreOutlined />
+    },
+    {
+      type: 'divider',
     },
     {
       label: '企业从业人员基本信息',
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: '4',
-          label: '新增从业人员基本信息',
-        },
-      ],
+      key: '4',
+      icon: <AppstoreOutlined />
+    },
+    {
+      type: 'divider',
     },
     {
       key: '5',
@@ -60,29 +56,31 @@ export default function CompanyInfo() {
       icon: <AppstoreOutlined />,
     },
     {
-      label: '企业经济状况信息',
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: '6',
-          label: '单位经济概况',
-        },
-      ],
+      type: 'divider',
     },
     {
+      key: '6',
+      label: '企业经济状况信息',
+      icon: <AppstoreOutlined />
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: '7',
       label: '企业研究开发项目概况信息',
-      icon: <AppstoreOutlined />,
-      children: [
-        {
-          key: '7',
-          label: '研究开发项目概况',
-        },
-      ],
+      icon: <AppstoreOutlined />
+    },
+    {
+      type: 'divider',
     },
     {
       key: '8',
       label: '企业研究开发及相关信息',
       icon: <AppstoreOutlined />,
+    },
+    {
+      type: 'divider',
     },
   ];
 
@@ -91,6 +89,7 @@ export default function CompanyInfo() {
     '2': <CompanyInsuranceInfo />,
     '3': <CompanyEmployedInfo />,
     '6': <CompanyRunningSumInfo />,
+    '8': <CompanyResearchInfo />
   }
 
   return (
@@ -98,7 +97,7 @@ export default function CompanyInfo() {
       <div style={{height: '100vh'}}>
         <Header key="header" className='show-shadow' />
         <div className="banner page-wrapper" >
-          <div className="page" style={{maxWidth: 2000, height: 'calc(100vh - 65px)'}}>
+          <div className="page" style={{maxWidth: 2000, height: 1200}}>
             <div className="logo" />
             <div style={{padding: 50, height: 1000}} class="banner-anim">
               <div style={{display: 'flex', height: 1000}}>
@@ -125,7 +124,7 @@ export default function CompanyInfo() {
             </div>
           </div>
         </div>
-        <Footer key="footer" />
+        <Footer key="footer" position='absolute'/>
         <DocumentTitle title="统一报表报送系统" key="title" />
       </div>
     </>
