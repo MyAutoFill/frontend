@@ -17,245 +17,143 @@ export default function GongShangCompanyInfo() {
   const items = [
     {
       key: '1',
-      label: '人员查询',
-      children: 
-        <Select
-          showSearch
-          style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
-          size='large'
-          placeholder="选择或搜索您想要查找的对象"
-          optionFilterProp="label"
-          onChange={peopleSearchOnChange}
-          onSearch={peopleSearchOnSearch}
-          options={[
-            {
-                value: '张三',
-                label: '张三',
-            },
-            {
-                value: '李四',
-                label: '李四',
-            },
-            {
-                value: '王五',
-                label: '王五',
-            },
-          ]}
-        />,
+      label: '报告年度',
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {
       key: '2',
-      label: '证件类型',
+      label: '企业名称',
       children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1.5
     },
     {
       key: '3',
-      label: '证件号码',
+      label: '统一社会信用代码/注册号',
       children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1.5
     },
     {
       key: '4',
-      label: '个人基本信息',
-      children: '-',
-      span: 3
+      label: '企业通信地址',
+      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
     },
     {
       key: '5',
-      label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '邮政编码',
+      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1.5
     },
     {
       key: '6',
-      label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '企业联系电话',
+      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1.5
     },
     {
       key: '7',
-      label: '性别',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '电子邮箱',
+      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
     },
     {
       key: '8',
-      label: '民族',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '企业经营状态',
+      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
     },
     {
       key: '9',
-      label: '户口性质',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '企业控股',
+      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
     },
     {
       key: '10',
-      label: '联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '企业主营业务活动',
+      children: <Input disabled={disableVar} size='large' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 3
     },
     {
       key: '11',
-      label: '户籍地地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '特种设备信息',
+      children: 
+        <>
+          <Input disabled={disableVar} size='large' addonBefore='办理使用登记特种设备总台数' addonAfter='台' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='检验有效期内特种设备总台数' addonAfter='台' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+        </>,
+      span: 3
     },
     {
       key: '12',
-      label: '常住地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '股东发起人出资情况表',
+      children: 
+        <>
+          <span>币种应与注册资本币种一致</span>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='股东' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='认缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <br></br>
+          <span size='large'>认缴出资时间</span>
+          <br></br>
+          <DatePicker disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <br></br>
+          <span size='large'>实缴出资时间</span>
+          <br></br>
+          <DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+        </>,
+      span: 1.5
     },
     {
       key: '13',
-      label: '就业登记信息',
-      children: '-',
-      span: 3
+      label: '有限责任公司本年度是否有股权转让',
+      children: 
+        <>
+          <Input disabled={disableVar} size='large' addonBefore='股东' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='变更前股权比例' addonAfter='%' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='变更后股权比例' addonAfter='%' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <br></br>
+          <span size='large'>股权变更日期</span>
+          <br></br>
+          <DatePicker disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+        </>,
+      span: 1.5
     },
     {
       key: '14',
-      label: '业务办理区',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '有限责任公司本年度是否有股权转让',
+      children: 
+        <>
+          <Input disabled={disableVar} size='large' addonBefore='投资设立企业或购买股权企业名称' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='统一社会信用代码/注册号' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input>
+        </>,
+      span: 3
     },
     {
       key: '15',
-      label: '业务办理街道',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '16',
-      label: '用工形式',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '17',
-      label: '人员类别一类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '18',
-      label: '人员类别二类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '19',
-      label: '人员类别三类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '20',
-      label: '工资待遇',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '21',
-      label: '是否企业法人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '22',
-      label: '工种',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '23',
-      label: '劳动合同类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '24',
-      label: '合同开始日期',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1,
-    },
-    {
-      key: '25',
-      label: '合同终止日期',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
-    },
-    {
-      key: '26',
-      label: '是否创业',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
-    },
-    {
-      key: '27',
-      label: '单位所在区县',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5,
-    },
-    {
-      key: '28',
-      label: '单位所在街道（镇）',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5,
-    },
-    {
-      key: '29',
-      label: '单位所在社区（村）',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
-    },
-    {
-      key: '30',
-      label: '备注',
-      children: <Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
-    },
-    {
-      key: '31',
-      label: '就失业登记证领取信息',
-      children: '-',
-      span: 3
-    },
-    {
-      key: '32',
-      label: '是否领取',
-      children:
-        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-          <Radio value={1}>是</Radio>
-          <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-        </Radio.Group>,
-      span: 1
-    },
-    {
-      key: '33',
-      label: '证书领取方式',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '34',
-      label: '收件人姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
-    },
-    {
-      key: '35',
-      label: '收件人电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
-    },
-    {
-      key: '36',
-      label: '收件人地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '是否有网站或网店',
+      children: 
+        <>
+          <Input disabled={disableVar} size='large' addonBefore='类型' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Input disabled={disableVar} size='large' addonBefore='名称' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <br></br>
+          <Input disabled={disableVar} size='large' addonBefore='网站' style={{ width: '810px', marginLeft: '10px', marginTop: '10px' }}></Input>
+        </>,
       span: 3
     }
   ];
