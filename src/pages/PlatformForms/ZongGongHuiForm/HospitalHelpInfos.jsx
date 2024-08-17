@@ -1,6 +1,7 @@
 import 'rc-banner-anim/assets/index.css';
 import React, { useState } from 'react';
-import { Select, Descriptions, Input, Button, DatePicker, Space, Radio } from 'antd';
+import { Select, Descriptions, Input, Button, DatePicker, Upload, Radio } from 'antd';
+import { UploadOutlined } from '@ant-design/icons';
 
 
 export default function HospitalHelpInfos() {
@@ -14,219 +15,240 @@ export default function HospitalHelpInfos() {
 
   const [disableVar, setDisableVar] = useState(true)
 
+  const props = {
+    name: 'file',
+    action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
+    headers: {
+      authorization: 'authorization-text',
+    },
+    onChange(info) {
+      if (info.file.status !== '上传') {
+        console.log(info.file, info.fileList);
+      }
+      if (info.file.status === '完成') {
+        message.success(`${info.file.name} 文件上传成功`);
+      } else if (info.file.status === 'error') {
+        message.error(`${info.file.name} 文件上传失败`);
+      }
+    },
+  };
+
   const items = [
     {
       key: '1',
-      label: '人员查询',
-      children: 
-        <Select
-          showSearch
-          style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
-          size='large'
-          placeholder="选择或搜索您想要查找的对象"
-          optionFilterProp="label"
-          onChange={peopleSearchOnChange}
-          onSearch={peopleSearchOnSearch}
-          options={[
-            {
-                value: '张三',
-                label: '张三',
-            },
-            {
-                value: '李四',
-                label: '李四',
-            },
-            {
-                value: '王五',
-                label: '王五',
-            },
-          ]}
-        />,
-      span: 3
-    },
-    {
-      key: '2',
-      label: '证件类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
-    },
-    {
-      key: '3',
-      label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
-    },
-    {
-      key: '4',
-      label: '个人基本信息',
+      label: '单位信息',
       children: '-',
       span: 3
     },
     {
+      key: '2',
+      label: '单位编号',
+      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
+    },
+    {
+      key: '3',
+      label: '单位名',
+      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
+    },
+    {
+      key: '4',
+      label: '经办人姓名',
+      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1.5
+    },
+    {
       key: '5',
-      label: '证件号码',
+      label: '经办人电话',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1.5
     },
     {
       key: '6',
-      label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      label: '住院医疗互助保障',
+      children: '-',
+      span: 3
     },
     {
       key: '7',
-      label: '性别',
+      label: '参保单位',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '8',
-      label: '民族',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '参保人数',
+      children: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '9',
-      label: '户口性质',
+      label: '经办人姓名',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '10',
-      label: '联系电话',
+      label: '经办人手机号',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '11',
-      label: '户籍地地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '缴费总金额',
+      children: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '12',
-      label: '常住地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '社保缴费凭证图片（上传文件）',
+      children: 
+        <Upload {...props} >
+          <Button size='large' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传凭证</Button>
+        </Upload>,
       span: 1
     },
     {
       key: '13',
-      label: '就业登记信息',
-      children: '-',
-      span: 3
+      label: '使用电子印章',
+      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1
     },
     {
       key: '14',
-      label: '业务办理区',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '参保人数占社保缴费人数比例',
+      children: <Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '15',
-      label: '业务办理街道',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '电子印章（上传文件）',
+      children: 
+        <Upload {...props} >
+          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传电子印章</Button>
+        </Upload>,
       span: 1
     },
     {
       key: '16',
-      label: '用工形式',
+      label: '接收发票邮箱',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '17',
-      label: '人员类别一类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '参保年份',
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '18',
-      label: '人员类别二类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '发票单位名称与注册名称是否一致',
+      children: 
+        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+          <Radio value={1}>是</Radio>
+          <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
+        </Radio.Group>,
       span: 1
     },
     {
       key: '19',
-      label: '人员类别三类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '社保缴费人数',
+      children: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 3
     },
     {
       key: '20',
-      label: '工资待遇',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      label: '住院津贴互助保障',
+      children: '-',
+      span: 3
     },
     {
       key: '21',
-      label: '是否企业法人',
+      label: '注册单位',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '22',
-      label: '工种',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '参保人数',
+      children: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '23',
-      label: '劳动合同类型',
+      label: '经办人姓名',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '24',
-      label: '合同开始日期',
+      label: '经办人手机号',
       children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1,
     },
     {
       key: '25',
-      label: '合同终止日期',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      label: '每人参保份数',
+      children: <Input disabled={disableVar} addonAfter='份' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1
     },
     {
       key: '26',
-      label: '是否创业',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      label: '缴费总金额',
+      children: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1
     },
     {
       key: '27',
-      label: '单位所在区县',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5,
+      label: '使用电子印章（是/否）',
+      children: 
+        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+          <Radio value={1}>是</Radio>
+          <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
+        </Radio.Group>,
+      span: 1,
     },
     {
       key: '28',
-      label: '单位所在街道（镇）',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5,
+      label: '参保人数占社保缴费人数比例',
+      children: <Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      span: 1,
     },
     {
       key: '29',
-      label: '单位所在社区（村）',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '电子印章（上传文件）',
+      children: 
+        <Upload {...props} >
+          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传电子印章</Button>
+        </Upload>,
       span: 3
     },
     {
       key: '30',
-      label: '备注',
-      children: <Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '上传经办人身份证正反面',
+      children: 
+      <>
+        <Upload {...props} >
+          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传身份证正面</Button>
+        </Upload>
+        <br></br>
+        <Upload {...props} >
+          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传身份证反面</Button>
+        </Upload>
+      </>,
       span: 3
     },
     {
       key: '31',
-      label: '就失业登记证领取信息',
+      label: '统一社会信用代码证或工会法人资格证（上传文件）',
       children: '-',
       span: 3
     },
     {
       key: '32',
-      label: '是否领取',
+      label: '请选择是否打印发票（是/否）',
       children:
         <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
           <Radio value={1}>是</Radio>
@@ -236,26 +258,20 @@ export default function HospitalHelpInfos() {
     },
     {
       key: '33',
-      label: '证书领取方式',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '参保年份',
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '34',
-      label: '收件人姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '职工总数',
+      children: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 1
     },
     {
       key: '35',
-      label: '收件人电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
-    },
-    {
-      key: '36',
-      label: '收件人地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      label: '备注',
+      children: <Input disabled={disableVar} size='large' style={{ width: '810px', marginLeft: '10px', marginTop: '10px' }}></Input>,
       span: 3
     }
   ];

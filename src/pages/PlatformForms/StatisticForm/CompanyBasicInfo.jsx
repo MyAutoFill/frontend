@@ -88,15 +88,15 @@ export default function StatisticCompanyBasicInfo() {
       label: '报表类别',
       children:             
         <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setFormType(e.target.value)} value={FormType}>
-          <Radio value={'大型'}>农业</Radio>
-          <Radio value={'中型'} style={{ marginLeft: '10px'}}>规模以上工业</Radio>
-          <Radio value={'小型'} style={{ marginLeft: '10px'}}>规模以下工业</Radio>
-          <Radio value={'微型'} style={{ marginLeft: '10px'}}>建筑业</Radio>
-          <Radio value={'中型'} style={{ marginLeft: '10px'}}>批发和零售业</Radio>
-          <Radio value={'小型'} style={{ marginLeft: '10px'}}>住宿和餐饮业</Radio>
-          <Radio value={'微型'} style={{ marginLeft: '10px'}}>房地产开发经营业</Radio>
-          <Radio value={'中型'} style={{ marginLeft: '10px'}}>规模以上服务业</Radio>
-          <Radio value={'小型'} style={{ marginLeft: '10px'}}>投资</Radio>
+          <Radio value={'农业'}>农业</Radio>
+          <Radio value={'规模以上工业'} style={{ marginLeft: '10px'}}>规模以上工业</Radio>
+          <Radio value={'规模以下工业'} style={{ marginLeft: '10px'}}>规模以下工业</Radio>
+          <Radio value={'建筑业'} style={{ marginLeft: '10px'}}>建筑业</Radio>
+          <Radio value={'批发和零售业'} style={{ marginLeft: '10px'}}>批发和零售业</Radio>
+          <Radio value={'住宿和餐饮业'} style={{ marginLeft: '10px'}}>住宿和餐饮业</Radio>
+          <Radio value={'房地产开发经营业'} style={{ marginLeft: '10px'}}>房地产开发经营业</Radio>
+          <Radio value={'规模以上服务业'} style={{ marginLeft: '10px'}}>规模以上服务业</Radio>
+          <Radio value={'投资'} style={{ marginLeft: '10px'}}>投资</Radio>
           <Radio value={'其他'} style={{ marginLeft: '10px'}}>
               其他
               {FormType === '其他' ? <Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input> : null}
