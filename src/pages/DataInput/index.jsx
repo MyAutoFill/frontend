@@ -3,11 +3,9 @@ import DocumentTitle from 'react-document-title';
 import Header from '../Header';
 import Footer from '../Footer';
 import 'rc-banner-anim/assets/index.css';
-import BannerAnim from 'rc-banner-anim';
-import QueueAnim from 'rc-queue-anim';
-import { Badge, Descriptions, Input, Checkbox, DatePicker, Space, Tabs } from 'antd';
+import { Tabs } from 'antd';
 import Fill from './Fill';
-// import type { DatePickerProps } from 'antd';
+import SelectFormPage from '../DataFillOut/SelectFormPage'
 
 export default function DataInput() {
 
@@ -25,7 +23,7 @@ export default function DataInput() {
     {
       key: '3',
       label: '数据申报',
-      children: 'Content of Tab Pane 3',
+      children: <SelectFormPage />,
     },
   ];
   return (
@@ -33,13 +31,13 @@ export default function DataInput() {
       <div style={{height: '100vh'}}>
         <Header key="header" className='show-shadow' />
         <div className="banner page-wrapper" >
-          <div className="page" style={{maxWidth: 2000, height: 1100}}>
+          <div className="page" style={{maxWidth: 2000, height: 1200}}>
             <div className="logo" />
             <div style={{padding: 50, height: 1000}} class="banner-anim">
               <Tabs
                 defaultActiveKey="1"
                 type="card"
-                size={'large'}
+                size='large'
                 items={tabs}
               />
             </div>
