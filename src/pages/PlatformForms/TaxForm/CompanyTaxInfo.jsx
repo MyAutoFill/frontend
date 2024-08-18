@@ -1,6 +1,6 @@
 import 'rc-banner-anim/assets/index.css';
 import React, { useState } from 'react';
-import { Select, Descriptions, Input, Button, DatePicker, Table, Radio } from 'antd';
+import { Input, Button, Table } from 'antd';
 const { Column, ColumnGroup } = Table;
 
 

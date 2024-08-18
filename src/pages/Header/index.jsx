@@ -26,7 +26,7 @@ export default function Header(props) {
   const menuChild = header.map((item, i) => {
     return (
       <Col key={i.toString()} span={4}>
-        <span className="nav-title"><a href={item.url}>{item.title}</a></span>
+        <span className="nav-title" ><a href={item.url} style={{color: 'white'}}>{item.title}</a></span>
       </Col>
     );
   });
