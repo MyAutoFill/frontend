@@ -4,18 +4,22 @@ export const banner = [
     imgMobile: 'https://gw.alipayobjects.com/zos/rmsportal/ksMYqrCyhwQNdBKReFIU.svg',
     className: 'seeconf-wrap',
     children: [
-      { children: 'Unified report submission system', className: 'seeconf-en-name' },
+      { children: 'Unified Report Submission System', className: 'seeconf-en-name' },
       { children: '统一报表报送系统', className: 'seeconf-title', tag: 'h1' },
       { children: <>我们系统用于服务您和您的企业<br/>每月报表报送时实现一份数据填写，多个页面自动填充，同时同步历史数据归档<br/>节约您的时间，高效您的工作</>, className: 'seeconf-cn-name' },
       {
         children: [
           {
+            name: '企业信息',
+            link: '/company_info'
+          },
+          {
             name: '开始报送',
-            link: 'https://seeconf.alipay.com/'
+            link: '/input'
           },
           {
             name: '数据分析',
-            link: 'https://seeconf.alipay.com/'
+            link: '/analysis'
           }
         ],
         className: 'banner-button',
