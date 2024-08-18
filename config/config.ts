@@ -55,10 +55,9 @@ export default defineConfig({
    * @doc 代理配置 https://umijs.org/docs/api/config#proxy
    */
   proxy: {
-    '/online': {
-      target: 'http://10.4.241.18:8030/',
+    '/api': {
+      target: 'http://127.0.0.1:5000/',
       changeOrigin: true,
-      pathRewrite: { '^/online': '' }
     }
   },
   /**

@@ -88,8 +88,7 @@ export const errorConfig: RequestConfig = {
   // 请求拦截器
   requestInterceptors: [
     (config: RequestOptions) => {
-      const url = config.url?.concat('?token = 123');
-      return { ...config, url};
+      return { ...config };
     },
   ],
 
