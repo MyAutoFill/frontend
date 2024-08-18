@@ -39,22 +39,22 @@ export default function CompanyInfo() {
       key: '3',
       icon: <AppstoreOutlined />
     },
-    {
-      type: 'divider',
-    },
-    {
-      label: '企业从业人员基本信息',
-      key: '4',
-      icon: <AppstoreOutlined />
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: '5',
-      label: '企业从业人员参保信息',
-      icon: <AppstoreOutlined />,
-    },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   label: '企业从业人员基本信息',
+    //   key: '4',
+    //   icon: <AppstoreOutlined />
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: '5',
+    //   label: '企业从业人员参保信息',
+    //   icon: <AppstoreOutlined />,
+    // },
     {
       type: 'divider',
     },
@@ -63,14 +63,14 @@ export default function CompanyInfo() {
       label: '企业经济状况信息',
       icon: <AppstoreOutlined />
     },
-    {
-      type: 'divider',
-    },
-    {
-      key: '7',
-      label: '企业研究开发项目概况信息',
-      icon: <AppstoreOutlined />
-    },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: '7',
+    //   label: '企业研究开发项目概况信息',
+    //   icon: <AppstoreOutlined />
+    // },
     {
       type: 'divider',
     },

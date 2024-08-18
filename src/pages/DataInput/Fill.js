@@ -872,8 +872,8 @@ export default function Fill() {
 
     '33': <InfoTechMonthlyForm />,
 
-    '34': <PMInfo />,
-    '35': <ProjectBasicInfo />,
+    '34': <ProjectBasicInfo />,
+    '35': <PMInfo />,
 
     '36': <CompanyTaxInfo />
   }

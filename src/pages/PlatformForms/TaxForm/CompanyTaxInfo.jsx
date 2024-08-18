@@ -1,279 +1,631 @@
 import 'rc-banner-anim/assets/index.css';
 import React, { useState } from 'react';
-import { Select, Descriptions, Input, Button, DatePicker, Space, Radio } from 'antd';
+import { Select, Descriptions, Input, Button, DatePicker, Table, Radio } from 'antd';
+const { Column, ColumnGroup } = Table;
 
 
-export default function CompanyTaxInfo() {
-
-  const peopleSearchOnChange = (value) => {
-    console.log(`selected ${value}`);
-  };
-  const peopleSearchOnSearch = (value) => {
-    console.log('search:', value);
-  };
+export default function TechCompanyInfo() {
 
   const [disableVar, setDisableVar] = useState(true)
 
-  const items = [
+  const data = [
     {
       key: '1',
-      label: '人员查询',
-      children: 
-        <Select
-          showSearch
-          style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
-          size='large'
-          placeholder="选择或搜索您想要查找的对象"
-          optionFilterProp="label"
-          onChange={peopleSearchOnChange}
-          onSearch={peopleSearchOnSearch}
-          options={[
-            {
-                value: '张三',
-                label: '张三',
-            },
-            {
-                value: '李四',
-                label: '李四',
-            },
-            {
-                value: '王五',
-                label: '王五',
-            },
-          ]}
-        />,
-      span: 3
+      category: '销售额',
+      project_name: '（一）按适用税率计税销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '2',
-      label: '证件类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      category: '销售额',      
+      project_name: '其中：应税货物销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '3',
-      label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      category: '销售额',      
+      project_name: '应税劳务销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '4',
-      label: '个人基本信息',
-      children: '-',
-      span: 3
+      category: '销售额',      
+      project_name: '纳税检查调整的销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '5',
-      label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      category: '销售额',      
+      project_name: '（二）按简易办法计税销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '6',
-      label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      category: '销售额',      
+      project_name: '其中：纳税检查调整的销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '7',
-      label: '性别',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '销售额',      
+      project_name: '（三）免、抵、退办法出口销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '8',
-      label: '民族',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '销售额',      
+      project_name: '（四）免税销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '9',
-      label: '户口性质',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '销售额',      
+      project_name: '其中：免税货物销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '10',
-      label: '联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '销售额',
+      project_name: '免税劳务销售额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '11',
-      label: '户籍地地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '销项税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '12',
-      label: '常住地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '进项税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '13',
-      label: '就业登记信息',
-      children: '-',
-      span: 3
+      category: '税款计算',
+      project_name: '上期留抵税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '14',
-      label: '业务办理区',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '进项税额转出',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '15',
-      label: '业务办理街道',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '免、抵、退应退税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '16',
-      label: '用工形式',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '按适用税率计算的纳税检查应补缴税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '17',
-      label: '人员类别一类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '应抵扣税额合计',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '18',
-      label: '人员类别二类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '实际抵扣税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '19',
-      label: '人员类别三类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '应纳税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '20',
-      label: '工资待遇',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '期末留抵税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '21',
-      label: '是否企业法人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '简易计税办法计算的应纳税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '22',
-      label: '工种',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '按简易计税办法计算的纳税检查应补缴税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '23',
-      label: '劳动合同类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款计算',
+      project_name: '应纳税额减征额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '24',
-      label: '合同开始日期',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1,
+      category: '税款计算',
+      project_name: '应纳税额合计',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '25',
-      label: '合同终止日期',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      category: '税款缴纳',
+      project_name: '期初未缴税额（多缴为负数）',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '26',
-      label: '是否创业',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5
+      category: '税款缴纳',
+      project_name: '实收出口开具专用缴款书退税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '27',
-      label: '单位所在区县',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5,
+      category: '税款缴纳',
+      project_name: '本期已缴税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '28',
-      label: '单位所在街道（镇）',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1.5,
+      category: '税款缴纳',
+      project_name: '①分次预缴税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '29',
-      label: '单位所在社区（村）',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
+      category: '税款缴纳',
+      project_name: '②出口开具专用缴款书预缴税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '30',
-      label: '备注',
-      children: <Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
+      category: '税款缴纳',
+      project_name: '③本期缴纳上期应纳税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '31',
-      label: '就失业登记证领取信息',
-      children: '-',
-      span: 3
+      category: '税款缴纳',
+      project_name: '④本期缴纳欠缴税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '32',
-      label: '是否领取',
-      children:
-        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-          <Radio value={1}>是</Radio>
-          <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-        </Radio.Group>,
-      span: 1
+      category: '税款缴纳',
+      project_name: '期末未缴税额（多缴为负数）',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '33',
-      label: '证书领取方式',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款缴纳',
+      project_name: '其中：欠缴税额（≥0）',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '34',
-      label: '收件人姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 1
+      category: '税款缴纳',
+      project_name: '本期应补(退)税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '35',
-      label: '收件人电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
+      category: '税款缴纳',
+      project_name: '即征即退实际退税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     },
     {
       key: '36',
-      label: '收件人地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input>,
-      span: 3
+      category: '税款缴纳',
+      project_name: '期初未缴查补税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+    },
+    {
+      key: '37',
+      category: '税款缴纳',
+      project_name: '本期入库查补税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+    },
+    {
+      key: '38',
+      category: '税款缴纳',
+      project_name: '期末未缴查补税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+    },
+    {
+      key: '39',
+      category: '附加税费',
+      project_name: '城市维护建设税本期应补（退）税额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+    },
+    {
+      key: '40',
+      category: '附加税费',
+      project_name: '教育费附加本期应补（退）费额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+    },
+    {
+      key: '41',
+      category: '附加税费',
+      project_name: '地方教育附加本期应补（退）费额',
+      code: <Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      normal_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_month: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      immediate_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
+      compare_round: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input>,
     }
   ];
   
   return (
     <>
       <div size='large' style={{height: 800, padding: 50, overflow:'auto'}} class="banner-anim">
-        <Descriptions title="单位税务信息" bordered items={items} />
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '330px', marginTop: '30px' }}
+        <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
+          <ColumnGroup title="单位税务信息" boarded>
+            <ColumnGroup title="项目" boarded>
+              <Column title="" dataIndex="category" key="category" boarded
+                onCell={(row, index) => {
+                  // 销售额
+                  if (index === 0) {
+                    return { rowSpan: 10 }
+                  }
+                  if (index === 1) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 2) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 3) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 4) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 5) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 6) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 7) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 8) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 9) {
+                    return { rowSpan: 0 }
+                  }
+
+                  // 税款计算
+                  if (index === 10) {
+                    return { rowSpan: 14 }
+                  }
+                  if (index === 11) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 12) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 13) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 14) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 15) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 16) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 17) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 18) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 19) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 20) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 21) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 22) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 23) {
+                    return { rowSpan: 0 }
+                  }
+
+                  // 税款缴纳
+                  if (index === 24) {
+                    return { rowSpan: 14 }
+                  }
+                  if (index === 25) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 26) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 27) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 28) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 29) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 30) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 31) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 32) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 33) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 34) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 35) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 36) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 37) {
+                    return { rowSpan: 0 }
+                  }
+                  
+                  // 附加税费
+                  if (index === 38) {
+                    return { rowSpan: 3 }
+                  }
+                  if (index === 39) {
+                    return { rowSpan: 0 }
+                  }
+                  if (index === 40) {
+                    return { rowSpan: 0 }
+                  }
+                }
+              }/>
+              <Column title="项目名" dataIndex="project_name" key="project_name" />
+            </ColumnGroup>
+            <Column title="栏次" dataIndex="code" key="code" />
+            <ColumnGroup title="一般项目" boarded>
+              <Column title="本月数" dataIndex="normal_this_month" key="normal_this_month" />
+              <Column title="本年累计" dataIndex="normal_this_year" key="normal_this_year" />
+            </ColumnGroup>
+            <ColumnGroup title="即征即退项目" boarded>
+              <Column title="本月数" dataIndex="immediate_this_month" key="immediate_this_month" />
+              <Column title="本年累计" dataIndex="immediate_this_year" key="immediate_this_year" />
+            </ColumnGroup>
+          </ColumnGroup>
+        </Table>
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '150px', height: '50px', marginLeft: '330px', marginTop: '30px' }}
           onClick={() => setDisableVar(false)}
         >修改</Button>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '150px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
           onClick={() => setDisableVar(true)}
         >保存</Button>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '150px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
           onClick={() => setDisableVar(true)}
         >取消</Button>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}>检查</Button>
+        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '150px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
+        >检查</Button>
       </div>
     </>
   );

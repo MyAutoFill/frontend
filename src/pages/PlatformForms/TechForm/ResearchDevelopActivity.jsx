@@ -1607,7 +1607,6 @@ export default function TechCompanyInfo() {
       children: '',
       span: 3
     },
-
     {
       key: '252',
       label: '企业在境外设立的技术研发机构所在的国家',
