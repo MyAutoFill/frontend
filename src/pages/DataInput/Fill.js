@@ -348,11 +348,11 @@ export default function Fill() {
 
   return (
     <>
-    <div style={{display: 'flex', overflow: 'scroll', height: 1000}}>
+    <div style={{display: 'flex', overflow: 'auto', height: 1000}}>
       <div>
         <Menu
           style={{
-            width: 400,
+            width: 320,
           }}
           defaultSelectedKeys={['1']}
           defaultOpenKeys={['sub1']}
@@ -364,7 +364,7 @@ export default function Fill() {
         />
       </div>
       <div>
-        <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'scroll'}}>
+        <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'auto'}}>
           {pageMap[selectedKey]}
         </div>
       </div>

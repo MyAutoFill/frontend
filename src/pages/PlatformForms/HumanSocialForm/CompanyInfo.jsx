@@ -1,6 +1,6 @@
 import 'rc-banner-anim/assets/index.css';
 import React, { useState } from 'react';
-import { Select, Descriptions, Input, Button, DatePicker, Space, Radio } from 'antd';
+import { Select, Descriptions, Input, Button, Radio } from 'antd';
 
 
 export default function HumanSocialCompanyInfo() {
