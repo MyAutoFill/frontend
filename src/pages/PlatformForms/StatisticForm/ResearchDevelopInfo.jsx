@@ -1,12 +1,57 @@
-import 'rc-banner-anim/assets/index.css';
 import React, { useState } from 'react';
-import { Input, Button, Table } from 'antd';
+import 'rc-banner-anim/assets/index.css';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Table } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
 const { Column, ColumnGroup } = Table;
 
 
 export default function CompanyTotalSalary() {
 
-  const [disableVar, setDisableVar] = useState(true)
+  const [disableVar, setDisableVar] = useState(false)
+  const [defaultOpen, setDefaultOpen] = useState(true)
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const SaveSuccess = () => {
+    messageApi.open({
+      type: 'success',
+      content: '本次修改保存成功',
+    });
+  }
+
+  const SaveError = () => {
+    messageApi.open({
+      type: 'error',
+      content: '保存失败',
+    });
+  }
+
+  const EditSuccess = () => {
+    messageApi.open({
+      type: 'success',
+      content: '本次修改取消成功',
+    });
+  }
+
+  const EditError = () => {
+    messageApi.open({
+      type: 'error',
+      content: '本次修改取消失败',
+    });
+  }
+
+  const CheckSuccess = () => {
+    messageApi.open({
+      type: 'success',
+      content: '表单检查完成',
+    });
+  }
+  
+  const CheckError = () => {
+    messageApi.open({
+      type: 'error',
+      content: '表单检查失败',
+    });
+  };
 
   const data = [
     {
@@ -16,7 +61,8 @@ export default function CompanyTotalSalary() {
   
   return (
     <>
-      <div size='large' style={{height: 800, padding: 30, overflow:'auto'}} class="banner-anim">
+      {contextHolder}
+      <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
           <ColumnGroup title="研究开发项目情况信息">
             <Column title="序号" dataIndex="people_index" key="people_index" />
@@ -37,16 +83,73 @@ export default function CompanyTotalSalary() {
             <Column title="委托外单位开展" dataIndex="salary_index" key="salary_index" />
           </ColumnGroup>
         </Table>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '330px', marginTop: '30px' }}
-          onClick={() => setDisableVar(false)}
-        >修改</Button>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
-          onClick={() => setDisableVar(true)}
-        >保存</Button>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}
-          onClick={() => setDisableVar(true)}
-        >取消</Button>
-        <Button type="primary" autoInsertSpace size='large' style={{fontSize: '20px', width: '100px', height: '50px', marginLeft: '50px', marginTop: '30px' }}>检查</Button>
+        <FloatButton.Group
+          open={defaultOpen}
+          trigger="click"
+          style={{
+            insetInlineEnd: 120,
+          }}
+          shape='square'
+          description="操作按钮"
+          tooltip={<div>点击展示操作按钮</div>}
+          type='primary'
+          onOpenChange={(open) => setDefaultOpen(open)}
+          icon={<ExpandAltOutlined />}
+        >
+          <Button 
+            type="primary" 
+            icon={<SaveFilled />} 
+            autoInsertSpace 
+            size='large' 
+            style={{
+              position: 'absolute',
+              right: 0,
+              bottom: 210
+            }}
+            onClick={
+              SaveSuccess
+            }
+          >保存数据</Button>
+          <Button 
+            type="primary" 
+            icon={<StopFilled />} 
+            autoInsertSpace 
+            size='large' 
+            style={{
+              position: 'absolute',
+              right: 0,
+              bottom: 140,
+            }}
+            onClick={
+              EditSuccess
+            }
+          >取消编辑</Button>
+          <Button 
+            type="primary" 
+            icon={<CheckSquareFilled />} 
+            autoInsertSpace 
+            size='large'
+            style={{
+              position: 'absolute',
+              right: 0, 
+              bottom: 70,
+            }}
+            onClick={
+              CheckSuccess
+            }
+          >检查表单</Button>
+          <Button 
+            type="primary" 
+            icon={<FastForwardOutlined />} 
+            autoInsertSpace 
+            size='large'
+            style={{
+              position: 'absolute',
+              right: 0, 
+              bottom: 0,
+            }}
+          >立即填报</Button>
+        </FloatButton.Group>
       </div>
     </>
   );
