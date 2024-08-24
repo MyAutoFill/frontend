@@ -348,27 +348,27 @@ export default function Fill() {
 
   return (
     <>
-    <div style={{display: 'flex', overflow: 'scroll', height: 1000}}>
-      <div>
-        <Menu
-          style={{
-            width: 400,
-          }}
-          defaultSelectedKeys={['1']}
-          defaultOpenKeys={['sub1']}
-          mode="inline"
-          items={menus}
-          onSelect={(key) => {
-            setSelectedKey(key.key)
-          }}
-        />
-      </div>
-      <div>
-        <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'scroll'}}>
-          {pageMap[selectedKey]}
+      <div style={{display: 'flex', overflow: 'auto', height: 1000}}>
+        <div>
+          <Menu
+            style={{
+              width: 320,
+            }}
+            defaultSelectedKeys={['1']}
+            defaultOpenKeys={['sub1']}
+            mode="inline"
+            items={menus}
+            onSelect={(key) => {
+              setSelectedKey(key.key)
+            }}
+          />
+        </div>
+        <div>
+          <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'auto'}}>
+            {pageMap[selectedKey]}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }

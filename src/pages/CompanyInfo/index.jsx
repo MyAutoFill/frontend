@@ -97,14 +97,14 @@ export default function CompanyInfo() {
       <div style={{height: '100vh'}}>
         <Header key="header" className='show-shadow' />
         <div className="banner page-wrapper" >
-          <div className="page" style={{maxWidth: 2000, height: 1200}}>
+          <div className="page" style={{maxWidth: 2000, height: 1000}}>
             <div className="logo" />
             <div style={{padding: 50, height: 1000}} class="banner-anim">
               <div style={{display: 'flex', height: 1000}}>
                 <div>
                   <Menu
                     style={{
-                      width: 400,
+                      width: 320,
                     }}
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
@@ -116,7 +116,7 @@ export default function CompanyInfo() {
                   />
                 </div>
                 <div>
-                  <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'scroll'}}>
+                  <div style={{marginLeft: 30, height: 700, width: 1450, overflow: 'auto'}}>
                     {pageMap[selectedKey]}
                   </div>
                 </div>
