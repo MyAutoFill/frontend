@@ -1,0 +1,1066 @@
+{
+    "data_input_config": {
+        "企业基本信息": {
+            "基本信息": [
+                {
+                    "key": "统一社会信用代码",
+                    "id": "company_basicinfo_1"
+                },
+                {
+                    "key": "单位名称",
+                    "id": "company_basicinfo_2"
+                },
+                {
+                    "key": "单位曾用名",
+                    "id": "company_basicinfo_3"
+                },
+                {
+                    "key": "行业类别",
+                    "id": "company_basicinfo_4"
+                },
+                {
+                    "key": "行业性质",
+                    "id": "company_basicinfo_5"
+                },
+                {
+                    "key": "主要业务活动",
+                    "id": "company_basicinfo_6"
+                },
+                {
+                    "key": "行业代码",
+                    "id": "company_basicinfo_7"
+                },
+                {
+                    "key": "经营范围",
+                    "id": "company_basicinfo_8"
+                },
+                {
+                    "key": "工商登记有效期限（年）",
+                    "id": "company_basicinfo_9"
+                },
+                {
+                    "key": "组织机构代码",
+                    "id": "company_basicinfo_10"
+                },
+                {
+                    "key": "是否与单位所在地区划及详细地址一致",
+                    "id": "company_basicinfo_r1"
+                },
+                {
+                    "key": "省（自治区、直辖市）",
+                    "id": "company_basicinfo_11"
+                },
+                {
+                    "key": "市（地、州、盟)",
+                    "id": "company_basicinfo_12"
+                },
+                {
+                    "key": "县（市、区、旗)",
+                    "id": "company_basicinfo_13"
+                },
+                {
+                    "key": "乡（镇、街道办事处）",
+                    "id": "company_basicinfo_14"
+                },
+                {
+                    "key": "村（居）委会",
+                    "id": "company_basicinfo_15"
+                },
+                {
+                    "key": "街（路）、门牌",
+                    "id": "company_basicinfo_16"
+                },
+                {
+                    "key": "详细地址",
+                    "id": "company_basicinfo_17"
+                },
+                {
+                    "key": "区域代码",
+                    "id": "company_basicinfo_18"
+                },
+                {
+                    "key": "单位规模",
+                    "id": "company_basicinfo_r2"
+                },
+                {
+                    "key": "法定代表人（单位负责人）",
+                    "id": "company_basicinfo_26"
+                },
+                {
+                    "key": "法人证件类型",
+                    "id": "company_basicinfo_27"
+                },
+                {
+                    "key": "法人证件号码",
+                    "id": "company_basicinfo_28"
+                },
+                {
+                    "key": "法人联系电话",
+                    "id": "company_basicinfo_29"
+                },
+                {
+                    "key": "企业负责人",
+                    "id": "company_basicinfo_30"
+                },
+                {
+                    "key": "联系电话",
+                    "id": "company_basicinfo_31"
+                },
+                {
+                    "key": "成立时间（所有单位填报）",
+                    "id": "company_basicinfo_d1"
+                },
+                {
+                    "key": "长途区号",
+                    "id": "company_basicinfo_32"
+                },
+                {
+                    "key": "固定电话",
+                    "id": "company_basicinfo_33"
+                },
+                {
+                    "key": "通信地址",
+                    "id": "company_basicinfo_34"
+                },
+                {
+                    "key": "电子邮箱",
+                    "id": "company_basicinfo_35"
+                },
+                {
+                    "key": "移动电话",
+                    "id": "company_basicinfo_36"
+                },
+                {
+                    "key": "传真号码",
+                    "id": "company_basicinfo_37"
+                },
+                {
+                    "key": "邮政编码",
+                    "id": "company_basicinfo_38"
+                },
+                {
+                    "key": "机构类型",
+                    "id": "company_basicinfo_r3"
+                },
+                {
+                    "key": "机构类型_其他",
+                    "id": "company_basicinfo_39"
+                },
+                {
+                    "key": "登记注册类型",
+                    "id": "company_basicinfo_r4"
+                },
+                {
+                    "key": "登记注册类型_内资",
+                    "id": "company_basicinfo_r5"
+                },
+                {
+                    "key": "登记注册类型_内资_其他",
+                    "id": "company_basicinfo_40"
+                },
+                {
+                    "key": "登记注册类型_港澳台商投资",
+                    "id": "company_basicinfo_r6"
+                },
+                {
+                    "key": "登记注册类型_港澳台商投资_其他",
+                    "id": "company_basicinfo_41"
+                },
+                {
+                    "key": "登记注册类型_外商投资",
+                    "id": "company_basicinfo_r7"
+                },
+                {
+                    "key": "登记注册类型_外商投资_其他",
+                    "id": "company_basicinfo_42"
+                },
+                {
+                    "key": "港澳台商投资情况（仅限港澳台商投资企业填报）（可多选）",
+                    "id": "company_basicinfo_c1"
+                },
+                {
+                    "key": "企业控股情况",
+                    "id": "company_basicinfo_r8"
+                },
+                {
+                    "key": "企业控股情况_其他",
+                    "id": "company_basicinfo_42"
+                },
+                {
+                    "key": "隶属关系",
+                    "id": "company_basicinfo_r9"
+                },
+                {
+                    "key": "隶属关系_其他",
+                    "id": "company_basicinfo_44"
+                },
+                {
+                    "key": "注册资本",
+                    "id": "company_basicinfo_45"
+                },
+                {
+                    "key": "运营状态",
+                    "id": "company_basicinfo_r9"
+                },
+                {
+                    "key": "运营状态_其他",
+                    "id": "company_basicinfo_46"
+                },
+                {
+                    "key": "执行会计标准类别",
+                    "id": "company_basicinfo_r10"
+                },
+                {
+                    "key": "执行会计标准类别_其他",
+                    "id": "company_basicinfo_47"
+                },
+                {
+                    "key": "执行企业会计准则情况",
+                    "id": "company_basicinfo_r11"
+                },
+                {
+                    "key": "执行企业会计准则情况_其他",
+                    "id": "company_basicinfo_48"
+                }
+            ],
+            "企业从业人员信息": [
+                {
+                    "key": "从业人员期末人数",
+                    "id": "company_employee_1"
+                  },
+                  {
+                    "key": "上年同期",
+                    "id": "company_employee_2"
+                  },
+                  {
+                    "key": "其中：女性",
+                    "id": "company_employee_3"
+                  },
+                  {
+                    "key": "上年同期",
+                    "id": "company_employee_4"
+                  },
+                  {
+                    "key": "中层及以上管理人员",
+                    "id": "company_employee_5"
+                  },
+                  {
+                    "key": "上年同期",
+                    "id": "company_employee_6"
+                  },
+                  {
+                    "key": "专业技术人员",
+                    "id": "company_employee_7"
+                  },
+                  {
+                    "key": "上年同期",
+                    "id": "company_employee_8"
+                  },
+                  {
+                    "key": "从业人员平均人数",
+                    "id": "company_employee_9"
+                  },
+                  {
+                    "key": "上年同期",
+                    "id": "company_employee_10"
+                  },
+                  {
+                    "key": "从业人员工资总额",
+                    "id": "company_employee_11"
+                  },
+                  {
+                    "key": "上年同期",
+                    "id": "company_employee_12"
+                  }
+            ],
+            "企业参保信息": [
+                {
+                    "key": "单位管理码/单位编号",
+                    "id": "company_insurance_1"
+                  },
+                  {
+                    "key": "基金来源",
+                    "id": "company_insurance_2"
+                  },
+                  {
+                    "key": "参保电子邮箱",
+                    "id": "company_insurance_3"
+                  },
+                  {
+                    "key": "单位专管员姓名",
+                    "id": "company_insurance_4"
+                  },
+                  {
+                    "key": "单位专管员所在部门",
+                    "id": "company_insurance_5"
+                  },
+                  {
+                    "key": "单位专管员电话",
+                    "id": "company_insurance_6"
+                  },
+                  {
+                    "key": "单位专管员手机号码",
+                    "id": "company_insurance_7"
+                  },
+                  {
+                    "key": "单位主要经营地",
+                    "id": "company_insurance_8"
+                  },
+                  {
+                    "key": "行业风险类别",
+                    "id": "company_insurance_9"
+                  },
+                  {
+                    "key": "经济行业类别",
+                    "id": "company_insurance_10"
+                  },
+                  {
+                    "key": "银行账户",
+                    "id": "company_insurance_11"
+                  },
+                  {
+                    "key": "银行类别",
+                    "id": "company_insurance_12"
+                  },
+                  {
+                    "key": "银行户名",
+                    "id": "company_insurance_13"
+                  },
+                  {
+                    "key": "统筹层次",
+                    "id": "company_insurance_14"
+                  },
+                  {
+                    "key": "单位管理类型",
+                    "id": "company_insurance_15"
+                  }
+            ],
+            "企业研究开发及相关信息": [
+                {
+                    "key": "研发人员合计",
+                    "id": "company_research_1"
+                },
+                {    
+                    "key": "其中：管理和服务人员",
+                    "id": "company_research_2"
+                },
+                {    
+                    "key": "其中：全职人员",
+                    "id": "company_research_3"
+                },
+                {    
+                    "key": "其中：本科毕业及以上人员",
+                    "id": "company_research_4"
+                },
+                {    
+                    "key": "其中：外聘人员",
+                    "id": "company_research_5"
+                },
+                {    
+                    "key": "研究开发费用合计",
+                    "id": "company_research_6"
+                },
+                {    
+                    "key": "1.人员人工费用",
+                    "id": "company_research_7"
+                },
+                {    
+                    "key": "2.直接投入费用",
+                    "id": "company_research_8"
+                },
+                {    
+                    "key": "3.折旧费用与长期待摊费用",
+                    "id": "company_research_9"
+                },
+                {    
+                    "key": "4.无形资产摊销费用",
+                    "id": "company_research_10"
+                },
+                {    
+                    "key": "5.设计费用",
+                    "id": "company_research_11"
+                },
+                {    
+                    "key": "6.装备调试费用与试验费用",
+                    "id": "company_research_12"
+                },
+                {    
+                    "key": "7.委托外部研究开发费用",
+                    "id": "company_research_13"
+                },
+                {    
+                    "key": "其中：委托境内研究机构",
+                    "id": "company_research_14"
+                },
+                {    
+                    "key": "委托境内高等学校",
+                    "id": "company_research_15"
+                },
+                {    
+                    "key": "委托境内企业",
+                    "id": "company_research_16"
+                },
+                {    
+                    "key": "委托境外机构",
+                    "id": "company_research_17"
+                },
+                {    
+                    "key": "8.其他费用",
+                    "id": "company_research_18"
+                },
+                {    
+                    "key": "当年形成用于研究开发的固定资产",
+                    "id": "company_research_19"
+                },
+                {    
+                    "key": "其中：仪器和设备",
+                    "id": "company_research_20"
+                },
+                {    
+                    "key": "1.来自企业自筹",
+                    "id": "company_research_21"
+                },
+                {    
+                    "key": "2.来自政府部门",
+                    "id": "company_research_22"
+                },
+                {    
+                    "key": "3.来自银行贷款",
+                    "id": "company_research_23"
+                },
+                {    
+                    "key": "4.来自风险投资",
+                    "id": "company_research_24"
+                },
+                {    
+                    "key": "5.来自其他渠道",
+                    "id": "company_research_25"
+                },
+                {    
+                    "key": "期末机构数",
+                    "id": "company_research_26"
+                },
+                {    
+                    "key": "机构研究开发人员合计",
+                    "id": "company_research_27"
+                },
+                {    
+                    "key": "其中：博士毕业",
+                    "id": "company_research_28"
+                },
+                {    
+                    "key": "其中：硕士毕业",
+                    "id": "company_research_29"
+                },
+                {    
+                    "key": "机构研究开发费用",
+                    "id": "company_research_30"
+                },
+                {    
+                    "key": "当年专利申请数",
+                    "id": "company_research_31"
+                },
+                {    
+                    "key": "其中：申请发明专利",
+                    "id": "company_research_32"
+                },
+                {    
+                    "key": "期末拥有有效专利数",
+                    "id": "company_research_33"
+                },
+                {    
+                    "key": "专利所有权转让及许可",
+                    "id": "company_research_34"
+                },
+                {    
+                    "key": "新产品销售收入",
+                    "id": "company_research_35"
+                },
+                {    
+                    "key": "其中：出口",
+                    "id": "company_research_36"
+                },
+                {    
+                    "key": "发表科技论文",
+                    "id": "company_research_37"
+                },
+                {    
+                    "key": "期末拥有注册商标",
+                    "id": "company_research_38"
+                },
+                {    
+                    "key": "累计形成国家或行业标准",
+                    "id": "company_research_39"
+                },
+                {    
+                    "key": "其中：当年形成国家或行业标准",
+                    "id": "company_research_40"
+                },
+                {    
+                    "key": "技术改造经费支出",
+                    "id": "company_research_41"
+                },
+                {    
+                    "key": "购买境内技术经费支出",
+                    "id": "company_research_42"
+                },
+                {    
+                    "key": "引进境外技术经费支出",
+                    "id": "company_research_43"
+                },
+                {    
+                    "key": "引进境外技术的消化吸收经费支出",
+                    "id": "company_research_44"
+                },
+                {    
+                    "key": "企业当年在境外设立分支机构数量",
+                    "id": "company_research_45"
+                }
+            ],
+            "企业经济状况信息": [
+                {
+                    "key": "营业收入",
+                    "id": "company_runningsum_1"
+                },
+                {
+                    "key": "营业成本",
+                    "id": "company_runningsum_2"
+                },
+                {
+                    "key": "-- 其中：主营业务收入",
+                    "id": "company_runningsum_3"
+                },
+                {
+                    "key": "税金及附加",
+                    "id": "company_runningsum_4"
+                },
+                {
+                    "key": "销售费用",
+                    "id": "company_runningsum_5"
+                },
+                {
+                    "key": "管理费用",
+                    "id": "company_runningsum_6"
+                },
+                {
+                    "key": "研发费用",
+                    "id": "company_runningsum_7"
+                },
+                {
+                    "key": "财务费用",
+                    "id": "company_runningsum_8"
+                },
+                {
+                    "key": "资产减值损失",
+                    "id": "company_runningsum_9"
+                },
+                {
+                    "key": "信用减值损失",
+                    "id": "company_runningsum_10"
+                },
+                {
+                    "key": "公允价值变动收益（损失以“-”号记）",
+                    "id": "company_runningsum_11"
+                },
+                {
+                    "key": "投资收益（损失以“-”号记）",
+                    "id": "company_runningsum_12"
+                },
+                {
+                    "key": "其他收益",
+                    "id": "company_runningsum_13"
+                },
+                {
+                    "key": "营业利润",
+                    "id": "company_runningsum_14"
+                },
+                {
+                    "key": "营业外收入",
+                    "id": "company_runningsum_15"
+                },
+                {
+                    "key": "营业外支出",
+                    "id": "company_runningsum_16"
+                },
+                {
+                    "key": "利润总额",
+                    "id": "company_runningsum_17"
+                },
+                {
+                    "key": "资产总计",
+                    "id": "company_runningsum_18"
+                },
+                {
+                    "key": "应交增值税",
+                    "id": "company_runningsum_19"
+                },
+                {
+                    "key": "--其中：流动资产合计",
+                    "id": "company_runningsum_20"
+                },
+                {
+                    "key": "所得税费用",
+                    "id": "company_runningsum_21"
+                },
+                {
+                    "key": "---- 其中：固定资产净值",
+                    "id": "company_runningsum_22"
+                },
+                {
+                    "key": "本年应付职工薪酬（本年贷方累计发生额）",
+                    "id": "company_runningsum_23"
+                },
+                {
+                    "key": "------ 无形资产",
+                    "id": "company_runningsum_24"
+                },
+                {
+                    "key": "净敞口套期收益(损失以“-”号记)",
+                    "id": "company_runningsum_25"
+                },
+                {
+                    "key": "-- 其中：累计折旧",
+                    "id": "company_runningsum_26"
+                },
+                {
+                    "key": "资产处置收益（损失以“-”号记）",
+                    "id": "company_runningsum_27"
+                },
+                {
+                    "key": "---- 其中：本年折旧",
+                    "id": "company_runningsum_28"
+                },
+                {
+                    "key": "流动负债合计",
+                    "id": "company_runningsum_29"
+                },
+                {
+                    "key": "年末负债合计",
+                    "id": "company_runningsum_30"
+                },
+                {
+                    "key": "年末所有者权益（股东权益）",
+                    "id": "company_runningsum_31"
+                },
+                {
+                    "key": "-- 其中：实收资本（股本）",
+                    "id": "company_runningsum_32"
+                }
+            ]
+        },
+        "市政府": {
+            "项目法人/申报单位信息": [
+                {
+                    "key": "项目法人单位",
+                    "id": "CityGovernment_PMInfo_1"
+                },
+                {
+                    "key": "法人证照类型",
+                    "id": "CityGovernment_PMInfo_2"
+                },
+                {
+                    "key": "法人证照号码",
+                    "id": "CityGovernment_PMInfo_3"
+                },
+                {
+                    "key": "法定代表人",
+                    "id": "CityGovernment_PMInfo_4"
+                },
+                {
+                    "key": "联系电话",
+                    "id": "CityGovernment_PMInfo_5"
+                },
+                {
+                    "key": "项目单位性质",
+                    "id": "CityGovernment_PMInfo_6"
+                },
+                {
+                    "key": "项目申报单位",
+                    "id": "CityGovernment_PMInfo_7"
+                },
+                {
+                    "key": "法人证照类型",
+                    "id": "CityGovernment_PMInfo_8"
+                },
+                {
+                    "key": "法人证照号码",
+                    "id": "CityGovernment_PMInfo_9"
+                },
+                {
+                    "key": "法定代表人",
+                    "id": "CityGovernment_PMInfo_10"
+                },
+                {
+                    "key": "联系电话",
+                    "id": "CityGovernment_PMInfo_11"
+                },
+                {
+                    "key": "项目单位性质",
+                    "id": "CityGovernment_PMInfo_12"
+                }
+            ],
+            "项目基本信息": [
+                {
+                    "key": "项目所属行政区划",
+                    "id": "CityGovernment_ProjectBasicInfo_1"
+                },
+                {
+                    "key": "投资项目行业分类",
+                    "id": "CityGovernment_ProjectBasicInfo_2"
+                },
+                {
+                    "key": "行业核准项目",
+                    "id": "CityGovernment_ProjectBasicInfo_3"
+                },
+                {
+                    "key": "项目类型",
+                    "id": "CityGovernment_ProjectBasicInfo_4"
+                },
+                {
+                    "key": "建设性质",
+                    "id": "CityGovernment_ProjectBasicInfo_5"
+                },
+                {
+                    "key": "项目名称",
+                    "id": "CityGovernment_ProjectBasicInfo_6"
+                },
+                {
+                    "key": "项目负责人",
+                    "id": "CityGovernment_ProjectBasicInfo_7"
+                },
+                {
+                    "key": "负责人联系电话",
+                    "id": "CityGovernment_ProjectBasicInfo_8"
+                },
+                {
+                    "key": "拟开工时间",
+                    "id": "CityGovernment_ProjectBasicInfo_9"
+                },
+                {
+                    "key": "拟建成时间",
+                    "id": "CityGovernment_ProjectBasicInfo_10"
+                },
+                {
+                    "key": "总投资",
+                    "id": "CityGovernment_ProjectBasicInfo_11"
+                },
+                {
+                    "key": "建设地点",
+                    "id": "CityGovernment_ProjectBasicInfo_12"
+                },
+                {
+                    "key": "建设地点详情",
+                    "id": "CityGovernment_ProjectBasicInfo_13"
+                },
+                {
+                    "key": "建设地点详细地址",
+                    "id": "CityGovernment_ProjectBasicInfo_14"
+                },
+                {
+                    "key": "国标行业",
+                    "id": "CityGovernment_ProjectBasicInfo_15"
+                },
+                {
+                    "key": "产业结构调整知道目录",
+                    "id": "CityGovernment_ProjectBasicInfo_16"
+                },
+                {
+                    "key": "所属行业",
+                    "id": "CityGovernment_ProjectBasicInfo_17"
+                },
+                {
+                    "key": "申报日期",
+                    "id": "CityGovernment_ProjectBasicInfo_18"
+                },
+                {
+                    "key": "建设规模及内容",
+                    "id": "CityGovernment_ProjectBasicInfo_19"
+                },
+                {
+                    "key": "项目阶段",
+                    "id": "CityGovernment_ProjectBasicInfo_20"
+                },
+                {
+                    "key": "项目属性",
+                    "id": "CityGovernment_ProjectBasicInfo_21"
+                },
+                {
+                    "key": "拟向民间资本推介项目",
+                    "id": "CityGovernment_ProjectBasicInfo_22"
+                },
+                {
+                    "key": "项目性质",
+                    "id": "CityGovernment_ProjectBasicInfo_23"
+                }
+            ]
+        },
+        "电力交易中心": {
+            "电力用户基本信息": [
+                {
+                    "key": "统一社会信用代码",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "组织机构代码",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "税务登记证号",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "名称",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "简称",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "曾用名（选填）",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "类型",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "住所",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "注册资本",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "成立日期",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "营业期限",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "经营范围",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "证件类型",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "证件",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "姓名",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "证件号码",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "手机号码",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "账户信息（选填）",
+                    "id": "Electric_UserInfo_1"
+                },
+                {
+                    "key": "开户银行",
+                    "id": "Electric_UserInfo_2"
+                },
+                {
+                    "key": "开户名称",
+                    "id": "Electric_UserInfo_3"
+                },
+                {
+                    "key": "开户账户",
+                    "id": "Electric_UserInfo_4"
+                },
+                {
+                    "key": "地理区域",
+                    "id": "Electric_UserInfo_5"
+                },
+                {
+                    "key": "邮政编码（选填）",
+                    "id": "Electric_UserInfo_6"
+                },
+                {
+                    "key": "传真号码（选填）",
+                    "id": "Electric_UserInfo_7"
+                },
+                {
+                    "key": "企业网址（选填）",
+                    "id": "Electric_UserInfo_8"
+                },
+                {
+                    "key": "通讯详细地址",
+                    "id": "Electric_UserInfo_9"
+                },
+                {
+                    "key": "通讯所在地区",
+                    "id": "Electric_UserInfo_10"
+                },
+                {
+                    "key": "入退市状态",
+                    "id": "Electric_UserInfo_11"
+                },
+                {
+                    "key": "注册失效时间",
+                    "id": "Electric_UserInfo_12"
+                },
+                {
+                    "key": "行业性质",
+                    "id": "Electric_UserInfo_13"
+                },
+                {
+                    "key": "行业类别",
+                    "id": "Electric_UserInfo_14"
+                },
+                {
+                    "key": "高新技术证书编号",
+                    "id": "Electric_UserInfo_15"
+                },
+                {
+                    "key": "证明材料",
+                    "id": "Electric_UserInfo_16"
+                },
+                {
+                    "key": "电力用户类型",
+                    "id": "Electric_UserInfo_17"
+                },
+                {
+                    "key": "用电电压等级",
+                    "id": "Electric_UserInfo_18"
+                },
+                {
+                    "key": "电价行业类别",
+                    "id": "Electric_UserInfo_19"
+                },
+                {
+                    "key": "定价策略类型",
+                    "id": "Electric_UserInfo_20"
+                },
+                {
+                    "key": "注册生效时间",
+                    "id": "Electric_UserInfo_21"
+                },
+                {
+                    "key": "姓名",
+                    "id": "Electric_UserInfo_22"
+                },
+                {
+                    "key": "专业",
+                    "id": "Electric_UserInfo_23"
+                },
+                {
+                    "key": "手机号",
+                    "id": "Electric_UserInfo_24"
+                },
+                {
+                    "key": "办公电话",
+                    "id": "Electric_UserInfo_25"
+                },
+                {
+                    "key": "邮箱",
+                    "id": "Electric_UserInfo_26"
+                },
+                {
+                    "key": "第一联系人",
+                    "id": "Electric_UserInfo_27"
+                },
+                {
+                    "key": "准入目录文件",
+                    "id": "Electric_UserInfo_28"
+                },
+                {
+                    "key": "备注",
+                    "id": "Electric_UserInfo_29"
+                },
+                {
+                    "key": "第一联系人授权文件（模板）",
+                    "id":  "Electric_UserInfo_30"
+                },
+                {
+                    "key": "备注",
+                    "id": "Electric_UserInfo_31"
+                },
+                {
+                    "key": "其他附件",
+                    "id": "Electric_UserInfo_32"
+                },
+                {
+                    "key": "备注",
+                    "id": "Electric_UserInfo_33"
+                }
+            ],
+            "电力用户身份认证信息": [
+                {
+                    "key": "电子营业执照认证",
+                    "id": "Electric_UserRecognizeInfo_1"
+                },
+                {
+                    "key": "联系人名称",
+                    "id": "Electric_UserRecognizeInfo_2"
+                },
+                {
+                    "key": "手机号码",
+                    "id": "Electric_UserRecognizeInfo_3"
+                },
+                {
+                    "key": "身份证号码",
+                    "id": "Electric_UserRecognizeInfo_4"
+                },
+                {
+                    "key": "联系人授权文件",
+                    "id": "Electric_UserRecognizeInfo_5"
+                },
+                {
+                    "key": "授权委托书",
+                    "id": "Electric_UserRecognizeInfo_6"
+                },
+                {
+                    "key": "入市协议签订",
+                    "id": "Electric_UserRecognizeInfo_7"
+                },
+                {
+                    "key": "入市协议文件",
+                    "id": "Electric_UserRecognizeInfo_8"
+                }
+            ],
+            "用户申请/注销信息": [
+                    {
+                        
+                label: '参与交易开始时间',
+                children: <Form.Item name="Electric_SignUpAndOff_1"><DatePicker disabled={disableVar} size='large' placeholder='请选择交易开始时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.
+                    {
+                        
+                label: '参与交易结束时间',
+                children: <Form.Item name="Electric_SignUpAndOff_2"><DatePicker disabled={disableVar} size='large' placeholder='请选择交易结束时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+                {
+                    
+                label: '电力批发用户参与山东省电力现货市场承诺书（模板）',
+                children: 
+                  <Form.Item name="Electric_SignUpAndOff_3">
+                {
+                    
+                  label: '注销声明（模板）',
+                children: 
+                  <Form.Item name="Electric_SignUpAndOff_4">
+                {
+                    
+                  label: '注销申请表（模板）',
+                children: 
+                  <Form.Item name="Electric_SignUpAndOff_5">
+                {
+                    
+                  label: '其他',
+                children: 
+                  <Form.Item name="Electric_SignUpAndOff_6">
+            ]
+        }
+    }
+}

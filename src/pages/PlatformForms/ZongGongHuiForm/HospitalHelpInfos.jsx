@@ -20,8 +20,8 @@ export default function HospitalHelpInfos() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "医保局",
-        table_name: '单位基本信息',
+        platform_name: "市总工会",
+        table_name: '住院医疗互助信息',
         date: '2024-08'
       }
     })
