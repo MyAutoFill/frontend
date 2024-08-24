@@ -862,7 +862,8 @@ export default function FinanceStatusInfo() {
             type="primary" 
             icon={<SaveFilled />} 
             autoInsertSpace 
-            size='large' 
+            size='large'
+            htmlType="submit"
             style={{
               position: 'absolute',
               right: 0,
