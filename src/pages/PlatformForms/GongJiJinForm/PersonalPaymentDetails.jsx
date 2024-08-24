@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function PersonalPaymentDetails() {
@@ -9,6 +11,26 @@ export default function PersonalPaymentDetails() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "公积金管理中心",
+        table_name: '个人缴存明细信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -56,55 +78,55 @@ export default function PersonalPaymentDetails() {
     {
       key: '1',
       label: '行号',
-      children: <Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_1"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '个人账号',
-      children: <Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_2"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
       label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_3"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '开始年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开始年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_4"><DatePicker disabled={disableVar} size='large' placeholder='请选择开始年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '截止年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择截止年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_5"><DatePicker disabled={disableVar} size='large' placeholder='请选择截止年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '缴存基数',
-      children: <Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_6"><Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '单位应缴',
-      children: <Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_7"><Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
       label: '个人应缴',
-      children: <Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_8"><Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
       label: '缴交额',
-      children: <Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_PaymentDetails_9"><Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }
   ];

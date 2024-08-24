@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function GongShangCompanyInfo() {
@@ -9,6 +11,26 @@ export default function GongShangCompanyInfo() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "工商局",
+        table_name: '企业基本信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -56,61 +78,61 @@ export default function GongShangCompanyInfo() {
     {
       key: '1',
       label: '报告年度',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="GongShang_CompanyInfo_1"><DatePicker disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 3
     },
     {
       key: '2',
       label: '企业名称',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
       label: '统一社会信用代码/注册号',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '企业通信地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_4"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '邮政编码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_5"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '企业联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_6"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '电子邮箱',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_7"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
       label: '企业经营状态',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
       label: '企业控股',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_9"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '10',
       label: '企业主营业务活动',
-      children: <Input disabled={disableVar} size='large' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_CompanyInfo_10"><Input disabled={disableVar} size='large' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -118,9 +140,9 @@ export default function GongShangCompanyInfo() {
       label: '特种设备信息',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='办理使用登记特种设备总台数' addonAfter='台' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_11"><Input disabled={disableVar} size='large' addonBefore='办理使用登记特种设备总台数' addonAfter='台' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='检验有效期内特种设备总台数' addonAfter='台' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_12"><Input disabled={disableVar} size='large' addonBefore='检验有效期内特种设备总台数' addonAfter='台' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
     },
@@ -131,25 +153,24 @@ export default function GongShangCompanyInfo() {
         <>
           <span>币种应与注册资本币种一致</span>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='股东' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
-          <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='认缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_13"><Input disabled={disableVar} size='large' addonBefore='股东' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="GongShang_CompanyInfo_14"><Input disabled={disableVar} size='large' addonBefore='认缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large'>认缴出资时间</span>
           <br></br>
-          <DatePicker disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <Form.Item name="GongShang_CompanyInfo_15"><DatePicker disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_16"><Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large'>实缴出资时间</span>
           <br></br>
-          <DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <Form.Item name="GongShang_CompanyInfo_17"><DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_18"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_19"><Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 1.5
     },
@@ -158,16 +179,16 @@ export default function GongShangCompanyInfo() {
       label: '有限责任公司本年度是否有股权转让',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='股东' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_20"><Input disabled={disableVar} size='large' addonBefore='股东' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='变更前股权比例' addonAfter='%' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_21"><Input disabled={disableVar} size='large' addonBefore='变更前股权比例' addonAfter='%' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='变更后股权比例' addonAfter='%' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_22"><Input disabled={disableVar} size='large' addonBefore='变更后股权比例' addonAfter='%' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large'>股权变更日期</span>
           <br></br>
-          <DatePicker disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <Form.Item name="GongShang_CompanyInfo_23"><DatePicker disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
         </>,
       span: 1.5
     },
@@ -176,9 +197,9 @@ export default function GongShangCompanyInfo() {
       label: '有限责任公司本年度是否有股权转让',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='投资设立企业或购买股权企业名称' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_24"><Input disabled={disableVar} size='large' addonBefore='投资设立企业或购买股权企业名称' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='统一社会信用代码/注册号' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_25"><Input disabled={disableVar} size='large' addonBefore='统一社会信用代码/注册号' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
     },
@@ -187,10 +208,10 @@ export default function GongShangCompanyInfo() {
       label: '是否有网站或网店',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='类型' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input>
-          <Input disabled={disableVar} size='large' addonBefore='名称' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_26"><Input disabled={disableVar} size='large' addonBefore='类型' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="GongShang_CompanyInfo_27"><Input disabled={disableVar} size='large' addonBefore='名称' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='网站' style={{ width: '810px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_CompanyInfo_28"><Input disabled={disableVar} size='large' addonBefore='网站' style={{ width: '810px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
     }

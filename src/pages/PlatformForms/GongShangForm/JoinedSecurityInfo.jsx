@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function JoinedSecurityInfo() {
@@ -9,6 +11,26 @@ export default function JoinedSecurityInfo() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "工商局",
+        table_name: '参保信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -56,13 +78,13 @@ export default function JoinedSecurityInfo() {
     {
       key: '1',
       label: '从业人数',
-      children: <Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_sercurity_1"><Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '其中：女性从业人数',
-      children: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_sercurity_2"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -70,15 +92,15 @@ export default function JoinedSecurityInfo() {
       label: '参保各险种人数',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='城镇职工基本养老保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_3"><Input disabled={disableVar} size='large' addonBefore='城镇职工基本养老保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='失业保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_4"><Input disabled={disableVar} size='large' addonBefore='失业保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='职工基本医疗保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_5"><Input disabled={disableVar} size='large' addonBefore='职工基本医疗保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='工伤保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_6"><Input disabled={disableVar} size='large' addonBefore='工伤保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='生育保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_7"><Input disabled={disableVar} size='large' addonBefore='生育保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 1.5
     },
@@ -87,13 +109,13 @@ export default function JoinedSecurityInfo() {
       label: '单位缴费基数',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加城镇职工基本养老保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_8"><Input disabled={disableVar} size='large' addonBefore='单位参加城镇职工基本养老保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加失业保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_9"><Input disabled={disableVar} size='large' addonBefore='单位参加失业保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加职工基本医疗保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_10"><Input disabled={disableVar} size='large' addonBefore='单位参加职工基本医疗保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加生育保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_11"><Input disabled={disableVar} size='large' addonBefore='单位参加生育保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 1.5
     },
@@ -102,15 +124,15 @@ export default function JoinedSecurityInfo() {
       label: '本期实际缴费金额',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='参加城镇职工基本养老保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_12"><Input disabled={disableVar} size='large' addonBefore='参加城镇职工基本养老保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='参加失业保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_13"><Input disabled={disableVar} size='large' addonBefore='参加失业保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='参加职工基本医疗保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_14"><Input disabled={disableVar} size='large' addonBefore='参加职工基本医疗保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='参加工伤保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_15"><Input disabled={disableVar} size='large' addonBefore='参加工伤保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='参加生育保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_16"><Input disabled={disableVar} size='large' addonBefore='参加生育保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
     },
@@ -119,15 +141,15 @@ export default function JoinedSecurityInfo() {
       label: '姓名',
       children: 
         <>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加城镇职工基本养老保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_17"><Input disabled={disableVar} size='large' addonBefore='单位参加城镇职工基本养老保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加失业保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_18"><Input disabled={disableVar} size='large' addonBefore='单位参加失业保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加职工基本医疗保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_19"><Input disabled={disableVar} size='large' addonBefore='单位参加职工基本医疗保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加工伤保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_20"><Input disabled={disableVar} size='large' addonBefore='单位参加工伤保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Input disabled={disableVar} size='large' addonBefore='单位参加生育保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>
+          <Form.Item name="GongShang_sercurity_21"><Input disabled={disableVar} size='large' addonBefore='单位参加生育保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3 
     }

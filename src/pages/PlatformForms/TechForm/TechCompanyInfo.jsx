@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function TechCompanyInfo() {
@@ -9,6 +11,26 @@ export default function TechCompanyInfo() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "科技局",
+        table_name: '企业概况信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -80,7 +102,7 @@ export default function TechCompanyInfo() {
     {
       key: '5',
       label: '有效期至',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_1"><DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 13
     },
     {
@@ -97,13 +119,13 @@ export default function TechCompanyInfo() {
     {
       key: '7',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb08'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb08'></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
       label: '内容',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_3"><DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -115,13 +137,13 @@ export default function TechCompanyInfo() {
     {
       key: '10',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb101'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb101'></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -133,13 +155,13 @@ export default function TechCompanyInfo() {
     {
       key: '13',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb03_0'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb03_0'></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -151,13 +173,13 @@ export default function TechCompanyInfo() {
     {
       key: '16',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb03_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb03_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -169,13 +191,13 @@ export default function TechCompanyInfo() {
     {
       key: '19',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb20_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb20_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -187,13 +209,13 @@ export default function TechCompanyInfo() {
     {
       key: '22',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb20'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb20'></Input></Form.Item>,
       span: 1
     },
     {
       key: '23',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_13"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -205,13 +227,13 @@ export default function TechCompanyInfo() {
     {
       key: '25',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb04'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb04'></Input></Form.Item>,
       span: 1
     },
     {
       key: '26',
       label: '内容',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_15"><DatePicker disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -223,13 +245,13 @@ export default function TechCompanyInfo() {
     {
       key: '28',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb04_0'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb04_0'></Input></Form.Item>,
       span: 1
     },
     {
       key: '29',
       label: '内容',
-      children: <Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_17"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -241,13 +263,13 @@ export default function TechCompanyInfo() {
     {
       key: '31',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06'></Input></Form.Item>,
       span: 1
     },
     {
       key: '32',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_19"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -264,13 +286,13 @@ export default function TechCompanyInfo() {
     {
       key: '34',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '35',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -282,13 +304,13 @@ export default function TechCompanyInfo() {
     {
       key: '37',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06_2'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06_2'></Input></Form.Item>,
       span: 1
     },
     {
       key: '38',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -300,13 +322,13 @@ export default function TechCompanyInfo() {
     {
       key: '40',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb18'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb18'></Input></Form.Item>,
       span: 1
     },
     {
       key: '41',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_25"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -318,13 +340,13 @@ export default function TechCompanyInfo() {
     {
       key: '43',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb09'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb09'></Input></Form.Item>,
       span: 1
     },
     {
       key: '44',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -336,13 +358,13 @@ export default function TechCompanyInfo() {
     {
       key: '46',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input></Form.Item>,
       span: 1
     },
     {
       key: '47',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -354,13 +376,13 @@ export default function TechCompanyInfo() {
     {
       key: '49',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input></Form.Item>,
       span: 1
     },
     {
       key: '50',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -372,13 +394,13 @@ export default function TechCompanyInfo() {
     {
       key: '52',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input></Form.Item>,
       span: 1
     },
     {
       key: '53',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_33"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -390,7 +412,7 @@ export default function TechCompanyInfo() {
     {
       key: '55',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb11'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_34"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb11'></Input></Form.Item>,
       span: 1
     },
     {
@@ -412,13 +434,13 @@ export default function TechCompanyInfo() {
     {
       key: '58',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb13'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_35"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb13'></Input></Form.Item>,
       span: 1
     },
     {
       key: '59',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_36"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -430,13 +452,13 @@ export default function TechCompanyInfo() {
     {
       key: '61',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb12'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_37"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb12'></Input></Form.Item>,
       span: 1
     },
     {
       key: '62',
       label: '内容',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_38"><DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -448,13 +470,13 @@ export default function TechCompanyInfo() {
     {
       key: '64',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_39"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14'></Input></Form.Item>,
       span: 1
     },
     {
       key: '65',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_40"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -466,13 +488,13 @@ export default function TechCompanyInfo() {
     {
       key: '67',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_41"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '68',
       label: '内容',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择入孵时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_42"><DatePicker disabled={disableVar} size='large' placeholder='请选择入孵时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -484,13 +506,13 @@ export default function TechCompanyInfo() {
     {
       key: '70',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14_2'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_43"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14_2'></Input></Form.Item>,
       span: 1
     },
     {
       key: '71',
       label: '内容',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择毕业时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_44"><DatePicker disabled={disableVar} size='large' placeholder='请选择毕业时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -502,13 +524,13 @@ export default function TechCompanyInfo() {
     {
       key: '73',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_45"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15'></Input></Form.Item>,
       span: 1
     },
     {
       key: '74',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_46"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -520,13 +542,13 @@ export default function TechCompanyInfo() {
     {
       key: '76',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_47"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '77',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_48"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -538,13 +560,13 @@ export default function TechCompanyInfo() {
     {
       key: '79',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_2'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_49"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_2'></Input></Form.Item>,
       span: 1
     },
     {
       key: '80',
       label: '内容',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Tech_commpanyInfo_50"><DatePicker disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -556,13 +578,13 @@ export default function TechCompanyInfo() {
     {
       key: '82',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_5'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_51"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_5'></Input></Form.Item>,
       span: 1
     },
     {
       key: '83',
       label: '内容',
-      children: <Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_52"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -574,13 +596,13 @@ export default function TechCompanyInfo() {
     {
       key: '85',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_53"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16'></Input></Form.Item>,
       span: 1
     },
     {
       key: '86',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_54"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -592,13 +614,13 @@ export default function TechCompanyInfo() {
     {
       key: '88',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_55"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '89',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_56"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -610,13 +632,13 @@ export default function TechCompanyInfo() {
     {
       key: '91',
       label: '代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16_1'></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_57"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16_1'></Input></Form.Item>,
       span: 1
     },
     {
       key: '92',
       label: '内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_commpanyInfo_58"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },  
   ];
