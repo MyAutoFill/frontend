@@ -16,8 +16,6 @@ export default function FinanceStatusInfo() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "统计局",
-        table_name: '财务状况信息',
         date: '2024-08'
       }
     })
@@ -837,8 +835,6 @@ export default function FinanceStatusInfo() {
     request('/api/save', {
       method: 'POST',
       data: {
-        platform_name: "统计局",
-        table_name: '财务状况信息',
         date: '2024-08',
         data: values
       }
@@ -868,7 +864,8 @@ export default function FinanceStatusInfo() {
             type="primary" 
             icon={<SaveFilled />} 
             autoInsertSpace 
-            size='large' 
+            size='large'
+            htmlType="submit"
             style={{
               position: 'absolute',
               right: 0,
