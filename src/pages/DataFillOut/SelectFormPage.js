@@ -5,7 +5,7 @@ import { request } from 'umi';
 export default function SelectFormPage() {
 
   const clickFunction = (url, name) => {
-    request('/api/data', {
+    request('', {
       method: 'POST',
       data: {
         url: url,
@@ -190,7 +190,7 @@ export default function SelectFormPage() {
                 <Meta title="山东省政务服务网" description="http://whzwfw.sd.gov.cn/wh/public/index" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("http://localhost:8088/power", "山东省统计联网直报平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
+            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("http://127.0.0.1:8088/power") + "&select_name=山东省统计联网直报平台"} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -204,7 +204,7 @@ export default function SelectFormPage() {
               >
                 <Meta title="山东省统计联网直报平台" description="http://localhost:8088/power" />
               </Card>
-            </div>
+            </a>
           </Row>
         </div>
       </div>
