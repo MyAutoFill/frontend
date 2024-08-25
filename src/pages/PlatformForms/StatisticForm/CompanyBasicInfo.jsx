@@ -553,11 +553,11 @@ export default function StatisticCompanyBasicInfo() {
             </Radio>
             <Radio value={'连锁直营店'} style={{ marginLeft: '10px'}}>
               连锁直营店
-              {RunningType === '连锁直营店' ? <Form.Item name="Statistic_CompanyInfo_65"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
+              {RunningType === '连锁直营店' ? <Form.Item name="Statistic_CompanyInfo_64"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
             </Radio>
             <Radio value={'连锁加盟店'} style={{ marginLeft: '10px'}}>
               连锁加盟店
-              {RunningType === '连锁加盟店' ? <Form.Item name="Statistic_CompanyInfo_66"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
+              {RunningType === '连锁加盟店' ? <Form.Item name="Statistic_CompanyInfo_64"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
             </Radio>
             <Radio value={'其他'} style={{ marginLeft: '10px'}}>
               其他

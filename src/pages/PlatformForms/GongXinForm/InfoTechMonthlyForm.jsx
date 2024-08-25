@@ -447,7 +447,7 @@ export default function TechCompanyInfo() {
           <Column title="指标名称" dataIndex="index_name" key="index_name" />
           <Column title="代码" dataIndex="code" key="code" />
           <Column title="本年本期累计" dataIndex="total_this_year" key="total_this_year" />
-          <Column title="本年同期累计" dataIndex="total_last_year" key="total_last_year" />
+          <Column title="去年同期累计" dataIndex="total_last_year" key="total_last_year" />
           <Column title="本年上期累计" dataIndex="total_last_term" key="total_last_term" />
           <Column title="同比（%）" dataIndex="compare_same" key="compare_same" />
           <Column title="环比（%）" dataIndex="compare_round" key="compare_round" />,

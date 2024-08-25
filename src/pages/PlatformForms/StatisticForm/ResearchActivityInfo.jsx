@@ -20,8 +20,8 @@ export default function ResearchActivityInfo() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "人社局",
-        table_name: '单位就业登记信息',
+        platform_name: "统计局",
+        table_name: '研究开发活动及相关情况信息',
         date: '2024-08'
       }
     })
