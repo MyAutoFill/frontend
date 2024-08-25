@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, Table, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Input, Button, FloatButton, message, Table, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 const { Column, ColumnGroup } = Table;
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function CompanyTotalSalary() {
@@ -10,6 +12,26 @@ export default function CompanyTotalSalary() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "统计局",
+        table_name: '单位从业人员及工资总额信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -57,29 +79,29 @@ export default function CompanyTotalSalary() {
     {
       key: '1',
       people_index: '一、从业人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_1"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_2"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '二、工资总额',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_3"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_4"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '2',
       people_index: '从业人员期末人数',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_5"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_6"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '从业人员工资总额',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_7"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_8"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '3',
       people_index: '其中：女性',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_9"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_10"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '其中：女性',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_11"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_12"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '4',
@@ -93,29 +115,29 @@ export default function CompanyTotalSalary() {
     {
       key: '5',
       people_index: '在岗职工',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_13"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_14"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '在岗职工',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_15"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_16"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '6',
       people_index: '劳务派遣人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_17"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_18"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '劳务派遣人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_19"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_20"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '7',
       people_index: '其他从业人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_21"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_22"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '其他从业人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_23"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_24"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '8',
@@ -129,53 +151,53 @@ export default function CompanyTotalSalary() {
     {
       key: '9',
       people_index: '中层及以上管理人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_25"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_26"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '中层及以上管理人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_27"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_28"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '10',
       people_index: '专业技术人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_29"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_30"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '专业技术人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_31"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_32"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '11',
       people_index: '办事人员和有关人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_33"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_34"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '办事人员和有关人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_35"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_36"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '12',
       people_index: '社会生产服务和生活服务人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_37"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_38"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '社会生产服务和生活服务人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_39"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_40"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '13',
       people_index: '生产制造及有关人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_41"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_42"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '生产制造及有关人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_43"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_44"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '14',
       people_index: '从业人员平均人数',
-      people_this_year: <Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_45"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_46"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '',
       salary_this_year: '',
       salary_last_year: ''
@@ -192,8 +214,8 @@ export default function CompanyTotalSalary() {
     {
       key: '16',
       people_index: '从业人员月平均工资',
-      people_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_47"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_48"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '',
       salary_this_year: '',
       salary_last_year: ''
@@ -209,17 +231,17 @@ export default function CompanyTotalSalary() {
     {
       key: '17',
       people_index: '在岗职工',
-      people_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_49"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_50"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '劳务派遣人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_51"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_52"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '18',
       people_index: '其他从业人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_53"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_54"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '',
       salary_this_year: '',
       salary_last_year: ''
@@ -235,26 +257,26 @@ export default function CompanyTotalSalary() {
     {
       key: '19',
       people_index: '中层及以上管理人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_55"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_56"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '专业技术人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_57"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_58"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '20',
       people_index: '办事人员和有关人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_59"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_60"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '社会生产服务和生活服务人员',
-      salary_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      salary_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>
+      salary_this_year: <Form.Item name="Statisitc_salary_61"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_last_year: <Form.Item name="Statisitc_salary_62"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {
       key: '21',
       people_index: '生产制造及有关人员',
-      people_this_year: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
-      people_last_year: <Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='-'></Input>,
+      people_this_year: <Form.Item name="Statisitc_salary_63"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_last_year: <Form.Item name="Statisitc_salary_64"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '',
       salary_this_year: '',
       salary_last_year: ''

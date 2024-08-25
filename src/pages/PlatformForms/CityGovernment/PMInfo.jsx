@@ -1,17 +1,32 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function PMInfo() {
 
-  const peopleSearchOnChange = (value) => {
-    console.log(`selected ${value}`);
-  };
-  const peopleSearchOnSearch = (value) => {
-    console.log('search:', value);
-  };
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "市政府",
+        table_name: '项目法人/申报单位信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -68,37 +83,37 @@ export default function PMInfo() {
     {
       key: '1',
       label: '项目法人单位',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
       label: '法人证照类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '3',
       label: '法人证照号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '4',
       label: '法定代表人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '5',
       label: '联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '6',
       label: '项目单位性质',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -109,37 +124,37 @@ export default function PMInfo() {
     {
       key: '7',
       label: '项目申报单位',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
       label: '法人证照类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
       label: '法人证照号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
       label: '法定代表人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
       label: '联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
       label: '项目单位性质',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_PMInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     }
   ];

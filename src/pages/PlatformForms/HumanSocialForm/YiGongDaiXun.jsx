@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 
@@ -17,6 +19,26 @@ export default function YiGongDaiXun() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "人社局",
+        table_name: '以工代训补贴申领信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -70,121 +92,127 @@ export default function YiGongDaiXun() {
     {
       key: '2',
       label: '单位名称',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
       label: '统一信用代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '法人姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '法人身份证号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '基本账户开户银行',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '基本账户银行账号',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
       label: '联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
       label: '企业规模',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
       label: '所属行业',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
       label: '补贴年月',
-      children: <DatePicker size='large' placeholder='请选择补贴年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_10"><DatePicker size='large' placeholder='请选择补贴年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
       key: '12',
       label: '补贴类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '13',
       label: '企业所属规划',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
       label: '是否当月首次申领',
-      children:               
-      <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-        <Radio value={1}>是</Radio>
-        <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-      </Radio.Group>,
+      children: 
+        <Form.Item name="HumanSocial_yigongdaixun_13">
+          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+            <Radio value={1}>是</Radio>
+            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
+          </Radio.Group>
+        </Form.Item>,
       span: 1
     },
     {
       key: '15',
       label: '以工代训培训情况',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '16',
       label: '是否为劳务派遣',
       children: 
-      <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-        <Radio value={1}>是</Radio>
-        <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-      </Radio.Group>,
+        <Form.Item name="HumanSocial_yigongdaixun_15">
+          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+            <Radio value={1}>是</Radio>
+            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
+          </Radio.Group>
+        </Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: '劳务派遣单位名称',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: '派遣单位的统一社会信用代码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '19',
       label: '是否在省直参保',
-      children:       
-      <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-        <Radio value={1}>是</Radio>
-        <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-      </Radio.Group>,
+      children:
+        <Form.Item name="HumanSocial_yigongdaixun_18">    
+          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+            <Radio value={1}>是</Radio>
+            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
+          </Radio.Group>
+        </Form.Item>,
       span: 1
     }
   ];

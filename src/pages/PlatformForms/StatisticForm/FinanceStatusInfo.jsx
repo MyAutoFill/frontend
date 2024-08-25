@@ -69,7 +69,9 @@ export default function FinanceStatusInfo() {
       content: '表单检查失败',
     });
   };
+
   const [form] = Form.useForm();
+  
   const items = [
     {
       key: '1',

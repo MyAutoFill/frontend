@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
+import { Descriptions, Button, FloatButton, message, DatePicker, Form, Upload } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 export default function UserSignUpandOff() {
 
@@ -11,6 +13,26 @@ export default function UserSignUpandOff() {
   const peopleSearchOnSearch = (value) => {
     console.log('search:', value);
   };
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "电力交易中心",
+        table_name: '用户申请/注销信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -86,22 +108,24 @@ export default function UserSignUpandOff() {
     {
       key: '2',
       label: '参与交易开始时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择交易开始时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Electric_SignUpAndOff_1"><DatePicker disabled={disableVar} size='large' placeholder='请选择交易开始时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
       label: '参与交易结束时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择交易结束时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="Electric_SignUpAndOff_2"><DatePicker disabled={disableVar} size='large' placeholder='请选择交易结束时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '电力批发用户参与山东省电力现货市场承诺书（模板）',
       children: 
-        <Upload {...props} >
-          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
-        </Upload>,
+        <Form.Item name="Electric_SignUpAndOff_3">
+          <Upload {...props} >
+            <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
+          </Upload>
+        </Form.Item>,
       span: 3
     },
     {
@@ -114,27 +138,33 @@ export default function UserSignUpandOff() {
       key: '6',
       label: '注销声明（模板）',
       children: 
-        <Upload {...props} >
-          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
-        </Upload>,
+        <Form.Item name="Electric_SignUpAndOff_4">
+          <Upload {...props} >
+            <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
+          </Upload>
+        </Form.Item>,
       span: 3
     },
     {
       key: '7',
       label: '注销申请表（模板）',
       children: 
-        <Upload {...props} >
-          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
-        </Upload>,
+        <Form.Item name="Electric_SignUpAndOff_5">
+          <Upload {...props} >
+            <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
+          </Upload>
+        </Form.Item>,
       span: 3
     },
     { 
       key: '8',
       label: '其他',
       children: 
-        <Upload {...props} >
-          <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
-        </Upload>,
+        <Form.Item name="Electric_SignUpAndOff_6">
+          <Upload {...props} >
+            <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
+          </Upload>
+        </Form.Item>,
       span: 1
     }
   ];

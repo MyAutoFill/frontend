@@ -1,17 +1,32 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function ProjectBasicInfo() {
 
-  const peopleSearchOnChange = (value) => {
-    console.log(`selected ${value}`);
-  };
-  const peopleSearchOnSearch = (value) => {
-    console.log('search:', value);
-  };
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "市政府",
+        table_name: '项目基本信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -64,139 +79,139 @@ export default function ProjectBasicInfo() {
     {
       key: '1',
       label: '项目所属行政区划',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '投资项目行业分类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
       label: '行业核准项目',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '4',
       label: '项目类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '建设性质',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '项目名称',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '项目负责人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
       label: '负责人联系电话',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
       label: '拟开工时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择拟开工时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_9"><DatePicker disabled={disableVar} size='large' placeholder='请选择拟开工时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '10',
       label: '拟建成时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择拟建成时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_10"><DatePicker disabled={disableVar} size='large' placeholder='请选择拟建成时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
       label: '总投资',
-      children: <Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_11"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '12',
       label: '建设地点',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_12"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '13',
       label: '建设地点详情',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_13"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '14',
       label: '建设地点详细地址',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_14"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '15',
       label: '国标行业',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '16',
       label: '产业结构调整知道目录',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '17',
       label: '所属行业',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '18',
       label: '申报日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择申报日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_18"><DatePicker disabled={disableVar} size='large' placeholder='请选择申报日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '19',
       label: '建设规模及内容',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_19"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '20',
       label: '项目阶段',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '21',
       label: '项目属性',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '22',
       label: '拟向民间资本推介项目',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '23',
       label: '项目性质',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="CityGovernment_ProjectBasicInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }
   ];

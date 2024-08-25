@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function HighTechCompanyStat() {
@@ -9,6 +11,26 @@ export default function HighTechCompanyStat() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "科技局",
+        table_name: '高新技术企业统计表信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -68,115 +90,115 @@ export default function HighTechCompanyStat() {
     {
       key: '3',
       label: '统一社会信用代码(qa03)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '企业(单位)详细名称(qa04)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '企业(单位)英文名称(sname_0)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '行政区划代码(qa19)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '法人性质(qa15)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
       label: '出生年份(qd20)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
       label: '学历(qd22)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '10',
       label: '企业法人性别(qd19)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
       label: '企业通讯地址(qa05) ',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_9"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '12',
       label: '邮政编码(qa06)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_10"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '13',
       label: '企业注册地址(qa07)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_11"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '14',
       label: '企业负责人(qa08)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '15',
       label: '联系电话(qa09)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_13"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '16',
       label: '统计负责人(qa20)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '17',
       label: '填报人(qa11)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '18',
       label: '填报人电话(qa17)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '19',
       label: '填报人手机(qa17_1)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '20',
       label: '填报时间(qa12)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '21',
       label: 'Email地址(qa13)',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="Tech_stat_19"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }
   ];

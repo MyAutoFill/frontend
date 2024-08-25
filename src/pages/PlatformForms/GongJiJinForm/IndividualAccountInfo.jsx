@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function IndividualAccountInfo() {
@@ -12,6 +14,26 @@ export default function IndividualAccountInfo() {
   const peopleSearchOnSearch = (value) => {
     console.log('search:', value);
   };
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "公积金管理中心",
+        table_name: '个人账户信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -75,31 +97,31 @@ export default function IndividualAccountInfo() {
     {
       key: '3',
       label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value=''></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value=''></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '个人缴存基数',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '证件类型',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '手机号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -111,25 +133,25 @@ export default function IndividualAccountInfo() {
     {
       key: '9',
       label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '10',
       label: '封存原因',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
       label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '12',
       label: '封存年月',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -141,36 +163,38 @@ export default function IndividualAccountInfo() {
     {
       key: '14',
       label: '姓名',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
       label: '证件号码',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '16',
       label: '个人缴存基数',
-      children: <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongJiJin_AccountInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: '启封年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择启封年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="GongJiJin_AccountInfo_13"><DatePicker disabled={disableVar} size='large' placeholder='请选择启封年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: '启封类型',
       children: 
-        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-          <Radio value={1}>辖内转入</Radio>
-          <Radio value={2} style={{ marginLeft: '10px'}}>辖外调入</Radio>
-          <Radio value={3} style={{ marginLeft: '10px'}}>其他启封</Radio>
-        </Radio.Group>,
+        <Form.Item name="GongJiJin_AccountInfo_14">
+          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+            <Radio value={1}>辖内转入</Radio>
+            <Radio value={2} style={{ marginLeft: '10px'}}>辖外调入</Radio>
+            <Radio value={3} style={{ marginLeft: '10px'}}>其他启封</Radio>
+          </Radio.Group>
+        </Form.Item>,
       span: 1
     },
   ];

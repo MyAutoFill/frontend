@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload } from 'antd';
-import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form } from 'antd';
+import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
+import { request } from 'umi';
+import { useEffect } from 'react';
 
 
 export default function OuterVouch() {
@@ -9,6 +11,26 @@ export default function OuterVouch() {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  useEffect(() => {
+    load_data();
+  }, []);
+
+  const load_data = () => {
+    request('/api/load_data', {
+      method: 'POST',
+      data: {
+        platform_name: "工商局",
+        table_name: '对外提供保证担保信息',
+        date: '2024-08'
+      }
+    })
+      .then(function (res) {
+        form.setFieldsValue(res);
+      })
+  }
+
+  const [form] = Form.useForm();
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -56,49 +78,49 @@ export default function OuterVouch() {
     {
       key: '1',
       label: '债权人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '债务人',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
       label: '主债权种类',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
       label: '主债权种类额',
-      children: <Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_4"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '履行债务的期限',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择履行债务的期限' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="GongShang_OuterVouch_5"><DatePicker disabled={disableVar} size='large' placeholder='请选择履行债务的期限' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '保证的周期',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_6"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '保证的方式',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_7"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
       label: '公示状态',
-      children: <Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>,
+      children: <Form.Item name="GongShang_OuterVouch_8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }
   ];
