@@ -267,10 +267,21 @@ export default function CompanyRunningSumInfo() {
     }
   ];
 
+  const onFinish = (values) => {
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: '2024-08',
+        data: values
+      }
+    })
+  };
+  
   return (
     <>
       {contextHolder}
       <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
+      <Form onFinish={onFinish} form={form}>
         <Descriptions title="企业经济状况信息" bordered items={items} />
         <FloatButton.Group
           open={defaultOpen}
@@ -340,6 +351,7 @@ export default function CompanyRunningSumInfo() {
             }}
           >立即填报</Button>
         </FloatButton.Group>
+        </Form>
       </div>
     </>
   );
