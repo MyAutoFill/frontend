@@ -385,7 +385,7 @@ export default function TechCompanyInfo() {
     {
       key: '6',
       label: '统一社会信用代码',
-      children: <Form.Item name="GongXin_MonthlyReport_164"><Input disabled={disableVar} size='large' style={{ width: '640px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '640px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {

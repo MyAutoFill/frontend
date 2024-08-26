@@ -20,8 +20,6 @@ export default function CompanyRunningSumInfo() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "企业基本信息",
-        table_name: '企业经济状况信息',
         date: '2024-08'
       }
     })
@@ -180,7 +178,7 @@ export default function CompanyRunningSumInfo() {
     {
       key: '21',
       label: '资产总计',
-      children: <Form.Item name="company_runningsum_18"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_37"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -292,6 +290,7 @@ export default function CompanyRunningSumInfo() {
             icon={<SaveFilled />} 
             autoInsertSpace 
             size='large' 
+            htmlType="submit"
             style={{
               position: 'absolute',
               right: 0,
