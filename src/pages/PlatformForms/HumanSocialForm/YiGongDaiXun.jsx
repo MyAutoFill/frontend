@@ -200,7 +200,7 @@ export default function YiGongDaiXun() {
     {
       key: '18',
       label: '派遣单位的统一社会信用代码',
-      children: <Form.Item name="HumanSocial_yigongdaixun_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

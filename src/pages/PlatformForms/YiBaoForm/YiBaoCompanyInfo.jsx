@@ -78,7 +78,7 @@ export default function YiBaoCompanyInfo() {
     {
       key: '1',
       label: '统一社会信用代码',
-      children: <Form.Item name="yibao_companyInfo_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

@@ -90,7 +90,7 @@ export default function GongShangCompanyInfo() {
     {
       key: '3',
       label: '统一社会信用代码/注册号',
-      children: <Form.Item name="GongShang_CompanyInfo_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -199,7 +199,7 @@ export default function GongShangCompanyInfo() {
         <>
           <Form.Item name="GongShang_CompanyInfo_24"><Input disabled={disableVar} size='large' addonBefore='投资设立企业或购买股权企业名称' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_25"><Input disabled={disableVar} size='large' addonBefore='统一社会信用代码/注册号' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' addonBefore='统一社会信用代码/注册号' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
     },
