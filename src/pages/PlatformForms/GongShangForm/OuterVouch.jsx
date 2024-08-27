@@ -20,8 +20,6 @@ export default function OuterVouch() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "工商局",
-        table_name: '对外提供保证担保信息',
         date: '2024-08'
       }
     })
@@ -124,13 +122,24 @@ export default function OuterVouch() {
       span: 1.5
     }
   ];
+
+  const onFinish = (values) => {
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: '2024-08',
+        data: values
+      }
+    })
+  };
   
   return (
     <>
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
-        <Descriptions title="对外提供保证担保信息" bordered items={items} />
-        <FloatButton.Group
+        <Form onFinish={onFinish} form={form}>
+          <Descriptions title="对外提供保证担保信息" bordered items={items} />
+          <FloatButton.Group
           open={defaultOpen}
           trigger="click"
           style={{
@@ -196,7 +205,8 @@ export default function OuterVouch() {
               bottom: 0,
             }}
           >立即填报</Button>
-        </FloatButton.Group>
+          </FloatButton.Group>
+        </Form>
       </div>
     </>
   );

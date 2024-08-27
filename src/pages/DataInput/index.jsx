@@ -5,8 +5,10 @@ import Footer from '../Footer';
 import 'rc-banner-anim/assets/index.css';
 import { Tabs, Divider, Steps } from 'antd';
 import Fill from './Fill';
+import UploadSyncPage from './UploadSync';
+import PreviewPage from './Preview';
 import SelectFormPage from '../DataFillOut/SelectFormPage'
-import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined } from '@ant-design/icons';
+import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined, CloudUploadOutlined } from '@ant-design/icons';
 
 
 export default function DataInput() {
@@ -42,38 +44,49 @@ export default function DataInput() {
                 style={{width: 1700}}
                 items={[
                   {
+                    title: '信息同步',
+                    description: '第一步：数据上传同步',
+                  },
+                  {
                     title: '信息填写',
-                    description: '第一步：填写对应信息',
+                    description: '第二步：填写对应信息',
                   },
                   {
-                    title: '填报预览',
-                    description: '第二步：检查预填结果',
+                    title: '信息填报',
+                    description: '第三步：检查预填结果',
                   },
                   {
-                    title: 'Step 3',
-                    description: '第三步：登录平台填报',
+                    title: '数据填报',
+                    description: '第四步：登录平台填报',
                   },
                 ]}
               />
               <Divider />
               <Tabs defaultActiveKey='1' activeKey={currentKey.toString()} animated={true} type='card' size='large' onChange={tabsOnChange}>
                 <TabPane
-                  tab={<span><OrderedListOutlined />信息填写</span>}
+                  tab={<span><CloudUploadOutlined />上传同步</span>}
                   key="1"
                   size="large"
                 >
-                  <Fill />
+                  <UploadSyncPage />
                 </TabPane>
                 <TabPane
-                  tab={<span><SafetyOutlined />填写预览</span>}
+                  tab={<span><OrderedListOutlined />信息填写</span>}
                   key="2"
                   size="large"
                 >
                   <Fill />
                 </TabPane>
                 <TabPane
-                  tab={<span><FileSyncOutlined />数据申报</span>}
+                  tab={<span><SafetyOutlined />填写预览</span>}
                   key="3"
+                  size="large"
+                >
+                  <PreviewPage />
+                </TabPane>
+                <TabPane
+                  tab={<span><FileSyncOutlined />数据申报</span>}
+                  key="4"
                   size="large"
                 >
                   <SelectFormPage />

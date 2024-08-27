@@ -21,8 +21,6 @@ export default function CompanyTotalSalary() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "统计局",
-        table_name: '单位从业人员及工资总额信息',
         date: '2024-08'
       }
     })
@@ -282,88 +280,100 @@ export default function CompanyTotalSalary() {
       salary_last_year: ''
     }
   ];
+
+  const onFinish = (values) => {
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: '2024-08',
+        data: values
+      }
+    })
+  };
   
   return (
     <>
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
-        <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
-          <ColumnGroup title="单位从业人员及工资总额" boarded>
-            <Column boarded title="指标名称" dataIndex="people_index" key="people_index" />
-            <Column title="本年" dataIndex="people_this_year" key="people_this_year" />
-            <Column title="上年同期" dataIndex="people_last_year" key="people_last_year" />
-            <Column title="指标名称" dataIndex="salary_index" key="salary_index" />
-            <Column title="本年" dataIndex="salary_this_year" key="salary_this_year" />
-            <Column title="上年同期" dataIndex="salary_last_year" key="salary_last_year" />
-          </ColumnGroup>
-        </Table>
-        <FloatButton.Group
-          open={defaultOpen}
-          trigger="click"
-          style={{
-            insetInlineEnd: 120,
-          }}
-          shape='square'
-          description="操作按钮"
-          tooltip={<div>点击展示操作按钮</div>}
-          type='primary'
-          onOpenChange={(open) => setDefaultOpen(open)}
-          icon={<ExpandAltOutlined />}
-        >
-          <Button 
-            type="primary" 
-            icon={<SaveFilled />} 
-            autoInsertSpace 
-            size='large' 
+        <Form onFinish={onFinish} form={form}>
+          <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
+            <ColumnGroup title="单位从业人员及工资总额" boarded>
+              <Column boarded title="指标名称" dataIndex="people_index" key="people_index" />
+              <Column title="本年" dataIndex="people_this_year" key="people_this_year" />
+              <Column title="上年同期" dataIndex="people_last_year" key="people_last_year" />
+              <Column title="指标名称" dataIndex="salary_index" key="salary_index" />
+              <Column title="本年" dataIndex="salary_this_year" key="salary_this_year" />
+              <Column title="上年同期" dataIndex="salary_last_year" key="salary_last_year" />
+            </ColumnGroup>
+          </Table>
+          <FloatButton.Group
+            open={defaultOpen}
+            trigger="click"
             style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 210
+              insetInlineEnd: 120,
             }}
-            onClick={
-              SaveSuccess
-            }
-          >保存数据</Button>
-          <Button 
-            type="primary" 
-            icon={<StopFilled />} 
-            autoInsertSpace 
-            size='large' 
-            style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 140,
-            }}
-            onClick={
-              EditSuccess
-            }
-          >取消编辑</Button>
-          <Button 
-            type="primary" 
-            icon={<CheckSquareFilled />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 70,
-            }}
-            onClick={
-              CheckSuccess
-            }
-          >检查表单</Button>
-          <Button 
-            type="primary" 
-            icon={<FastForwardOutlined />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 0,
-            }}
-          >立即填报</Button>
-        </FloatButton.Group>
+            shape='square'
+            description="操作按钮"
+            tooltip={<div>点击展示操作按钮</div>}
+            type='primary'
+            onOpenChange={(open) => setDefaultOpen(open)}
+            icon={<ExpandAltOutlined />}
+          >
+            <Button 
+              type="primary" 
+              icon={<SaveFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 210
+              }}
+              onClick={
+                SaveSuccess
+              }
+            >保存数据</Button>
+            <Button 
+              type="primary" 
+              icon={<StopFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 140,
+              }}
+              onClick={
+                EditSuccess
+              }
+            >取消编辑</Button>
+            <Button 
+              type="primary" 
+              icon={<CheckSquareFilled />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 70,
+              }}
+              onClick={
+                CheckSuccess
+              }
+            >检查表单</Button>
+            <Button 
+              type="primary" 
+              icon={<FastForwardOutlined />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 0,
+              }}
+            >立即填报</Button>
+          </FloatButton.Group>
+        </Form>
       </div>
     </>
   );
