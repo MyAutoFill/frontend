@@ -21,8 +21,6 @@ export default function TechCompanyInfo() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "工信局",
-        table_name: '软件和信息技术服务业企业月报表信息',
         date: '2024-08'
       }
     })
@@ -437,88 +435,100 @@ export default function TechCompanyInfo() {
       span: 2
     },
   ];
+
+  const onFinish = (values) => {
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: '2024-08',
+        data: values
+      }
+    })
+  };
   
   return (
     <>
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
-        <Descriptions title="软件和信息技术服务业企业月报表" bordered items={items} />
-        <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
-          <Column title="指标名称" dataIndex="index_name" key="index_name" />
-          <Column title="代码" dataIndex="code" key="code" />
-          <Column title="本年本期累计" dataIndex="total_this_year" key="total_this_year" />
-          <Column title="去年同期累计" dataIndex="total_last_year" key="total_last_year" />
-          <Column title="本年上期累计" dataIndex="total_last_term" key="total_last_term" />
-          <Column title="同比（%）" dataIndex="compare_same" key="compare_same" />
-          <Column title="环比（%）" dataIndex="compare_round" key="compare_round" />,
-        </Table>
-        <FloatButton.Group
-          open={defaultOpen}
-          trigger="click"
-          style={{
-            insetInlineEnd: 120,
-          }}
-          shape='square'
-          description="操作按钮"
-          tooltip={<div>点击展示操作按钮</div>}
-          type='primary'
-          onOpenChange={(open) => setDefaultOpen(open)}
-          icon={<ExpandAltOutlined />}
-        >
-          <Button 
-            type="primary" 
-            icon={<SaveFilled />} 
-            autoInsertSpace 
-            size='large' 
+        <Form onFinish={onFinish} form={form}>
+          <Descriptions title="软件和信息技术服务业企业月报表" bordered items={items} />
+          <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
+            <Column title="指标名称" dataIndex="index_name" key="index_name" />
+            <Column title="代码" dataIndex="code" key="code" />
+            <Column title="本年本期累计" dataIndex="total_this_year" key="total_this_year" />
+            <Column title="去年同期累计" dataIndex="total_last_year" key="total_last_year" />
+            <Column title="本年上期累计" dataIndex="total_last_term" key="total_last_term" />
+            <Column title="同比（%）" dataIndex="compare_same" key="compare_same" />
+            <Column title="环比（%）" dataIndex="compare_round" key="compare_round" />,
+          </Table>
+          <FloatButton.Group
+            open={defaultOpen}
+            trigger="click"
             style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 210
+              insetInlineEnd: 120,
             }}
-            onClick={
-              SaveSuccess
-            }
-          >保存数据</Button>
-          <Button 
-            type="primary" 
-            icon={<StopFilled />} 
-            autoInsertSpace 
-            size='large' 
-            style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 140,
-            }}
-            onClick={
-              EditSuccess
-            }
-          >取消编辑</Button>
-          <Button 
-            type="primary" 
-            icon={<CheckSquareFilled />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 70,
-            }}
-            onClick={
-              CheckSuccess
-            }
-          >检查表单</Button>
-          <Button 
-            type="primary" 
-            icon={<FastForwardOutlined />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 0,
-            }}
-          >立即填报</Button>
-        </FloatButton.Group>
+            shape='square'
+            description="操作按钮"
+            tooltip={<div>点击展示操作按钮</div>}
+            type='primary'
+            onOpenChange={(open) => setDefaultOpen(open)}
+            icon={<ExpandAltOutlined />}
+          >
+            <Button 
+              type="primary" 
+              icon={<SaveFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 210
+              }}
+              onClick={
+                SaveSuccess
+              }
+            >保存数据</Button>
+            <Button 
+              type="primary" 
+              icon={<StopFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 140,
+              }}
+              onClick={
+                EditSuccess
+              }
+            >取消编辑</Button>
+            <Button 
+              type="primary" 
+              icon={<CheckSquareFilled />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 70,
+              }}
+              onClick={
+                CheckSuccess
+              }
+            >检查表单</Button>
+            <Button 
+              type="primary" 
+              icon={<FastForwardOutlined />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 0,
+              }}
+            >立即填报</Button>
+          </FloatButton.Group>
+        </Form>
       </div>
     </>
   );

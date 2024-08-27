@@ -21,8 +21,6 @@ export default function TechCompanyInfo() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "税务局",
-        table_name: '单位就业登记信息',
         date: '2024-08'
       }
     })
@@ -528,228 +526,240 @@ export default function TechCompanyInfo() {
       compare_round: <Form.Item name="Tax_companyInfo_244"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     }
   ];
+
+  const onFinish = (values) => {
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: '2024-08',
+        data: values
+      }
+    })
+  };
   
   return (
     <>
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
-        <Table dataSource={data} style={{width: '1300px'}} pagination={false}>
-          <ColumnGroup title="单位税务信息" boarded>
-            <ColumnGroup title="项目" boarded>
-              <Column title="" dataIndex="category" key="category" boarded
-                onCell={(row, index) => {
-                  // 销售额
-                  if (index === 0) {
-                    return { rowSpan: 10 }
-                  }
-                  if (index === 1) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 2) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 3) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 4) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 5) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 6) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 7) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 8) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 9) {
-                    return { rowSpan: 0 }
-                  }
+        <Form onFinish={onFinish} form={form}>
+          <Table dataSource={data} style={{width: '1300px'}} pagination={false}>
+            <ColumnGroup title="单位税务信息" boarded>
+              <ColumnGroup title="项目" boarded>
+                <Column title="" dataIndex="category" key="category" boarded
+                  onCell={(row, index) => {
+                    // 销售额
+                    if (index === 0) {
+                      return { rowSpan: 10 }
+                    }
+                    if (index === 1) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 2) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 3) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 4) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 5) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 6) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 7) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 8) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 9) {
+                      return { rowSpan: 0 }
+                    }
 
-                  // 税款计算
-                  if (index === 10) {
-                    return { rowSpan: 14 }
-                  }
-                  if (index === 11) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 12) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 13) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 14) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 15) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 16) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 17) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 18) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 19) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 20) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 21) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 22) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 23) {
-                    return { rowSpan: 0 }
-                  }
+                    // 税款计算
+                    if (index === 10) {
+                      return { rowSpan: 14 }
+                    }
+                    if (index === 11) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 12) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 13) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 14) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 15) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 16) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 17) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 18) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 19) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 20) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 21) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 22) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 23) {
+                      return { rowSpan: 0 }
+                    }
 
-                  // 税款缴纳
-                  if (index === 24) {
-                    return { rowSpan: 14 }
+                    // 税款缴纳
+                    if (index === 24) {
+                      return { rowSpan: 14 }
+                    }
+                    if (index === 25) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 26) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 27) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 28) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 29) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 30) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 31) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 32) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 33) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 34) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 35) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 36) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 37) {
+                      return { rowSpan: 0 }
+                    }
+                    
+                    // 附加税费
+                    if (index === 38) {
+                      return { rowSpan: 3 }
+                    }
+                    if (index === 39) {
+                      return { rowSpan: 0 }
+                    }
+                    if (index === 40) {
+                      return { rowSpan: 0 }
+                    }
                   }
-                  if (index === 25) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 26) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 27) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 28) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 29) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 30) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 31) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 32) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 33) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 34) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 35) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 36) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 37) {
-                    return { rowSpan: 0 }
-                  }
-                  
-                  // 附加税费
-                  if (index === 38) {
-                    return { rowSpan: 3 }
-                  }
-                  if (index === 39) {
-                    return { rowSpan: 0 }
-                  }
-                  if (index === 40) {
-                    return { rowSpan: 0 }
-                  }
-                }
-              }/>
-              <Column title="项目名" dataIndex="project_name" key="project_name" />
+                }/>
+                <Column title="项目名" dataIndex="project_name" key="project_name" />
+              </ColumnGroup>
+              <Column title="栏次" dataIndex="code" key="code" />
+              <ColumnGroup title="一般项目" boarded>
+                <Column title="本月数" dataIndex="normal_this_month" key="normal_this_month" />
+                <Column title="本年累计" dataIndex="normal_this_year" key="normal_this_year" />
+              </ColumnGroup>
+              <ColumnGroup title="即征即退项目" boarded>
+                <Column title="本月数" dataIndex="immediate_this_month" key="immediate_this_month" />
+                <Column title="本年累计" dataIndex="immediate_this_year" key="immediate_this_year" />
+              </ColumnGroup>
             </ColumnGroup>
-            <Column title="栏次" dataIndex="code" key="code" />
-            <ColumnGroup title="一般项目" boarded>
-              <Column title="本月数" dataIndex="normal_this_month" key="normal_this_month" />
-              <Column title="本年累计" dataIndex="normal_this_year" key="normal_this_year" />
-            </ColumnGroup>
-            <ColumnGroup title="即征即退项目" boarded>
-              <Column title="本月数" dataIndex="immediate_this_month" key="immediate_this_month" />
-              <Column title="本年累计" dataIndex="immediate_this_year" key="immediate_this_year" />
-            </ColumnGroup>
-          </ColumnGroup>
-        </Table>
-        <FloatButton.Group
-          open={defaultOpen}
-          trigger="click"
-          style={{
-            insetInlineEnd: 120,
-          }}
-          shape='square'
-          description="操作按钮"
-          tooltip={<div>点击展示操作按钮</div>}
-          type='primary'
-          onOpenChange={(open) => setDefaultOpen(open)}
-          icon={<ExpandAltOutlined />}
-        >
-          <Button 
-            type="primary" 
-            icon={<SaveFilled />} 
-            autoInsertSpace 
-            size='large' 
+          </Table>
+          <FloatButton.Group
+            open={defaultOpen}
+            trigger="click"
             style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 210
+              insetInlineEnd: 120,
             }}
-            onClick={
-              SaveSuccess
-            }
-          >保存数据</Button>
-          <Button 
-            type="primary" 
-            icon={<StopFilled />} 
-            autoInsertSpace 
-            size='large' 
-            style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 140,
-            }}
-            onClick={
-              EditSuccess
-            }
-          >取消编辑</Button>
-          <Button 
-            type="primary" 
-            icon={<CheckSquareFilled />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 70,
-            }}
-            onClick={
-              CheckSuccess
-            }
-          >检查表单</Button>
-          <Button 
-            type="primary" 
-            icon={<FastForwardOutlined />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 0,
-            }}
-          >立即填报</Button>
-        </FloatButton.Group>
+            shape='square'
+            description="操作按钮"
+            tooltip={<div>点击展示操作按钮</div>}
+            type='primary'
+            onOpenChange={(open) => setDefaultOpen(open)}
+            icon={<ExpandAltOutlined />}
+          >
+            <Button 
+              type="primary" 
+              icon={<SaveFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 210
+              }}
+              onClick={
+                SaveSuccess
+              }
+            >保存数据</Button>
+            <Button 
+              type="primary" 
+              icon={<StopFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 140,
+              }}
+              onClick={
+                EditSuccess
+              }
+            >取消编辑</Button>
+            <Button 
+              type="primary" 
+              icon={<CheckSquareFilled />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 70,
+              }}
+              onClick={
+                CheckSuccess
+              }
+            >检查表单</Button>
+            <Button 
+              type="primary" 
+              icon={<FastForwardOutlined />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 0,
+              }}
+            >立即填报</Button>
+          </FloatButton.Group>
+        </Form>
       </div>
     </>
   );

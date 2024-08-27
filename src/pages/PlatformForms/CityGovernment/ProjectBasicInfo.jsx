@@ -16,8 +16,6 @@ export default function ProjectBasicInfo() {
     request('/api/load_data', {
       method: 'POST',
       data: {
-        platform_name: "市政府",
-        table_name: '项目基本信息',
         date: '2024-08'
       }
     })
@@ -215,79 +213,91 @@ export default function ProjectBasicInfo() {
       span: 1.5
     }
   ];
+
+  const onFinish = (values) => {
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: '2024-08',
+        data: values
+      }
+    })
+  };
   
   return (
     <>
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
-        <Descriptions title="项目基本信息" bordered items={items} />
-        <FloatButton.Group
-          open={defaultOpen}
-          trigger="click"
-          style={{
-            insetInlineEnd: 120,
-          }}
-          shape='square'
-          description="操作按钮"
-          tooltip={<div>点击展示操作按钮</div>}
-          type='primary'
-          onOpenChange={(open) => setDefaultOpen(open)}
-          icon={<ExpandAltOutlined />}
-        >
-          <Button 
-            type="primary" 
-            icon={<SaveFilled />} 
-            autoInsertSpace 
-            size='large' 
+        <Form onFinish={onFinish} form={form}>
+          <Descriptions title="项目基本信息" bordered items={items} />
+          <FloatButton.Group
+            open={defaultOpen}
+            trigger="click"
             style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 210
+              insetInlineEnd: 120,
             }}
-            onClick={
-              SaveSuccess
-            }
-          >保存数据</Button>
-          <Button 
-            type="primary" 
-            icon={<StopFilled />} 
-            autoInsertSpace 
-            size='large' 
-            style={{
-              position: 'absolute',
-              right: 0,
-              bottom: 140,
-            }}
-            onClick={
-              EditSuccess
-            }
-          >取消编辑</Button>
-          <Button 
-            type="primary" 
-            icon={<CheckSquareFilled />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 70,
-            }}
-            onClick={
-              CheckSuccess
-            }
-          >检查表单</Button>
-          <Button 
-            type="primary" 
-            icon={<FastForwardOutlined />} 
-            autoInsertSpace 
-            size='large'
-            style={{
-              position: 'absolute',
-              right: 0, 
-              bottom: 0,
-            }}
-          >立即填报</Button>
-        </FloatButton.Group>
+            shape='square'
+            description="操作按钮"
+            tooltip={<div>点击展示操作按钮</div>}
+            type='primary'
+            onOpenChange={(open) => setDefaultOpen(open)}
+            icon={<ExpandAltOutlined />}
+          >
+            <Button 
+              type="primary" 
+              icon={<SaveFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 210
+              }}
+              onClick={
+                SaveSuccess
+              }
+            >保存数据</Button>
+            <Button 
+              type="primary" 
+              icon={<StopFilled />} 
+              autoInsertSpace 
+              size='large' 
+              style={{
+                position: 'absolute',
+                right: 0,
+                bottom: 140,
+              }}
+              onClick={
+                EditSuccess
+              }
+            >取消编辑</Button>
+            <Button 
+              type="primary" 
+              icon={<CheckSquareFilled />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 70,
+              }}
+              onClick={
+                CheckSuccess
+              }
+            >检查表单</Button>
+            <Button 
+              type="primary" 
+              icon={<FastForwardOutlined />} 
+              autoInsertSpace 
+              size='large'
+              style={{
+                position: 'absolute',
+                right: 0, 
+                bottom: 0,
+              }}
+            >立即填报</Button>
+          </FloatButton.Group>
+        </Form>
       </div>
     </>
   );
