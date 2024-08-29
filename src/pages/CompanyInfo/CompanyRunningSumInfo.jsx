@@ -4,6 +4,7 @@ import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
+import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 
 
 export default function CompanyRunningSumInfo() {
@@ -17,14 +18,18 @@ export default function CompanyRunningSumInfo() {
   }, []);
 
   const load_data = () => {
-    request('/api/load_data', {
-      method: 'POST',
-      data: {
-        date: '2024-08'
-      }
-    })
+    reqBasicData()
       .then(function (res) {
-        form.setFieldsValue(res);
+        reqRatioConfig('CompanyRunningSumInfo')
+        .then(function (config) {
+          const new_res = JSON.parse(JSON.stringify(res));
+          Object.keys(config).forEach(key => {
+            if (key in new_res) {
+              new_res[key] = (parseFloat(new_res[key]) * config[key]).toString(); 
+            }
+          });
+          form.setFieldsValue(new_res);
+        })
       })
   }
 
@@ -268,12 +273,23 @@ export default function CompanyRunningSumInfo() {
   ];
 
   const onFinish = (values) => {
-    request('/api/save', {
-      method: 'POST',
-      data: {
-        date: '2024-08',
-        data: values
-      }
+    request('/api/get_ratio_config?table=CompanyRunningSumInfo', {
+      method: 'GET',
+    })
+    .then(function (config) {
+      const new_res = JSON.parse(JSON.stringify(values));
+      Object.keys(config).forEach(key => {
+        if (key in new_res) {
+          new_res[key] = (parseFloat(new_res[key]) / config[key]).toString(); 
+        }
+      });
+      request('/api/save', {
+        method: 'POST',
+        data: {
+          date: '2024-08',
+          data: new_res
+        }
+      })
     })
   };
 
