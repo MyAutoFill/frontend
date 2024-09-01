@@ -107,7 +107,7 @@ export default function IndividualCityTransferInfo() {
     {
       key: '4',
       label: '转入单位名称',
-      children: <Form.Item name="GongJiJin_transfer_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -119,7 +119,7 @@ export default function IndividualCityTransferInfo() {
     {
       key: '6',
       label: '转出单位名称',
-      children: <Form.Item name="GongJiJin_transfer_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

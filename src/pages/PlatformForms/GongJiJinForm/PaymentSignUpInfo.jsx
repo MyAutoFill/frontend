@@ -89,7 +89,7 @@ export default function PaymentSignUpInfo() {
     {
       key: '2',
       label: '单位名称',
-      children: <Form.Item name="GongJiJin_payment_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

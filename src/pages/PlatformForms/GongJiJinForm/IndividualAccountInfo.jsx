@@ -113,7 +113,7 @@ export default function IndividualAccountInfo() {
     {
       key: '6',
       label: '证件类型',
-      children: <Form.Item name="GongJiJin_AccountInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

@@ -90,7 +90,7 @@ export default function YiGongDaiXun() {
     {
       key: '2',
       label: '单位名称',
-      children: <Form.Item name="HumanSocial_yigongdaixun_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -102,7 +102,7 @@ export default function YiGongDaiXun() {
     {
       key: '4',
       label: '法人姓名',
-      children: <Form.Item name="HumanSocial_yigongdaixun_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -126,7 +126,7 @@ export default function YiGongDaiXun() {
     {
       key: '8',
       label: '联系电话',
-      children: <Form.Item name="HumanSocial_yigongdaixun_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -192,7 +192,7 @@ export default function YiGongDaiXun() {
     {
       key: '17',
       label: '劳务派遣单位名称',
-      children: <Form.Item name="HumanSocial_yigongdaixun_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

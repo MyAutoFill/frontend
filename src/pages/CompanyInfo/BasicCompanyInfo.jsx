@@ -193,13 +193,13 @@ export default function BasicCompanyInfo() {
             </Form.Item>
           </span>
           <br></br>
-          <Form.Item name="company_basicinfo_19"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_20"><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_21"><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_22"><Input disabled={disableVar} addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_23"><Input disabled={disableVar} addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_24"><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_25"><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_11"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_12"><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_13"><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_14"><Input disabled={disableVar} addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_15"><Input disabled={disableVar} addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16"><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>
       ),
       span: 3

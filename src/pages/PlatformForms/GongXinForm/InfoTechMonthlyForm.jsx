@@ -78,7 +78,7 @@ export default function TechCompanyInfo() {
       key: '1',
       index_name: '主营业务收入',
       code: <Form.Item name="GongXin_MonthlyReport_1"><Input disabled={disableVar} size='large' style={{ width: '100px', marginTop: '10px' }} defaultValue={'2010'}></Input></Form.Item>,
-      total_this_year: <Form.Item name="GongXin_MonthlyReport_2"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      total_this_year: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_year: <Form.Item name="GongXin_MonthlyReport_3"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_term: <Form.Item name="GongXin_MonthlyReport_4"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       compare_same: <Form.Item name="GongXin_MonthlyReport_5"><Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
@@ -296,7 +296,7 @@ export default function TechCompanyInfo() {
       key: '21',
       index_name: '利润总额',
       code: <Form.Item name="GongXin_MonthlyReport_1333"><Input disabled={disableVar} size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={'2090'}></Input></Form.Item>,
-      total_this_year: <Form.Item name="GongXin_MonthlyReport_134"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      total_this_year: <Form.Item name="company_runningsum_17"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_year: <Form.Item name="GongXin_MonthlyReport_135"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_term: <Form.Item name="GongXin_MonthlyReport_136"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       compare_same: <Form.Item name="GongXin_MonthlyReport_137"><Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
@@ -316,7 +316,7 @@ export default function TechCompanyInfo() {
       key: '23',
       index_name: '从业人员工资总额',
       code: <Form.Item name="GongXin_MonthlyReport_"><Input disabled={disableVar} size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={'2111'}></Input></Form.Item>,
-      total_this_year: <Form.Item name="GongXin_MonthlyReport_145"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      total_this_year: <Form.Item name="company_employee_11"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_year: <Form.Item name="GongXin_MonthlyReport_146"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_term: <Form.Item name="GongXin_MonthlyReport_147"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       compare_same: <Form.Item name="GongXin_MonthlyReport_148"><Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
@@ -377,7 +377,7 @@ export default function TechCompanyInfo() {
     },
     {
       label: '组织机构代码',
-      children: <Form.Item name="GongXin_MonthlyReport_163"><Input disabled={disableVar} size='large' style={{ width: '640px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_10"><Input disabled={disableVar} size='large' style={{ width: '640px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -407,7 +407,7 @@ export default function TechCompanyInfo() {
     {
       key: '9',
       label: '单位负责人',
-      children: <Form.Item name="GongXin_MonthlyReport_167"><Input disabled={disableVar} size='large' style={{ width: '200px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },,
     {
@@ -425,13 +425,13 @@ export default function TechCompanyInfo() {
     {
       key: '12',
       label: '移动电话',
-      children: <Form.Item name="GongXin_MonthlyReport_170"><Input disabled={disableVar} size='large' style={{ width: '200px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_36"><Input disabled={disableVar} size='large' style={{ width: '200px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },,
     {
       key: '13',
       label: '固定电话',
-      children: <Form.Item name="GongXin_MonthlyReport_171"><Input disabled={disableVar} size='large' style={{ width: '200px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_33"><Input disabled={disableVar} size='large' style={{ width: '200px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
   ];
