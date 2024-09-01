@@ -118,7 +118,7 @@ export default function YiBaoPeopleInfo() {
     {
       key: '8',
       label: '邮政编码',
-      children: <Form.Item name="yibao_people_7"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

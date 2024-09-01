@@ -89,7 +89,7 @@ export default function CompanyTotalSalary() {
       people_this_year: <Form.Item name="Statisitc_salary_5"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       people_last_year: <Form.Item name="Statisitc_salary_6"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '从业人员工资总额',
-      salary_this_year: <Form.Item name="Statisitc_salary_7"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_this_year: <Form.Item name="company_employee_11"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_last_year: <Form.Item name="Statisitc_salary_8"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {

@@ -100,7 +100,7 @@ export default function HospitalHelpInfos() {
     {
       key: '2',
       label: '单位编号',
-      children: <Form.Item name="yibao_securityinfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

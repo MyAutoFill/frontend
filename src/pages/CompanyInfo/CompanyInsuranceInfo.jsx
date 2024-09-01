@@ -86,7 +86,7 @@ export default function CompanyInsuranceInfo() {
     {
       key: '4',
       label: '参保电子邮箱',
-      children: <Form.Item name="company_insurance_3"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_35"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -104,7 +104,7 @@ export default function CompanyInsuranceInfo() {
     {
       key: '7',
       label: '单位专管员电话',
-      children: <Form.Item name="company_insurance_6"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_31"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

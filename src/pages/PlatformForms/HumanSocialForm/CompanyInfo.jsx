@@ -114,7 +114,7 @@ export default function HumanSocialCompanyInfo() {
     {
       key: '2',
       label: '证件类型',
-      children: <Form.Item name="HumanSocial_CompanyInfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_27"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
