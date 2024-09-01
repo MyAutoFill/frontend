@@ -346,7 +346,7 @@ export default function FinanceStatusInfo() {
     {
       key: '46',
       label: '其中：实收资本',
-      children: <Form.Item name="FinanceStatusInfo_46"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_32"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -778,7 +778,7 @@ export default function FinanceStatusInfo() {
     {
       key: '118',
       label: '应付职工薪酬（本期贷方累计发生额）',
-      children: <Form.Item name="FinanceStatusInfo_118"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_23"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
