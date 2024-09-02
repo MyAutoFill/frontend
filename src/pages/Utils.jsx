@@ -4,7 +4,7 @@ export function reqBasicData() {
     return request('/api/load_data', {
         method: 'POST',
         data: {
-        date: '2024-08'
+            date: '2024-09'
         }
     });
 }

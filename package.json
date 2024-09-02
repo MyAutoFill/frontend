@@ -53,6 +53,7 @@
     "antd": "^5.13.2",
     "antd-style": "^3.6.1",
     "antd3": "npm:antd@3",
+    "bignumber.js": "^9.1.2",
     "classnames": "^2.5.1",
     "lodash": "^4.17.21",
     "moment": "^2.30.1",

@@ -5,6 +5,7 @@ import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandA
 import { request } from 'umi';
 import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { BigNumber } from 'bignumber.js'
 
 
 export default function CompanyRunningSumInfo() {
@@ -25,7 +26,9 @@ export default function CompanyRunningSumInfo() {
           const new_res = JSON.parse(JSON.stringify(res));
           Object.keys(config).forEach(key => {
             if (key in new_res) {
-              new_res[key] = (parseFloat(new_res[key]) * config[key]).toString(); 
+              let a = BigNumber(new_res[key])
+              let b = BigNumber(config[key])
+              new_res[key] = a.times(b).toString();
             }
           });
           form.setFieldsValue(new_res);
@@ -87,7 +90,7 @@ export default function CompanyRunningSumInfo() {
     {
       key: '3',
       label: '营业成本',
-      children: <Form.Item name="company_runningsum_2"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Tech_EcoInfo_5"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -280,13 +283,15 @@ export default function CompanyRunningSumInfo() {
       const new_res = JSON.parse(JSON.stringify(values));
       Object.keys(config).forEach(key => {
         if (key in new_res) {
-          new_res[key] = (parseFloat(new_res[key]) / config[key]).toString(); 
+          let a = BigNumber(new_res[key])
+          let b = BigNumber(config[key])
+          new_res[key] = a.div(b).toString();
         }
       });
       request('/api/save', {
         method: 'POST',
         data: {
-          date: '2024-08',
+          date: '2024-09',
           data: new_res
         }
       })

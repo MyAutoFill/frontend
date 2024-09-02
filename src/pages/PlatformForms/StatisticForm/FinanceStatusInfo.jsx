@@ -4,6 +4,7 @@ import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
+import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 
 
 export default function FinanceStatusInfo() {
@@ -13,14 +14,20 @@ export default function FinanceStatusInfo() {
   }, []);
 
   const load_data = () => {
-    request('/api/load_data', {
-      method: 'POST',
-      data: {
-        date: '2024-08'
-      }
-    })
+    reqBasicData()
       .then(function (res) {
-        form.setFieldsValue(res);
+        reqRatioConfig('FinanceStatusInfo')
+        .then(function (config) {
+          const new_res = JSON.parse(JSON.stringify(res));
+          Object.keys(config).forEach(key => {
+            if (key in new_res) {
+              let a = BigNumber(new_res[key])
+              let b = BigNumber(config[key])
+              new_res[key] = a.times(b).toString();
+            }
+          });
+          form.setFieldsValue(new_res);
+        })
       })
   }
 
@@ -118,7 +125,7 @@ export default function FinanceStatusInfo() {
     {
       key: '8',
       label: '本年',
-      children: <Form.Item name="FinanceStatusInfo_8"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Tech_EcoInfo_3"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -832,12 +839,25 @@ export default function FinanceStatusInfo() {
   ];
 
   const onFinish = (values) => {
-    request('/api/save', {
-      method: 'POST',
-      data: {
-        date: '2024-08',
-        data: values
-      }
+    request('/api/get_ratio_config?table=FinanceStatusInfo', {
+      method: 'GET',
+    })
+    .then(function (config) {
+      const new_res = JSON.parse(JSON.stringify(values));
+      Object.keys(config).forEach(key => {
+        if (key in new_res) {
+          let a = BigNumber(new_res[key])
+          let b = BigNumber(config[key])
+          new_res[key] = a.div(b).toString();
+        }
+      });
+      request('/api/save', {
+        method: 'POST',
+        data: {
+          date: '2024-09',
+          data: new_res
+        }
+      })
     })
   };
   

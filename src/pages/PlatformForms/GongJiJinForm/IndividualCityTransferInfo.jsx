@@ -4,6 +4,7 @@ import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, F
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
+import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 
 
 export default function IndividualCityTransferInfo() {
@@ -20,14 +21,20 @@ export default function IndividualCityTransferInfo() {
   }, []);
 
   const load_data = () => {
-    request('/api/load_data', {
-      method: 'POST',
-      data: {
-        date: '2024-08'
-      }
-    })
+    reqBasicData()
       .then(function (res) {
-        form.setFieldsValue(res);
+        reqRatioConfig('IndividualCityTransferInfo')
+        .then(function (config) {
+          const new_res = JSON.parse(JSON.stringify(res));
+          Object.keys(config).forEach(key => {
+            if (key in new_res) {
+              let a = BigNumber(new_res[key])
+              let b = BigNumber(config[key])
+              new_res[key] = a.times(b).toString();
+            }
+          });
+          form.setFieldsValue(new_res);
+        })
       })
   }
 
@@ -173,12 +180,25 @@ export default function IndividualCityTransferInfo() {
   ];
 
   const onFinish = (values) => {
-    request('/api/save', {
-      method: 'POST',
-      data: {
-        date: '2024-08',
-        data: values
-      }
+    request('/api/get_ratio_config?table=IndividualCityTransferInfo', {
+      method: 'GET',
+    })
+    .then(function (config) {
+      const new_res = JSON.parse(JSON.stringify(values));
+      Object.keys(config).forEach(key => {
+        if (key in new_res) {
+          let a = BigNumber(new_res[key])
+          let b = BigNumber(config[key])
+          new_res[key] = a.div(b).toString();
+        }
+      });
+      request('/api/save', {
+        method: 'POST',
+        data: {
+          date: '2024-09',
+          data: new_res
+        }
+      })
     })
   };
   
