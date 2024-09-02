@@ -266,7 +266,7 @@ export default function TechCompanyInfo() {
     {
       index_name: '主营业务成本',
       code: <Form.Item name="GongXin_MonthlyReport_115"><Input disabled={disableVar} size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={'2050'}></Input></Form.Item>,
-      total_this_year: <Form.Item name="GongXin_MonthlyReport_116"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      total_this_year: <Form.Item name="company_runningsum_33"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_year: <Form.Item name="GongXin_MonthlyReport_117"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_term: <Form.Item name="GongXin_MonthlyReport_118"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       compare_same: <Form.Item name="GongXin_MonthlyReport_119"><Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
@@ -326,7 +326,7 @@ export default function TechCompanyInfo() {
       key: '24',
       index_name: '平均用工人数',
       code: <Form.Item name="GongXin_MonthlyReport_150"><Input disabled={disableVar} size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={'2112'}></Input></Form.Item>,
-      total_this_year: <Form.Item name="GongXin_MonthlyReport_151"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      total_this_year: <Form.Item name="FinanceStatusInfo_131"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_year: <Form.Item name="GongXin_MonthlyReport_152"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       total_last_term: <Form.Item name="GongXin_MonthlyReport_153"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       compare_same: <Form.Item name="GongXin_MonthlyReport_154"><Input disabled={disableVar} addonAfter='%' size='large' style={{ width: '100px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,

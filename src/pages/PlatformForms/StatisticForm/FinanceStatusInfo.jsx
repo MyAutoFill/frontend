@@ -92,6 +92,24 @@ export default function FinanceStatusInfo() {
       span: 1
     },
     {
+      key: '127',
+      label: '产成品',
+      children: <Form.Item name="FinanceStatusInfo_127"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '128',
+      label: '本年',
+      children: <Form.Item name="FinanceStatusInfo_127_1"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '129',
+      label: '上年同期',
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
       key: '4',
       label: '二、期末资产负债',
       children: <Form.Item name="FinanceStatusInfo_4"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -398,6 +416,78 @@ export default function FinanceStatusInfo() {
       span: 1
     },
     {
+      key: '133',
+      label: '补贴收入',
+      children: <Form.Item name="FinanceStatusInfo_133"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '134',
+      label: '本年',
+      children: <Form.Item name="FinanceStatusInfo_134"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '135',
+      label: '上年同期',
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '136',
+      label: '主营业务收入',
+      children: <Form.Item name="FinanceStatusInfo_136"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '137',
+      label: '本年',
+      children: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '138',
+      label: '上年同期',
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '140',
+      label: '主营业务成本',
+      children: <Form.Item name="company_runningsum_33"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '141',
+      label: '本年',
+      children: <Form.Item name="company_runningsum_33"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '142',
+      label: '上年同期',
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '143',
+      label: '主营业务税金及附加',
+      children: <Form.Item name="company_runningsum_4"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '144',
+      label: '本年',
+      children: <Form.Item name="company_runningsum_4"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '145',
+      label: '上年同期',
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
       key: '55',
       label: '营业成本',
       children: <Form.Item name="company_runningsum_2"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -436,7 +526,7 @@ export default function FinanceStatusInfo() {
     {
       key: '61',
       label: '销售费用',
-      children: <Form.Item name="FinanceStatusInfo_61"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_5"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -742,7 +832,7 @@ export default function FinanceStatusInfo() {
     {
       key: '112',
       label: '所得税费用',
-      children: <Form.Item name="FinanceStatusInfo_112"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_21"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -825,6 +915,24 @@ export default function FinanceStatusInfo() {
     },
     {
       key: '126',
+      label: '上年同期',
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '130',
+      label: '平均用工人数',
+      children: <Form.Item name="FinanceStatusInfo_130"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '131',
+      label: '本年',
+      children: <Form.Item name="FinanceStatusInfo_131"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '132',
       label: '上年同期',
       children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1

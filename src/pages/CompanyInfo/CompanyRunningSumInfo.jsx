@@ -85,15 +85,21 @@ export default function CompanyRunningSumInfo() {
       span: 1.5
     },
     {
-      key: '3',
+      key: '2',
       label: '营业成本',
       children: <Form.Item name="company_runningsum_2"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      key: '2',
+      key: '3',
       label: '-- 其中：主营业务收入',
       children: <Form.Item name="company_runningsum_3"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '31',
+      label: '-- 其中：主营业务成本',
+      children: <Form.Item name="company_runningsum_33"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
