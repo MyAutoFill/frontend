@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 
 
-export default function TechCompanyInfo() {
+export default function CompanyDevelopmentInfo() {
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)

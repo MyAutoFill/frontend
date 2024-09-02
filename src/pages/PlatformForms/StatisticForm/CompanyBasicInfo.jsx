@@ -271,7 +271,7 @@ export default function StatisticCompanyBasicInfo() {
     {
       key: '17',
       label: '营业收入',
-      children: <Form.Item name="Statistic_CompanyInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

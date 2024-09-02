@@ -8,7 +8,7 @@ import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { BigNumber } from 'bignumber.js'
 
 
-export default function TechCompanyInfo() {
+export default function CompanyEcoInfo() {
 
   const peopleSearchOnChange = (value) => {
     console.log(`selected ${value}`);
@@ -156,7 +156,7 @@ export default function TechCompanyInfo() {
     {
       key: '11',
       label: '数量',
-      children: <Form.Item name="Tech_EcoInfo_5"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_1"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -462,7 +462,7 @@ export default function TechCompanyInfo() {
     {
       key: '62',
       label: '数量',
-      children: <Form.Item name="Tech_EcoInfo_39"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_5"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -755,7 +755,7 @@ export default function TechCompanyInfo() {
     {
       key: '110',
       label: '数量',
-      children: <Form.Item name="Tech_EcoInfo_71"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_21"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },  
     {

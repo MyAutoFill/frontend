@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 
 
-export default function TechCompanyInfo() {
+export default function CompanyTaxInfo() {
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -82,6 +82,350 @@ export default function TechCompanyInfo() {
 
   const data = [
     {
+      key: '50',
+      category: '利润',
+      project_name: '主营业务收入',
+      code: <Form.Item name="Tax_companyInfo_250"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_251"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_252"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_253"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_254"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '51',
+      category: '利润',
+      project_name: '主营业务成本',
+      code: <Form.Item name="Tax_companyInfo_255"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_33"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_256"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_257"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_258"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_259"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '52',
+      category: '利润',
+      project_name: '主营业务税金及附加',
+      code: <Form.Item name="Tax_companyInfo_260"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_4"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_261"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_262"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_263"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_264"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '53',
+      category: '利润',
+      project_name: '其他业务利润',
+      code: <Form.Item name="Tax_companyInfo_265"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_13"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_267"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_268"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_269"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_270"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '54',
+      category: '利润',
+      project_name: '营业费用',
+      code: <Form.Item name="Tax_companyInfo_271"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_2"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_273"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_274"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_275"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_276"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '55',
+      category: '利润',
+      project_name: '管理费用',
+      code: <Form.Item name="Tax_companyInfo_277"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_6"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_278"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_279"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_280"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_281"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '56',
+      category: '利润',
+      project_name: '财务费用',
+      code: <Form.Item name="Tax_companyInfo_282"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_8"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_283"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_284"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_285"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_286"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '57',
+      category: '利润',
+      project_name: '投资收益',
+      code: <Form.Item name="Tax_companyInfo_287"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_12"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_288"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_289"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_290"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_291"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '58',
+      category: '利润',
+      project_name: '补贴收入',
+      code: <Form.Item name="Tax_companyInfo_292"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="FinanceStatusInfo_134"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_293"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_294"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_295"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_296"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '59',
+      category: '利润',
+      project_name: '营业外收入',
+      code: <Form.Item name="Tax_companyInfo_298"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_15"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_298"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_299"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_300"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_301"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '60',
+      category: '利润',
+      project_name: '营业外支出',
+      code: <Form.Item name="Tax_companyInfo_302"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_16"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_303"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_304"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_305"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_306"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '61',
+      category: '利润',
+      project_name: '所得税',
+      code: <Form.Item name="Tax_companyInfo_307"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_21"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_308"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_309"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_310"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_311"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '62',
+      category: '利润',
+      project_name: '出售、处置部门或被投资单位所得收益',
+      code: <Form.Item name="Tax_companyInfo_312"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_313"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_314"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_315"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_316"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_317"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '63',
+      category: '利润',
+      project_name: '自然灾害发生的损失',
+      code: <Form.Item name="Tax_companyInfo_318"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_319"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_320"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_321"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_322"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_323"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '64',
+      category: '利润',
+      project_name: '会计政策变更增加(或减少)利润总额',
+      code: <Form.Item name="Tax_companyInfo_324"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_325"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_326"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_327"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_328"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_329"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '65',
+      category: '利润',
+      project_name: '会计估计变更增加(或减少)利润总额',
+      code: <Form.Item name="Tax_companyInfo_330"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_331"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_332"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_333"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_334"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_335"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '66',
+      category: '利润',
+      project_name: '债务重组损失',
+      code: <Form.Item name="Tax_companyInfo_336"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_337"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_338"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_339"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_340"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_341"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '80',
+      category: '利润',
+      project_name: '营业收入',
+      code: <Form.Item name="Tax_companyInfo_342"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_1"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_344"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_345"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_346"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_347"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '67',
+      category: '利润',
+      project_name: '营业成本',
+      code: <Form.Item name="Tax_companyInfo_348"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_2"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_349"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_350"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_351"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_352"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '68',
+      category: '利润',
+      project_name: '销售费用',
+      code: <Form.Item name="Tax_companyInfo_353"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_5"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_354"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_355"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_356"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_357"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '69',
+      category: '利润',
+      project_name: '研发费用',
+      code: <Form.Item name="Tax_companyInfo_358"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_7"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_359"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_360"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_361"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_362"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '70',
+      category: '利润',
+      project_name: '利息费用',
+      code: <Form.Item name="Tax_companyInfo_363"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="FinanceStatusInfo_76"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_365"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_366"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_367"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_368"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '71',
+      category: '利润',
+      project_name: '利息收入',
+      code: <Form.Item name="Tax_companyInfo_369"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="FinanceStatusInfo_73"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_370"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_371"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_372"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_373"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '72',
+      category: '利润',
+      project_name: '其他收益',
+      code: <Form.Item name="Tax_companyInfo_374"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_13"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_375"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_376"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_377"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_378"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '73',
+      category: '利润',
+      project_name: '对联营企业和合营企业的投资收益',
+      code: <Form.Item name="Tax_companyInfo_379"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_380"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_381"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_382"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_383"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_384"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '74',
+      category: '利润',
+      project_name: '以摊余成本计量的金融资产终止确认收益',
+      code: <Form.Item name="Tax_companyInfo_385"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_386"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_387"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_388"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_389"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_390"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '75',
+      category: '利润',
+      project_name: '净敞口套期收益',
+      code: <Form.Item name="Tax_companyInfo_391"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_25"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_393"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_394"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_395"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_396"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '76',
+      category: '利润',
+      project_name: '公允价值波动收益',
+      code: <Form.Item name="Tax_companyInfo_397"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_11"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_398"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_399"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_400"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_401"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '77',
+      category: '利润',
+      project_name: '信用减值损失',
+      code: <Form.Item name="Tax_companyInfo_402"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_10"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_403"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_404"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_405"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_406"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '78',
+      category: '利润',
+      project_name: '资产减值损失',
+      code: <Form.Item name="Tax_companyInfo_407"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_9"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_408"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_409"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_410"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_411"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '79',
+      category: '利润',
+      project_name: '资产处置收益',
+      code: <Form.Item name="Tax_companyInfo_412"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }} defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="company_runningsum_27"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_413"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_414"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_415"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_416"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+
+
+
+    {
       key: '1',
       category: '销售额',
       project_name: '（一）按适用税率计税销售额',
@@ -141,11 +485,11 @@ export default function TechCompanyInfo() {
       category: '销售额',      
       project_name: '其中：纳税检查调整的销售额',
       code: <Form.Item name="Tax_companyInfo_30"><Input disabled={disableVar} size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_month: <Form.Item name="Tax_companyInfo_31"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="Tax_companyInfo_32"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      immediate_this_month: <Form.Item name="Tax_companyInfo_33"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      immediate_this_year: <Form.Item name="Tax_companyInfo_34"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      compare_round: <Form.Item name="Tax_companyInfo_35"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="Tax_companyInfo_19"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="Tax_companyInfo_20"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_month: <Form.Item name="Tax_companyInfo_21"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      immediate_this_year: <Form.Item name="Tax_companyInfo_22"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      compare_round: <Form.Item name="Tax_companyInfo_23"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
       key: '7',
@@ -569,136 +913,22 @@ export default function TechCompanyInfo() {
                   onCell={(row, index) => {
                     // 销售额
                     if (index === 0) {
+                      return { rowSpan: 31 }
+                    }else if (index == 31){
                       return { rowSpan: 10 }
-                    }
-                    if (index === 1) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 2) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 3) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 4) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 5) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 6) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 7) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 8) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 9) {
-                      return { rowSpan: 0 }
-                    }
-
-                    // 税款计算
-                    if (index === 10) {
+                    }else if (index == 41){
                       return { rowSpan: 14 }
-                    }
-                    if (index === 11) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 12) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 13) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 14) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 15) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 16) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 17) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 18) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 19) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 20) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 21) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 22) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 23) {
-                      return { rowSpan: 0 }
-                    }
-
-                    // 税款缴纳
-                    if (index === 24) {
+                    }else if (index ==55){
                       return { rowSpan: 14 }
-                    }
-                    if (index === 25) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 26) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 27) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 28) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 29) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 30) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 31) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 32) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 33) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 34) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 35) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 36) {
-                      return { rowSpan: 0 }
-                    }
-                    if (index === 37) {
-                      return { rowSpan: 0 }
-                    }
-                    
-                    // 附加税费
-                    if (index === 38) {
+                    }else if (index == 69){
                       return { rowSpan: 3 }
-                    }
-                    if (index === 39) {
+                    }else if (index == 72){
+                      return { rowSpan: 1 }
+                    }else{
                       return { rowSpan: 0 }
                     }
-                    if (index === 40) {
-                      return { rowSpan: 0 }
-                    }
-                  }
-                }/>
+                  }}
+                />
                 <Column title="项目名" dataIndex="project_name" key="project_name" />
               </ColumnGroup>
               <Column title="栏次" dataIndex="code" key="code" />
