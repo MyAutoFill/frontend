@@ -7,7 +7,7 @@ import { request } from 'umi';
 import { useEffect } from 'react';
 
 
-export default function TechCompanyInfo() {
+export default function InfoTechMonthlyForm() {
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)

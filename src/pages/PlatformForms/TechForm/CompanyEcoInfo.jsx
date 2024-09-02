@@ -6,7 +6,7 @@ import { request } from 'umi';
 import { useEffect } from 'react';
 
 
-export default function TechCompanyInfo() {
+export default function CompanyEcoInfo() {
 
   const peopleSearchOnChange = (value) => {
     console.log(`selected ${value}`);

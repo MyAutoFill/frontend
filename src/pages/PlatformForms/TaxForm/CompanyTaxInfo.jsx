@@ -7,7 +7,7 @@ import { request } from 'umi';
 import { useEffect } from 'react';
 
 
-export default function TechCompanyInfo() {
+export default function CompanyTaxInfo() {
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -261,10 +261,6 @@ export default function TechCompanyInfo() {
       immediate_this_year: <Form.Item name="Tax_companyInfo_340"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       compare_round: <Form.Item name="Tax_companyInfo_341"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '150px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
-
-
-
-
     {
       key: '80',
       category: '利润',
