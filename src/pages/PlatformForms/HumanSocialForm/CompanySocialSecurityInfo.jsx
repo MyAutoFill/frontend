@@ -237,6 +237,7 @@ export default function CompanySocialSecurityInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

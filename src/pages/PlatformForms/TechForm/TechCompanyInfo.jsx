@@ -700,6 +700,7 @@ export default function TechCompanyInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

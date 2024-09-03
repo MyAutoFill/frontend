@@ -760,6 +760,7 @@ export default function NewSheBao() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

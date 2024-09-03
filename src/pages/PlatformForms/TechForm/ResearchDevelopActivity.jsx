@@ -1755,6 +1755,7 @@ export default function ResearchDevelopActivity() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

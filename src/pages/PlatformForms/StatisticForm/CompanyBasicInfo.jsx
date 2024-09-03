@@ -745,6 +745,7 @@ export default function StatisticCompanyBasicInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

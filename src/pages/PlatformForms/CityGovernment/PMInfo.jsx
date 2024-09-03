@@ -216,6 +216,7 @@ export default function PMInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

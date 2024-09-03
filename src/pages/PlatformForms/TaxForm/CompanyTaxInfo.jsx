@@ -965,6 +965,7 @@ export default function CompanyTaxInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

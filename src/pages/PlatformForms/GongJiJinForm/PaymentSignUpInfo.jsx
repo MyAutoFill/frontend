@@ -225,6 +225,7 @@ export default function PaymentSignUpInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

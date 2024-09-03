@@ -212,6 +212,7 @@ export default function JoinedSecurityInfo() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }

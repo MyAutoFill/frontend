@@ -221,7 +221,8 @@ export default function CompanyInsuranceInfo() {
               position: 'absolute',
               right: 0,
               bottom: 210
-            }}
+              }}
+              htmlType='submit'
             onClick={
               SaveSuccess
             }

@@ -504,6 +504,7 @@ export default function InfoTechMonthlyForm() {
                 right: 0,
                 bottom: 210
               }}
+              htmlType='submit'
               onClick={
                 SaveSuccess
               }
