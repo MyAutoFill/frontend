@@ -38,6 +38,10 @@ import PeopleInfo from '../PlatformForms/YiBaoForm/PeopleInfo'
 import YiBaoCompanyInfo from '../PlatformForms/YiBaoForm/YiBaoCompanyInfo'
 import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfos'
 
+
+import PropertyDebt from '../PreviewPages/PropertyDebt';
+
+
 export default function PreviewPage() {
 
   const [selectedKey, setSelectedKey] = useState('1');
@@ -257,7 +261,11 @@ export default function PreviewPage() {
 
     '19': <IndividualAccountInfo />,
     '20': <IndividualCityTransferInfo />,
-    '21': <PaymentSignUpInfo />,
+
+
+    '21': <PropertyDebt />,
+
+
     '22': <PersonalPaymentDetails />,
 
     '23': <HospitalHelpInfos />,
@@ -290,7 +298,7 @@ export default function PreviewPage() {
               width: 320,
             }}
             defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
+            defaultOpenKeys={['1']}
             mode="inline"
             items={menus}
             onSelect={(key) => {

@@ -37,6 +37,9 @@ import CompanySecurityInfo from '../PlatformForms/YiBaoForm/CompanySecurityInfo'
 import PeopleInfo from '../PlatformForms/YiBaoForm/PeopleInfo'
 import YiBaoCompanyInfo from '../PlatformForms/YiBaoForm/YiBaoCompanyInfo'
 import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfos'
+import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
+import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
+import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
 
 export default function Fill() {
 
@@ -48,34 +51,24 @@ export default function Fill() {
     },
     {
       key: 'platform1',
-      label: '人社局',
+      label: '税务局',
       children: [
         {
-          key: 'g1',
-          type: 'group',
-          children: [
-            {
-              key: '1',
-              label: '单位就业登记信息',
-            },
-            {
-              key: '2',
-              label: '以工代训补贴申领信息',
-            },
-            {
-              key: '3',
-              label: '新增社保参保人员信息',
-            },
-            {
-              key: '4',
-              label: '单位参保信息',
-            },
-            {
-              key: '5',
-              label: '就业需求信息',
-            }
-          ],
+          key: '1',
+          label: '单位税务信息',
         },
+        {
+          key: '2',
+          label: '利润表',
+        },
+        {
+          key: '3',
+          label: '资产负债表',
+        },
+        {
+          key: '4',
+          label: '现金流量表',
+        }
       ],
     },
     {
@@ -284,25 +277,46 @@ export default function Fill() {
     },
     {
       key: 'platform12',
-      label: '税务局',
+      label: '人社局',
       children: [
         {
-          key: '36',
-          label: '单位税务信息',
-        }
+          key: 'g1',
+          type: 'group',
+          children: [
+            {
+              key: '36',
+              label: '单位就业登记信息',
+            },
+            {
+              key: '37',
+              label: '以工代训补贴申领信息',
+            },
+            {
+              key: '38',
+              label: '新增社保参保人员信息',
+            },
+            {
+              key: '39',
+              label: '单位参保信息',
+            },
+            {
+              key: '40',
+              label: '就业需求信息',
+            }
+          ],
+        },
       ],
     },
     {
       type: 'divider',
-    }
+    },
   ];
 
   const pageMap = {
-    '1': <HumanSocialCompanyInfo />,
-    '2': <YiGongDaiXun />,
-    '3': <NewSheBao />,
-    '4': <CompanySocialSecurityInfo />,
-    '5': <JobDemandInfo />,
+    '1': <CompanyTaxInfo />,
+    '2': <BenefitsForm />,
+    '3': <PropertyDebtForm />,
+    '4': <CashFlowForm />,
 
     '6': <StatisticCompanyBasicInfo />,
     '7': <CompanyTotalSalary />,
@@ -343,7 +357,11 @@ export default function Fill() {
     '34': <ProjectBasicInfo />,
     '35': <PMInfo />,
 
-    '36': <CompanyTaxInfo />
+    '36': <HumanSocialCompanyInfo />,
+    '37': <YiGongDaiXun />,
+    '38': <NewSheBao />,
+    '39': <CompanySocialSecurityInfo />,
+    '40': <JobDemandInfo />,
   }
 
   return (
