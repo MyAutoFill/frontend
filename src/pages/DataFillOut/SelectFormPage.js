@@ -21,7 +21,7 @@ export default function SelectFormPage() {
         <span style={{fontSize:'24px'}}><b>点击下列卡片进入平台网站，登录后进入需要填写的表格后进行填充</b></span>
         <div style={{ textAlign: 'center', margin: 'auto' }}>
           <Row>
-            <div onClick={() => clickFunction("https://www.weihai.gov.cn/col/col127216/index.html", "威海市政府")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://www.weihai.gov.cn/col/col127216/index.html", "威海市政府")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{  
@@ -36,7 +36,7 @@ export default function SelectFormPage() {
                 <Meta title="威海市政府" description="https://www.weihai.gov.cn/col/col127216/index.html" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("https://etax.shandong.chinatax.gov.cn:8443/loginb/", "山东省电子税务局")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("https://etax.shandong.chinatax.gov.cn:8443/loginb/") + "&select_name=山东省电子税务局"} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -50,8 +50,8 @@ export default function SelectFormPage() {
               >
                 <Meta title="山东省电子税务局" description="https://etax.shandong.chinatax.gov.cn:8443/loginb/" />
               </Card>
-            </div>
-            <div onClick={() => clickFunction("http://103.239.153.109/sdjyweb/index.action", "山东公共就业人才服务")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            </a>
+            <div onClick={() => clickFunction("http://103.239.153.109/sdjyweb/index.action", "山东公共就业人才服务")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -66,7 +66,7 @@ export default function SelectFormPage() {
                 <Meta title="山东公共就业人才服务" description="http://103.239.153.109/sdjyweb/index.action" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("https://rsjwsfw.weihai.cn/hso/logonDialog_113.jsp", "威海市人力资源和社会保障")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://rsjwsfw.weihai.cn/hso/logonDialog_113.jsp", "威海市人力资源和社会保障")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -81,7 +81,7 @@ export default function SelectFormPage() {
                 <Meta title="威海市人力资源和社会保障" description="https://rsjwsfw.weihai.cn/hso/logonDialog_113.jsp" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("https://whybdwwt.weihai.cn/SmPsc/#/Header/Index", "医保网上申报系统")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://whybdwwt.weihai.cn/SmPsc/#/Header/Index", "医保网上申报系统")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -98,7 +98,7 @@ export default function SelectFormPage() {
             </div>
           </Row>
           <Row>
-            <div onClick={() => clickFunction("https://www.gsxt.gov.cn/index.html", "国家企业信用信息公示系统")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://www.gsxt.gov.cn/index.html", "国家企业信用信息公示系统")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -113,7 +113,7 @@ export default function SelectFormPage() {
                 <Meta title="国家企业信用信息公示系统" description="https://www.gsxt.gov.cn/index.html" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("https://www.whzfgjj.com/whwsyyt", "威海住房公积金管理中心")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://www.whzfgjj.com/whwsyyt", "威海住房公积金管理中心")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -128,7 +128,7 @@ export default function SelectFormPage() {
                 <Meta title="威海住房公积金管理中心" description="https://www.whzfgjj.com/whwsyyt" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("https://pmos.sd.sgcc.com.cn/#/outNet", "山东电力交易平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://pmos.sd.sgcc.com.cn/#/outNet", "山东电力交易平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
             <Card
               hoverable
               style={{
@@ -143,7 +143,7 @@ export default function SelectFormPage() {
               <Meta title="山东电力交易平台" description="https://pmos.sd.sgcc.com.cn/#/outNet" />
             </Card>
             </div>
-            <div onClick={() => clickFunction("https://tyrz.chinatorch.org.cn/hjismp/a/login", "火炬中心业务办理平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://tyrz.chinatorch.org.cn/hjismp/a/login", "火炬中心业务办理平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -158,7 +158,7 @@ export default function SelectFormPage() {
                 <Meta title="火炬中心业务办理平台" description="https://tyrz.chinatorch.org.cn/hjismp/a/login" />
               </Card>
             </div>
-            <div onClick={() => clickFunction("https://ucenter.miit.gov.cn/login.jsp?toUrl=http%3A%2F%2Fxxcyqiye.miit.gov.cn%2F", "信息产业运行监测平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <div onClick={() => clickFunction("https://ucenter.miit.gov.cn/login.jsp?toUrl=http%3A%2F%2Fxxcyqiye.miit.gov.cn%2F", "信息产业运行监测平台")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '30px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
