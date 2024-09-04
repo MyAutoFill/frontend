@@ -737,7 +737,7 @@ export default function CompanyEcoInfo() {
     {
       key: '107',
       label: '数量',
-      children: <Form.Item name="Tech_EcoInfo_69"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="GongShang_property_6"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },  
     {
@@ -1079,7 +1079,7 @@ export default function CompanyEcoInfo() {
     {
       key: '164',
       label: '数量',
-      children: <Form.Item name="Tech_EcoInfo_107"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_26"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },  
     {
