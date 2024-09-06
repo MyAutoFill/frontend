@@ -5,6 +5,8 @@ import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandA
 import { request } from 'umi';
 import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { history } from 'umi';
+import { BigNumber } from 'bignumber.js'
 
 
 export default function IndividualCityTransferInfo() {
@@ -274,6 +276,7 @@ export default function IndividualCityTransferInfo() {
                 right: 0, 
                 bottom: 0,
               }}
+              onClick={() => {history.push('/input?tab=4');}}
             >立即填报</Button>
           </FloatButton.Group>
         </Form>
