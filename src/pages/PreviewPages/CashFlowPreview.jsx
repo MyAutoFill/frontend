@@ -22,7 +22,7 @@ import { useEffect, useState } from "react";
 import { request } from "umi";
 const { Column, ColumnGroup } = Table;
 
-export default function CompanyTaxInfo() {
+export default function CashFlow() {
   const [disableVar, setDisableVar] = useState(false);
   const [defaultOpen, setDefaultOpen] = useState(true);
   const [messageApi, contextHolder] = message.useMessage();
@@ -33,7 +33,7 @@ export default function CompanyTaxInfo() {
 
   const load_data = () => {
     reqBasicData().then(function (res) {
-      reqRatioConfig("CompanyTaxInfo").then(function (config) {
+      reqRatioConfig("CashFlow").then(function (config) {
         const new_res = JSON.parse(JSON.stringify(res));
         Object.keys(config).forEach((key) => {
           if (key in new_res) {
@@ -92,7 +92,7 @@ export default function CompanyTaxInfo() {
   };
 
   const onFinish = (values) => {
-    request("/api/get_ratio_config?table=CompanyTaxInfo", {
+    request("/api/get_ratio_config?table=CashFlow", {
       method: "GET",
     }).then(function (config) {
       const new_res = JSON.parse(JSON.stringify(values));
@@ -116,7 +116,7 @@ export default function CompanyTaxInfo() {
     {
       key: "1",
       project_name: (
-        <span style={{ fontWeight: "600" }}>一.经营活动产生的晚金流量：</span>
+        <span style={{ fontWeight: "600" }}>一.经营活动产生的现金流量：</span>
       ),
       code: "",
       money: "",
@@ -128,12 +128,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "1",
       money: (
-        <Form.Item name="money_1">
+        <Form.Item name="cash_flow_1">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -144,12 +144,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "30px" }}>收到的税费返还</div>,
       code: "2",
       money: (
-        <Form.Item name="money_2">
+        <Form.Item name="cash_flow_2">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -164,12 +164,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "3",
       money: (
-        <Form.Item name="money_3">
+        <Form.Item name="cash_flow_3">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -180,12 +180,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "60px" }}>现金流入小计</div>,
       code: "4",
       money: (
-        <Form.Item name="money_4">
+        <Form.Item name="cash_flow_46">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -198,12 +198,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "5",
       money: (
-        <Form.Item name="money_5">
+        <Form.Item name="cash_flow_4">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -218,12 +218,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "6",
       money: (
-        <Form.Item name="money_6">
+        <Form.Item name="cash_flow_5">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -234,12 +234,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "30px" }}>支付的各项税费</div>,
       code: "7",
       money: (
-        <Form.Item name="money_7">
+        <Form.Item name="cash_flow_6">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -249,17 +249,17 @@ export default function CompanyTaxInfo() {
       key: "9",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          支付的其他与经营活动有美的现金
+          支付的其他与经营活动有关的现金
         </div>
       ),
       code: "8",
       money: (
-        <Form.Item name="money_8">
+        <Form.Item name="cash_flow_7">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -270,12 +270,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "60px" }}>现金流出小计</div>,
       code: "9",
       money: (
-        <Form.Item name="money_9">
+        <Form.Item name="cash_flow_70">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -288,12 +288,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "10",
       money: (
-        <Form.Item name="money_10">
+        <Form.Item name="cash_flow_47">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -310,16 +310,16 @@ export default function CompanyTaxInfo() {
     {
       key: "13",
       project_name: (
-        <div style={{ paddingLeft: "30px" }}>收回投密所收到的现金</div>
+        <div style={{ paddingLeft: "30px" }}>收回投资所收到的现金</div>
       ),
       code: "11",
       money: (
-        <Form.Item name="money_11">
+        <Form.Item name="cash_flow_8">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -328,16 +328,16 @@ export default function CompanyTaxInfo() {
     {
       key: "14",
       project_name: (
-        <div style={{ paddingLeft: "30px" }}>取得投演收益所收到的现金</div>
+        <div style={{ paddingLeft: "30px" }}>取得投资收益所收到的现金</div>
       ),
       code: "12",
       money: (
-        <Form.Item name="money_12">
+        <Form.Item name="cash_flow_9">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -347,17 +347,17 @@ export default function CompanyTaxInfo() {
       key: "15",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          处置国定资产.无形资产和县他长期资产所收回的号金净额
+          处置固定资产.无形资产和其他长期资产所收回的现金净额
         </div>
       ),
       code: "13",
       money: (
-        <Form.Item name="money_13">
+        <Form.Item name="cash_flow_10">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -366,16 +366,16 @@ export default function CompanyTaxInfo() {
     {
       key: "16",
       project_name: (
-        <div style={{ paddingLeft: "30px" }}>收到其帖与投密活动有关的现金</div>
+        <div style={{ paddingLeft: "30px" }}>收到其他与投资活动有关的现金</div>
       ),
       code: "14",
       money: (
-        <Form.Item name="money_14">
+        <Form.Item name="cash_flow_11">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -386,12 +386,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "60px" }}>现金流入小计</div>,
       code: "15",
       money: (
-        <Form.Item name="money_15">
+        <Form.Item name="cash_flow_46">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -401,17 +401,17 @@ export default function CompanyTaxInfo() {
       key: "18",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          购建国定资产.无形淘产和其的长期资产所支村的晚金
+          购建固定资产.无形资产和其他长期资产所支付的现金
         </div>
       ),
       code: "16",
       money: (
-        <Form.Item name="money_16">
+        <Form.Item name="cash_flow_12">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -422,12 +422,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "30px" }}>投资所支付的现金</div>,
       code: "17",
       money: (
-        <Form.Item name="money_17">
+        <Form.Item name="cash_flow_13">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -437,17 +437,17 @@ export default function CompanyTaxInfo() {
       key: "20",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          支忖的其油与投资活动有关的现金
+          支付的其他与投资活动有关的现金
         </div>
       ),
       code: "18",
       money: (
-        <Form.Item name="money_18">
+        <Form.Item name="cash_flow_14">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -455,15 +455,15 @@ export default function CompanyTaxInfo() {
     },
     {
       key: "22",
-      project_name: <div style={{ paddingLeft: "60px" }}>现会流出小计</div>,
+      project_name: <div style={{ paddingLeft: "60px" }}>现金流出小计</div>,
       code: "19",
       money: (
-        <Form.Item name="money_19">
+        <Form.Item name="cash_flow_70">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -476,12 +476,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "20",
       money: (
-        <Form.Item name="money_20">
+        <Form.Item name="cash_flow_69">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -498,16 +498,16 @@ export default function CompanyTaxInfo() {
     {
       key: "23",
       project_name: (
-        <div style={{ paddingLeft: "30px" }}>吸收投资所收则的现金</div>
+        <div style={{ paddingLeft: "30px" }}>吸收投资所收到的现金</div>
       ),
       code: "21",
       money: (
-        <Form.Item name="money_21">
+        <Form.Item name="cash_flow_15">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -515,15 +515,15 @@ export default function CompanyTaxInfo() {
     },
     {
       key: "24",
-      project_name: <div style={{ paddingLeft: "30px" }}>倡款所收到的观金</div>,
+      project_name: <div style={{ paddingLeft: "30px" }}>借款所收到的现金</div>,
       code: "22",
       money: (
-        <Form.Item name="money_22">
+        <Form.Item name="cash_flow_16">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -533,17 +533,17 @@ export default function CompanyTaxInfo() {
       key: "25",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          收到的目油与解资活动有关的现金
+          收到的其他与筹资活动有关的现金
         </div>
       ),
       code: "23",
       money: (
-        <Form.Item name="money_23">
+        <Form.Item name="cash_flow_17">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -554,12 +554,12 @@ export default function CompanyTaxInfo() {
       project_name: <div style={{ paddingLeft: "60px" }}>现金流入小计</div>,
       code: "24",
       money: (
-        <Form.Item name="money_24">
+        <Form.Item name="cash_flow_46">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -568,16 +568,16 @@ export default function CompanyTaxInfo() {
     {
       key: "27",
       project_name: (
-        <div style={{ paddingLeft: "30px" }}>信汪债务所支付的嗅金</div>
+        <div style={{ paddingLeft: "30px" }}>偿还债务所支付的现金</div>
       ),
       code: "25",
       money: (
-        <Form.Item name="money_25">
+        <Form.Item name="cash_flow_18">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -587,17 +587,17 @@ export default function CompanyTaxInfo() {
       key: "28",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          分配股利.利润残偿付利息所支付的现金
+          分配股利.利润或偿付利息所支付的现金
         </div>
       ),
       code: "26",
       money: (
-        <Form.Item name="money_26">
+        <Form.Item name="cash_flow_19">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -607,17 +607,17 @@ export default function CompanyTaxInfo() {
       key: "29",
       project_name: (
         <div style={{ paddingLeft: "30px" }}>
-          支忖的其帖与筹密活动有笑的现金
+          支付的其他与筹资活动有关的现金
         </div>
       ),
       code: "27",
       money: (
-        <Form.Item name="money_27">
+        <Form.Item name="cash_flow_20">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -625,15 +625,15 @@ export default function CompanyTaxInfo() {
     },
     {
       key: "30",
-      project_name: <div style={{ paddingLeft: "60px" }}>现会流出小计</div>,
+      project_name: <div style={{ paddingLeft: "60px" }}>现金流出小计</div>,
       code: "28",
       money: (
-        <Form.Item name="money_28">
+        <Form.Item name="cash_flow_70">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -642,16 +642,16 @@ export default function CompanyTaxInfo() {
     {
       key: "31",
       project_name: (
-        <div style={{ paddingLeft: "30px" }}>帅资活动产生的现金流量净额</div>
+        <div style={{ paddingLeft: "30px" }}>筹资活动产生的现金流量净额</div>
       ),
       code: "29",
       money: (
-        <Form.Item name="money_29">
+        <Form.Item name="cash_flow_72">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -664,12 +664,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "29",
       money: (
-        <Form.Item name="money_29">
+        <Form.Item name="cash_flow_21">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -678,16 +678,16 @@ export default function CompanyTaxInfo() {
     {
       key: "33",
       project_name: (
-        <div style={{ fontWeight: "600" }}>五.现金及現金等价物净增加额</div>
+        <div style={{ fontWeight: "600" }}>五.现金及现金等价物净增加额</div>
       ),
       code: "30",
       money: (
-        <Form.Item name="money_30">
+        <Form.Item name="cash_flow_73">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -718,12 +718,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "31",
       money: (
-        <Form.Item name="money_31">
+        <Form.Item name="GongShang_property_6">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -736,12 +736,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "32",
       money: (
-        <Form.Item name="money_32">
+        <Form.Item name="cash_flow_23">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -750,16 +750,16 @@ export default function CompanyTaxInfo() {
     {
       key: "39",
       project_name: (
-        <div style={{  paddingLeft: "60px" }}>固定资产折1日</div>
+        <div style={{  paddingLeft: "60px" }}>固定资产折旧</div>
       ),
       code: "33",
       money: (
-        <Form.Item name="money_33">
+        <Form.Item name="cash_flow_24">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -772,12 +772,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "34",
       money: (
-        <Form.Item name="money_34">
+        <Form.Item name="cash_flow_25">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -790,12 +790,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "35",
       money: (
-        <Form.Item name="money_35">
+        <Form.Item name="cash_flow_26">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -804,16 +804,16 @@ export default function CompanyTaxInfo() {
     {
       key: "42",
       project_name: (
-        <div style={{  paddingLeft: "60px" }}>待擁碧用i少(胾:増加)</div>
+        <div style={{  paddingLeft: "60px" }}>待摊费用减少(减:增加)</div>
       ),
       code: "36",
       money: (
-        <Form.Item name="money_36">
+        <Form.Item name="cash_flow_27">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -826,12 +826,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "37",
       money: (
-        <Form.Item name="money_37">
+        <Form.Item name="cash_flow_28">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -844,12 +844,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "38",
       money: (
-        <Form.Item name="money_38">
+        <Form.Item name="cash_flow_29">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -858,16 +858,16 @@ export default function CompanyTaxInfo() {
     {
       key: "45",
       project_name: (
-        <div style={{  paddingLeft: "60px" }}>固定资产报度损失</div>
+        <div style={{  paddingLeft: "60px" }}>固定资产报废损失</div>
       ),
       code: "39",
       money: (
-        <Form.Item name="money_39">
+        <Form.Item name="cash_flow_30">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -880,12 +880,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "40",
       money: (
-        <Form.Item name="money_40">
+        <Form.Item name="company_runningsum_8">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -894,16 +894,16 @@ export default function CompanyTaxInfo() {
     {
       key: "47",
       project_name: (
-        <div style={{  paddingLeft: "60px" }}>投资损失(藏:收益)</div>
+        <div style={{  paddingLeft: "60px" }}>投资损失(减:收益)</div>
       ),
       code: "41",
       money: (
-        <Form.Item name="money_41">
+        <Form.Item name="cash_flow_32">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -912,16 +912,16 @@ export default function CompanyTaxInfo() {
     {
       key: "48",
       project_name: (
-        <div style={{  paddingLeft: "60px" }}>递延税款贷项(藏:借项)</div>
+        <div style={{  paddingLeft: "60px" }}>递延税款贷项(减:借项)</div>
       ),
       code: "42",
       money: (
-        <Form.Item name="money_42">
+        <Form.Item name="cash_flow_33">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -934,12 +934,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "43",
       money: (
-        <Form.Item name="money_43">
+        <Form.Item name="cash_flow_34">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -952,12 +952,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "44",
       money: (
-        <Form.Item name="money_44">
+        <Form.Item name="cash_flow_35">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -966,16 +966,16 @@ export default function CompanyTaxInfo() {
     {
       key: "51",
       project_name: (
-        <div style={{  paddingLeft: "60px" }}>经营性应付项目的增加(戏:减少)</div>
+        <div style={{  paddingLeft: "60px" }}>经营性应付项目的增加(减减少)</div>
       ),
       code: "45",
       money: (
-        <Form.Item name="money_45">
+        <Form.Item name="cash_flow_36">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -988,12 +988,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "46",
       money: (
-        <Form.Item name="money_46">
+        <Form.Item name="cash_flow_37">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1006,12 +1006,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "47",
       money: (
-        <Form.Item name="money_47">
+        <Form.Item name="cash_flow_47">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1030,12 +1030,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "48",
       money: (
-        <Form.Item name="money_48">
+        <Form.Item name="cash_flow_38">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1048,12 +1048,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "49",
       money: (
-        <Form.Item name="money_49">
+        <Form.Item name="cash_flow_39">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1062,16 +1062,16 @@ export default function CompanyTaxInfo() {
     {
       key: "58",
       project_name: (
-        <div style={{  paddingLeft: "30px" }}>雕资租入固定资产</div>
+        <div style={{  paddingLeft: "30px" }}>融资租入固定资产</div>
       ),
       code: "50",
       money: (
-        <Form.Item name="money_50">
+        <Form.Item name="cash_flow_40">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1090,12 +1090,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "51",
       money: (
-        <Form.Item name="money_51">
+        <Form.Item name="cash_flow_41">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1108,12 +1108,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "52",
       money: (
-        <Form.Item name="money_52">
+        <Form.Item name="cash_flow_42">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1126,12 +1126,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "53",
       money: (
-        <Form.Item name="money_53">
+        <Form.Item name="cash_flow_43">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1144,12 +1144,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "54",
       money: (
-        <Form.Item name="money_54">
+        <Form.Item name="cash_flow_44">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1162,12 +1162,12 @@ export default function CompanyTaxInfo() {
       ),
       code: "55",
       money: (
-        <Form.Item name="money_55">
+        <Form.Item name="cash_flow_73">
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
-            style={{ width: "150px", marginTop: "10px" }}
+            style={{ width: "300px", marginTop: "10px" }}
             defaultValue="0.0"
           ></Input>
         </Form.Item>
@@ -1214,18 +1214,22 @@ export default function CompanyTaxInfo() {
       },
     },
   ];
+
   const items = [
     {
-      key: "1",
-      label: "纳税人名称:",
-      children: "威海东日技研电子有限公司",
+      key: '1',
+      label: '纳税人名称:',
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      span: 1.5
     },
     {
-      key: "2",
-      label: "纳税人识别号:",
-      children: "91371000613752141X",
+      key: '2',
+      label: '纳税人识别号:',
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      span: 1.5
     },
   ];
+
   return (
     <>
       {contextHolder}

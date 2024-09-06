@@ -400,7 +400,7 @@ export default function CashFlowForm() {
     },
     {
       key: '46',
-      project_name: '收到的税费返还',
+      project_name: '现金流入小计',
       code: '46',
       normal_this_month: <Form.Item name="cash_flow_46"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_46"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
@@ -467,13 +467,6 @@ export default function CashFlowForm() {
       code: '55',
       normal_this_month: <Form.Item name="cash_flow_55"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_55"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '56',
-      project_name: '收到其他与投资活动有关的现金',
-      code: '56',
-      normal_this_month: <Form.Item name="cash_flow_56"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_56"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
       key: '57',
@@ -558,7 +551,64 @@ export default function CashFlowForm() {
       code: '68',
       normal_this_month: <Form.Item name="cash_flow_68"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_68"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '69',
+      project_name: '投资活动产生的现金流量净额',
+      code: '69',
+      normal_this_month: <Form.Item name="cash_flow_69"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_69"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '70',
+      project_name: '现金流出小计',
+      code: '70',
+      normal_this_month: <Form.Item name="cash_flow_70"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_70"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '71',
+      project_name: '经营活动产生的现金流量净额',
+      code: '71',
+      normal_this_month: <Form.Item name="cash_flow_71"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_71"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '72',
+      project_name: '筹资活动产生的现金流量净额',
+      code: '72',
+      normal_this_month: <Form.Item name="cash_flow_72"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_72"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '73',
+      project_name: '五.现金及现金等价物净增加额',
+      code: '73',
+      normal_this_month: <Form.Item name="cash_flow_73"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_73"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '74',
+      project_name: '',
+      code: '74',
+      normal_this_month: <Form.Item name="cash_flow_74"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_74"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '75',
+      project_name: '',
+      code: '75',
+      normal_this_month: <Form.Item name="cash_flow_75"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_75"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '76',
+      project_name: '',
+      code: '76',
+      normal_this_month: <Form.Item name="cash_flow_76"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="cash_flow_total_76"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     }
+
   ];
 
   const onFinish = (values) => {
