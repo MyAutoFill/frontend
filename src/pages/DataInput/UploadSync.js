@@ -62,16 +62,23 @@ export default function UploadSyncPage() {
 
   const props = {
     name: 'file',
-    action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
-    headers: {
-      authorization: 'authorization-text',
+    action: '/excelAnalysis/excel/convert',
+    data: {
+      type: 'zcfz'
     },
     onChange(info) {
-      if (info.file.status !== '上传') {
-        console.log(info.file, info.fileList);
-      }
-      if (info.file.status === '完成') {
-        message.success(`${info.file.name} 文件上传成功`);
+      if (info.file.status === 'done') {
+        console.log(info.file.response.data)
+        request('/api/parse_table', {
+          method: 'POST',
+          data: {
+            parse_data: info.file.response.data,
+            type: 'zcfz'
+          }
+        })
+        .then(function (res) {
+          console.log(res)
+        })
       } else if (info.file.status === 'error') {
         message.error(`${info.file.name} 文件上传失败`);
       }
@@ -129,15 +136,6 @@ export default function UploadSyncPage() {
       children: 
         <Upload {...props} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击资产负债表excel文件</Button>
-        </Upload>,
-      span: 3
-    },
-    {
-      key: '4',
-      label: '现金流量表',
-      children: 
-        <Upload {...props} >
-          <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击现金流量表excel文件</Button>
         </Upload>,
       span: 3
     },
