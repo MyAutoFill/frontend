@@ -40,6 +40,8 @@ import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfo
 
 
 import PropertyDebt from '../PreviewPages/PropertyDebt';
+import CashFlowPreview from '../PreviewPages/CashFlowPreview';
+import BenefitsForm from '../PreviewPages/BenefitsFormPreview';
 
 
 export default function PreviewPage() {
@@ -105,16 +107,28 @@ export default function PreviewPage() {
       label: '国家税务局山东省电子税务局',
       children: [
         {
-          key: '20',
+          key: 'platform12_1',
           label: '现金流量表',
         },
 				{
-          key: '21',
+          key: 'platform12_2',
           label: '资产负债表',
         },
 				{
-          key: '22',
+          key: 'platform12_3',
           label: '利润表',
+        },
+        {
+          key: 'platform12_4',
+          label: '现金流量表(适用执行企业会计制度的企业)',
+        },
+				{
+          key: 'platform12_5',
+          label: '资产负债表(适用执行企业会计制度的企业)',
+        },
+				{
+          key: 'platform12_6',
+          label: '利润表(适用执行企业会计制度的企业)',
         }
       ],
     },
@@ -260,13 +274,10 @@ export default function PreviewPage() {
     '18': <JoinedSecurityInfo />,
 
     '19': <IndividualAccountInfo />,
-    '20': <IndividualCityTransferInfo />,
-
-
-    '21': <PropertyDebt />,
-
-
-    '22': <PersonalPaymentDetails />,
+    
+    'platform12_1': <CashFlowPreview />,
+    'platform12_2': <PropertyDebt />,
+    'platform12_3': <BenefitsForm />,
 
     '23': <HospitalHelpInfos />,
 

@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { request } from "umi";
 const { Column, ColumnGroup } = Table;
 
-export default function CompanyTaxInfo() {
+export default function BenefitsForm() {
   const [disableVar, setDisableVar] = useState(false);
   const [defaultOpen, setDefaultOpen] = useState(true);
   const [messageApi, contextHolder] = message.useMessage();
@@ -23,7 +23,7 @@ export default function CompanyTaxInfo() {
 
   const load_data = () => {
     reqBasicData().then(function (res) {
-      reqRatioConfig("CompanyTaxInfo").then(function (config) {
+      reqRatioConfig("BenefitsForm").then(function (config) {
         const new_res = JSON.parse(JSON.stringify(res));
         Object.keys(config).forEach((key) => {
           if (key in new_res) {
@@ -82,7 +82,7 @@ export default function CompanyTaxInfo() {
   };
 
   const onFinish = (values) => {
-    request("/api/get_ratio_config?table=CompanyTaxInfo", {
+    request("/api/get_ratio_config?table=BenefitsForm", {
       method: "GET",
     }).then(function (config) {
       const new_res = JSON.parse(JSON.stringify(values));
@@ -798,18 +798,22 @@ export default function CompanyTaxInfo() {
       },
     },
   ];
+
   const items = [
     {
-      key: "1",
-      label: "纳税人名称:",
-      children: "威海东日技研电子有限公司",
+      key: '1',
+      label: '纳税人名称:',
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      span: 1.5
     },
     {
-      key: "2",
-      label: "纳税人识别号:",
-      children: "91371000613752141X",
+      key: '2',
+      label: '纳税人识别号:',
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      span: 1.5
     },
   ];
+  
   return (
     <>
       {contextHolder}

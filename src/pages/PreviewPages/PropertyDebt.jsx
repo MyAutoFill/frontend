@@ -23,7 +23,7 @@ export default function PropertyDebt() {
 
   const load_data = () => {
     reqBasicData().then(function (res) {
-      reqRatioConfig("CompanyTaxInfo").then(function (config) {
+      reqRatioConfig("PropertyDebt").then(function (config) {
         const new_res = JSON.parse(JSON.stringify(res));
         Object.keys(config).forEach((key) => {
           if (key in new_res) {
@@ -82,7 +82,7 @@ export default function PropertyDebt() {
   };
 
   const onFinish = (values) => {
-    request("/api/get_ratio_config?table=CompanyTaxInfo", {
+    request("/api/get_ratio_config?table=PropertyDebt", {
       method: "GET",
     }).then(function (config) {
       const new_res = JSON.parse(JSON.stringify(values));
