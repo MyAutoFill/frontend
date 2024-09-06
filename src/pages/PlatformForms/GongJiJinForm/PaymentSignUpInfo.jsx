@@ -270,7 +270,7 @@ export default function PaymentSignUpInfo() {
                 right: 0, 
                 bottom: 0,
               }}
-              onClick={() => {history.push('/input?tab=4');}}
+              onClick={() => {window.location.href = '/input?tab=4'}}
             >立即填报</Button>
           </FloatButton.Group>
         </Form>
