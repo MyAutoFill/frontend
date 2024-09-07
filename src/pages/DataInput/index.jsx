@@ -8,25 +8,31 @@ import Fill from './Fill';
 import UploadSyncPage from './UploadSync';
 import PreviewPage from './Preview';
 import SelectFormPage from '../DataFillOut/SelectFormPage'
+import { useSearchParams } from "react-router-dom";
 import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined, CloudUploadOutlined } from '@ant-design/icons';
+import { useEffect } from 'react';
 
 
 export default function DataInput() {
 
   const { TabPane } = Tabs;
-  const [selectedKey, setSelectedKey] = useState('1');
-  const [current, setCurrent] = useState(0);
-  const [currentKey, setCurrentKey] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams.get('tab', '1'));
+  const [currentKey, setCurrentKey] = useState(
+    parseInt(
+      searchParams.get('tab') == null ? '1' : searchParams.get('tab')
+    )
+  );
+
+  useEffect(() => {
+    setSearchParams({'tab': currentKey.toString()})
+  }, [currentKey])
 
   const stepOnChange = (value) => {
-    setCurrent(value);
     setCurrentKey(value + 1)
-    console.log(currentKey)
   };
 
   const tabsOnChange = (key) => {
-    console.log(key)
-    setCurrent(key - 1);
     setCurrentKey(key)
   };
 
@@ -39,7 +45,7 @@ export default function DataInput() {
             <div className="logo" />
             <div style={{padding: 50, height: 1050}} class="banner-anim">
               <Steps
-                current={current}
+                current={currentKey - 1}
                 onChange={stepOnChange}
                 style={{width: 1700}}
                 items={[

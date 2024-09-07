@@ -1,4 +1,4 @@
-import { Upload, Button, Descriptions, message, ConfigProvider, Space } from 'antd';
+import { Upload, Button, Descriptions, message, ConfigProvider, Space, Table, Modal } from 'antd';
 import { UploadOutlined, FileSyncOutlined, ForwardOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import React, { useContext } from 'react';
@@ -77,7 +77,46 @@ export default function UploadSyncPage() {
           }
         })
         .then(function (res) {
-          console.log(res)
+          var data = res;
+          Modal.confirm({
+            width: 1000,
+            title: '确认填充项',
+            content: <>
+            <Table
+              bordered
+              dataSource={res}
+              columns={[
+                {
+                  title: '名称',
+                  dataIndex: 'name',
+                  key: 'name',
+                },
+                {
+                  title: '现有值',
+                  dataIndex: 'old_value',
+                  key: 'old_value',
+                },
+                {
+                  title: '新值',
+                  dataIndex: 'new_value',
+                  key: 'new_value',
+                },
+              ]}
+            />
+            </>,
+            okText: '确认',
+            cancelText: '取消',
+            onCancel:()=>{},
+            onOk:(res)=>{
+              request('/api/save_from_excel', {
+                method: 'POST',
+                data: {
+                  date: '2024-09',
+                  data: data
+                }
+              })
+            }
+          });
         })
       } else if (info.file.status === 'error') {
         message.error(`${info.file.name} 文件上传失败`);
