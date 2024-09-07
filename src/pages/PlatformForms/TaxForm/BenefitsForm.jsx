@@ -170,21 +170,21 @@ export default function BenefitsForm() {
       project_name: '出售、处置部门或被投资单位所得收益',
       code: '13',
       normal_this_month: <Form.Item name="tax_benefit_13"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="tax_benefits_total_314"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_benefits_total_13"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
       key: '14',
       project_name: '自然灾害发生的损失',
       code: '14',
       normal_this_month: <Form.Item name="tax_benefit_14"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="tax_benefits_total_320"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_benefits_total_14"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
       key: '15',
       project_name: '会计政策变更增加(或减少)利润总额',
       code: '15',
       normal_this_month: <Form.Item name="tax_benefit_15"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="tax_benefits_total_326"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_benefits_total_15"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
       key: '16',
@@ -395,7 +395,14 @@ export default function BenefitsForm() {
       code: '45',
       normal_this_month: <Form.Item name="tax_benefits_45"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="tax_benefits_total_45"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    }
+    },
+    {
+      key: '46',
+      project_name: '主营业务利润',
+      code: '46',
+      normal_this_month: <Form.Item name="tax_benefits_46"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_benefits_total_46"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
   ];
 
   const onFinish = (values) => {
