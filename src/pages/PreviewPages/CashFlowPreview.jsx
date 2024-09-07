@@ -1219,13 +1219,13 @@ export default function CashFlow() {
     {
       key: '1',
       label: '纳税人名称:',
-      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '纳税人识别号:',
-      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
   ];

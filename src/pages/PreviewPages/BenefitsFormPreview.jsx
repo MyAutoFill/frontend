@@ -123,7 +123,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -152,7 +152,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -181,7 +181,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_3">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -210,7 +210,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_4">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -239,7 +239,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_5">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -268,7 +268,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_6">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -297,7 +297,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_7">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -326,7 +326,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_8">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -355,7 +355,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_9">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -384,7 +384,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_10">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -413,7 +413,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_11">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -442,7 +442,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_12">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -471,7 +471,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_13">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -500,7 +500,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_14">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -529,7 +529,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_15">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -558,7 +558,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_16">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -599,7 +599,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_17">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -626,7 +626,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_18">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -653,7 +653,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_19">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -680,7 +680,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_20">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -707,7 +707,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_21">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -734,7 +734,7 @@ export default function BenefitsForm() {
       yearNum: (
         <Form.Item name="yearNum_22">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -803,13 +803,13 @@ export default function BenefitsForm() {
     {
       key: '1',
       label: '纳税人名称:',
-      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '纳税人识别号:',
-      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
   ];

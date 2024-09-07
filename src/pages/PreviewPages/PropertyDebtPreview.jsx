@@ -123,7 +123,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_2_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -132,7 +132,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_2_yearEnd_1">
+        <Form.Item name="tax_debt_1">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -147,7 +147,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_2_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -156,7 +156,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_2_yearEnd_2">
+        <Form.Item name="tax_debt_26">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -175,7 +175,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_3_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -184,7 +184,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_3_yearEnd_1">
+        <Form.Item name="tax_debt_2">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -199,7 +199,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_3_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -208,7 +208,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_3_yearEnd_2">
+        <Form.Item name="tax_debt_27">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -227,7 +227,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_4_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -236,7 +236,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_4_yearEnd_1">
+        <Form.Item name="tax_debt_3">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -251,7 +251,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_4_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -260,7 +260,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_4_yearEnd_2">
+        <Form.Item name="tax_debt_28">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -279,7 +279,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_5_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -288,7 +288,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_5_yearEnd_1">
+        <Form.Item name="tax_debt_4">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -303,7 +303,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_5_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -312,7 +312,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_5_yearEnd_2">
+        <Form.Item name="tax_debt_29">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -331,7 +331,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_6_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -340,7 +340,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_6_yearEnd_1">
+        <Form.Item name="tax_debt_5">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -355,7 +355,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_6_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -364,7 +364,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_6_yearEnd_2">
+        <Form.Item name="company_employee_11">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -383,7 +383,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_7_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -392,7 +392,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_7_yearEnd_1">
+        <Form.Item name="FinanceStatusInfo_10">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -407,7 +407,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_7_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -416,7 +416,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_7_yearEnd_2">
+        <Form.Item name="tax_debt_31">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -435,7 +435,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_8_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -444,7 +444,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_8_yearEnd_1">
+        <Form.Item name="tax_debt_7">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -459,7 +459,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_8_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -468,7 +468,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_8_yearEnd_2">
+        <Form.Item name="tax_debt_32">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -487,7 +487,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_9_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -496,7 +496,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_9_yearEnd_1">
+        <Form.Item name="tax_debt_8">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -511,7 +511,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_9_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -520,7 +520,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_9_yearEnd_2">
+        <Form.Item name="company_runningsum_4">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -539,7 +539,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_10_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -548,7 +548,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_10_yearEnd_1">
+        <Form.Item name="tax_debt_9">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -563,7 +563,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_10_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -572,7 +572,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_10_yearEnd_2">
+        <Form.Item name="tax_debt_34">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -591,7 +591,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_11_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -600,7 +600,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_11_yearEnd_1">
+        <Form.Item name="FinanceStatusInfo_13">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -615,7 +615,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_11_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -624,7 +624,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_11_yearEnd_2">
+        <Form.Item name="tax_debt_35">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -643,7 +643,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_12_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -652,7 +652,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_12_yearEnd_1">
+        <Form.Item name="company_research_9">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -667,7 +667,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_12_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -676,7 +676,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_12_yearEnd_2">
+        <Form.Item name="tax_debt_36">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -697,7 +697,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_13_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -706,7 +706,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_13_yearEnd_1">
+        <Form.Item name="tax_debt_12">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -721,7 +721,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_13_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -730,7 +730,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_13_yearEnd_2">
+        <Form.Item name="tax_debt_37">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -749,7 +749,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_14_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -758,7 +758,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_14_yearEnd_1">
+        <Form.Item name="tax_debt_13">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -775,7 +775,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_14_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -784,7 +784,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_14_yearEnd_2">
+        <Form.Item name="tax_debt_38">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -803,7 +803,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_15_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -812,7 +812,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_15_yearEnd_1">
+        <Form.Item name="company_runningsum_20">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -827,7 +827,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_15_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -836,7 +836,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_15_yearEnd_2">
+        <Form.Item name="company_runningsum_29">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -859,7 +859,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_16_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -868,7 +868,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_16_yearEnd_2">
+        <Form.Item name="company_runningsum_29">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -887,7 +887,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_17_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -896,7 +896,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_17_yearEnd_1">
+        <Form.Item name="tax_debt_14">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -919,7 +919,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_19_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -928,7 +928,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_19_yearEnd_1">
+        <Form.Item name="tax_debt_15">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -943,7 +943,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_18_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -952,7 +952,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_18_yearEnd_2">
+        <Form.Item name="tax_debt_40">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -971,7 +971,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_19_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -980,7 +980,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_19_yearEnd_1">
+        <Form.Item name="tax_debt_52">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -995,7 +995,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_19_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1004,7 +1004,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_19_yearEnd_2">
+        <Form.Item name="tax_debt_41">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1027,7 +1027,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_20_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1036,7 +1036,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_20_yearEnd_2">
+        <Form.Item name="tax_debt_42">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1055,7 +1055,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_21_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1064,7 +1064,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_21_yearEnd_1">
+        <Form.Item name="FinanceStatusInfo_16">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1079,7 +1079,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_21_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1088,7 +1088,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_21_yearEnd_2">
+        <Form.Item name="tax_debt_43">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1107,7 +1107,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_23_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1116,7 +1116,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_23_yearEnd_1">
+        <Form.Item name="company_runningsum_26">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1131,7 +1131,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_23_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1140,7 +1140,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_23_yearEnd_2">
+        <Form.Item name="tax_debt_44">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1159,7 +1159,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_24_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1168,7 +1168,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_24_yearEnd_1">
+        <Form.Item name="company_runningsum_22">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1183,7 +1183,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_24_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1192,7 +1192,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_24_yearEnd_2">
+        <Form.Item name="tax_debt_53">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1213,7 +1213,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_25_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1222,7 +1222,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_25_yearEnd_1">
+        <Form.Item name="tax_debt_18">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1245,7 +1245,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_26_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1254,7 +1254,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_26_yearEnd_1">
+        <Form.Item name="tax_debt_54">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1264,12 +1264,12 @@ export default function PropertyDebt() {
           ></Input>
         </Form.Item>
       ),
-      property_name2: <div style={{ paddingLeft: "30px" }}>递延税款峃项</div>,
+      property_name2: <div style={{ paddingLeft: "30px" }}>递延税款贷项</div>,
       code2: '55',
       year_start2: (
         <Form.Item name="property_26_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1278,7 +1278,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_26_yearEnd_2">
+        <Form.Item name="tax_debt_45">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1297,7 +1297,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_27_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1306,7 +1306,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_27_yearEnd_1">
+        <Form.Item name="tax_debt_19">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1321,7 +1321,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_27_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1330,7 +1330,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_27_yearEnd_2">
+        <Form.Item name="FinanceStatusInfo_40">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1349,7 +1349,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_28_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1358,7 +1358,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_28_yearEnd_1">
+        <Form.Item name="tax_debt_20">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1383,7 +1383,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_29_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1392,7 +1392,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_29_yearEnd_1">
+        <Form.Item name="company_runningsum_31">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1409,7 +1409,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_29_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1418,7 +1418,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_29_yearEnd_2">
+        <Form.Item name="company_runningsum_32">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1437,7 +1437,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_30_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1446,7 +1446,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_30_yearEnd_1">
+        <Form.Item name="tax_debt_55">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1461,7 +1461,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_30_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1470,7 +1470,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_30_yearEnd_2">
+        <Form.Item name="tax_debt_47">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1497,7 +1497,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_31_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1506,7 +1506,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_31_yearEnd_2">
+        <Form.Item name="company_runningsum_32">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1525,7 +1525,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_32_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1534,7 +1534,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_32_yearEnd_1">
+        <Form.Item name="company_runningsum_24">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1549,7 +1549,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_32_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1558,7 +1558,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_32_yearEnd_2">
+        <Form.Item name="tax_debt_48">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1577,7 +1577,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_33_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1586,7 +1586,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_33_yearEnd_1">
+        <Form.Item name="company_research_9">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1601,7 +1601,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_33_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1610,7 +1610,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_33_yearEnd_2">
+        <Form.Item name="tax_debt_49">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1629,7 +1629,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_34_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1638,7 +1638,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_34_yearEnd_1">
+        <Form.Item name="tax_debt_24">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1655,7 +1655,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_34_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1664,7 +1664,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_34_yearEnd_2">
+        <Form.Item name="tax_debt_50">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1685,7 +1685,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_35_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1694,7 +1694,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="property_35_yearEnd_1">
+        <Form.Item name="company_runningsum_20">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1709,7 +1709,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_35_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1718,7 +1718,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_35_yearEnd_2">
+        <Form.Item name="tax_debt_51">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1743,7 +1743,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_36_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1752,7 +1752,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="property_36_yearEnd_2">
+        <Form.Item name="company_runningsum_31">
           <Input
             disabled={disableVar}
             addonAfter=""
@@ -1771,7 +1771,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_37_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1787,7 +1787,7 @@ export default function PropertyDebt() {
       year_start2: (
         <Form.Item name="property_37_yearStart_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1815,7 +1815,7 @@ export default function PropertyDebt() {
       year_start1: (
         <Form.Item name="property_38_yearStart_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -1844,13 +1844,13 @@ export default function PropertyDebt() {
     {
       key: '1',
       label: '纳税人名称:',
-      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '纳税人识别号:',
-      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
   ];

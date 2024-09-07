@@ -39,7 +39,7 @@ import YiBaoCompanyInfo from '../PlatformForms/YiBaoForm/YiBaoCompanyInfo'
 import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfos'
 
 
-import PropertyDebt from '../PreviewPages/PropertyDebt';
+import PropertyDebt from '../PreviewPages/PropertyDebtPreview';
 import CashFlowPreview from '../PreviewPages/CashFlowPreview';
 import BenefitsForm from '../PreviewPages/BenefitsFormPreview';
 
