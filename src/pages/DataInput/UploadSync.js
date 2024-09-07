@@ -60,7 +60,7 @@ export default function UploadSyncPage() {
     });
   };
 
-  const props = {
+  const zcfzProps = {
     name: 'file',
     action: '/excelAnalysis/excel/convert',
     data: {
@@ -68,7 +68,6 @@ export default function UploadSyncPage() {
     },
     onChange(info) {
       if (info.file.status === 'done') {
-        console.log(info.file.response.data)
         request('/api/parse_table', {
           method: 'POST',
           data: {
@@ -78,9 +77,10 @@ export default function UploadSyncPage() {
         })
         .then(function (res) {
           var data = res;
-          Modal.confirm({
+          const modal = Modal.confirm({
             width: 1000,
             title: '确认填充项',
+            destroyOnClose: true,
             content: <>
             <Table
               bordered
@@ -97,7 +97,7 @@ export default function UploadSyncPage() {
                   key: 'old_value',
                 },
                 {
-                  title: '新值',
+                  title: '新值（来自文件）',
                   dataIndex: 'new_value',
                   key: 'new_value',
                 },
@@ -114,6 +114,143 @@ export default function UploadSyncPage() {
                   date: '2024-09',
                   data: data
                 }
+              })
+              .then(function (res) {
+                modal.destroy()
+              })
+            }
+          });
+        })
+      } else if (info.file.status === 'error') {
+        message.error(`${info.file.name} 文件上传失败`);
+      }
+    },
+  };
+
+  const lrProps = {
+    name: 'file',
+    action: '/excelAnalysis/excel/convert',
+    data: {
+      type: 'lr'
+    },
+    onChange(info) {
+      if (info.file.status === 'done') {
+        request('/api/parse_table', {
+          method: 'POST',
+          data: {
+            parse_data: info.file.response.data,
+            type: 'lr'
+          }
+        })
+        .then(function (res) {
+          var data = res;
+          const modal = Modal.confirm({
+            width: 1000,
+            title: '确认填充项',
+            destroyOnClose: true,
+            content: <>
+            <Table
+              bordered
+              dataSource={res}
+              columns={[
+                {
+                  title: '名称',
+                  dataIndex: 'name',
+                  key: 'name',
+                },
+                {
+                  title: '现有值',
+                  dataIndex: 'old_value',
+                  key: 'old_value',
+                },
+                {
+                  title: '新值（来自文件）',
+                  dataIndex: 'new_value',
+                  key: 'new_value',
+                },
+              ]}
+            />
+            </>,
+            okText: '确认',
+            cancelText: '取消',
+            onCancel:()=>{},
+            onOk:(res)=>{
+              request('/api/save_from_excel', {
+                method: 'POST',
+                data: {
+                  date: '2024-09',
+                  data: data
+                }
+              })
+              .then(function (res) {
+                modal.destroy()
+              })
+            }
+          });
+        })
+      } else if (info.file.status === 'error') {
+        message.error(`${info.file.name} 文件上传失败`);
+      }
+    },
+  };
+
+  const xjllProps = {
+    name: 'file',
+    action: '/excelAnalysis/excel/convert',
+    data: {
+      type: 'xjll'
+    },
+    onChange(info) {
+      if (info.file.status === 'done') {
+        request('/api/parse_table', {
+          method: 'POST',
+          data: {
+            parse_data: info.file.response.data,
+            type: 'xjll'
+          }
+        })
+        .then(function (res) {
+          var data = res;
+          const modal = Modal.confirm({
+            width: 1000,
+            title: '确认填充项',
+            destroyOnClose: true,
+            content: <>
+            <Table
+              bordered
+              dataSource={res}
+              columns={[
+                {
+                  title: '名称',
+                  dataIndex: 'name',
+                  key: 'name',
+                },
+                {
+                  title: '现有值',
+                  dataIndex: 'old_value',
+                  key: 'old_value',
+                },
+                {
+                  title: '新值（来自文件）',
+                  dataIndex: 'new_value',
+                  key: 'new_value',
+                },
+              ]}
+            />
+            </>,
+            okText: '确认',
+            cancelText: '取消',
+            onCancel:()=>{},
+            onOk:(res)=>{
+              request('/api/save_from_excel', {
+                method: 'POST',
+                data: {
+                  date: '2024-09',
+                  data: data
+                }
+              })
+              .then(function (res) {
+                modal.destroy()
               })
             }
           });
@@ -155,7 +292,7 @@ export default function UploadSyncPage() {
       key: '1',
       label: '利润表',
       children: 
-        <Upload {...props} >
+        <Upload {...lrProps} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击利润表excel文件</Button>
         </Upload>,
       span: 3
@@ -164,7 +301,7 @@ export default function UploadSyncPage() {
       key: '2',
       label: '现金流量表',
       children: 
-        <Upload {...props} >
+        <Upload {...xjllProps} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击现金流量表excel文件</Button>
         </Upload>,
       span: 3
@@ -173,7 +310,7 @@ export default function UploadSyncPage() {
       key: '3',
       label: '资产负债表',
       children: 
-        <Upload {...props} >
+        <Upload {...zcfzProps} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击资产负债表excel文件</Button>
         </Upload>,
       span: 3
@@ -194,9 +331,6 @@ export default function UploadSyncPage() {
             }}
           >
             <Space style={{marginTop: '50px'}}>
-              <Button type="primary" size="large" icon={<FileSyncOutlined />}>
-                开始同步
-              </Button>
               <Button size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
             </Space>
           </ConfigProvider>

@@ -77,7 +77,12 @@ const Login: React.FC = () => {
   const handleSubmit = async (values: API.LoginParams) => {
     try {
       // 登录
-      const msg = await login({ ...values });
+      const msg = {
+        code: 200,
+        data: {
+          access_token: ""
+        }
+      };
       if (msg.code === 200) {
         localStorage.setItem("token", msg.data.access_token)
         localStorage.setItem("userInfo", JSON.stringify(msg.data))
@@ -93,7 +98,9 @@ const Login: React.FC = () => {
       }
       console.log(msg);
       // 如果失败去设置用户错误信息
-      setUserLoginState(msg);
+      setUserLoginState({
+        status: 'failed'
+      });
     } catch (error) {
       const defaultLoginFailureMessage = intl.formatMessage({
         id: 'pages.login.failure',
@@ -127,8 +134,8 @@ const Login: React.FC = () => {
             minWidth: 280,
             maxWidth: '75vw',
           }}
-          logo={<img alt="logo" src="/sensetime_logo.png" style={{width: '110px', marginLeft: '-10px', marginTop: '4px'}} />}
-          title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHATBOT"
+          logo={<img alt="logo" src="/images/logo_svg.svg" style={{width: '300px', marginLeft: '-120px', marginTop: '4px'}} />}
+          title=""
           initialValues={{
             autoLogin: true,
           }}
@@ -145,7 +152,7 @@ const Login: React.FC = () => {
               })}
             />
           )}
-          <div style={{marginTop: '50px'}}>
+          <div style={{marginTop: '80px'}}>
             <ProFormText
               name="username"
               fieldProps={{

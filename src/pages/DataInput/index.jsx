@@ -68,7 +68,7 @@ export default function DataInput() {
                 ]}
               />
               <Divider />
-              <Tabs defaultActiveKey='1' activeKey={currentKey.toString()} animated={true} type='card' size='large' onChange={tabsOnChange}>
+              <Tabs destroyInactiveTabPane={true} defaultActiveKey='1' activeKey={currentKey.toString()} animated={true} type='card' size='large' onChange={tabsOnChange}>
                 <TabPane
                   tab={<span><CloudUploadOutlined />上传同步</span>}
                   key="1"
