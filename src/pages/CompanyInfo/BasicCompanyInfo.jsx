@@ -123,13 +123,13 @@ export default function BasicCompanyInfo() {
     {
       key: '1',
       label: '统一社会信用代码',
-      children: <Form.Item name="company_basicinfo_1" rules={[{required: true, message: '该项必填',},]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
       label: '单位名称',
-      children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_2" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -141,7 +141,7 @@ export default function BasicCompanyInfo() {
     {
       key: '4',
       label: '行业类别',
-      children: <Form.Item name="company_basicinfo_4"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_4" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -153,31 +153,31 @@ export default function BasicCompanyInfo() {
     {
       key: '6',
       label: '主要业务活动',
-      children: <Form.Item name="company_basicinfo_6"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_6" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '7',
       label: '行业代码',
-      children: <Form.Item name="company_basicinfo_7"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_7" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
       label: '经营范围',
-      children: <Form.Item name="company_basicinfo_8"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_8" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
       label: '工商登记有效期限（年）',
-      children: <Form.Item name="company_basicinfo_9"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_9" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
       label: '组织机构代码',
-      children: <Form.Item name="company_basicinfo_10"><Input disabled={disableVar} style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_10" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -185,13 +185,13 @@ export default function BasicCompanyInfo() {
       label: '单位所在地区划及详细地址',
       children: 
         <>
-          <Form.Item name="company_basicinfo_11"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_12"><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_13"><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_11" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_12" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_13" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_14"><Input disabled={disableVar} addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_15"><Input disabled={disableVar} addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_16"><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>,
       span: 3
     },
@@ -216,13 +216,13 @@ export default function BasicCompanyInfo() {
             </Form.Item>
           </span>
           <br></br>
-          <Form.Item name="company_basicinfo_11"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_12"><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_13"><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_11" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_12" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_13" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_14"><Input disabled={disableVar} addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_15"><Input disabled={disableVar} addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_16"><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>
       ),
       span: 3
@@ -247,37 +247,37 @@ export default function BasicCompanyInfo() {
     {
       key: '15',
       label: '法定代表人（单位负责人）',
-      children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_26" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '16',
       label: '法人证件类型',
-      children: <Form.Item name="company_basicinfo_27"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_27" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: '法人证件号码',
-      children: <Form.Item name="company_basicinfo_28"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_28" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: '法人联系电话',
-      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_29" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '19',
       label: '企业负责人',
-      children: <Form.Item name="company_basicinfo_30"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_30" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
       label: '联系电话',
-      children: <Form.Item name="company_basicinfo_31"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_31" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

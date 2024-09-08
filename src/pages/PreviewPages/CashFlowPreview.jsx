@@ -1257,7 +1257,7 @@ export default function CashFlow() {
         <Row style={{ width: "1300px" }}>
           <Col span={8}>税款所属时间:2024-01-01至2024-03-31</Col>
           <Col span={8} style={{ textAlign: "center" }}>
-            报送日期:2024-06-16
+            {/* 报送日期:2024-06-16 */}
           </Col>
           <Col span={8} style={{ textAlign: "right" }}>
             会企03表&nbsp;&nbsp;&nbsp;&nbsp;金额单位:元，至角分
