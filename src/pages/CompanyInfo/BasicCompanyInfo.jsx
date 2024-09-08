@@ -99,6 +99,7 @@ export default function BasicCompanyInfo() {
   }
 
   const CheckSuccess = () => {
+    form.validateFields()
     messageApi.open({
       type: 'success',
       content: '表单检查完成',
@@ -122,7 +123,7 @@ export default function BasicCompanyInfo() {
     {
       key: '1',
       label: '统一社会信用代码',
-      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1" rules={[{required: true, message: '该项必填',},]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

@@ -67,6 +67,7 @@ export default function CompanyEmployedInfo() {
   }
 
   const CheckSuccess = () => {
+    form.validateFields()
     messageApi.open({
       type: 'success',
       content: '表单检查完成',
@@ -82,8 +83,8 @@ export default function CompanyEmployedInfo() {
   const items = [
     {
       key: '1',
-      label: '从业人员期末人数',
-      children: <Form.Item name="company_employee_1"><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span>从业人员期末人数 *</span>,
+      children: <Form.Item name="company_employee_1" rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

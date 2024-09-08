@@ -68,6 +68,7 @@ export default function CompanyResearchInfo() {
   }
 
   const CheckSuccess = () => {
+    form.validateFields()
     messageApi.open({
       type: 'success',
       content: '表单检查完成',
