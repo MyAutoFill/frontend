@@ -91,7 +91,7 @@ export default function PropertyStatusInfo() {
     {
       key: '2',
       label: '所有者权益合计',
-      children: <Form.Item name="GongShang_property_2"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_31"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

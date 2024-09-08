@@ -439,6 +439,34 @@ export default function PropertyDebtForm() {
       code: '51',
       normal_this_month: <Form.Item name="tax_debt_51"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="tax_debt_total_51"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '52',
+      project_name: '长期投资合计',
+      code: '52',
+      normal_this_month: <Form.Item name="tax_debt_52"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_debt_total_52"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '53',
+      project_name: '长期负债合计',
+      code: '53',
+      normal_this_month: <Form.Item name="tax_debt_53"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_debt_total_53"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '54',
+      project_name: '固定资产净额',
+      code: '54',
+      normal_this_month: <Form.Item name="tax_debt_54"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_debt_total_54"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+    },
+    {
+      key: '55',
+      project_name: '固定资产合计',
+      code: '55',
+      normal_this_month: <Form.Item name="tax_debt_55"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_year: <Form.Item name="tax_debt_total_55"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     }
   ];
 
