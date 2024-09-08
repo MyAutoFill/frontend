@@ -845,19 +845,19 @@ export default function BenefitsForm() {
             会企03表&nbsp;&nbsp;&nbsp;&nbsp;金额单位:元，至角分
           </Col>
         </Row>
-        <Descriptions
-          bordered
-          items={items}
-          column="2"
-          style={{
-            width: "1300px",
-            marginTop: "20px",
-            marginBottom: "20px",
-            backgroundColor: "#efefef",
-          }}
-          labelStyle={{ color: "#333", width: "160px", textAlign: "right" }}
-        />
         <Form onFinish={onFinish} form={form}>
+          <Descriptions
+            bordered
+            items={items}
+            column="2"
+            style={{
+              width: "1300px",
+              marginTop: "20px",
+              marginBottom: "20px",
+              backgroundColor: "#efefef",
+            }}
+            labelStyle={{ color: "#333", width: "160px", textAlign: "right" }}
+          />
           <Table
             dataSource={data}
             style={{ width: "1300px" }}

@@ -126,7 +126,7 @@ export default function TechCompanyInfo() {
     {
       key: '7',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb08'></Input></Form.Item>,
+      children: 'qb08',
       span: 1
     },
     {
@@ -144,7 +144,7 @@ export default function TechCompanyInfo() {
     {
       key: '10',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb101'></Input></Form.Item>,
+      children: 'qb101',
       span: 1
     },
     {
@@ -162,7 +162,7 @@ export default function TechCompanyInfo() {
     {
       key: '13',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb03_0'></Input></Form.Item>,
+      children: 'qb03_0',
       span: 1
     },
     {
@@ -180,7 +180,7 @@ export default function TechCompanyInfo() {
     {
       key: '16',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb03_1'></Input></Form.Item>,
+      children: 'qb03_1',
       span: 1
     },
     {
@@ -198,7 +198,7 @@ export default function TechCompanyInfo() {
     {
       key: '19',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb20_1'></Input></Form.Item>,
+      children: 'qb20_1',
       span: 1
     },
     {
@@ -216,7 +216,7 @@ export default function TechCompanyInfo() {
     {
       key: '22',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb20'></Input></Form.Item>,
+      children: 'qb20',
       span: 1
     },
     {
@@ -234,7 +234,7 @@ export default function TechCompanyInfo() {
     {
       key: '25',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb04'></Input></Form.Item>,
+      children: 'qb04',
       span: 1
     },
     {
@@ -252,7 +252,7 @@ export default function TechCompanyInfo() {
     {
       key: '28',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb04_0'></Input></Form.Item>,
+      children: 'qb04_0',
       span: 1
     },
     {
@@ -270,7 +270,7 @@ export default function TechCompanyInfo() {
     {
       key: '31',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06'></Input></Form.Item>,
+      children: 'qb06',
       span: 1
     },
     {
@@ -293,7 +293,7 @@ export default function TechCompanyInfo() {
     {
       key: '34',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06_1'></Input></Form.Item>,
+      children: 'qb06_1',
       span: 1
     },
     {
@@ -311,7 +311,7 @@ export default function TechCompanyInfo() {
     {
       key: '37',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb06_2'></Input></Form.Item>,
+      children: 'qb06_2',
       span: 1
     },
     {
@@ -329,7 +329,7 @@ export default function TechCompanyInfo() {
     {
       key: '40',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb18'></Input></Form.Item>,
+      children: 'qb18',
       span: 1
     },
     {
@@ -347,7 +347,7 @@ export default function TechCompanyInfo() {
     {
       key: '43',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb09'></Input></Form.Item>,
+      children: 'qb09',
       span: 1
     },
     {
@@ -365,7 +365,7 @@ export default function TechCompanyInfo() {
     {
       key: '46',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input></Form.Item>,
+      children: 'qb10',
       span: 1
     },
     {
@@ -383,7 +383,7 @@ export default function TechCompanyInfo() {
     {
       key: '49',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input></Form.Item>,
+      children: 'qb10',
       span: 1
     },
     {
@@ -401,7 +401,7 @@ export default function TechCompanyInfo() {
     {
       key: '52',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb10'></Input></Form.Item>,
+      children: 'qb10',
       span: 1
     },
     {
@@ -419,7 +419,7 @@ export default function TechCompanyInfo() {
     {
       key: '55',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_34"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb11'></Input></Form.Item>,
+      children: 'qb11',
       span: 1
     },
     {
@@ -441,7 +441,7 @@ export default function TechCompanyInfo() {
     {
       key: '58',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_35"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb13'></Input></Form.Item>,
+      children: 'qb13',
       span: 1
     },
     {
@@ -459,7 +459,7 @@ export default function TechCompanyInfo() {
     {
       key: '61',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_37"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb12'></Input></Form.Item>,
+      children: 'qb12',
       span: 1
     },
     {
@@ -477,7 +477,7 @@ export default function TechCompanyInfo() {
     {
       key: '64',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_39"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14'></Input></Form.Item>,
+      children: 'qb14',
       span: 1
     },
     {
@@ -495,7 +495,7 @@ export default function TechCompanyInfo() {
     {
       key: '67',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_41"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14_1'></Input></Form.Item>,
+      children: 'qb14_1',
       span: 1
     },
     {
@@ -513,7 +513,7 @@ export default function TechCompanyInfo() {
     {
       key: '70',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_43"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb14_2'></Input></Form.Item>,
+      children: 'qb14_2',
       span: 1
     },
     {
@@ -531,7 +531,7 @@ export default function TechCompanyInfo() {
     {
       key: '73',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_45"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15'></Input></Form.Item>,
+      children: 'qb15',
       span: 1
     },
     {
@@ -549,7 +549,7 @@ export default function TechCompanyInfo() {
     {
       key: '76',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_47"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_1'></Input></Form.Item>,
+      children: 'qb15_1',
       span: 1
     },
     {
@@ -567,7 +567,7 @@ export default function TechCompanyInfo() {
     {
       key: '79',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_49"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_2'></Input></Form.Item>,
+      children: 'qb15_2',
       span: 1
     },
     {
@@ -585,7 +585,7 @@ export default function TechCompanyInfo() {
     {
       key: '82',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_51"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb15_5'></Input></Form.Item>,
+      children: 'qb15_5',
       span: 1
     },
     {
@@ -603,7 +603,7 @@ export default function TechCompanyInfo() {
     {
       key: '85',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_53"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16'></Input></Form.Item>,
+      children: 'qb16',
       span: 1
     },
     {
@@ -621,7 +621,7 @@ export default function TechCompanyInfo() {
     {
       key: '88',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_55"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16_1'></Input></Form.Item>,
+      children: 'qb16_1',
       span: 1
     },
     {
@@ -639,7 +639,7 @@ export default function TechCompanyInfo() {
     {
       key: '91',
       label: '代码',
-      children: <Form.Item name="Tech_commpanyInfo_57"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qb16_1'></Input></Form.Item>,
+      children: 'qb16_1',
       span: 1
     },
     {

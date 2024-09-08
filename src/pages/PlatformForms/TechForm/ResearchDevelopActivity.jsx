@@ -133,7 +133,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '7',
       label: '代码',
-      children: <Form.Item name="Tech_activity_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj09'></Input></Form.Item>,
+      children: 'qj09',
       span: 1
     },
     {
@@ -151,7 +151,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '10',
       label: '代码',
-      children: <Form.Item name="Tech_activity_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj67'></Input></Form.Item>,
+      children: 'qj67',
       span: 1
     },
     {
@@ -169,7 +169,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '13',
       label: '代码',
-      children: <Form.Item name="Tech_activity_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj09_1'></Input></Form.Item>,
+      children: 'qj09_1',
       span: 1
     },
     {
@@ -187,7 +187,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '16',
       label: '代码',
-      children: <Form.Item name="Tech_activity_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj09_2'></Input></Form.Item>,
+      children: 'qj09_2',
       span: 1
     },
     {
@@ -205,7 +205,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '19',
       label: '代码',
-      children: <Form.Item name="Tech_activity_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj09_3'></Input></Form.Item>,
+      children: 'qj09_3',
       span: 1
     },
     {
@@ -228,7 +228,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '22',
       label: '代码',
-      children: <Form.Item name="Tech_activity_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj20'></Input></Form.Item>,
+      children: 'qj20',
       span: 1
     },
     {
@@ -246,7 +246,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '25',
       label: '代码',
-      children: <Form.Item name="Tech_activity_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_1'></Input></Form.Item>,
+      children: 'qj23_1',
       span: 1
     },
     {
@@ -264,7 +264,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '28',
       label: '代码',
-      children: <Form.Item name="Tech_activity_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_2'></Input></Form.Item>,
+      children: 'qj23_2',
       span: 1
     },
     {
@@ -282,7 +282,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '31',
       label: '代码',
-      children: <Form.Item name="Tech_activity_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_3'></Input></Form.Item>,
+      children: 'qj23_3',
       span: 1
     },
     {
@@ -300,7 +300,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '34',
       label: '代码',
-      children: <Form.Item name="Tech_activity_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_4'></Input></Form.Item>,
+      children: 'qj23_4',
       span: 1
     },
     {
@@ -318,7 +318,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '37',
       label: '代码',
-      children: <Form.Item name="Tech_activity_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_6'></Input></Form.Item>,
+      children: 'qj23_6',
       span: 1
     },
     {
@@ -336,7 +336,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '40',
       label: '代码',
-      children: <Form.Item name="Tech_activity_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_7'></Input></Form.Item>,
+      children: 'qj23_7',
       span: 1
     },
     {
@@ -354,7 +354,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '43',
       label: '代码',
-      children: <Form.Item name="Tech_activity_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj33'></Input></Form.Item>,
+      children: 'qj33',
       span: 1
     },
     {
@@ -372,7 +372,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '46',
       label: '代码',
-      children: <Form.Item name="Tech_activity_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj33_1'></Input></Form.Item>,
+      children: 'qj33_1',
       span: 1
     },
     {
@@ -390,7 +390,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '49',
       label: '代码',
-      children: <Form.Item name="Tech_activity_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj33_2'></Input></Form.Item>,
+      children: 'qj33_2',
       span: 1
     },
     {
@@ -408,7 +408,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '52',
       label: '代码',
-      children: <Form.Item name="Tech_activity_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj33_4'></Input></Form.Item>,
+      children: 'qj33_4',
       span: 1
     },
     {
@@ -426,7 +426,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '55',
       label: '代码',
-      children: <Form.Item name="Tech_activity_34"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj33_3'></Input></Form.Item>,
+      children: 'qj33_3',
       span: 1
     },
     {
@@ -444,7 +444,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '58',
       label: '代码',
-      children: <Form.Item name="Tech_activity_36"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj23_5'></Input></Form.Item>,
+      children: 'qj23_5',
       span: 1
     },
     {
@@ -467,7 +467,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '61',
       label: '代码',
-      children: <Form.Item name="Tech_activity_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj250'></Input></Form.Item>,
+      children: 'qj250',
       span: 1
     },
     {
@@ -485,7 +485,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '64',
       label: '代码',
-      children: <Form.Item name="Tech_activity_40"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj251'></Input></Form.Item>,
+      children: 'qj251',
       span: 1
     },
     {
@@ -508,7 +508,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '67',
       label: '代码',
-      children: <Form.Item name="Tech_activity_42"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj256'></Input></Form.Item>,
+      children: 'qj256',
       span: 1
     },
     {
@@ -526,7 +526,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '70',
       label: '代码',
-      children: <Form.Item name="Tech_activity_44"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj252'></Input></Form.Item>,
+      children: 'qj252',
       span: 1
     },
     {
@@ -544,7 +544,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '73',
       label: '代码',
-      children: <Form.Item name="Tech_activity_46"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj253'></Input></Form.Item>,
+      children: 'qj253',
       span: 1
     },
     {
@@ -562,7 +562,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '76',
       label: '代码',
-      children: <Form.Item name="Tech_activity_48"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj254'></Input></Form.Item>,
+      children: 'qj254',
       span: 1
     },
     {
@@ -580,7 +580,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '79',
       label: '代码',
-      children: <Form.Item name="Tech_activity_50"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj255'></Input></Form.Item>,
+      children: 'qj255',
       span: 1
     },
     {
@@ -603,7 +603,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '82',
       label: '代码',
-      children: <Form.Item name="Tech_activity_52"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi01'></Input></Form.Item>,
+      children: 'qi01',
       span: 1
     },
     {
@@ -621,7 +621,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '85',
       label: '代码',
-      children: <Form.Item name="Tech_activity_54"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi07_0'></Input></Form.Item>,
+      children: 'qi07_0',
       span: 1
     },
     {
@@ -639,7 +639,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '88',
       label: '代码',
-      children: <Form.Item name="Tech_activity_56"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi07_1'></Input></Form.Item>,
+      children: 'qi07_1',
       span: 1
     },
     {
@@ -657,7 +657,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '91',
       label: '代码',
-      children: <Form.Item name="Tech_activity_58"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi07_2'></Input></Form.Item>,
+      children: 'qi07_2',
       span: 1
     },
     {
@@ -675,7 +675,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '94',
       label: '代码',
-      children: <Form.Item name="Tech_activity_60"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi14_1'></Input></Form.Item>,
+      children: 'qi14_1',
       span: 1
     },
     {
@@ -703,7 +703,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '97',
       label: '代码',
-      children: <Form.Item name="Tech_activity_62"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj55'></Input></Form.Item>,
+      children: 'qj55',
       span: 1
     },
     {
@@ -721,7 +721,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '100',
       label: '代码',
-      children: <Form.Item name="Tech_activity_64"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj56'></Input></Form.Item>,
+      children: 'qj56',
       span: 1
     },
     {
@@ -739,7 +739,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '103',
       label: '代码',
-      children: <Form.Item name="Tech_activity_66"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj56_1'></Input></Form.Item>,
+      children: 'qj56_1',
       span: 1
     },
     {
@@ -757,7 +757,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '106',
       label: '代码',
-      children: <Form.Item name="Tech_activity_68"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj55_1'></Input></Form.Item>,
+      children: 'qj55_1',
       span: 1
     },
     {
@@ -775,7 +775,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '109',
       label: '代码',
-      children: <Form.Item name="Tech_activity_70"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj55_2'></Input></Form.Item>,
+      children: 'qj55_2',
       span: 1
     },
     {
@@ -793,7 +793,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '112',
       label: '代码',
-      children: <Form.Item name="Tech_activity_72"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj74'></Input></Form.Item>,
+      children: 'qj74',
       span: 1
     },
     {
@@ -811,7 +811,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '115',
       label: '代码',
-      children: <Form.Item name="Tech_activity_74"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj57'></Input></Form.Item>,
+      children: 'qj57',
       span: 1
     },
     {
@@ -829,7 +829,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '118',
       label: '代码',
-      children: <Form.Item name="Tech_activity_76"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj57_1'></Input></Form.Item>,
+      children: 'qj57_1',
       span: 1
     },
     {
@@ -847,7 +847,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '121',
       label: '代码',
-      children: <Form.Item name="Tech_activity_78"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj75'></Input></Form.Item>,
+      children: 'qj75',
       span: 1
     },
     {
@@ -865,7 +865,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '124',
       label: '代码',
-      children: <Form.Item name="Tech_activity_80"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj83'></Input></Form.Item>,
+      children: 'qj83',
       span: 1
     },
     {
@@ -883,7 +883,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '127',
       label: '代码',
-      children: <Form.Item name="Tech_activity_82"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj83_1'></Input></Form.Item>,
+      children: 'qj83_1',
       span: 1
     },
     {
@@ -901,7 +901,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '130',
       label: '代码',
-      children: <Form.Item name="Tech_activity_84"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj82'></Input></Form.Item>,
+      children: 'qj82',
       span: 1
     },
     {
@@ -919,7 +919,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '133',
       label: '代码',
-      children: <Form.Item name="Tech_activity_86"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj73'></Input></Form.Item>,
+      children: 'qj73',
       span: 1
     },
     {
@@ -937,7 +937,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '136',
       label: '代码',
-      children: <Form.Item name="Tech_activity_88"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj73_1'></Input></Form.Item>,
+      children: 'qj73_1',
       span: 1
     },
     {
@@ -965,7 +965,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '139',
       label: '代码',
-      children: <Form.Item name="Tech_activity_90"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi23'></Input></Form.Item>,
+      children: 'qi23',
       span: 1
     },
     {
@@ -983,7 +983,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '142',
       label: '代码',
-      children: <Form.Item name="Tech_activity_92"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi24'></Input></Form.Item>,
+      children: 'qi24',
       span: 1
     },
     {
@@ -1006,7 +1006,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '145',
       label: '代码',
-      children: <Form.Item name="Tech_activity_94"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj70'></Input></Form.Item>,
+      children: 'qj70',
       span: 1
     },
     {
@@ -1024,7 +1024,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '148',
       label: '代码',
-      children: <Form.Item name="Tech_activity_96"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj71'></Input></Form.Item>,
+      children: 'qj71',
       span: 1
     },
     {
@@ -1042,7 +1042,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '151',
       label: '代码',
-      children: <Form.Item name="Tech_activity_98"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj72'></Input></Form.Item>,
+      children: 'qj72',
       span: 1
     },
     {
@@ -1065,7 +1065,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '154',
       label: '代码',
-      children: <Form.Item name="Tech_activity_100"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi25'></Input></Form.Item>,
+      children: 'qi25',
       span: 1
     },
     {
@@ -1083,7 +1083,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '157',
       label: '代码',
-      children: <Form.Item name="Tech_activity_102"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj79'></Input></Form.Item>,
+      children: 'qj79',
       span: 1
     },
     {
@@ -1101,7 +1101,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '160',
       label: '代码',
-      children: <Form.Item name="Tech_activity_104"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj77'></Input></Form.Item>,
+      children: 'qj77',
       span: 1
     },
     {
@@ -1119,7 +1119,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '163',
       label: '代码',
-      children: <Form.Item name="Tech_activity_106"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj79_1'></Input></Form.Item>,
+      children: 'qj79_1',
       span: 1
     },
     {
@@ -1137,7 +1137,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '166',
       label: '代码',
-      children: <Form.Item name="Tech_activity_108"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj79_2'></Input></Form.Item>,
+      children: 'qj79_2',
       span: 1
     },
     {
@@ -1155,7 +1155,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '169',
       label: '代码',
-      children: <Form.Item name="Tech_activity_110"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj85'></Input></Form.Item>,
+      children: 'qj85',
       span: 1
     },
     {
@@ -1173,7 +1173,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '172',
       label: '代码',
-      children: <Form.Item name="Tech_activity_112"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj85_1'></Input></Form.Item>,
+      children: 'qj85_1',
       span: 1
     },
     {
@@ -1191,7 +1191,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '175',
       label: '代码',
-      children: <Form.Item name="Tech_activity_114"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj86'></Input></Form.Item>,
+      children: 'qj86',
       span: 1
     },
     {
@@ -1209,7 +1209,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '178',
       label: '代码',
-      children: <Form.Item name="Tech_activity_116"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj86_1'></Input></Form.Item>,
+      children: 'qj86_1',
       span: 1
     },
     {
@@ -1227,7 +1227,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '181',
       label: '代码',
-      children: <Form.Item name="Tech_activity_118"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj87'></Input></Form.Item>,
+      children: 'qj87',
       span: 1
     },
     {
@@ -1245,7 +1245,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '184',
       label: '代码',
-      children: <Form.Item name="Tech_activity_120"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj87_1'></Input></Form.Item>,
+      children: 'qj87_1',
       span: 1
     },
     {
@@ -1263,7 +1263,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '187',
       label: '代码',
-      children: <Form.Item name="Tech_activity_122"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj101'></Input></Form.Item>,
+      children: 'qj101',
       span: 1
     },
     {
@@ -1281,7 +1281,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '190',
       label: '代码',
-      children: <Form.Item name="Tech_activity_124"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj101_1'></Input></Form.Item>,
+      children: 'qj101_1',
       span: 1
     },
     {
@@ -1299,7 +1299,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '193',
       label: '代码',
-      children: <Form.Item name="Tech_activity_126"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj100'></Input></Form.Item>,
+      children: 'qj100',
       span: 1
     },
     {
@@ -1317,7 +1317,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '196',
       label: '代码',
-      children: <Form.Item name="Tech_activity_128"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj100_1'></Input></Form.Item>,
+      children: 'qj100_1',
       span: 1
     },
     {
@@ -1335,7 +1335,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '199',
       label: '代码',
-      children: <Form.Item name="Tech_activity_130"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj98'></Input></Form.Item>,
+      children: 'qj98',
       span: 1
     },
     {
@@ -1353,7 +1353,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '202',
       label: '代码',
-      children: <Form.Item name="Tech_activity_132"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj98_1'></Input></Form.Item>,
+      children: 'qj98_1',
       span: 1
     },
     {
@@ -1371,7 +1371,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '205',
       label: '代码',
-      children: <Form.Item name="Tech_activity_134"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi27'></Input></Form.Item>,
+      children: 'qi27',
       span: 1
     },
     {
@@ -1389,7 +1389,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '208',
       label: '代码',
-      children: <Form.Item name="Tech_activity_136"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qi27_1'></Input></Form.Item>,
+      children: 'qi27_1',
       span: 1
     },
     {
@@ -1412,7 +1412,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '211',
       label: '代码',
-      children: <Form.Item name="Tech_activity_138"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj80_1'></Input></Form.Item>,
+      children: 'qj80_1',
       span: 1
     },
     {
@@ -1430,7 +1430,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '214',
       label: '代码',
-      children: <Form.Item name="Tech_activity_140"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj80_2'></Input></Form.Item>,
+      children: 'qj80_2',
       span: 1
     },
     {
@@ -1448,7 +1448,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '217',
       label: '代码',
-      children: <Form.Item name="Tech_activity_142"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj80_3'></Input></Form.Item>,
+      children: 'qj80_3',
       span: 1
     },
     {
@@ -1466,7 +1466,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '220',
       label: '代码',
-      children: <Form.Item name="Tech_activity_144"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj80'></Input></Form.Item>,
+      children: 'qj80',
       span: 1
     },
     {
@@ -1484,7 +1484,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '223',
       label: '代码',
-      children: <Form.Item name="Tech_activity_146"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj80_4'></Input></Form.Item>,
+      children: 'qj80_4',
       span: 1
     },
     {
@@ -1502,7 +1502,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '226',
       label: '代码',
-      children: <Form.Item name="Tech_activity_148"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj80_5'></Input></Form.Item>,
+      children: 'qj80_5',
       span: 1
     },
     {
@@ -1530,7 +1530,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '229',
       label: '代码',
-      children: <Form.Item name="Tech_activity_150"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj58'></Input></Form.Item>,
+      children: 'qj58',
       span: 1
     },
     {
@@ -1548,7 +1548,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '232',
       label: '代码',
-      children: <Form.Item name="Tech_activity_152"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj62'></Input></Form.Item>,
+      children: 'qj62',
       span: 1
     },
     {
@@ -1566,7 +1566,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '235',
       label: '代码',
-      children: <Form.Item name="Tech_activity_154"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj59'></Input></Form.Item>,
+      children: 'qj59',
       span: 1
     },
     {
@@ -1584,7 +1584,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '238',
       label: '代码',
-      children: <Form.Item name="Tech_activity_156"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj61'></Input></Form.Item>,
+      children: 'qj61',
       span: 1
     },
     {
@@ -1607,7 +1607,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '241',
       label: '代码',
-      children: <Form.Item name="Tech_activity_158"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj99'></Input></Form.Item>,
+      children: 'qj99',
       span: 1
     },
     {
@@ -1625,7 +1625,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '244',
       label: '代码',
-      children: <Form.Item name="Tech_activity_160"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj90'></Input></Form.Item>,
+      children: 'qj90',
       span: 1
     },
     {
@@ -1643,7 +1643,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '247',
       label: '代码',
-      children: <Form.Item name="Tech_activity_162"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj92'></Input></Form.Item>,
+      children: 'qj92',
       span: 1
     },
     {
@@ -1661,7 +1661,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '250',
       label: '代码',
-      children: <Form.Item name="Tech_activity_164"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qj102'></Input></Form.Item>,
+      children: 'qj102',
       span: 1
     },
     {

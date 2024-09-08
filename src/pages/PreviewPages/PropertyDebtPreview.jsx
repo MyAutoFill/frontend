@@ -1872,15 +1872,15 @@ export default function PropertyDebt() {
           <Col span={8} style={{textAlign:'center'}}>报送日期:2024-06-16</Col>
           <Col span={8} style={{textAlign:'right'}}>报送日期:2024-06-16</Col>
         </Row>
-        <Descriptions bordered items={items} column="2" style={{ width: "1300px",marginTop:"20px",marginBottom:"20px",backgroundColor:"#efefef"  }} labelStyle={{color:"#333",width:"160px",textAlign:"right"}}/>
         <Form onFinish={onFinish} form={form}>
-          <Table
-            dataSource={data}
-            style={{ width: "1300px" }}
-            pagination={false}
-            bordered
-            sticky
-          >
+          <Descriptions bordered items={items} column="2" style={{ width: "1300px",marginTop:"20px",marginBottom:"20px",backgroundColor:"#efefef"  }} labelStyle={{color:"#333",width:"160px",textAlign:"right"}}/>
+            <Table
+              dataSource={data}
+              style={{ width: "1300px" }}
+              pagination={false}
+              bordered
+              sticky
+            >
               <Column
                 title="资产"
                 dataIndex="property_name1"

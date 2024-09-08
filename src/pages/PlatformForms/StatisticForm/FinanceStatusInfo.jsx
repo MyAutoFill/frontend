@@ -85,7 +85,7 @@ export default function FinanceStatusInfo() {
     {
       key: '1',
       label: '一、年初存货',
-      children: <Form.Item name="FinanceStatusInfo_1"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_1"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -103,7 +103,7 @@ export default function FinanceStatusInfo() {
     {
       key: '127',
       label: '产成品',
-      children: <Form.Item name="FinanceStatusInfo_127"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_127"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -121,7 +121,7 @@ export default function FinanceStatusInfo() {
     {
       key: '4',
       label: '二、期末资产负债',
-      children: <Form.Item name="FinanceStatusInfo_4"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_4"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -139,7 +139,7 @@ export default function FinanceStatusInfo() {
     {
       key: '7',
       label: '流动资产合计',
-      children: <Form.Item name="company_runningsum_20"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_20"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -157,7 +157,7 @@ export default function FinanceStatusInfo() {
     {
       key: '10',
       label: '其中：应收账款',
-      children: <Form.Item name="FinanceStatusInfo_10"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_10"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -175,7 +175,7 @@ export default function FinanceStatusInfo() {
     {
       key: '13',
       label: '存货',
-      children: <Form.Item name="FinanceStatusInfo_13"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_13"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -193,7 +193,7 @@ export default function FinanceStatusInfo() {
     {
       key: '16',
       label: '固定资产原价',
-      children: <Form.Item name="FinanceStatusInfo_16"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_16"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -211,7 +211,7 @@ export default function FinanceStatusInfo() {
     {
       key: '19',
       label: '其中：房屋和构筑物',
-      children: <Form.Item name="FinanceStatusInfo_19"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_19"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -229,7 +229,7 @@ export default function FinanceStatusInfo() {
     {
       key: '22',
       label: '机器设备',
-      children: <Form.Item name="FinanceStatusInfo_22"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_22"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -247,7 +247,7 @@ export default function FinanceStatusInfo() {
     {
       key: '25',
       label: '累计折扣',
-      children: <Form.Item name="FinanceStatusInfo_25"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_25"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -265,7 +265,7 @@ export default function FinanceStatusInfo() {
     {
       key: '28',
       label: '其中：本年折扣',
-      children: <Form.Item name="FinanceStatusInfo_28"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_28"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -283,7 +283,7 @@ export default function FinanceStatusInfo() {
     {
       key: '31',
       label: '无形资产',
-      children: <Form.Item name="company_runningsum_24"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_24"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -301,7 +301,7 @@ export default function FinanceStatusInfo() {
     {
       key: '34',
       label: '其中：土地使用权',
-      children: <Form.Item name="FinanceStatusInfo_34"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_34"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -319,7 +319,7 @@ export default function FinanceStatusInfo() {
     {
       key: '37',
       label: '资产总计',
-      children: <Form.Item name="FinanceStatusInfo_38"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_38"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -337,7 +337,7 @@ export default function FinanceStatusInfo() {
     {
       key: '40',
       label: '负债合计',
-      children: <Form.Item name="FinanceStatusInfo_40"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_40"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -355,7 +355,7 @@ export default function FinanceStatusInfo() {
     {
       key: '43',
       label: '所有者权益合计',
-      children: <Form.Item name="company_runningsum_31"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_31"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -373,7 +373,7 @@ export default function FinanceStatusInfo() {
     {
       key: '46',
       label: '其中：实收资本',
-      children: <Form.Item name="company_runningsum_32"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_32"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -391,7 +391,7 @@ export default function FinanceStatusInfo() {
     {
       key: '49',
       label: '个人资本',
-      children: <Form.Item name="FinanceStatusInfo_49"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_49"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -409,7 +409,7 @@ export default function FinanceStatusInfo() {
     {
       key: '52',
       label: '净服务收入',
-      children: <Form.Item name="FinanceStatusInfo_52"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_52"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -427,7 +427,7 @@ export default function FinanceStatusInfo() {
     {
       key: '133',
       label: '补贴收入',
-      children: <Form.Item name="FinanceStatusInfo_133"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_133"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -445,7 +445,7 @@ export default function FinanceStatusInfo() {
     {
       key: '136',
       label: '主营业务收入',
-      children: <Form.Item name="FinanceStatusInfo_136"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_136"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -463,7 +463,7 @@ export default function FinanceStatusInfo() {
     {
       key: '140',
       label: '主营业务成本',
-      children: <Form.Item name="company_runningsum_33"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_33"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -481,7 +481,7 @@ export default function FinanceStatusInfo() {
     {
       key: '143',
       label: '主营业务税金及附加',
-      children: <Form.Item name="company_runningsum_4"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_4"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -499,7 +499,7 @@ export default function FinanceStatusInfo() {
     {
       key: '55',
       label: '营业成本',
-      children: <Form.Item name="company_runningsum_2"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_2"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -517,7 +517,7 @@ export default function FinanceStatusInfo() {
     {
       key: '58',
       label: '税金及附加',
-      children: <Form.Item name="company_runningsum_4"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_4"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -535,7 +535,7 @@ export default function FinanceStatusInfo() {
     {
       key: '61',
       label: '销售费用',
-      children: <Form.Item name="company_runningsum_5"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_5"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -553,7 +553,7 @@ export default function FinanceStatusInfo() {
     {
       key: '64',
       label: '管理费用',
-      children: <Form.Item name="company_runningsum_6"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_6"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -571,7 +571,7 @@ export default function FinanceStatusInfo() {
     {
       key: '67',
       label: '研发费用',
-      children: <Form.Item name="company_runningsum_7"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_7"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -589,7 +589,7 @@ export default function FinanceStatusInfo() {
     {
       key: '70',
       label: '财务费用',
-      children: <Form.Item name="company_runningsum_8"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_8"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -607,7 +607,7 @@ export default function FinanceStatusInfo() {
     {
       key: '73',
       label: '其中：利息收入',
-      children: <Form.Item name="FinanceStatusInfo_73"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_73"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -625,7 +625,7 @@ export default function FinanceStatusInfo() {
     {
       key: '76',
       label: '利息支出',
-      children: <Form.Item name="FinanceStatusInfo_76"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_76"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -643,7 +643,7 @@ export default function FinanceStatusInfo() {
     {
       key: '79',
       label: '资产减值损失',
-      children: <Form.Item name="company_runningsum_9"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_9"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -661,7 +661,7 @@ export default function FinanceStatusInfo() {
     {
       key: '82',
       label: '信用减值损失',
-      children: <Form.Item name="company_runningsum_10"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_10"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -679,7 +679,7 @@ export default function FinanceStatusInfo() {
     {
       key: '85',
       label: '公允价值变动收益',
-      children: <Form.Item name="company_runningsum_11"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_11"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -697,7 +697,7 @@ export default function FinanceStatusInfo() {
     {
       key: '88',
       label: '投资收益',
-      children: <Form.Item name="company_runningsum_12"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_12"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -715,7 +715,7 @@ export default function FinanceStatusInfo() {
     {
       key: '91',
       label: '净敞口套期收益',
-      children: <Form.Item name="company_runningsum_25"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_25"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -733,7 +733,7 @@ export default function FinanceStatusInfo() {
     {
       key: '94',
       label: '资产处置收益',
-      children: <Form.Item name="company_runningsum_27"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_27"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -751,7 +751,7 @@ export default function FinanceStatusInfo() {
     {
       key: '97',
       label: '其他收益',
-      children: <Form.Item name="company_runningsum_13"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_13"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -769,7 +769,7 @@ export default function FinanceStatusInfo() {
     {
       key: '100',
       label: '营业利润',
-      children: <Form.Item name="company_runningsum_14"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_14"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -787,7 +787,7 @@ export default function FinanceStatusInfo() {
     {
       key: '103',
       label: '营业外收入',
-      children: <Form.Item name="company_runningsum_15"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_15"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -805,7 +805,7 @@ export default function FinanceStatusInfo() {
     {
       key: '106',
       label: '营业外支出',
-      children: <Form.Item name="company_runningsum_16"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_16"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -823,7 +823,7 @@ export default function FinanceStatusInfo() {
     {
       key: '109',
       label: '利润总额',
-      children: <Form.Item name="company_runningsum_17"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_17"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -841,7 +841,7 @@ export default function FinanceStatusInfo() {
     {
       key: '112',
       label: '所得税费用',
-      children: <Form.Item name="company_runningsum_21"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_21"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -859,7 +859,7 @@ export default function FinanceStatusInfo() {
     {
       key: '115',
       label: '四、成本费用及增值税',
-      children: <Form.Item name="FinanceStatusInfo_115"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_115"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -877,7 +877,7 @@ export default function FinanceStatusInfo() {
     {
       key: '118',
       label: '应付职工薪酬（本期贷方累计发生额）',
-      children: <Form.Item name="company_runningsum_23"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_23"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -895,7 +895,7 @@ export default function FinanceStatusInfo() {
     {
       key: '121',
       label: '应交增值税（本期累计发生额）',
-      children: <Form.Item name="company_runningsum_19"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_19"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -913,7 +913,7 @@ export default function FinanceStatusInfo() {
     {
       key: '124',
       label: '五、期末用工人数',
-      children: <Form.Item name="FinanceStatusInfo_124"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_124"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -931,7 +931,7 @@ export default function FinanceStatusInfo() {
     {
       key: '130',
       label: '平均用工人数',
-      children: <Form.Item name="FinanceStatusInfo_130"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_130"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
