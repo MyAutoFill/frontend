@@ -94,7 +94,7 @@ export default function ResearchActivityInfo() {
       label: '研究开发人员合计',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_1"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_1"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_2"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -105,7 +105,7 @@ export default function ResearchActivityInfo() {
       label: '其中：管理和服务人员',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_3"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_3"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_4"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -116,7 +116,7 @@ export default function ResearchActivityInfo() {
       label: '其中：女性',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_5"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_5"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_6"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -127,7 +127,7 @@ export default function ResearchActivityInfo() {
       label: '其中：全职人员',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_7"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_7"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_8"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -138,7 +138,7 @@ export default function ResearchActivityInfo() {
       label: '其中：本科毕业及以上人员',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_9"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_9"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_10"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -149,7 +149,7 @@ export default function ResearchActivityInfo() {
       label: '其中：外聘人员',
       children:
         <>
-          <Form.Item name="Statistic_ResearchActivity_11"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_11"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_12"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -303,7 +303,7 @@ export default function ResearchActivityInfo() {
       label: '报加计扣除减免税的研究开发支出',
       children:
         <>
-          <Form.Item name="Statistic_ResearchActivity_33"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_33"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_34"><Input disabled={disableVar} addonBefore='数量' addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -314,7 +314,7 @@ export default function ResearchActivityInfo() {
       label: '加计扣除减免税金额',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_35"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_35"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_36"><Input disabled={disableVar} addonBefore='数量' addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -325,7 +325,7 @@ export default function ResearchActivityInfo() {
       label: '高新技术企业减免税金额',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_37"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_37"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_38"><Input disabled={disableVar} addonBefore='数量' addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -372,7 +372,7 @@ export default function ResearchActivityInfo() {
       label: '期末仪器和设备原价',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_44"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_44"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_45"><Input disabled={disableVar} addonBefore='数量' addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -411,7 +411,7 @@ export default function ResearchActivityInfo() {
       label: '其中：已被实施',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_49"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_49"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_50"><Input disabled={disableVar} addonBefore='数量' addonAfter='件' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -458,7 +458,7 @@ export default function ResearchActivityInfo() {
       label: '*期末拥有注册商标',
       children: 
         <>
-          <Form.Item name="Statistic_ResearchActivity_55"><Input disabled={disableVar} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="Statistic_ResearchActivity_55"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="Statistic_ResearchActivity_56"><Input disabled={disableVar} addonBefore='数量' addonAfter='件' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,

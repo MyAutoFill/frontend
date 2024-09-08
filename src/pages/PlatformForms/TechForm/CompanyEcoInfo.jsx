@@ -134,7 +134,7 @@ export default function CompanyEcoInfo() {
     {
       key: '7',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc02'></Input></Form.Item>,
+      children: 'qc02',
       span: 1
     },
     {
@@ -152,7 +152,7 @@ export default function CompanyEcoInfo() {
     {
       key: '10',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc05_0'></Input></Form.Item>,
+      children: 'qc05_0',
       span: 1
     },
     {
@@ -170,7 +170,7 @@ export default function CompanyEcoInfo() {
     {
       key: '13',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc55'></Input></Form.Item>,
+      children: 'qc55',
       span: 1
     },
     {
@@ -188,7 +188,7 @@ export default function CompanyEcoInfo() {
     {
       key: '16',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc06'></Input></Form.Item>,
+      children: 'qc06',
       span: 1
     },
     {
@@ -206,7 +206,7 @@ export default function CompanyEcoInfo() {
     {
       key: '19',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc06_1'></Input></Form.Item>,
+      children: 'qc06_1',
       span: 1
     },
     {
@@ -224,7 +224,7 @@ export default function CompanyEcoInfo() {
     {
       key: '22',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc06_2'></Input></Form.Item>,
+      children: 'qc06_2',
       span: 1
     },
     {
@@ -242,7 +242,7 @@ export default function CompanyEcoInfo() {
     {
       key: '25',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc06_3'></Input></Form.Item>,
+      children: 'qc06_3',
       span: 1
     },
     {
@@ -260,7 +260,7 @@ export default function CompanyEcoInfo() {
     {
       key: '28',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc06_4'></Input></Form.Item>,
+      children: 'qc06_4',
       span: 1
     },
     {
@@ -278,7 +278,7 @@ export default function CompanyEcoInfo() {
     {
       key: '31',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc07'></Input></Form.Item>,
+      children: 'qc07',
       span: 1
     },
     {
@@ -296,7 +296,7 @@ export default function CompanyEcoInfo() {
     {
       key: '34',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc09'></Input></Form.Item>,
+      children: 'qc09',
       span: 1
     },
     {
@@ -314,7 +314,7 @@ export default function CompanyEcoInfo() {
     {
       key: '37',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc10'></Input></Form.Item>,
+      children: 'qc10',
       span: 1
     },
     {
@@ -332,7 +332,7 @@ export default function CompanyEcoInfo() {
     {
       key: '40',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc49'></Input></Form.Item>,
+      children: 'qc49',
       span: 1
     },
     {
@@ -350,7 +350,7 @@ export default function CompanyEcoInfo() {
     {
       key: '43',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc52'></Input></Form.Item>,
+      children: 'qc52',
       span: 1
     },
     {
@@ -368,7 +368,7 @@ export default function CompanyEcoInfo() {
     {
       key: '46',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc11'></Input></Form.Item>,
+      children: 'qc11',
       span: 1
     },
     {
@@ -386,7 +386,7 @@ export default function CompanyEcoInfo() {
     {
       key: '49',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc38'></Input></Form.Item>,
+      children: 'qc38',
       span: 1
     },
     {
@@ -404,7 +404,7 @@ export default function CompanyEcoInfo() {
     {
       key: '52',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc11_1'></Input></Form.Item>,
+      children: 'qc11_1',
       span: 1
     },
     {
@@ -422,7 +422,7 @@ export default function CompanyEcoInfo() {
     {
       key: '55',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_34"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc220'></Input></Form.Item>,
+      children: 'qc220',
       span: 1
     },
     {
@@ -440,7 +440,7 @@ export default function CompanyEcoInfo() {
     {
       key: '58',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_36"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc221'></Input></Form.Item>,
+      children: 'qc221',
       span: 1
     },
     {
@@ -458,7 +458,7 @@ export default function CompanyEcoInfo() {
     {
       key: '61',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc222'></Input></Form.Item>,
+      children: 'qc222',
       span: 1
     },
     {
@@ -476,7 +476,7 @@ export default function CompanyEcoInfo() {
     {
       key: '64',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_40"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc223'></Input></Form.Item>,
+      children: 'qc223',
       span: 1
     },
     {
@@ -494,7 +494,7 @@ export default function CompanyEcoInfo() {
     {
       key: '67',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_42"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc236'></Input></Form.Item>,
+      children: 'qc236',
       span: 1
     },
     {
@@ -512,7 +512,7 @@ export default function CompanyEcoInfo() {
     {
       key: '70',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_44"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc224'></Input></Form.Item>,
+      children: 'qc224',
       span: 1
     },
     {
@@ -530,7 +530,7 @@ export default function CompanyEcoInfo() {
     {
       key: '73',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_46"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc228'></Input></Form.Item>,
+      children: 'qc228',
       span: 1
     },
     {
@@ -548,7 +548,7 @@ export default function CompanyEcoInfo() {
     {
       key: '76',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_48"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc235'></Input></Form.Item>,
+      children: 'qc235',
       span: 1
     },
     {
@@ -566,7 +566,7 @@ export default function CompanyEcoInfo() {
     {
       key: '79',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_50"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc229'></Input></Form.Item>,
+      children: 'qc229',
       span: 1
     },
     {
@@ -584,7 +584,7 @@ export default function CompanyEcoInfo() {
     {
       key: '82',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_52"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc225'></Input></Form.Item>,
+      children: 'qc225',
       span: 1
     },
     {
@@ -602,7 +602,7 @@ export default function CompanyEcoInfo() {
     {
       key: '85',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_54"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc239'></Input></Form.Item>,
+      children: 'qc239',
       span: 1
     },
     {
@@ -620,7 +620,7 @@ export default function CompanyEcoInfo() {
     {
       key: '88',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_56"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc233'></Input></Form.Item>,
+      children: 'qc233',
       span: 1
     },
     {
@@ -638,7 +638,7 @@ export default function CompanyEcoInfo() {
     {
       key: '91',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_58"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc232'></Input></Form.Item>,
+      children: 'qc232',
       span: 1
     },
     {
@@ -656,7 +656,7 @@ export default function CompanyEcoInfo() {
     {
       key: '94',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_60"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc120'></Input></Form.Item>,
+      children: 'qc120',
       span: 1
     },
     {
@@ -674,7 +674,7 @@ export default function CompanyEcoInfo() {
     {
       key: '97',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_62"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc227'></Input></Form.Item>,
+      children: 'qc227',
       span: 1
     },
     {
@@ -692,7 +692,7 @@ export default function CompanyEcoInfo() {
     {
       key: '100',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_64"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc230'></Input></Form.Item>,
+      children: 'qc230',
       span: 1
     },
     {
@@ -715,7 +715,7 @@ export default function CompanyEcoInfo() {
     {
       key: '103',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_66"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc234'></Input></Form.Item>,
+      children: 'qc234',
       span: 1
     },
     {
@@ -733,7 +733,7 @@ export default function CompanyEcoInfo() {
     {
       key: '106',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_68"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc12'></Input></Form.Item>,
+      children: 'qc12',
       span: 1
     },
     {
@@ -751,7 +751,7 @@ export default function CompanyEcoInfo() {
     {
       key: '109',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_70"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc231'></Input></Form.Item>,
+      children: 'qc231',
       span: 1
     },
     {
@@ -769,7 +769,7 @@ export default function CompanyEcoInfo() {
     {
       key: '112',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_72"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc13'></Input></Form.Item>,
+      children: 'qc13',
       span: 1
     },
     {
@@ -787,7 +787,7 @@ export default function CompanyEcoInfo() {
     {
       key: '115',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_74"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc14'></Input></Form.Item>,
+      children: 'qc14',
       span: 1
     },
     {
@@ -805,7 +805,7 @@ export default function CompanyEcoInfo() {
     {
       key: '118',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_76"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc16'></Input></Form.Item>,
+      children: 'qc16',
       span: 1
     },
     {
@@ -823,7 +823,7 @@ export default function CompanyEcoInfo() {
     {
       key: '121',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_78"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc17'></Input></Form.Item>,
+      children: 'qc17',
       span: 1
     },
     {
@@ -841,7 +841,7 @@ export default function CompanyEcoInfo() {
     {
       key: '124',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_80"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc18'></Input></Form.Item>,
+      children: 'qc18',
       span: 1
     },
     {
@@ -859,7 +859,7 @@ export default function CompanyEcoInfo() {
     {
       key: '127',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_82"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc20'></Input></Form.Item>,
+      children: 'qc20',
       span: 1
     },
     {
@@ -877,7 +877,7 @@ export default function CompanyEcoInfo() {
     {
       key: '130',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_84"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc20_1'></Input></Form.Item>,
+      children: 'qc20_1',
       span: 1
     },
     {
@@ -895,7 +895,7 @@ export default function CompanyEcoInfo() {
     {
       key: '133',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_86"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc20_2'></Input></Form.Item>,
+      children: 'qc20_2',
       span: 1
     },
     {
@@ -913,7 +913,7 @@ export default function CompanyEcoInfo() {
     {
       key: '136',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_88"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc20_3'></Input></Form.Item>,
+      children: 'qc20_3',
       span: 1
     },
     {
@@ -931,7 +931,7 @@ export default function CompanyEcoInfo() {
     {
       key: '139',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_90"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc62'></Input></Form.Item>,
+      children: 'qc62',
       span: 1
     },
     {
@@ -949,7 +949,7 @@ export default function CompanyEcoInfo() {
     {
       key: '142',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_92"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc51'></Input></Form.Item>,
+      children: 'qc51',
       span: 1
     },
     {
@@ -967,7 +967,7 @@ export default function CompanyEcoInfo() {
     {
       key: '145',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_94"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc24'></Input></Form.Item>,
+      children: 'qc24',
       span: 1
     },
     {
@@ -985,7 +985,7 @@ export default function CompanyEcoInfo() {
     {
       key: '148',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_96"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc25'></Input></Form.Item>,
+      children: 'qc25',
       span: 1
     },
     {
@@ -1003,7 +1003,7 @@ export default function CompanyEcoInfo() {
     {
       key: '151',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_98"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc27_1'></Input></Form.Item>,
+      children: 'qc27_1',
       span: 1
     },
     {
@@ -1021,7 +1021,7 @@ export default function CompanyEcoInfo() {
     {
       key: '154',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_100"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc238'></Input></Form.Item>,
+      children: 'qc238',
       span: 1
     },
     {
@@ -1039,7 +1039,7 @@ export default function CompanyEcoInfo() {
     {
       key: '157',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_102"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc29'></Input></Form.Item>,
+      children: 'qc29',
       span: 1
     },
     {
@@ -1057,7 +1057,7 @@ export default function CompanyEcoInfo() {
     {
       key: '160',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_104"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc30'></Input></Form.Item>,
+      children: 'qc30',
       span: 1
     },
     {
@@ -1075,7 +1075,7 @@ export default function CompanyEcoInfo() {
     {
       key: '163',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_106"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc65'></Input></Form.Item>,
+      children: 'qc65',
       span: 1
     },
     {
@@ -1093,7 +1093,7 @@ export default function CompanyEcoInfo() {
     {
       key: '166',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_108"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc61'></Input></Form.Item>,
+      children: 'qc61',
       span: 1
     },
     {
@@ -1111,7 +1111,7 @@ export default function CompanyEcoInfo() {
     {
       key: '169',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_110"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc237'></Input></Form.Item>,
+      children: 'qc237',
       span: 1
     },
     {
@@ -1129,7 +1129,7 @@ export default function CompanyEcoInfo() {
     {
       key: '172',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_112"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc31'></Input></Form.Item>,
+      children: 'qc31',
       span: 1
     },
     {
@@ -1147,7 +1147,7 @@ export default function CompanyEcoInfo() {
     {
       key: '175',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_114"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc32'></Input></Form.Item>,
+      children: 'qc32',
       span: 1
     },
     {
@@ -1165,7 +1165,7 @@ export default function CompanyEcoInfo() {
     {
       key: '178',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_116"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc33'></Input></Form.Item>,
+      children: 'qc33',
       span: 1
     },
     {
@@ -1183,7 +1183,7 @@ export default function CompanyEcoInfo() {
     {
       key: '181',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_118"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc34'></Input></Form.Item>,
+      children: 'qc34',
       span: 1
     },
     {
@@ -1201,7 +1201,7 @@ export default function CompanyEcoInfo() {
     {
       key: '184',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_120"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc63'></Input></Form.Item>,
+      children: 'qc63',
       span: 1
     },
     {
@@ -1219,7 +1219,7 @@ export default function CompanyEcoInfo() {
     {
       key: '187',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_122"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc50'></Input></Form.Item>,
+      children: 'qc50',
       span: 1
     },
     {
@@ -1237,7 +1237,7 @@ export default function CompanyEcoInfo() {
     {
       key: '190',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_124"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc39'></Input></Form.Item>,
+      children: 'qc39',
       span: 1
     },
     {
@@ -1255,7 +1255,7 @@ export default function CompanyEcoInfo() {
     {
       key: '193',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_126"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc40'></Input></Form.Item>,
+      children: 'qc40',
       span: 1
     },
     {
@@ -1273,7 +1273,7 @@ export default function CompanyEcoInfo() {
     {
       key: '196',
       label: '代码',
-      children: <Form.Item name="Tech_EcoInfo_128"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc41 '></Input></Form.Item>,
+      children: 'qc41 ',
       span: 1
     },
     {

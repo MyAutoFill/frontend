@@ -587,29 +587,7 @@ export default function CashFlowForm() {
       code: '73',
       normal_this_month: <Form.Item name="cash_flow_73"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_73"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '74',
-      project_name: '',
-      code: '74',
-      normal_this_month: <Form.Item name="cash_flow_74"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_74"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '75',
-      project_name: '',
-      code: '75',
-      normal_this_month: <Form.Item name="cash_flow_75"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_75"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '76',
-      project_name: '',
-      code: '76',
-      normal_this_month: <Form.Item name="cash_flow_76"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_76"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     }
-
   ];
 
   const onFinish = (values) => {

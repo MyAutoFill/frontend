@@ -132,7 +132,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '7',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd01'></Input></Form.Item>,
+      children: 'qd01',
       span: 1
     },
     {
@@ -150,7 +150,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '10',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd03'></Input></Form.Item>,
+      children: 'qd03',
       span: 1
     },
     {
@@ -168,7 +168,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '13',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd25'></Input></Form.Item>,
+      children: 'qd25',
       span: 1
     },
     {
@@ -186,7 +186,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '16',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd21'></Input></Form.Item>,
+      children: 'qd21',
       span: 1
     },
     {
@@ -204,7 +204,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '19',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd26'></Input></Form.Item>,
+      children: 'qd26',
       span: 1
     },
     {
@@ -222,7 +222,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '22',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd14'></Input></Form.Item>,
+      children: 'qd14',
       span: 1
     },
     {
@@ -240,7 +240,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '25',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd14_0'></Input></Form.Item>,
+      children: 'qd14_0',
       span: 1
     },
     {
@@ -258,7 +258,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '28',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd05'></Input></Form.Item>,
+      children: 'qd05',
       span: 1
     },
     {
@@ -286,7 +286,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '31',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd18'></Input></Form.Item>,
+      children: 'qd18',
       span: 1
     },
     {
@@ -304,7 +304,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '34',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd06'></Input></Form.Item>,
+      children: 'qd06',
       span: 1
     },
     {
@@ -322,7 +322,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '37',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd07'></Input></Form.Item>,
+      children: 'qd07',
       span: 1
     },
     {
@@ -340,7 +340,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '40',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd08'></Input></Form.Item>,
+      children: 'qd08',
       span: 1
     },
     {
@@ -358,7 +358,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '43',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd09'></Input></Form.Item>,
+      children: 'qd09',
       span: 1
     },
     {
@@ -376,7 +376,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '46',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd31'></Input></Form.Item>,
+      children: 'qd31',
       span: 1
     },
     {
@@ -394,7 +394,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '49',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd32'></Input></Form.Item>,
+      children: 'qd32',
       span: 1
     },
     {
@@ -412,7 +412,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '52',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd33'></Input></Form.Item>,
+      children: 'qd33',
       span: 1
     },
     {
@@ -430,7 +430,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '55',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_34"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd34 '></Input></Form.Item>,
+      children: 'qd34 ',
       span: 1
     },
     {
@@ -448,7 +448,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '58',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_36"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd35'></Input></Form.Item>,
+      children: 'qd35',
       span: 1
     },
     {
@@ -466,7 +466,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '61',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd36'></Input></Form.Item>,
+      children: 'qd36',
       span: 1
     },
     {
@@ -489,7 +489,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '64',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_40"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd27'></Input></Form.Item>,
+      children: 'qd27',
       span: 1
     },
     {
@@ -507,7 +507,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '67',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_42"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qc236'></Input></Form.Item>,
+      children: 'qc236',
       span: 1
     },
     {
@@ -525,7 +525,7 @@ export default function CompanyEmployeeInfo() {
     {
       key: '70',
       label: '代码',
-      children: <Form.Item name="Tech_Employee_44"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} value='qd28'></Input></Form.Item>,
+      children: 'qd28',
       span: 1
     },
     {
