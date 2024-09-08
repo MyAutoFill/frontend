@@ -111,7 +111,7 @@ export default function ResearchDevelopActivity() {
     {
       key: '5',
       label: '有效期至',
-      children: <Form.Item name="Tech_activity_1"><DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {

@@ -85,7 +85,7 @@ export default function GongShangCompanyInfo() {
     {
       key: '1',
       label: '报告年度',
-      children: <Form.Item name="GongShang_CompanyInfo_1"><DatePicker disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {
@@ -166,14 +166,14 @@ export default function GongShangCompanyInfo() {
           <br></br>
           <span size='large'>认缴出资时间</span>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_15"><DatePicker disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
+          <DatePicker disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
           <Form.Item name="GongShang_CompanyInfo_16"><Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large'>实缴出资时间</span>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_17"><DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
+          <DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
           <Form.Item name="GongShang_CompanyInfo_18"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
@@ -195,7 +195,7 @@ export default function GongShangCompanyInfo() {
           <br></br>
           <span size='large'>股权变更日期</span>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_23"><DatePicker disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
+          <DatePicker disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
         </>,
       span: 1.5
     },

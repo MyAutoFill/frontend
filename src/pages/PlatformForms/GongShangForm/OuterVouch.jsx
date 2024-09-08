@@ -109,7 +109,7 @@ export default function OuterVouch() {
     {
       key: '5',
       label: '履行债务的期限',
-      children: <Form.Item name="GongShang_OuterVouch_5"><DatePicker disabled={disableVar} size='large' placeholder='请选择履行债务的期限' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择履行债务的期限' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {

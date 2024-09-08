@@ -103,13 +103,13 @@ export default function PersonalPaymentDetails() {
     {
       key: '4',
       label: '开始年月',
-      children: <Form.Item name="GongJiJin_PaymentDetails_4"><DatePicker disabled={disableVar} size='large' placeholder='请选择开始年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开始年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
       key: '5',
       label: '截止年月',
-      children: <Form.Item name="GongJiJin_PaymentDetails_5"><DatePicker disabled={disableVar} size='large' placeholder='请选择截止年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择截止年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {

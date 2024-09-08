@@ -170,13 +170,13 @@ export default function IndividualCityTransferInfo() {
     {
       key: '13',
       label: '最后汇缴月',
-      children: <Form.Item name="GongJiJin_transfer_12"><DatePicker disabled={disableVar} size='large' placeholder='请选择最后汇缴月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择最后汇缴月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
       key: '14',
       label: '开始缴存年月',
-      children: <Form.Item name="GongJiJin_transfer_13"><DatePicker disabled={disableVar} size='large' placeholder='请选择开始缴存年月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开始缴存年月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     }
   ];

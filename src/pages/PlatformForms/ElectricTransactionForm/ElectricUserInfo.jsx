@@ -163,7 +163,7 @@ export default function ElectricUserInfo() {
     {
       key: '11',
       label: '成立日期',
-      children: <Form.Item name="Electric_UserInfo_1"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择成立日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -301,7 +301,7 @@ export default function ElectricUserInfo() {
     {
       key: '33',
       label: '注册失效时间',
-      children: <Form.Item name="Electric_UserInfo_12"><DatePicker disabled={disableVar} size='large' placeholder='请选择注册失效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择注册失效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -367,7 +367,7 @@ export default function ElectricUserInfo() {
     {
       key: '42',
       label: '注册生效时间',
-      children: <Form.Item name="Electric_UserInfo_21"><DatePicker disabled={disableVar} size='large' placeholder='请选择注册生效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择注册生效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

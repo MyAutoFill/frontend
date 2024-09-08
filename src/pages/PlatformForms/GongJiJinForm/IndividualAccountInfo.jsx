@@ -188,7 +188,7 @@ export default function IndividualAccountInfo() {
     {
       key: '17',
       label: '启封年月',
-      children: <Form.Item name="GongJiJin_AccountInfo_13"><DatePicker disabled={disableVar} size='large' placeholder='请选择启封年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择启封年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

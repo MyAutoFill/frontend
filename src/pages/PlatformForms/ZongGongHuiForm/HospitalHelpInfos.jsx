@@ -205,7 +205,7 @@ export default function HospitalHelpInfos() {
     {
       key: '17',
       label: '参保年份',
-      children: <Form.Item name="yibao_securityinfo_13"><DatePicker disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -325,7 +325,7 @@ export default function HospitalHelpInfos() {
     {
       key: '33',
       label: '参保年份',
-      children: <Form.Item name="yibao_securityinfo_22"><DatePicker disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

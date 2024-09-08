@@ -282,7 +282,7 @@ export default function BasicCompanyInfo() {
     {
       key: '21',
       label: '成立时间（所有单位填报）',
-      children: <Form.Item name="company_basicinfo_d1"><DatePicker size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <DatePicker size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {
