@@ -1863,6 +1863,7 @@ export default function PropertyDebt() {
         style={{ height: 800, padding: 10, overflow: "auto" }}
         class="banner-anim"
       >
+      <Form onFinish={onFinish} form={form}>
         <Row style={{ width: "1300px" }}>
           <Col span={24} style={{textAlign:'center',lineHeight:"80px",fontSize:'20px',fontWeight:'600'}}>资产负债表(适用执行企业会计制度的企业)</Col>
         </Row>
@@ -1873,7 +1874,6 @@ export default function PropertyDebt() {
           <Col span={8} style={{textAlign:'right'}}>报送日期:2024-06-16</Col>
         </Row>
         <Descriptions bordered items={items} column="2" style={{ width: "1300px",marginTop:"20px",marginBottom:"20px",backgroundColor:"#efefef"  }} labelStyle={{color:"#333",width:"160px",textAlign:"right"}}/>
-        <Form onFinish={onFinish} form={form}>
           <Table
             dataSource={data}
             style={{ width: "1300px" }}

@@ -116,6 +116,7 @@ export default function UploadSyncPage() {
                 }
               })
               .then(function (res) {
+                message.success(`资产负债表 上传成功`);
                 modal.destroy()
               })
             }
@@ -183,6 +184,7 @@ export default function UploadSyncPage() {
                 }
               })
               .then(function (res) {
+                message.success(`利润表 上传成功`);
                 modal.destroy()
               })
             }
@@ -250,6 +252,7 @@ export default function UploadSyncPage() {
                 }
               })
               .then(function (res) {
+                message.success(`现金流量表 上传成功`);
                 modal.destroy()
               })
             }
@@ -331,7 +334,7 @@ export default function UploadSyncPage() {
             }}
           >
             <Space style={{marginTop: '50px'}}>
-              <Button size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
+              <Button onClick={() => {window.location.href = '/input?tab=2'}} size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
             </Space>
           </ConfigProvider>
         </div>
