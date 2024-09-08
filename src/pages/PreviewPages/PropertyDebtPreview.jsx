@@ -122,10 +122,9 @@ export default function PropertyDebt() {
       property_name1: <div style={{ paddingLeft: "30px" }}>货币资金</div>,
       code1: '1',
       year_start1: (
-        <Form.Item name="property_2_yearStart_1">
+        <Form.Item name="property_2_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -134,10 +133,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="tax_debt_1">
+        <Form.Item name="tax_debt_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -148,10 +146,9 @@ export default function PropertyDebt() {
       property_name2: <div style={{ paddingLeft: "30px" }}>短期借款</div>,
       code2: '33',
       year_start2: (
-        <Form.Item name="property_2_yearStart_2">
+        <Form.Item name="property_2_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -160,10 +157,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="tax_debt_26">
+        <Form.Item name="tax_debt_26" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -178,10 +174,9 @@ export default function PropertyDebt() {
       property_name1: <div style={{ paddingLeft: "30px" }}>短期投资</div>,
       code1: '2',
       year_start1: (
-        <Form.Item name="property_3_yearStart_1">
+        <Form.Item name="property_3_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -190,10 +185,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="tax_debt_2">
+        <Form.Item name="tax_debt_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -204,10 +198,9 @@ export default function PropertyDebt() {
       property_name2: <div style={{ paddingLeft: "30px" }}>应付票据</div>,
       code2: '34',
       year_start2: (
-        <Form.Item name="property_3_yearStart_2">
+        <Form.Item name="property_3_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -216,10 +209,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="tax_debt_27">
+        <Form.Item name="tax_debt_27" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -234,10 +226,9 @@ export default function PropertyDebt() {
       property_name1: <div style={{ paddingLeft: "30px" }}>应收票据</div>,
       code1: '3',
       year_start1: (
-        <Form.Item name="property_4_yearStart_1">
+        <Form.Item name="property_4_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -246,10 +237,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="tax_debt_3">
+        <Form.Item name="tax_debt_3" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -260,10 +250,9 @@ export default function PropertyDebt() {
       property_name2: <div style={{ paddingLeft: "30px" }}>应付账款</div>,
       code2: '35',
       year_start2: (
-        <Form.Item name="property_4_yearStart_2">
+        <Form.Item name="property_4_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -272,10 +261,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="tax_debt_28">
+        <Form.Item name="tax_debt_28" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -290,10 +278,9 @@ export default function PropertyDebt() {
       property_name1: <div style={{ paddingLeft: "30px" }}>应收股利</div>,
       code1: '4',
       year_start1: (
-        <Form.Item name="property_5_yearStart_1">
+        <Form.Item name="property_5_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -302,10 +289,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="tax_debt_4">
+        <Form.Item name="tax_debt_4" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -316,10 +302,9 @@ export default function PropertyDebt() {
       property_name2: <div style={{ paddingLeft: "30px" }}>预收账款</div>,
       code2: '36',
       year_start2: (
-        <Form.Item name="property_5_yearStart_2">
+        <Form.Item name="property_5_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -328,10 +313,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="tax_debt_29">
+        <Form.Item name="tax_debt_29" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -346,10 +330,9 @@ export default function PropertyDebt() {
       property_name1: <div style={{ paddingLeft: "30px" }}>应收利息</div>,
       code1: '5',
       year_start1: (
-        <Form.Item name="property_6_yearStart_1">
+        <Form.Item name="property_6_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -358,10 +341,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end1: (
-        <Form.Item name="tax_debt_5">
+        <Form.Item name="tax_debt_5" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -372,10 +354,9 @@ export default function PropertyDebt() {
       property_name2: <div style={{ paddingLeft: "30px" }}>应付工资</div>,
       code2: '37',
       year_start2: (
-        <Form.Item name="property_6_yearStart_2">
+        <Form.Item name="property_6_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
@@ -384,10 +365,9 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="company_employee_11">
+        <Form.Item name="company_employee_11" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
             addonAfter=""
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
