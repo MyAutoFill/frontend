@@ -569,7 +569,7 @@ export default function PropertyDebtForm() {
     },
     {
       key: '70',
-      project_name: '',
+      project_name: '其他债权投资',
       code: '70',
       normal_this_month: <Form.Item rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]} name="tax_debt_70"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="tax_debt_total_70"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
