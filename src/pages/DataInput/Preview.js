@@ -7,9 +7,6 @@ import ElectricUserInfo from '../PlatformForms/ElectricTransactionForm/ElectricU
 import UserRecognizeInfo from '../PlatformForms/ElectricTransactionForm/UserRecognizeInfo'
 import UserSignUpAndOff from '../PlatformForms/ElectricTransactionForm/UserSignUpAndOff'
 import IndividualAccountInfo from '../PlatformForms/GongJiJinForm/IndividualAccountInfo'
-import IndividualCityTransferInfo from '../PlatformForms/GongJiJinForm/IndividualCityTransferInfo'
-import PaymentSignUpInfo from '../PlatformForms/GongJiJinForm/PaymentSignUpInfo'
-import PersonalPaymentDetails from '../PlatformForms/GongJiJinForm/PersonalPaymentDetails'
 import GongShangCompanyInfo from '../PlatformForms/GongShangForm/GongShangCompanyInfo'
 import JoinedSecurityInfo from '../PlatformForms/GongShangForm/JoinedSecurityInfo'
 import OuterVouch from '../PlatformForms/GongShangForm/OuterVouch'
@@ -42,6 +39,9 @@ import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfo
 import PropertyDebt from '../PreviewPages/PropertyDebtPreview';
 import CashFlowPreview from '../PreviewPages/CashFlowPreview';
 import BenefitsForm from '../PreviewPages/BenefitsFormPreview';
+import PropertyDebtNewRule from '../PreviewPages/PropertyDebtNewRulesPreview';
+import CashFlowNewRule from '../PreviewPages/CashFlowNewRulesPreview';
+import BenefitsNewRules from '../PreviewPages/BenefitsNewRulesPreview';
 
 
 export default function PreviewPage() {
@@ -108,15 +108,15 @@ export default function PreviewPage() {
       children: [
         {
           key: 'platform12_1',
-          label: '现金流量表',
+          label: '现金流量表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
         },
 				{
           key: 'platform12_2',
-          label: '资产负债表',
+          label: '资产负债表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
         },
 				{
           key: 'platform12_3',
-          label: '利润表',
+          label: '利润表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
         },
         {
           key: 'platform12_4',
@@ -274,10 +274,13 @@ export default function PreviewPage() {
     '18': <JoinedSecurityInfo />,
 
     '19': <IndividualAccountInfo />,
-    
-    'platform12_1': <CashFlowPreview />,
-    'platform12_2': <PropertyDebt />,
-    'platform12_3': <BenefitsForm />,
+
+    'platform12_1': <CashFlowNewRule />,
+    'platform12_2': <PropertyDebtNewRule />,
+    'platform12_3': <BenefitsNewRules />,
+    'platform12_4': <CashFlowPreview />,
+    'platform12_5': <PropertyDebt />,
+    'platform12_6': <BenefitsForm />,
 
     '23': <HospitalHelpInfos />,
 
