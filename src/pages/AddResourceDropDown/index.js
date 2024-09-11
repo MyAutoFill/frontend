@@ -83,7 +83,7 @@ function AddModal(props) {
         method: 'POST',
         body: formData,
         headers: {
-          Authorization: localStorage.getItem('token'),
+          Authorization: sessionStorage.getItem('token'),
         }
       })
         .then((res) => {

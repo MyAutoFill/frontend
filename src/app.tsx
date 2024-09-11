@@ -23,7 +23,7 @@ export async function getInitialState(): Promise<{
 }> {
   const fetchUserInfo = async () => {
     try {
-      const data = localStorage.getItem("userInfo");
+      const data = sessionStorage.getItem("userInfo");
       if (data != null) {
         return JSON.parse(data);
       } else {

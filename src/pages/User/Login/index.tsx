@@ -84,8 +84,8 @@ const Login: React.FC = () => {
         }
       };
       if (msg.code === 200) {
-        localStorage.setItem("token", msg.data.access_token)
-        localStorage.setItem("userInfo", JSON.stringify(msg.data))
+        sessionStorage.setItem("token", msg.data.access_token)
+        sessionStorage.setItem("userInfo", JSON.stringify(msg.data))
         const defaultLoginSuccessMessage = intl.formatMessage({
           id: 'pages.login.success',
           defaultMessage: '登录成功！',

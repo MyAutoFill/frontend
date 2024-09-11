@@ -5,7 +5,7 @@
   clear: jest.fn(),
 };
 
-global.localStorage = localStorageMock;
+global.sessionStorage = localStorageMock;
 
 Object.defineProperty(URL, 'createObjectURL', {
   writable: true,

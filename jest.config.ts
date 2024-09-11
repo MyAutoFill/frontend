@@ -17,7 +17,7 @@ export default async () => {
     setupFiles: [...(config.setupFiles || []), './tests/setupTests.jsx'],
     globals: {
       ...config.globals,
-      localStorage: null,
+      sessionStorage: null,
     },
   };
 };
