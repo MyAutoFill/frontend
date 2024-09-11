@@ -534,7 +534,7 @@
                 },
                 {
                     "key": "递延税款贷项",
-                    "id": "tax_debt_45"
+                    "id": "cash_flow_33"
                 },
                 {
                     "key": "实收资本(或股本)",
@@ -1302,7 +1302,7 @@
             "现金流量表（适用已执行新金融准则、新收入准则和新租赁准则的一般企业）": [
                 {
                     "key": "销售商品、提供劳务收到的现金",
-                    "id": "cash_flow_45"
+                    "id": "cash_flow_1"
                 },
                 {
                     "key": "收到的税费返还",
@@ -1314,15 +1314,15 @@
                 },
                 {
                     "key": "购买商品、接受劳务支付的现金",
-                    "id": "cash_flow_48"
+                    "id": "cash_flow_4"
                 },
                 {
                     "key": "支付给职工以及为职工支付的现金",
-                    "id": "cash_flow_49"
+                    "id": "cash_flow_5"
                 },
                 {
                     "key": "支付的各项税费",
-                    "id": "cash_flow_50"
+                    "id": "cash_flow_6"
                 },
                 {
                     "key": "支付其他与经营活动有关的现金",
@@ -1338,7 +1338,7 @@
                 },
                 {
                     "key": "处置固定资产、无形资产和其他长期资产收回的现金净额",
-                    "id": "cash_flow_54"
+                    "id": "cash_flow_10"
                 },
                 {
                     "key": "处置子公司及其他营业单位收到的现金净额",
@@ -1350,7 +1350,7 @@
                 },
                 {
                     "key": "购建固定资产、无形资产和其他长期资产所支付的现金",
-                    "id": "cash_flow_57"
+                    "id": "cash_flow_12"
                 },
                 {
                     "key": "投资支付的现金",
@@ -1382,7 +1382,7 @@
                 },
                 {
                     "key": "分配股利、利润或偿付利息支付的现金",
-                    "id": "cash_flow_65"
+                    "id": "cash_flow_19"
                 },
                 {
                     "key": "支付其他与筹资活动有关的现金",
@@ -1396,6 +1396,264 @@
                     "key": "加：期初现金及现金等价物余额",
                     "id": "cash_flow_68"
                 }
+            ],
+            "资产负债表（适用已执行新金融准则、新收入准则和新租赁准则的一般企业）": [
+                    {
+                        "key": "货币资金",
+                        "id": "tax_debt_1"
+                    },
+                    {
+                        "key": "交易性金融资产",
+                        "id": "tax_debt_56"
+                    },
+                    {
+                        "key": "衍生金融资产",
+                        "id": "tax_debt_58"
+                    },
+                    {
+                        "key": "应收票据",
+                        "id": "tax_debt_3"
+                    },
+                    {
+                        "key": "应收账款",
+                        "id": "FinanceStatusInfo_10"
+                    },
+                    {
+                        "key": "应收款项融资",
+                        "id": "tax_debt_60"
+                    },
+                    {
+                        "key": "预付款项",
+                        "id": "tax_debt_62"
+                    },
+                    {
+                        "key": "其他应收款",
+                        "id": "tax_debt_7"
+                    },
+                    {
+                        "key": "存货",
+                        "id": "FinanceStatusInfo_13"
+                    },
+                    {
+                        "key": "合同资产",
+                        "id": "tax_debt_64"
+                    },
+                    {
+                        "key": "持有待售资产",
+                        "id": "tax_debt_65"
+                    },
+                    {
+                        "key": "一年内到期的非流动资产",
+                        "id": "tax_debt_67"
+                    },
+                    {
+                        "key": "其他流动资产",
+                        "id": "tax_debt_13"
+                    },
+                    {
+                        "key": "债权投资",
+                        "id": "tax_debt_15"
+                    },
+                    {
+                        "key": "其他债权投资",
+                        "id": "tax_debt_70"
+                    },
+                    {
+                        "key": "长期应收款",
+                        "id": "tax_debt_71"
+                    },
+                    {
+                        "key": "长期股权投资",
+                        "id": "tax_debt_14"
+                    },
+                    {
+                        "key": "其他权益工具投资",
+                        "id": "tax_debt_74"
+                    },
+                    {
+                        "key": "其他非流动金融资产",
+                        "id": "tax_debt_76"
+                    },
+                    {
+                        "key": "投资性房地产",
+                        "id": "tax_debt_77"
+                    },
+                    {
+                        "key": "固定资产",
+                        "id": "FinanceStatusInfo_16"
+                    },
+                    {
+                        "key": "在建工程",
+                        "id": "tax_debt_20"
+                    },
+                    {
+                        "key": "生产性生物资产",
+                        "id": "tax_debt_80"
+                    },
+                    {
+                        "key": "油气资产",
+                        "id": "tax_debt_82"
+                    },
+                    {
+                        "key": "使用权资产",
+                        "id": "tax_debt_83"
+                    },
+                    {
+                        "key": "无形资产",
+                        "id": "company_runningsum_24"
+                    },
+                    {
+                        "key": "开发支出",
+                        "id": "Tech_EcoInfo_101"
+                    },
+                    {
+                        "key": "商誉",
+                        "id": "tax_debt_84"
+                    },
+                    {
+                        "key": "长期待摊费用",
+                        "id": "company_research_9"
+                    },
+                    {
+                        "key": "递延所得税资产",
+                        "id": "tax_debt_86"
+                    },
+                    {
+                        "key": "其他非流动资产",
+                        "id": "tax_debt_87"
+                    },
+                    {
+                        "key": "短期借款",
+                        "id": "tax_debt_26"
+                    },
+                    {
+                        "key": "交易性金融负债",
+                        "id": "tax_debt_57"
+                    },
+                    {
+                        "key": "衍生金融负债",
+                        "id": "tax_debt_59"
+                    },
+                    {
+                        "key": "应付票据",
+                        "id": "tax_debt_27"
+                    },
+                    {
+                        "key": "应付账款",
+                        "id": "tax_debt_28"
+                    },
+                    {
+                        "key": "预收款项",
+                        "id": "tax_debt_61"
+                    },
+                    {
+                        "key": "合同负债",
+                        "id": "tax_debt_63"
+                    },
+                    {
+                        "key": "应付职工薪酬",
+                        "id": "company_runningsum_23"
+                    },
+                    {
+                        "key": "应交税费",
+                        "id": "company_runningsum_4"
+                    },
+                    {
+                        "key": "其他应付款",
+                        "id": "tax_debt_35"
+                    },
+                    {
+                        "key": "持有待售负债",
+                        "id": "tax_debt_66"
+                    },
+                    {
+                        "key": "一年内到期的非流动负债",
+                        "id": "tax_debt_68"
+                    },
+                    {
+                        "key": "其他流动负债",
+                        "id": "company_runningsum_29"
+                    },
+                    {
+                        "key": "长期借款",
+                        "id": "tax_debt_40"
+                    },
+                    {
+                        "key": "应付债券",
+                        "id": "tax_debt_41"
+                    },
+                    {
+                        "key": "其中：优先股",
+                        "id": ""
+                    },
+                    {
+                        "key": "永续债",
+                        "id": "tax_debt_73"
+                    },
+                    {
+                        "key": "租赁负债",
+                        "id": "tax_debt_75"
+                    },
+                    {
+                        "key": "长期应付款",
+                        "id": "tax_debt_42"
+                    },
+                    {
+                        "key": "预计负债",
+                        "id": "tax_debt_37"
+                    },
+                    {
+                        "key": "递延收益",
+                        "id": "tax_debt_78"
+                    },
+                    {
+                        "key": "递延所得税负债",
+                        "id": "tax_debt_79"
+                    },
+                    {
+                        "key": "其他非流动负债",
+                        "id": "tax_debt_81"
+                    },
+                    {
+                        "key": "实收资本（或股本）",
+                        "id": "company_runningsum_32"
+                    },
+                    {
+                        "key": "其他权益工具",
+                        "id": "tax_debt_85"
+                    },
+                    {
+                        "key": "其他权益工具-其中：优先股",
+                        "id": "tax_debt_72"
+                    },
+                    {
+                        "key": "其他权益工具-永续债",
+                        "id": "tax_debt_73"
+                    },
+                    {
+                        "key": "资本公积",
+                        "id": "tax_debt_48"
+                    },
+                    {
+                        "key": "减：库存股",
+                        "id": "tax_debt_88"
+                    },
+                    {
+                        "key": "其他综合收益",
+                        "id": "tax_debt_89"
+                    },
+                    {
+                        "key": "专项储备",
+                        "id": "tax_debt_90"
+                    },
+                    {
+                        "key": "盈余公积",
+                        "id": "tax_debt_49"
+                    },
+                    {
+                        "key": "未分配利润",
+                        "id": "tax_debt_51"
+                    }
             ]
         },
         "山东公共就业人才服务": {

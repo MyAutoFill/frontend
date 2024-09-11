@@ -125,7 +125,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_2_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -136,7 +136,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -149,7 +149,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_2_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -160,7 +160,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_26" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -177,7 +177,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_3_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -188,7 +188,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -201,7 +201,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_3_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -212,7 +212,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_27" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -229,7 +229,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_4_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -240,7 +240,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_3" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -253,7 +253,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_4_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -264,7 +264,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_28" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -281,7 +281,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_5_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -292,7 +292,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_4" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -305,7 +305,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_5_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -316,7 +316,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_29" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -333,7 +333,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_6_yearStart_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -344,7 +344,7 @@ export default function PropertyDebt() {
         <Form.Item name="tax_debt_5" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -357,7 +357,7 @@ export default function PropertyDebt() {
         <Form.Item name="property_6_yearStart_2" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={true}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -368,7 +368,7 @@ export default function PropertyDebt() {
         <Form.Item name="company_employee_11" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -386,7 +386,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -398,7 +398,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -412,7 +412,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -424,7 +424,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -442,7 +442,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -454,7 +454,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -468,7 +468,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -480,7 +480,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -498,7 +498,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -510,7 +510,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -524,7 +524,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -536,7 +536,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -554,7 +554,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -566,7 +566,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -580,7 +580,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -592,7 +592,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -610,7 +610,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -622,7 +622,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -636,7 +636,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -648,7 +648,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -666,7 +666,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -678,7 +678,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -692,7 +692,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -704,7 +704,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -724,7 +724,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -736,7 +736,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -750,7 +750,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -762,7 +762,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -780,7 +780,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -792,7 +792,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -808,7 +808,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -820,7 +820,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -838,7 +838,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -850,7 +850,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -864,7 +864,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -876,7 +876,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -898,7 +898,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -910,7 +910,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -928,7 +928,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -940,7 +940,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -962,7 +962,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -974,7 +974,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -988,7 +988,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1000,7 +1000,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1018,7 +1018,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1030,7 +1030,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1044,7 +1044,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1056,7 +1056,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1078,7 +1078,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1090,7 +1090,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1108,7 +1108,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1120,7 +1120,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1134,7 +1134,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1146,7 +1146,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1164,7 +1164,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1176,7 +1176,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1190,7 +1190,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1202,7 +1202,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1220,7 +1220,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1232,7 +1232,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1246,7 +1246,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1258,7 +1258,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1278,7 +1278,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1290,7 +1290,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1312,7 +1312,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1324,7 +1324,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1338,7 +1338,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1346,11 +1346,11 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="tax_debt_45">
+        <Form.Item name="cash_flow_33">
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1368,7 +1368,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1380,7 +1380,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1394,7 +1394,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1406,7 +1406,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1424,7 +1424,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1436,7 +1436,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1460,7 +1460,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1472,7 +1472,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1488,7 +1488,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1500,7 +1500,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1518,7 +1518,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1530,7 +1530,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1544,7 +1544,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1556,7 +1556,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1582,7 +1582,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1594,7 +1594,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1612,7 +1612,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1624,7 +1624,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1638,7 +1638,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1650,7 +1650,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1668,7 +1668,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1680,7 +1680,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1694,7 +1694,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1706,7 +1706,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1724,7 +1724,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1736,7 +1736,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1752,7 +1752,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1764,7 +1764,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1784,7 +1784,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1796,7 +1796,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1810,7 +1810,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1822,7 +1822,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1846,7 +1846,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1858,7 +1858,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1876,7 +1876,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1893,7 +1893,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1905,7 +1905,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1923,7 +1923,7 @@ export default function PropertyDebt() {
           <Input
             disabled={true}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
@@ -1935,7 +1935,7 @@ export default function PropertyDebt() {
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}
-            addonAfter=""
+            addonAfter="元"
             size="large"
             style={{ width: "130px", marginTop: "10px" }}
             defaultValue="0.0"
