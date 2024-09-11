@@ -147,7 +147,7 @@ export default function CashFlowNewRule() {
         <div style={{ paddingLeft: "30px" }}>销售商品、提供劳务收到的现金</div>
       ),
       monthNum: (
-        <Form.Item name="cash_flow_45" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_1" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -259,7 +259,7 @@ export default function CashFlowNewRule() {
         <div style={{ paddingLeft: "30px" }}>购买商品、接受劳务支付的现金</div>
       ),
       monthNum: (
-        <Form.Item name="cash_flow_48" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_4" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -287,7 +287,7 @@ export default function CashFlowNewRule() {
         <div style={{ paddingLeft: "30px" }}>支付给职工以及为职工支付的现金</div>
       ),
       monthNum: (
-        <Form.Item name="cash_flow_49" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_5" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -315,7 +315,7 @@ export default function CashFlowNewRule() {
         <div style={{ paddingLeft: "30px" }}>支付的各项税费</div>
       ),
       monthNum: (
-        <Form.Item name="cash_flow_50" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_6" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -491,7 +491,7 @@ export default function CashFlowNewRule() {
         <div style={{ paddingLeft: "30px" }}>处置固定资产、无形资产和其他长期资产收回的现金净额</div>
       ),
       monthNum: (
-        <Form.Item name="cash_flow_54" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_10" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -577,7 +577,7 @@ export default function CashFlowNewRule() {
       key: "19",
       project_name: <div style={{ paddingLeft: "30px" }}>购建固定资产、无形资产和其他长期资产所支付的现金</div>,
       monthNum: (
-        <Form.Item name="cash_flow_57" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_12" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -809,7 +809,7 @@ export default function CashFlowNewRule() {
       key: "31",
       project_name: <div style={{ paddingLeft: "30px" }}>分配股利、利润或偿付利息支付的现金</div>,
       monthNum: (
-        <Form.Item name="cash_flow_65" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
+        <Form.Item name="cash_flow_19" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}>
           <Input
             disabled={disableVar}
             addonAfter="元"

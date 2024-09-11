@@ -1346,7 +1346,7 @@ export default function PropertyDebt() {
         </Form.Item>
       ),
       year_end2: (
-        <Form.Item name="tax_debt_45">
+        <Form.Item name="cash_flow_33">
           <Input
             disabled={disableVar}
             rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}

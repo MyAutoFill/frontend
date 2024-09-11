@@ -109,7 +109,7 @@ export default function BenefitsNewRules() {
         <div style={{ fontWeight: "600" }}>一、营业收入</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_1">
+        <Form.Item name="company_runningsum_1">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -122,7 +122,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_1">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -137,7 +137,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "30px" }}>减:营业成本</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_2">
+        <Form.Item name="company_runningsum_2">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -150,7 +150,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_2">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -165,7 +165,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>税金及附加</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_3">
+        <Form.Item name="company_runningsum_4">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -178,7 +178,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_3">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -193,7 +193,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>销售费用</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_4">
+        <Form.Item name="company_runningsum_5">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -206,7 +206,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_4">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -221,7 +221,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>管理费用</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_5">
+        <Form.Item name="company_runningsum_6">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -234,7 +234,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_5">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -249,7 +249,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>研发费用</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_6">
+        <Form.Item name="company_runningsum_7">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -262,7 +262,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_6">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -277,7 +277,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>财务费用</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_7">
+        <Form.Item name="company_runningsum_8">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -290,7 +290,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_7">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -305,7 +305,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "90px" }}>其中:利息费用</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_8">
+        <Form.Item name="FinanceStatusInfo_76">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -318,7 +318,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_8">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -333,7 +333,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "120px" }}>利息收入</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_9">
+        <Form.Item name="FinanceStatusInfo_73">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -346,7 +346,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_9">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -361,7 +361,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "30px" }}>加:其他收益</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_10">
+        <Form.Item name="company_runningsum_13">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -374,7 +374,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_10">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -389,7 +389,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>投资收益(损失以“_”号填列)</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_11">
+        <Form.Item name="company_runningsum_12">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -402,7 +402,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_11">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -417,7 +417,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>其中:对联营企业和合营企业的投资收益</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_12">
+        <Form.Item name="tax_benefit_25">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -430,7 +430,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_12">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -445,7 +445,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>以摊余成本计量的金融资产终止确认收益(损失以“-”号填列)</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_13">
+        <Form.Item name="tax_benefit_26">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -458,7 +458,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_13">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -473,7 +473,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>净敞口套期收益(损失以“_”号填列)</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_14">
+        <Form.Item name="company_runningsum_25">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -486,7 +486,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_14">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -501,7 +501,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>公允价值变动收益(损失以“_”号填列)</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_15">
+        <Form.Item name="company_runningsum_11">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -514,7 +514,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_15">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -529,7 +529,7 @@ export default function BenefitsNewRules() {
         <div style={{ paddingLeft: "60px" }}>信用减值损失(损失以“_”号填列))</div>
       ),
       monthNum: (
-        <Form.Item name="monthNum_16">
+        <Form.Item name="company_runningsum_10">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -542,7 +542,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_16">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -555,7 +555,7 @@ export default function BenefitsNewRules() {
       key: "17",
       project_name: <div style={{ paddingLeft: "60px" }}>资产减值损失(损失以“_”号填列)</div>,
       monthNum: (
-        <Form.Item name="monthNum_17">
+        <Form.Item name="company_runningsum_9">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -568,7 +568,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_17">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -581,7 +581,7 @@ export default function BenefitsNewRules() {
       key: "18",
       project_name: <div style={{ paddingLeft: "60px" }}>资产处置收益(损失以“_”号填列)</div>,
       monthNum: (
-        <Form.Item name="monthNum_18">
+        <Form.Item name="company_runningsum_27">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -594,7 +594,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_18">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -606,14 +606,14 @@ export default function BenefitsNewRules() {
     {
       key: "19",
       project_name: <div style={{ fontWeight: "600" }}>二、营业利润(亏损以“_”号填列)</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "20",
       project_name: <div style={{ paddingLeft: "30px" }}>加:营业外收入</div>,
       monthNum: (
-        <Form.Item name="monthNum_20">
+        <Form.Item name="company_runningsum_15">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -626,7 +626,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_20">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -639,7 +639,7 @@ export default function BenefitsNewRules() {
       key: "21",
       project_name: <div style={{ paddingLeft: "30px" }}>减:营业外支出</div>,
       monthNum: (
-        <Form.Item name="monthNum_21">
+        <Form.Item name="company_runningsum_16">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -652,7 +652,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_21">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -664,14 +664,14 @@ export default function BenefitsNewRules() {
     {
       key: "22",
       project_name: <div style={{ fontWeight: "600" }}>三、利润总额(亏损总额以“-”号填列)</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "23",
       project_name: <div style={{ paddingLeft: "30px" }}>减:所得税费用</div>,
       monthNum: (
-        <Form.Item name="monthNum_23">
+        <Form.Item name="company_runningsum_21">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -684,7 +684,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_23">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -696,14 +696,14 @@ export default function BenefitsNewRules() {
     {
       key: "24",
       project_name: <div style={{ fontWeight: "600" }}>四、净利润(净亏损以“_”号填列)</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "25",
       project_name: <div style={{ paddingLeft: "30px" }}>(一)持续经营净利润(净亏损以“_”号填列)</div>,
       monthNum: (
-        <Form.Item name="monthNum_25">
+        <Form.Item name="tax_benefits_32">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -716,7 +716,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_25">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -729,7 +729,7 @@ export default function BenefitsNewRules() {
       key: "26",
       project_name: <div style={{ paddingLeft: "30px" }}>(二)终止经营净利润(净亏损以“_”号填列)</div>,
       monthNum: (
-        <Form.Item name="monthNum_26">
+        <Form.Item name="tax_benefits_33">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -742,7 +742,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_26">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -755,20 +755,20 @@ export default function BenefitsNewRules() {
     {
       key: "27",
       project_name: <div style={{ fontWeight: "600" }}>五、其他综合收益的税后净额</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "28",
       project_name: <div style={{ paddingLeft: "30px" }}>(一)不能重分类进损益的其他综合收益</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "29",
       project_name: <div style={{ paddingLeft: "60px" }}>1.重新计量设定受益计划变动额</div>,
       monthNum: (
-        <Form.Item name="monthNum_29">
+        <Form.Item name="tax_benefits_34">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -781,7 +781,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_29">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -794,7 +794,7 @@ export default function BenefitsNewRules() {
       key: "30",
       project_name: <div style={{ paddingLeft: "60px" }}>2.权益法下不能转损益的其他综合收益</div>,
       monthNum: (
-        <Form.Item name="monthNum_30">
+        <Form.Item name="tax_benefits_35">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -807,7 +807,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_30">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -820,7 +820,7 @@ export default function BenefitsNewRules() {
       key: "31",
       project_name: <div style={{ paddingLeft: "60px" }}>3.其他权益工具投资公允价值变动</div>,
       monthNum: (
-        <Form.Item name="monthNum_31">
+        <Form.Item name="tax_benefits_36">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -833,7 +833,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_31">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -846,7 +846,7 @@ export default function BenefitsNewRules() {
       key: "32",
       project_name: <div style={{ paddingLeft: "60px" }}>4.企业自身信用风险公允价值变动</div>,
       monthNum: (
-        <Form.Item name="monthNum_32">
+        <Form.Item name="tax_benefits_37">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -859,7 +859,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_32">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -871,14 +871,14 @@ export default function BenefitsNewRules() {
     {
       key: "33",
       project_name: <div style={{ paddingLeft: "30px" }}>(二)将重分类进损益的其他综合收益</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "34",
       project_name: <div style={{ paddingLeft: "60px" }}>1.权益法下可转损益的其他综合收益</div>,
       monthNum: (
-        <Form.Item name="monthNum_34">
+        <Form.Item name="tax_benefits_38">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -891,7 +891,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_34">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -904,7 +904,7 @@ export default function BenefitsNewRules() {
       key: "35",
       project_name: <div style={{ paddingLeft: "60px" }}>2.其他债权投资公允价值变动</div>,
       monthNum: (
-        <Form.Item name="monthNum_35">
+        <Form.Item name="tax_benefits_39">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -917,7 +917,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_35">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -930,7 +930,7 @@ export default function BenefitsNewRules() {
       key: "36",
       project_name: <div style={{ paddingLeft: "60px" }}>3.金融资产重分类计入其他综合收益的金额</div>,
       monthNum: (
-        <Form.Item name="monthNum_36">
+        <Form.Item name="tax_benefits_40">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -943,7 +943,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_36">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -956,7 +956,7 @@ export default function BenefitsNewRules() {
       key: "37",
       project_name: <div style={{ paddingLeft: "60px" }}>4.其他债权投资信用减值准备</div>,
       monthNum: (
-        <Form.Item name="monthNum_37">
+        <Form.Item name="tax_benefits_41">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -969,7 +969,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_37">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -982,7 +982,7 @@ export default function BenefitsNewRules() {
       key: "38",
       project_name: <div style={{ paddingLeft: "60px" }}>5.现金流量套期储备</div>,
       monthNum: (
-        <Form.Item name="monthNum_38">
+        <Form.Item name="tax_benefits_42">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -995,7 +995,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_38">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -1008,7 +1008,7 @@ export default function BenefitsNewRules() {
       key: "39",
       project_name: <div style={{ paddingLeft: "60px" }}>6.外币财务报表折算差额</div>,
       monthNum: (
-        <Form.Item name="monthNum_39">
+        <Form.Item name="tax_benefits_43">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1021,7 +1021,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_39">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -1033,20 +1033,20 @@ export default function BenefitsNewRules() {
     {
       key: "40",
       project_name: <div style={{ fontWeight: "600" }}>六、综合收益总额</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "41",
       project_name: <div style={{ fontWeight: "600" }}>七、每股收益:</div>,
-      monthNum: <div style={{ textAlign: "left" }}>-1,341,231.47</div>,
-      yearNum: <div style={{ textAlign: "left" }}>-720,529.35</div>,
+      monthNum: <div style={{ textAlign: "left" }}>--</div>,
+      yearNum: <div style={{ textAlign: "left" }}>--</div>,
     },
     {
       key: "42",
       project_name: <div style={{ paddingLeft: "30px" }}>(一)基本每股收益</div>,
       monthNum: (
-        <Form.Item name="monthNum_42">
+        <Form.Item name="tax_benefits_44">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1059,7 +1059,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_42">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}
@@ -1072,7 +1072,7 @@ export default function BenefitsNewRules() {
       key: "43",
       project_name: <div style={{ paddingLeft: "30px" }}>(二)稀释每股收益</div>,
       monthNum: (
-        <Form.Item name="monthNum_43">
+        <Form.Item name="tax_benefits_45">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1085,7 +1085,7 @@ export default function BenefitsNewRules() {
       yearNum: (
         <Form.Item name="yearNum_43">
           <Input
-            disabled={disableVar}
+            disabled={true}
             addonAfter="元"
             size="large"
             style={{ width: "150px", marginTop: "10px" }}

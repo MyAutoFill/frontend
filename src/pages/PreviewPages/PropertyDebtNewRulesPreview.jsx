@@ -989,7 +989,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>长期应收款</div>,
       code1: "17",
       year_start1: (
-        <Form.Item name="property_19_yearStart_1">
+        <Form.Item name="tax_debt_71">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1013,7 +1013,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "60px" }}>其中:优先股</div>,
       code2: "51",
       year_start2: (
-        <Form.Item name="property_19_yearStart_2">
+        <Form.Item name="tax_debt_72">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1041,7 +1041,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>长期股权投资</div>,
       code1: "18",
       year_start1: (
-        <Form.Item name="property_19_yearStart_20">
+        <Form.Item name="tax_debt_14">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1065,7 +1065,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "60px" }}>永续债</div>,
       code2: "52",
       year_start2: (
-        <Form.Item name="property_20_yearStart_2">
+        <Form.Item name="tax_debt_73">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1093,7 +1093,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>其他权益工具投资</div>,
       code1: "19",
       year_start1: (
-        <Form.Item name="property_21_yearStart_1">
+        <Form.Item name="tax_debt_74">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1117,7 +1117,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>租赁负债</div>,
       code2: "53",
       year_start2: (
-        <Form.Item name="property_21_yearStart_2">
+        <Form.Item name="tax_debt_75">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1145,7 +1145,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>其他非流动金融资产</div>,
       code1: "20",
       year_start1: (
-        <Form.Item name="property_24_yearStart_1">
+        <Form.Item name="tax_debt_76">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1169,7 +1169,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>长期应付款</div>,
       code2: "54",
       year_start2: (
-        <Form.Item name="property_24_yearStart_2">
+        <Form.Item name="tax_debt_42">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1199,7 +1199,7 @@ export default function PropertyDebtNewRule() {
       ),
       code1: "21",
       year_start1: (
-        <Form.Item name="property_25_yearStart_1">
+        <Form.Item name="tax_debt_77">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1223,7 +1223,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>预计负债</div>,
       code2: "55",
       year_start2: (
-        <Form.Item name="property_25_yearStart_2">
+        <Form.Item name="tax_debt_37">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1251,7 +1251,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>固定资产</div>,
       code1: "22",
       year_start1: (
-        <Form.Item name="property_26_yearStart_1">
+        <Form.Item name="FinanceStatusInfo_16">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1275,7 +1275,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>递延收益</div>,
       code2: "56",
       year_start2: (
-        <Form.Item name="property_26_yearStart_2">
+        <Form.Item name="tax_debt_78">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1303,7 +1303,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>在建工程</div>,
       code1: "23",
       year_start1: (
-        <Form.Item name="property_27_yearStart_1">
+        <Form.Item name="tax_debt_20">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1327,7 +1327,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>递延所得税负债</div>,
       code2: "57",
       year_start2: (
-        <Form.Item name="property_27_yearStart_2">
+        <Form.Item name="tax_debt_79">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1355,7 +1355,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>生产性生物资产</div>,
       code1: "24",
       year_start1: (
-        <Form.Item name="property_28_yearStart_1">
+        <Form.Item name="tax_debt_80">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1379,7 +1379,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>其他非流动负债</div>,
       code2: "58",
       year_start2: (
-        <Form.Item name="property_28_yearStart_2">
+        <Form.Item name="tax_debt_81">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1407,7 +1407,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>油气资产</div>,
       code1: "25",
       year_start1: (
-        <Form.Item name="property_29_yearStart_1">
+        <Form.Item name="tax_debt_82">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1461,7 +1461,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px"}}>使用权资产</div>,
       code1: "26",
       year_start1: (
-        <Form.Item name="property_30_yearStart_1">
+        <Form.Item name="tax_debt_83">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1485,7 +1485,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "60px" ,color: "#ff4d4f"}}>负债合计</div>,
       code2: "60",
       year_start2: (
-        <Form.Item name="property_30_yearStart_2">
+        <Form.Item name="FinanceStatusInfo_40">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1515,7 +1515,7 @@ export default function PropertyDebtNewRule() {
       ),
       code1: "27",
       year_start1: (
-        <Form.Item name="property_31_yearStart_1">
+        <Form.Item name="company_runningsum_24">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1549,7 +1549,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>开发支出</div>,
       code1: "28",
       year_start1: (
-        <Form.Item name="property_32_yearStart_1">
+        <Form.Item name="Tech_EcoInfo_101">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1573,7 +1573,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>实收资本(或股本)</div>,
       code2: "61",
       year_start2: (
-        <Form.Item name="property_32_yearStart_2">
+        <Form.Item name="company_runningsum_32">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1601,7 +1601,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>商誉</div>,
       code1: "29",
       year_start1: (
-        <Form.Item name="property_33_yearStart_1">
+        <Form.Item name="tax_debt_84">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1625,7 +1625,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>其他权益工具</div>,
       code2: "62",
       year_start2: (
-        <Form.Item name="property_33_yearStart_2">
+        <Form.Item name="tax_debt_85">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1709,7 +1709,7 @@ export default function PropertyDebtNewRule() {
       ),
       code1: "32",
       year_start1: (
-        <Form.Item name="property_35_yearStart_1">
+        <Form.Item name="tax_debt_86">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1761,7 +1761,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "30px" }}>其他非流动资产</div>,
       code1: "32",
       year_start1: (
-        <Form.Item name="property_36_yearStart_1">
+        <Form.Item name="tax_debt_87">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1815,7 +1815,7 @@ export default function PropertyDebtNewRule() {
       property_name1: <div style={{ paddingLeft: "60px" }}>非流动资产合计</div>,
       code1: "33",
       year_start1: (
-        <Form.Item name="property_37_yearStart_1">
+        <Form.Item name="Tech_EcoInfo_99">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1832,7 +1832,7 @@ export default function PropertyDebtNewRule() {
       ),
       code2: "66",
       year_start2: (
-        <Form.Item name="property_37_yearStart_2">
+        <Form.Item name="tax_debt_88">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1864,7 +1864,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>其他综合收益</div>,
       code2: "67",
       year_start2: (
-        <Form.Item name="property_37_yearStart_2">
+        <Form.Item name="tax_debt_89">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1896,7 +1896,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>专项储备</div>,
       code2: "68",
       year_start2: (
-        <Form.Item name="property_37_yearStart_2">
+        <Form.Item name="tax_debt_90">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1928,7 +1928,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>盈余公积</div>,
       code2: "69",
       year_start2: (
-        <Form.Item name="property_37_yearStart_2">
+        <Form.Item name="tax_debt_49">
           <Input
             disabled={disableVar}
             addonAfter="元"
@@ -1960,7 +1960,7 @@ export default function PropertyDebtNewRule() {
       property_name2: <div style={{ paddingLeft: "30px" }}>未分配利润</div>,
       code2: "70",
       year_start2: (
-        <Form.Item name="property_37_yearStart_2">
+        <Form.Item name="tax_debt_51">
           <Input
             disabled={disableVar}
             addonAfter="元"

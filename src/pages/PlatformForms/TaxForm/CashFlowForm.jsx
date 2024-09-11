@@ -393,13 +393,6 @@ export default function CashFlowForm() {
       normal_this_year: <Form.Item name="cash_flow_total_44"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
-      key: '45',
-      project_name: '销售商品、提供劳务收到的现金',
-      code: '45',
-      normal_this_month: <Form.Item name="cash_flow_45"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_45"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
       key: '46',
       project_name: '现金流入小计',
       code: '46',
@@ -412,27 +405,6 @@ export default function CashFlowForm() {
       code: '47',
       normal_this_month: <Form.Item name="cash_flow_47"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_47"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '48',
-      project_name: '购买商品、接受劳务支付的现金',
-      code: '48',
-      normal_this_month: <Form.Item name="cash_flow_48"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_48"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '49',
-      project_name: '支付给职工以及为职工支付的现金',
-      code: '49',
-      normal_this_month: <Form.Item name="cash_flow_49"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_49"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-    },
-    {
-      key: '50',
-      project_name: '支付的各项税费',
-      code: '50',
-      normal_this_month: <Form.Item name="cash_flow_50"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
-      normal_this_year: <Form.Item name="cash_flow_total_50"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
       key: '51',
@@ -459,7 +431,7 @@ export default function CashFlowForm() {
       key: '54',
       project_name: '处置固定资产、无形资产和其他长期资产收回的现金净额',
       code: '54',
-      normal_this_month: <Form.Item name="cash_flow_54"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="cash_flow_10"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_54"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
@@ -473,7 +445,7 @@ export default function CashFlowForm() {
       key: '57',
       project_name: '购建固定资产、无形资产和其他长期资产所支付的现金',
       code: '57',
-      normal_this_month: <Form.Item name="cash_flow_57"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="cash_flow_12"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_57"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
@@ -529,7 +501,7 @@ export default function CashFlowForm() {
       key: '65',
       project_name: '分配股利、利润或偿付利息支付的现金',
       code: '65',
-      normal_this_month: <Form.Item name="cash_flow_65"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="cash_flow_19"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="cash_flow_total_65"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
