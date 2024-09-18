@@ -9,14 +9,14 @@ import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
 
-export default function ElectricUserInfo() {
+export default function ElectricUserInfo(props) {
 
   useEffect(() => {
-    load_data();
-  }, []);
+    load_data(props.date);
+  }, [props.date]);
 
-  const load_data = () => {
-    reqBasicData()
+  const load_data = (curDate) => {
+    reqBasicData(curDate)
       .then(function (res) {
         reqRatioConfig('ElectricUserInfo')
         .then(function (config) {
@@ -28,6 +28,7 @@ export default function ElectricUserInfo() {
               new_res[key] = a.times(b).toString();
             }
           });
+          form.resetFields();
           form.setFieldsValue(new_res);
         })
       })
@@ -82,7 +83,7 @@ export default function ElectricUserInfo() {
     });
   };
 
-  const props = {
+  const uploadprops = {
     name: 'file',
     action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
     headers: {
@@ -328,7 +329,7 @@ export default function ElectricUserInfo() {
       label: '证明材料',
       children:       
         <Form.Item name="Electric_UserInfo_16">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传证明材料</Button>
           </Upload>
         </Form.Item>,
@@ -424,7 +425,7 @@ export default function ElectricUserInfo() {
       label: '准入目录文件',
       children:         
         <Form.Item name="Electric_UserInfo_28">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传准入目录文件</Button>
           </Upload>
         </Form.Item>,
@@ -441,7 +442,7 @@ export default function ElectricUserInfo() {
       label: '第一联系人授权文件（模板）',
       children: 
         <Form.Item name="Electric_UserInfo_30">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传授权文件</Button>
           </Upload>
         </Form.Item>,
@@ -458,7 +459,7 @@ export default function ElectricUserInfo() {
       label: '其他附件',
       children:
         <Form.Item name="Electric_UserInfo_32">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传其他附件</Button>
           </Upload>
         </Form.Item>,
@@ -488,7 +489,7 @@ export default function ElectricUserInfo() {
       request('/api/save', {
         method: 'POST',
         data: {
-          date: '2024-09',
+          date: props.date,
           data: new_res
         }
       })

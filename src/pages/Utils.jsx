@@ -1,10 +1,10 @@
 import { request } from 'umi';
 
-export function reqBasicData() {
+export function reqBasicData(curDate) {
     return request('/api/load_data', {
         method: 'POST',
         data: {
-            date: '2024-09'
+            date: curDate
         }
     });
 }

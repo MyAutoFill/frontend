@@ -9,18 +9,18 @@ import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
 
-export default function ResearchActivityInfo() {
+export default function ResearchActivityInfo(props) {
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
-    load_data();
-  }, []);
+    load_data(props.date);
+  }, [props.date]);
 
-  const load_data = () => {
-    reqBasicData()
+  const load_data = (curDate) => {
+    reqBasicData(curDate)
       .then(function (res) {
         reqRatioConfig('ResearchActivityInfo')
         .then(function (config) {
@@ -32,6 +32,7 @@ export default function ResearchActivityInfo() {
               new_res[key] = a.times(b).toString();
             }
           });
+          form.resetFields();
           form.setFieldsValue(new_res);
         })
       })
@@ -541,7 +542,7 @@ export default function ResearchActivityInfo() {
       request('/api/save', {
         method: 'POST',
         data: {
-          date: '2024-09',
+          date: props.date,
           data: new_res
         }
       })

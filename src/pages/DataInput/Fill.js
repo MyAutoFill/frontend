@@ -1,4 +1,4 @@
-import { Menu } from 'antd';
+import { Menu, DatePicker } from 'antd';
 import { useState } from 'react';
 
 import PMInfo from '../PlatformForms/CityGovernment/PMInfo'
@@ -40,10 +40,12 @@ import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfo
 import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
 import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
 import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
+import dayjs from 'dayjs';
 
 export default function Fill() {
 
   const [selectedKey, setSelectedKey] = useState('1');
+  const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
 
   const menus = [
     {
@@ -313,55 +315,59 @@ export default function Fill() {
   ];
 
   const pageMap = {
-    '1': <CompanyTaxInfo />,
-    '2': <BenefitsForm />,
-    '3': <PropertyDebtForm />,
-    '4': <CashFlowForm />,
+    '1': <CompanyTaxInfo date={curDate} />,
+    '2': <BenefitsForm date={curDate} />,
+    '3': <PropertyDebtForm date={curDate} />,
+    '4': <CashFlowForm date={curDate} />,
 
-    '6': <StatisticCompanyBasicInfo />,
-    '7': <CompanyTotalSalary />,
-    '8': <ResearchDevelopInfo />,
-    '9': <ResearchActivityInfo />,
-    '10': <FinanceStatusInfo />,
+    '6': <StatisticCompanyBasicInfo date={curDate} />,
+    '7': <CompanyTotalSalary date={curDate} />,
+    '8': <ResearchDevelopInfo date={curDate} />,
+    '9': <ResearchActivityInfo date={curDate} />,
+    '10': <FinanceStatusInfo date={curDate} />,
 
-    '11': <YiBaoCompanyInfo />,
-    '12': <CompanySecurityInfo />,
-    '13': <PeopleInfo />,
-    '14': <AddOrRemove />,
+    '11': <YiBaoCompanyInfo date={curDate} />,
+    '12': <CompanySecurityInfo date={curDate} />,
+    '13': <PeopleInfo date={curDate} />,
+    '14': <AddOrRemove date={curDate} />,
 
-    '15': <GongShangCompanyInfo />,
-    '16': <PropertyStatusInfo />,
-    '17': <OuterVouch />,
-    '18': <JoinedSecurityInfo />,
+    '15': <GongShangCompanyInfo date={curDate} />,
+    '16': <PropertyStatusInfo date={curDate} />,
+    '17': <OuterVouch date={curDate} />,
+    '18': <JoinedSecurityInfo date={curDate} />,
 
-    '19': <IndividualAccountInfo />,
-    '20': <IndividualCityTransferInfo />,
-    '21': <PaymentSignUpInfo />,
-    '22': <PersonalPaymentDetails />,
+    '19': <IndividualAccountInfo date={curDate} />,
+    '20': <IndividualCityTransferInfo date={curDate} />,
+    '21': <PaymentSignUpInfo date={curDate} />,
+    '22': <PersonalPaymentDetails date={curDate} />,
 
-    '23': <HospitalHelpInfos />,
+    '23': <HospitalHelpInfos date={curDate} />,
 
-    '24': <ElectricUserInfo />,
-    '25': <UserSignUpAndOff />,
-    '26': <UserRecognizeInfo />,
+    '24': <ElectricUserInfo date={curDate} />,
+    '25': <UserSignUpAndOff date={curDate} />,
+    '26': <UserRecognizeInfo date={curDate} />,
 
-    '27': <TechCompanyInfo />,
-    '28': <CompanyEcoInfo />,
-    '29': <CompanyEmployeeInfo />,
-    '30': <CompanyDevelopmentInfo />,
-    '31': <ResearchDevelopActivity />,
-    '32': <HighTechCompanyStat />,
+    '27': <TechCompanyInfo date={curDate} />,
+    '28': <CompanyEcoInfo date={curDate} />,
+    '29': <CompanyEmployeeInfo date={curDate} />,
+    '30': <CompanyDevelopmentInfo date={curDate} />,
+    '31': <ResearchDevelopActivity date={curDate} />,
+    '32': <HighTechCompanyStat date={curDate} />,
 
-    '33': <InfoTechMonthlyForm />,
+    '33': <InfoTechMonthlyForm date={curDate} />,
 
-    '34': <ProjectBasicInfo />,
-    '35': <PMInfo />,
+    '34': <ProjectBasicInfo date={curDate} />,
+    '35': <PMInfo date={curDate} />,
 
-    '36': <HumanSocialCompanyInfo />,
-    '37': <YiGongDaiXun />,
-    '38': <NewSheBao />,
-    '39': <CompanySocialSecurityInfo />,
-    '40': <JobDemandInfo />,
+    '36': <HumanSocialCompanyInfo date={curDate} />,
+    '37': <YiGongDaiXun date={curDate} />,
+    '38': <NewSheBao date={curDate} />,
+    '39': <CompanySocialSecurityInfo date={curDate} />,
+    '40': <JobDemandInfo date={curDate} />,
+  }
+
+  const onChange = (e) => {
+    setCurDate(e.format('YYYY-MM'));
   }
 
   return (
@@ -383,6 +389,7 @@ export default function Fill() {
         </div>
         <div>
           <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'auto'}}>
+            <DatePicker defaultValue={dayjs()} onChange={onChange} picker="month"/>
             {pageMap[selectedKey]}
           </div>
         </div>

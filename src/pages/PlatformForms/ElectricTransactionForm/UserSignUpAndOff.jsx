@@ -8,7 +8,7 @@ import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
-export default function UserSignUpandOff() {
+export default function UserSignUpandOff(props) {
 
   const peopleSearchOnChange = (value) => {
     console.log(`selected ${value}`);
@@ -18,11 +18,11 @@ export default function UserSignUpandOff() {
   };
 
   useEffect(() => {
-    load_data();
-  }, []);
+    load_data(props.date);
+  }, [props.date]);
 
-  const load_data = () => {
-    reqBasicData()
+  const load_data = (curDate) => {
+    reqBasicData(curDate)
       .then(function (res) {
         reqRatioConfig('UserSignUpandOff')
         .then(function (config) {
@@ -34,6 +34,7 @@ export default function UserSignUpandOff() {
               new_res[key] = a.times(b).toString();
             }
           });
+          form.resetFields();
           form.setFieldsValue(new_res);
         })
       })
@@ -88,7 +89,7 @@ export default function UserSignUpandOff() {
     });
   };
 
-  const props = {
+  const uploadprops = {
     name: 'file',
     action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
     headers: {
@@ -130,7 +131,7 @@ export default function UserSignUpandOff() {
       label: '电力批发用户参与山东省电力现货市场承诺书（模板）',
       children: 
         <Form.Item name="Electric_SignUpAndOff_3">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
           </Upload>
         </Form.Item>,
@@ -147,7 +148,7 @@ export default function UserSignUpandOff() {
       label: '注销声明（模板）',
       children: 
         <Form.Item name="Electric_SignUpAndOff_4">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
           </Upload>
         </Form.Item>,
@@ -158,7 +159,7 @@ export default function UserSignUpandOff() {
       label: '注销申请表（模板）',
       children: 
         <Form.Item name="Electric_SignUpAndOff_5">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
           </Upload>
         </Form.Item>,
@@ -169,7 +170,7 @@ export default function UserSignUpandOff() {
       label: '其他',
       children: 
         <Form.Item name="Electric_SignUpAndOff_6">
-          <Upload {...props} >
+          <Upload {...uploadprops} >
             <Button disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传文件</Button>
           </Upload>
         </Form.Item>,
@@ -193,7 +194,7 @@ export default function UserSignUpandOff() {
       request('/api/save', {
         method: 'POST',
         data: {
-          date: '2024-09',
+          date: props.date,
           data: new_res
         }
       })

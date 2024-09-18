@@ -9,7 +9,7 @@ import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
 
-export default function YiBaoAddOrRemove() {
+export default function YiBaoAddOrRemove(props) {
 
   const peopleSearchOnChange = (value) => {
     console.log(`selected ${value}`);
@@ -23,11 +23,11 @@ export default function YiBaoAddOrRemove() {
   const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
-    load_data();
-  }, []);
+    load_data(props.date);
+  }, [props.date]);
 
-  const load_data = () => {
-    reqBasicData()
+  const load_data = (curDate) => {
+    reqBasicData(curDate)
       .then(function (res) {
         reqRatioConfig('YiBaoAddOrRemove')
         .then(function (config) {
@@ -39,6 +39,7 @@ export default function YiBaoAddOrRemove() {
               new_res[key] = a.times(b).toString();
             }
           });
+          form.resetFields();
           form.setFieldsValue(new_res);
         })
       })
@@ -137,7 +138,7 @@ export default function YiBaoAddOrRemove() {
       request('/api/save', {
         method: 'POST',
         data: {
-          date: '2024-09',
+          date: props.date,
           data: new_res
         }
       })

@@ -8,11 +8,13 @@ import CompanyInsuranceInfo from './CompanyInsuranceInfo'
 import CompanyRunningSumInfo from './CompanyRunningSumInfo'
 import CompanyResearchInfo from './CompanyResearchInfo'
 import 'rc-banner-anim/assets/index.css';
-import { Menu } from 'antd';
+import { Menu, DatePicker } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import dayjs from 'dayjs';
 
 export default function CompanyInfo() {
   const [selectedKey, setSelectedKey] = useState('1');
+  const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
 
   const menus = [
     {
@@ -85,11 +87,15 @@ export default function CompanyInfo() {
   ];
 
   const pageMap = {
-    '1': <BasicCompanyInfo />,
-    '2': <CompanyInsuranceInfo />,
-    '3': <CompanyEmployedInfo />,
-    '6': <CompanyRunningSumInfo />,
-    '8': <CompanyResearchInfo />
+    '1': <BasicCompanyInfo date={curDate}/>,
+    '2': <CompanyInsuranceInfo date={curDate}/>,
+    '3': <CompanyEmployedInfo date={curDate}/>,
+    '6': <CompanyRunningSumInfo date={curDate}/>,
+    '8': <CompanyResearchInfo date={curDate}/>
+  }
+
+  const onChange = (e) => {
+    setCurDate(e.format('YYYY-MM'));
   }
 
   return (
@@ -117,6 +123,7 @@ export default function CompanyInfo() {
                 </div>
                 <div>
                   <div style={{marginLeft: 30, height: 700, width: 1450, overflow: 'auto'}}>
+                    <DatePicker defaultValue={dayjs()} onChange={onChange} picker="month"/>
                     {pageMap[selectedKey]}
                   </div>
                 </div>
