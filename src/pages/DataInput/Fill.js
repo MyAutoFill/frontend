@@ -106,24 +106,34 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform3',
-      label: '医保局',
+      key: 'platform12',
+      label: '人社局',
       children: [
         {
-          key: '11',
-          label: '单位基本信息',
-        },
-        {
-          key: '12',
-          label: '单位参保登记信息',
-        },
-        {
-          key: '13',
-          label: '人员信息',
-        },
-        {
-          key: '14',
-          label: '在线增减员信息',
+          key: 'g1',
+          type: 'group',
+          children: [
+            {
+              key: '36',
+              label: '单位就业登记信息',
+            },
+            {
+              key: '37',
+              label: '以工代训补贴申领信息',
+            },
+            {
+              key: '38',
+              label: '新增社保参保人员信息',
+            },
+            {
+              key: '39',
+              label: '单位参保信息',
+            },
+            {
+              key: '40',
+              label: '就业需求信息',
+            }
+          ],
         },
       ],
     },
@@ -131,29 +141,47 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform4',
-      label: '工商局',
+      key: 'platform8',
+      label: '科技局',
       children: [
         {
-          key: '15',
-          label: '企业基本信息',
+          key: '27',
+          label: '企业概况信息',
         },
         {
-          key: '16',
-          label: '资产状况信息',
+          key: '28',
+          label: '企业经济概况信息',
         },
         {
-          key: '17',
-          label: '对外提供保证担保信息',
+          key: '29',
+          label: '企业人员概况信息',
         },
         {
-          key: '18',
-          label: '参保信息',
+          key: '30',
+          label: '研究开发项目状况信息',
         },
+        {
+          key: '31',
+          label: '研究开发活动及相关情况信息'
+        },
+        {
+          key: '32',
+          label: '高新技术企业统计表信息'
+        }
       ],
     },
     {
       type: 'divider',
+    },
+    {
+      key: 'platform9',
+      label: '工信局',
+      children: [
+        {
+          key: '33',
+          label: '软件和信息技术服务业企业月报表信息',
+        }
+      ],
     },
     {
       key: 'platform5',
@@ -215,46 +243,50 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform8',
-      label: '科技局',
+      key: 'platform3',
+      label: '医保局',
       children: [
         {
-          key: '27',
-          label: '企业概况信息',
+          key: '11',
+          label: '单位基本信息',
         },
         {
-          key: '28',
-          label: '企业经济概况信息',
+          key: '12',
+          label: '单位参保登记信息',
         },
         {
-          key: '29',
-          label: '企业人员概况信息',
+          key: '13',
+          label: '人员信息',
         },
         {
-          key: '30',
-          label: '研究开发项目状况信息',
+          key: '14',
+          label: '在线增减员信息',
         },
-        {
-          key: '31',
-          label: '研究开发活动及相关情况信息'
-        },
-        {
-          key: '32',
-          label: '高新技术企业统计表信息'
-        }
       ],
     },
     {
       type: 'divider',
     },
     {
-      key: 'platform9',
-      label: '工信局',
+      key: 'platform4',
+      label: '市场监督管理局',
       children: [
         {
-          key: '33',
-          label: '软件和信息技术服务业企业月报表信息',
-        }
+          key: '15',
+          label: '企业基本信息',
+        },
+        {
+          key: '16',
+          label: '资产状况信息',
+        },
+        {
+          key: '17',
+          label: '对外提供保证担保信息',
+        },
+        {
+          key: '18',
+          label: '参保信息',
+        },
       ],
     },
     {
@@ -272,41 +304,6 @@ export default function Fill() {
           key: '35',
           label: '项目法人/申报单位信息',
         }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform12',
-      label: '人社局',
-      children: [
-        {
-          key: 'g1',
-          type: 'group',
-          children: [
-            {
-              key: '36',
-              label: '单位就业登记信息',
-            },
-            {
-              key: '37',
-              label: '以工代训补贴申领信息',
-            },
-            {
-              key: '38',
-              label: '新增社保参保人员信息',
-            },
-            {
-              key: '39',
-              label: '单位参保信息',
-            },
-            {
-              key: '40',
-              label: '就业需求信息',
-            }
-          ],
-        },
       ],
     },
     {
