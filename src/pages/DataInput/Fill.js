@@ -184,87 +184,6 @@ export default function Fill() {
       ],
     },
     {
-      key: 'platform5',
-      label: '公积金管理中心',
-      children: [
-        {
-          key: '19',
-          label: '个人账户信息',
-        },
-        {
-          key: '20',
-          label: '个人账户同城转移信息',
-        },
-        {
-          key: '21',
-          label: '汇缴登记信息',
-        },
-        {
-          key: '22',
-          label: '个人缴存明细信息',
-        },
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform6',
-      label: '市总工会',
-      children: [
-        {
-          key: '23',
-          label: '住院医疗互助信息',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform7',
-      label: '电力交易中心',
-      children: [
-        {
-          key: '24',
-          label: '电力用户基本信息',
-        },
-        {
-          key: '25',
-          label: '用户申请/注销信息',
-        },
-        {
-          key: '26',
-          label: '电力用户身份认证信息',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform3',
-      label: '医保局',
-      children: [
-        {
-          key: '11',
-          label: '单位基本信息',
-        },
-        {
-          key: '12',
-          label: '单位参保登记信息',
-        },
-        {
-          key: '13',
-          label: '人员信息',
-        },
-        {
-          key: '14',
-          label: '在线增减员信息',
-        },
-      ],
-    },
-    {
       type: 'divider',
     },
     {
@@ -293,22 +212,132 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform10',
-      label: '市政府',
+      key: 'caizhengju',
+      label: '财政局',
       children: [
         {
-          key: '34',
-          label: '项目基本信息',
+          key: 'caizheng1',
+          label: '企业基本信息',
         },
-        {
-          key: '35',
-          label: '项目法人/申报单位信息',
-        }
       ],
     },
     {
       type: 'divider',
     },
+    {
+      key: 'shangwuju',
+      label: '商务局',
+      children: [
+        {
+          key: 'shangwu1',
+          label: '企业基本信息',
+        },
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    // {
+    //   key: 'platform5',
+    //   label: '公积金管理中心',
+    //   children: [
+    //     {
+    //       key: '19',
+    //       label: '个人账户信息',
+    //     },
+    //     {
+    //       key: '20',
+    //       label: '个人账户同城转移信息',
+    //     },
+    //     {
+    //       key: '21',
+    //       label: '汇缴登记信息',
+    //     },
+    //     {
+    //       key: '22',
+    //       label: '个人缴存明细信息',
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform6',
+    //   label: '市总工会',
+    //   children: [
+    //     {
+    //       key: '23',
+    //       label: '住院医疗互助信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform7',
+    //   label: '电力交易中心',
+    //   children: [
+    //     {
+    //       key: '24',
+    //       label: '电力用户基本信息',
+    //     },
+    //     {
+    //       key: '25',
+    //       label: '用户申请/注销信息',
+    //     },
+    //     {
+    //       key: '26',
+    //       label: '电力用户身份认证信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform3',
+    //   label: '医保局',
+    //   children: [
+    //     {
+    //       key: '11',
+    //       label: '单位基本信息',
+    //     },
+    //     {
+    //       key: '12',
+    //       label: '单位参保登记信息',
+    //     },
+    //     {
+    //       key: '13',
+    //       label: '人员信息',
+    //     },
+    //     {
+    //       key: '14',
+    //       label: '在线增减员信息',
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform10',
+    //   label: '市政府',
+    //   children: [
+    //     {
+    //       key: '34',
+    //       label: '项目基本信息',
+    //     },
+    //     {
+    //       key: '35',
+    //       label: '项目法人/申报单位信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
   ];
 
   const pageMap = {

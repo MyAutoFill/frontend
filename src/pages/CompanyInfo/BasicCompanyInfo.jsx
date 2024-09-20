@@ -7,11 +7,14 @@ import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
+import dayjs from 'dayjs';
 
 export default function BasicCompanyInfo(props) {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+
+  const dateFormat = 'YYYY-MM-DD';
 
   useEffect(() => {
     load_data(props.date);
@@ -283,7 +286,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '21',
       label: '成立时间（所有单位填报）',
-      children: <DatePicker size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {
@@ -444,7 +447,7 @@ export default function BasicCompanyInfo(props) {
       label: '运营状态',
       children: 
         <Form.Item name="company_basicinfo_r9">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setRunningStatusValue(e.target.value)} value={runningStatusValue}>
+          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setRunningStatusValue(e.target.value)} value={runningStatusValue} defaultValue={'正常运营'}>
             <Radio value={'正常运营'}>正常运营</Radio>
             <Radio value={'停业（歇业）'} style={{ marginLeft: '10px'}}>停业（歇业）</Radio>
             <Radio value={'筹建'} style={{ marginLeft: '10px'}}>筹建</Radio>

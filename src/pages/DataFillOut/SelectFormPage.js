@@ -51,6 +51,21 @@ export default function SelectFormPage() {
                 <Meta title="山东省电子税务局" description="https://etax.shandong.chinatax.gov.cn:8443/loginb/" />
               </Card>
             </a>
+            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("http://119.3.122.142:8088/stat_finance") + "&select_name=山东省统计联网直报平台"} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+              <Card
+                hoverable
+                style={{
+                  height: 220,
+                  width: 300,
+                  textAlign: 'center', 
+                  margin: 'auto',
+                  marginTop: '20px'
+                }}
+                cover={<img style={{height: 100}} alt="example" src="./images/山东省统计联网直报平台.png" />}
+              >
+                <Meta title="山东省统计联网直报平台" description="http://119.3.122.142:8088/stat_finance" />
+              </Card>
+            </a>
             <div onClick={() => clickFunction("http://103.239.153.109/sdjyweb/index.action", "山东公共就业人才服务")} style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
               <Card
                 hoverable
@@ -186,21 +201,6 @@ export default function SelectFormPage() {
                 <Meta title="山东省政务服务网" description="http://whzwfw.sd.gov.cn/wh/public/index" />
               </Card>
             </div>
-            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("http://1.94.26.133:8088/power") + "&select_name=山东省统计联网直报平台"} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
-              <Card
-                hoverable
-                style={{
-                  height: 220,
-                  width: 300,
-                  textAlign: 'center', 
-                  margin: 'auto',
-                  marginTop: '20px'
-                }}
-                cover={<img style={{height: 100}} alt="example" src="./images/山东省统计联网直报平台.png" />}
-              >
-                <Meta title="山东省统计联网直报平台" description="http://1.94.26.133:8088/power" />
-              </Card>
-            </a>
           </Row>
         </div>
       </div>
