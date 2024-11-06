@@ -124,7 +124,7 @@ export default function CompanySocialSecurityInfo(props) {
     {
       key: '6',
       label: '经济行业类别',
-      children: <Form.Item name="HumanSocial_SSInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

@@ -107,7 +107,7 @@ export default function YiGongDaiXun(props) {
     {
       key: '3',
       label: '统一信用代码',
-      children: <Form.Item name="HumanSocial_yigongdaixun_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -119,7 +119,7 @@ export default function YiGongDaiXun(props) {
     {
       key: '5',
       label: '法人身份证号码',
-      children: <Form.Item name="HumanSocial_yigongdaixun_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -131,7 +131,7 @@ export default function YiGongDaiXun(props) {
     {
       key: '7',
       label: '基本账户银行账号',
-      children: <Form.Item name="HumanSocial_yigongdaixun_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -143,7 +143,7 @@ export default function YiGongDaiXun(props) {
     {
       key: '9',
       label: '企业规模',
-      children: <Form.Item name="HumanSocial_yigongdaixun_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_8"><Input disabled={disableVar} size='large' defaultValue={'微型'} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

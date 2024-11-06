@@ -46,59 +46,9 @@ import BenefitsNewRules from '../PreviewPages/BenefitsNewRulesPreview';
 
 export default function PreviewPage() {
 
-  const [selectedKey, setSelectedKey] = useState('1');
+  const [selectedKey, setSelectedKey] = useState('platform12_1');
 
   const menus = [
-		{
-      key: 'platform1',
-      label: '统计局',
-      children: [
-        {
-          key: '1',
-          label: '从业人员及工资总额',
-        },
-        {
-					key: '2',
-					label: '调查单位基本情况',
-        },
-        {
-          key: '3',
-          label: '财务状况',
-        },
-        {
-          key: '4',
-          label: '保障性住房开发及经营情况',
-        },
-        {
-					key: '5',
-					label: '固定资产投资项目情况',
-        },
-        {
-					key: '6',
-					label: '固定资产投资项目新增生产能力（或工程效益）情况',
-        },
-				{
-					key: '7',
-					label: '工业产销总值及主要产品产量',
-				},
-				{
-					key: '8',
-					label: '当月工业总产值明细数据',
-				},
-				{
-					key: '9',
-					label: '当月工业总产值明细数据计算表',
-				},
-				{
-					key: '10',
-					label: '能源购进、消费与库存',
-				},
-				{
-					key: '11',
-					label: '生产经营景气状况',
-				},
-      ],
-    },
 		{
       type: 'divider',
     },
@@ -118,18 +68,71 @@ export default function PreviewPage() {
           key: 'platform12_3',
           label: '利润表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
         },
+        // {
+        //   key: 'platform12_4',
+        //   label: '现金流量表(适用执行企业会计制度的企业)',
+        // },
+				// {
+        //   key: 'platform12_5',
+        //   label: '资产负债表(适用执行企业会计制度的企业)',
+        // },
+				// {
+        //   key: 'platform12_6',
+        //   label: '利润表(适用执行企业会计制度的企业)',
+        // }
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: 'platform1',
+      label: '统计局',
+      children: [
+        // {
+        //   key: '1',
+        //   label: '从业人员及工资总额',
+        // },
+        // {
+				// 	key: '2',
+				// 	label: '调查单位基本情况',
+        // },
         {
-          key: 'platform12_4',
-          label: '现金流量表(适用执行企业会计制度的企业)',
+          key: '3',
+          label: '财务状况',
         },
-				{
-          key: 'platform12_5',
-          label: '资产负债表(适用执行企业会计制度的企业)',
-        },
-				{
-          key: 'platform12_6',
-          label: '利润表(适用执行企业会计制度的企业)',
-        }
+        // {
+        //   key: '4',
+        //   label: '保障性住房开发及经营情况',
+        // },
+        // {
+				// 	key: '5',
+				// 	label: '固定资产投资项目情况',
+        // },
+        // {
+				// 	key: '6',
+				// 	label: '固定资产投资项目新增生产能力（或工程效益）情况',
+        // },
+				// {
+				// 	key: '7',
+				// 	label: '工业产销总值及主要产品产量',
+				// },
+				// {
+				// 	key: '8',
+				// 	label: '当月工业总产值明细数据',
+				// },
+				// {
+				// 	key: '9',
+				// 	label: '当月工业总产值明细数据计算表',
+				// },
+				// {
+				// 	key: '10',
+				// 	label: '能源购进、消费与库存',
+				// },
+				// {
+				// 	key: '11',
+				// 	label: '生产经营景气状况',
+				// },
       ],
     },
     {
@@ -152,32 +155,32 @@ export default function PreviewPage() {
     {
       type: 'divider',
     },
-    {
-      key: 'platform3',
-      label: '社保就业网上申报',
-      children: [
-        {
-          key: '14',
-          label: '增员',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform4',
-      label: '医保网上申报系统',
-      children: [
-        {
-          key: '15',
-          label: '单位信息变更',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
+    // {
+    //   key: 'platform3',
+    //   label: '社保就业网上申报',
+    //   children: [
+    //     {
+    //       key: '14',
+    //       label: '增员',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform4',
+    //   label: '医保网上申报系统',
+    //   children: [
+    //     {
+    //       key: '15',
+    //       label: '单位信息变更',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
     {
       key: 'platform5',
       label: '国家企业信用信息公示系统',
@@ -191,69 +194,76 @@ export default function PreviewPage() {
     {
       type: 'divider',
     },
-    {
-      key: 'platform6',
-      label: '威海住房公积金管理中心网站',
-      children: [
-        {
-          key: '17',
-          label: '汇缴登记',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform7',
-      label: '山东电力交易平台',
-      children: [
-        {
-          key: '18',
-          label: '电力用户基本信息',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform8',
-      label: '火炬中心业务办理平台',
-      children: [
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform9',
-      label: '信息产业运行监测平台',
-      children: [
-        {
-          key: '19',
-          label: '软件和信息技术服务业企业月报',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform10',
-      label: '山东省政务服务网',
-      children: [
-      ],
-    },
-    {
-      type: 'divider',
-    }
+    // {
+    //   key: 'platform6',
+    //   label: '威海住房公积金管理中心网站',
+    //   children: [
+    //     {
+    //       key: '17',
+    //       label: '汇缴登记',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform7',
+    //   label: '山东电力交易平台',
+    //   children: [
+    //     {
+    //       key: '18',
+    //       label: '电力用户基本信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform8',
+    //   label: '火炬中心业务办理平台',
+    //   children: [
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform9',
+    //   label: '信息产业运行监测平台',
+    //   children: [
+    //     {
+    //       key: '19',
+    //       label: '软件和信息技术服务业企业月报',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform10',
+    //   label: '山东省政务服务网',
+    //   children: [
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // }
   ];
 
   const pageMap = {
+    'platform12_1': <CashFlowNewRule />,
+    'platform12_2': <PropertyDebtNewRule />,
+    'platform12_3': <BenefitsNewRules />,
+    'platform12_4': <CashFlowPreview />,
+    'platform12_5': <PropertyDebt />,
+    'platform12_6': <BenefitsForm />,
+
     '1': <HumanSocialCompanyInfo />,
     '2': <YiGongDaiXun />,
-    '3': <NewSheBao />,
+    '3': <FinanceStatusInfo />,
     '4': <CompanySocialSecurityInfo />,
     '5': <JobDemandInfo />,
 
@@ -274,13 +284,6 @@ export default function PreviewPage() {
     '18': <JoinedSecurityInfo />,
 
     '19': <IndividualAccountInfo />,
-
-    'platform12_1': <CashFlowNewRule />,
-    'platform12_2': <PropertyDebtNewRule />,
-    'platform12_3': <BenefitsNewRules />,
-    'platform12_4': <CashFlowPreview />,
-    'platform12_5': <PropertyDebt />,
-    'platform12_6': <BenefitsForm />,
 
     '23': <HospitalHelpInfos />,
 
@@ -311,8 +314,8 @@ export default function PreviewPage() {
             style={{
               width: 320,
             }}
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['1']}
+            defaultSelectedKeys={['platform12_1']}
+            defaultOpenKeys={['platform12_1']}
             mode="inline"
             items={menus}
             onSelect={(key) => {

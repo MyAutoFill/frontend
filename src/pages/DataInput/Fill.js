@@ -107,113 +107,35 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform3',
-      label: '医保局',
+      key: 'platform12',
+      label: '人社局',
       children: [
         {
-          key: '11',
-          label: '单位基本信息',
+          key: 'g1',
+          type: 'group',
+          children: [
+            {
+              key: '36',
+              label: '单位就业登记信息',
+            },
+            {
+              key: '37',
+              label: '以工代训补贴申领信息',
+            },
+            {
+              key: '38',
+              label: '新增社保参保人员信息',
+            },
+            {
+              key: '39',
+              label: '单位参保信息',
+            },
+            {
+              key: '40',
+              label: '就业需求信息',
+            }
+          ],
         },
-        {
-          key: '12',
-          label: '单位参保登记信息',
-        },
-        {
-          key: '13',
-          label: '人员信息',
-        },
-        {
-          key: '14',
-          label: '在线增减员信息',
-        },
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform4',
-      label: '工商局',
-      children: [
-        {
-          key: '15',
-          label: '企业基本信息',
-        },
-        {
-          key: '16',
-          label: '资产状况信息',
-        },
-        {
-          key: '17',
-          label: '对外提供保证担保信息',
-        },
-        {
-          key: '18',
-          label: '参保信息',
-        },
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform5',
-      label: '公积金管理中心',
-      children: [
-        {
-          key: '19',
-          label: '个人账户信息',
-        },
-        {
-          key: '20',
-          label: '个人账户同城转移信息',
-        },
-        {
-          key: '21',
-          label: '汇缴登记信息',
-        },
-        {
-          key: '22',
-          label: '个人缴存明细信息',
-        },
-        {
-          key: '41',
-          label: '单位信息变更',
-        },
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform6',
-      label: '市总工会',
-      children: [
-        {
-          key: '23',
-          label: '住院医疗互助信息',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform7',
-      label: '电力交易中心',
-      children: [
-        {
-          key: '24',
-          label: '电力用户基本信息',
-        },
-        {
-          key: '25',
-          label: '用户申请/注销信息',
-        },
-        {
-          key: '26',
-          label: '电力用户身份认证信息',
-        }
       ],
     },
     {
@@ -266,57 +188,157 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform10',
-      label: '市政府',
+      key: 'platform4',
+      label: '市场监督管理局',
       children: [
         {
-          key: '34',
-          label: '项目基本信息',
+          key: '15',
+          label: '企业基本信息',
         },
         {
-          key: '35',
-          label: '项目法人/申报单位信息',
-        }
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'platform12',
-      label: '人社局',
-      children: [
+          key: '16',
+          label: '资产状况信息',
+        },
         {
-          key: 'g1',
-          type: 'group',
-          children: [
-            {
-              key: '36',
-              label: '单位就业登记信息',
-            },
-            {
-              key: '37',
-              label: '以工代训补贴申领信息',
-            },
-            {
-              key: '38',
-              label: '新增社保参保人员信息',
-            },
-            {
-              key: '39',
-              label: '单位参保信息',
-            },
-            {
-              key: '40',
-              label: '就业需求信息',
-            }
-          ],
+          key: '17',
+          label: '对外提供保证担保信息',
+        },
+        {
+          key: '18',
+          label: '参保信息',
         },
       ],
     },
     {
       type: 'divider',
     },
+    {
+      key: 'caizhengju',
+      label: '财政局',
+      children: [
+        {
+          key: 'caizheng1',
+          label: '企业基本信息',
+        },
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: 'shangwuju',
+      label: '商务局',
+      children: [
+        {
+          key: 'shangwu1',
+          label: '企业基本信息',
+        },
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    // {
+    //   key: 'platform5',
+    //   label: '公积金管理中心',
+    //   children: [
+    //     {
+    //       key: '19',
+    //       label: '个人账户信息',
+    //     },
+    //     {
+    //       key: '20',
+    //       label: '个人账户同城转移信息',
+    //     },
+    //     {
+    //       key: '21',
+    //       label: '汇缴登记信息',
+    //     },
+    //     {
+    //       key: '22',
+    //       label: '个人缴存明细信息',
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform6',
+    //   label: '市总工会',
+    //   children: [
+    //     {
+    //       key: '23',
+    //       label: '住院医疗互助信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform7',
+    //   label: '电力交易中心',
+    //   children: [
+    //     {
+    //       key: '24',
+    //       label: '电力用户基本信息',
+    //     },
+    //     {
+    //       key: '25',
+    //       label: '用户申请/注销信息',
+    //     },
+    //     {
+    //       key: '26',
+    //       label: '电力用户身份认证信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform3',
+    //   label: '医保局',
+    //   children: [
+    //     {
+    //       key: '11',
+    //       label: '单位基本信息',
+    //     },
+    //     {
+    //       key: '12',
+    //       label: '单位参保登记信息',
+    //     },
+    //     {
+    //       key: '13',
+    //       label: '人员信息',
+    //     },
+    //     {
+    //       key: '14',
+    //       label: '在线增减员信息',
+    //     },
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'platform10',
+    //   label: '市政府',
+    //   children: [
+    //     {
+    //       key: '34',
+    //       label: '项目基本信息',
+    //     },
+    //     {
+    //       key: '35',
+    //       label: '项目法人/申报单位信息',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'divider',
+    // },
   ];
 
   const pageMap = {

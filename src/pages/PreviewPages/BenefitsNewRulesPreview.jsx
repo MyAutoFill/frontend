@@ -1158,6 +1158,7 @@ export default function BenefitsNewRules() {
         style={{ height: 800, padding: 10, overflow: "auto" }}
         class="banner-anim"
       >
+      <Form onFinish={onFinish} form={form}>
         <Row style={{ width: "1300px" }}>
           <Col
             span={24}
@@ -1193,7 +1194,6 @@ export default function BenefitsNewRules() {
           }}
           labelStyle={{ color: "#333", width: "160px", textAlign: "right" }}
         />
-        <Form onFinish={onFinish} form={form}>
           <Table
             dataSource={data}
             style={{ width: "1300px" }}

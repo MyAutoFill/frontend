@@ -97,7 +97,7 @@ export default function ResearchActivityInfo(props) {
         <>
           <Form.Item name="Statistic_ResearchActivity_1"><Input disabled={true} addonBefore='代码' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Form.Item name="Statistic_ResearchActivity_2"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="company_research_27"><Input disabled={disableVar} addonBefore='数量' addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 1
     },

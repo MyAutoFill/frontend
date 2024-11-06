@@ -91,7 +91,7 @@ export default function CompanyTotalSalary(props) {
       people_this_year: <Form.Item name="Statisitc_salary_1"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       people_last_year: <Form.Item name="Statisitc_salary_2"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '二、工资总额',
-      salary_this_year: <Form.Item name="Statisitc_salary_3"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      salary_this_year: <Form.Item name="company_employee_11"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_last_year: <Form.Item name="Statisitc_salary_4"><Input disabled={true} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
     },
     {

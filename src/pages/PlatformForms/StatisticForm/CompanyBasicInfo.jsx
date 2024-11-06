@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
+import dayjs from 'dayjs';
 
 
 export default function StatisticCompanyBasicInfo(props) {
@@ -26,6 +27,8 @@ export default function StatisticCompanyBasicInfo(props) {
   const [HospitalityStarLevel, setHospitalityStarLevel] = useState('')
   const [HaveUpperOwner, setHaveUpperOwner] = useState('')
   const [UpperOwnerInfo, setUpperOwnerInfo] = useState('')
+
+  const dateFormat = 'YYYY-MM-DD';
 
   const HKTWInvestSituation = [
     { label: '港商投资', value: '港商投资' },
@@ -140,7 +143,7 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '4',
       label: '行业类别',
-      children: <Form.Item name="Statistic_CompanyInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -219,7 +222,7 @@ export default function StatisticCompanyBasicInfo(props) {
           <span>
             是否与单位所在地区划及详细地址一致：
             <Form.Item name="Statistic_CompanyInfo_19">
-              <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+              <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} defaultValue={1}>
                 <Radio value={1}>是</Radio>
                 <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
               </Radio.Group>
@@ -305,13 +308,13 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '22',
       label: '成立时间（所有单位填报）',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '23',
       label: '开业时间（仅限企业填报）',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开业时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开业时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -466,7 +469,7 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '运营状态',
       children: 
         <Form.Item name="company_basicinfo_r9">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setRunningStatusValue(e.target.value)} value={runningStatusValue}>
+          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setRunningStatusValue(e.target.value)} value={runningStatusValue} defaultValue={'正常运营'}>
             <Radio value={'正常运营'}>正常运营</Radio>
             <Radio value={'停业（歇业）'} style={{ marginLeft: '10px'}}>停业（歇业）</Radio>
             <Radio value={'筹建'} style={{ marginLeft: '10px'}}>筹建</Radio>
@@ -508,7 +511,7 @@ export default function StatisticCompanyBasicInfo(props) {
         <>
         （限企业集团母公司及成员企业填写）本企业是
           <Form.Item name="Statistic_CompanyInfo_58">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
+            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} defaultValue={'成员企业'}>
               <Radio value={'集团母公司'}>1.集团母公司（核心企业或集团总部）</Radio>
               <Radio value={'成员企业'} style={{ marginLeft: '10px'}}>2.成员企业——请填直接上级法人统一社会信用代码（尚未领取统一社会信用代码的填原组织机构代码）</Radio>
             </Radio.Group>
@@ -577,7 +580,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '37',
-      label: '就失业登记证领取信息',
+      label: '有无店铺',
       children: 
       <>
         <Form.Item name="Statistic_CompanyInfo_68">
