@@ -1723,8 +1723,64 @@
             ],
             "以工代训补贴申请": [
                 {
-                    "key": "以工代训培训情况",
+                    "key": "单位名称",
+                    "id": "company_basicinfo_2"
+                },
+                {
+                    "key": "统一信用代码",
+                    "id": "company_basicinfo_1"
+                },
+                {
+                    "key": "法人姓名",
+                    "id": "company_basicinfo_26"
+                },
+                {
+                    "key": "法人身份证号码",
+                    "id": "company_basicinfo_28"
+                },
+                {
+                    "key": "基本账户开户银行",
+                    "id": "HumanSocial_yigongdaixun_5"
+                },
+                {
+                    "key": "基本账户银行账号",
+                    "id": "company_insurance_11"
+                },
+                {
+                    "key": "联系电话",
+                    "id": "company_basicinfo_29"
+                },
+                {
+                    "key": "企业规模",
+                    "id": "HumanSocial_yigongdaixun_8"
+                },
+                {
+                    "key": "所属行业",
+                    "id": "HumanSocial_yigongdaixun_9"
+                },
+                {
+                    "key": "补贴年月",
                     "id": "266"
+                },
+                {
+                    "key": "补贴类型",
+                    "id": "HumanSocial_yigongdaixun_11"
+                },
+                {
+                    "key": "企业所属规划",
+                    "id": "HumanSocial_yigongdaixun_12"
+                },
+                {
+                    "key": "是否当月首次申领",
+                    "id": "HumanSocial_yigongdaixun_13"
+                },
+                {
+                    "key": "以工代训培训情况",
+                    "id": "HumanSocial_yigongdaixun_14"
+                },
+                {
+                    "key": "是否为劳务派遣",
+                    "id": "HumanSocial_yigongdaixun_15"
                 },
                 {
                     "key": "劳务派遣单位名称",
@@ -1733,32 +1789,76 @@
                 {
                     "key": "派遣单位的统一社会信用代码",
                     "id": "company_basicinfo_1"
+                },
+                {
+                    "key": "是否在省直参保",
+                    "id": "HumanSocial_yigongdaixun_18"
                 }
             ],
             "单位就业登记": [
                 {
-                    "key": "工资待遇",
-                    "id": "269"
+                    "key": "业务办理区",
+                    "id": "HumanSocial_CompanyInfo_12"
                 },
                 {
-                    "key": "工种",
-                    "id": "270"
-                },
-                {
-                    "key": "备注",
-                    "id": "271"
+                    "key": "业务办理街道",
+                    "id": "HumanSocial_CompanyInfo_13"
                 },
                 {
                     "key": "用工形式",
-                    "id": "272"
+                    "id": "HumanSocial_CompanyInfo_14"
                 },
                 {
                     "key": "人员类别一类",
-                    "id": "273"
+                    "id": "HumanSocial_CompanyInfo_15"
+                },
+                {
+                    "key": "人员类别二类",
+                    "id": "HumanSocial_CompanyInfo_16"
+                },
+                {
+                    "key": "人员类别三类",
+                    "id": "HumanSocial_CompanyInfo_17"
+                },
+                {
+                    "key": "工资待遇",
+                    "id": "HumanSocial_CompanyInfo_18"
+                },
+                {
+                    "key": "是否企业法人",
+                    "id": "HumanSocial_CompanyInfo_19"
                 },
                 {
                     "key": "劳动合同类型",
-                    "id": "274"
+                    "id": "HumanSocial_CompanyInfo_21"
+                },
+                {
+                    "key": "合同开始时间",
+                    "id": "HumanSocial_CompanyInfo_22"
+                },
+                {
+                    "key": "合同结束时间",
+                    "id": "HumanSocial_CompanyInfo_23"
+                },
+                {
+                    "key": "是否创业",
+                    "id": "HumanSocial_CompanyInfo_24"
+                },
+                {
+                    "key": "单位所在区县",
+                    "id": "HumanSocial_CompanyInfo_25"
+                },
+                {
+                    "key": "单位所在街道（镇）",
+                    "id": "HumanSocial_CompanyInfo_26"
+                },
+                {
+                    "key": "单位所在社区（村）",
+                    "id": "HumanSocial_CompanyInfo_27"
+                },
+                {
+                    "key": "备注",
+                    "id": "HumanSocial_CompanyInfo_28"
                 }
             ]
         },
