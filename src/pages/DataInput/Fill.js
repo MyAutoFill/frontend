@@ -42,6 +42,7 @@ import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
 import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
 import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
 import dayjs from 'dayjs';
+import CompanyInfoChange from '../PlatformForms/GongJiJinForm/CompanyInfoChange';
 
 export default function Fill() {
 
@@ -61,7 +62,7 @@ export default function Fill() {
           type: 'group',
           children: [
             {
-              key: '41',
+              key: '42',
               label: '基本信息',
             },
             {
@@ -408,7 +409,9 @@ export default function Fill() {
     '38': <NewSheBao date={curDate} />,
     '39': <CompanySocialSecurityInfo date={curDate} />,
     '40': <JobDemandInfo date={curDate} />,
-    '41': <BasicInfoHumanResource date={curDate} />
+
+    '41': <CompanyInfoChange date={curDate} />,
+    '42': <BasicInfoHumanResource date={curDate} />
   }
 
   const onChange = (e) => {
