@@ -308,7 +308,7 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '22',
       label: '成立时间（所有单位填报）',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -452,17 +452,68 @@ export default function StatisticCompanyBasicInfo(props) {
       key: '29',
       label: '隶属关系',
       children: 
-        <Form.Item name="company_basicinfo_r9">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setBelongRelationValue(e.target.value)} value={belongRelationValue}>
-            <Radio value={'中央'}>中央</Radio>
-            <Radio value={'地方'} style={{ marginLeft: '10px'}}>地方</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {belongRelationValue === '其他' ? <Form.Item name="company_basicinfo_44"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
-        </Form.Item>,
-      span: 3
+				<Form.Item name="company_basicinfo_r9">
+					<Select
+            allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请选择隶属关系"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '中央',
+								label: '中央',
+							},
+							{
+								value: '省',
+								label: '省',
+							},
+							{
+								value: '市、地区',
+								label: '市、地区',
+							},
+							{
+								value: '区',
+								label: '区',
+							},
+							{
+								value: '县',
+								label: '县',
+							},
+							{
+								value: '街道',
+								label: '街道',
+							},
+							{
+								value: '镇',
+								label: '镇',
+							},
+							{
+								value: '乡',
+								label: '乡',
+							},
+							{
+								value: '居民委员会',
+								label: '居民委员会',
+							},
+							{
+								value: '村民委员会',
+								label: '村民委员会',
+							},
+							{
+								value: '军队',
+								label: '军队',
+							},
+							{
+								value: '其他',
+								label: '其他',
+							}
+						]}
+					/>
+				</Form.Item>,
+      span: 1
     },
     {
       key: '30',

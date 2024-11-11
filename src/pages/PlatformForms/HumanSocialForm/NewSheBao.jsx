@@ -515,7 +515,7 @@ export default function NewSheBao(props) {
     {
       key: '67',
       label: '工商登记有效期（开始时间）',
-      children: <Form.Item name="HumanSocial_NewSheBao_66"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_66"><DatePicker size='large' placeholder='请选择开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -533,13 +533,13 @@ export default function NewSheBao(props) {
     {
       key: '70',
       label: '执照有效起始日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
       key: '71',
       label: '执照有效终止日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -551,7 +551,7 @@ export default function NewSheBao(props) {
     {
       key: '73',
       label: '批准日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -569,19 +569,370 @@ export default function NewSheBao(props) {
     {
       key: '76',
       label: '隶属关系',
-      children: <Form.Item name="company_basicinfo_r9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1,
+      children: 
+				<Form.Item name="company_basicinfo_r9">
+					<Select
+            allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请选择隶属关系"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '中央',
+								label: '中央',
+							},
+							{
+								value: '省',
+								label: '省',
+							},
+							{
+								value: '市、地区',
+								label: '市、地区',
+							},
+							{
+								value: '区',
+								label: '区',
+							},
+							{
+								value: '县',
+								label: '县',
+							},
+							{
+								value: '街道',
+								label: '街道',
+							},
+							{
+								value: '镇',
+								label: '镇',
+							},
+							{
+								value: '乡',
+								label: '乡',
+							},
+							{
+								value: '居民委员会',
+								label: '居民委员会',
+							},
+							{
+								value: '村民委员会',
+								label: '村民委员会',
+							},
+							{
+								value: '军队',
+								label: '军队',
+							},
+							{
+								value: '其他',
+								label: '其他',
+							}
+						]}
+					/>
+				</Form.Item>,
+      span: 1
     },
     {
       key: '77',
       label: '经济类型',
-      children: <Form.Item name="HumanSocial_NewSheBao_76"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1,
+      children: 
+        <Form.Item name="CompanyInfoChange_4">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择经济类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '内资',
+                label: '内资',
+              },
+              {
+                value: '国有全资',
+                label: '国有全资',
+              },
+              {
+                value: '集体全资',
+                label: '集体全资',
+              },
+              {
+                value: '股份合作',
+                label: '股份合作',
+              },
+              {
+                value: '国有联营',
+                label: '国有联营',
+              },
+              {
+                value: '集体联营',
+                label: '集体联营',
+              },
+              {
+                value: '国有与集体联营',
+                label: '国有与集体联营',
+              },
+              {
+                value: '其他联营',
+                label: '其他联营',
+              },
+              {
+                value: '国有独资（公司）',
+                label: '国有独资（公司）',
+              },
+              {
+                value: '其他有限责任公司（公司）',
+                label: '其他有限责任公司（公司）',
+              },
+              {
+                value: '股份有限（公司）',
+                label: '股份有限（公司）',
+              },
+              {
+                value: '私有独资',
+                label: '私有独资',
+              },
+              {
+                value: '私有合伙',
+                label: '私有合伙',
+              },
+              {
+                value: '私营有限责任（公司）',
+                label: '私营有限责任（公司）',
+              },
+              {
+                value: '私营股份有限（公司）',
+                label: '私营股份有限（公司）',
+              },
+              {
+                value: '个体经营',
+                label: '个体经营',
+              },
+              {
+                value: '其他私有',
+                label: '其他私有',
+              },
+              {
+                value: '其他内资',
+                label: '其他内资',
+              },
+              {
+                value: '内地和港、澳。台合资',
+                label: '内地和港、澳。台合资',
+              },
+              {
+                value: '内地和港、澳。台合作',
+                label: '内地和港、澳。台合作',
+              },
+              {
+                value: '港、澳。台独资',
+                label: '港、澳。台独资',
+              },
+              {
+                value: '港、澳。台投资股份有限（公司）',
+                label: '港、澳。台投资股份有限（公司）',
+              },
+              {
+                value: '其他港、澳。台投资',
+                label: '其他港、澳。台投资',
+              },
+              {
+                value: '中外合资',
+                label: '中外合资',
+              },
+              {
+                value: '中外合作',
+                label: '中外合作',
+              },
+              {
+                value: '外资',
+                label: '外资',
+              },
+              {
+                value: '国外投资股份有限（公司）',
+                label: '国外投资股份有限（公司）',
+              },
+              {
+                value: '其他国外投资',
+                label: '其他国外投资',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
+        </Form.Item>,
+      span: 1
     },
     {
       key: '78',
       label: '经济类型明细',
-      children: <Form.Item name="HumanSocial_NewSheBao_77"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_NewSheBao_77">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择经济类型明细"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '内资',
+                label: '内资',
+              },
+              {
+                value: '国有全资',
+                label: '国有全资',
+              },
+              {
+                value: '集体全资',
+                label: '集体全资',
+              },
+              {
+                value: '股份合作',
+                label: '股份合作',
+              },
+              {
+                value: '国有联营',
+                label: '国有联营',
+              },
+              {
+                value: '集体联营',
+                label: '集体联营',
+              },
+              {
+                value: '国有与集体联营',
+                label: '国有与集体联营',
+              },
+              {
+                value: '其他联营',
+                label: '其他联营',
+              },
+              {
+                value: '国有独资（公司）',
+                label: '国有独资（公司）',
+              },
+              {
+                value: '其他有限责任公司（公司）',
+                label: '其他有限责任公司（公司）',
+              },
+              {
+                value: '股份有限（公司）',
+                label: '股份有限（公司）',
+              },
+              {
+                value: '私有独资',
+                label: '私有独资',
+              },
+              {
+                value: '私有合伙',
+                label: '私有合伙',
+              },
+              {
+                value: '私营有限责任（公司）',
+                label: '私营有限责任（公司）',
+              },
+              {
+                value: '私营股份有限（公司）',
+                label: '私营股份有限（公司）',
+              },
+              {
+                value: '个体经营',
+                label: '个体经营',
+              },
+              {
+                value: '其他私有',
+                label: '其他私有',
+              },
+              {
+                value: '其他内资',
+                label: '其他内资',
+              },
+              {
+                value: '内地和港、澳。台合资',
+                label: '内地和港、澳。台合资',
+              },
+              {
+                value: '内地和港、澳。台合作',
+                label: '内地和港、澳。台合作',
+              },
+              {
+                value: '港、澳。台独资',
+                label: '港、澳。台独资',
+              },
+              {
+                value: '港、澳。台投资股份有限（公司）',
+                label: '港、澳。台投资股份有限（公司）',
+              },
+              {
+                value: '其他港、澳。台投资',
+                label: '其他港、澳。台投资',
+              },
+              {
+                value: '中外合资',
+                label: '中外合资',
+              },
+              {
+                value: '中外合作',
+                label: '中外合作',
+              },
+              {
+                value: '外资',
+                label: '外资',
+              },
+              {
+                value: '国外投资股份有限（公司）',
+                label: '国外投资股份有限（公司）',
+              },
+              {
+                value: '其他国外投资',
+                label: '其他国外投资',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              },
+              {
+                value: '社会化管理（住院）',
+                label: '社会化管理（住院）',
+              },
+              {
+                value: '灵活就业人员（基本）',
+                label: '灵活就业人员（基本）',
+              },
+              {
+                value: '社会化管理（基本）',
+                label: '社会化管理（基本）',
+              },
+              {
+                value: '自愿参加医疗保险（基本）',
+                label: '自愿参加医疗保险（基本）',
+              },
+              {
+                value: '县以上集体企业',
+                label: '县以上集体企业',
+              },
+              {
+                value: '城镇小集体企业',
+                label: '城镇小集体企业',
+              },
+              {
+                value: '灵活就业人员（住院）',
+                label: '灵活就业人员（住院）',
+              },
+              {
+                value: '自愿参加医疗保险（住院）',
+                label: '自愿参加医疗保险（住院）',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
@@ -599,8 +950,69 @@ export default function NewSheBao(props) {
     {
       key: '81',
       label: '其他登记证件种类',
-      children: <Form.Item name="HumanSocial_NewSheBao_80"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1,
+      children: 
+        <Form.Item name="HumanSocial_NewSheBao_80">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择其他登记证件种类"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '联合行医执照',
+                label: '联合行医执照',
+              },
+              {
+                value: '社会办医行医执照',
+                label: '社会办医行医执照',
+              },
+              {
+                value: '个体行医执照',
+                label: '个体行医执照',
+              },
+              {
+                value: '特种行业执照',
+                label: '特种行业执照',
+              },
+              {
+                value: '律师事务所执照许可证',
+                label: '律师事务所执照许可证',
+              },
+              {
+                value: '民办非企业单位登记证书',
+                label: '民办非企业单位登记证书',
+              },
+              {
+                value: '社会团体法人登记证书',
+                label: '社会团体法人登记证书',
+              },
+              {
+                value: '机关事业单位登记',
+                label: '机关事业单位登记',
+              },
+              {
+                value: '外地驻青办事机构登记证',
+                label: '外地驻青办事机构登记证',
+              },
+              {
+                value: '事业单位法人证书',
+                label: '事业单位法人证书',
+              },
+              {
+                value: '青岛市非正规就业劳动组织证书',
+                label: '青岛市非正规就业劳动组织证书',
+              },
+              {
+                value: '外国（地区）企业常驻代表机构登记证',
+                label: '外国（地区）企业常驻代表机构登记证',
+              }
+            ]}
+          />
+        </Form.Item>,
+      span: 1
     },
     {
       key: '82',
@@ -658,7 +1070,7 @@ export default function NewSheBao(props) {
     },
     {
       key: '91',
-      label: '联系电话',
+      label: '状态批准日期',
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1,
     },
@@ -677,7 +1089,88 @@ export default function NewSheBao(props) {
     {
       key: '94',
       label: '法人证件类型',
-      children: <Form.Item name="company_basicinfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="company_basicinfo_27">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择法人证件类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '居民身份证（户口簿）',
+                label: '居民身份证（户口簿）',
+              },
+              {
+                value: '中国人民解放军军官证',
+                label: '中国人民解放军军官证',
+              },
+              {
+                value: '中国人民武装警察警官证',
+                label: '中国人民武装警察警官证',
+              },
+              {
+                value: '香港特区护照/港澳居民往来内地通行证',
+                label: '香港特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '澳门特区护照/港澳居民往来内地通行证',
+                label: '澳门特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '台湾居民往来大陆通行证',
+                label: '台湾居民往来大陆通行证',
+              },
+              {
+                value: '外国人永久居留身份',
+                label: '外国人永久居留身份',
+              },
+              {
+                value: '护照',
+                label: '护照',
+              },
+              {
+                value: '残疾人证',
+                label: '残疾人证',
+              },
+              {
+                value: '军烈属证明',
+                label: '军烈属证明',
+              },
+              {
+                value: '外国人工作许可证',
+                label: '外国人工作许可证',
+              },
+              {
+                value: '外国常驻记者证',
+                label: '外国常驻记者证',
+              },
+              {
+                value: '回国（来华）定居专家证',
+                label: '回国（来华）定居专家证',
+              },
+              {
+                value: '港澳居民居住证',
+                label: '港澳居民居住证',
+              },
+              {
+                value: '台湾居民居住证',
+                label: '台湾居民居住证',
+              },
+              {
+                value: '社会保障卡',
+                label: '社会保障卡',
+              },
+              {
+                value: '其他身份证件',
+                label: '其他身份证件',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {

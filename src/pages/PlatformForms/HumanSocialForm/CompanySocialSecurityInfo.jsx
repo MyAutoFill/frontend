@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, Form, Select } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -94,7 +94,7 @@ export default function CompanySocialSecurityInfo(props) {
     {
       key: '1',
       label: '单位管理码',
-      children: <Form.Item name="HumanSocial_SSInfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -113,18 +113,6 @@ export default function CompanySocialSecurityInfo(props) {
       key: '4',
       label: '单位曾用名',
       children: <Form.Item name="company_basicinfo_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '5',
-      label: '基金来源',
-      children: <Form.Item name="HumanSocial_SSInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '6',
-      label: '经济行业类别',
-      children: <Form.Item name="company_insurance_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -153,8 +141,8 @@ export default function CompanySocialSecurityInfo(props) {
     },
     {
       key: '11',
-      label: '经济行业类型',
-      children: <Form.Item name="HumanSocial_SSInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '经济行业类别',
+      children: <Form.Item name="company_insurance_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -165,28 +153,101 @@ export default function CompanySocialSecurityInfo(props) {
     },
     {
       key: '13',
-      label: '参保电子邮箱',
-      children: <Form.Item name="company_basicinfo_35"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '统筹层次',
+      children: <Form.Item name="HumanSocial_SSInfo_13"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
-      label: '单位主要经营地',
-      children: <Form.Item name="HumanSocial_SSInfo_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '基金来源',
+      children: 
+        <Form.Item name="HumanSocial_NewSheBao_77">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择基金来源"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '全额拨款',
+                label: '全额拨款',
+              },
+              {
+                value: '差额拨款',
+                label: '差额拨款',
+              },
+              {
+                value: '自收自支',
+                label: '自收自支',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '15',
-      label: '行业风险类别',
-      children: <Form.Item name="HumanSocial_SSInfo_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      label: '单位主要经营地',
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     },
     {
       key: '16',
-      label: 's统筹层次',
-      children: <Form.Item name="HumanSocial_SSInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '参保电子邮箱',
+      children: <Form.Item name="company_basicinfo_35"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '17',
+      label: '联系地址',
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '18',
+      label: '主管部门',
+      children: <Form.Item name="CompanyInfoChange_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
-    }
+    },
+    {
+      key: '19',
+      label: '单位特殊标识',
+      children: <Form.Item name="HumanSocial_SSInfo_19"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '20',
+      label: '拨款单位标志',
+      children: <Form.Item name="HumanSocial_SSInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '21',
+      label: '征缴方式',
+      children: <Form.Item name="HumanSocial_SSInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '22',
+      label: '缴费银行名称',
+      children: <Form.Item name="HumanSocial_SSInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '23',
+      label: '缴费银行户名',
+      children: <Form.Item name="HumanSocial_SSInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '24',
+      label: '缴费银行账号',
+      children: <Form.Item name="HumanSocial_SSInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
   ];
 
   const onFinish = (values) => {

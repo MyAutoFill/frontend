@@ -146,30 +146,204 @@ export default function CompanyInfoChange(props) {
     },
     {
       key: '5',
-      label: '单位隶属关系',
-      children: <Form.Item name="CompanyInfoChange_3"><Select name="dwlsgx" id="dwlsgx">
-      <Select.Option value="中央">中央</Select.Option>
-      <Select.Option value="省">省</Select.Option>
-      <Select.Option value="市">市</Select.Option>
-      <Select.Option value="县">县</Select.Option>
-      <Select.Option value="街道、镇、乡">街道、镇、乡</Select.Option>
-      <Select.Option value="居民、村民委员会">居民、村民委员会</Select.Option>
-      <Select.Option value="其他">其他</Select.Option>
-      </Select></Form.Item>,
+      label: '隶属关系',
+      children: 
+				<Form.Item name="company_basicinfo_r9">
+					<Select
+            allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请选择隶属关系"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '中央',
+								label: '中央',
+							},
+							{
+								value: '省',
+								label: '省',
+							},
+							{
+								value: '市、地区',
+								label: '市、地区',
+							},
+							{
+								value: '区',
+								label: '区',
+							},
+							{
+								value: '县',
+								label: '县',
+							},
+							{
+								value: '街道',
+								label: '街道',
+							},
+							{
+								value: '镇',
+								label: '镇',
+							},
+							{
+								value: '乡',
+								label: '乡',
+							},
+							{
+								value: '居民委员会',
+								label: '居民委员会',
+							},
+							{
+								value: '村民委员会',
+								label: '村民委员会',
+							},
+							{
+								value: '军队',
+								label: '军队',
+							},
+							{
+								value: '其他',
+								label: '其他',
+							}
+						]}
+					/>
+				</Form.Item>,
       span: 1.5
     },
     {
       key: '6',
-      label: '单位经济类型',
-      children: <Form.Item name="CompanyInfoChange_4"><Select name="dwjjlx" id="dwjjlx">
-      <Select.Option value="内资">内资</Select.Option>
-      <Select.Option value="港、澳、台投资">港、澳、台投资</Select.Option>
-      <Select.Option value="国外投资">国外投资</Select.Option>
-      <Select.Option value="中外合资">中外合资</Select.Option>
-      <Select.Option value="中外合作">中外合作</Select.Option>
-      <Select.Option value="外资">外资</Select.Option>
-      <Select.Option value="其他">其他</Select.Option>
-      </Select></Form.Item>,
+      label: '经济类型',
+      children: 
+        <Form.Item name="CompanyInfoChange_4">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择经济类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '内资',
+                label: '内资',
+              },
+              {
+                value: '国有全资',
+                label: '国有全资',
+              },
+              {
+                value: '集体全资',
+                label: '集体全资',
+              },
+              {
+                value: '股份合作',
+                label: '股份合作',
+              },
+              {
+                value: '国有联营',
+                label: '国有联营',
+              },
+              {
+                value: '集体联营',
+                label: '集体联营',
+              },
+              {
+                value: '国有与集体联营',
+                label: '国有与集体联营',
+              },
+              {
+                value: '其他联营',
+                label: '其他联营',
+              },
+              {
+                value: '国有独资（公司）',
+                label: '国有独资（公司）',
+              },
+              {
+                value: '其他有限责任公司（公司）',
+                label: '其他有限责任公司（公司）',
+              },
+              {
+                value: '股份有限（公司）',
+                label: '股份有限（公司）',
+              },
+              {
+                value: '私有独资',
+                label: '私有独资',
+              },
+              {
+                value: '私有合伙',
+                label: '私有合伙',
+              },
+              {
+                value: '私营有限责任（公司）',
+                label: '私营有限责任（公司）',
+              },
+              {
+                value: '私营股份有限（公司）',
+                label: '私营股份有限（公司）',
+              },
+              {
+                value: '个体经营',
+                label: '个体经营',
+              },
+              {
+                value: '其他私有',
+                label: '其他私有',
+              },
+              {
+                value: '其他内资',
+                label: '其他内资',
+              },
+              {
+                value: '内地和港、澳。台合资',
+                label: '内地和港、澳。台合资',
+              },
+              {
+                value: '内地和港、澳。台合作',
+                label: '内地和港、澳。台合作',
+              },
+              {
+                value: '港、澳。台独资',
+                label: '港、澳。台独资',
+              },
+              {
+                value: '港、澳。台投资股份有限（公司）',
+                label: '港、澳。台投资股份有限（公司）',
+              },
+              {
+                value: '其他港、澳。台投资',
+                label: '其他港、澳。台投资',
+              },
+              {
+                value: '中外合资',
+                label: '中外合资',
+              },
+              {
+                value: '中外合作',
+                label: '中外合作',
+              },
+              {
+                value: '外资',
+                label: '外资',
+              },
+              {
+                value: '国外投资股份有限（公司）',
+                label: '国外投资股份有限（公司）',
+              },
+              {
+                value: '其他国外投资',
+                label: '其他国外投资',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1.5
     },
     {

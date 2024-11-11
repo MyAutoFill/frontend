@@ -91,7 +91,32 @@ export default function CompanyInsuranceInfo(props) {
     {
       key: '2',
       label: '基金来源',
-      children: <Form.Item name="company_insurance_2"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_NewSheBao_77">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择基金来源"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '全额拨款',
+                label: '全额拨款',
+              },
+              {
+                value: '差额拨款',
+                label: '差额拨款',
+              },
+              {
+                value: '自收自支',
+                label: '自收自支',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1.5
     },
     {

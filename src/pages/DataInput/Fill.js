@@ -63,7 +63,7 @@ export default function Fill() {
           children: [
             {
               key: '42',
-              label: '基本信息',
+              label: '单位基本信息',
             },
             {
               key: '36',
@@ -73,18 +73,18 @@ export default function Fill() {
               key: '37',
               label: '以工代训补贴申领信息',
             },
-            {
-              key: '38',
-              label: '新增社保参保人员信息',
-            },
+            // {
+            //   key: '38',
+            //   label: '新增社保参保人员信息',
+            // },
             {
               key: '39',
               label: '单位参保信息',
             },
-            {
-              key: '40',
-              label: '就业需求信息',
-            }
+            // {
+            //   key: '40',
+            //   label: '就业需求信息',
+            // }
           ],
         },
       ],

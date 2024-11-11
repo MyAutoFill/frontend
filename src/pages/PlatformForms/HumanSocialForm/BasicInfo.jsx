@@ -565,119 +565,122 @@ export default function BasicInfoHumanResource(props) {
 
   const items = [
     {
-			key: '1',
-			label: '业务办理区',
-			children: 
-				<Form.Item name="HumanSocial_CompanyInfo_12">
+      key: '1',
+      label: '统一社会信用代码',
+      children: <Form.Item name="company_basicinfo_1" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '2',
+      label: '单位名称',
+      children: <Form.Item name="company_basicinfo_2" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '3',
+      label: '所属行政区划',
+      children: <Form.Item name="HumanSocial_NewSheBao_61"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '4',
+      label: '行业小类',
+      children: <Form.Item name="HumanSocial_NewSheBao_63"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '5',
+      label: '行业中类',
+      children: <Form.Item name="hs_basic_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '6',
+      label: '行业大类',
+      children: <Form.Item name="hs_basic_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '7',
+      label: '行业代码',
+      children: <Form.Item name="company_basicinfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '8',
+      label: '工商登记执照种类',
+      children: <Form.Item name="HumanSocial_NewSheBao_64"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '9',
+      label: '工商营业执照号码',
+      children: <Form.Item name="HumanSocial_NewSheBao_68"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '10',
+      label: '组织机构代码',
+      children: <Form.Item name="company_basicinfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '11',
+      label: '隶属关系',
+      children: 
+				<Form.Item name="company_basicinfo_r9">
 					<Select
-						showSearch
             allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
 						size='large'
-						placeholder="请输入业务办理的区县"
-						optionFilterProp="label"
-						onChange={(e) => {
-              setYewuqu('')
-              setYewuqu(e)
-            }}
-						onSearch={peopleSearchOnSearch}
-						options={[
-							{
-								value: '环翠区',
-								label: '环翠区',
-							},
-							{
-								value: '高新区',
-								label: '高新区',
-							},
-							{
-								value: '经济区',
-								label: '经济区',
-							},
-							{
-								value: '临港区',
-								label: '临港区',
-							},
-							{
-								value: '威海火炬高技术产业开发区',
-								label: '威海火炬高技术产业开发区',
-							},
-							{
-								value: '文登区',
-								label: '文登区',
-							},
-							{
-								value: '荣成市',
-								label: '荣成市',
-							},
-							{
-								value: '乳山市',
-								label: '乳山市',
-							},
-							{
-								value: '市本级',
-								label: '市本级',
-							},
-						]}
-					/>
-				</Form.Item>,
-			span: 1
-		},
-    {
-			key: '2',
-			label: '业务办理街道',
-			children: 
-				<Form.Item name="HumanSocial_CompanyInfo_13">
-					<Select
-						allowClear
-						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-						size='large'
-						placeholder="请输入业务办理的街道"
-						optionFilterProp="label"
-						onChange={peopleSearchOnChange}
-						onSearch={peopleSearchOnSearch}
-						options={yewujiedaoOptions()}
-					/>
-				</Form.Item>,
-			span: 1
-		},
-    {
-      key: '3',
-      label: '用工形式',
-      children: 
-        <Form.Item name="HumanSocial_CompanyInfo_14">
-					<Select
-						allowClear
-						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-						size='large'
-						placeholder="请输入用工形式"
+						placeholder="请选择隶属关系"
 						optionFilterProp="label"
 						onChange={peopleSearchOnChange}
 						onSearch={peopleSearchOnSearch}
 						options={[
 							{
-								value: '原固定职工',
-								label: '原固定职工',
+								value: '中央',
+								label: '中央',
 							},
 							{
-								value: '城镇合同制',
-								label: '城镇合同制',
+								value: '省',
+								label: '省',
 							},
 							{
-								value: '农村合同制',
-								label: '农村合同制',
+								value: '市、地区',
+								label: '市、地区',
 							},
 							{
-								value: '临时工',
-								label: '临时工',
+								value: '区',
+								label: '区',
 							},
 							{
-								value: '聘任制',
-								label: '聘任制',
+								value: '县',
+								label: '县',
 							},
 							{
-								value: '人事代理',
-								label: '人事代理',
+								value: '街道',
+								label: '街道',
+							},
+							{
+								value: '镇',
+								label: '镇',
+							},
+							{
+								value: '乡',
+								label: '乡',
+							},
+							{
+								value: '居民委员会',
+								label: '居民委员会',
+							},
+							{
+								value: '村民委员会',
+								label: '村民委员会',
+							},
+							{
+								value: '军队',
+								label: '军队',
 							},
 							{
 								value: '其他',
@@ -689,251 +692,628 @@ export default function BasicInfoHumanResource(props) {
       span: 1
     },
     {
-      key: '4',
-      label: '人员类别一类',
-      children: 
-        <Form.Item name="HumanSocial_CompanyInfo_15">
-          <Select
-            allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-            size='large'
-            placeholder="请输入人员类别一类"
-            optionFilterProp="label"
-            onChange={(e) => {setRenyuanleibie(e)}}
-            onSearch={peopleSearchOnSearch}
-            options={[
-              {
-                value: '城镇新成长劳动力',
-                label: '城镇新成长劳动力',
-              },
-              {
-                value: '就业转失业人员',
-                label: '就业转失业人员',
-              },
-              {
-                value: '残疾人',
-                label: '残疾人',
-              },
-              {
-                value: '复员',
-                label: '复员',
-              },
-              {
-                value: '刑满释放',
-                label: '刑满释放',
-              },
-              {
-                value: '农村劳动力',
-                label: '农村劳动力',
-              },
-              {
-                value: '调转人员',
-                label: '调转人员',
-              },
-              {
-                value: '人员接续',
-                label: '人员接续',
-              },
-              {
-                value: '失业转就业人员',
-                label: '失业转就业人员',
-              },
-              {
-                value: '法定劳动年龄内各类人员',
-                label: '法定劳动年龄内各类人员',
-              }
-            ]}
-          />
-        </Form.Item>,
-      span: 1
-    },
-    {
-      key: '5',
-      label: '人员类别二类',
-      children: 
-        <Form.Item name="HumanSocial_CompanyInfo_16">
-          <Select
-            allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-            size='large'
-            placeholder="请输入人员类别二类"
-            optionFilterProp="label"
-            onChange={(e) => {setRenyuanleibie2(e)}}
-            onSearch={peopleSearchOnSearch}
-            options={renyuanleibieOptions()}
-          />
-        </Form.Item>,
-      span: 1
-    },
-    {
-      key: '6',
-      label: '人员类别三类',
-      children: 
-        <Form.Item name="HumanSocial_CompanyInfo_17">
-          <Select
-            allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-            size='large'
-            placeholder="请输入人员类别三类"
-            optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
-            options={renyuanleibieOptions3()}
-          />
-        </Form.Item>,
-      span: 1
-    },
-    {
-      key: '7',
-      label: '工资待遇',
-      children: <Form.Item name="HumanSocial_CompanyInfo_18"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '8',
-      label: '是否企业法人',
-      children: 
-        <Form.Item name="HumanSocial_CompanyInfo_19">
-          <Select
-            showSearch
-            allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-            size='large'
-            placeholder="是否企业法人"
-            optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
-            options={[
-              {
-                value: '是',
-                label: '是',
-              },
-              {
-                value: '否',
-                label: '否',
-              }
-            ]}
-          />
-        </Form.Item>,
-      span: 1
-    },
-    {
-      key: '9',
-      label: '联系人电话',
-      children: <Form.Item name="company_basicinfo_31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '10',
-      label: '联系人手机号码',
-      children: <Form.Item name="HumanSocial_SSInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '11',
-      label: '经济行业类型',
-      children: <Form.Item name="HumanSocial_SSInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
       key: '12',
-      label: '级别规模',
-      children: <Form.Item name="HumanSocial_SSInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '经济类型',
+      children: 
+        <Form.Item name="CompanyInfoChange_4">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择经济类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '内资',
+                label: '内资',
+              },
+              {
+                value: '国有全资',
+                label: '国有全资',
+              },
+              {
+                value: '集体全资',
+                label: '集体全资',
+              },
+              {
+                value: '股份合作',
+                label: '股份合作',
+              },
+              {
+                value: '国有联营',
+                label: '国有联营',
+              },
+              {
+                value: '集体联营',
+                label: '集体联营',
+              },
+              {
+                value: '国有与集体联营',
+                label: '国有与集体联营',
+              },
+              {
+                value: '其他联营',
+                label: '其他联营',
+              },
+              {
+                value: '国有独资（公司）',
+                label: '国有独资（公司）',
+              },
+              {
+                value: '其他有限责任公司（公司）',
+                label: '其他有限责任公司（公司）',
+              },
+              {
+                value: '股份有限（公司）',
+                label: '股份有限（公司）',
+              },
+              {
+                value: '私有独资',
+                label: '私有独资',
+              },
+              {
+                value: '私有合伙',
+                label: '私有合伙',
+              },
+              {
+                value: '私营有限责任（公司）',
+                label: '私营有限责任（公司）',
+              },
+              {
+                value: '私营股份有限（公司）',
+                label: '私营股份有限（公司）',
+              },
+              {
+                value: '个体经营',
+                label: '个体经营',
+              },
+              {
+                value: '其他私有',
+                label: '其他私有',
+              },
+              {
+                value: '其他内资',
+                label: '其他内资',
+              },
+              {
+                value: '内地和港、澳。台合资',
+                label: '内地和港、澳。台合资',
+              },
+              {
+                value: '内地和港、澳。台合作',
+                label: '内地和港、澳。台合作',
+              },
+              {
+                value: '港、澳。台独资',
+                label: '港、澳。台独资',
+              },
+              {
+                value: '港、澳。台投资股份有限（公司）',
+                label: '港、澳。台投资股份有限（公司）',
+              },
+              {
+                value: '其他港、澳。台投资',
+                label: '其他港、澳。台投资',
+              },
+              {
+                value: '中外合资',
+                label: '中外合资',
+              },
+              {
+                value: '中外合作',
+                label: '中外合作',
+              },
+              {
+                value: '外资',
+                label: '外资',
+              },
+              {
+                value: '国外投资股份有限（公司）',
+                label: '国外投资股份有限（公司）',
+              },
+              {
+                value: '其他国外投资',
+                label: '其他国外投资',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '13',
-      label: '参保电子邮箱',
-      children: <Form.Item name="company_basicinfo_35"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '14',
-      label: '单位主要经营地',
-      children: <Form.Item name="HumanSocial_SSInfo_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '15',
-      label: '行业风险类别',
-      children: <Form.Item name="HumanSocial_SSInfo_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '16',
-      label: '统筹层次',
-      children: <Form.Item name="HumanSocial_SSInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '17',
-      label: '单位所在区县',
+      label: '经济类型明细',
       children: 
-        <Form.Item name="HumanSocial_CompanyInfo_25">
+        <Form.Item name="HumanSocial_NewSheBao_77">
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
-            placeholder="请输入单位所在区县"
+            placeholder="请选择经济类型明细"
             optionFilterProp="label"
-            onChange={(e) => {
-              setYewuqu('')
-              setYewuqu(e)
-            }}
+            onChange={peopleSearchOnChange}
             onSearch={peopleSearchOnSearch}
             options={[
               {
-                value: '环翠区',
-                label: '环翠区',
+                value: '内资',
+                label: '内资',
               },
               {
-                value: '高新区',
-                label: '高新区',
+                value: '国有全资',
+                label: '国有全资',
               },
               {
-                value: '经济区',
-                label: '经济区',
+                value: '集体全资',
+                label: '集体全资',
               },
               {
-                value: '临港区',
-                label: '临港区',
+                value: '股份合作',
+                label: '股份合作',
               },
               {
-                value: '威海火炬高技术产业开发区',
-                label: '威海火炬高技术产业开发区',
+                value: '国有联营',
+                label: '国有联营',
               },
               {
-                value: '文登区',
-                label: '文登区',
+                value: '集体联营',
+                label: '集体联营',
               },
               {
-                value: '荣成市',
-                label: '荣成市',
+                value: '国有与集体联营',
+                label: '国有与集体联营',
               },
               {
-                value: '乳山市',
-                label: '乳山市',
+                value: '其他联营',
+                label: '其他联营',
               },
               {
-                value: '市本级',
-                label: '市本级',
+                value: '国有独资（公司）',
+                label: '国有独资（公司）',
               },
+              {
+                value: '其他有限责任公司（公司）',
+                label: '其他有限责任公司（公司）',
+              },
+              {
+                value: '股份有限（公司）',
+                label: '股份有限（公司）',
+              },
+              {
+                value: '私有独资',
+                label: '私有独资',
+              },
+              {
+                value: '私有合伙',
+                label: '私有合伙',
+              },
+              {
+                value: '私营有限责任（公司）',
+                label: '私营有限责任（公司）',
+              },
+              {
+                value: '私营股份有限（公司）',
+                label: '私营股份有限（公司）',
+              },
+              {
+                value: '个体经营',
+                label: '个体经营',
+              },
+              {
+                value: '其他私有',
+                label: '其他私有',
+              },
+              {
+                value: '其他内资',
+                label: '其他内资',
+              },
+              {
+                value: '内地和港、澳。台合资',
+                label: '内地和港、澳。台合资',
+              },
+              {
+                value: '内地和港、澳。台合作',
+                label: '内地和港、澳。台合作',
+              },
+              {
+                value: '港、澳。台独资',
+                label: '港、澳。台独资',
+              },
+              {
+                value: '港、澳。台投资股份有限（公司）',
+                label: '港、澳。台投资股份有限（公司）',
+              },
+              {
+                value: '其他港、澳。台投资',
+                label: '其他港、澳。台投资',
+              },
+              {
+                value: '中外合资',
+                label: '中外合资',
+              },
+              {
+                value: '中外合作',
+                label: '中外合作',
+              },
+              {
+                value: '外资',
+                label: '外资',
+              },
+              {
+                value: '国外投资股份有限（公司）',
+                label: '国外投资股份有限（公司）',
+              },
+              {
+                value: '其他国外投资',
+                label: '其他国外投资',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              },
+              {
+                value: '社会化管理（住院）',
+                label: '社会化管理（住院）',
+              },
+              {
+                value: '灵活就业人员（基本）',
+                label: '灵活就业人员（基本）',
+              },
+              {
+                value: '社会化管理（基本）',
+                label: '社会化管理（基本）',
+              },
+              {
+                value: '自愿参加医疗保险（基本）',
+                label: '自愿参加医疗保险（基本）',
+              },
+              {
+                value: '县以上集体企业',
+                label: '县以上集体企业',
+              },
+              {
+                value: '城镇小集体企业',
+                label: '城镇小集体企业',
+              },
+              {
+                value: '灵活就业人员（住院）',
+                label: '灵活就业人员（住院）',
+              },
+              {
+                value: '自愿参加医疗保险（住院）',
+                label: '自愿参加医疗保险（住院）',
+              }
             ]}
           />
         </Form.Item>,
       span: 1
     },
     {
-      key: '18',
-      label: '单位所在街道（镇）',
-      children: <Form.Item name="HumanSocial_CompanyInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      key: '14',
+      label: '单位类型',
+      children: <Form.Item name="company_basicinfo_r3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
-      label: '单位所在社区（村）',
-      children: <Form.Item name="HumanSocial_SSInfo_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '注册资本',
+      children: <Form.Item name="company_basicinfo_45"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
+    },
+    {
+      key: '16',
+      label: '单位成立时间',
+      children: <Form.Item name="company_basicinfo_build_date"></Form.Item>,
+      span: 1
+    },
+    {
+      key: '17',
+      label: '联系人',
+      children: <Form.Item name="company_basicinfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '18',
+      label: '联系电话',
+      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '15',
+      label: '工商登记有效期（开始时间）',
+      children: <Form.Item name="HumanSocial_NewSheBao_66"><DatePicker size='large' placeholder='请选择开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '16',
+      label: '工商登记有效期限（年）',
+      children: <Form.Item name="company_basicinfo_9" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '17',
+      label: '工商登记发证日期',
+      children: <Form.Item name="hs_basic_2" ><DatePicker size='large' placeholder='请选择发证时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1
+    },
+    {
+      key: '18',
+      label: '执照有效起始日期',
+      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '19',
+      label: '执照有效终止日期',
+      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '20',
+      label: '工商登记有效期限（年）',
+      children: <Form.Item name="company_basicinfo_9" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '21',
+      label: '批准文号',
+      children: <Form.Item name="HumanSocial_NewSheBao_71"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '22',
+      label: '批准日期',
+      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '23',
+      label: '经营范围',
+      children: <Form.Item name="company_basicinfo_8" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '24',
+      label: '法人单位ID',
+      children: <Form.Item name="hs_basic_3" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '25',
+      label: '法人姓名',
+      children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '26',
+      label: '法人证件类型',
+      children: 
+        <Form.Item name="company_basicinfo_27">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择法人证件类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '居民身份证（户口簿）',
+                label: '居民身份证（户口簿）',
+              },
+              {
+                value: '中国人民解放军军官证',
+                label: '中国人民解放军军官证',
+              },
+              {
+                value: '中国人民武装警察警官证',
+                label: '中国人民武装警察警官证',
+              },
+              {
+                value: '香港特区护照/港澳居民往来内地通行证',
+                label: '香港特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '澳门特区护照/港澳居民往来内地通行证',
+                label: '澳门特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '台湾居民往来大陆通行证',
+                label: '台湾居民往来大陆通行证',
+              },
+              {
+                value: '外国人永久居留身份',
+                label: '外国人永久居留身份',
+              },
+              {
+                value: '护照',
+                label: '护照',
+              },
+              {
+                value: '残疾人证',
+                label: '残疾人证',
+              },
+              {
+                value: '军烈属证明',
+                label: '军烈属证明',
+              },
+              {
+                value: '外国人工作许可证',
+                label: '外国人工作许可证',
+              },
+              {
+                value: '外国常驻记者证',
+                label: '外国常驻记者证',
+              },
+              {
+                value: '回国（来华）定居专家证',
+                label: '回国（来华）定居专家证',
+              },
+              {
+                value: '港澳居民居住证',
+                label: '港澳居民居住证',
+              },
+              {
+                value: '台湾居民居住证',
+                label: '台湾居民居住证',
+              },
+              {
+                value: '社会保障卡',
+                label: '社会保障卡',
+              },
+              {
+                value: '其他身份证件',
+                label: '其他身份证件',
+              }
+            ]}
+          />
+        </Form.Item>,
+      span: 1
+    },
+    {
+      key: '27',
+      label: '法人证件号码',
+      children: <Form.Item name="company_basicinfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '28',
+      label: '法人联系电话',
+      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '29',
+      label: '地税机构',
+      children: <Form.Item name="HumanSocial_NewSheBao_83"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '30',
+      label: '地税税号',
+      children: <Form.Item name="HumanSocial_NewSheBao_84"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '31',
+      label: '批准成立单位',
+      children: <Form.Item name="HumanSocial_NewSheBao_85"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '32',
+      label: '电子邮箱',
+      children: <Form.Item name="company_basicinfo_35"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '33',
+      label: '单位地址',
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '34',
+      label: '邮政编码',
+      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '35',
+      label: '其他登记证件种类',
+      children: 
+        <Form.Item name="HumanSocial_NewSheBao_80">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择其他登记证件种类"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '联合行医执照',
+                label: '联合行医执照',
+              },
+              {
+                value: '社会办医行医执照',
+                label: '社会办医行医执照',
+              },
+              {
+                value: '个体行医执照',
+                label: '个体行医执照',
+              },
+              {
+                value: '特种行业执照',
+                label: '特种行业执照',
+              },
+              {
+                value: '律师事务所执照许可证',
+                label: '律师事务所执照许可证',
+              },
+              {
+                value: '民办非企业单位登记证书',
+                label: '民办非企业单位登记证书',
+              },
+              {
+                value: '社会团体法人登记证书',
+                label: '社会团体法人登记证书',
+              },
+              {
+                value: '机关事业单位登记',
+                label: '机关事业单位登记',
+              },
+              {
+                value: '外地驻青办事机构登记证',
+                label: '外地驻青办事机构登记证',
+              },
+              {
+                value: '事业单位法人证书',
+                label: '事业单位法人证书',
+              },
+              {
+                value: '青岛市非正规就业劳动组织证书',
+                label: '青岛市非正规就业劳动组织证书',
+              },
+              {
+                value: '外国（地区）企业常驻代表机构登记证',
+                label: '外国（地区）企业常驻代表机构登记证',
+              }
+            ]}
+          />
+        </Form.Item>,
+      span: 1
+    },
+    {
+      key: '36',
+      label: '其他登记证件号码',
+      children: <Form.Item name="HumanSocial_NewSheBao_81"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1,
+    },
+    {
+      key: '37',
+      label: '法人所任职务',
+      children: <Form.Item name="HumanSocial_NewSheBao_96"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '38',
+      label: '投资国家或地区',
+      children: <Form.Item name="HumanSocial_NewSheBao_97"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '39',
+      label: '特殊情况说明',
+      children: <Form.Item name="HumanSocial_NewSheBao_98"><Input disabled={disableVar} size='large' style={{ width: '830px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3,
     }
   ];
 
