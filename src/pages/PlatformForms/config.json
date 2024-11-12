@@ -1577,7 +1577,204 @@
                     }
                 },
                 {
-                    "name": "单位就业登记"
+                    "name": "单位信息维护",
+                    "map": {
+                        "统一社会信用代码": {
+                            "name": "tyshxydm"
+                        },
+                        "单位名称": {
+                            "name": "dwmc"
+                        },
+                        "所属行政区划": {
+                            "name": "ssxzqdm"
+                        },
+                        "行业小类": {
+                            "name": "hydmmc"
+                        },
+                        "行业中类": {
+                            "name": "hyfxzlmc"
+                        },
+                        "行业大类": {
+                            "name": "hyfxdlmc"
+                        },
+                        "行业代码": {
+                            "name": "hyfxmlmc"
+                        },
+                        "工商登记执照种类": {
+                            "name": "gsdjzzzl"
+                        },
+                        "工商营业执照号码": {
+                            "name": "gsdjzzhm"
+                        },
+                        "组织机构代码": {
+                            "name": "zzjgdm"
+                        },
+                        "隶属关系": {
+                            "name": "lsgx"
+                        },
+                        "经济类型": {
+                            "name": "jjlx"
+                        },
+                        "经济类型明细": {
+                            "name": "jjlxmx"
+                        },
+                        "单位类型": {
+                            "name": "dwxz"
+                        },
+                        "注册资本": {
+                            "name": "zczb"
+                        },
+                        "单位成立日期": {
+                            "name": "dwclrq"
+                        },
+                        "联系人": {
+                            "name": "lxr"
+                        },
+                        "联系电话": {
+                            "name": "lxdh"
+                        },
+                        "工商登记有效期（开始时间）": {
+                            "name": "gsdjyxq"
+                        },
+                        "工商登记有效期限（年）": {
+                            "name": "gsdjyxqx"
+                        },
+                        "工商登记发证日期": {
+                            "name": "gsdjfzrq"
+                        },
+                        "执照有效起始日期": {
+                            "name": "zzyxqsrq"
+                        },
+                        "执照有效终止日期": {
+                            "name": "zzyxzzrq"
+                        },
+                        "批准文号": {
+                            "name": "pzwh"
+                        },
+                        "批准日期": {
+                            "name": "pzrq"
+                        },
+                        "经营范围": {
+                            "name": "jyfw"
+                        },
+                        "法人单位ID": {
+                            "name": "frdwid"
+                        },
+                        "法人姓名": {
+                            "name": "fddbrxm"
+                        },
+                        "法人证件类型": {
+                            "name": "fddbrzjlx"
+                        },
+                        "法人证件号码": {
+                            "name": "fddbrzjbh"
+                        },
+                        "法人联系电话": {
+                            "name": "fddbrdh"
+                        },
+                        "地税机构": {
+                            "name": "dsjgmc"
+                        },
+                        "地税税号": {
+                            "name": "dssh"
+                        },
+                        "批准成立单位": {
+                            "name": "pzcldw"
+                        },
+                        "电子邮箱": {
+                            "name": "dzyx"
+                        },
+                        "单位地址": {
+                            "name": "dwdz"
+                        },
+                        "邮政编码": {
+                            "name": "yzbm"
+                        },
+                        "其他登记证件种类": {
+                            "name": "qtdjzjzl"
+                        },
+                        "其他登记证件号码": {
+                            "name": "qtdjzjhm"
+                        },
+                        "法人所任职务": {
+                            "name": "fdrsrzw"
+                        },
+                        "投资国家或地区": {
+                            "name": "tzgjhdq"
+                        },
+                        "特殊情况说明": {
+                            "name": "tsqksm"
+                        },
+                        "单位管理码": {
+                            "name": "dwbh"
+                        },
+                        "参保单位名称": {
+                            "name": "cbdwmc"
+                        },
+                        "参保单位类型": {
+                            "name": "cbdwxz"
+                        },
+                        "单位曾用名": {
+                            "name": "dwcym"
+                        },
+                        "联系人姓名": {
+                            "name": "fddwzgyxm"
+                        },
+                        "联系人所在部门": {
+                            "name": "fddwzgyszbm"
+                        },
+                        "联系人电话": {
+                            "name": "cbdwlxdh"
+                        },
+                        "联系人手机号码": {
+                            "name": "fddwzgydh"
+                        },
+                        "行业风险类别": {
+                            "name": "hyfxlb"
+                        },
+                        "经济行业类别": {
+                            "name": "c_jjhylb"
+                        },
+                        "级别规模": {
+                            "name": "jbgm"
+                        },
+                        "统筹层次": {
+                            "name": "tccc"
+                        },
+                        "基金来源": {
+                            "name": "jjly"
+                        },
+                        "单位只要经营地": {
+                            "name": "dwzyjyd"
+                        },
+                        "参保电子邮箱": {
+                            "name": "cbdwdzyx"
+                        },
+                        "联系地址": {
+                            "name": "lxdz"
+                        },
+                        "主管部门（主管机构）": {
+                            "name": "zgbmhzjg"
+                        },
+                        "单位特殊标识": {
+                            "name": "c_dwtsbs"
+                        },
+                        "拨款单位标志": {
+                            "name": "bkdwbz"
+                        },
+                        "征缴方式": {
+                            "name": "zjfs"
+                        },
+                        "缴费银行名称": {
+                            "name": "yhmc"
+                        },
+                        "缴费银行户名": {
+                            "name": "jfyhhm"
+                        },
+                        "缴费银行账号": {
+                            "name": "jfyhzh"
+                        }
+                    }
                 }
             ]
         },
