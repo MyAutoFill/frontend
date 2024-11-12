@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import DocumentTitle from 'react-document-title';
-import Header from '../Header';
+import NewHeader from './NewHeader';
 import Footer from '../Footer';
 import 'rc-banner-anim/assets/index.css';
-import { Tabs, Divider, Steps } from 'antd';
+import { Tabs, Divider, Steps, Menu, ConfigProvider } from 'antd';
 import Fill from './Fill';
 import UploadSyncPage from './UploadSync';
 import PreviewPage from './Preview';
@@ -39,11 +39,41 @@ export default function DataInput() {
   return (
     <>
       <div style={{height: '100vh'}}>
-        <Header key="header" className='show-shadow' />
-        <div className="banner page-wrapper" >
+        <div className="mybanner page-wrapper" >
           <div className="page" style={{maxWidth: 2000, height: 1250}}>
-            <div className="logo" />
-            <div style={{padding: 50, height: 1050}} class="banner-anim">
+            <div style={{display: 'flex', margin: '70px auto 40px'}}>
+              <div className="logo" />
+              <div>
+                <ConfigProvider
+                  theme={{
+                    components: {
+                      Menu: {
+                        horizontalItemSelectedColor: 'rgba(255, 255, 255, 0.6)',
+                      },
+                    },
+                  }}
+                >
+                  <Menu mode="horizontal" style={{background: 'rgba(0, 0, 0, 0)', border: 0, lineHeight: 2.8}}>
+                    <Menu.Item key="home">
+                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
+                    </Menu.Item>
+                    <Menu.Item key="guide">
+                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>使用指导</a>
+                    </Menu.Item>
+                    <Menu.Item key="input">
+                      <a href='/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
+                    </Menu.Item>
+                    <Menu.Item key="data">
+                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>数据分析</a>
+                    </Menu.Item>
+                    <Menu.Item key="info">
+                      <a href='/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                    </Menu.Item>
+                  </Menu>
+                </ConfigProvider>
+              </div>
+            </div>
+            <div style={{padding: 50, height: 1050}} class="mybanner-anim">
               <Steps
                 current={currentKey - 1}
                 onChange={stepOnChange}
@@ -101,7 +131,6 @@ export default function DataInput() {
             </div>
           </div>
         </div>
-        <Footer key="footer" />
         <DocumentTitle title="统一报表报送系统" key="title" />
       </div>
     </>

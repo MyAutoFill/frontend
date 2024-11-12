@@ -8,7 +8,7 @@ import CompanyInsuranceInfo from './CompanyInsuranceInfo'
 import CompanyRunningSumInfo from './CompanyRunningSumInfo'
 import CompanyResearchInfo from './CompanyResearchInfo'
 import 'rc-banner-anim/assets/index.css';
-import { Menu, DatePicker } from 'antd';
+import { Menu, DatePicker, ConfigProvider } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
 
@@ -101,11 +101,41 @@ export default function CompanyInfo() {
   return (
     <>
       <div style={{height: '100vh'}}>
-        <Header key="header" className='show-shadow' />
-        <div className="banner page-wrapper" >
+        <div className="mybanner page-wrapper" >
           <div className="page" style={{maxWidth: 2000, height: 1000}}>
-            <div className="logo" />
-            <div style={{padding: 50, height: 1000}} class="banner-anim">
+            <div style={{display: 'flex', margin: '70px auto 40px'}}>
+              <div className="logo" />
+              <div>
+                <ConfigProvider
+                  theme={{
+                    components: {
+                      Menu: {
+                        horizontalItemSelectedColor: 'rgba(255, 255, 255, 0.6)',
+                      },
+                    },
+                  }}
+                >
+                  <Menu mode="horizontal" style={{background: 'rgba(0, 0, 0, 0)', border: 0, lineHeight: 2.8}}>
+                    <Menu.Item key="home">
+                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
+                    </Menu.Item>
+                    <Menu.Item key="guide">
+                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>使用指导</a>
+                    </Menu.Item>
+                    <Menu.Item key="input">
+                      <a href='/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
+                    </Menu.Item>
+                    <Menu.Item key="data">
+                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>数据分析</a>
+                    </Menu.Item>
+                    <Menu.Item key="info">
+                      <a href='/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                    </Menu.Item>
+                  </Menu>
+                </ConfigProvider>
+              </div>
+            </div>
+            <div style={{padding: 50, height: 1000}} class="mybanner-anim">
               <div style={{display: 'flex', height: 1000}}>
                 <div>
                   <Menu
@@ -131,8 +161,6 @@ export default function CompanyInfo() {
             </div>
           </div>
         </div>
-        <Footer key="footer" position='absolute'/>
-        <DocumentTitle title="统一报表报送系统" key="title" />
       </div>
     </>
   );
