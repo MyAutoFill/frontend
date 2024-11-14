@@ -1928,6 +1928,268 @@
                     "key": "社区名称",
                     "id": "290"
                 }
+            ],
+            "单位信息维护": [
+                {
+                    "key": "统一社会信用代码",
+                    "id": "company_basicinfo_1"
+                },
+                {
+                    "key": "单位名称",
+                    "id": "company_basicinfo_2"
+                },
+                {
+                    "key": "所属行政区划",
+                    "id": "HumanSocial_NewSheBao_61"
+                },
+                {
+                    "key": "行业小类",
+                    "id": "HumanSocial_NewSheBao_63"
+                },
+                {
+                    "key": "行业中类",
+                    "id": "hs_basic_2"
+                },
+                {
+                    "key": "行业大类",
+                    "id": "hs_basic_3"
+                },
+                {
+                    "key": "行业代码",
+                    "id": "company_basicinfo_7"
+                },
+                {
+                    "key": "工商登记执照种类",
+                    "id": "HumanSocial_NewSheBao_64"
+                },
+                {
+                    "key": "工商营业执照号码",
+                    "id": "HumanSocial_NewSheBao_68"
+                },
+                {
+                    "key": "组织机构代码",
+                    "id": "company_basicinfo_10"
+                },
+                {
+                    "key": "隶属关系",
+                    "id": "company_basicinfo_r9"
+                },
+                {
+                    "key": "经济类型",
+                    "id": "CompanyInfoChange_4"
+                },
+                {
+                    "key": "经济类型明细",
+                    "id": "HumanSocial_NewSheBao_77"
+                },
+                {
+                    "key": "单位类型",
+                    "id": "company_basicinfo_r3"
+                },
+                {
+                    "key": "注册资本",
+                    "id": "company_basicinfo_45"
+                },
+                {
+                    "key": "单位成立日期",
+                    "id": "company_basicinfo_build_date"
+                },
+                {
+                    "key": "联系人",
+                    "id": "company_basicinfo_30"
+                },
+                {
+                    "key": "联系电话",
+                    "id": "company_basicinfo_29"
+                },
+                {
+                    "key": "工商登记有效期（开始时间）",
+                    "id": "HumanSocial_NewSheBao_66"
+                },
+                {
+                    "key": "工商登记有效期限（年）",
+                    "id": "company_basicinfo_9"
+                },
+                {
+                    "key": "工商登记发证日期",
+                    "id": "hs_basic_2"
+                },
+                {
+                    "key": "执照有效起始日期",
+                    "id": "HumanSocial_NewSheBao_69"
+                },
+                {
+                    "key": "执照有效终止日期",
+                    "id": "HumanSocial_NewSheBao_70"
+                },
+                {
+                    "key": "批准文号",
+                    "id": "HumanSocial_NewSheBao_71"
+                },
+                {
+                    "key": "批准日期",
+                    "id": "HumanSocial_NewSheBao_72"
+                },
+                {
+                    "key": "经营范围",
+                    "id": "company_basicinfo_8"
+                },
+                {
+                    "key": "法人单位ID",
+                    "id": "hs_basic_3"
+                },
+                {
+                    "key": "法人姓名",
+                    "id": "company_basicinfo_26"
+                },
+                {
+                    "key": "法人证件类型",
+                    "id": "company_basicinfo_27"
+                },
+                {
+                    "key": "法人证件号码",
+                    "id": "company_basicinfo_28"
+                },
+                {
+                    "key": "法人联系电话",
+                    "id": "company_basicinfo_29"
+                },
+                {
+                    "key": "地税机构",
+                    "id": "HumanSocial_NewSheBao_83"
+                },
+                {
+                    "key": "地税税号",
+                    "id": "HumanSocial_NewSheBao_84"
+                },
+                {
+                    "key": "批准成立单位",
+                    "id": "HumanSocial_NewSheBao_85"
+                },
+                {
+                    "key": "电子邮箱",
+                    "id": "company_basicinfo_35"
+                },
+                {
+                    "key": "单位地址",
+                    "id": "company_basicinfo_17"
+                },
+                {
+                    "key": "邮政编码",
+                    "id": "company_basicinfo_38"
+                },
+                {
+                    "key": "其他登记证件种类",
+                    "id": "HumanSocial_NewSheBao_80"
+                },
+                {
+                    "key": "其他登记证件号码",
+                    "id": "HumanSocial_NewSheBao_81"
+                },
+                {
+                    "key": "法人所任职务",
+                    "id": "HumanSocial_NewSheBao_96"
+                },
+                {
+                    "key": "投资国家或地区",
+                    "id": "HumanSocial_NewSheBao_97"
+                },
+                {
+                    "key": "特殊情况说明",
+                    "id": "HumanSocial_NewSheBao_98"
+                },
+                {
+                    "key": "单位管理码",
+                    "id": "company_insurance_1"
+                },
+                {
+                    "key": "参保单位名称",
+                    "id": "company_basicinfo_2"
+                },
+                {
+                    "key": "参保单位类型",
+                    "id": "company_basicinfo_r3"
+                },
+                {
+                    "key": "单位曾用名",
+                    "id": "company_basicinfo_3"
+                },
+                {
+                    "key": "联系人姓名",
+                    "id": "company_basicinfo_30"
+                },
+                {
+                    "key": "联系人所在部门",
+                    "id": "HumanSocial_SSInfo_8"
+                },
+                {
+                    "key": "联系人电话",
+                    "id": "company_basicinfo_31"
+                },
+                {
+                    "key": "联系人手机号码",
+                    "id": "HumanSocial_SSInfo_10"
+                },
+                {
+                    "key": "行业风险类别",
+                    "id": "company_insurance_9"
+                },
+                {
+                    "key": "经济行业类别",
+                    "id": "company_insurance_10"
+                },
+                {
+                    "key": "级别规模",
+                    "id": "HumanSocial_SSInfo_12"
+                },
+                {
+                    "key": "统筹层次",
+                    "id": "company_insurance_14"
+                },
+                {
+                    "key": "基金来源",
+                    "id": "HumanSocial_NewSheBao_77"
+                },
+                {
+                    "key": "单位主要经营地",
+                    "id": "company_basicinfo_17"
+                },
+                {
+                    "key": "参保电子邮箱",
+                    "id": "company_basicinfo_35"
+                },
+                {
+                    "key": "联系地址",
+                    "id": "company_basicinfo_17"
+                },
+                {
+                    "key": "主管部门（主管机构）",
+                    "id": "CompanyInfoChange_9"
+                },
+                {
+                    "key": "单位特殊标识",
+                    "id": "HumanSocial_SSInfo_19"
+                },
+                {
+                    "key": "拨款单位标志",
+                    "id": "HumanSocial_SSInfo_20"
+                },
+                {
+                    "key": "征缴方式",
+                    "id": "HumanSocial_SSInfo_21"
+                },
+                {
+                    "key": "缴费银行名称",
+                    "id": "HumanSocial_SSInfo_22"
+                },
+                {
+                    "key": "缴费银行户名",
+                    "id": "HumanSocial_SSInfo_23"
+                },
+                {
+                    "key": "缴费银行账号",
+                    "id": "HumanSocial_SSInfo_24"
+                }
             ]
         },
         "医保局": {

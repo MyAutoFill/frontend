@@ -154,7 +154,7 @@ export default function CompanySocialSecurityInfo(props) {
     {
       key: '13',
       label: '统筹层次',
-      children: <Form.Item name="HumanSocial_SSInfo_13"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

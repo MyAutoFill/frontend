@@ -1008,7 +1008,7 @@ export default function BasicInfoHumanResource(props) {
     {
       key: '16',
       label: '单位成立时间',
-      children: <Form.Item name="company_basicinfo_build_date"></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -1052,12 +1052,6 @@ export default function BasicInfoHumanResource(props) {
       label: '执照有效终止日期',
       children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
-    },
-    {
-      key: '20',
-      label: '工商登记有效期限（年）',
-      children: <Form.Item name="company_basicinfo_9" ><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
     },
     {
       key: '21',

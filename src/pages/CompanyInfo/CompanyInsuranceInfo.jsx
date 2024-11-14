@@ -152,7 +152,7 @@ export default function CompanyInsuranceInfo(props) {
     {
       key: '6',
       label: '单位主要经营地',
-      children: <Form.Item name="company_insurance_8"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_17"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
