@@ -94,7 +94,7 @@ export default function HighTechCompanyStat(props) {
       key: '2',
       label: '法人姓名',
       children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1,
+      span: 1.5,
     },
     {
       key: '10',
@@ -140,22 +140,22 @@ export default function HighTechCompanyStat(props) {
             ]}
           />
         </Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       label: '法人证件号码',
       children: <Form.Item name="company_basicinfo_28" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       label: '身份证有效期开始时间',
       children: <Form.Item name="Tech_stat_IDstart"><DatePicker size='large' placeholder='身份证有效期开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       label: '身份证有效期结束时间',
       children: <Form.Item name="Tech_stat_IDend"><DatePicker size='large' placeholder='身份证有效期结束时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       key: '3',
@@ -415,7 +415,7 @@ export default function HighTechCompanyStat(props) {
     {
       key: '12',
       label: '邮政编码(qa06)',
-      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -462,9 +462,9 @@ export default function HighTechCompanyStat(props) {
     },
     {
       key: '21',
-      label: 'Email地址(qa13)',
-      children: <Form.Item name="Tech_stat_19"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      label: '填报人电子邮箱地址(qa13)',
+      children: <Form.Item name="Tech_stat_19"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     }
   ];
 
