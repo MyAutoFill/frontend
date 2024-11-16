@@ -7,7 +7,9 @@ import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
+import dayjs from 'dayjs';
 
+const dateFormat = 'YYYY-MM-DD';
 
 export default function BasicInfoHumanResource(props) {
 
@@ -1301,7 +1303,7 @@ export default function BasicInfoHumanResource(props) {
       key: '38',
       label: '投资国家或地区',
       children: <Form.Item name="HumanSocial_NewSheBao_97"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      span: 2
     },
     {
       key: '39',
