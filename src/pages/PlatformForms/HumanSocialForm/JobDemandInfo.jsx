@@ -946,7 +946,27 @@ export default function HumanSocialCompanyInfo(props) {
     {
       key: '26',
       label: '是否创业',
-      children: <Form.Item name="HumanSocial_CompanyInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_24">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否创业"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1.5
     },
     {
@@ -1036,10 +1056,24 @@ export default function HumanSocialCompanyInfo(props) {
       label: '是否领取',
       children:
         <Form.Item name="HumanSocial_CompanyInfo_29">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-            <Radio value={1}>是</Radio>
-            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-          </Radio.Group>
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否领取"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 1
     },

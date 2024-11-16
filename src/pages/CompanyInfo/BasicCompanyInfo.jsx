@@ -254,9 +254,90 @@ export default function BasicCompanyInfo(props) {
       span: 1
     },
     {
-      key: '16',
+      key: '94',
       label: '法人证件类型',
-      children: <Form.Item name="company_basicinfo_27" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="company_basicinfo_27">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择法人证件类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '居民身份证（户口簿）',
+                label: '居民身份证（户口簿）',
+              },
+              {
+                value: '中国人民解放军军官证',
+                label: '中国人民解放军军官证',
+              },
+              {
+                value: '中国人民武装警察警官证',
+                label: '中国人民武装警察警官证',
+              },
+              {
+                value: '香港特区护照/港澳居民往来内地通行证',
+                label: '香港特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '澳门特区护照/港澳居民往来内地通行证',
+                label: '澳门特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '台湾居民往来大陆通行证',
+                label: '台湾居民往来大陆通行证',
+              },
+              {
+                value: '外国人永久居留身份',
+                label: '外国人永久居留身份',
+              },
+              {
+                value: '护照',
+                label: '护照',
+              },
+              {
+                value: '残疾人证',
+                label: '残疾人证',
+              },
+              {
+                value: '军烈属证明',
+                label: '军烈属证明',
+              },
+              {
+                value: '外国人工作许可证',
+                label: '外国人工作许可证',
+              },
+              {
+                value: '外国常驻记者证',
+                label: '外国常驻记者证',
+              },
+              {
+                value: '回国（来华）定居专家证',
+                label: '回国（来华）定居专家证',
+              },
+              {
+                value: '港澳居民居住证',
+                label: '港澳居民居住证',
+              },
+              {
+                value: '台湾居民居住证',
+                label: '台湾居民居住证',
+              },
+              {
+                value: '社会保障卡',
+                label: '社会保障卡',
+              },
+              {
+                value: '其他身份证件',
+                label: '其他身份证件',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {

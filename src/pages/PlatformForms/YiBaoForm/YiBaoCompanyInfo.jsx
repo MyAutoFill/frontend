@@ -93,7 +93,50 @@ export default function YiBaoCompanyInfo(props) {
     {
       key: '2',
       label: '单位性质',
-      children: <Form.Item name="yibao_companyInfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children:         
+        <Form.Item name="Tech_stat_dwxz">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择单位性质"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '私营企业',
+                label: '私营企业',
+              },
+              {
+                value: '国有企业',
+                label: '国有企业',
+              },
+              {
+                value: '其他企业',
+                label: '其他企业',
+              },
+              {
+                value: '转制型企业',
+                label: '转制型企业',
+              },
+              {
+                value: '合资企业',
+                label: '合资企业',
+              },
+              {
+                value: '外商投资企业',
+                label: '外商投资企业',
+              },
+              {
+                value: '港、澳、台投资企业',
+                label: '港、澳、台投资企业',
+              },
+              {
+                value: '集体所有制企业',
+                label: '集体所有制企业',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1.5
     },
     {

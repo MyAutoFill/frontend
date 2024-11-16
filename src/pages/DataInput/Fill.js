@@ -198,7 +198,7 @@ export default function Fill() {
         },
         {
           key: '32',
-          label: '高新技术企业统计表信息'
+          label: '法人基本信息表'
         }
       ],
     },

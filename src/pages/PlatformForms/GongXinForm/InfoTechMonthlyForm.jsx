@@ -400,7 +400,7 @@ export default function InfoTechMonthlyForm(props) {
     {
       key: '7',
       label: '单位详细名称',
-      children: <Form.Item name="GongXin_MonthlyReport_165"><Input disabled={disableVar} size='large' style={{ width: '640px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Tech_stat_2"><Input disabled={disableVar} size='large' style={{ width: '640px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {

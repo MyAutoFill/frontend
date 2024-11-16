@@ -130,7 +130,7 @@ export default function NewSheBao(props) {
     {
       key: '7',
       label: '通讯地址',
-      children: <Form.Item name="HumanSocial_NewSheBao_7"><Input disabled={disableVar} size='large' style={{ width: '830px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '830px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -1023,8 +1023,8 @@ export default function NewSheBao(props) {
     {
       key: '83',
       label: '单位成立日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择状态单位成立日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1.5
     },
     {
       key: '84',
