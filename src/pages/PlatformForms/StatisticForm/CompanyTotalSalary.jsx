@@ -88,7 +88,7 @@ export default function CompanyTotalSalary(props) {
     {
       key: '1',
       people_index: '一、从业人员',
-      people_this_year: <Form.Item name="Statisitc_salary_1"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_this_year: <Form.Item name="company_employee_1"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       people_last_year: <Form.Item name="Statisitc_salary_2"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '二、工资总额',
       salary_this_year: <Form.Item name="company_employee_11"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -97,7 +97,7 @@ export default function CompanyTotalSalary(props) {
     {
       key: '2',
       people_index: '从业人员期末人数',
-      people_this_year: <Form.Item name="Statisitc_salary_5"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_this_year: <Form.Item name="company_employee_1"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       people_last_year: <Form.Item name="Statisitc_salary_6"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: '从业人员工资总额',
       salary_this_year: <Form.Item name="company_employee_11"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,

@@ -21,6 +21,9 @@ export default function HumanSocialCompanyInfo(props) {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+  const [yewuqu, setYewuqu] = useState('')
+  const [renyuanleibie, setRenyuanleibie] = useState('')
+  const [renyuanleibie2, setRenyuanleibie2] = useState('')
 
   useEffect(() => {
     load_data(props.date);
@@ -29,7 +32,7 @@ export default function HumanSocialCompanyInfo(props) {
   const load_data = (curDate) => {
     reqBasicData(curDate)
       .then(function (res) {
-        reqRatioConfig('JobDemandInfo')
+        reqRatioConfig('HumanSocialCompanyInfo')
         .then(function (config) {
           const new_res = JSON.parse(JSON.stringify(res));
           Object.keys(config).forEach(key => {
@@ -90,12 +93,482 @@ export default function HumanSocialCompanyInfo(props) {
     });
   };
 
+  const yewujiedaoOptions = () => {
+    if (yewuqu === '环翠区') {
+      return [
+        {
+          value: '环翠楼街道办事处',
+          label: '环翠楼街道办事处',
+        },
+        {
+          value: '鲸园街道办事处',
+          label: '鲸园街道办事处',
+        },
+        {
+          value: '竹岛街道办事处',
+          label: '竹岛街道办事处',
+        },
+        {
+          value: '张村镇',
+          label: '张村镇',
+        },
+        {
+          value: '羊亭镇',
+          label: '羊亭镇',
+        },
+        {
+          value: '温泉镇',
+          label: '温泉镇',
+        },
+        {
+          value: '孙家疃镇',
+          label: '孙家疃镇',
+        },
+        {
+          value: '嵩山街道办事处',
+          label: '嵩山街道办事处',
+        },
+        {
+          value: '桥头镇',
+          label: '桥头镇',
+        },
+      ]
+    }else if(yewuqu === '高新区') {
+      return [
+        {
+          value: '怡园街道办事处',
+          label: '怡园街道办事处',
+        },
+        {
+          value: '田和街道办事处',
+          label: '田和街道办事处',
+        },
+        {
+          value: '双岛街道办事处',
+          label: '双岛街道办事处',
+        },
+        {
+          value: '初村镇',
+          label: '初村镇',
+        }
+      ]
+    }else if(yewuqu === '经济区') {
+      return [
+        {
+          value: '皇冠街道办事处',
+          label: '皇冠街道办事处',
+        },
+        {
+          value: '凤林街道办事处',
+          label: '凤林街道办事处',
+        },
+        {
+          value: '西苑街道办事处',
+          label: '西苑街道办事处',
+        },
+        {
+          value: '崮山镇',
+          label: '崮山镇',
+        },
+        {
+          value: '泊于镇',
+          label: '泊于镇',
+        }
+      ]
+    }else if(yewuqu === '临港区') {
+      return [
+        {
+          value: '草庙子镇',
+          label: '草庙子镇',
+        },
+        {
+          value: '汪疃镇',
+          label: '汪疃镇',
+        },
+        {
+          value: '蔄山镇街道办事处',
+          label: '蔄山镇街道办事处',
+        },
+        {
+          value: '黄岚街道办事处',
+          label: '黄岚街道办事处',
+        }
+      ]
+    }else if(yewuqu === '威海火炬高技术产业开发区') {
+      return [
+        {
+          value: '威海火炬高技术产业开发区',
+          label: '威海火炬高技术产业开发区',
+        }
+      ]
+    }else if(yewuqu === '文登区') {
+      return [
+        {
+          value: '龙山街道办事处',
+          label: '龙山街道办事处',
+        },
+        {
+          value: '天福路街道办事处',
+          label: '天福路街道办事处',
+        },
+        {
+          value: '环山路街道办事处',
+          label: '环山路街道办事处',
+        },
+        {
+          value: '文登营镇',
+          label: '文登营镇',
+        },
+        {
+          value: '大水泊镇',
+          label: '大水泊镇',
+        },
+        {
+          value: '张家产镇',
+          label: '张家产镇',
+        },
+        {
+          value: '高村镇',
+          label: '高村镇',
+        },
+        {
+          value: '泽库镇',
+          label: '泽库镇',
+        },
+        {
+          value: '侯家镇',
+          label: '侯家镇',
+        },
+        {
+          value: '宋村镇',
+          label: '宋村镇',
+        },
+        {
+          value: '泽头镇',
+          label: '泽头镇',
+        },
+        {
+          value: '小观镇',
+          label: '小观镇',
+        },
+        {
+          value: '葛家镇',
+          label: '葛家镇',
+        },
+        {
+          value: '米山镇',
+          label: '米山镇',
+        },
+        {
+          value: '界石镇',
+          label: '界石镇',
+        },
+        {
+          value: '金山镇',
+          label: '金山镇',
+        },
+        {
+          value: '苘山镇',
+          label: '苘山镇',
+        },
+        {
+          value: '开发区办事处',
+          label: '开发区办事处',
+        },
+        {
+          value: '埠口港管理委员会',
+          label: '埠口港管理委员会',
+        }
+      ]
+    }else if(yewuqu === '荣成市') {
+      return [
+        {
+          value: '宁津街道办事处',
+          label: '宁津街道办事处',
+        },
+        {
+          value: '港湾街道办事处',
+          label: '港湾街道办事处',
+        },
+        {
+          value: '桃园街道办事处',
+          label: '桃园街道办事处',
+        },
+        {
+          value: '王连街道办事处',
+          label: '王连街道办事处',
+        },
+        {
+          value: '东山街道办事处',
+          label: '东山街道办事处',
+        },
+        {
+          value: '斥山街道办事处',
+          label: '斥山街道办事处',
+        },
+        {
+          value: '崖头街道办事处',
+          label: '崖头街道办事处',
+        },
+        {
+          value: '城西街道办事处',
+          label: '城西街道办事处',
+        },
+        {
+          value: '寻山街道办事处',
+          label: '寻山街道办事处',
+        },
+        {
+          value: '崂山街道办事处',
+          label: '崂山街道办事处',
+        },
+        {
+          value: '俚岛镇',
+          label: '俚岛镇',
+        },
+        {
+          value: '成山镇',
+          label: '成山镇',
+        },
+        {
+          value: '埠柳镇',
+          label: '埠柳镇',
+        },
+        {
+          value: '港西镇',
+          label: '港西镇',
+        },
+        {
+          value: '夏庄镇',
+          label: '夏庄镇',
+        },
+        {
+          value: '崖西镇',
+          label: '崖西镇',
+        },
+        {
+          value: '荫子镇',
+          label: '荫子镇',
+        },
+        {
+          value: '滕家镇',
+          label: '滕家镇',
+        },
+        {
+          value: '大疃镇',
+          label: '大疃镇',
+        },
+        {
+          value: '上庄镇',
+          label: '上庄镇',
+        },
+        {
+          value: '虎山镇',
+          label: '虎山镇',
+        },
+        {
+          value: '人和镇',
+          label: '人和镇',
+        },
+        {
+          value: '石岛街道办事处',
+          label: '石岛街道办事处',
+        } 
+      ]
+    }else if(yewuqu === '乳山市') {
+      return [
+        {
+          value: '城区街道办事处',
+          label: '城区街道办事处',
+        },
+        {
+          value: '夏村镇',
+          label: '夏村镇',
+        },
+        {
+          value: '乳山口镇',
+          label: '乳山口镇',
+        },
+        {
+          value: '海阳所镇',
+          label: '海阳所镇',
+        },
+        {
+          value: '白沙滩镇',
+          label: '白沙滩镇',
+        },
+        {
+          value: '大孤山镇',
+          label: '大孤山镇',
+        },
+        {
+          value: '南黄镇',
+          label: '南黄镇',
+        },
+        {
+          value: '冯家镇',
+          label: '冯家镇',
+        },
+        {
+          value: '下初镇',
+          label: '下初镇',
+        },
+        {
+          value: '午极镇',
+          label: '午极镇',
+        },
+        {
+          value: '育黎镇',
+          label: '育黎镇',
+        },
+        {
+          value: '崖子镇',
+          label: '崖子镇',
+        },
+        {
+          value: '诸往镇',
+          label: '诸往镇',
+        },
+        {
+          value: '乳山寨镇',
+          label: '乳山寨镇',
+        },
+        {
+          value: '徐家镇',
+          label: '徐家镇',
+        },
+      ]
+    }else if(yewuqu === '市本级') {
+      return [
+        {
+          value: '市本级虚拟街道',
+          label: '市本级虚拟街道',
+        }
+      ]
+    }else{
+      return []
+    }
+  }
+
+  const renyuanleibieOptions = () => {
+    if (renyuanleibie === '城镇新成长劳动力') {
+      return [
+        {
+          value: '未能升学的初高中人员',
+          label: '未能升学的初高中人员',
+        },
+        {
+          value: '高校毕业生',
+          label: '高校毕业生',
+        }
+      ]
+    }else if(renyuanleibie === '就业转失业人员') {
+      return [
+        {
+          value: '其他就业困难人员',
+          label: '其他就业困难人员',
+        },
+        {
+          value: '4050人员',
+          label: '4050人员',
+        }
+      ]
+    }else if(renyuanleibie === '残疾人') {
+      return [
+        {
+          value: '残疾人',
+          label: '残疾人',
+        }
+      ]
+    }else if(renyuanleibie === '复员') {
+      return [
+        {
+          value: '复员',
+          label: '复员',
+        }
+      ]
+    }else if(renyuanleibie === '刑满释放') {
+      return [
+        {
+          value: '刑满释放',
+          label: '刑满释放',
+        }
+      ]
+    }else if(renyuanleibie === '农村劳动力') {
+      return [
+        {
+          value: '农村劳动力',
+          label: '农村劳动力',
+        }
+      ]
+    }else if(renyuanleibie === '调转人员') {
+      return [
+        {
+          value: '其他人员',
+          label: '其他人员',
+        },
+        {
+          value: '省属人员',
+          label: '省属人员',
+        },
+        {
+          value: '调用单位人员',
+          label: '调用单位人员',
+        }
+      ]
+    }else if(renyuanleibie === '人员接续') {
+      return [
+        {
+          value: '人员接续',
+          label: '人员接续',
+        }
+      ]
+    }else if(renyuanleibie === '失业转就业人员') {
+      return [
+        {
+          value: '失业转就业人员',
+          label: '失业转就业人员',
+        }
+      ]
+    }else if(renyuanleibie === '法定劳动年龄内各类人员') {
+      return [
+        {
+          value: '法定劳动年龄内各类人员',
+          label: '法定劳动年龄内各类人员',
+        }
+      ]
+    }else{
+      return []
+    }
+  }
+
+  const renyuanleibieOptions3 = () => {
+    if (renyuanleibie2 === '高校毕业生') {
+      return [
+        {
+          value: '大中专毕业生',
+          label: '大中专毕业生',
+        },
+        {
+          value: '职业院校毕业生',
+          label: '职业院校毕业生',
+        },
+        {
+          value: '技工院校毕业生',
+          label: '技工院校毕业生',
+        }
+      ]
+    }else{
+      return []
+    }
+  }
+
   const items = [
     {
       key: '1',
       label: '人员查询',
       children: 
-        <Form.Item name="HumanSocial_JobDemandInfo_1">
+        <Form.Item name="HumanSocial_CompanyInfo_1">
           <Select
             showSearch
             style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
@@ -131,7 +604,7 @@ export default function HumanSocialCompanyInfo(props) {
     {
       key: '3',
       label: '证件号码',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -143,49 +616,49 @@ export default function HumanSocialCompanyInfo(props) {
     {
       key: '5',
       label: '证件号码',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '姓名',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '性别',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
       label: '民族',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
       label: '户口性质',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
       label: '联系电话',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
       label: '户籍地地址',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
       label: '常住地址',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -197,103 +670,379 @@ export default function HumanSocialCompanyInfo(props) {
     {
       key: '14',
       label: '业务办理区',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+				<Form.Item name="HumanSocial_CompanyInfo_12">
+					<Select
+						showSearch
+            allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请输入业务办理的区县"
+						optionFilterProp="label"
+						onChange={(e) => {
+              setYewuqu('')
+              setYewuqu(e)
+            }}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '环翠区',
+								label: '环翠区',
+							},
+							{
+								value: '高新区',
+								label: '高新区',
+							},
+							{
+								value: '经济区',
+								label: '经济区',
+							},
+							{
+								value: '临港区',
+								label: '临港区',
+							},
+							{
+								value: '威海火炬高技术产业开发区',
+								label: '威海火炬高技术产业开发区',
+							},
+							{
+								value: '文登区',
+								label: '文登区',
+							},
+							{
+								value: '荣成市',
+								label: '荣成市',
+							},
+							{
+								value: '乳山市',
+								label: '乳山市',
+							},
+							{
+								value: '市本级',
+								label: '市本级',
+							},
+						]}
+					/>
+				</Form.Item>,
       span: 1
     },
     {
       key: '15',
       label: '业务办理街道',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_13"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+				<Form.Item name="HumanSocial_CompanyInfo_13">
+					<Select
+						allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请输入业务办理的街道"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={yewujiedaoOptions()}
+					/>
+				</Form.Item>,
       span: 1
     },
     {
       key: '16',
       label: '用工形式',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_14">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请输入用工形式"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '原固定职工',
+                label: '原固定职工',
+              },
+              {
+                value: '城镇合同制',
+                label: '城镇合同制',
+              },
+              {
+                value: '农村合同制',
+                label: '农村合同制',
+              },
+              {
+                value: '临时工',
+                label: '临时工',
+              },
+              {
+                value: '聘任制',
+                label: '聘任制',
+              },
+              {
+                value: '人事代理',
+                label: '人事代理',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: '人员类别一类',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_15">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请输入人员类别一类"
+            optionFilterProp="label"
+            onChange={(e) => {setRenyuanleibie(e)}}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '城镇新成长劳动力',
+                label: '城镇新成长劳动力',
+              },
+              {
+                value: '就业转失业人员',
+                label: '就业转失业人员',
+              },
+              {
+                value: '残疾人',
+                label: '残疾人',
+              },
+              {
+                value: '复员',
+                label: '复员',
+              },
+              {
+                value: '刑满释放',
+                label: '刑满释放',
+              },
+              {
+                value: '农村劳动力',
+                label: '农村劳动力',
+              },
+              {
+                value: '调转人员',
+                label: '调转人员',
+              },
+              {
+                value: '人员接续',
+                label: '人员接续',
+              },
+              {
+                value: '失业转就业人员',
+                label: '失业转就业人员',
+              },
+              {
+                value: '法定劳动年龄内各类人员',
+                label: '法定劳动年龄内各类人员',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: '人员类别二类',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_16">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请输入人员类别二类"
+            optionFilterProp="label"
+            onChange={(e) => {setRenyuanleibie2(e)}}
+            onSearch={peopleSearchOnSearch}
+            options={renyuanleibieOptions()}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '19',
       label: '人员类别三类',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_17">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请输入人员类别三类"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={renyuanleibieOptions3()}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '20',
       label: '工资待遇',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_18"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '21',
       label: '是否企业法人',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_19"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_19">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否企业法人"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
+        </Form.Item>,span: 1
     },
     {
       key: '22',
       label: '工种',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '23',
       label: '劳动合同类型',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
       label: '合同开始日期',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '25',
       label: '合同终止日期',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '26',
       label: '是否创业',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_CompanyInfo_24">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否创业"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1.5
     },
     {
       key: '27',
       label: '单位所在区县',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_25"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children:
+        <Form.Item name="HumanSocial_CompanyInfo_25">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请输入单位所在区县"
+            optionFilterProp="label"
+            onChange={(e) => {
+              setYewuqu('')
+              setYewuqu(e)
+            }}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '环翠区',
+                label: '环翠区',
+              },
+              {
+                value: '高新区',
+                label: '高新区',
+              },
+              {
+                value: '经济区',
+                label: '经济区',
+              },
+              {
+                value: '临港区',
+                label: '临港区',
+              },
+              {
+                value: '威海火炬高技术产业开发区',
+                label: '威海火炬高技术产业开发区',
+              },
+              {
+                value: '文登区',
+                label: '文登区',
+              },
+              {
+                value: '荣成市',
+                label: '荣成市',
+              },
+              {
+                value: '乳山市',
+                label: '乳山市',
+              },
+              {
+                value: '市本级',
+                label: '市本级',
+              },
+            ]}
+          />
+        </Form.Item>,
       span: 1.5,
     },
     {
       key: '28',
       label: '单位所在街道（镇）',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
       key: '29',
       label: '单位所在社区（村）',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '30',
       label: '备注',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_28"><Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_28"><Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
@@ -306,42 +1055,56 @@ export default function HumanSocialCompanyInfo(props) {
       key: '32',
       label: '是否领取',
       children:
-        <Form.Item name="HumanSocial_JobDemandInfo_29">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-            <Radio value={1}>是</Radio>
-            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-          </Radio.Group>
+        <Form.Item name="HumanSocial_CompanyInfo_29">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否领取"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 1
     },
     {
       key: '33',
       label: '证书领取方式',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '34',
       label: '收件人姓名',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '35',
       label: '收件人电话',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '36',
       label: '收件人地址',
-      children: <Form.Item name="HumanSocial_JobDemandInfo_33"><Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_CompanyInfo_33"><Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     }
   ];
 
   const onFinish = (values) => {
-    request('/api/get_ratio_config?table=JobDemandInfo', {
+    request('/api/get_ratio_config?table=HumanSocialCompanyInfo', {
       method: 'GET',
     })
     .then(function (config) {
@@ -368,7 +1131,7 @@ export default function HumanSocialCompanyInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions title="就业需求信息" bordered items={items} />
+          <Descriptions title="单位就业登记信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

@@ -214,10 +214,26 @@ export default function HospitalHelpInfos(props) {
       key: '18',
       label: '发票单位名称与注册名称是否一致',
       children: 
-        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-          <Radio value={1}>是</Radio>
-          <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-        </Radio.Group>,
+        <Form.Item name="yibao_securityinfo_13">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="发票单位名称与注册名称是否一致"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
@@ -318,10 +334,25 @@ export default function HospitalHelpInfos(props) {
       key: '32',
       label: '请选择是否打印发票（是/否）',
       children:
-        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-          <Radio value={1}>是</Radio>
-          <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-        </Radio.Group>,
+        <Form.Item name="yibao_securityinfo_22">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择是否打印发票（是/否）"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {

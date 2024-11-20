@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form, Select } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -119,19 +119,19 @@ export default function YiGongDaiXun(props) {
     {
       key: '5',
       label: '法人身份证号码',
-      children: <Form.Item name="company_basicinfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_28"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
       label: '基本账户开户银行',
-      children: <Form.Item name="HumanSocial_yigongdaixun_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="HumanSocial_yigongdaixun_5"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '基本账户银行账号',
-      children: <Form.Item name="company_insurance_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_11"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -143,13 +143,79 @@ export default function YiGongDaiXun(props) {
     {
       key: '9',
       label: '企业规模',
-      children: <Form.Item name="HumanSocial_yigongdaixun_8"><Input disabled={disableVar} size='large' defaultValue={'微型'} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_yigongdaixun_8">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="选择企业规模"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                  value: '大型企业',
+                  label: '大型企业',
+              },
+              {
+                  value: '中型企业',
+                  label: '中型企业',
+              },
+              {
+                  value: '小型企业',
+                  label: '小型企业',
+              },
+              {
+                  value: '微型企业',
+                  label: '微型企业',
+              },
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '10',
       label: '所属行业',
-      children: <Form.Item name="HumanSocial_yigongdaixun_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_yigongdaixun_9">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="选择所属行业"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                  value: '外贸',
+                  label: '外贸',
+              },
+              {
+                  value: '住宿餐饮',
+                  label: '住宿餐饮',
+              },
+              {
+                  value: '文化旅游',
+                  label: '文化旅游',
+              },
+              {
+                  value: '交通运输',
+                  label: '交通运输',
+              },
+              {
+                  value: '批发零售',
+                  label: '批发零售',
+              },
+              {
+                  value: '其他行业',
+                  label: '其他行业',
+              },
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
@@ -161,13 +227,83 @@ export default function YiGongDaiXun(props) {
     {
       key: '12',
       label: '补贴类型',
-      children: <Form.Item name="HumanSocial_yigongdaixun_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="HumanSocial_yigongdaixun_11">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="选择所属行业"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                  value: '请选择',
+                  label: '请选择',
+              },
+              {
+                  value: '新吸纳就业',
+                  label: '新吸纳就业',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
       key: '13',
       label: '企业所属规划',
-      children: <Form.Item name="HumanSocial_yigongdaixun_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+				<Form.Item name="HumanSocial_yigongdaixun_12">
+					<Select
+            allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请选择企业所属规划"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '环翠区',
+								label: '环翠区',
+							},
+							{
+								value: '高新区',
+								label: '高新区',
+							},
+							{
+								value: '经济区',
+								label: '经济区',
+							},
+							{
+								value: '临港区',
+								label: '临港区',
+							},
+							{
+								value: '威海火炬高技术产业开发区',
+								label: '威海火炬高技术产业开发区',
+							},
+							{
+								value: '文登区',
+								label: '文登区',
+							},
+							{
+								value: '荣成市',
+								label: '荣成市',
+							},
+							{
+								value: '乳山市',
+								label: '乳山市',
+							},
+							{
+								value: '市本级',
+								label: '市本级',
+							},
+						]}
+					/>
+				</Form.Item>,
       span: 1
     },
     {
@@ -175,10 +311,25 @@ export default function YiGongDaiXun(props) {
       label: '是否当月首次申领',
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_13">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-            <Radio value={1}>是</Radio>
-            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否当月首次申领"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 1
     },
@@ -193,10 +344,25 @@ export default function YiGongDaiXun(props) {
       label: '是否为劳务派遣',
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_15">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-            <Radio value={1}>是</Radio>
-            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否为劳务派遣"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 1
     },
@@ -216,11 +382,26 @@ export default function YiGongDaiXun(props) {
       key: '19',
       label: '是否在省直参保',
       children:
-        <Form.Item name="HumanSocial_yigongdaixun_18">    
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-            <Radio value={1}>是</Radio>
-            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-          </Radio.Group>
+        <Form.Item name="HumanSocial_yigongdaixun_18">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否在省直参保"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 1
     }

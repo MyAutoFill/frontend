@@ -253,9 +253,90 @@ export default function BasicCompanyInfo(props) {
       span: 1
     },
     {
-      key: '16',
+      key: '94',
       label: '法人证件类型',
-      children: <Form.Item name="company_basicinfo_27" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="company_basicinfo_27">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择法人证件类型"
+            optionFilterProp="label"
+            onChange={peopleSearchOnChange}
+            onSearch={peopleSearchOnSearch}
+            options={[
+              {
+                value: '居民身份证（户口簿）',
+                label: '居民身份证（户口簿）',
+              },
+              {
+                value: '中国人民解放军军官证',
+                label: '中国人民解放军军官证',
+              },
+              {
+                value: '中国人民武装警察警官证',
+                label: '中国人民武装警察警官证',
+              },
+              {
+                value: '香港特区护照/港澳居民往来内地通行证',
+                label: '香港特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '澳门特区护照/港澳居民往来内地通行证',
+                label: '澳门特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '台湾居民往来大陆通行证',
+                label: '台湾居民往来大陆通行证',
+              },
+              {
+                value: '外国人永久居留身份',
+                label: '外国人永久居留身份',
+              },
+              {
+                value: '护照',
+                label: '护照',
+              },
+              {
+                value: '残疾人证',
+                label: '残疾人证',
+              },
+              {
+                value: '军烈属证明',
+                label: '军烈属证明',
+              },
+              {
+                value: '外国人工作许可证',
+                label: '外国人工作许可证',
+              },
+              {
+                value: '外国常驻记者证',
+                label: '外国常驻记者证',
+              },
+              {
+                value: '回国（来华）定居专家证',
+                label: '回国（来华）定居专家证',
+              },
+              {
+                value: '港澳居民居住证',
+                label: '港澳居民居住证',
+              },
+              {
+                value: '台湾居民居住证',
+                label: '台湾居民居住证',
+              },
+              {
+                value: '社会保障卡',
+                label: '社会保障卡',
+              },
+              {
+                value: '其他身份证件',
+                label: '其他身份证件',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {
@@ -285,7 +366,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '21',
       label: '成立时间（所有单位填报）',
-      children: <DatePicker size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 3
     },
     {
@@ -423,16 +504,67 @@ export default function BasicCompanyInfo(props) {
       key: '27',
       label: '隶属关系',
       children: 
-        <Form.Item name="company_basicinfo_r9">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setBelongRelationValue(e.target.value)} value={belongRelationValue}>
-            <Radio value={'中央'}>中央</Radio>
-            <Radio value={'地方'} style={{ marginLeft: '10px'}}>地方</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {belongRelationValue === '其他' ? <Form.Item name="company_basicinfo_44"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
-        </Form.Item>,
+				<Form.Item name="company_basicinfo_r9">
+					<Select
+            allowClear
+						style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请选择隶属关系"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '中央',
+								label: '中央',
+							},
+							{
+								value: '省',
+								label: '省',
+							},
+							{
+								value: '市、地区',
+								label: '市、地区',
+							},
+							{
+								value: '区',
+								label: '区',
+							},
+							{
+								value: '县',
+								label: '县',
+							},
+							{
+								value: '街道',
+								label: '街道',
+							},
+							{
+								value: '镇',
+								label: '镇',
+							},
+							{
+								value: '乡',
+								label: '乡',
+							},
+							{
+								value: '居民委员会',
+								label: '居民委员会',
+							},
+							{
+								value: '村民委员会',
+								label: '村民委员会',
+							},
+							{
+								value: '军队',
+								label: '军队',
+							},
+							{
+								value: '其他',
+								label: '其他',
+							}
+						]}
+					/>
+				</Form.Item>,
       span: 3
     },
     {

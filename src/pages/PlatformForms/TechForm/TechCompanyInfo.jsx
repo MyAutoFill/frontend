@@ -260,7 +260,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '29',
       label: '内容',
-      children: <Form.Item name="Tech_commpanyInfo_17"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_45"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -428,10 +428,26 @@ export default function TechCompanyInfo(props) {
       key: '56',
       label: '内容',
       children:         
-        <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-          <Radio value={'是'}>是</Radio>
-          <Radio value={'否'} style={{ marginLeft: '10px'}}>否</Radio>
-        </Radio.Group>,
+        <Form.Item name="Tech_commpanyInfo_30">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否领取"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {

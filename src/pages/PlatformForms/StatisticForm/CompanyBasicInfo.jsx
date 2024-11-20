@@ -120,11 +120,25 @@ export default function StatisticCompanyBasicInfo(props) {
       key: '1',
       label: '是否为“视同法人单位”',
       children:
-        <Form.Item name="Statistic_CompanyInfo_1"> 
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-            <Radio value={1}>是</Radio>
-            <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-          </Radio.Group>
+        <Form.Item name="HumanSocial_CompanyInfo_29">
+          <Select
+            showSearch
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="是否为“视同法人单位”"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '是',
+                label: '是',
+              },
+              {
+                value: '否',
+                label: '否',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 3
     },
@@ -222,11 +236,25 @@ export default function StatisticCompanyBasicInfo(props) {
           <span>
             是否与单位所在地区划及详细地址一致：
             <Form.Item name="Statistic_CompanyInfo_19">
-              <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} defaultValue={1}>
-                <Radio value={1}>是</Radio>
-                <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-              </Radio.Group>
-          </Form.Item>
+              <Select
+                showSearch
+                allowClear
+                style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+                size='large'
+                placeholder="是否与单位所在地区划及详细地址一致"
+                optionFilterProp="label"
+                options={[
+                  {
+                    value: '是',
+                    label: '是',
+                  },
+                  {
+                    value: '否',
+                    label: '否',
+                  }
+                ]}
+              />
+            </Form.Item>,
           </span>
           <br></br>
           <Form.Item name="company_basicinfo_11"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
@@ -308,7 +336,7 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '22',
       label: '成立时间（所有单位填报）',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -452,17 +480,68 @@ export default function StatisticCompanyBasicInfo(props) {
       key: '29',
       label: '隶属关系',
       children: 
-        <Form.Item name="company_basicinfo_r9">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setBelongRelationValue(e.target.value)} value={belongRelationValue}>
-            <Radio value={'中央'}>中央</Radio>
-            <Radio value={'地方'} style={{ marginLeft: '10px'}}>地方</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {belongRelationValue === '其他' ? <Form.Item name="company_basicinfo_44"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
-        </Form.Item>,
-      span: 3
+				<Form.Item name="company_basicinfo_r9">
+					<Select
+            allowClear
+						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+						size='large'
+						placeholder="请选择隶属关系"
+						optionFilterProp="label"
+						onChange={peopleSearchOnChange}
+						onSearch={peopleSearchOnSearch}
+						options={[
+							{
+								value: '中央',
+								label: '中央',
+							},
+							{
+								value: '省',
+								label: '省',
+							},
+							{
+								value: '市、地区',
+								label: '市、地区',
+							},
+							{
+								value: '区',
+								label: '区',
+							},
+							{
+								value: '县',
+								label: '县',
+							},
+							{
+								value: '街道',
+								label: '街道',
+							},
+							{
+								value: '镇',
+								label: '镇',
+							},
+							{
+								value: '乡',
+								label: '乡',
+							},
+							{
+								value: '居民委员会',
+								label: '居民委员会',
+							},
+							{
+								value: '村民委员会',
+								label: '村民委员会',
+							},
+							{
+								value: '军队',
+								label: '军队',
+							},
+							{
+								value: '其他',
+								label: '其他',
+							}
+						]}
+					/>
+				</Form.Item>,
+      span: 1
     },
     {
       key: '30',
@@ -659,11 +738,25 @@ export default function StatisticCompanyBasicInfo(props) {
       children: 
         <>
           <Form.Item name="Statistic_CompanyInfo_75">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setHaveUpperOwner(e.target.value)} value={HaveUpperOwner}>
-              <Radio value={'是'}>是</Radio>
-              <Radio value={'否'} style={{ marginLeft: '10px'}}>否</Radio>
-            </Radio.Group>
-          </Form.Item>
+            <Select
+              showSearch
+              allowClear
+              style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+              size='large'
+              placeholder="本法人单位是否有上一级法人"
+              optionFilterProp="label"
+              options={[
+                {
+                  value: '是',
+                  label: '是',
+                },
+                {
+                  value: '否',
+                  label: '否',
+                }
+              ]}
+            />
+          </Form.Item>,
           <br></br>
           {HaveUpperOwner === '是' ? 
             <>
@@ -683,11 +776,25 @@ export default function StatisticCompanyBasicInfo(props) {
           <span>分支机构、派出机构、分公司、分部、分厂、分店等</span>
           <br></br>
           <Form.Item name="Statistic_CompanyInfo_78">
-            <Radio.Group size='large' disabled={disableVar} style={{marginTop: '10px' }}>
-              <Radio value={1}>是</Radio>
-              <Radio value={2} style={{ marginLeft: '10px'}}>否</Radio>
-            </Radio.Group>
-          </Form.Item>
+            <Select
+              showSearch
+              allowClear
+              style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+              size='large'
+              placeholder="本法人单位是否有下属产业活动单位"
+              optionFilterProp="label"
+              options={[
+                {
+                  value: '是',
+                  label: '是',
+                },
+                {
+                  value: '否',
+                  label: '否',
+                }
+              ]}
+            />
+          </Form.Item>,
         </>,
       span: 3
     },

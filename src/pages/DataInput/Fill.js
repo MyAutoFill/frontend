@@ -18,6 +18,7 @@ import InfoTechMonthlyForm from '../PlatformForms/GongXinForm/InfoTechMonthlyFor
 import HumanSocialCompanyInfo from '../PlatformForms/HumanSocialForm/CompanyInfo'
 import YiGongDaiXun from '../PlatformForms/HumanSocialForm/YiGongDaiXun'
 import CompanySocialSecurityInfo from '../PlatformForms/HumanSocialForm/CompanySocialSecurityInfo'
+import BasicInfoHumanResource from '../PlatformForms/HumanSocialForm/BasicInfo'
 import NewSheBao from '../PlatformForms/HumanSocialForm/NewSheBao'
 import JobDemandInfo from '../PlatformForms/HumanSocialForm/JobDemandInfo'
 import StatisticCompanyBasicInfo from '../PlatformForms/StatisticForm/CompanyBasicInfo'
@@ -53,25 +54,39 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform1',
-      label: '税务局',
+      key: 'platform12',
+      label: '人社局',
       children: [
         {
-          key: '1',
-          label: '单位税务信息',
+          key: 'g1',
+          type: 'group',
+          children: [
+            {
+              key: '42',
+              label: '单位基本信息',
+            },
+            {
+              key: '36',
+              label: '单位就业登记信息',
+            },
+            {
+              key: '37',
+              label: '以工代训补贴申领信息',
+            },
+            // {
+            //   key: '38',
+            //   label: '新增社保参保人员信息',
+            // },
+            {
+              key: '39',
+              label: '单位参保信息',
+            },
+            // {
+            //   key: '40',
+            //   label: '就业需求信息',
+            // }
+          ],
         },
-        {
-          key: '2',
-          label: '利润表',
-        },
-        {
-          key: '3',
-          label: '资产负债表',
-        },
-        {
-          key: '4',
-          label: '现金流量表',
-        }
       ],
     },
     {
@@ -107,34 +122,50 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform12',
-      label: '人社局',
+      key: 'caizhengju',
+      label: '财政局',
       children: [
         {
-          key: 'g1',
-          type: 'group',
-          children: [
-            {
-              key: '36',
-              label: '单位就业登记信息',
-            },
-            {
-              key: '37',
-              label: '以工代训补贴申领信息',
-            },
-            {
-              key: '38',
-              label: '新增社保参保人员信息',
-            },
-            {
-              key: '39',
-              label: '单位参保信息',
-            },
-            {
-              key: '40',
-              label: '就业需求信息',
-            }
-          ],
+          key: 'caizheng1',
+          label: '企业基本信息',
+        },
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: 'platform4',
+      label: '市场监督管理局',
+      children: [
+        {
+          key: '15',
+          label: '企业基本信息',
+        },
+        {
+          key: '16',
+          label: '资产状况信息',
+        },
+        {
+          key: '17',
+          label: '对外提供保证担保信息',
+        },
+        {
+          key: '18',
+          label: '参保信息',
+        },
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: 'weihaihaiguan',
+      label: '威海海关',
+      children: [
+        {
+          key: 'weihaihaiguan',
+          label: '企业基本信息',
         },
       ],
     },
@@ -167,7 +198,7 @@ export default function Fill() {
         },
         {
           key: '32',
-          label: '高新技术企业统计表信息'
+          label: '法人基本信息表'
         }
       ],
     },
@@ -188,44 +219,6 @@ export default function Fill() {
       type: 'divider',
     },
     {
-      key: 'platform4',
-      label: '市场监督管理局',
-      children: [
-        {
-          key: '15',
-          label: '企业基本信息',
-        },
-        {
-          key: '16',
-          label: '资产状况信息',
-        },
-        {
-          key: '17',
-          label: '对外提供保证担保信息',
-        },
-        {
-          key: '18',
-          label: '参保信息',
-        },
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'caizhengju',
-      label: '财政局',
-      children: [
-        {
-          key: 'caizheng1',
-          label: '企业基本信息',
-        },
-      ],
-    },
-    {
-      type: 'divider',
-    },
-    {
       key: 'shangwuju',
       label: '商务局',
       children: [
@@ -233,6 +226,31 @@ export default function Fill() {
           key: 'shangwu1',
           label: '企业基本信息',
         },
+      ],
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: 'platform1',
+      label: '税务局',
+      children: [
+        {
+          key: '1',
+          label: '单位税务信息',
+        },
+        {
+          key: '2',
+          label: '利润表',
+        },
+        {
+          key: '3',
+          label: '资产负债表',
+        },
+        {
+          key: '4',
+          label: '现金流量表',
+        }
       ],
     },
     {
@@ -393,6 +411,7 @@ export default function Fill() {
     '40': <JobDemandInfo date={curDate} />,
 
     '41': <CompanyInfoChange date={curDate} />,
+    '42': <BasicInfoHumanResource date={curDate} />
   }
 
   const onChange = (e) => {
