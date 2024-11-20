@@ -46,7 +46,7 @@ import CompanyInfoChange from '../PlatformForms/GongJiJinForm/CompanyInfoChange'
 
 export default function Fill() {
 
-  const [selectedKey, setSelectedKey] = useState('1');
+  const [selectedKey, setSelectedKey] = useState('42');
   const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
 
   const menus = [
@@ -426,7 +426,7 @@ export default function Fill() {
             style={{
               width: 320,
             }}
-            defaultSelectedKeys={['1']}
+            defaultSelectedKeys={selectedKey}
             defaultOpenKeys={['sub1']}
             mode="inline"
             items={menus}
