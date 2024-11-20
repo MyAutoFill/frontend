@@ -4,7 +4,7 @@ import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { requestCompanyData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
@@ -15,11 +15,11 @@ export default function CompanyEmployedInfo(props) {
   const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
-    load_data(props.date);
-  }, [props.date]);
+    load_data();
+  }, []);
 
-  const load_data = (curDate) => {
-    reqBasicData(curDate)
+  const load_data = () => {
+    requestCompanyData()
       .then(function (res) {
         reqRatioConfig('CompanyEmployedInfo')
         .then(function (config) {
@@ -169,10 +169,9 @@ export default function CompanyEmployedInfo(props) {
           new_res[key] = a.div(b).toString();
         }
       });
-      request('/api/save', {
+      request('/api/save_company_data', {
         method: 'POST',
         data: {
-          date: props.date,
           data: new_res
         }
       })

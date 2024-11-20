@@ -4,7 +4,7 @@ import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { requestCompanyData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
@@ -16,11 +16,11 @@ export default function CompanyRunningSumInfo(props) {
   const [messageApi, contextHolder] = message.useMessage();
 
   useEffect(() => {
-    load_data(props.date);
-  }, [props.date]);
+    load_data();
+  }, []);
 
-  const load_data = (curDate) => {
-    reqBasicData(curDate)
+  const load_data = () => {
+    requestCompanyData()
       .then(function (res) {
         reqRatioConfig('CompanyRunningSumInfo')
         .then(function (config) {
@@ -93,7 +93,7 @@ export default function CompanyRunningSumInfo(props) {
     {
       key: '2',
       label: '营业成本',
-      children: <Form.Item name="Tech_EcoInfo_5"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_2"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -195,7 +195,7 @@ export default function CompanyRunningSumInfo(props) {
     {
       key: '21',
       label: '资产总计',
-      children: <Form.Item name="FinanceStatusInfo_38"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_18"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -297,10 +297,9 @@ export default function CompanyRunningSumInfo(props) {
           new_res[key] = a.div(b).toString();
         }
       });
-      request('/api/save', {
+      request('/api/save_company_data', {
         method: 'POST',
         data: {
-          date: props.date,
           data: new_res
         }
       })

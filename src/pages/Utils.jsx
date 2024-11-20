@@ -14,3 +14,9 @@ export function reqRatioConfig(tableName) {
         method: 'GET',
     })
 }
+
+export function requestCompanyData() {
+    return request('/api/load_company_data', {
+        method: 'POST',
+    });
+}

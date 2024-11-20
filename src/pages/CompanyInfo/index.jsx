@@ -1,6 +1,3 @@
-import DocumentTitle from 'react-document-title';
-import Header from '../Header';
-import Footer from '../Footer';
 import { useState } from 'react';
 import BasicCompanyInfo from './BasicCompanyInfo'
 import CompanyEmployedInfo from './CompanyEmployedInfo'
@@ -11,10 +8,10 @@ import 'rc-banner-anim/assets/index.css';
 import { Menu, DatePicker, ConfigProvider } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
+import { history } from '@umijs/max';
 
 export default function CompanyInfo() {
   const [selectedKey, setSelectedKey] = useState('1');
-  const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
 
   const menus = [
     {
@@ -87,15 +84,16 @@ export default function CompanyInfo() {
   ];
 
   const pageMap = {
-    '1': <BasicCompanyInfo date={curDate}/>,
-    '2': <CompanyInsuranceInfo date={curDate}/>,
-    '3': <CompanyEmployedInfo date={curDate}/>,
-    '6': <CompanyRunningSumInfo date={curDate}/>,
-    '8': <CompanyResearchInfo date={curDate}/>
+    '1': <BasicCompanyInfo />,
+    '2': <CompanyInsuranceInfo />,
+    '3': <CompanyEmployedInfo />,
+    '6': <CompanyRunningSumInfo />,
+    '8': <CompanyResearchInfo />
   }
 
-  const onChange = (e) => {
-    setCurDate(e.format('YYYY-MM'));
+  const logout = () => {
+    localStorage.removeItem('currentUser');
+    history.push('/auto_fill');
   }
 
   return (
@@ -117,19 +115,16 @@ export default function CompanyInfo() {
                 >
                   <Menu mode="horizontal" style={{background: 'rgba(0, 0, 0, 0)', border: 0, lineHeight: 2.8}}>
                     <Menu.Item key="home">
-                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
-                    </Menu.Item>
-                    <Menu.Item key="guide">
-                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>使用指导</a>
+                      <a href='/auto_fill/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
                     </Menu.Item>
                     <Menu.Item key="input">
-                      <a href='/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
-                    </Menu.Item>
-                    <Menu.Item key="data">
-                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>数据分析</a>
+                      <a href='/auto_fill/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
                     </Menu.Item>
                     <Menu.Item key="info">
-                      <a href='/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                      <a href='/auto_fill/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                    </Menu.Item>
+                    <Menu.Item key="logout">
+                      <a onClick={() => {logout()}} style={{fontSize: 25, color: 'white', fontWeight: 400}}>退出登录</a>
                     </Menu.Item>
                   </Menu>
                 </ConfigProvider>
@@ -153,7 +148,6 @@ export default function CompanyInfo() {
                 </div>
                 <div>
                   <div style={{marginLeft: 30, height: 700, width: 1450, overflow: 'auto'}}>
-                    <DatePicker defaultValue={dayjs()} onChange={onChange} picker="month"/>
                     {pageMap[selectedKey]}
                   </div>
                 </div>

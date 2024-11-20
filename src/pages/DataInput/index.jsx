@@ -11,6 +11,7 @@ import SelectFormPage from '../DataFillOut/SelectFormPage'
 import { useSearchParams } from "react-router-dom";
 import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined, CloudUploadOutlined } from '@ant-design/icons';
 import { useEffect } from 'react';
+import { history } from '@umijs/max';
 
 
 export default function DataInput() {
@@ -36,6 +37,11 @@ export default function DataInput() {
     setCurrentKey(key)
   };
 
+  const logout = () => {
+    localStorage.removeItem('currentUser');
+    history.push('/auto_fill');
+  }
+
   return (
     <>
       <div style={{height: '100vh'}}>
@@ -55,19 +61,16 @@ export default function DataInput() {
                 >
                   <Menu mode="horizontal" style={{background: 'rgba(0, 0, 0, 0)', border: 0, lineHeight: 2.8}}>
                     <Menu.Item key="home">
-                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
-                    </Menu.Item>
-                    <Menu.Item key="guide">
-                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>使用指导</a>
+                      <a href='/auto_fill/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
                     </Menu.Item>
                     <Menu.Item key="input">
-                      <a href='/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
-                    </Menu.Item>
-                    <Menu.Item key="data">
-                      <a href='/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>数据分析</a>
+                      <a href='/auto_fill/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
                     </Menu.Item>
                     <Menu.Item key="info">
-                      <a href='/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                      <a href='/auto_fill/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                    </Menu.Item>
+                    <Menu.Item key="logout">
+                      <a onClick={() => {logout()}} style={{fontSize: 25, color: 'white', fontWeight: 400}}>退出登录</a>
                     </Menu.Item>
                   </Menu>
                 </ConfigProvider>

@@ -62,6 +62,11 @@ export default defineConfig({
     '/excelAnalysis': {
       target: 'https://zhbypass.weihai.cn/',
       changeOrigin: true,
+      pathRewrite: { '^/excelAnalysis' : '' },
+    },
+    '/zhby_api': {
+      target: 'https://zhbypass.weihai.cn/',
+      changeOrigin: true,
     }
   },
   /**
@@ -161,4 +166,6 @@ export default defineConfig({
     strategy: 'normal',
   },
   requestRecord: {},
+  publicPath: '/auto_static/',
+  base: '/'
 });

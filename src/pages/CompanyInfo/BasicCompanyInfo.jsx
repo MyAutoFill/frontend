@@ -4,7 +4,7 @@ import { Descriptions, Input, Checkbox, DatePicker, Radio, Button, FloatButton, 
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { requestCompanyData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 import dayjs from 'dayjs';
@@ -17,11 +17,11 @@ export default function BasicCompanyInfo(props) {
   const dateFormat = 'YYYY-MM-DD';
 
   useEffect(() => {
-    load_data(props.date);
-  }, [props.date]);
+    load_data();
+  }, []);
 
-  const load_data = (curDate) => {
-    reqBasicData(curDate)
+  const load_data = () => {
+    requestCompanyData()
       .then(function (res) {
         reqRatioConfig('BasicCompanyInfo')
         .then(function (config) {
@@ -52,11 +52,10 @@ export default function BasicCompanyInfo(props) {
           new_res[key] = a.div(b).toString();
         }
       });
-      request('/api/save', {
+      request('/api/save_company_data', {
         method: 'POST',
         data: {
-          date: props.date,
-          data: new_res
+          data: new_res,
         }
       })
     })
