@@ -1,4 +1,4 @@
-import { Menu, DatePicker } from 'antd';
+import { Menu, DatePicker, Row, Col } from 'antd';
 import { useState } from 'react';
 
 import PMInfo from '../PlatformForms/CityGovernment/PMInfo'
@@ -420,28 +420,24 @@ export default function Fill() {
 
   return (
     <>
-      <div style={{display: 'flex', overflow: 'auto', height: 1000}}>
-        <div>
+      <Row style={{height: 1000}}>
+        <Col span={4}>
           <Menu
-            style={{
-              width: 320,
-            }}
             defaultSelectedKeys={['1']}
-            defaultOpenKeys={['sub1']}
             mode="inline"
             items={menus}
             onSelect={(key) => {
               setSelectedKey(key.key)
             }}
           />
-        </div>
-        <div>
-          <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'auto'}}>
+        </Col>
+        <Col span={20}>
+          <div style={{marginLeft: 30, height: 950 }}>
             <DatePicker defaultValue={dayjs()} onChange={onChange} picker="month"/>
             {pageMap[selectedKey]}
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </>
   );
 }

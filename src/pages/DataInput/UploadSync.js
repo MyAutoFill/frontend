@@ -328,7 +328,7 @@ export default function UploadSyncPage() {
         <br></br>
         <span style={{fontSize:'24px'}}><b>点击下列对应按钮上传对应文件，上传完成后点击开始同步按钮开始数据同步</b></span>
         <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1200px' }}>
-          <Descriptions title="数据文件上传" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="数据文件上传" bordered items={items} />
           <ConfigProvider
             button={{
               className: linearGradientButton,

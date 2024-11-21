@@ -8,6 +8,12 @@ export async function currentUser(ticket: any) {
   });
 }
 
+export async function queryCompanyInfo(uuid: any) {
+  return request('/api/load_company_data', {
+      method: 'POST',
+  });
+}
+
 /** 退出登录接口 POST /api/login/outLogin */
 export async function outLogin(options?: { [key: string]: any }) {
   return request<Record<string, any>>('/api/login/outLogin', {

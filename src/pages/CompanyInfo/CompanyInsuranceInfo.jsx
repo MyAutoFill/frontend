@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
+import { Descriptions, Select, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -98,9 +98,9 @@ export default function CompanyInsuranceInfo(props) {
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择基金来源"
-            optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
+            // optionFilterProp="label"
+            // onChange={peopleSearchOnChange}
+            // onSearch={peopleSearchOnSearch}
             options={[
               {
                 value: '全额拨款',
@@ -226,7 +226,7 @@ export default function CompanyInsuranceInfo(props) {
     {contextHolder}
     <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
       <Form onFinish={onFinish} form={form}>
-        <Descriptions title="企业参保信息" bordered items={items} />
+        <Descriptions style={{width: '1300px'}} title="企业参保信息" bordered items={items} />
         <FloatButton.Group
           open={defaultOpen}
           trigger="click"

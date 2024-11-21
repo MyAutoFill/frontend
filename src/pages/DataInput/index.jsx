@@ -44,8 +44,8 @@ export default function DataInput() {
 
   return (
     <>
-      <div style={{height: '100vh'}}>
-        <div className="mybanner page-wrapper" >
+      <div style={{height: '100%'}}>
+        <div className="mybanner page-wrapper" style={{overflow: 'auto', width: '100%', overflowY: 'auto'}}>
           <div className="page" style={{maxWidth: 2000, height: 1250}}>
             <div style={{display: 'flex', margin: '70px auto 40px'}}>
               <div className="logo" />

@@ -150,7 +150,7 @@ export default function YiBaoAddOrRemove(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions title="在线增减员信息" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="在线增减员信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

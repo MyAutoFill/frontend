@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Radio, Upload, Form, Select } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined, UploadOutlined  } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -403,7 +403,7 @@ export default function HospitalHelpInfos(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions title="住院医疗互助信息" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="住院医疗互助信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

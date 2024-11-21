@@ -475,7 +475,7 @@ export default function InfoTechMonthlyForm(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions title="软件和信息技术服务业企业月报表" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="软件和信息技术服务业企业月报表" bordered items={items} />
           <Table dataSource={data} style={{width: '1250px'}} pagination={false}>
             <Column title="指标名称" dataIndex="index_name" key="index_name" />
             <Column title="代码" dataIndex="code" key="code" />

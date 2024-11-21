@@ -455,7 +455,7 @@ export default function CompanyResearchInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
         <Form onFinish={onFinish} form={form}>
-          <Descriptions title="企业研究开发及相关信息" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="企业研究开发及相关信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

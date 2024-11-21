@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Checkbox, DatePicker, Radio, Button, FloatButton, message, Form } from 'antd';
+import { Descriptions, Input, Select, Checkbox, DatePicker, Radio, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -262,9 +262,9 @@ export default function BasicCompanyInfo(props) {
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择法人证件类型"
-            optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
+            // optionFilterProp="label"
+            // onChange={peopleSearchOnChange}
+            // onSearch={peopleSearchOnSearch}
             options={[
               {
                 value: '居民身份证（户口簿）',
@@ -510,9 +510,9 @@ export default function BasicCompanyInfo(props) {
 						style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
 						size='large'
 						placeholder="请选择隶属关系"
-						optionFilterProp="label"
-						onChange={peopleSearchOnChange}
-						onSearch={peopleSearchOnSearch}
+						// optionFilterProp="label"
+						// onChange={peopleSearchOnChange}
+						// onSearch={peopleSearchOnSearch}
 						options={[
 							{
 								value: '中央',
@@ -634,7 +634,7 @@ export default function BasicCompanyInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
         <Form onFinish={onFinish} form={form}>
-          <Descriptions title="单位基本信息" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="单位基本信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"
