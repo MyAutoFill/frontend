@@ -637,8 +637,6 @@ export default function BasicInfoHumanResource(props) {
 						size='large'
 						placeholder="请选择隶属关系"
 						optionFilterProp="label"
-						onChange={peopleSearchOnChange}
-						onSearch={peopleSearchOnSearch}
 						options={[
 							{
 								value: '中央',
@@ -1096,8 +1094,6 @@ export default function BasicInfoHumanResource(props) {
             size='large'
             placeholder="请选择法人证件类型"
             optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
             options={[
               {
                 value: '居民身份证（户口簿）',

@@ -155,8 +155,6 @@ export default function CompanyInfoChange(props) {
 						size='large'
 						placeholder="请选择隶属关系"
 						optionFilterProp="label"
-						onChange={peopleSearchOnChange}
-						onSearch={peopleSearchOnSearch}
 						options={[
 							{
 								value: '中央',

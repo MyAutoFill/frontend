@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, Form, Select } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -99,8 +99,6 @@ export default function CompanyInsuranceInfo(props) {
             size='large'
             placeholder="请选择基金来源"
             optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
             options={[
               {
                 value: '全额拨款',
