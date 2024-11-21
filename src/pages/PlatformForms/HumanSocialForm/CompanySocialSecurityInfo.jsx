@@ -168,8 +168,6 @@ export default function CompanySocialSecurityInfo(props) {
             size='large'
             placeholder="请选择基金来源"
             optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
             options={[
               {
                 value: '全额拨款',

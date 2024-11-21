@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Select, Descriptions, Input, Button, FloatButton, message, DatePicker, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form, Select } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -577,8 +577,6 @@ export default function NewSheBao(props) {
 						size='large'
 						placeholder="请选择隶属关系"
 						optionFilterProp="label"
-						onChange={peopleSearchOnChange}
-						onSearch={peopleSearchOnSearch}
 						options={[
 							{
 								value: '中央',
@@ -1097,8 +1095,6 @@ export default function NewSheBao(props) {
             size='large'
             placeholder="请选择法人证件类型"
             optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
             options={[
               {
                 value: '居民身份证（户口簿）',

@@ -262,9 +262,7 @@ export default function BasicCompanyInfo(props) {
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择法人证件类型"
-            // optionFilterProp="label"
-            // onChange={peopleSearchOnChange}
-            // onSearch={peopleSearchOnSearch}
+            optionFilterProp="label"
             options={[
               {
                 value: '居民身份证（户口簿）',
@@ -510,9 +508,7 @@ export default function BasicCompanyInfo(props) {
 						style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
 						size='large'
 						placeholder="请选择隶属关系"
-						// optionFilterProp="label"
-						// onChange={peopleSearchOnChange}
-						// onSearch={peopleSearchOnSearch}
+						optionFilterProp="label"
 						options={[
 							{
 								value: '中央',
