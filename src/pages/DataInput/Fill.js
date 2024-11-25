@@ -1,5 +1,9 @@
-import { Menu, DatePicker, Row, Col } from 'antd';
+import { Menu, 
+  DatePicker, 
+  Row, 
+  Col } from 'antd';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 import PMInfo from '../PlatformForms/CityGovernment/PMInfo'
 import ProjectBasicInfo from '../PlatformForms/CityGovernment/ProjectBasicInfo'
@@ -42,12 +46,70 @@ import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
 import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
 import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
 import dayjs from 'dayjs';
+import { useSearchParams } from "react-router-dom";
 import CompanyInfoChange from '../PlatformForms/GongJiJinForm/CompanyInfoChange';
 
 export default function Fill() {
 
-  const [selectedKey, setSelectedKey] = useState('42');
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams)
+  console.log(searchParams.get('table', '42'));
+  const [selectedKey, setSelectedKey] = useState(
+      searchParams.get('table') == null ? '42' : searchParams.get('table')
+  );
   const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
+
+  const subMenuMap = {
+    '42': 'platform12', 
+    '36': 'platform12', 
+    '37': 'platform12', 
+    // '38': 'platform12', 
+    '39': 'platform12', 
+    // '40': 'platform12', 
+    '6': 'platform2', 
+    '7': 'platform2', 
+    '8': 'platform2', 
+    '9': 'platform2', 
+    '10': 'platform2', 
+    'caizheng1': 'caizhengju', 
+    '15': 'platform4', 
+    '16': 'platform4', 
+    '17': 'platform4', 
+    '18': 'platform4', 
+    'weihaihaiguan_sub': 'weihaihaiguan', 
+    '27': 'platform8', 
+    '28': 'platform8', 
+    '29': 'platform8', 
+    '30': 'platform8', 
+    '31': 'platform8', 
+    '32': 'platform8', 
+    '33': 'platform9', 
+    'shangwu1': 'shangwuju', 
+    '1': 'platform1', 
+    '2': 'platform1', 
+    '3': 'platform1', 
+    '4': 'platform1', 
+    // '19': 'platform5', 
+    // '20': 'platform5', 
+    // '21': 'platform5', 
+    // '22': 'platform5', 
+    // '23': 'platform6', 
+    // '24': 'platform7', 
+    // '25': 'platform7', 
+    // '26': 'platform7', 
+    // '11': 'platform3', 
+    // '12': 'platform3', 
+    // '13': 'platform3', 
+    // '14': 'platform3', 
+    // '34': 'platform10', 
+    // '35': 'platform10'
+  }
+
+  const [openKey, setOpenKey] = useState( Object.keys(subMenuMap).indexOf(selectedKey) == -1 ? ['platform12']: [subMenuMap[selectedKey]]);
+
+  useEffect(() => {
+    setSearchParams({'table': selectedKey.toString(), 'tab': '2'})
+  }, [selectedKey])
 
   const menus = [
     {
@@ -164,7 +226,7 @@ export default function Fill() {
       label: '威海海关',
       children: [
         {
-          key: 'weihaihaiguan',
+          key: 'weihaihaiguan_sub',
           label: '企业基本信息',
         },
       ],
@@ -371,26 +433,26 @@ export default function Fill() {
     '9': <ResearchActivityInfo date={curDate} />,
     '10': <FinanceStatusInfo date={curDate} />,
 
-    '11': <YiBaoCompanyInfo date={curDate} />,
-    '12': <CompanySecurityInfo date={curDate} />,
-    '13': <PeopleInfo date={curDate} />,
-    '14': <AddOrRemove date={curDate} />,
+    // '11': <YiBaoCompanyInfo date={curDate} />,
+    // '12': <CompanySecurityInfo date={curDate} />,
+    // '13': <PeopleInfo date={curDate} />,
+    // '14': <AddOrRemove date={curDate} />,
 
     '15': <GongShangCompanyInfo date={curDate} />,
     '16': <PropertyStatusInfo date={curDate} />,
     '17': <OuterVouch date={curDate} />,
     '18': <JoinedSecurityInfo date={curDate} />,
 
-    '19': <IndividualAccountInfo date={curDate} />,
-    '20': <IndividualCityTransferInfo date={curDate} />,
-    '21': <PaymentSignUpInfo date={curDate} />,
-    '22': <PersonalPaymentDetails date={curDate} />,
+    // '19': <IndividualAccountInfo date={curDate} />,
+    // '20': <IndividualCityTransferInfo date={curDate} />,
+    // '21': <PaymentSignUpInfo date={curDate} />,
+    // '22': <PersonalPaymentDetails date={curDate} />,
 
-    '23': <HospitalHelpInfos date={curDate} />,
+    // '23': <HospitalHelpInfos date={curDate} />,
 
-    '24': <ElectricUserInfo date={curDate} />,
-    '25': <UserSignUpAndOff date={curDate} />,
-    '26': <UserRecognizeInfo date={curDate} />,
+    // '24': <ElectricUserInfo date={curDate} />,
+    // '25': <UserSignUpAndOff date={curDate} />,
+    // '26': <UserRecognizeInfo date={curDate} />,
 
     '27': <TechCompanyInfo date={curDate} />,
     '28': <CompanyEcoInfo date={curDate} />,
@@ -401,14 +463,14 @@ export default function Fill() {
 
     '33': <InfoTechMonthlyForm date={curDate} />,
 
-    '34': <ProjectBasicInfo date={curDate} />,
-    '35': <PMInfo date={curDate} />,
+    // '34': <ProjectBasicInfo date={curDate} />,
+    // '35': <PMInfo date={curDate} />,
 
     '36': <HumanSocialCompanyInfo date={curDate} />,
     '37': <YiGongDaiXun date={curDate} />,
-    '38': <NewSheBao date={curDate} />,
+    // '38': <NewSheBao date={curDate} />,
     '39': <CompanySocialSecurityInfo date={curDate} />,
-    '40': <JobDemandInfo date={curDate} />,
+    // '40': <JobDemandInfo date={curDate} />,
 
     '41': <CompanyInfoChange date={curDate} />,
     '42': <BasicInfoHumanResource date={curDate} />
@@ -426,11 +488,15 @@ export default function Fill() {
             style={{
               width: 320,
             }}
-            defaultSelectedKeys={selectedKey}
+            openKeys={openKey}
+            selectedKeys={selectedKey}
             mode="inline"
             items={menus}
             onSelect={(key) => {
               setSelectedKey(key.key)
+            }}
+            onOpenChange={(key) => {
+              setOpenKey(key)
             }}
           />
         </Col>

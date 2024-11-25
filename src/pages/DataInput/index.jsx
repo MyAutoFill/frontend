@@ -27,6 +27,9 @@ export default function DataInput() {
 
   useEffect(() => {
     setSearchParams({'tab': currentKey.toString()})
+    if (currentKey.toString() === '2') {
+      setSearchParams({'tab': currentKey.toString(), 'table': searchParams.get('table')})
+    }
   }, [currentKey])
 
   const stepOnChange = (value) => {
