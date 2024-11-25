@@ -45,6 +45,9 @@ import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfo
 import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
 import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
 import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
+import HaiguanAnnualReport from '../PlatformForms/WeihaiHaiGuan/AnnualReport';
+
+
 import dayjs from 'dayjs';
 import { useSearchParams } from "react-router-dom";
 import CompanyInfoChange from '../PlatformForms/GongJiJinForm/CompanyInfoChange';
@@ -166,10 +169,10 @@ export default function Fill() {
           key: '7',
           label: '单位从业人员及工资总额信息',
         },
-        {
-          key: '8',
-          label: '研究开发项目情况信息'
-        },
+        // {
+        //   key: '8',
+        //   label: '研究开发项目情况信息'
+        // },
         {
           key: '9',
           label: '研究开发活动及相关情况信息'
@@ -227,7 +230,7 @@ export default function Fill() {
       children: [
         {
           key: 'weihaihaiguan_sub',
-          label: '企业基本信息',
+          label: '海关年报事项',
         },
       ],
     },
@@ -250,10 +253,10 @@ export default function Fill() {
           key: '29',
           label: '企业人员概况信息',
         },
-        {
-          key: '30',
-          label: '研究开发项目状况信息',
-        },
+        // {
+        //   key: '30',
+        //   label: '研究开发项目状况信息',
+        // },
         {
           key: '31',
           label: '研究开发活动及相关情况信息'
@@ -286,7 +289,7 @@ export default function Fill() {
       children: [
         {
           key: 'shangwu1',
-          label: '企业基本信息',
+          label: '外商投资企业（机构）经营状况统计表',
         },
       ],
     },
@@ -432,6 +435,8 @@ export default function Fill() {
     '8': <ResearchDevelopInfo date={curDate} />,
     '9': <ResearchActivityInfo date={curDate} />,
     '10': <FinanceStatusInfo date={curDate} />,
+
+    'weihaihaiguan_sub': <HaiguanAnnualReport date={curDate} />,
 
     // '11': <YiBaoCompanyInfo date={curDate} />,
     // '12': <CompanySecurityInfo date={curDate} />,
