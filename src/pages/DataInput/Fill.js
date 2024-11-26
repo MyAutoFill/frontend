@@ -289,7 +289,15 @@ export default function Fill() {
       children: [
         {
           key: 'shangwu1',
-          label: '外商投资企业（机构）经营状况统计表',
+          label: '基本情况',
+        },
+        {
+          key: 'shangwu2',
+          label: '投资者情况',
+        },
+        {
+          key: 'shangwu3',
+          label: '经营情况',
         },
       ],
     },
