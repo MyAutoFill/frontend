@@ -46,7 +46,9 @@ import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
 import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
 import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
 import HaiguanAnnualReport from '../PlatformForms/WeihaiHaiGuan/AnnualReport';
-
+import ShangwuBasicInfo from '../PlatformForms/ShangWuJu/BasicInfo';
+import ShangwuInvestorInfo from '../PlatformForms/ShangWuJu/InvestorInfo';
+import ShangwuOperationInfo from '../PlatformForms/ShangWuJu/OperationInfo';
 
 import dayjs from 'dayjs';
 import { useSearchParams } from "react-router-dom";
@@ -445,6 +447,10 @@ export default function Fill() {
     '10': <FinanceStatusInfo date={curDate} />,
 
     'weihaihaiguan_sub': <HaiguanAnnualReport date={curDate} />,
+
+    'shangwu1': <ShangwuBasicInfo date={curDate} />,
+    'shangwu2': <ShangwuInvestorInfo date={curDate} />,
+    'shangwu3': <ShangwuOperationInfo date={curDate} />,
 
     // '11': <YiBaoCompanyInfo date={curDate} />,
     // '12': <CompanySecurityInfo date={curDate} />,

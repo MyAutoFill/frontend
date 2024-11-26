@@ -256,7 +256,7 @@ export default function BenefitsForm() {
       ),
       code: "6",
       monthNum: (
-        <Form.Item name="company_runningsum_2">
+        <Form.Item name="tax_benefits_month_5">
           <Input
             disabled={disableVar}
             addonAfter="元"
