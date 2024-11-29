@@ -181,23 +181,58 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '8',
       label: '报表类别',
-      children:             
+      children: 
         <Form.Item name="Statistic_CompanyInfo_8">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setFormType(e.target.value)} value={FormType}>
-            <Radio value={'农业'}>农业</Radio>
-            <Radio value={'规模以上工业'} style={{ marginLeft: '10px'}}>规模以上工业</Radio>
-            <Radio value={'规模以下工业'} style={{ marginLeft: '10px'}}>规模以下工业</Radio>
-            <Radio value={'建筑业'} style={{ marginLeft: '10px'}}>建筑业</Radio>
-            <Radio value={'批发和零售业'} style={{ marginLeft: '10px'}}>批发和零售业</Radio>
-            <Radio value={'住宿和餐饮业'} style={{ marginLeft: '10px'}}>住宿和餐饮业</Radio>
-            <Radio value={'房地产开发经营业'} style={{ marginLeft: '10px'}}>房地产开发经营业</Radio>
-            <Radio value={'规模以上服务业'} style={{ marginLeft: '10px'}}>规模以上服务业</Radio>
-            <Radio value={'投资'} style={{ marginLeft: '10px'}}>投资</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-                其他
-                {FormType === '其他' ? <Form.Item name="Statistic_CompanyInfo_9"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-              </Radio>
-          </Radio.Group>
+          {/* <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择报表类别"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '农业',
+                label: '农业',
+              },
+              {
+                value: '规模以上工业',
+                label: '规模以上工业',
+              },
+              {
+                value: '规模以下工业',
+                label: '规模以下工业',
+              },
+              {
+                value: '建筑业',
+                label: '建筑业',
+              },
+              {
+                value: '批发和零售业',
+                label: '批发和零售业',
+              },
+              {
+                value: '住宿和餐饮业',
+                label: '住宿和餐饮业',
+              },
+              {
+                value: '房地产开发经营业',
+                label: '房地产开发经营业',
+              },
+              {
+                value: '规模以上服务业',
+                label: '规模以上服务业',
+              },
+              {
+                value: '投资',
+                label: '投资',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 3
     },
@@ -206,13 +241,13 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '单位所在地区划及详细地址',
       children: 
         <> 
-          <Form.Item name="company_basicinfo_11"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_12"><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_13"><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_14"><Input disabled={disableVar} addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_15"><Input disabled={disableVar} addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_16"><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_11"><Input size='large' addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_12"><Input size='large' addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_13"><Input size='large' addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_14"><Input size='large' addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_15"><Input size='large' addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16"><Input size='large' addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17"><Input size='large' addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>,
       span: 3
     },
@@ -234,14 +269,13 @@ export default function StatisticCompanyBasicInfo(props) {
       children: (
         <>
           <span>
-            是否与单位所在地区划及详细地址一致：
-            <Form.Item name="Statistic_CompanyInfo_19">
+            <Form.Item name="company_basicinfo_r1">
+              <span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否与单位所在地区划及详细地址一致：</span>
               <Select
-                showSearch
                 allowClear
                 style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
                 size='large'
-                placeholder="是否与单位所在地区划及详细地址一致"
+                placeholder="是/否"
                 optionFilterProp="label"
                 options={[
                   {
@@ -254,16 +288,16 @@ export default function StatisticCompanyBasicInfo(props) {
                   }
                 ]}
               />
-            </Form.Item>,
+            </Form.Item>
           </span>
           <br></br>
-          <Form.Item name="company_basicinfo_11"><Input disabled={disableVar} addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_12"><Input disabled={disableVar} addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_13"><Input disabled={disableVar} addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_14"><Input disabled={disableVar} addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_15"><Input disabled={disableVar} addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_16"><Input disabled={disableVar} addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_11"><Input size='large' addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_12"><Input size='large' addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_13"><Input size='large' addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_14"><Input size='large' addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_15"><Input size='large' addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16"><Input size='large' addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17"><Input size='large' addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>
       ),
       span: 3
@@ -283,18 +317,34 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '15',
       label: '单位规模',
-      children: (
-        <>
-          <Form.Item name="company_basicinfo_r2">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }}>
-              <Radio value={'大型'}>大型</Radio>
-              <Radio value={'中型'} style={{ marginLeft: '10px'}}>中型</Radio>
-              <Radio value={'小型'} style={{ marginLeft: '10px'}}>小型</Radio>
-              <Radio value={'微型'} style={{ marginLeft: '10px'}}>微型</Radio>
-            </Radio.Group>
-          </Form.Item>
-        </>
-      ),
+      children: 
+        <Form.Item name="company_basicinfo_r2">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择对应单位规模"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '大型',
+                label: '大型',
+              },
+              {
+                value: '中型',
+                label: '中型',
+              },
+              {
+                value: '小型',
+                label: '小型',
+              },
+              {
+                value: '微型',
+                label: '微型',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 3
     },
     {
@@ -336,13 +386,13 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '22',
       label: '成立时间（所有单位填报）',
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
       key: '23',
       label: '开业时间（仅限企业填报）',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开业时间' defaultValue={dayjs('2013/12/23', dateFormat)} style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_open_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择开业时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -350,13 +400,13 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '联系方式',
       children: 
         <>
-          <Form.Item name="company_basicinfo_32"><Input disabled={disableVar} addonBefore="长途区号" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_33"><Input disabled={disableVar} addonBefore="固定电话" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_34"><Input disabled={disableVar} addonBefore="通信地址" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_35"><Input disabled={disableVar} addonBefore="电子邮箱" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_36"><Input disabled={disableVar} addonBefore="移动电话" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_37"><Input disabled={disableVar} addonBefore="传真号码" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} addonBefore="邮政编码" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>        </>,
+          <Form.Item name="company_basicinfo_32"><Input size='large' addonBefore="长途区号" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_33"><Input size='large' addonBefore="固定电话" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_34"><Input size='large' addonBefore="通信地址" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_35"><Input size='large' addonBefore="电子邮箱" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_36"><Input size='large' addonBefore="移动电话" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_37"><Input size='large' addonBefore="传真号码" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_38"><Input size='large' addonBefore="邮政编码" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>        </>,
       span: 3
     },
     {
@@ -364,22 +414,59 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '机构类型',
       children: 
         <Form.Item name="company_basicinfo_r3">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setOrganizationTypeValue(e.target.value)} value={organizationTypeValue}>
-            <Radio value={'企业'}>企业</Radio>
-            <Radio value={'事业单位'} style={{ marginLeft: '10px'}}>事业单位</Radio>
-            <Radio value={'机关'} style={{ marginLeft: '10px'}}>机关</Radio>
-            <Radio value={'社会团体'} style={{ marginLeft: '10px'}}>社会团体</Radio>
-            <Radio value={'民办非企业单位'} style={{ marginLeft: '10px'}}>民办非企业单位</Radio>
-            <Radio value={'基金会'} style={{ marginLeft: '10px'}}>基金会</Radio>
-            <Radio value={'居委会'} style={{ marginLeft: '10px'}}>居委会</Radio>
-            <Radio value={'村委会'} style={{ marginLeft: '10px'}}>村委会</Radio>
-            <Radio value={'农民专业合作社'} style={{ marginLeft: '10px'}}>农民专业合作社</Radio>
-            <Radio value={'农村集体经济组织'} style={{ marginLeft: '10px'}}>农村集体经济组织</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {organizationTypeValue === '其他' ? <Form.Item name="company_basicinfo_39"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择对应机构类型"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '企业',
+                label: '企业',
+              },
+              {
+                value: '事业单位',
+                label: '事业单位',
+              },
+              {
+                value: '机关',
+                label: '机关',
+              },
+              {
+                value: '社会团体',
+                label: '社会团体',
+              },
+              {
+                value: '民办非企业单位',
+                label: '民办非企业单位',
+              },
+              {
+                value: '基金会',
+                label: '基金会',
+              },
+              {
+                value: '居委会',
+                label: '居委会',
+              },
+              {
+                value: '村委会',
+                label: '村委会',
+              },
+              {
+                value: '农民专业合作社',
+                label: '农民专业合作社',
+              },
+              {
+                value: '农村集体经济组织',
+                label: '农村集体经济组织',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 3
     },
@@ -387,94 +474,228 @@ export default function StatisticCompanyBasicInfo(props) {
       key: '26',
       label: '登记注册类型',
       children: 
-      <>
-        <Form.Item name="company_basicinfo_r4">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setSignUpTypeValue(e.target.value)} value={signUpTypeValue}>
-            <Radio value={'内资'}>内资</Radio>
-            <Radio value={'港澳台商投资'} style={{ marginLeft: '10px'}}>港澳台商投资</Radio>
-            <Radio value={'外商投资'} style={{ marginLeft: '10px'}}>外商投资</Radio>
-          </Radio.Group>
-        </Form.Item>
-        <br></br>
-        {signUpTypeValue === '内资' ? 
-          <Form.Item name="company_basicinfo_r5">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setSignUpTypeSubValue(e.target.value)} value={signUpTypeSubValue}>
-              <Radio value={'国有'} style={{ marginLeft: '20px'}}>国有</Radio>
-              <Radio value={'其他有限责任公司'} style={{ marginLeft: '20px'}}>其他有限责任公司</Radio>
-              <Radio value={'集体'} style={{ marginLeft: '20px'}}>集体</Radio>
-              <Radio value={'股份合作'} style={{ marginLeft: '20px'}}>股份合作</Radio>
-              <Radio value={'国有联营'} style={{ marginLeft: '20px'}}>国有联营</Radio>
-              <Radio value={'国有与集体联营'} style={{ marginLeft: '20px'}}>国有与集体联营</Radio>
-              <Radio value={'其他联营'} style={{ marginLeft: '20px'}}>其他联营</Radio>
-              <Radio value={'国有独资公司'} style={{ marginLeft: '20px'}}>国有独资公司</Radio>
-              <Radio value={'股份有限公司'} style={{ marginLeft: '20px'}}>股份有限公司</Radio>
-              <Radio value={'私营独资'} style={{ marginLeft: '20px'}}>私营独资</Radio>
-              <Radio value={'私营合伙'} style={{ marginLeft: '20px'}}>私营合伙</Radio>
-              <Radio value={'私营有限责任公司'} style={{ marginLeft: '20px'}}>私营有限责任公司</Radio>
-              <Radio value={'私营股份有限公司'} style={{ marginLeft: '20px'}}>私营股份有限公司</Radio>
-              <Radio value={'其他'} style={{ marginLeft: '20px'}}>
-                其他
-                {signUpTypeSubValue === '其他' ? <Form.Item name="company_basicinfo_40"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item> : null}
-              </Radio>
-            </Radio.Group>
-          </Form.Item> : 
-          signUpTypeValue === '港澳台商投资' ? 
-          <Form.Item name="company_basicinfo_r6">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setSignUpTypeSubValue(e.target.value)} value={signUpTypeSubValue}>
-              <Radio value={'与港澳台商合资经营'} style={{ marginLeft: '20px'}}>与港澳台商合资经营</Radio>
-              <Radio value={'与港澳台商合作经营'} style={{ marginLeft: '20px'}}>与港澳台商合作经营</Radio>
-              <Radio value={'港澳台商独资'} style={{ marginLeft: '20px'}}>港澳台商独资</Radio>
-              <Radio value={'港澳台商投资股份有限公司'} style={{ marginLeft: '20px'}}>港澳台商投资股份有限公司</Radio>
-              <Radio value={'其他港澳台投资'} style={{ marginLeft: '20px'}}>
-              其他港澳台投资
-                {signUpTypeSubValue === '其他港澳台投资' ? <Form.Item name="company_basicinfo_41"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item> : null}
-              </Radio>
-            </Radio.Group>
-          </Form.Item> : 
-          signUpTypeValue === '外商投资' ? 
-          <Form.Item name="company_basicinfo_r7">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setSignUpTypeSubValue(e.target.value)} value={signUpTypeSubValue}>
-              <Radio value={'中外合资经营'} style={{ marginLeft: '20px'}}>中外合资经营</Radio>
-              <Radio value={'中外合作经营'} style={{ marginLeft: '20px'}}>中外合作经营</Radio>
-              <Radio value={'外资企业'} style={{ marginLeft: '20px'}}>外资企业</Radio>
-              <Radio value={'外商投资股份有限公司'} style={{ marginLeft: '20px'}}>外商投资股份有限公司</Radio>
-              <Radio value={'其他外商投资'} style={{ marginLeft: '20px'}}>
-              其他外商投资
-                {signUpTypeSubValue === '其他外商投资' ? <Form.Item name="company_basicinfo_42"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item> : null}
-              </Radio>
-            </Radio.Group>
-          </Form.Item> : null}
-      </>,
+        <>
+          <Form.Item name="company_basicinfo_r4">
+            <span style={{ width: '200px', marginLeft: '10px' }}>先选择登记注册类型后再选择注册类型子类</span>
+            <Select
+              allowClear
+              style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+              size='large'
+              placeholder="请选择对应机构类型"
+              optionFilterProp="label"
+              onChange={(value, option) => setSignUpTypeValue(value)} 
+              defaultValue={signUpTypeValue}
+              options={[
+                {
+                  value: '内资',
+                  label: '内资',
+                },
+                {
+                  value: '港澳台商投资',
+                  label: '港澳台商投资',
+                },
+                {
+                  value: '外商投资',
+                  label: '外商投资',
+                }
+              ]}
+            />
+          </Form.Item>
+          <br></br>
+          {signUpTypeValue === '内资' ? 
+            <Form.Item name="company_basicinfo_r5">
+              <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应内资机构类型子类</span>
+              <Select
+                allowClear
+                style={{ width: '200px', marginLeft: '10px' }}
+                size='large'
+                placeholder="请选择对应机构类型"
+                optionFilterProp="label"
+                onChange={(value, option) => setSignUpTypeSubValue(value)} 
+                defaultValue={signUpTypeSubValue}
+                options={[
+                  {
+                    value: '国有',
+                    label: '国有',
+                  },
+                  {
+                    value: '其他有限责任公司',
+                    label: '其他有限责任公司',
+                  },
+                  {
+                    value: '集体',
+                    label: '集体',
+                  },
+                  {
+                    value: '股份合作',
+                    label: '股份合作',
+                  },
+                  {
+                    value: '国有联营',
+                    label: '国有联营',
+                  },
+                  {
+                    value: '国有与集体联营',
+                    label: '国有与集体联营',
+                  },
+                  {
+                    value: '其他联营',
+                    label: '其他联营',
+                  },
+                  {
+                    value: '国有独资公司',
+                    label: '国有独资公司',
+                  },
+                  {
+                    value: '股份有限公司',
+                    label: '股份有限公司',
+                  },
+                  {
+                    value: '私营独资',
+                    label: '私营独资',
+                  },
+                  {
+                    value: '私营合伙',
+                    label: '私营合伙',
+                  },
+                  {
+                    value: '私营有限责任公司',
+                    label: '私营有限责任公司',
+                  },
+                  {
+                    value: '私营股份有限公司',
+                    label: '私营股份有限公司',
+                  },
+                  {
+                    value: '其他',
+                    label: '其他',
+                  }
+                ]}
+              />
+            </Form.Item> : 
+            signUpTypeValue === '港澳台商投资' ? 
+            <Form.Item name="company_basicinfo_r6">
+              <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应港澳台商投资机构类型子类</span>
+              <Select
+                allowClear
+                style={{ width: '200px', marginLeft: '10px' }}
+                size='large'
+                placeholder="请选择对应机构类型"
+                optionFilterProp="label"
+                onChange={(value, option) => setSignUpTypeSubValue(value)} 
+                options={[
+                  {
+                    value: '与港澳台商合资经营',
+                    label: '与港澳台商合资经营',
+                  },
+                  {
+                    value: '与港澳台商合作经营',
+                    label: '与港澳台商合作经营',
+                  },
+                  {
+                    value: '港澳台商独资',
+                    label: '港澳台商独资',
+                  },
+                  {
+                    value: '港澳台商投资股份有限公司',
+                    label: '港澳台商投资股份有限公司',
+                  },
+                  {
+                    value: '其他港澳台投资',
+                    label: '其他港澳台投资',
+                  }
+                ]}
+              />
+            </Form.Item> : 
+            signUpTypeValue === '外商投资' ? 
+            <Form.Item name="company_basicinfo_r7">
+              <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span>
+              <Select
+                allowClear
+                style={{ width: '200px', marginLeft: '10px' }}
+                size='large'
+                placeholder="请选择对应机构类型"
+                optionFilterProp="label"
+                onChange={(value, option) => setSignUpTypeSubValue(value)} 
+                options={[
+                  {
+                    value: '中外合资经营',
+                    label: '中外合资经营',
+                  },
+                  {
+                    value: '中外合作经营',
+                    label: '中外合作经营',
+                  },
+                  {
+                    value: '外资企业',
+                    label: '外资企业',
+                  },
+                  {
+                    value: '外商投资股份有限公司',
+                    label: '外商投资股份有限公司',
+                  },
+                  {
+                    value: '其他外商投资',
+                    label: '其他外商投资',
+                  }
+                ]}
+              />
+            </Form.Item> : null}
+        </>,
       span: 3
     },
-    {
-      key: '27',
-      label: '港澳台商投资情况',
-      children: 
-      <>
-        （可多选）（仅限港澳台商投资企业填报）
-        <Checkbox.Group disabled={disableVar} options={HKTWInvestSituation} />
-      </>,
-      span: 3
-    },
+    // {
+    //   key: '27',
+    //   label: '港澳台商投资情况',
+    //   children: 
+    //   <>
+    //     （可多选）（仅限港澳台商投资企业填报）
+    //     <Checkbox.Group disabled={disableVar} options={HKTWInvestSituation} />
+    //   </>,
+    //   span: 3
+    // },
     {
       key: '28',
       label: '企业控股情况',
       children: 
         <Form.Item name="company_basicinfo_r8">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setCompanyStockControlValue(e.target.value)} value={companyStockControlValue}>
-            <Radio value={'国有控股'}>国有控股</Radio>
-            <Radio value={'集体控股'} style={{ marginLeft: '10px'}}>集体控股</Radio>
-            <Radio value={'私人控股'} style={{ marginLeft: '10px'}}>私人控股</Radio>
-            <Radio value={'港澳台控股'} style={{ marginLeft: '10px'}}>港澳台控股</Radio>
-            <Radio value={'外商控股'} style={{ marginLeft: '10px'}}>外商控股</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {companyStockControlValue === '其他' ? <Form.Item name="company_basicinfo_43"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          {/* <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
+          <Select
+            allowClear
+            style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择企业控股情况"
+            optionFilterProp="label"
+            onChange={(value, option) => setSignUpTypeSubValue(value)} 
+            options={[
+              {
+                value: '国有控股',
+                label: '国有控股',
+              },
+              {
+                value: '集体控股',
+                label: '集体控股',
+              },
+              {
+                value: '私人控股',
+                label: '私人控股',
+              },
+              {
+                value: '港澳台控股',
+                label: '港澳台控股',
+              },
+              {
+                value: '外商控股',
+                label: '外商控股',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
         </Form.Item>,
-      span: 3
+      span: 1
     },
     {
       key: '29',
@@ -546,41 +767,83 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '运营状态',
       children: 
         <Form.Item name="company_basicinfo_r9">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setRunningStatusValue(e.target.value)} value={runningStatusValue} defaultValue={'正常运营'}>
-            <Radio value={'正常运营'}>正常运营</Radio>
-            <Radio value={'停业（歇业）'} style={{ marginLeft: '10px'}}>停业（歇业）</Radio>
-            <Radio value={'筹建'} style={{ marginLeft: '10px'}}>筹建</Radio>
-            <Radio value={'当年关闭'} style={{ marginLeft: '10px'}}>当年关闭</Radio>
-            <Radio value={'当年破产'} style={{ marginLeft: '10px'}}>当年破产</Radio>
-            <Radio value={'当年注销'} style={{ marginLeft: '10px'}}>当年注销</Radio>
-            <Radio value={'当年撤（吊）销'} style={{ marginLeft: '10px'}}>当年撤（吊）销</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {runningStatusValue === '其他' ? <Form.Item name="company_basicinfo_46"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px' }}
+            size='large'
+            placeholder="请选择企业运营状态"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '正常运营',
+                label: '正常运营',
+              },
+              {
+                value: '停业（歇业）',
+                label: '停业（歇业）',
+              },
+              {
+                value: '筹建',
+                label: '筹建',
+              },
+              {
+                value: '当年关闭',
+                label: '当年关闭',
+              },
+              {
+                value: '当年破产',
+                label: '当年破产',
+              },
+              {
+                value: '当年注销',
+                label: '当年注销',
+              },
+              {
+                value: '当年撤（吊）销',
+                label: '当年撤（吊）销',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
         </Form.Item>,
-      span: 3
+      span: 1
     },
     {
       key: '31',
       label: '执行会计标准类别',
       children: 
         <Form.Item name="company_basicinfo_r10">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setExecuteAccountingTypeValue(e.target.value)} value={executeAccountingTypeValue}>
-            <Radio value={'企业会计准则制度'}>企业会计准则制度</Radio>
-            <Radio value={'政府会计准则制度'} style={{ marginLeft: '10px'}}>政府会计准则制度</Radio>
-            <Radio value={'民间非盈利组织会计制度'} style={{ marginLeft: '10px'}}>民间非盈利组织会计制度</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {executeAccountingTypeValue === '其他' ? <Form.Item name="company_basicinfo_47"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="选择企业执行会计标准类别"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '企业会计准则制度',
+                label: '企业会计准则制度',
+              },
+              {
+                value: '政府会计准则制度',
+                label: '政府会计准则制度',
+              },
+              {
+                value: '民间非盈利组织会计制度',
+                label: '民间非盈利组织会计制度',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />
         </Form.Item>,
       span: 3
     },
-
-
     {
       key: '32',
       label: '企业集团情况',
@@ -599,7 +862,7 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '33',
       label: '建筑业企业资质登记编码',
-      children: <Form.Item name="Statistic_CompanyInfo_59"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Statistic_CompanyInfo_59"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
@@ -613,18 +876,43 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '房地产开发经营业企业资质等级',
       children: 
         <Form.Item name="Statistic_CompanyInfo_61">
-          <Radio.Group disabled={disableVar} size='large' style={{marginTop: '10px' }} onChange={(e) => setHouseRunningLevel(e.target.value)} value={HouseRunningLevel}>
-            <Radio value={'一级'}>一级</Radio>
-            <Radio value={'二级'} style={{ marginLeft: '10px'}}>二级</Radio>
-            <Radio value={'三级'} style={{ marginLeft: '10px'}}>三级</Radio>
-            <Radio value={'四级'} style={{ marginLeft: '10px'}}>四级</Radio>
-            <Radio value={'五级'} style={{ marginLeft: '10px'}}>五级</Radio>
-            <Radio value={'暂定'} style={{ marginLeft: '10px'}}>暂定</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {HouseRunningLevel === '其他' ? <Form.Item name="Statistic_CompanyInfo_62"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '300px', marginLeft: '10px' }}
+            size='large'
+            placeholder="选择房地产开发经营业企业资质等级"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '一级',
+                label: '一级',
+              },
+              {
+                value: '二级',
+                label: '二级',
+              },
+              {
+                value: '三级',
+                label: '三级',
+              },
+              {
+                value: '四级',
+                label: '四级',
+              },
+              {
+                value: '五级',
+                label: '五级',
+              },
+              {
+                value: '暂定',
+                label: '暂定',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />  
         </Form.Item>,
       span: 3
     },
@@ -633,27 +921,37 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '批发和零售业、住宿和餐饮业单位经营形式',
       children: 
         <Form.Item name="Statistic_CompanyInfo_63">
-          <Radio.Group disabled={disableVar} size='large' style={{marginTop: '10px' }} onChange={(e) => setRunningType(e.target.value)} value={RunningType}>
-            <Radio value={'独立门店'}>独立门店</Radio>
-            <Radio value={'连锁总店(总部)'} style={{ marginLeft: '10px'}}>
-              连锁总店(总部)
-              {RunningType === '连锁总店(总部)' ? <Form.Item name="Statistic_CompanyInfo_64"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
-            </Radio>
-            <Radio value={'连锁直营店'} style={{ marginLeft: '10px'}}>
-              连锁直营店
-              {RunningType === '连锁直营店' ? <Form.Item name="Statistic_CompanyInfo_64"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
-            </Radio>
-            <Radio value={'连锁加盟店'} style={{ marginLeft: '10px'}}>
-              连锁加盟店
-              {RunningType === '连锁加盟店' ? <Form.Item name="Statistic_CompanyInfo_64"><Input disabled={disableVar} addonBefore='连锁品牌（商标或商号名称）：' style={{ width: '500px', marginLeft: '10px', marginTop: '0px' }}></Input></Form.Item> : null}
-            </Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {RunningType === '其他' ? <Form.Item name="Statistic_CompanyInfo_67"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '300px', marginLeft: '10px' }}
+            size='large'
+            placeholder="选择房地产开发经营业企业资质等级"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '独立门店',
+                label: '独立门店',
+              },
+              {
+                value: '连锁总店(总部)',
+                label: '连锁总店(总部)',
+              },
+              {
+                value: '连锁直营店',
+                label: '连锁直营店',
+              },
+              {
+                value: '连锁加盟店',
+                label: '连锁加盟店',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />  
         </Form.Item>,
-      span: 3
+      span: 1
     },
     {
       key: '37',
@@ -661,66 +959,175 @@ export default function StatisticCompanyBasicInfo(props) {
       children: 
       <>
         <Form.Item name="Statistic_CompanyInfo_68">
-          <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setHaveStore(e.target.value)} value={HaveStore}>
-            <Radio value={'有店铺零售'}>有店铺零售</Radio>
-            <Radio value={'无店铺零售'} style={{ marginLeft: '10px'}}>无店铺零售</Radio>
-          </Radio.Group>
+          <span style={{ width: '200px', marginLeft: '10px' }}>先选择有无店铺后再选择具体店铺类型</span>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px' }}
+            size='large'
+            placeholder="选择有无店铺"
+            optionFilterProp="label"
+            onChange={(value, option) => setHaveStore(value)} 
+            defaultValue={HaveStore}
+            options={[
+              {
+                value: '有店铺零售',
+                label: '有店铺零售',
+              },
+              {
+                value: '无店铺零售',
+                label: '无店铺零售',
+              }
+            ]}
+          />  
         </Form.Item>
         <br></br>
         {HaveStore === '有店铺零售' ? 
           <Form.Item name="Statistic_CompanyInfo_69">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setHaveStoreType(e.target.value)} value={HaveStoreType}>
-              <Radio value={'便利店'} style={{ marginLeft: '20px'}}>便利店</Radio>
-              <Radio value={'超市'} style={{ marginLeft: '20px'}}>超市</Radio>
-              <Radio value={'折扣店'} style={{ marginLeft: '20px'}}>折扣店</Radio>
-              <Radio value={'仓储会员店'} style={{ marginLeft: '20px'}}>仓储会员店</Radio>
-              <Radio value={'百货店'} style={{ marginLeft: '20px'}}>百货店</Radio>
-              <Radio value={'购物中心'} style={{ marginLeft: '20px'}}>购物中心</Radio>
-              <Radio value={'专业店'} style={{ marginLeft: '20px'}}>专业店</Radio>
-              <Radio value={'品牌专卖店'} style={{ marginLeft: '20px'}}>品牌专卖店</Radio>
-              <Radio value={'集合店'} style={{ marginLeft: '20px'}}>集合店</Radio>
-              <Radio value={'无人值守商店'} style={{ marginLeft: '20px'}}>无人值守商店</Radio>
-              <Radio value={'其他'} style={{ marginLeft: '20px'}}>
-                其他
-                {HaveStoreType === '其他' ? <Form.Item name="Statistic_CompanyInfo_70"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item> : null}
-              </Radio>
-            </Radio.Group>
+            <span style={{ width: '200px', marginLeft: '10px' }}>请选择有店铺零售店铺类型</span>
+            <Select
+              allowClear
+              style={{ width: '200px', marginLeft: '10px' }}
+              size='large'
+              placeholder="选择有店铺零售店铺类型"
+              optionFilterProp="label"
+              onChange={(value, option) => setHaveStoreType(value)} 
+              defaultValue={HaveStoreType}
+              options={[
+                {
+                  value: '便利店',
+                  label: '便利店',
+                },
+                {
+                  value: '超市',
+                  label: '超市',
+                },
+                {
+                  value: '折扣店',
+                  label: '折扣店',
+                },
+                {
+                  value: '仓储会员店',
+                  label: '仓储会员店',
+                },
+                {
+                  value: '百货店',
+                  label: '百货店',
+                },
+                {
+                  value: '购物中心',
+                  label: '购物中心',
+                },
+                {
+                  value: '专业店',
+                  label: '专业店',
+                },
+                {
+                  value: '品牌专卖店',
+                  label: '品牌专卖店',
+                },
+                {
+                  value: '集合店',
+                  label: '集合店',
+                },
+                {
+                  value: '无人值守商店',
+                  label: '无人值守商店',
+                },
+                {
+                  value: '其他',
+                  label: '其他',
+                }
+              ]}
+            />  
           </Form.Item> : 
           HaveStore === '无店铺零售' ? 
           <Form.Item name="Statistic_CompanyInfo_71">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} onChange={(e) => setNoStoreType(e.target.value)} value={NoStoreType}>
-              <Radio value={'网络零售'} style={{ marginLeft: '20px'}}>网络零售</Radio>
-              <Radio value={'电视/广播零售'} style={{ marginLeft: '20px'}}>电视/广播零售</Radio>
-              <Radio value={'邮寄零售'} style={{ marginLeft: '20px'}}>邮寄零售</Radio>
-              <Radio value={'无人售货设备零售'} style={{ marginLeft: '20px'}}>无人售货设备零售</Radio>
-              <Radio value={'电话零售'} style={{ marginLeft: '20px'}}>电话零售</Radio>
-              <Radio value={'直销'} style={{ marginLeft: '20px'}}>直销</Radio>
-              <Radio value={'流动货摊零售'} style={{ marginLeft: '20px'}}>流动货摊零售</Radio>
-              <Radio value={'其他'} style={{ marginLeft: '20px'}}>
-              其他
-                {NoStoreType === '其他' ? <Form.Item name="Statistic_CompanyInfo_72"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item> : null}
-              </Radio>
-            </Radio.Group>
+            <span style={{ width: '200px', marginLeft: '10px' }}>请选择无店铺零售零售方式</span>
+            <Select
+              allowClear
+              style={{ width: '200px', marginLeft: '10px' }}
+              size='large'
+              placeholder="选择无店铺零售零售方式"
+              optionFilterProp="label"
+              onChange={(value, option) => setNoStoreType(value)} 
+              defaultValue={NoStoreType}
+              options={[
+                {
+                  value: '网络零售',
+                  label: '网络零售',
+                },
+                {
+                  value: '电视/广播零售',
+                  label: '电视/广播零售',
+                },
+                {
+                  value: '邮寄零售',
+                  label: '邮寄零售',
+                },
+                {
+                  value: '无人售货设备零售',
+                  label: '无人售货设备零售',
+                },
+                {
+                  value: '电话零售',
+                  label: '电话零售',
+                },
+                {
+                  value: '直销',
+                  label: '直销',
+                },
+                {
+                  value: '流动货摊零售',
+                  label: '流动货摊零售',
+                },
+                {
+                  value: '其他',
+                  label: '其他',
+                }
+              ]}
+            />  
           </Form.Item> : null}
         </>,
-      span: 3
+      span: 2
     },
     {
       key: '38',
       label: '住宿业单位星级评定情况',
       children:
         <Form.Item name="Statistic_CompanyInfo_73">
-          <Radio.Group disabled={disableVar} size='large' style={{marginTop: '10px' }} onChange={(e) => setHospitalityStarLevel(e.target.value)} value={HospitalityStarLevel}>
-            <Radio value={'一星'}>一星</Radio>
-            <Radio value={'二星'} style={{ marginLeft: '10px'}}>二星</Radio>
-            <Radio value={'三星'} style={{ marginLeft: '10px'}}>三星</Radio>
-            <Radio value={'四星'} style={{ marginLeft: '10px'}}>四星</Radio>
-            <Radio value={'五星'} style={{ marginLeft: '10px'}}>五星</Radio>
-            <Radio value={'其他'} style={{ marginLeft: '10px'}}>
-              其他
-              {HospitalityStarLevel === '其他' ? <Form.Item name="Statistic_CompanyInfo_74"><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item> : null}
-            </Radio>
-          </Radio.Group>
+          <Select
+            allowClear
+            style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="选择住宿业单位星级评定情况"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '一星',
+                label: '一星',
+              },
+              {
+                value: '二星',
+                label: '二星',
+              },
+              {
+                value: '三星',
+                label: '三星',
+              },
+              {
+                value: '四星',
+                label: '四星',
+              },
+              {
+                value: '五星',
+                label: '五星',
+              },
+              {
+                value: '其他',
+                label: '其他',
+              }
+            ]}
+          />  
         </Form.Item>,
       span: 3
     },
@@ -736,6 +1143,7 @@ export default function StatisticCompanyBasicInfo(props) {
       children: 
         <>
           <Form.Item name="Statistic_CompanyInfo_75">
+            <span style={{ width: '200px', marginLeft: '10px' }}>先选择本法人单位是否有上一级法人，若选择是请填写上一级法人信息</span>
             <Select
               showSearch
               allowClear
@@ -743,6 +1151,8 @@ export default function StatisticCompanyBasicInfo(props) {
               size='large'
               placeholder="本法人单位是否有上一级法人"
               optionFilterProp="label"
+              onChange={(value, option) => setHaveUpperOwner(value)} 
+              defaultValue={HaveUpperOwner}
               options={[
                 {
                   value: '是',
@@ -754,7 +1164,7 @@ export default function StatisticCompanyBasicInfo(props) {
                 }
               ]}
             />
-          </Form.Item>,
+          </Form.Item>
           <br></br>
           {HaveUpperOwner === '是' ? 
             <>
@@ -775,9 +1185,8 @@ export default function StatisticCompanyBasicInfo(props) {
           <br></br>
           <Form.Item name="Statistic_CompanyInfo_78">
             <Select
-              showSearch
               allowClear
-              style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+              style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
               size='large'
               placeholder="本法人单位是否有下属产业活动单位"
               optionFilterProp="label"
@@ -792,14 +1201,14 @@ export default function StatisticCompanyBasicInfo(props) {
                 }
               ]}
             />
-          </Form.Item>,
+          </Form.Item>
         </>,
       span: 3
     },
     {
       key: '42',
       label: '',
-      children: <Form.Item name="Statistic_CompanyInfo_79"><Input disabled={disableVar} addonBefore='本法人单位所属产业活动单位共' addonAfter='个' size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Statistic_CompanyInfo_79"><Input size='large' addonBefore='本法人单位所属产业活动单位共' addonAfter='个' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     }
   ];

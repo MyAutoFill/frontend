@@ -7,21 +7,9 @@ import { useEffect } from 'react';
 import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
-import dayjs from 'dayjs';
-
-const dateFormat = 'YYYY-MM-DD';
-const { TextArea } = Input;
 
 export default function ShangwuOperationInfo(props) {
 
-  const peopleSearchOnChange = (value) => {
-    console.log(`selected ${value}`);
-  };
-  const peopleSearchOnSearch = (value) => {
-    console.log('search:', value);
-  };
-
-  const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
 

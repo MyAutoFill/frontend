@@ -132,10 +132,10 @@ export default function Fill() {
               key: '42',
               label: '单位基本信息',
             },
-            {
-              key: '36',
-              label: '单位就业登记信息',
-            },
+            // {
+            //   key: '36',
+            //   label: '单位就业登记信息',
+            // },
             {
               key: '37',
               label: '以工代训补贴申领信息',
@@ -209,14 +209,14 @@ export default function Fill() {
           key: '15',
           label: '企业基本信息',
         },
-        {
-          key: '16',
-          label: '资产状况信息',
-        },
-        {
-          key: '17',
-          label: '对外提供保证担保信息',
-        },
+        // {
+        //   key: '16',
+        //   label: '资产状况信息',
+        // },
+        // {
+        //   key: '17',
+        //   label: '对外提供保证担保信息',
+        // },
         {
           key: '18',
           label: '参保信息',
