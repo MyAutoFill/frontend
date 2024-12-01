@@ -483,7 +483,7 @@ export default function BasicCompanyInfo(props) {
               allowClear
               style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
               size='large'
-              placeholder="请选择对应机构类型"
+              placeholder="请选择对应登记注册类型"
               optionFilterProp="label"
               onChange={(value, option) => setSignUpTypeValue(value)} 
               defaultValue={signUpTypeValue}
@@ -511,7 +511,7 @@ export default function BasicCompanyInfo(props) {
                 allowClear
                 style={{ width: '200px', marginLeft: '10px' }}
                 size='large'
-                placeholder="请选择对应机构类型"
+                placeholder="请选择内资对应登记注册类型"
                 optionFilterProp="label"
                 onChange={(value, option) => setSignUpTypeSubValue(value)} 
                 defaultValue={signUpTypeSubValue}
@@ -582,7 +582,7 @@ export default function BasicCompanyInfo(props) {
                 allowClear
                 style={{ width: '200px', marginLeft: '10px' }}
                 size='large'
-                placeholder="请选择对应机构类型"
+                placeholder="请选择港澳台商投资对应登记注册类型"
                 optionFilterProp="label"
                 onChange={(value, option) => setSignUpTypeSubValue(value)} 
                 options={[
@@ -616,7 +616,7 @@ export default function BasicCompanyInfo(props) {
                 allowClear
                 style={{ width: '200px', marginLeft: '10px' }}
                 size='large'
-                placeholder="请选择对应机构类型"
+                placeholder="请选择外商投资对应登记注册类型"
                 optionFilterProp="label"
                 onChange={(value, option) => setSignUpTypeSubValue(value)} 
                 options={[
@@ -646,15 +646,6 @@ export default function BasicCompanyInfo(props) {
         </>,
       span: 3
     },
-    // {
-    //   key: '25',
-    //   label: '港澳台商投资情况（仅限港澳台商投资企业填报）（可多选）',
-    //   children: 
-    //     <Form.Item name="company_basicinfo_c1">
-    //       <Checkbox.Group size='large' options={HKTWInvestSituation} />
-    //     </Form.Item>,
-    //   span: 3
-    // },
     {
       key: '26',
       label: '企业控股情况',
@@ -772,7 +763,7 @@ export default function BasicCompanyInfo(props) {
       key: '27',
       label: '运营状态',
       children: 
-        <Form.Item name="company_basicinfo_r9">
+        <Form.Item name="company_basicinfo_r27">
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px' }}
@@ -877,6 +868,12 @@ export default function BasicCompanyInfo(props) {
             ]}
           />
         </Form.Item>,
+      span: 1
+    },
+    {
+      key: '30',
+      label: '产业活动单位数',
+      children: <Form.Item name="company_basicinfo_46"><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
   ];
