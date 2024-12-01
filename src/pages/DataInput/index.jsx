@@ -64,13 +64,13 @@ export default function DataInput() {
                 >
                   <Menu mode="horizontal" style={{background: 'rgba(0, 0, 0, 0)', border: 0, lineHeight: 2.8}}>
                     <Menu.Item key="home">
-                      <a href='/auto_fill/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
+                      <a href='/auto_fill_test/' style={{fontSize: 25, color: 'white', fontWeight: 400}}>首页</a>
                     </Menu.Item>
                     <Menu.Item key="input">
-                      <a href='/auto_fill/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
+                      <a href='/auto_fill_test/input' style={{fontSize: 25, color: 'white', fontWeight: 400}}>报表报送</a>
                     </Menu.Item>
                     <Menu.Item key="info">
-                      <a href='/auto_fill/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
+                      <a href='/auto_fill_test/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
                     </Menu.Item>
                     <Menu.Item key="logout">
                       <a onClick={() => {logout()}} style={{fontSize: 25, color: 'white', fontWeight: 400}}>退出登录</a>

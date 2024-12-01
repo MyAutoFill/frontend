@@ -335,7 +335,7 @@ export default function UploadSyncPage() {
             }}
           >
             <Space style={{marginTop: '50px'}}>
-              <Button onClick={() => {window.location.href = '/input?tab=2'}} size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
+              <Button onClick={() => {window.location.href = '/auto_fill_test/input?tab=2&table=42'}} size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
             </Space>
           </ConfigProvider>
         </div>

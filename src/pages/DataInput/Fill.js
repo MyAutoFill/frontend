@@ -508,10 +508,10 @@ export default function Fill() {
   return (
     <>
       <Row style={{height: 1000}}>
-        <Col span={4}>
+        <Col span={4} style={{height: 800, overflowX: 'auto'}}>
           <Menu
             style={{
-              width: 320,
+              width: '100%',
             }}
             openKeys={openKey}
             selectedKeys={selectedKey}

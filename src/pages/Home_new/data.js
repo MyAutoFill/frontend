@@ -109,15 +109,15 @@ export const banner = [
         children: [
           {
             name: '企业信息',
-            link: '/auto_fill/company_info'
+            link: '/auto_fill_test/company_info'
           },
           {
             name: '开始报送',
-            link: '/auto_fill/input'
+            link: '/auto_fill_test/input'
           },
           {
             name: '数据分析',
-            link: '/auto_fill/analysis'
+            link: '/auto_fill_test/analysis'
           }
         ],
         className: 'banner-button',

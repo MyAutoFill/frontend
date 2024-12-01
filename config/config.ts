@@ -166,6 +166,6 @@ export default defineConfig({
     strategy: 'normal',
   },
   requestRecord: {},
-  publicPath: '/auto_static/',
+  publicPath: '/auto_static_test/',
   base: '/'
 });

@@ -5,33 +5,33 @@ import { FastForwardOutlined } from '@ant-design/icons';
 
 const options = [
   // { value: '42', label: '人社局 > 单位基本信息' },
-  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2', label: '人社局 > 单位基本信息' },
-  { value: '36', label: '人社局 > 单位就业登记信息' },
-  { value: '37', label: '人社局 > 以工代训补贴申领信息' },
-  { value: '39', label: '人社局 > 单位参保信息' },
-  { value: '6', label: '统计局 > 单位基本信息' },
-  { value: '7', label: '统计局 > 单位从业人员及工资总额信息' },
-  { value: '8', label: '统计局 > 研究开发项目情况信息' },
-  { value: '9', label: '统计局 > 研究开发活动及相关情况信息' },
-  { value: '10', label: '统计局 > 财务状况信息' },
-  { value: 'caizheng1', label: '财政局 > 企业基本信息' },
-  { value: '15', label: '市场监督管理局 > 企业基本信息' },
-  { value: '16', label: '市场监督管理局 > 资产状况信息' },
-  { value: '17', label: '市场监督管理局 > 对外提供保证担保信息' },
-  { value: '18', label: '市场监督管理局 > 参保信息' },
-  { value: 'haiguan1', label: '威海海关 > 企业基本信息' },
-  { value: '27', label: '科技局 > 企业概况信息' },
-  { value: '28', label: '科技局 > 企业经济概况信息' },
-  { value: '29', label: '科技局 > 企业人员概况信息' },
-  { value: '39', label: '科技局 > 研究开发项目状况信息' },
-  { value: '31', label: '科技局 > 研究开发活动及相关情况信息' },
-  { value: '32', label: '科技局 > 法人基本信息表' },
-  { value: '33', label: '工信局 > 软件和信息技术服务企业月报' },
-  { value: 'shangwu1', label: '商务局 > 企业基本信息' },
-  { value: '1', label: '税务局 > 单位税务信息' },
-  { value: '2', label: '税务局 > 利润表' },
-  { value: '3', label: '税务局 > 资产负债表' },
-  { value: '4', label: '税务局 > 现金流量表' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=42', label: '人社局 > 单位基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=36', label: '人社局 > 单位就业登记信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=37', label: '人社局 > 以工代训补贴申领信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=39', label: '人社局 > 单位参保信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=6', label: '统计局 > 单位基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=7', label: '统计局 > 单位从业人员及工资总额信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=8', label: '统计局 > 研究开发项目情况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=9', label: '统计局 > 研究开发活动及相关情况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=10', label: '统计局 > 财务状况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=caizheng1', label: '财政局 > 企业基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=15', label: '市场监督管理局 > 企业基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=16', label: '市场监督管理局 > 资产状况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=17', label: '市场监督管理局 > 对外提供保证担保信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=18', label: '市场监督管理局 > 参保信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=haiguan1', label: '威海海关 > 企业基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=27', label: '科技局 > 企业概况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=28', label: '科技局 > 企业经济概况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=29', label: '科技局 > 企业人员概况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=39', label: '科技局 > 研究开发项目状况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=31', label: '科技局 > 研究开发活动及相关情况信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=32', label: '科技局 > 法人基本信息表' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=33', label: '工信局 > 软件和信息技术服务企业月报' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=shangwu1', label: '商务局 > 企业基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=1', label: '税务局 > 单位税务信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=2', label: '税务局 > 利润表' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=3', label: '税务局 > 资产负债表' },
+  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2&table=4', label: '税务局 > 现金流量表' },
 ];
 
 const AutoCompleteExample = () => {
@@ -110,15 +110,15 @@ export const banner = [
         children: [
           {
             name: '企业信息',
-            link: '/auto_fill/company_info'
+            link: '/auto_fill_test/company_info'
           },
           {
             name: '开始报送',
-            link: '/auto_fill/input'
+            link: '/auto_fill_test/input'
           },
           {
             name: '数据分析',
-            link: '/auto_fill/analysis'
+            link: '/auto_fill_test/analysis'
           }
         ],
         className: 'banner-button',

@@ -6,10 +6,11 @@ import type { RunTimeLayoutConfig } from '@umijs/max';
 import { history, Link } from '@umijs/max';
 import defaultSettings from '../config/defaultSettings';
 import { errorConfig } from './requestErrorConfig';
-import { currentUser as queryCurrentUser } from '@/services/ant-design-pro/api';
+import { currentUser as queryCurrentUser, queryCompanyInfo } from '@/services/ant-design-pro/api';
 import React from 'react';
 const isDev = process.env.NODE_ENV === 'development';
-const loginPath = '';
+const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill_test';
+const privateLoginPath = '/auto_fill_test/user/login'
 import sensetime_logo from '../public/images/logo_svg.svg'
 
 /**
@@ -21,32 +22,74 @@ export async function getInitialState(): Promise<{
   loading?: boolean;
   fetchUserInfo?: () => Promise<API.CurrentUser | undefined>;
 }> {
+  console.log('init')
   const fetchUserInfo = async () => {
+    console.log('fetchUserInfo 1')
     try {
-      const data = sessionStorage.getItem("userInfo");
-      if (data != null) {
-        return JSON.parse(data);
-      } else {
-        history.push(loginPath);
+      const searchParams = new URLSearchParams(window.location.search);
+      const ticket = searchParams.get('ticket');
+      console.log('fetchUserInfo 2')
+      console.log(ticket)
+      if (ticket == null || ticket == undefined) {
+        console.log('fetchUserInfo 3 ticket is null')
+        console.log(ticket)
+        history.push(privateLoginPath);
         return undefined;
       }
+      const msg = await queryCurrentUser(ticket);
+      console.log(msg);
+      return msg.obj;
     } catch (error) {
-      history.push(loginPath);
+      history.push(privateLoginPath);
     }
     return undefined;
   };
-  // 如果不是登录页面，执行
-  const { location } = history;
-  if (location.pathname !== loginPath) {
-    const currentUser = await fetchUserInfo();
+  console.log(window.location.href)
+  if (window.location.href === 'https://xcyb.weihai.cn/auto_fill_test' || window.location.href === 'https://xcyb.weihai.cn/auto_fill_test/') {
     return {
       fetchUserInfo,
-      currentUser,
       settings: defaultSettings as Partial<LayoutSettings>,
     };
   }
+  console.log('init2') 
+  const exist = localStorage.getItem("currentUser");
+  console.log('init3')
+  console.log(exist)
+  if (exist != undefined || exist != null) {
+    console.log('init4')
+    console.log(window.location.href);
+    if (window.location.href.indexOf('cor') != -1 && window.location.href.indexOf('ticket') != -1) {
+      console.log('init5')
+      history.push('/auto_fill_test');
+    }
+    const company_info = await queryCompanyInfo(JSON.parse(exist).uuid);
+    if (Object.keys(company_info).length == 0) {
+      history.push('/auto_fill_test/company_info');
+    }
+    return {
+      fetchUserInfo,
+      settings: defaultSettings as Partial<LayoutSettings>,
+    };
+  }
+  // 如果storage没存入currentUser的话
+  const { location } = history;
+  console.log('init7')
+  console.log(location)
+  const currentUser = await fetchUserInfo();
+  console.log('init8')
+  console.log(currentUser)
+  if (currentUser != undefined || currentUser != null) {
+    console.log('init9')
+    console.log(currentUser)
+    localStorage.setItem('currentUser', JSON.stringify(currentUser));
+    console.log('init10')
+    console.log(window.location.href);
+    // 只要登录成功都只跳到首页
+    history.push('/auto_fill_test');
+  }
   return {
     fetchUserInfo,
+    currentUser,
     settings: defaultSettings as Partial<LayoutSettings>,
   };
 }
@@ -64,8 +107,12 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
     footerRender: () => <Footer />,
     onPageChange: () => {
       const { location } = history;
+      console.log('onPageChange')
+      console.log(initialState?.currentUser)
       // 如果没有登录，重定向到 login
       if (!initialState?.currentUser && location.pathname !== loginPath) {
+        console.log('如果没有登录，重定向到 login')
+        console.log(initialState?.currentUser)
         history.push(loginPath);
       }
     },
