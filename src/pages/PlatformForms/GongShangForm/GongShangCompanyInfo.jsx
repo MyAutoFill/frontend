@@ -122,7 +122,7 @@ export default function GongShangCompanyInfo(props) {
     {
       key: '6',
       label: '企业联系电话',
-      children: <Form.Item name="GongShang_CompanyInfo_6"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

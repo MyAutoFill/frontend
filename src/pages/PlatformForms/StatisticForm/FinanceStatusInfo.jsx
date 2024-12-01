@@ -146,7 +146,7 @@ export default function FinanceStatusInfo(props) {
     {
       key: '7',
       label: '流动资产合计',
-      children: <Form.Item name="Tech_EcoInfo_3"><Input disabled={true} addonBefore='代码' defaultValue={'4'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_20"><Input disabled={true} addonBefore='代码' defaultValue={'4'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

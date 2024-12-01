@@ -781,7 +781,7 @@ export default function CompanyEcoInfo(props) {
     {
       key: '113',
       label: '数量',
-      children: <Form.Item name="Tech_EcoInfo_73"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="GongShang_property_7"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },  
     {

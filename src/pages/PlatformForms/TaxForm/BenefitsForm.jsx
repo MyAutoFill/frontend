@@ -122,7 +122,7 @@ export default function BenefitsForm(props) {
       key: '5',
       project_name: '营业费用',
       code: '5',
-      normal_this_month: <Form.Item name="company_runningsum_2"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item name="tax_benefits_month_5"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="tax_benefits_total_273"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {

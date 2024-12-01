@@ -92,7 +92,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '1',
       label: '一、研发人员情况',
-      children: '-',
+      children: ' 以下信息为研发人员情况 ',
       span: 3
     },
     {
@@ -128,7 +128,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '10',
       label: '二、研究开发费用情况',
-      children: '-',
+      children: ' 以下信息为研究开发费用情况 ',
       span: 3
     },
     {
@@ -212,7 +212,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '18',
       label: '三、研究开发活动资产情况',
-      children: '-',
+      children: ' 以下信息为研究开发活动资产情况 ',
       span: 3,
     },
     {
@@ -230,7 +230,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '24',
       label: '四、研究开发支出资金来源情况',
-      children: '-',
+      children: ' 以下信息为研究开发支出资金来源情况 ',
       span: 3,
     },
     {
@@ -266,7 +266,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '28',
       label: '五、企业办（境内）研发机构情况',
-      children: '-',
+      children: ' 以下信息为企业办（境内）研发机构情况 ',
       span: 3
     },
     {
@@ -302,13 +302,13 @@ export default function CompanyResearchInfo(props) {
     {
       key: '34',
       label: '六、研究开发产出及相关情况',
-      children: '-',
+      children: ' 以下信息为研究开发产出及相关情况 ',
       span: 3
     },
     {
       key: '35',
       label: '（一）自主知识产权情况',
-      children: '-',
+      children: ' 以下信息为自主知识产权情况 ',
       span: 3
     },
     {
@@ -338,7 +338,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '40',
       label: '（二）新产品生产及销售情况',
-      children: '-',
+      children: ' 以下信息为新产品生产及销售情况 ',
       span: 3
     },
     {
@@ -356,7 +356,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '43',
       label: '（三）其他情况',
-      children: '-',
+      children: ' 以下信息为其他情况 ',
       span: 3
     },
     {
@@ -386,13 +386,13 @@ export default function CompanyResearchInfo(props) {
     {
       key: '48',
       label: '八、其他相关情况',
-      children: '-',
+      children: ' 以下信息为其他相关情况 ',
       span: 3
     },
     {
       key: '49',
       label: '（一）技术改造和技术获取情况',
-      children: '-',
+      children: ' 以下信息为技术改造和技术获取情况 ',
       span: 3
     },
     {
@@ -422,7 +422,7 @@ export default function CompanyResearchInfo(props) {
     {
       key: '54',
       label: '（二）企业在境外设立分支机构情况',
-      children: '-',
+      children: '以下信息为企业在境外设立分支机构情况',
       span: 3,
     },
     {

@@ -134,7 +134,7 @@ export default function PropertyStatusInfo(props) {
     {
       key: '8',
       label: '负债总额',
-      children: <Form.Item name="GongShang_property_8"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_30"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }
   ];

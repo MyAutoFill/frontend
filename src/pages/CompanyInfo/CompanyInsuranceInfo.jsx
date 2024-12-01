@@ -100,7 +100,7 @@ export default function CompanyInsuranceInfo(props) {
         <Form.Item name="HumanSocial_NewSheBao_77">
           <Select
             allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择基金来源"
             optionFilterProp="label"

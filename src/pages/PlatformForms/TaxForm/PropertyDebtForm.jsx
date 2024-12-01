@@ -472,7 +472,7 @@ export default function PropertyDebtForm(props) {
       key: '55',
       project_name: '固定资产合计',
       code: '55',
-      normal_this_month: <Form.Item rules={[{required: false}]} name="tax_debt_55"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
+      normal_this_month: <Form.Item rules={[{required: false}]} name="company_runningsum_22"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
       normal_this_year: <Form.Item name="tax_debt_total_55"><Input disabled={true} addonAfter='元' size='large' style={{ width: '250px', marginTop: '10px' }}  defaultValue={''}></Input></Form.Item>,
     },
     {
