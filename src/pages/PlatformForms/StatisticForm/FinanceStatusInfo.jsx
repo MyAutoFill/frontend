@@ -16,7 +16,12 @@ export default function FinanceStatusInfo(props) {
   }, [props.date]);
 
   const load_data = (curDate) => {
-    reqBasicData(curDate)
+    const exist = localStorage.getItem("currentUser");
+    const uuid = JSON.parse(exist).uuid;
+    if (uuid == undefined || uuid == null || uuid === '') {
+      history.push('/auto_fill_test/user/login')
+    }
+    reqBasicData(curDate, uuid)
       .then(function (res) {
         reqRatioConfig('FinanceStatusInfo')
         .then(function (config) {
@@ -951,7 +956,7 @@ export default function FinanceStatusInfo(props) {
   ];
 
   const onFinish = (values) => {
-    request('/api/get_ratio_config?table=FinanceStatusInfo', {
+    request('/api_test/get_ratio_config?table=FinanceStatusInfo', {
       method: 'GET',
     })
     .then(function (config) {
@@ -963,11 +968,17 @@ export default function FinanceStatusInfo(props) {
           new_res[key] = a.div(b).toString();
         }
       });
-      request('/api/save', {
+      const exist = localStorage.getItem("currentUser");
+      const uuid = JSON.parse(exist).uuid;
+      if (uuid == undefined || uuid == null || uuid === '') {
+        history.push('/auto_fill_test/user/login')
+      }
+      request('/api_test/save', {
         method: 'POST',
         data: {
           date: props.date,
-          data: new_res
+          data: new_res,
+          uuid: uuid
         }
       })
     })

@@ -10,7 +10,7 @@ type LoginType = 'phone' | 'account';
 
 const Page = () => {
   const [loginType, setLoginType] = useState<LoginType>('account');
-  const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill';
+  const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill_test';
   return (
     <div
       style={{
@@ -20,7 +20,7 @@ const Page = () => {
     >
       <LoginFormPage
         submitter={{ searchConfig: { submitText: '通过山东省统一身份认证平台登录'}}}
-        backgroundImageUrl="/auto_static/images/login.png"
+        backgroundImageUrl="/auto_static_test/images/login.jpg"
         containerStyle={{
           backgroundColor: 'rgba(255, 255, 255)',
         }}
