@@ -573,7 +573,7 @@ export default function BasicInfoHumanResource(props) {
     {
       key: '17',
       label: '工商登记发证日期',
-      children: <Form.Item name="hs_basic_2" ><DatePicker size='large' placeholder='请选择发证时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="hs_basic_4" ><DatePicker size='large' placeholder='请选择发证时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
