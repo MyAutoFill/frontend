@@ -362,7 +362,7 @@ export default function FinanceStatusInfo(props) {
     {
       key: '43',
       label: '所有者权益合计',
-      children: <Form.Item name="FinanceStatusInfo_44"><Input disabled={true} addonBefore='代码' defaultValue={'16'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_31"><Input disabled={true} addonBefore='代码' defaultValue={'16'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

@@ -182,7 +182,7 @@ export default function GongShangCompanyInfo(props) {
           <br></br>
           <DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_18"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="shangwu_investor7"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="GongShang_CompanyInfo_19"><Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
