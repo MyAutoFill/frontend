@@ -92,13 +92,13 @@ export default function JoinedSecurityInfo(props) {
     {
       key: '1',
       label: '从业人数',
-      children: <Form.Item name="GongShang_sercurity_1"><Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_1"><Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '其中：女性从业人数',
-      children: <Form.Item name="GongShang_sercurity_2"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_3"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
