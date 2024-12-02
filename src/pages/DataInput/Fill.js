@@ -20,6 +20,7 @@ import OuterVouch from '../PlatformForms/GongShangForm/OuterVouch'
 import PropertyStatusInfo from '../PlatformForms/GongShangForm/PropertyStatusInfo'
 import GongXinProductSales from '../PlatformForms/GongXinForm/GongXinProductSales'
 import GongXinBasicInfo from '../PlatformForms/GongXinForm/GongxinBasicInfo';
+import InfoTechMonthlyForm from '../PlatformForms/GongXinForm/InfoTechMonthlyForm';
 import HumanSocialCompanyInfo from '../PlatformForms/HumanSocialForm/CompanyInfo'
 import YiGongDaiXun from '../PlatformForms/HumanSocialForm/YiGongDaiXun'
 import CompanySocialSecurityInfo from '../PlatformForms/HumanSocialForm/CompanySocialSecurityInfo'
@@ -284,6 +285,10 @@ export default function Fill() {
         {
           key: '34',
           label: '工业产品销售',
+        },
+        {
+          key: '35',
+          label: '软件和信息技术服务业企业月报表'
         }
       ],
     },
@@ -487,6 +492,7 @@ export default function Fill() {
 
     '33': <GongXinBasicInfo date={curDate} />,
     '34': <GongXinProductSales date={curDate} />,
+    '35': <InfoTechMonthlyForm date={curDate} />,
 
     // '34': <ProjectBasicInfo date={curDate} />,
     // '35': <PMInfo date={curDate} />,

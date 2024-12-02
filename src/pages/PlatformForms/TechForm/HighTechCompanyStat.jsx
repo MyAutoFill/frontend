@@ -120,7 +120,7 @@ export default function HighTechCompanyStat(props) {
     },
     {
       label: '法人邮箱',
-      children: <Form.Item name="Tech_stat_cz"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Tech_stat_yx"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
