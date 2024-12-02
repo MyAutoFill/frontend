@@ -42,7 +42,7 @@ export default function DataInput() {
 
   const logout = () => {
     localStorage.removeItem('currentUser');
-    history.push('/auto_fill');
+    history.push('/auto_fill_test');
   }
 
   return (

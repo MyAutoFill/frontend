@@ -37,7 +37,7 @@ const options = [
 const AutoCompleteExample = () => {
   const [value, setValue] = useState(null);
   const [curStatus, setCurStatus] = useState(null);
-  const [web, setWeb] = useState(null)
+  const [web, setWeb] = useState('/auto_fill_test/input?tab=2&table=42')
  
   const onSelect = (value, option) => {
     setValue(option.label);
