@@ -10,6 +10,15 @@ import { BigNumber } from 'bignumber.js'
 import dayjs from 'dayjs';
 
 const dateFormat = 'YYYY-MM-DD';
+// 此处要根据不同表格定制
+const today = new Date();
+const fillRequiredDate = '每月15日'
+// 获取年、月、日
+var year = today.getFullYear();
+var month = today.getMonth() + 1; // 月份从0开始，需要+1
+var day = today.getDate();
+
+const countDownDays = 15-day
 
 export default function GongXinBasicInfo(props) {
 
@@ -20,17 +29,8 @@ export default function GongXinBasicInfo(props) {
     console.log('search:', value);
   };
 
-  const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
-	const [organizationTypeValue, setOrganizationTypeValue] = useState('')
-  const [signUpTypeValue, setSignUpTypeValue] = useState('')
-  const [signUpTypeSubValue, setSignUpTypeSubValue] = useState('')
-  const [companyStockControlValue, setCompanyStockControlValue] = useState('')
-  const [belongRelationValue, setBelongRelationValue] = useState('')
-  const [runningStatusValue, setRunningStatusValue] = useState('')
-  const [executeAccountingTypeValue, setExecuteAccountingTypeValue] = useState('')
-  const [executeAccountingRuleConditionValue, setExecuteAccountingRuleConditionValue] = useState('')
 
   useEffect(() => {
     load_data(props.date);
@@ -416,7 +416,10 @@ export default function GongXinBasicInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1300px'}} title="工信基本信息" bordered items={items} />
+          <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
+          <span>          </span>
+          <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
+          <Descriptions style={{width: '1300px'}} title="【报表名称】工信基本信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

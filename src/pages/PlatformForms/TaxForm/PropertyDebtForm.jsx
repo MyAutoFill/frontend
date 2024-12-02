@@ -9,6 +9,16 @@ import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
+const dateFormat = 'YYYY-MM-DD';
+// 此处要根据不同表格定制
+const today = new Date();
+const fillRequiredDate = '每月15日'
+// 获取年、月、日
+var year = today.getFullYear();
+var month = today.getMonth() + 1; // 月份从0开始，需要+1
+var day = today.getDate();
+
+const countDownDays = 15-day
 
 export default function PropertyDebtForm(props) {
 
@@ -756,6 +766,10 @@ export default function PropertyDebtForm(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
+          <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
+          <span>          </span>
+          <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span><br></br>
+          <span style={{ fontSize: '17px' }}>【报表名称】资产负债表</span>
           <Table dataSource={data} style={{width: '1300px'}} pagination={false}>
             <ColumnGroup title="资产负债信息" boarded>
               <Column title="项目名" dataIndex="project_name" key="project_name" />
