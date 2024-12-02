@@ -12,32 +12,32 @@
  */
 export default [
   {
-    path: '/user',
+    path: '/auto_fill_test/user',
     layout: false,
     routes: [
-      // {
-      //   name: 'login',
-      //   path: '/user/login',
-      //   component: './User/Login',
-      // },
+      {
+        name: 'login',
+        path: '/auto_fill_test/user/login',
+        component: './User/Login',
+      },
     ],
   },
   {
-    path: '/dashboard',
+    path: '/auto_fill_test/dashboard',
     component: './Dashboard',
   },
   {
-    path: '/input',
+    path: '/auto_fill_test/input',
     layout: false,
     component: './DataInput',
   },
   {
-    path: '/',
+    path: '/auto_fill_test/',
     layout: false,
     component: './Home',
   },
   {
-    path: '/company_info',
+    path: '/auto_fill_test/company_info',
     layout: false,
     component: './CompanyInfo',
   },
