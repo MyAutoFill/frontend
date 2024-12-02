@@ -358,9 +358,28 @@ export default function TechCompanyInfo(props) {
       span: 1
     },
     {
-      key: '44',
       label: '内容',
-      children: <Form.Item name="Tech_commpanyInfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: 
+        <Form.Item name="Statistic_CompanyInfo_58">
+          <span style={{ width: '200px', marginLeft: '10px' }}>限企业集团母公司及成员企业填写</span>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px' }}
+            size='large'
+            placeholder="请选择企业控股情况"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '集团母公司',
+                label: '1.集团母公司（核心企业或集团总部）',
+              },
+              {
+                value: '成员企业',
+                label: '2.成员企业——请填直接上级法人统一社会信用代码（尚未领取统一社会信用代码的填原组织机构代码）',
+              }
+            ]}
+          />
+        </Form.Item>,
       span: 1
     },
     {

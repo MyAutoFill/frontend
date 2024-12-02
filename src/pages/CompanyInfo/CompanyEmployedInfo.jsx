@@ -89,7 +89,7 @@ export default function CompanyEmployedInfo(props) {
   const items = [
     {
       key: '1',
-      label: <span>从业人员期末人数 *</span>,
+      label: "从业人员期末人数",
       children: <Form.Item name="company_employee_1" rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
@@ -194,7 +194,7 @@ export default function CompanyEmployedInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1300px'}} title="企业参保信息" bordered items={items} />
+          <Descriptions style={{width: '1300px'}} title="企业人员信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

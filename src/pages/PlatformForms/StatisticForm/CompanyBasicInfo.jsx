@@ -850,19 +850,29 @@ export default function StatisticCompanyBasicInfo(props) {
       span: 3
     },
     {
-      key: '32',
       label: '企业集团情况',
       children: 
-        <>
-        （限企业集团母公司及成员企业填写）本企业是
-          <Form.Item name="Statistic_CompanyInfo_58">
-            <Radio.Group disabled={disableVar} style={{marginTop: '10px' }} defaultValue={'成员企业'}>
-              <Radio value={'集团母公司'}>1.集团母公司（核心企业或集团总部）</Radio>
-              <Radio value={'成员企业'} style={{ marginLeft: '10px'}}>2.成员企业——请填直接上级法人统一社会信用代码（尚未领取统一社会信用代码的填原组织机构代码）</Radio>
-            </Radio.Group>
-          </Form.Item>
-        </>,
-      span: 3
+        <Form.Item name="Statistic_CompanyInfo_58">
+          <span style={{ width: '200px', marginLeft: '10px' }}>（限企业集团母公司及成员企业填写）本企业是</span>
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px' }}
+            size='large'
+            placeholder="请选择企业控股情况"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '集团母公司',
+                label: '1.集团母公司（核心企业或集团总部）',
+              },
+              {
+                value: '成员企业',
+                label: '2.成员企业——请填直接上级法人统一社会信用代码（尚未领取统一社会信用代码的填原组织机构代码）',
+              }
+            ]}
+          />
+        </Form.Item>,
+      span: 1
     },
     {
       key: '33',
@@ -1214,6 +1224,12 @@ export default function StatisticCompanyBasicInfo(props) {
       key: '42',
       label: '',
       children: <Form.Item name="Statistic_CompanyInfo_79"><Input size='large' addonBefore='本法人单位所属产业活动单位共' addonAfter='个' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
+    },
+    {
+      key: '42',
+      label: '连锁品牌（商标或商号名称）',
+      children: <Form.Item name="Statistic_CompanyInfo_80"><Input size='large' addonAfter='个' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     }
   ];

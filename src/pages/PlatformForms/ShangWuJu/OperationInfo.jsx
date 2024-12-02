@@ -90,13 +90,13 @@ export default function ShangwuOperationInfo(props) {
     {
       key: '1',
       label: '进口额',
-      children: <Form.Item name="shangwu_operation1" ><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_operation1"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
       label: '出口额',
-      children: <Form.Item name="Tech_EcoInfo_29" ><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="Tech_EcoInfo_29"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -137,13 +137,13 @@ export default function ShangwuOperationInfo(props) {
 		{
       key: '8',
       label: '纳税总额',
-      children: <Form.Item name="GongShang_property_7" ><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="GongShang_property_7"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
       label: '其中：增值税',
-      children: <Form.Item name="company_runningsum_19" ><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_19"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -184,13 +184,13 @@ export default function ShangwuOperationInfo(props) {
 		{
       key: '15',
       label: '净利润',
-      children: <Form.Item name="GongShang_property_6" ><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="GongShang_property_6"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '16',
       label: '其中：外方股东享有的净利润',
-      children: <Form.Item name="shangwu_operation16" ><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_operation16"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -236,13 +236,13 @@ export default function ShangwuOperationInfo(props) {
 		{
       key: '22',
       label: '本年外方股东贷款借款',
-      children: <Form.Item name="shangwu_operation22" ><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_operation22"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '23',
       label: '本年外方股东贷款还款',
-      children: <Form.Item name="shangwu_operation23" ><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_operation23"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

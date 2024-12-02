@@ -18,7 +18,9 @@ import GongShangCompanyInfo from '../PlatformForms/GongShangForm/GongShangCompan
 import JoinedSecurityInfo from '../PlatformForms/GongShangForm/JoinedSecurityInfo'
 import OuterVouch from '../PlatformForms/GongShangForm/OuterVouch'
 import PropertyStatusInfo from '../PlatformForms/GongShangForm/PropertyStatusInfo'
-import InfoTechMonthlyForm from '../PlatformForms/GongXinForm/InfoTechMonthlyForm'
+import GongXinProductSales from '../PlatformForms/GongXinForm/GongXinProductSales'
+import GongXinBasicInfo from '../PlatformForms/GongXinForm/GongxinBasicInfo';
+import InfoTechMonthlyForm from '../PlatformForms/GongXinForm/InfoTechMonthlyForm';
 import HumanSocialCompanyInfo from '../PlatformForms/HumanSocialForm/CompanyInfo'
 import YiGongDaiXun from '../PlatformForms/HumanSocialForm/YiGongDaiXun'
 import CompanySocialSecurityInfo from '../PlatformForms/HumanSocialForm/CompanySocialSecurityInfo'
@@ -175,10 +177,10 @@ export default function Fill() {
         //   key: '8',
         //   label: '研究开发项目情况信息'
         // },
-        {
-          key: '9',
-          label: '研究开发活动及相关情况信息'
-        },
+        // {
+        //   key: '9',
+        //   label: '研究开发活动及相关情况信息'
+        // },
         {
           key: '10',
           label: '财务状况信息'
@@ -278,7 +280,15 @@ export default function Fill() {
       children: [
         {
           key: '33',
-          label: '软件和信息技术服务业企业月报表信息',
+          label: '工信基本信息',
+        },
+        {
+          key: '34',
+          label: '工业产品销售',
+        },
+        {
+          key: '35',
+          label: '软件和信息技术服务业企业月报表'
         }
       ],
     },
@@ -480,7 +490,9 @@ export default function Fill() {
     '31': <ResearchDevelopActivity date={curDate} />,
     '32': <HighTechCompanyStat date={curDate} />,
 
-    '33': <InfoTechMonthlyForm date={curDate} />,
+    '33': <GongXinBasicInfo date={curDate} />,
+    '34': <GongXinProductSales date={curDate} />,
+    '35': <InfoTechMonthlyForm date={curDate} />,
 
     // '34': <ProjectBasicInfo date={curDate} />,
     // '35': <PMInfo date={curDate} />,

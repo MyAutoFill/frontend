@@ -11,7 +11,7 @@ import GongShangCompanyInfo from '../PlatformForms/GongShangForm/GongShangCompan
 import JoinedSecurityInfo from '../PlatformForms/GongShangForm/JoinedSecurityInfo'
 import OuterVouch from '../PlatformForms/GongShangForm/OuterVouch'
 import PropertyStatusInfo from '../PlatformForms/GongShangForm/PropertyStatusInfo'
-import InfoTechMonthlyForm from '../PlatformForms/GongXinForm/InfoTechMonthlyForm'
+import GongXinProductSales from '../PlatformForms/GongXinForm/GongXinProductSales'
 import HumanSocialCompanyInfo from '../PlatformForms/HumanSocialForm/CompanyInfo'
 import YiGongDaiXun from '../PlatformForms/HumanSocialForm/YiGongDaiXun'
 import CompanySocialSecurityInfo from '../PlatformForms/HumanSocialForm/CompanySocialSecurityInfo'
@@ -298,7 +298,7 @@ export default function PreviewPage() {
     '31': <ResearchDevelopActivity />,
     '32': <HighTechCompanyStat />,
 
-    '33': <InfoTechMonthlyForm />,
+    '33': <GongXinProductSales />,
 
     '34': <ProjectBasicInfo />,
     '35': <PMInfo />,
