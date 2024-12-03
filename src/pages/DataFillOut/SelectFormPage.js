@@ -132,6 +132,21 @@ export default function SelectFormPage() {
                 <Meta title="信息产业运行监测平台" description="https://ucenter.miit.gov.cn/login.jsp?toUrl=http%3A%2F%2Fxxcyqiye.miit.gov.cn%2F" />
               </Card>
             </a>
+            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("https://rsjjyfw.weihai.cn/zhaopin/login") + "&select_name=威海市就业服务平台&uuid=" + uuid} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+              <Card
+                hoverable
+                style={{
+                  height: 220,
+                  width: 300,
+                  textAlign: 'center', 
+                  margin: 'auto',
+                  marginTop: '20px'
+                }}
+                cover={<img style={{height: 100}} alt="example" src="./images/威海市就业服务平台.png" />}
+              >
+                <Meta title="威海市就业服务平台" description="https://rsjjyfw.weihai.cn/zhaopin/login" />
+              </Card>
+            </a>
           </Row>
         </div>
       </div>

@@ -63,17 +63,23 @@ export default function UploadSyncPage() {
 
   const zcfzProps = {
     name: 'file',
-    action: '/excelAnalysis/excel/convert',
+    action: '/zhby_api/excelAnalysis/excel/convert',
     data: {
       type: 'zcfz'
     },
     onChange(info) {
       if (info.file.status === 'done') {
-        request('/api/parse_table', {
+        const exist = localStorage.getItem("currentUser");
+        const uuid = JSON.parse(exist).uuid;
+        if (uuid == undefined || uuid == null || uuid === '') {
+          history.push('/auto_fill_test/user/login')
+        }
+        request('/api_test/parse_table', {
           method: 'POST',
           data: {
             parse_data: info.file.response.data,
-            type: 'zcfz'
+            type: 'zcfz',
+            uuid: uuid
           }
         })
         .then(function (res) {
@@ -109,11 +115,17 @@ export default function UploadSyncPage() {
             cancelText: '取消',
             onCancel:()=>{},
             onOk:(res)=>{
-              request('/api/save_from_excel', {
+              const exist = localStorage.getItem("currentUser");
+              const uuid = JSON.parse(exist).uuid;
+              if (uuid == undefined || uuid == null || uuid === '') {
+                history.push('/auto_fill_test/user/login')
+              }
+              request('/api_test/save_from_excel', {
                 method: 'POST',
                 data: {
-                  date: '2024-09',
-                  data: data
+                  date: '2024-12',
+                  data: data,
+                  uuid: uuid
                 }
               })
               .then(function (res) {
@@ -131,17 +143,23 @@ export default function UploadSyncPage() {
 
   const lrProps = {
     name: 'file',
-    action: '/excelAnalysis/excel/convert',
+    action: '/zhby_api/excelAnalysis/excel/convert',
     data: {
       type: 'lr'
     },
     onChange(info) {
       if (info.file.status === 'done') {
-        request('/api/parse_table', {
+        const exist = localStorage.getItem("currentUser");
+        const uuid = JSON.parse(exist).uuid;
+        if (uuid == undefined || uuid == null || uuid === '') {
+          history.push('/auto_fill_test/user/login')
+        }
+        request('/api_test/parse_table', {
           method: 'POST',
           data: {
             parse_data: info.file.response.data,
-            type: 'lr'
+            type: 'lr',
+            uuid: uuid
           }
         })
         .then(function (res) {
@@ -177,11 +195,17 @@ export default function UploadSyncPage() {
             cancelText: '取消',
             onCancel:()=>{},
             onOk:(res)=>{
-              request('/api/save_from_excel', {
+              const exist = localStorage.getItem("currentUser");
+              const uuid = JSON.parse(exist).uuid;
+              if (uuid == undefined || uuid == null || uuid === '') {
+                history.push('/auto_fill_test/user/login')
+              }
+              request('/api_test/save_from_excel', {
                 method: 'POST',
                 data: {
-                  date: '2024-09',
-                  data: data
+                  date: '2024-12',
+                  data: data,
+                  uuid: uuid
                 }
               })
               .then(function (res) {
@@ -199,17 +223,23 @@ export default function UploadSyncPage() {
 
   const xjllProps = {
     name: 'file',
-    action: '/excelAnalysis/excel/convert',
+    action: '/zhby_api/excelAnalysis/excel/convert',
     data: {
       type: 'xjll'
     },
     onChange(info) {
       if (info.file.status === 'done') {
-        request('/api/parse_table', {
+        const exist = localStorage.getItem("currentUser");
+        const uuid = JSON.parse(exist).uuid;
+        if (uuid == undefined || uuid == null || uuid === '') {
+          history.push('/auto_fill_test/user/login')
+        }
+        request('/api_test/parse_table', {
           method: 'POST',
           data: {
             parse_data: info.file.response.data,
-            type: 'xjll'
+            type: 'xjll',
+            uuid: uuid
           }
         })
         .then(function (res) {
@@ -245,11 +275,17 @@ export default function UploadSyncPage() {
             cancelText: '取消',
             onCancel:()=>{},
             onOk:(res)=>{
-              request('/api/save_from_excel', {
+              const exist = localStorage.getItem("currentUser");
+              const uuid = JSON.parse(exist).uuid;
+              if (uuid == undefined || uuid == null || uuid === '') {
+                history.push('/auto_fill_test/user/login')
+              }
+              request('/api_test/save_from_excel', {
                 method: 'POST',
                 data: {
-                  date: '2024-09',
-                  data: data
+                  date: '2024-12',
+                  data: data,
+                  uuid: uuid
                 }
               })
               .then(function (res) {
