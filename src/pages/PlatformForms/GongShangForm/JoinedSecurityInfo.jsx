@@ -8,6 +8,16 @@ import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
+const dateFormat = 'YYYY-MM-DD';
+// 此处要根据不同表格定制
+const today = new Date();
+const fillRequiredDate = '每月15日'
+// 获取年、月、日
+var year = today.getFullYear();
+var month = today.getMonth() + 1; // 月份从0开始，需要+1
+var day = today.getDate();
+
+const countDownDays = 15-day
 
 export default function JoinedSecurityInfo(props) {
 
@@ -92,13 +102,13 @@ export default function JoinedSecurityInfo(props) {
     {
       key: '1',
       label: '从业人数',
-      children: <Form.Item name="GongShang_sercurity_1"><Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_1"><Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
       label: '其中：女性从业人数',
-      children: <Form.Item name="GongShang_sercurity_2"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_3"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -203,7 +213,10 @@ export default function JoinedSecurityInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1300px'}} title="参保信息" bordered items={items} />
+          <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
+          <span>          </span>
+          <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
+          <Descriptions style={{width: '1300px'}} title="【报表名称】参保信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

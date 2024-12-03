@@ -9,6 +9,8 @@ import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 import dayjs from 'dayjs';
 
+const { TextArea } = Input;
+
 export default function BasicCompanyInfo(props) {
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
@@ -190,6 +192,12 @@ export default function BasicCompanyInfo(props) {
       key: '10',
       label: '组织机构代码',
       children: <Form.Item name="company_basicinfo_10" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
+    },
+    {
+      key: '31',
+      label: '公司介绍',
+      children: <Form.Item name="company_basicinfo_47"><TextArea rows={4} placeholder="请输入公司介绍" /></Form.Item>,
       span: 3
     },
     {
@@ -885,6 +893,12 @@ export default function BasicCompanyInfo(props) {
       label: '产业活动单位数',
       children: <Form.Item name="company_basicinfo_46"><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
+    },
+    {
+      key: '31',
+      label: '公司介绍',
+      children: <Form.Item name="company_basicinfo_47"><TextArea rows={4} placeholder="请输入公司介绍" /></Form.Item>,
+      span: 3
     },
   ];
 

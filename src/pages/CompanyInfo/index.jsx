@@ -6,7 +6,7 @@ import CompanyRunningSumInfo from './CompanyRunningSumInfo'
 import CompanyResearchInfo from './CompanyResearchInfo'
 import 'rc-banner-anim/assets/index.css';
 import { Menu, DatePicker, ConfigProvider } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, PaperClipOutlined, FileDoneOutlined, UserOutlined, ShopOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
 import { history } from '@umijs/max';
 
@@ -20,7 +20,7 @@ export default function CompanyInfo() {
     {
       label: '企业基本信息',
       key: '1',
-      icon: <AppstoreOutlined />
+      icon: <PaperClipOutlined />
     },
     {
       type: 'divider',
@@ -28,7 +28,7 @@ export default function CompanyInfo() {
     {
       label: '企业参保信息',
       key: '2',
-      icon: <AppstoreOutlined />,
+      icon: <FileDoneOutlined />
     },
     {
       type: 'divider',
@@ -36,7 +36,7 @@ export default function CompanyInfo() {
     {
       label: '企业从业人员信息',
       key: '3',
-      icon: <AppstoreOutlined />
+      icon: <UserOutlined />
     },
     // {
     //   type: 'divider',
@@ -60,7 +60,7 @@ export default function CompanyInfo() {
     {
       key: '6',
       label: '企业经济状况信息',
-      icon: <AppstoreOutlined />
+      icon: <ShopOutlined />
     },
     // {
     //   type: 'divider',

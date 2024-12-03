@@ -1,9 +1,11 @@
 import { Menu, 
   DatePicker, 
   Row, 
-  Col } from 'antd';
+  Col,
+  icon } from 'antd';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { SolutionOutlined, BarChartOutlined, MoneyCollectOutlined, CameraOutlined, BarcodeOutlined, RobotOutlined, ScheduleOutlined, TransactionOutlined, TruckOutlined } from '@ant-design/icons';
 
 import PMInfo from '../PlatformForms/CityGovernment/PMInfo'
 import ProjectBasicInfo from '../PlatformForms/CityGovernment/ProjectBasicInfo'
@@ -125,6 +127,7 @@ export default function Fill() {
     {
       key: 'platform12',
       label: '人社局',
+      icon: <SolutionOutlined />,
       children: [
         {
           key: 'g1',
@@ -164,6 +167,7 @@ export default function Fill() {
     {
       key: 'platform2',
       label: '统计局',
+      icon: <BarChartOutlined />,
       children: [
         {
           key: '6',
@@ -193,6 +197,7 @@ export default function Fill() {
     {
       key: 'caizhengju',
       label: '财政局',
+      icon: <MoneyCollectOutlined />,
       children: [
         {
           key: 'caizheng1',
@@ -206,6 +211,7 @@ export default function Fill() {
     {
       key: 'platform4',
       label: '市场监督管理局',
+      icon: <CameraOutlined />,
       children: [
         {
           key: '15',
@@ -231,6 +237,7 @@ export default function Fill() {
     {
       key: 'weihaihaiguan',
       label: '威海海关',
+      icon: <BarcodeOutlined />,
       children: [
         {
           key: 'weihaihaiguan_sub',
@@ -244,6 +251,7 @@ export default function Fill() {
     {
       key: 'platform8',
       label: '科技局',
+      icon: <RobotOutlined />,
       children: [
         {
           key: '27',
@@ -277,6 +285,7 @@ export default function Fill() {
     {
       key: 'platform9',
       label: '工信局',
+      icon: <ScheduleOutlined />,
       children: [
         {
           key: '33',
@@ -298,6 +307,7 @@ export default function Fill() {
     {
       key: 'shangwuju',
       label: '商务局',
+      icon: <TruckOutlined />,
       children: [
         {
           key: 'shangwu1',
@@ -319,6 +329,7 @@ export default function Fill() {
     {
       key: 'platform1',
       label: '税务局',
+      icon: <TransactionOutlined />,
       children: [
         {
           key: '1',

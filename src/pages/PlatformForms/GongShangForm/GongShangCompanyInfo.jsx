@@ -8,6 +8,16 @@ import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
+const dateFormat = 'YYYY-MM-DD';
+// 此处要根据不同表格定制
+const today = new Date();
+const fillRequiredDate = '每月15日'
+// 获取年、月、日
+var year = today.getFullYear();
+var month = today.getMonth() + 1; // 月份从0开始，需要+1
+var day = today.getDate();
+
+const countDownDays = 15-day
 
 export default function GongShangCompanyInfo(props) {
 
@@ -182,7 +192,7 @@ export default function GongShangCompanyInfo(props) {
           <br></br>
           <DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_18"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="shangwu_investor7"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <Form.Item name="GongShang_CompanyInfo_19"><Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
@@ -265,7 +275,10 @@ export default function GongShangCompanyInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1300px'}} title="企业基本信息" bordered items={items} />
+          <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
+          <span>          </span>
+          <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
+          <Descriptions style={{width: '1300px'}} title="【报表名称】企业基本信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"
