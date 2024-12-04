@@ -153,10 +153,10 @@ export default function Fill() {
               key: '39',
               label: '单位参保信息',
             },
-            // {
-            //   key: '40',
-            //   label: '就业需求信息',
-            // }
+            {
+              key: '40',
+              label: '就业需求信息',
+            }
           ],
         },
       ],
@@ -512,7 +512,7 @@ export default function Fill() {
     '37': <YiGongDaiXun date={curDate} />,
     // '38': <NewSheBao date={curDate} />,
     '39': <CompanySocialSecurityInfo date={curDate} />,
-    // '40': <JobDemandInfo date={curDate} />,
+    '40': <JobDemandInfo date={curDate} />,
 
     '41': <CompanyInfoChange date={curDate} />,
     '42': <BasicInfoHumanResource date={curDate} />
