@@ -41,6 +41,7 @@ const Page = () => {
                 fontWeight: 'normal',
                 fontSize: 14,
               }}
+              href='https://xcyb.weihai.cn/api_test/download_exe'
             >
               填报客户端下载
             </a>
