@@ -102,7 +102,7 @@ export default function GongShangCompanyInfo(props) {
     {
       key: '1',
       label: <span style={{fontSize: '16px'}}>报告年度</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {
@@ -183,14 +183,14 @@ export default function GongShangCompanyInfo(props) {
           <br></br>
           <span size='large' style={{ fontSize: '16px' }}>认缴出资时间</span>
           <br></br>
-          <DatePicker disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
           <Form.Item name="GongShang_CompanyInfo_16"><Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large' style={{ fontSize: '16px' }}>实缴出资时间</span>
           <br></br>
-          <DatePicker disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
           <Form.Item name="shangwu_investor7"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
@@ -212,7 +212,7 @@ export default function GongShangCompanyInfo(props) {
           <br></br>
           <span size='large' style={{ fontSize: '16px' }}>股权变更日期</span>
           <br></br>
-          <DatePicker disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
         </>,
       span: 1.5
     },

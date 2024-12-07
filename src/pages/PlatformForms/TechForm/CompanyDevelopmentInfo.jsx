@@ -126,7 +126,7 @@ export default function CompanyDevelopmentInfo(props) {
     {
       key: '5',
       label: '有效期至',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     }
   ];

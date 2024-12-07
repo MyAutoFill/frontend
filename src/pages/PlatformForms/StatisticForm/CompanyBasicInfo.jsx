@@ -390,13 +390,13 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '22',
       label: <span style={{fontSize: '16px'}}>成立时间（所有单位填报）</span>,
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '23',
       label: <span style={{fontSize: '16px'}}>开业时间（仅限企业填报）</span>,
-      children: <Form.Item name="company_basicinfo_open_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择开业时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_open_date"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择开业时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {

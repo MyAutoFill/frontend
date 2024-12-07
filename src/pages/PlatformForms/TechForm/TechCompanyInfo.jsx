@@ -126,7 +126,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '5',
       label: <span style={{fontSize: '16px'}}>有效期至</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginTop: '10px'}}/>,
       span: 13
     },
     {
@@ -149,7 +149,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '8',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -257,7 +257,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '26',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -517,7 +517,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '62',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -553,7 +553,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '68',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择入孵时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择入孵时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -571,7 +571,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '71',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择毕业时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择毕业时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -625,7 +625,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '80',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

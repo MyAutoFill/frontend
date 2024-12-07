@@ -164,12 +164,12 @@ export default function HighTechCompanyStat(props) {
     },
     {
       label: <span style={{fontSize: '16px'}}>身份证有效期开始时间</span>,
-      children: <Form.Item name="Tech_stat_IDstart"><DatePicker size='large' placeholder='身份证有效期开始时间' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="Tech_stat_IDstart"><DatePicker format="YYYY-MM-DD" size='large' placeholder='身份证有效期开始时间' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       label: <span style={{fontSize: '16px'}}>身份证有效期结束时间</span>,
-      children: <Form.Item name="Tech_stat_IDend"><DatePicker size='large' placeholder='身份证有效期结束时间' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="Tech_stat_IDend"><DatePicker format="YYYY-MM-DD" size='large' placeholder='身份证有效期结束时间' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
@@ -329,7 +329,7 @@ export default function HighTechCompanyStat(props) {
     },
     {
       label: <span style={{fontSize: '16px'}}>单位成立日期</span>,
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择成立日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
@@ -354,12 +354,12 @@ export default function HighTechCompanyStat(props) {
     },
     {
       label: <span style={{fontSize: '16px'}}>执照有效起始日期</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5,
     },
     {
       label: <span style={{fontSize: '16px'}}>执照有效终止日期</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5,
     },
     {
