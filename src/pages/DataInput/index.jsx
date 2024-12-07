@@ -83,7 +83,6 @@ export default function DataInput() {
               <Steps
                 current={currentKey - 1}
                 onChange={stepOnChange}
-                style={{width: 1700}}
                 items={[
                   {
                     title: <span style={{fontSize: '24px'}}>信息同步</span>,

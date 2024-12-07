@@ -1,4 +1,4 @@
-import { Card, Row, } from 'antd';
+import { Card, } from 'antd';
 const { Meta } = Card;
 import { request } from 'umi';
 
@@ -22,11 +22,11 @@ export default function SelectFormPage() {
 
   return (
     <>
-      <div style={{height: 1200, width:1750, overflow: 'scroll'}}>
+      <div style={{height: 1200}}>
         <br></br>
         <span style={{fontSize:'24px'}}><b>点击下列卡片进入平台网站，登录后进入需要填写的表格后进行填充</b></span>
         <div style={{ textAlign: 'center', margin: 'auto' }}>
-          <Row>
+          <div style={{display: 'flex', flexWrap: 'wrap', overflow: 'auto', height: '700px'}}>
             <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("https://etax.shandong.chinatax.gov.cn:8443/loginb/") + "&select_name=山东省电子税务局&uuid=" + uuid} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
               <Card
                 hoverable
@@ -147,7 +147,7 @@ export default function SelectFormPage() {
                 <Meta title="威海市就业服务平台" description="https://rsjjyfw.weihai.cn/zhaopin/login"  style={{fontSize: '16px'}}/>
               </Card>
             </a>
-          </Row>
+          </div>
         </div>
       </div>
     </>
