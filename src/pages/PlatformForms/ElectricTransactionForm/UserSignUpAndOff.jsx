@@ -122,13 +122,13 @@ export default function UserSignUpandOff(props) {
     {
       key: '2',
       label: '参与交易开始时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择交易开始时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择交易开始时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
       key: '3',
       label: '参与交易结束时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择交易结束时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择交易结束时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {

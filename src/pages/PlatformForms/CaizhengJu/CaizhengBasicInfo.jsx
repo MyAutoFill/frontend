@@ -586,7 +586,7 @@ export default function CaizhengBasicInfo(props) {
     {
       key: '16',
       label: <span style={{fontSize: '16px'}}>单位成立时间</span>,
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -604,7 +604,7 @@ export default function CaizhengBasicInfo(props) {
     {
       key: '15',
       label: <span style={{fontSize: '16px'}}>工商登记有效期（开始时间）</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_66"><DatePicker size='large' placeholder='请选择开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_66"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -616,19 +616,19 @@ export default function CaizhengBasicInfo(props) {
     {
       key: '17',
       label: <span style={{fontSize: '16px'}}>工商登记发证日期</span>,
-      children: <Form.Item name="hs_basic_4" ><DatePicker size='large' placeholder='请选择发证时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="hs_basic_4" ><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择发证时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: <span style={{fontSize: '16px'}}>执照有效起始日期</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
       key: '19',
       label: <span style={{fontSize: '16px'}}>执照有效终止日期</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -640,7 +640,7 @@ export default function CaizhengBasicInfo(props) {
     {
       key: '22',
       label: <span style={{fontSize: '16px'}}>批准日期</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {

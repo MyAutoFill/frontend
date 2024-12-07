@@ -141,13 +141,13 @@ export default function ProjectBasicInfo(props) {
     {
       key: '9',
       label: '拟开工时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择拟开工时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择拟开工时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
       key: '10',
       label: '拟建成时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择拟建成时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择拟建成时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
@@ -195,7 +195,7 @@ export default function ProjectBasicInfo(props) {
     {
       key: '18',
       label: '申报日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择申报日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择申报日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {

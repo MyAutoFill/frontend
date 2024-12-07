@@ -170,7 +170,7 @@ export default function ElectricUserInfo(props) {
     {
       key: '11',
       label: '成立日期',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择成立日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择成立日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -308,7 +308,7 @@ export default function ElectricUserInfo(props) {
     {
       key: '33',
       label: '注册失效时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择注册失效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择注册失效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -374,7 +374,7 @@ export default function ElectricUserInfo(props) {
     {
       key: '42',
       label: '注册生效时间',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择注册生效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择注册生效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

@@ -403,7 +403,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '21',
       label: <span style={{fontSize: '16px'}}>成立时间（所有单位填报）</span>,
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 3
     },
     {

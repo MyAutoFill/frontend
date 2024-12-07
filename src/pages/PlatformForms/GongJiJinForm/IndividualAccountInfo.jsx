@@ -195,7 +195,7 @@ export default function IndividualAccountInfo(props) {
     {
       key: '17',
       label: '启封年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择启封年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择启封年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

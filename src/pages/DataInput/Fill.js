@@ -532,7 +532,7 @@ export default function Fill() {
         </Col>
         <Col span={20}>
           <div style={{marginLeft: 30, height: 950 }}>
-            <DatePicker defaultValue={dayjs()} onChange={onChange} picker="month"/>
+            <DatePicker format="YYYY-MM-DD" defaultValue={dayjs()} onChange={onChange} picker="month"/>
             {pageMap[selectedKey]}
           </div>
         </Col>
