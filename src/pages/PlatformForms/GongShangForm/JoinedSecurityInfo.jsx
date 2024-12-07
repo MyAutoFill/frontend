@@ -101,19 +101,19 @@ export default function JoinedSecurityInfo(props) {
   const items = [
     {
       key: '1',
-      label: '从业人数',
+      label: <span style={{fontSize: '16px'}}>从业人数</span>,
       children: <Form.Item name="company_employee_1"><Input disabled={disableVar} size='large' addonAfter='人' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
-      label: '其中：女性从业人数',
+      label: <span style={{fontSize: '16px'}}>其中：女性从业人数</span>,
       children: <Form.Item name="company_employee_3"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
-      label: '参保各险种人数',
+      label: <span style={{fontSize: '16px'}}>参保各险种人数</span>,
       children: 
         <>
           <Form.Item name="GongShang_sercurity_3"><Input disabled={disableVar} size='large' addonBefore='城镇职工基本养老保险' addonAfter='人' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
@@ -130,7 +130,7 @@ export default function JoinedSecurityInfo(props) {
     },
     {
       key: '4',
-      label: '单位缴费基数',
+      label: <span style={{fontSize: '16px'}}>单位缴费基数</span>,
       children: 
         <>
           <Form.Item name="GongShang_sercurity_8"><Input disabled={disableVar} size='large' addonBefore='单位参加城镇职工基本养老保险缴费基数' addonAfter='万元' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
@@ -145,7 +145,7 @@ export default function JoinedSecurityInfo(props) {
     },
     {
       key: '5',
-      label: '本期实际缴费金额',
+      label: <span style={{fontSize: '16px'}}>本期实际缴费金额</span>,
       children: 
         <>
           <Form.Item name="GongShang_sercurity_12"><Input disabled={disableVar} size='large' addonBefore='参加城镇职工基本养老保险本期实际缴费金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
@@ -162,7 +162,7 @@ export default function JoinedSecurityInfo(props) {
     },
     {
       key: '6',
-      label: '姓名',
+      label: <span style={{fontSize: '16px'}}>本期实际欠缴金额</span>,
       children: 
         <>
           <Form.Item name="GongShang_sercurity_17"><Input disabled={disableVar} size='large' addonBefore='单位参加城镇职工基本养老保险累计欠缴金额' addonAfter='万元' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>

@@ -86,48 +86,48 @@ export default function DataInput() {
                 style={{width: 1700}}
                 items={[
                   {
-                    title: '信息同步',
-                    description: '第一步：数据上传同步',
+                    title: <span style={{fontSize: '24px'}}>信息同步</span>,
+                    description: <span style={{fontSize: '14px'}}>第一步：数据上传同步</span>,
                   },
                   {
-                    title: '信息填写',
-                    description: '第二步：填写对应信息',
+                    title: <span style={{fontSize: '24px'}}>信息填写</span>,
+                    description: <span style={{fontSize: '14px'}}>第二步：填写对应信息</span>,
                   },
                   {
-                    title: '信息填报',
-                    description: '第三步：检查预填结果',
+                    title: <span style={{fontSize: '24px'}}>信息填报</span>,
+                    description: <span style={{fontSize: '14px'}}>第三步：检查预填结果</span>,
                   },
                   {
-                    title: '数据填报',
-                    description: '第四步：登录平台填报',
+                    title: <span style={{fontSize: '24px'}}>数据填报</span>,
+                    description: <span style={{fontSize: '14px'}}>第四步：登录平台填报</span>,
                   },
                 ]}
               />
               <Divider />
               <Tabs destroyInactiveTabPane={true} defaultActiveKey='1' activeKey={currentKey.toString()} animated={true} type='card' size='large' onChange={tabsOnChange}>
                 <TabPane
-                  tab={<span><CloudUploadOutlined />上传同步</span>}
+                  tab={<span style={{fontSize: '18px'}}><CloudUploadOutlined style={{fontSize: '20px'}}/>  上传同步</span>}
                   key="1"
                   size="large"
                 >
                   <UploadSyncPage />
                 </TabPane>
                 <TabPane
-                  tab={<span><OrderedListOutlined />信息填写</span>}
+                  tab={<span style={{fontSize: '18px'}}><OrderedListOutlined style={{fontSize: '20px'}}/>  信息填写</span>}
                   key="2"
                   size="large"
                 >
                   <Fill />
                 </TabPane>
                 <TabPane
-                  tab={<span><SafetyOutlined />填写预览</span>}
+                  tab={<span style={{fontSize: '18px'}}><SafetyOutlined style={{fontSize: '20px'}}/>  填写预览</span>}
                   key="3"
                   size="large"
                 >
                   <PreviewPage />
                 </TabPane>
                 <TabPane
-                  tab={<span><FileSyncOutlined />数据申报</span>}
+                  tab={<span style={{fontSize: '18px'}}><FileSyncOutlined style={{fontSize: '20px'}}/>  数据申报</span>}
                   key="4"
                   size="large"
                 >

@@ -7,15 +7,6 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { SolutionOutlined, BarChartOutlined, MoneyCollectOutlined, CameraOutlined, BarcodeOutlined, RobotOutlined, ScheduleOutlined, TransactionOutlined, TruckOutlined } from '@ant-design/icons';
 
-import PMInfo from '../PlatformForms/CityGovernment/PMInfo'
-import ProjectBasicInfo from '../PlatformForms/CityGovernment/ProjectBasicInfo'
-import ElectricUserInfo from '../PlatformForms/ElectricTransactionForm/ElectricUserInfo'
-import UserRecognizeInfo from '../PlatformForms/ElectricTransactionForm/UserRecognizeInfo'
-import UserSignUpAndOff from '../PlatformForms/ElectricTransactionForm/UserSignUpAndOff'
-import IndividualAccountInfo from '../PlatformForms/GongJiJinForm/IndividualAccountInfo'
-import IndividualCityTransferInfo from '../PlatformForms/GongJiJinForm/IndividualCityTransferInfo'
-import PaymentSignUpInfo from '../PlatformForms/GongJiJinForm/PaymentSignUpInfo'
-import PersonalPaymentDetails from '../PlatformForms/GongJiJinForm/PersonalPaymentDetails'
 import GongShangCompanyInfo from '../PlatformForms/GongShangForm/GongShangCompanyInfo'
 import JoinedSecurityInfo from '../PlatformForms/GongShangForm/JoinedSecurityInfo'
 import OuterVouch from '../PlatformForms/GongShangForm/OuterVouch'
@@ -27,7 +18,7 @@ import HumanSocialCompanyInfo from '../PlatformForms/HumanSocialForm/CompanyInfo
 import YiGongDaiXun from '../PlatformForms/HumanSocialForm/YiGongDaiXun'
 import CompanySocialSecurityInfo from '../PlatformForms/HumanSocialForm/CompanySocialSecurityInfo'
 import BasicInfoHumanResource from '../PlatformForms/HumanSocialForm/BasicInfo'
-import NewSheBao from '../PlatformForms/HumanSocialForm/NewSheBao'
+import CaizhengBasicInfo from '../PlatformForms/CaizhengJu/CaizhengBasicInfo';
 import JobDemandInfo from '../PlatformForms/HumanSocialForm/JobDemandInfo'
 import StatisticCompanyBasicInfo from '../PlatformForms/StatisticForm/CompanyBasicInfo'
 import CompanyTotalSalary from '../PlatformForms/StatisticForm/CompanyTotalSalary'
@@ -41,11 +32,6 @@ import CompanyEmployeeInfo from '../PlatformForms/TechForm/CompanyEmployeeInfo'
 import HighTechCompanyStat from '../PlatformForms/TechForm/HighTechCompanyStat'
 import ResearchDevelopActivity from '../PlatformForms/TechForm/ResearchDevelopActivity'
 import TechCompanyInfo from '../PlatformForms/TechForm/TechCompanyInfo'
-import AddOrRemove from '../PlatformForms/YiBaoForm/AddOrRemove'
-import CompanySecurityInfo from '../PlatformForms/YiBaoForm/CompanySecurityInfo'
-import PeopleInfo from '../PlatformForms/YiBaoForm/PeopleInfo'
-import YiBaoCompanyInfo from '../PlatformForms/YiBaoForm/YiBaoCompanyInfo'
-import HospitalHelpInfos from '../PlatformForms/ZongGongHuiForm/HospitalHelpInfos'
 import BenefitsForm from '../PlatformForms/TaxForm/BenefitsForm'
 import PropertyDebtForm from '../PlatformForms/TaxForm/PropertyDebtForm'
 import CashFlowForm from '../PlatformForms/TaxForm/CashFlowForm'
@@ -468,6 +454,7 @@ export default function Fill() {
     '10': <FinanceStatusInfo date={curDate} />,
 
     'weihaihaiguan_sub': <HaiguanAnnualReport date={curDate} />,
+    'caizheng1': <CaizhengBasicInfo date={curDate} />,
 
     'shangwu1': <ShangwuBasicInfo date={curDate} />,
     'shangwu2': <ShangwuInvestorInfo date={curDate} />,
@@ -529,6 +516,7 @@ export default function Fill() {
           <Menu
             style={{
               width: '100%',
+              fontSize: '18px'
             }}
             openKeys={openKey}
             selectedKeys={selectedKey}

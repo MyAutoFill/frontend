@@ -101,277 +101,277 @@ export default function TechCompanyInfo(props) {
   const items = [
     {
       key: '1',
-      label: '表号',
-      children: 'GQ-001',
+      label: <span style={{fontSize: '16px'}}>表号</span>,
+      children: <span style={{fontSize: '16px'}}>GQ-001</span>,
       span: 3
     },
     {
       key: '2',
-      label: '制定机关',
-      children: '科学技术部',
+      label: <span style={{fontSize: '16px'}}>制定机关</span>,
+      children: <span style={{fontSize: '16px'}}>科学技术部</span>,
       span: 1
     },
     {
       key: '3',
-      label: '批准机关',
-      children: '国家统计局',
+      label: <span style={{fontSize: '16px'}}>批准机关</span>,
+      children: <span style={{fontSize: '16px'}}>国家统计局</span>,
       span: 3
     },
     {
       key: '4',
-      label: '批准文号',
-      children: '国统制〔2022〕11号',
+      label: <span style={{fontSize: '16px'}}>批准文号</span>,
+      children: <span style={{fontSize: '16px'}}>国统制〔2022〕11号</span>,
       span: 1
     },
     {
       key: '5',
-      label: '有效期至',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      label: <span style={{fontSize: '16px'}}>有效期至</span>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginTop: '10px'}}/>,
       span: 13
     },
     {
       label: '',
-      children: '',
+      children: <span style={{fontSize: '16px'}}></span>,
       span: 3
     },
     {
       key: '6',
-      label: '指标名称',
-      children: '已进区企业被批准入区时间',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>已进区企业被批准入区时间</span>,
       span: 1
     },
     {
       key: '7',
-      label: '代码',
-      children: 'qb08',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb08</span>,
       span: 1
     },
     {
       key: '8',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '9',
-      label: '指标名称',
-      children: '企业隶属关系',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业隶属关系</span>,
       span: 1
     },
     {
       key: '10',
-      label: '代码',
-      children: 'qb101',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb101</span>,
       span: 1
     },
     {
       key: '11',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_r9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
-      label: '指标名称',
-      children: '主要业务活动或主要产品',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>主要业务活动或主要产品</span>,
       span: 1
     },
     {
       key: '13',
-      label: '代码',
-      children: 'qb03_0',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb03_0</span>,
       span: 1
     },
     {
       key: '14',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
-      label: '指标名称',
-      children: '行业代码',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>行业代码</span>,
       span: 1
     },
     {
       key: '16',
-      label: '代码',
-      children: 'qb03_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb03_1</span>,
       span: 1
     },
     {
       key: '17',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
-      label: '指标名称',
-      children: '企业执行会计标准类别',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业执行会计标准类别</span>,
       span: 1
     },
     {
       key: '19',
-      label: '代码',
-      children: 'qb20_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb20_1</span>,
       span: 1
     },
     {
       key: '20',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_r10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '21',
-      label: '指标名称',
-      children: '企业执行会计准则情况',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业执行会计准则情况</span>,
       span: 1
     },
     {
       key: '22',
-      label: '代码',
-      children: 'qb20',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb20</span>,
       span: 1
     },
     {
       key: '23',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_r11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
-      label: '指标名称',
-      children: '企业注册时间',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业注册时间</span>,
       span: 1
     },
     {
       key: '25',
-      label: '代码',
-      children: 'qb04',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb04</span>,
       span: 1
     },
     {
       key: '26',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '27',
-      label: '指标名称',
-      children: '注册资金',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>注册资金</span>,
       span: 1
     },
     {
       key: '28',
-      label: '代码',
-      children: 'qb04_0',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb04_0</span>,
       span: 1
     },
     {
       key: '29',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_45"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '30',
-      label: '指标名称',
-      children: '登记注册类型',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>登记注册类型</span>,
       span: 1
     },
     {
       key: '31',
-      label: '代码',
-      children: 'qb06',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb06</span>,
       span: 1
     },
     {
       key: '32',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_r4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
-      label: '企业投资信息填报',
-      children: '限港澳台商和外商投资企业填报，主要外资来源国或地区的国别（地区）名称代码及外资出资比例',
+      label: <span style={{fontSize: '16px'}}>企业投资信息填报</span>,
+      children: <span style={{fontSize: '16px'}}>限港澳台商和外商投资企业填报，主要外资来源国或地区的国别（地区）名称代码及外资出资比例</span>,
       span: 3
     },
     {
       key: '33',
-      label: '指标名称',
-      children: '国别或地区代码',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>国别或地区代码</span>,
       span: 1
     },
     {
       key: '34',
-      label: '代码',
-      children: 'qb06_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb06_1</span>,
       span: 1
     },
     {
       key: '35',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_c1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '36',
-      label: '指标名称',
-      children: '出资比例',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>出资比例</span>,
       span: 1
     },
     {
       key: '37',
-      label: '代码',
-      children: 'qb06_2',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb06_2</span>,
       span: 1
     },
     {
       key: '38',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '39',
-      label: '指标名称',
-      children: '企业控股情况',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业控股情况</span>,
       span: 1
     },
     {
       key: '40',
-      label: '代码',
-      children: 'qb18',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb18</span>,
       span: 1
     },
     {
       key: '41',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_r8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '42',
-      label: '指标名称',
-      children: '企业集团情况',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业集团情况</span>,
       span: 1
     },
     {
       key: '43',
-      label: '代码',
-      children: 'qb09',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb09</span>,
       span: 1
     },
     {
       label: '内容',
       children: 
         <Form.Item name="Statistic_CompanyInfo_58">
-          <span style={{ width: '200px', marginLeft: '10px' }}>限企业集团母公司及成员企业填写</span>
+          <span style={{ width: '200px', marginLeft: '10px', fontSize: '16px' }}>限企业集团母公司及成员企业填写</span>
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px' }}
@@ -394,73 +394,73 @@ export default function TechCompanyInfo(props) {
     },
     {
       key: '45',
-      label: '指标名称',
-      children: 'QB09如为2，请填直接上级法人',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>QB09如为2，请填直接上级法人</span>,
       span: 1
     },
     {
       key: '46',
-      label: '代码',
-      children: 'qb10',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb10</span>,
       span: 1
     },
     {
       key: '47',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '48',
-      label: '指标名称',
-      children: '单位统一社会信用代码',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>单位统一社会信用代码</span>,
       span: 1
     },
     {
       key: '49',
-      label: '代码',
-      children: 'qb10',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb10</span>,
       span: 1
     },
     {
       key: '50',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '51',
-      label: '指标名称',
-      children: '或上级法人组织机构代码',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>或上级法人组织机构代码</span>,
       span: 1
     },
     {
       key: '52',
-      label: '代码',
-      children: 'qb10',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb10</span>,
       span: 1
     },
     {
       key: '53',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="company_basicinfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '54',
-      label: '指标名称',
-      children: '是否为经过认定的高新技术企业',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>是否为经过认定的高新技术企业</span>,
       span: 1
     },
     {
       key: '55',
-      label: '代码',
-      children: 'qb11',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb11</span>,
       span: 1
     },
     {
       key: '56',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children:         
         <Form.Item name="Tech_commpanyInfo_30">
           <Select
@@ -486,217 +486,217 @@ export default function TechCompanyInfo(props) {
     },
     {
       key: '57',
-      label: '指标名称',
-      children: 'QB11如为是，高企认定证书编号',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>QB11如为是，高企认定证书编号</span>,
       span: 1
     },
     {
       key: '58',
-      label: '代码',
-      children: 'qb13',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb13</span>,
       span: 1
     },
     {
       key: '59',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_36"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '60',
-      label: '指标名称',
-      children: '企业被认定为高新技术企业的时间',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业被认定为高新技术企业的时间</span>,
       span: 1
     },
     {
       key: '61',
-      label: '代码',
-      children: 'qb12',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb12</span>,
       span: 1
     },
     {
       key: '62',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '63',
-      label: '指标名称',
-      children: '与科技企业孵化器关系',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>与科技企业孵化器关系</span>,
       span: 1
     },
     {
       key: '64',
-      label: '代码',
-      children: 'qb14',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb14</span>,
       span: 1
     },
     {
       key: '65',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_40"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '66',
-      label: '指标名称',
-      children: '入孵时间',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>入孵时间</span>,
       span: 1
     },
     {
       key: '67',
-      label: '代码',
-      children: 'qb14_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb14_1</span>,
       span: 1
     },
     {
       key: '68',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择入孵时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '69',
-      label: '指标名称',
-      children: '毕业时间',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>毕业时间</span>,
       span: 1
     },
     {
       key: '70',
-      label: '代码',
-      children: 'qb14_2',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb14_2</span>,
       span: 1
     },
     {
       key: '71',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择毕业时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '72',
-      label: '指标名称',
-      children: '境外上市情况',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>境外上市情况</span>,
       span: 1
     },
     {
       key: '73',
-      label: '代码',
-      children: 'qb15',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb15</span>,
       span: 1
     },
     {
       key: '74',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_46"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '75',
-      label: '指标名称',
-      children: '证券代码',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>证券代码</span>,
       span: 1
     },
     {
       key: '76',
-      label: '代码',
-      children: 'qb15_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb15_1</span>,
       span: 1
     },
     {
       key: '77',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_48"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '78',
-      label: '指标名称',
-      children: '上市时间',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>上市时间</span>,
       span: 1
     },
     {
       key: '79',
-      label: '代码',
-      children: 'qb15_2',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb15_2</span>,
       span: 1
     },
     {
       key: '80',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <DatePicker disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '81',
-      label: '指标名称',
-      children: '年末市值',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>年末市值</span>,
       span: 1
     },
     {
       key: '82',
-      label: '代码',
-      children: 'qb15_5',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb15_5</span>,
       span: 1
     },
     {
       key: '83',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_52"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '84',
-      label: '指标名称',
-      children: '企业所属技术领域',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业所属技术领域</span>,
       span: 1
     },
     {
       key: '85',
-      label: '代码',
-      children: 'qb16',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb16</span>,
       span: 1
     },
     {
       key: '86',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_54"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '87',
-      label: '指标名称',
-      children: '企业核心技术所属',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>企业核心技术所属</span>,
       span: 1
     },
     {
       key: '88',
-      label: '代码',
-      children: 'qb16_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb16_1</span>,
       span: 1
     },
     {
       key: '89',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_56"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '90',
-      label: '指标名称',
-      children: '《国家重点支持的高新技术领域》',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>《国家重点支持的高新技术领域》</span>,
       span: 1
     },
     {
       key: '91',
-      label: '代码',
-      children: 'qb16_1',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qb16_1</span>,
       span: 1
     },
     {
       key: '92',
-      label: '内容',
+      label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_58"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },  

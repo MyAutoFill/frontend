@@ -89,73 +89,72 @@ export default function CompanyEmployedInfo(props) {
   const items = [
     {
       key: '1',
-      label: "从业人员期末人数",
+      label: <span style={{fontSize: '16px'}}>从业人员期末人数</span>,
       children: <Form.Item name="company_employee_1" rules={[{pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
-      label: '上年同期',
+      label: <span style={{fontSize: '16px'}}>上年同期</span>,
       children: <Form.Item name="company_employee_2"><Input size='large' addonAfter='人' disabled={true} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
-      label: '其中：女性',
+      label: <span style={{fontSize: '16px'}}>其中：女性</span>,
       children: <Form.Item name="company_employee_3"><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
-      label: '上年同期',
       children: <Form.Item name="company_employee_4"><Input size='large' addonAfter='人' disabled={true} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
-      label: '中层及以上管理人员',
+      label: <span style={{fontSize: '16px'}}>中层及以上管理人员</span>,
       children: <Form.Item name="company_employee_5"><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
-      label: '上年同期',
+      label: <span style={{fontSize: '16px'}}>上年同期</span>,
       children: <Form.Item name="company_employee_6"><Input size='large' addonAfter='人' disabled={true} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
-      label: '专业技术人员',
+      label: <span style={{fontSize: '16px'}}>专业技术人员</span>,
       children: <Form.Item name="company_employee_7"><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
-      label: '上年同期',
+      label: <span style={{fontSize: '16px'}}>上年同期</span>,
       children: <Form.Item name="company_employee_8"><Input size='large' addonAfter='人' disabled={true} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
-      label: '从业人员平均人数',
+      label: <span style={{fontSize: '16px'}}>从业人员平均人数</span>,
       children: <Form.Item name="company_employee_9"><Input size='large' addonAfter='人' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
-      label: '上年同期',
+      label: <span style={{fontSize: '16px'}}>上年同期</span>,
       children: <Form.Item name="company_employee_10"><Input size='large' addonAfter='人' disabled={true} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '10',
-      label: '从业人员工资总额',
+      label: <span style={{fontSize: '16px'}}>从业人员工资总额</span>,
       children: <Form.Item name="company_employee_11"><Input size='large' addonAfter='元' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '12',
-      label: '上年同期',
+      label: <span style={{fontSize: '16px'}}>上年同期</span>,
       children: <Form.Item name="company_employee_12"><Input size='large' addonAfter='元' disabled={true} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }

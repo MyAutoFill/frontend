@@ -75,14 +75,8 @@ export default function BasicCompanyInfo(props) {
 
   const [form] = Form.useForm();
 
-  const [organizationTypeValue, setOrganizationTypeValue] = useState('')
   const [signUpTypeValue, setSignUpTypeValue] = useState('')
   const [signUpTypeSubValue, setSignUpTypeSubValue] = useState('')
-  const [companyStockControlValue, setCompanyStockControlValue] = useState('')
-  const [belongRelationValue, setBelongRelationValue] = useState('')
-  const [runningStatusValue, setRunningStatusValue] = useState('')
-  const [executeAccountingTypeValue, setExecuteAccountingTypeValue] = useState('')
-  const [executeAccountingRuleConditionValue, setExecuteAccountingRuleConditionValue] = useState('')
 
   const SaveSuccess = () => {
     messageApi.open({
@@ -136,73 +130,73 @@ export default function BasicCompanyInfo(props) {
   const items = [
     {
       key: '1',
-      label: '统一社会信用代码',
+      label: <span style={{fontSize: '16px'}}>统一社会信用代码</span>,
       children: <Form.Item name="company_basicinfo_1" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
-      label: '单位名称',
+      label: <span style={{fontSize: '16px'}}>单位名称</span>,
       children: <Form.Item name="company_basicinfo_2" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '3',
-      label: '单位曾用名',
+      label: <span style={{fontSize: '16px'}}>单位曾用名</span>,
       children: <Form.Item name="company_basicinfo_3"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '4',
-      label: '行业类别',
+      label: <span style={{fontSize: '16px'}}>行业类别</span>,
       children: <Form.Item name="company_basicinfo_4" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '5',
-      label: '行业性质',
+      label: <span style={{fontSize: '16px'}}>行业性质</span>,
       children: <Form.Item name="company_basicinfo_5"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '6',
-      label: '主要业务活动',
+      label: <span style={{fontSize: '16px'}}>主要业务活动</span>,
       children: <Form.Item name="company_basicinfo_6" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '7',
-      label: '行业代码',
+      label: <span style={{fontSize: '16px'}}>行业代码</span>,
       children: <Form.Item name="company_basicinfo_7" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
-      label: '经营范围',
+      label: <span style={{fontSize: '16px'}}>经营范围</span>,
       children: <Form.Item name="company_basicinfo_8" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '工商登记有效期限（年）',
+      label: <span style={{fontSize: '16px'}}>工商登记有效期限（年）</span>,
       children: <Form.Item name="company_basicinfo_9" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
-      label: '组织机构代码',
+      label: <span style={{fontSize: '16px'}}>组织机构代码</span>,
       children: <Form.Item name="company_basicinfo_10" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '31',
-      label: '公司介绍',
+      label: <span style={{fontSize: '16px'}}>公司介绍</span>,
       children: <Form.Item name="company_basicinfo_47"><TextArea rows={4} placeholder="请输入公司介绍" /></Form.Item>,
       span: 3
     },
     {
       key: '11',
-      label: '单位所在地区划及详细地址',
+      label: <span style={{fontSize: '16px'}}>单位所在地区划及详细地址</span>,
       children: 
         <>
           <Form.Item name="company_basicinfo_11" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
@@ -217,37 +211,35 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '12',
-      label: '区划代码',
+      label: <span style={{fontSize: '16px'}}>区划代码</span>,
       children: <Form.Item name="company_basicinfo_18"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '13',
-      label: '单位注册地区划及详细地址',
+      label: <span style={{fontSize: '16px'}}>单位注册地区划及详细地址</span>,
       children: (
         <>
-          <span>
-            <Form.Item name="company_basicinfo_r1">
-              <span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否与单位所在地区划及详细地址一致：</span>
-              <Select
-                allowClear
-                style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
-                size='large'
-                placeholder="是/否"
-                optionFilterProp="label"
-                options={[
-                  {
-                    value: '是',
-                    label: '是',
-                  },
-                  {
-                    value: '否',
-                    label: '否',
-                  }
-                ]}
-              />
-            </Form.Item>
-          </span>
+          <Form.Item name="company_basicinfo_r1">
+            <span style={{ width: '200px', marginLeft: '10px', marginTop: '10px', fontSize: '16px' }}>是否与单位所在地区划及详细地址一致：</span>
+            <Select
+              allowClear
+              style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+              size='large'
+              placeholder="是/否"
+              optionFilterProp="label"
+              options={[
+                {
+                  value: '是',
+                  label: '是',
+                },
+                {
+                  value: '否',
+                  label: '否',
+                }
+              ]}
+            />
+          </Form.Item>
           <br></br>
           <Form.Item name="company_basicinfo_11" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_12" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="市（地、州、盟)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
@@ -262,7 +254,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '14',
-      label: '单位规模',
+      label: <span style={{fontSize: '16px'}}>单位规模</span>,
       children: 
         <Form.Item name="company_basicinfo_r2">
           <Select
@@ -295,13 +287,13 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '15',
-      label: '法定代表人（单位负责人）',
+      label: <span style={{fontSize: '16px'}}>法定代表人（单位负责人）</span>,
       children: <Form.Item name="company_basicinfo_26" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '94',
-      label: '法人证件类型',
+      label: <span style={{fontSize: '16px'}}>法人证件类型</span>,
       children: 
         <Form.Item name="company_basicinfo_27">
           <Select
@@ -386,37 +378,37 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '17',
-      label: '法人证件号码',
+      label: <span style={{fontSize: '16px'}}>法人证件号码</span>,
       children: <Form.Item name="company_basicinfo_28" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
-      label: '法人联系电话',
+      label: <span style={{fontSize: '16px'}}>法人联系电话</span>,
       children: <Form.Item name="company_basicinfo_29" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '19',
-      label: '企业负责人',
+      label: <span style={{fontSize: '16px'}}>企业负责人</span>,
       children: <Form.Item name="company_basicinfo_30" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
-      label: '联系电话',
+      label: <span style={{fontSize: '16px'}}>联系电话</span>,
       children: <Form.Item name="company_basicinfo_31" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '21',
-      label: '成立时间（所有单位填报）',
+      label: <span style={{fontSize: '16px'}}>成立时间（所有单位填报）</span>,
       children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 3
     },
     {
       key: '22',
-      label: '联系方式',
+      label: <span style={{fontSize: '16px'}}>联系方式</span>,
       children: 
         <>
           <Form.Item name="company_basicinfo_32"><Input size='large' addonBefore="长途区号" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
@@ -431,7 +423,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '23',
-      label: '机构类型',
+      label: <span style={{fontSize: '16px'}}>机构类型</span>,
       children: 
         <Form.Item name="company_basicinfo_r3">
           <Select
@@ -492,11 +484,11 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '24',
-      label: '登记注册类型',
+      label: <span style={{fontSize: '16px'}}>登记注册类型</span>,
       children: 
         <>
           <Form.Item name="company_basicinfo_r4">
-            <span style={{ width: '200px', marginLeft: '10px' }}>先选择登记注册类型后再选择注册类型子类</span>
+            <span style={{ width: '200px', marginLeft: '10px', fontSize: '16px' }}>先选择登记注册类型后再选择注册类型子类</span>
             <Select
               allowClear
               style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -666,7 +658,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '26',
-      label: '企业控股情况',
+      label: <span style={{fontSize: '16px'}}>企业控股情况</span>,
       children: 
         <Form.Item name="company_basicinfo_r8">
           {/* <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
@@ -708,7 +700,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '27',
-      label: '隶属关系',
+      label: <span style={{fontSize: '16px'}}>隶属关系</span>,
       children: 
 				<Form.Item name="company_basicinfo_r9">
 					<Select
@@ -773,13 +765,13 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '28',
-      label: '注册资本',
+      label: <span style={{fontSize: '16px'}}>注册资本</span>,
       children: <Form.Item name="company_basicinfo_45"><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '27',
-      label: '运营状态',
+      label: <span style={{fontSize: '16px'}}>运营状态</span>,
       children: 
         <Form.Item name="company_basicinfo_r27">
           <Select
@@ -828,7 +820,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '28',
-      label: '执行会计标准类别',
+      label: <span style={{fontSize: '16px'}}>执行会计标准类别</span>,
       children: 
         <Form.Item name="company_basicinfo_r10">
           <Select
@@ -861,7 +853,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '29',
-      label: '执行企业会计准则情况',
+      label: <span style={{fontSize: '16px'}}>执行企业会计准则情况</span>,
       children: 
         <Form.Item name="company_basicinfo_r11">
           <Select
@@ -890,13 +882,13 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '30',
-      label: '产业活动单位数',
+      label: <span style={{fontSize: '16px'}}>产业活动单位数</span>,
       children: <Form.Item name="company_basicinfo_46"><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '31',
-      label: '公司介绍',
+      label: <span style={{fontSize: '16px'}}>公司介绍</span>,
       children: <Form.Item name="company_basicinfo_47"><TextArea rows={4} placeholder="请输入公司介绍" /></Form.Item>,
       span: 3
     },
@@ -907,7 +899,7 @@ export default function BasicCompanyInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1300px'}} title="单位基本信息" bordered items={items} />
+          <Descriptions style={{width: '1300px' }} title="单位基本信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"

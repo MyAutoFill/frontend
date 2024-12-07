@@ -108,332 +108,332 @@ export default function GongXinProductSales(props) {
 
   const items = [
     {
-        label: '微控器件销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>微控器件销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin1" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '微控器件销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>微控器件销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin2" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '微控器件销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>微控器件销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin3" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '逻辑电路销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>逻辑电路销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin4" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '逻辑电路销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>逻辑电路销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin5" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '逻辑电路销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>逻辑电路销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin6" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '存储器销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>存储器销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin7" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '存储器销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>存储器销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin8" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '存储器销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>存储器销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin9" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '模拟电路销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>模拟电路销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin10" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '模拟电路销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>模拟电路销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin11" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '模拟电路销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>模拟电路销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin12" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他电路销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>其他电路销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin13" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他电路销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>其他电路销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin14" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他电路销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>其他电路销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin15" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '智能卡芯片及电子标签芯片销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>智能卡芯片及电子标签芯片销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin16" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '智能卡芯片及电子标签芯片销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>智能卡芯片及电子标签芯片销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin17" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '智能卡芯片及电子标签芯片销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>智能卡芯片及电子标签芯片销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin18" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '微波单片集成电路销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>微波单片集成电路销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin19" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '微波单片集成电路销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>微波单片集成电路销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin20" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '微波单片集成电路销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>微波单片集成电路销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin21" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '物联网模组销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>物联网模组销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin22" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '物联网模组销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>物联网模组销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin23" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '物联网模组销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>物联网模组销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin24" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他集成电路产品销售量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>其他集成电路产品销售量-本年本期累计</span>,
         children: <Form.Item name="Gongxin25" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他集成电路产品销售量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>其他集成电路产品销售量-去年同期累计</span>,
         children: <Form.Item name="Gongxin26" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他集成电路产品销售量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>其他集成电路产品销售量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin27" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '服务企业数量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>服务企业数量-本年本期累计</span>,
         children: <Form.Item name="Gongxin28" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '服务企业数量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>服务企业数量-去年同期累计</span>,
         children: <Form.Item name="Gongxin29" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '服务企业数量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>服务企业数量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin30" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工业APP数量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>工业APP数量-本年本期累计</span>,
         children: <Form.Item name="Gongxin31" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工业APP数量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>工业APP数量-去年同期累计</span>,
         children: <Form.Item name="Gongxin32" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工业APP数量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>工业APP数量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin33" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '设备连接数量-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>设备连接数量-本年本期累计</span>,
         children: <Form.Item name="Gongxin34" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '设备连接数量-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>设备连接数量-去年同期累计</span>,
         children: <Form.Item name="Gongxin35" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '设备连接数量-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>设备连接数量-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin36" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：轻工设备-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>其中：轻工设备-本年本期累计</span>,
         children: <Form.Item name="Gongxin37" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：轻工设备-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>其中：轻工设备-去年同期累计</span>,
         children: <Form.Item name="Gongxin38" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：轻工设备-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>其中：轻工设备-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin39" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '建材设备-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>建材设备-本年本期累计</span>,
         children: <Form.Item name="Gongxin40" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '建材设备-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>建材设备-去年同期累计</span>,
         children: <Form.Item name="Gongxin41" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '建材设备-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>建材设备-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin42" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '仪器仪表-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>仪器仪表-本年本期累计</span>,
         children: <Form.Item name="Gongxin43" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '仪器仪表-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>仪器仪表-去年同期累计</span>,
         children: <Form.Item name="Gongxin44" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '仪器仪表-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>仪器仪表-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin45" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '化工设备-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>化工设备-本年本期累计</span>,
         children: <Form.Item name="Gongxin46" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '化工设备-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>化工设备-去年同期累计</span>,
         children: <Form.Item name="Gongxin47" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '化工设备-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>化工设备-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin48" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '冶炼设备-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>冶炼设备-本年本期累计</span>,
         children: <Form.Item name="Gongxin49" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '冶炼设备-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>冶炼设备-去年同期累计</span>,
         children: <Form.Item name="Gongxin50" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '冶炼设备-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>冶炼设备-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin51" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '电工及电子设备-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>电工及电子设备-本年本期累计</span>,
         children: <Form.Item name="Gongxin52" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '电工及电子设备-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>电工及电子设备-去年同期累计</span>,
         children: <Form.Item name="Gongxin53" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '电工及电子设备-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>电工及电子设备-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin54" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工程机械-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>工程机械-本年本期累计</span>,
         children: <Form.Item name="Gongxin55" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工程机械-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>工程机械-去年同期累计</span>,
         children: <Form.Item name="Gongxin56" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工程机械-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>工程机械-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin57" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '机床-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>机床-本年本期累计</span>,
         children: <Form.Item name="Gongxin58" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '机床-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>机床-去年同期累计</span>,
         children: <Form.Item name="Gongxin59" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '机床-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>机床-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin60" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '机器人-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>机器人-本年本期累计</span>,
         children: <Form.Item name="Gongxin61" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '机器人-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>机器人-去年同期累计</span>,
         children: <Form.Item name="Gongxin62" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '机器人-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>机器人-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin63" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他设备-本年本期累计',
+        label: <span style={{fontSize: '16px'}}>其他设备-本年本期累计</span>,
         children: <Form.Item name="Gongxin64" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他设备-去年同期累计',
+        label: <span style={{fontSize: '16px'}}>其他设备-去年同期累计</span>,
         children: <Form.Item name="Gongxin65" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其他设备-最先进纳米量级',
+        label: <span style={{fontSize: '16px'}}>其他设备-最先进纳米量级</span>,
         children: <Form.Item name="Gongxin66" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     }

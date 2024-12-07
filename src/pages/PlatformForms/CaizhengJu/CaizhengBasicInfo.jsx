@@ -20,7 +20,7 @@ var day = today.getDate();
 
 const countDownDays = 15-day
 
-export default function BasicInfoHumanResource(props) {
+export default function CaizhengBasicInfo(props) {
 
   const peopleSearchOnChange = (value) => {
     console.log(`selected ${value}`);
@@ -81,7 +81,7 @@ export default function BasicInfoHumanResource(props) {
     }
     reqBasicData(curDate, uuid)
       .then(function (res) {
-        reqRatioConfig('BasicInfoHumanResource')
+        reqRatioConfig('CaizhengBasicInfo')
         .then(function (config) {
           const new_res = JSON.parse(JSON.stringify(res));
           Object.keys(config).forEach(key => {
@@ -888,7 +888,7 @@ export default function BasicInfoHumanResource(props) {
   ];
 
   const onFinish = (values) => {
-    request('/api_test/get_ratio_config?table=BasicInfoHumanResource', {
+    request('/api_test/get_ratio_config?table=CaizhengBasicInfo', {
       method: 'GET',
     })
     .then(function (config) {

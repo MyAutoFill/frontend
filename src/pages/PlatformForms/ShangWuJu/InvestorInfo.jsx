@@ -106,96 +106,96 @@ export default function ShangwuInvestorInfo(props) {
 
   const items = [
 		{
-			label: '投资者信息',
-			children: '———————————————— 以下信息为投资者信息 ————————————————',
+			label: <span style={{fontSize: '16px'}}>投资者信息</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为投资者信息 ————————————————</span>,
 			span: 3
 		},
     {
       key: '1',
-      label: '投资者中文名称',
+      label: <span style={{fontSize: '16px'}}>投资者中文名称</span>,
       children: 
 				<Form.Item name="shangwu_investor1" >
-					<span style={{ marginLeft: '10px', marginTop: '10px' }}>投资者/合伙人/外国企业名称或姓名:</span>
+					<span style={{ fontSize:'16px', marginLeft: '10px', marginTop: '10px' }}>投资者/合伙人/外国企业名称或姓名:</span>
 					<Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input>
 				</Form.Item>,
       span: 1
     },
     {
       key: '2',
-      label: '投资者英文名称',
+      label: <span style={{fontSize: '16px'}}>投资者英文名称</span>,
       children: 
 				<Form.Item name="shangwu_investor2" >
-					<span style={{ marginLeft: '10px', marginTop: '10px' }}>投资者/合伙人/外国企业名称或姓名:</span>
+					<span style={{ fontSize:'16px', marginLeft: '10px', marginTop: '10px' }}>投资者/合伙人/外国企业名称或姓名:</span>
 					<Input size='large' addonBefore='英文' style={{ width: '200px', marginLeft: '10px' }}></Input>
 				</Form.Item>,
       span: 1
     },
     {
       key: '3',
-      label: '国别',
+      label: <span style={{fontSize: '16px'}}>国别</span>,
       children: <Form.Item name="shangwu_investor3"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '4',
-      label: '证件类型',
+      label: <span style={{fontSize: '16px'}}>证件类型</span>,
       children: <Form.Item name="shangwu_investor4"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '5',
-      label: '证件号码',
+      label: <span style={{fontSize: '16px'}}>证件号码</span>,
       children: <Form.Item name="shangwu_investor5"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '6',
-      label: '认缴出资额',
+      label: <span style={{fontSize: '16px'}}>认缴出资额</span>,
       children: <Form.Item name="shangwu_investor6"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '7',
-      label: '实缴出资额',
+      label: <span style={{fontSize: '16px'}}>实缴出资额</span>,
       children: <Form.Item name="shangwu_investor7"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '8',
-      label: '资金来源地',
+      label: <span style={{fontSize: '16px'}}>资金来源地</span>,
       children: <Form.Item name="shangwu_investor8"><Input addonBefore='国别（地区）' size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
 		{
       key: '9',
-      label: '投资情况',
+      label: <span style={{fontSize: '16px'}}>投资情况</span>,
       children: 
 				<Form.Item name="shangwu_investor9" >
-					<span style={{ marginLeft: '10px', marginTop: '10px' }}>世界500企业参与投资情况:</span>
+					<span style={{ fontSize:'16px', marginLeft: '10px', marginTop: '10px' }}>世界500企业参与投资情况:</span>
 					<TextArea rows={4} placeholder="若有，请列举500强投资企业名称" />
 				</Form.Item>,
       span: 3
     },
 		{
       key: '10',
-      label: '反向投资股权投资额',
+      label: <span style={{fontSize: '16px'}}>反向投资股权投资额</span>,
       children: <Form.Item name="shangwu_investor10"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '11',
-      label: '反向投资股权比例',
+      label: <span style={{fontSize: '16px'}}>反向投资股权比例</span>,
       children: <Form.Item name="shangwu_investor11"><Input addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
 		{
-			label: '投资者类型',
-			children: '———————————————— 以下信息为投资者类型 ————————————————',
+			label: <span style={{fontSize: '16px'}}>投资者类型</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为投资者类型 ————————————————</span>,
 			span: 3
 		},
     {
 			key: '12',
-			label: '境外投资者',
+			label: <span style={{fontSize: '16px'}}>境外投资者</span>,
 			children: 
 				<Form.Item name="shangwu_basic21">
 					<Select
@@ -229,7 +229,7 @@ export default function ShangwuInvestorInfo(props) {
 		},
     {
 			key: '13',
-			label: '境内投资者',
+			label: <span style={{fontSize: '16px'}}>境内投资者</span>,
 			children: 
 				<Form.Item name="shangwu_investor13">
 					<Select
@@ -255,10 +255,10 @@ export default function ShangwuInvestorInfo(props) {
 		},
 		{
 			key: '14',
-			label: '是否为规定服务提供者',
+			label: <span style={{fontSize: '16px'}}>是否为规定服务提供者</span>,
 			children: 
 				<Form.Item name="shangwu_basic11">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>境外投资者是否为内地与香港、澳门《CEPA 服务贸易协议》规定的香港/澳门 服务提供者:</span>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>境外投资者是否为内地与香港、澳门《CEPA 服务贸易协议》规定的香港/澳门 服务提供者:</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -281,10 +281,10 @@ export default function ShangwuInvestorInfo(props) {
 		},
 		{
 			key: '15',
-			label: '境外投资者身份',
+			label: <span style={{fontSize: '16px'}}>境外投资者身份</span>,
 			children: 
 				<Form.Item name="shangwu_investor15">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>境外投资者是否为定居在国外的中国公民：</span>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>境外投资者是否为定居在国外的中国公民：</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -306,43 +306,43 @@ export default function ShangwuInvestorInfo(props) {
 			span: 3
 		},
 		{
-			label: '企业最终实际控制人',
-			children: '———————————————— 以下信息为投资者/合伙人/外国（地区）企业最终实际控制人 ————————————————',
+			label: <span style={{fontSize: '16px'}}>企业最终实际控制人</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为投资者/合伙人/外国（地区）企业最终实际控制人 ————————————————</span>,
 			span: 3
 		},
     {
       key: '16',
-      label: '名称或姓名（中文）',
+      label: <span style={{fontSize: '16px'}}>名称或姓名（中文）</span>,
       children: <Form.Item name="shangwu_investor16"><Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
-      label: '名称或姓名（英文）',
+      label: <span style={{fontSize: '16px'}}>名称或姓名（英文）</span>,
       children: <Form.Item name="shangwu_investor17"><Input size='large' addonBefore='英文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
-      label: '国别',
+      label: <span style={{fontSize: '16px'}}>国别</span>,
       children: <Form.Item name="shangwu_investor18"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '19',
-      label: '证件类型',
+      label: <span style={{fontSize: '16px'}}>证件类型</span>,
       children: <Form.Item name="shangwu_investor19"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '20',
-      label: '证件号码',
+      label: <span style={{fontSize: '16px'}}>证件号码</span>,
       children: <Form.Item name="shangwu_investor20"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
 			key: '21',
-			label: '类别',
+			label: <span style={{fontSize: '16px'}}>类别</span>,
 			children: 
 				<Form.Item name="shangwu_investor21">
 					<Select
@@ -392,7 +392,7 @@ export default function ShangwuInvestorInfo(props) {
 		},
 		{
 			key: '22',
-			label: '实际控制方式',
+			label: <span style={{fontSize: '16px'}}>实际控制方式</span>,
 			children: 
 				<Form.Item name="shangwu_investor22">
 					<Select
@@ -422,10 +422,10 @@ export default function ShangwuInvestorInfo(props) {
 		},
 		{
 			key: '23',
-			label: '最终实际控制人',
+			label: <span style={{fontSize: '16px'}}>最终实际控制人</span>,
 			children: 
 				<Form.Item name="shangwu_investor23">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否为企业（机构）最终实际控制人：</span>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否为企业（机构）最终实际控制人：</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -476,9 +476,9 @@ export default function ShangwuInvestorInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
+          <span style={{ fontSize:'16px', fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
           <span>          </span>
-          <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
+          <span style={{ fontSize:'16px', fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
           <Descriptions style={{width: '1350px'}} title="【报表名称】投资者情况" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}

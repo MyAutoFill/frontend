@@ -123,7 +123,7 @@ export default function StatisticCompanyBasicInfo(props) {
   const items = [
     {
       key: '1',
-      label: '是否为“视同法人单位”',
+      label: <span style={{fontSize: '16px'}}>是否为“视同法人单位”</span>,
       children:
         <Form.Item name="HumanSocial_CompanyInfo_29">
           <Select
@@ -149,46 +149,46 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '2',
-      label: '统一社会信用代码',
+      label: <span style={{fontSize: '16px'}}>统一社会信用代码</span>,
       children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '3',
-      label: '单位名称',
+      label: <span style={{fontSize: '16px'}}>单位名称</span>,
       children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '4',
-      label: '行业类别',
+      label: <span style={{fontSize: '16px'}}>行业类别</span>,
       children: <Form.Item name="company_basicinfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '5',
-      label: '行业性质',
+      label: <span style={{fontSize: '16px'}}>行业性质</span>,
       children: <Form.Item name="company_basicinfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '6',
-      label: '主要业务活动',
+      label: <span style={{fontSize: '16px'}}>主要业务活动</span>,
       children: <Form.Item name="company_basicinfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '7',
-      label: '税务登记证号',
+      label: <span style={{fontSize: '16px'}}>税务登记证号</span>,
       children: <Form.Item name="Statistic_CompanyInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
-      label: '报表类别',
+      label: <span style={{fontSize: '16px'}}>报表类别</span>,
       children: 
         <Form.Item name="Statistic_CompanyInfo_8">
-          {/* <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
+          {/* <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -243,7 +243,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '9',
-      label: '单位所在地区划及详细地址',
+      label: <span style={{fontSize: '16px'}}>单位所在地区划及详细地址</span>,
       children: 
         <> 
           <Form.Item name="company_basicinfo_11"><Input size='large' addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
@@ -258,24 +258,24 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '10',
-      label: '区划代码',
+      label: <span style={{fontSize: '16px'}}>区划代码</span>,
       children: <Form.Item name="Statistic_CompanyInfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
-      label: '城乡代码',
+      label: <span style={{fontSize: '16px'}}>城乡代码</span>,
       children: <Form.Item name="Statistic_CompanyInfo_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '12',
-      label: '单位注册地区划及详细地址',
+      label: <span style={{fontSize: '16px'}}>单位注册地区划及详细地址</span>,
       children: (
         <>
           <span>
             <Form.Item name="company_basicinfo_r1">
-              <span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否与单位所在地区划及详细地址一致：</span>
+              <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px', marginTop: '10px' }}>是否与单位所在地区划及详细地址一致：</span>
               <Select
                 allowClear
                 style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -309,19 +309,19 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '13',
-      label: '区划代码',
+      label: <span style={{fontSize: '16px'}}>区划代码</span>,
       children: <Form.Item name="Statistic_CompanyInfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '14',
-      label: '城乡代码',
+      label: <span style={{fontSize: '16px'}}>城乡代码</span>,
       children: <Form.Item name="Statistic_CompanyInfo_28"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '15',
-      label: '单位规模',
+      label: <span style={{fontSize: '16px'}}>单位规模</span>,
       children: 
         <Form.Item name="company_basicinfo_r2">
           <Select
@@ -354,55 +354,54 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '16',
-      label: '企业主要经济指标',
-      children: '-',
+      label: <span style={{fontSize: '16px'}}>企业主要经济指标</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下为企业主要经济指标</span>,
       span: 3
     },
     {
       key: '17',
-      label: '营业收入',
+      label: <span style={{fontSize: '16px'}}>营业收入</span>,
       children: <Form.Item name="company_runningsum_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
+      span: 1.5    },
     {
       key: '18',
-      label: '其中：主营业务收入',
+      label: <span style={{fontSize: '16px'}}>其中：主营业务收入</span>,
       children: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       key: '19',
-      label: '资产总计',
+      label: <span style={{fontSize: '16px'}}>资产总计</span>,
       children: <Form.Item name="FinanceStatusInfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      span: 3
     },
     {
       key: '20',
-      label: '其他基本信息',
-      children: '-',
+      label: <span style={{fontSize: '16px'}}>其他基本信息</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下为其他基本信息</span>,
       span: 3
     },
     {
       key: '21',
-      label: '法定代表人',
+      label: <span style={{fontSize: '16px'}}>法定代表人</span>,
       children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      span: 3
     },
     {
       key: '22',
-      label: '成立时间（所有单位填报）',
+      label: <span style={{fontSize: '16px'}}>成立时间（所有单位填报）</span>,
       children: <Form.Item name="company_basicinfo_build_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       key: '23',
-      label: '开业时间（仅限企业填报）',
+      label: <span style={{fontSize: '16px'}}>开业时间（仅限企业填报）</span>,
       children: <Form.Item name="company_basicinfo_open_date"><DatePicker disabled={disableVar} size='large' placeholder='请选择开业时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
-      span: 1
+      span: 1.5
     },
     {
       key: '24',
-      label: '联系方式',
+      label: <span style={{fontSize: '16px'}}>联系方式</span>,
       children: 
         <>
           <Form.Item name="company_basicinfo_32"><Input size='large' addonBefore="长途区号" style={{ width: '350px', marginTop: '10px' }}/></Form.Item>
@@ -416,7 +415,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '25',
-      label: '机构类型',
+      label: <span style={{fontSize: '16px'}}>机构类型</span>,
       children: 
         <Form.Item name="company_basicinfo_r3">
           <Select
@@ -477,11 +476,11 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '26',
-      label: '登记注册类型',
+      label: <span style={{fontSize: '16px'}}>登记注册类型</span>,
       children: 
         <>
           <Form.Item name="company_basicinfo_r4">
-            <span style={{ width: '200px', marginLeft: '10px' }}>先选择登记注册类型后再选择注册类型子类</span>
+            <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>先选择登记注册类型后再选择注册类型子类</span>
             <Select
               allowClear
               style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -509,7 +508,7 @@ export default function StatisticCompanyBasicInfo(props) {
           <br></br>
           {signUpTypeValue === '内资' ? 
             <Form.Item name="company_basicinfo_r5">
-              <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应内资机构类型子类</span>
+              <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择对应内资机构类型子类</span>
               <Select
                 allowClear
                 style={{ width: '200px', marginLeft: '10px' }}
@@ -580,7 +579,7 @@ export default function StatisticCompanyBasicInfo(props) {
             </Form.Item> : 
             signUpTypeValue === '港澳台商投资' ? 
             <Form.Item name="company_basicinfo_r6">
-              <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应港澳台商投资机构类型子类</span>
+              <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择对应港澳台商投资机构类型子类</span>
               <Select
                 allowClear
                 style={{ width: '200px', marginLeft: '10px' }}
@@ -614,7 +613,7 @@ export default function StatisticCompanyBasicInfo(props) {
             </Form.Item> : 
             signUpTypeValue === '外商投资' ? 
             <Form.Item name="company_basicinfo_r7">
-              <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span>
+              <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span>
               <Select
                 allowClear
                 style={{ width: '200px', marginLeft: '10px' }}
@@ -661,10 +660,10 @@ export default function StatisticCompanyBasicInfo(props) {
     // },
     {
       key: '28',
-      label: '企业控股情况',
+      label: <span style={{fontSize: '16px'}}>企业控股情况</span>,
       children: 
         <Form.Item name="company_basicinfo_r8">
-          {/* <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
+          {/* <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
           <Select
             allowClear
             style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
@@ -704,7 +703,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '29',
-      label: '隶属关系',
+      label: <span style={{fontSize: '16px'}}>隶属关系</span>,
       children: 
 				<Form.Item name="company_basicinfo_r9">
 					<Select
@@ -769,7 +768,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '30',
-      label: '运营状态',
+      label: <span style={{fontSize: '16px'}}>运营状态</span>,
       children: 
         <Form.Item name="company_basicinfo_r13">
           <Select
@@ -818,7 +817,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '31',
-      label: '执行会计标准类别',
+      label: <span style={{fontSize: '16px'}}>执行会计标准类别</span>,
       children: 
         <Form.Item name="company_basicinfo_r10">
           <Select
@@ -853,7 +852,7 @@ export default function StatisticCompanyBasicInfo(props) {
       label: '企业集团情况',
       children: 
         <Form.Item name="Statistic_CompanyInfo_58">
-          <span style={{ width: '200px', marginLeft: '10px' }}>（限企业集团母公司及成员企业填写）本企业是</span>
+          <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>（限企业集团母公司及成员企业填写）本企业是</span>
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px' }}
@@ -872,23 +871,27 @@ export default function StatisticCompanyBasicInfo(props) {
             ]}
           />
         </Form.Item>,
-      span: 1
+      span: 3
     },
     {
       key: '33',
-      label: '建筑业企业资质登记编码',
+      label: <span style={{fontSize: '16px'}}>建筑业企业资质登记编码</span>,
       children: <Form.Item name="Statistic_CompanyInfo_59"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5,
+      span: 3,
     },
     {
       key: '34',
-      label: '建筑业企业新资质等级编码（若已更换最新资质证书，按新资质再次填写）',
-      children: <Form.Item name="Statistic_CompanyInfo_60"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5,
+      label: <span style={{fontSize: '16px'}}>建筑业企业新资质等级编码</span>,
+      children: 
+        <Form.Item name="Statistic_CompanyInfo_60">
+          <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>若已更换最新资质证书，按新资质再次填写</span>
+          <Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>
+        </Form.Item>,
+      span: 3,
     },
     {
       key: '35',
-      label: '房地产开发经营业企业资质等级',
+      label: <span style={{fontSize: '16px'}}>房地产开发经营业企业资质等级</span>,
       children: 
         <Form.Item name="Statistic_CompanyInfo_61">
           <Select
@@ -933,7 +936,7 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '36',
-      label: '批发和零售业、住宿和餐饮业单位经营形式',
+      label: <span style={{fontSize: '16px'}}>批发和零售业、住宿和餐饮业单位经营形式</span>,
       children: 
         <Form.Item name="Statistic_CompanyInfo_63">
           <Select
@@ -966,15 +969,15 @@ export default function StatisticCompanyBasicInfo(props) {
             ]}
           />  
         </Form.Item>,
-      span: 1
+      span: 3
     },
     {
       key: '37',
-      label: '有无店铺',
+      label: <span style={{fontSize: '16px'}}>有无店铺</span>,
       children: 
       <>
         <Form.Item name="Statistic_CompanyInfo_68">
-          <span style={{ width: '200px', marginLeft: '10px' }}>先选择有无店铺后再选择具体店铺类型</span>
+          <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>先选择有无店铺后再选择具体店铺类型</span>
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px' }}
@@ -998,7 +1001,7 @@ export default function StatisticCompanyBasicInfo(props) {
         <br></br>
         {HaveStore === '有店铺零售' ? 
           <Form.Item name="Statistic_CompanyInfo_69">
-            <span style={{ width: '200px', marginLeft: '10px' }}>请选择有店铺零售店铺类型</span>
+            <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择有店铺零售店铺类型</span>
             <Select
               allowClear
               style={{ width: '200px', marginLeft: '10px' }}
@@ -1057,7 +1060,7 @@ export default function StatisticCompanyBasicInfo(props) {
           </Form.Item> : 
           HaveStore === '无店铺零售' ? 
           <Form.Item name="Statistic_CompanyInfo_71">
-            <span style={{ width: '200px', marginLeft: '10px' }}>请选择无店铺零售零售方式</span>
+            <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>请选择无店铺零售零售方式</span>
             <Select
               allowClear
               style={{ width: '200px', marginLeft: '10px' }}
@@ -1103,11 +1106,11 @@ export default function StatisticCompanyBasicInfo(props) {
             />  
           </Form.Item> : null}
         </>,
-      span: 2
+      span: 3
     },
     {
       key: '38',
-      label: '住宿业单位星级评定情况',
+      label: <span style={{fontSize: '16px'}}>住宿业单位星级评定情况</span>,
       children:
         <Form.Item name="Statistic_CompanyInfo_73">
           <Select
@@ -1148,17 +1151,17 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '39',
-      label: '单位组织结构情况',
-      children: '-',
+      label: <span style={{fontSize: '16px'}}>单位组织结构情况</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下为单位组织结构情况</span>,
       span: 3
     },
     {
       key: '40',
-      label: '本法人单位是否有上一级法人',
+      label: <span style={{fontSize: '16px'}}>本法人单位是否有上一级法人</span>,
       children: 
         <>
           <Form.Item name="Statistic_CompanyInfo_75">
-            <span style={{ width: '200px', marginLeft: '10px' }}>先选择本法人单位是否有上一级法人，若选择是请填写上一级法人信息</span>
+            <span style={{ width: '200px', fontSize: '16px', marginLeft: '10px' }}>先选择本法人单位是否有上一级法人，若选择是请填写上一级法人信息</span>
             <Select
               showSearch
               allowClear
@@ -1193,10 +1196,10 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '41',
-      label: '本法人单位是否有下属产业活动单位',
+      label: <span style={{fontSize: '16px'}}>本法人单位是否有下属产业活动单位</span>,
       children:
         <>
-          <span>分支机构、派出机构、分公司、分部、分厂、分店等</span>
+          <span style={{marginLeft: '10px', fontSize: '16px'}}>分支机构、派出机构、分公司、分部、分厂、分店等</span>
           <br></br>
           <Form.Item name="Statistic_CompanyInfo_78">
             <Select
@@ -1222,13 +1225,13 @@ export default function StatisticCompanyBasicInfo(props) {
     },
     {
       key: '42',
-      label: '',
+      label: <span style={{fontSize: '16px'}}></span>,
       children: <Form.Item name="Statistic_CompanyInfo_79"><Input size='large' addonBefore='本法人单位所属产业活动单位共' addonAfter='个' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '42',
-      label: '连锁品牌（商标或商号名称）',
+      label: <span style={{fontSize: '16px'}}>连锁品牌（商标或商号名称）</span>,
       children: <Form.Item name="Statistic_CompanyInfo_80"><Input size='large' addonAfter='个' style={{ width: '400px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     }

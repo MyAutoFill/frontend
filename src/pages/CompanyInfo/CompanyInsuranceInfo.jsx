@@ -89,13 +89,13 @@ export default function CompanyInsuranceInfo(props) {
   const items = [
     {
       key: '1',
-      label: '单位管理码/单位编号',
+      label: <span style={{fontSize: '16px'}}>单位管理码/单位编号</span>,
       children: <Form.Item name="company_insurance_1"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '2',
-      label: '基金来源',
+      label: <span style={{fontSize: '16px'}}>基金来源</span>,
       children: 
         <Form.Item name="HumanSocial_NewSheBao_77">
           <Select
@@ -124,79 +124,79 @@ export default function CompanyInsuranceInfo(props) {
     },
     {
       key: '4',
-      label: '参保电子邮箱',
+      label: <span style={{fontSize: '16px'}}>参保电子邮箱</span>,
       children: <Form.Item name="company_basicinfo_35"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
-      label: '单位专管员姓名',
+      label: <span style={{fontSize: '16px'}}>单位专管员姓名</span>,
       children: <Form.Item name="company_insurance_4"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
-      label: '单位专管员所在部门',
+      label: <span style={{fontSize: '16px'}}>单位专管员所在部门</span>,
       children: <Form.Item name="company_insurance_5"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
-      label: '单位专管员电话',
+      label: <span style={{fontSize: '16px'}}>单位专管员电话</span>,
       children: <Form.Item name="company_basicinfo_31"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '10',
-      label: '单位专管员手机号码',
+      label: <span style={{fontSize: '16px'}}>单位专管员手机号码</span>,
       children: <Form.Item name="company_insurance_7"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
-      label: '单位主要经营地',
+      label: <span style={{fontSize: '16px'}}>单位主要经营地</span>,
       children: <Form.Item name="company_basicinfo_17"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
       key: '8',
-      label: '行业风险类别',
+      label: <span style={{fontSize: '16px'}}>行业风险类别</span>,
       children: <Form.Item name="company_insurance_9"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
-      label: '经济行业类别',
+      label: <span style={{fontSize: '16px'}}>经济行业类别</span>,
       children: <Form.Item name="company_insurance_10"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
-      label: '银行账户',
+      label: <span style={{fontSize: '16px'}}>银行账户</span>,
       children: <Form.Item name="company_insurance_11"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '12',
-      label: '银行类别',
+      label: <span style={{fontSize: '16px'}}>银行类别</span>,
       children: <Form.Item name="company_insurance_12"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '13',
-      label: '银行户名',
+      label: <span style={{fontSize: '16px'}}>银行户名</span>,
       children: <Form.Item name="company_insurance_13"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
-      label: '统筹层次',
+      label: <span style={{fontSize: '16px'}}>统筹层次</span>,
       children: <Form.Item name="company_insurance_14"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
       key: '7',
-      label: '单位管理类型',
+      label: <span style={{fontSize: '16px'}}>单位管理类型</span>,
       children: <Form.Item name="company_insurance_15"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     }

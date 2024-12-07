@@ -108,112 +108,112 @@ export default function InfoTechMonthlyForm(props) {
 
   const items = [
     {
-        label: '主营业务收入',
+        label: <span style={{fontSize: '16px'}}>主营业务收入</span>,
         children: <Form.Item name='company_runningsum_3' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中： 1. 软件产品收入',
+        label: <span style={{fontSize: '16px'}}>其中： 1. 软件产品收入</span>,
         children: <Form.Item name='Gongxin_basic3' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：基础软件收入',
+        label: <span style={{fontSize: '16px'}}>其中：基础软件收入</span>,
         children: <Form.Item name='Gongxin_soft1' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工业软件收入',
+        label: <span style={{fontSize: '16px'}}>工业软件收入</span>,
         children: <Form.Item name='Gongxin_soft2' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：云服务收入',  
+        label: <span style={{fontSize: '16px'}}>其中：云服务收入</span>,
         children: <Form.Item name='Gongxin_soft3' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '大数据服务收入',
+        label: <span style={{fontSize: '16px'}}>大数据服务收入</span>,
         children: <Form.Item name='Gongxin_soft4' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '工业互联网平台服务收入',
+        label: <span style={{fontSize: '16px'}}>工业互联网平台服务收入</span>,
         children: <Form.Item name='Gongxin_soft5' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '电子商务平台技术服务收入',
+        label: <span style={{fontSize: '16px'}}>电子商务平台技术服务收入</span>,
         children: <Form.Item name='Gongxin_soft6' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '集成电路设计收入',
+        label: <span style={{fontSize: '16px'}}>集成电路设计收入</span>,
         children: <Form.Item name='Gongxin_soft7' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '3.信息安全收入',
+        label: <span style={{fontSize: '16px'}}>3.信息安全收入</span>,
         children: <Form.Item name='Gongxin_soft8' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：工控安全收入',
+        label: <span style={{fontSize: '16px'}}>其中：工控安全收入</span>,
         children: <Form.Item name='Gongxin_soft9' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：1.软件外包服务出口',
+        label: <span style={{fontSize: '16px'}}>其中：1.软件外包服务出口</span>,
         children: <Form.Item name='Gongxin_soft10' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '*2.应用嵌入式系统软件的产品出口额',
+        label: <span style={{fontSize: '16px'}}>*2.应用嵌入式系统软件的产品出口额</span>,
         children: <Form.Item name='Gongxin_soft11' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '3.其他软件业务出口',
+        label: <span style={{fontSize: '16px'}}>3.其他软件业务出口</span>,
         children: <Form.Item name='Gongxin_soft12' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '主营业务成本',
+        label: <span style={{fontSize: '16px'}}>主营业务成本</span>,
         children: <Form.Item name='company_runningsum_33' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中：硬件成本',
+        label: <span style={{fontSize: '16px'}}>其中：硬件成本</span>,
         children: <Form.Item name='Gongxin_soft13' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '费用总额',
+        label: <span style={{fontSize: '16px'}}>费用总额</span>,
         children: <Form.Item name='Gongxin_soft14' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '利润总额',
+        label: <span style={{fontSize: '16px'}}>利润总额</span>,
         children: <Form.Item name='company_runningsum_17' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '研发经费',
+        label: <span style={{fontSize: '16px'}}>研发经费</span>,
         children: <Form.Item name='Gongxin_soft15' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '从业人员工资总额',
+        label: <span style={{fontSize: '16px'}}>从业人员工资总额</span>,
         children: <Form.Item name='company_employee_11' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '平均用工人数',
+        label: <span style={{fontSize: '16px'}}>平均用工人数</span>,
         children: <Form.Item name='FinanceStatusInfo_130' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '订单同比增长',
+        label: <span style={{fontSize: '16px'}}>订单同比增长</span>,
         children: <Form.Item name='Gongxin_soft16' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     }

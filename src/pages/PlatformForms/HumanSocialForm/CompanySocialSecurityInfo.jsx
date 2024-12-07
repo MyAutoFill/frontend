@@ -108,73 +108,73 @@ export default function CompanySocialSecurityInfo(props) {
   const items = [
     {
       key: '1',
-      label: '单位管理码',
+      label: <span style={{fontSize: '16px'}}>单位管理码</span>,
       children: <Form.Item name="company_insurance_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
-      label: '参保单位名称',
+      label: <span style={{fontSize: '16px'}}>参保单位名称</span>,
       children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '3',
-      label: '参保单位类型',
+      label: <span style={{fontSize: '16px'}}>参保单位类型</span>,
       children: <Form.Item name="company_basicinfo_r3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '4',
-      label: '单位曾用名',
+      label: <span style={{fontSize: '16px'}}>单位曾用名</span>,
       children: <Form.Item name="company_basicinfo_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '7',
-      label: '联系人姓名',
+      label: <span style={{fontSize: '16px'}}>联系人姓名</span>,
       children: <Form.Item name="company_basicinfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
-      label: '联系人所在部门',
+      label: <span style={{fontSize: '16px'}}>联系人所在部门</span>,
       children: <Form.Item name="HumanSocial_SSInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '联系人电话',
+      label: <span style={{fontSize: '16px'}}>联系人电话</span>,
       children: <Form.Item name="company_basicinfo_31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
-      label: '联系人手机号码',
+      label: <span style={{fontSize: '16px'}}>联系人手机号码</span>,
       children: <Form.Item name="HumanSocial_SSInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
-      label: '经济行业类别',
+      label: <span style={{fontSize: '16px'}}>经济行业类别</span>,
       children: <Form.Item name="company_insurance_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
-      label: '级别规模',
+      label: <span style={{fontSize: '16px'}}>级别规模</span>,
       children: <Form.Item name="HumanSocial_SSInfo_12"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '13',
-      label: '统筹层次',
+      label: <span style={{fontSize: '16px'}}>统筹层次</span>,
       children: <Form.Item name="company_insurance_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
-      label: '基金来源',
+      label: <span style={{fontSize: '16px'}}>基金来源</span>,
       children: 
         <Form.Item name="HumanSocial_NewSheBao_77">
           <Select
@@ -203,63 +203,63 @@ export default function CompanySocialSecurityInfo(props) {
     },
     {
       key: '15',
-      label: '单位主要经营地',
+      label: <span style={{fontSize: '16px'}}>单位主要经营地</span>,
       children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '16',
-      label: '参保电子邮箱',
-      children: <Form.Item name="company_basicinfo_35"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      label: <span style={{fontSize: '16px'}}>参保电子邮箱</span>,
+      children: <Form.Item name="company_basicinfo_35"><Input size='large' disabled={disableVar} style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     },
     {
       key: '17',
-      label: '联系地址',
-      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      label: <span style={{fontSize: '16px'}}>联系地址</span>,
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     },
     {
       key: '18',
-      label: '主管部门',
+      label: <span style={{fontSize: '16px'}}>主管部门</span>,
       children: <Form.Item name="CompanyInfoChange_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '19',
-      label: '单位特殊标识',
+      label: <span style={{fontSize: '16px'}}>单位特殊标识</span>,
       children: <Form.Item name="HumanSocial_SSInfo_19"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
-      label: '拨款单位标志',
+      label: <span style={{fontSize: '16px'}}>拨款单位标志</span>,
       children: <Form.Item name="HumanSocial_SSInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '21',
-      label: '征缴方式',
+      label: <span style={{fontSize: '16px'}}>征缴方式</span>,
       children: <Form.Item name="HumanSocial_SSInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '22',
-      label: '缴费银行名称',
+      label: <span style={{fontSize: '16px'}}>缴费银行名称</span>,
       children: <Form.Item name="HumanSocial_SSInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '23',
-      label: '缴费银行户名',
+      label: <span style={{fontSize: '16px'}}>缴费银行户名</span>,
       children: <Form.Item name="HumanSocial_SSInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
-      label: '缴费银行账号',
-      children: <Form.Item name="HumanSocial_SSInfo_24"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      label: <span style={{fontSize: '16px'}}>缴费银行账号</span>,
+      children: <Form.Item name="HumanSocial_SSInfo_24"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     },
   ];
 

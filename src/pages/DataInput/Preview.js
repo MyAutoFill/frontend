@@ -54,31 +54,31 @@ export default function PreviewPage() {
     },
     {
       key: 'platform12',
-      label: '国家税务局山东省电子税务局',
+      label: <span style={{fontSize: '16px'}}>国家税务局山东省电子税务局</span>,
       children: [
         {
           key: 'platform12_1',
-          label: '现金流量表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
+          label: <span style={{fontSize: '16px'}}>现金流量表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)</span>,
         },
 				{
           key: 'platform12_2',
-          label: '资产负债表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
+          label: <span style={{fontSize: '16px'}}>资产负债表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)</span>,
         },
 				{
           key: 'platform12_3',
-          label: '利润表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)',
+          label: <span style={{fontSize: '16px'}}>利润表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)</span>,
         },
         // {
         //   key: 'platform12_4',
-        //   label: '现金流量表(适用执行企业会计制度的企业)',
+        //   label: <span style={{fontSize: '16px'}}>现金流量表(适用执行企业会计制度的企业)</span>,
         // },
 				// {
         //   key: 'platform12_5',
-        //   label: '资产负债表(适用执行企业会计制度的企业)',
+        //   label: <span style={{fontSize: '16px'}}>资产负债表(适用执行企业会计制度的企业)</span>,
         // },
 				// {
         //   key: 'platform12_6',
-        //   label: '利润表(适用执行企业会计制度的企业)',
+        //   label: <span style={{fontSize: '16px'}}>利润表(适用执行企业会计制度的企业)</span>,
         // }
       ],
     },
@@ -87,51 +87,51 @@ export default function PreviewPage() {
     },
     {
       key: 'platform1',
-      label: '统计局',
+      label: <span style={{fontSize: '16px'}}>统计局</span>,
       children: [
         // {
         //   key: '1',
-        //   label: '从业人员及工资总额',
+        //   label: <span style={{fontSize: '16px'}}>从业人员及工资总额</span>,
         // },
         // {
 				// 	key: '2',
-				// 	label: '调查单位基本情况',
+				// 	label: <span style={{fontSize: '16px'}}>调查单位基本情况</span>,
         // },
         {
           key: '3',
-          label: '财务状况',
+          label: <span style={{fontSize: '16px'}}>财务状况</span>,
         },
         // {
         //   key: '4',
-        //   label: '保障性住房开发及经营情况',
+        //   label: <span style={{fontSize: '16px'}}>保障性住房开发及经营情况</span>,
         // },
         // {
 				// 	key: '5',
-				// 	label: '固定资产投资项目情况',
+				// 	label: <span style={{fontSize: '16px'}}>固定资产投资项目情况</span>,
         // },
         // {
 				// 	key: '6',
-				// 	label: '固定资产投资项目新增生产能力（或工程效益）情况',
+				// 	label: <span style={{fontSize: '16px'}}>固定资产投资项目新增生产能力（或工程效益）情况</span>,
         // },
 				// {
 				// 	key: '7',
-				// 	label: '工业产销总值及主要产品产量',
+				// 	label: <span style={{fontSize: '16px'}}>工业产销总值及主要产品产量</span>,
 				// },
 				// {
 				// 	key: '8',
-				// 	label: '当月工业总产值明细数据',
+				// 	label: <span style={{fontSize: '16px'}}>当月工业总产值明细数据</span>,
 				// },
 				// {
 				// 	key: '9',
-				// 	label: '当月工业总产值明细数据计算表',
+				// 	label: <span style={{fontSize: '16px'}}>当月工业总产值明细数据计算表</span>,
 				// },
 				// {
 				// 	key: '10',
-				// 	label: '能源购进、消费与库存',
+				// 	label: <span style={{fontSize: '16px'}}>能源购进、消费与库存</span>,
 				// },
 				// {
 				// 	key: '11',
-				// 	label: '生产经营景气状况',
+				// 	label: <span style={{fontSize: '16px'}}>生产经营景气状况</span>,
 				// },
       ],
     },
@@ -140,15 +140,15 @@ export default function PreviewPage() {
     },
     {
       key: 'platform2',
-      label: '山东公共就业人才服务网上服务大厅',
+      label: <span style={{fontSize: '16px'}}>山东公共就业人才服务网上服务大厅</span>,
       children: [
         {
             key: '12',
-            label: '单位就业登记',
+            label: <span style={{fontSize: '16px'}}>单位就业登记</span>,
         },
         {
             key: '13',
-            label: '以工代训补贴申请',
+            label: <span style={{fontSize: '16px'}}>以工代训补贴申请</span>,
         }
       ],
     },
@@ -157,11 +157,11 @@ export default function PreviewPage() {
     },
     // {
     //   key: 'platform3',
-    //   label: '社保就业网上申报',
+    //   label: <span style={{fontSize: '16px'}}>社保就业网上申报</span>,
     //   children: [
     //     {
     //       key: '14',
-    //       label: '增员',
+    //       label: <span style={{fontSize: '16px'}}>增员</span>,
     //     }
     //   ],
     // },
@@ -170,11 +170,11 @@ export default function PreviewPage() {
     // },
     // {
     //   key: 'platform4',
-    //   label: '医保网上申报系统',
+    //   label: <span style={{fontSize: '16px'}}>医保网上申报系统</span>,
     //   children: [
     //     {
     //       key: '15',
-    //       label: '单位信息变更',
+    //       label: <span style={{fontSize: '16px'}}>单位信息变更</span>,
     //     }
     //   ],
     // },
@@ -183,11 +183,11 @@ export default function PreviewPage() {
     // },
     {
       key: 'platform5',
-      label: '国家企业信用信息公示系统',
+      label: <span style={{fontSize: '16px'}}>国家企业信用信息公示系统</span>,
       children: [
         {
           key: '16',
-          label: '工商年报',
+          label: <span style={{fontSize: '16px'}}>工商年报</span>,
         }
       ],
     },
@@ -196,11 +196,11 @@ export default function PreviewPage() {
     },
     // {
     //   key: 'platform6',
-    //   label: '威海住房公积金管理中心网站',
+    //   label: <span style={{fontSize: '16px'}}>威海住房公积金管理中心网站</span>,
     //   children: [
     //     {
     //       key: '17',
-    //       label: '汇缴登记',
+    //       label: <span style={{fontSize: '16px'}}>汇缴登记</span>,
     //     }
     //   ],
     // },
@@ -209,11 +209,11 @@ export default function PreviewPage() {
     // },
     // {
     //   key: 'platform7',
-    //   label: '山东电力交易平台',
+    //   label: <span style={{fontSize: '16px'}}>山东电力交易平台</span>,
     //   children: [
     //     {
     //       key: '18',
-    //       label: '电力用户基本信息',
+    //       label: <span style={{fontSize: '16px'}}>电力用户基本信息</span>,
     //     }
     //   ],
     // },
@@ -222,7 +222,7 @@ export default function PreviewPage() {
     // },
     // {
     //   key: 'platform8',
-    //   label: '火炬中心业务办理平台',
+    //   label: <span style={{fontSize: '16px'}}>火炬中心业务办理平台</span>,
     //   children: [
     //   ],
     // },
@@ -231,11 +231,11 @@ export default function PreviewPage() {
     // },
     // {
     //   key: 'platform9',
-    //   label: '信息产业运行监测平台',
+    //   label: <span style={{fontSize: '16px'}}>信息产业运行监测平台</span>,
     //   children: [
     //     {
     //       key: '19',
-    //       label: '软件和信息技术服务业企业月报',
+    //       label: <span style={{fontSize: '16px'}}>软件和信息技术服务业企业月报</span>,
     //     }
     //   ],
     // },
@@ -244,7 +244,7 @@ export default function PreviewPage() {
     // },
     // {
     //   key: 'platform10',
-    //   label: '山东省政务服务网',
+    //   label: <span style={{fontSize: '16px'}}>山东省政务服务网</span>,
     //   children: [
     //   ],
     // },

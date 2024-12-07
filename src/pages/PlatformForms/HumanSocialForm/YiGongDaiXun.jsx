@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form, Select } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form, Select, Modal } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -32,8 +32,13 @@ export default function YiGongDaiXun(props) {
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
 
+  const [modalVisible, setModalVisible] = useState(false);
+
   useEffect(() => {
     load_data(props.date);
+    return () => {
+      setModalVisible(true);
+    };
   }, [props.date]);
 
   const load_data = (curDate) => {
@@ -108,55 +113,55 @@ export default function YiGongDaiXun(props) {
   const items = [
     {
       key: '1',
-      label: '单位信息',
-      children: '-',
+      label: <span style={{fontSize: '16px'}}>单位信息</span>,
+      children: <span style={{fontSize: '16px'}}>以下为单位信息</span>,
       span: 3
     },
     {
       key: '2',
-      label: '单位名称',
+      label: <span style={{fontSize: '16px'}}>单位名称</span>,
       children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
-      label: '统一信用代码',
+      label: <span style={{fontSize: '16px'}}>统一信用代码</span>,
       children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
-      label: '法人姓名',
+      label: <span style={{fontSize: '16px'}}>法人姓名</span>,
       children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
-      label: '法人身份证号码',
+      label: <span style={{fontSize: '16px'}}>法人身份证号码</span>,
       children: <Form.Item name="company_basicinfo_28"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
-      label: '基本账户开户银行',
+      label: <span style={{fontSize: '16px'}}>基本账户开户银行</span>,
       children: <Form.Item name="HumanSocial_yigongdaixun_5"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
-      label: '基本账户银行账号',
+      label: <span style={{fontSize: '16px'}}>基本账户银行账号</span>,
       children: <Form.Item name="company_insurance_11"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
-      label: '联系电话',
+      label: <span style={{fontSize: '16px'}}>联系电话</span>,
       children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '企业规模',
+      label: <span style={{fontSize: '16px'}}>企业规模</span>,
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_8">
           <Select
@@ -191,7 +196,7 @@ export default function YiGongDaiXun(props) {
     },
     {
       key: '10',
-      label: '所属行业',
+      label: <span style={{fontSize: '16px'}}>所属行业</span>,
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_9">
           <Select
@@ -234,13 +239,13 @@ export default function YiGongDaiXun(props) {
     },
     {
       key: '11',
-      label: '补贴年月',
+      label: <span style={{fontSize: '16px'}}>补贴年月</span>,
       children: <DatePicker size='large' placeholder='请选择补贴年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '12',
-      label: '补贴类型',
+      label: <span style={{fontSize: '16px'}}>补贴类型</span>,
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_11">
           <Select
@@ -267,7 +272,7 @@ export default function YiGongDaiXun(props) {
     },
     {
       key: '13',
-      label: '企业所属规划',
+      label: <span style={{fontSize: '16px'}}>企业所属规划</span>,
       children: 
 				<Form.Item name="HumanSocial_yigongdaixun_12">
 					<Select
@@ -322,7 +327,7 @@ export default function YiGongDaiXun(props) {
     },
     {
       key: '14',
-      label: '是否当月首次申领',
+      label: <span style={{fontSize: '16px'}}>是否当月首次申领</span>,
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_13">
           <Select
@@ -349,13 +354,13 @@ export default function YiGongDaiXun(props) {
     },
     {
       key: '15',
-      label: '以工代训培训情况',
+      label: <span style={{fontSize: '16px'}}>以工代训培训情况</span>,
       children: <Form.Item name="HumanSocial_yigongdaixun_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '16',
-      label: '是否为劳务派遣',
+      label: <span style={{fontSize: '16px'}}>是否为劳务派遣</span>,
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_15">
           <Select
@@ -382,19 +387,19 @@ export default function YiGongDaiXun(props) {
     },
     {
       key: '17',
-      label: '劳务派遣单位名称',
+      label: <span style={{fontSize: '16px'}}>劳务派遣单位名称</span>,
       children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
-      label: '派遣单位的统一社会信用代码',
+      label: <span style={{fontSize: '16px'}}>派遣单位的统一社会信用代码</span>,
       children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '19',
-      label: '是否在省直参保',
+      label: <span style={{fontSize: '16px'}}>是否在省直参保</span>,
       children:
         <Form.Item name="HumanSocial_yigongdaixun_18">
           <Select
@@ -528,6 +533,19 @@ export default function YiGongDaiXun(props) {
               onClick={() => {window.location.href = '/input?tab=4'}}
             >立即填报</Button>
           </FloatButton.Group>
+          <>
+            {modalVisible && (
+              <Modal
+                title="提示"
+                open={modalVisible}
+                onOk={() => setModalVisible(false)}
+                onCancel={() => setModalVisible(false)}
+              >
+                您即将离开页面，确定要离开吗？
+              </Modal>
+            )}
+            {/* 组件的其余内容 */}
+          </>
         </Form>
       </div>
     </>

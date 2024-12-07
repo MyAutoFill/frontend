@@ -9,6 +9,7 @@ import { Menu, DatePicker, ConfigProvider } from 'antd';
 import { AppstoreOutlined, PaperClipOutlined, FileDoneOutlined, UserOutlined, ShopOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
 import { history } from '@umijs/max';
+import SyncCompanyInfoButton from './Components';
 
 export default function CompanyInfo() {
   const [selectedKey, setSelectedKey] = useState('1');
@@ -136,6 +137,7 @@ export default function CompanyInfo() {
                   <Menu
                     style={{
                       width: 320,
+                      fontSize: '18px'
                     }}
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
@@ -145,6 +147,9 @@ export default function CompanyInfo() {
                       setSelectedKey(key.key)
                     }}
                   />
+                </div>
+                <div>
+                  <SyncCompanyInfoButton />
                 </div>
                 <div>
                   <div style={{marginLeft: 30, height: 700, width: 1450, overflow: 'auto'}}>

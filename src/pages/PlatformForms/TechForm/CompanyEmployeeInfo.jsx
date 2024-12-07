@@ -101,452 +101,452 @@ export default function CompanyEmployeeInfo(props) {
   const items = [
     {
       key: '1',
-      label: '表号',
-      children: 'GQ-003',
+      label: <span style={{fontSize: '16px'}}>表号</span>,
+      children: <span style={{fontSize: '16px'}}>GQ-003</span>,
       span: 3
     },
     {
       key: '2',
-      label: '制定机关',
-      children: '科学技术部',
+      label: <span style={{fontSize: '16px'}}>制定机关</span>,
+      children: <span style={{fontSize: '16px'}}>科学技术部</span>,
       span: 1
     },
     {
       key: '3',
-      label: '批准机关',
-      children: '国家统计局',
+      label: <span style={{fontSize: '16px'}}>批准机关</span>,
+      children: <span style={{fontSize: '16px'}}>国家统计局</span>,
       span: 3
     },
     {
       key: '4',
-      label: '批准文号',
-      children: '国统制〔2022〕11号',
+      label: <span style={{fontSize: '16px'}}>批准文号</span>,
+      children: <span style={{fontSize: '16px'}}>国统制〔2022〕11号</span>,
       span: 1
     },
     {
       key: '5',
-      label: '有效期至',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      label: <span style={{fontSize: '16px'}}>有效期至</span>,
+      children: <DatePicker disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginTop: '10px'}}/>,
       span: 3
     },
     {
-      label: '',
-      children: '',
+      label: <span style={{fontSize: '16px'}}></span>,
+      children: <span style={{fontSize: '16px'}}></span>,
       span: 3
     },
     {
-      label: '一、从业人员数',
-      children: '',
+      label: <span style={{fontSize: '16px'}}>一、从业人员数</span>,
+      children: <span style={{fontSize: '16px'}}></span>,
       span: 3
     },
     {
       key: '6',
-      label: '指标名称',
-      children: '从业人员期末人数',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>从业人员期末人数</span>,
       span: 1
     },
     {
       key: '7',
-      label: '代码',
-      children: 'qd01',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd01</span>,
       span: 1
     },
     {
       key: '8',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_3"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '指标名称',
-      children: '其中：留学归国人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：留学归国人员</span>,
       span: 1
     },
     {
       key: '10',
-      label: '代码',
-      children: 'qd03',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd03</span>,
       span: 1
     },
     {
       key: '11',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_5"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
-      label: '指标名称',
-      children: '其中：外籍常驻人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：外籍常驻人员</span>,
       span: 1
     },
     {
       key: '13',
-      label: '代码',
-      children: 'qd25',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd25</span>,
       span: 1
     },
     {
       key: '14',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_7"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
-      label: '指标名称',
-      children: '其中：引进外籍专家',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：引进外籍专家</span>,
       span: 1
     },
     {
       key: '16',
-      label: '代码',
-      children: 'qd21',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd21</span>,
       span: 1
     },
     {
       key: '17',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_9"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
-      label: '指标名称',
-      children: '其中：当年新增从业人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：当年新增从业人员</span>,
       span: 1
     },
     {
       key: '19',
-      label: '代码',
-      children: 'qd26',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd26</span>,
       span: 1
     },
     {
       key: '20',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_11"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '21',
-      label: '指标名称',
-      children: '其中：吸纳高校应届毕业生',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：吸纳高校应届毕业生</span>,
       span: 1
     },
     {
       key: '22',
-      label: '代码',
-      children: 'qd14',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd14</span>,
       span: 1
     },
     {
       key: '23',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_13"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
-      label: '指标名称',
-      children: '其中：从事科研或科研辅助工作的应届毕业生',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：从事科研或科研辅助工作的应届毕业生</span>,
       span: 1
     },
     {
       key: '25',
-      label: '代码',
-      children: 'qd14_0',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd14_0</span>,
       span: 1
     },
     {
       key: '26',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_15"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '27',
-      label: '指标名称',
-      children: '从业人员平均人数',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>从业人员平均人数</span>,
       span: 1
     },
     {
       key: '28',
-      label: '代码',
-      children: 'qd05',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd05</span>,
       span: 1
     },
     {
       key: '29',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_17"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
-      label: '二、从业人员构成',
-      children: '',
+      label: <span style={{fontSize: '16px'}}>二、从业人员构成</span>,
+      children: <span style={{fontSize: '16px'}}></span>,
       span: 3
     },
     {
-      label: '（一）按学历、学位及技能分',
-      children: '',
+      label: <span style={{fontSize: '16px'}}>（一）按学历、学位及技能分</span>,
+      children: <span style={{fontSize: '16px'}}></span>,
       span: 3
     },
     {
       key: '30',
-      label: '指标名称',
-      children: '具有研究生学历（位）人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>具有研究生学历（位）人员</span>,
       span: 1
     },
     {
       key: '31',
-      label: '代码',
-      children: 'qd18',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd18</span>,
       span: 1
     },
     {
       key: '32',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_19"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '33',
-      label: '指标名称',
-      children: '其中：博士',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：博士</span>,
       span: 1
     },
     {
       key: '34',
-      label: '代码',
-      children: 'qd06',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd06</span>,
       span: 1
     },
     {
       key: '35',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_21"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '36',
-      label: '指标名称',
-      children: '其中：硕士',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：硕士</span>,
       span: 1
     },
     {
       key: '37',
-      label: '代码',
-      children: 'qd07',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd07</span>,
       span: 1
     },
     {
       key: '38',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_23"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '39',
-      label: '指标名称',
-      children: '具有大学本科学历（位）人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>具有大学本科学历（位）人员</span>,
       span: 1
     },
     {
       key: '40',
-      label: '代码',
-      children: 'qd08',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd08</span>,
       span: 1
     },
     {
       key: '41',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_25"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '42',
-      label: '指标名称',
-      children: '具有大学专科学历人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>具有大学专科学历人员</span>,
       span: 1
     },
     {
       key: '43',
-      label: '代码',
-      children: 'qd09',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd09</span>,
       span: 1
     },
     {
       key: '44',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_27"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '45',
-      label: '指标名称',
-      children: '技能人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>技能人员</span>,
       span: 1
     },
     {
       key: '46',
-      label: '代码',
-      children: 'qd31',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd31</span>,
       span: 1
     },
     {
       key: '47',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_29"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '48',
-      label: '指标名称',
-      children: '其中：高级技师（国家职业资格一级）',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：高级技师（国家职业资格一级）</span>,
       span: 1
     },
     {
       key: '49',
-      label: '代码',
-      children: 'qd32',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd32</span>,
       span: 1
     },
     {
       key: '50',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_31"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '51',
-      label: '指标名称',
-      children: '其中：技师（国家职业资格二级）',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：技师（国家职业资格二级）</span>,
       span: 1
     },
     {
       key: '52',
-      label: '代码',
-      children: 'qd33',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd33</span>,
       span: 1
     },
     {
       key: '53',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_33"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '54',
-      label: '指标名称',
-      children: '其中：高级技能人员（国家职业资格三级）',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：高级技能人员（国家职业资格三级）</span>,
       span: 1
     },
     {
       key: '55',
-      label: '代码',
-      children: 'qd34 ',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd34 </span>,
       span: 1
     },
     {
       key: '56',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_35"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '57',
-      label: '指标名称',
-      children: '其中：中级技能人员（国家职业资格四级）',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：中级技能人员（国家职业资格四级）</span>,
       span: 1
     },
     {
       key: '58',
-      label: '代码',
-      children: 'qd35',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd35</span>,
       span: 1
     },
     {
       key: '59',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_37"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '60',
-      label: '指标名称',
-      children: '其中：初级技能人员（国家职业资格五级）',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>其中：初级技能人员（国家职业资格五级）</span>,
       span: 1
     },
     {
       key: '61',
-      label: '代码',
-      children: 'qd36',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd36</span>,
       span: 1
     },
     {
       key: '62',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_39"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
-      label: '（二）按职业类型分',
-      children: '',
+      label: <span style={{fontSize: '16px'}}>（二）按职业类型分</span>,
+      children: <span style={{fontSize: '16px'}}></span>,
       span: 3
     },
     {
       key: '63',
-      label: '指标名称',
-      children: '中层及以上管理人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>中层及以上管理人员</span>,
       span: 1
     },
     {
       key: '64',
-      label: '代码',
-      children: 'qd27',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd27</span>,
       span: 1
     },
     {
       key: '65',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_41"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '66',
-      label: '指标名称',
-      children: '研发费用',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>研发费用</span>,
       span: 1
     },
     {
       key: '67',
-      label: '代码',
-      children: 'qc236',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qc236</span>,
       span: 1
     },
     {
       key: '68',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="company_runningsum_7"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '69',
-      label: '指标名称',
-      children: '专业技术人员',
+      label: <span style={{fontSize: '16px'}}>指标名称</span>,
+      children: <span style={{fontSize: '16px'}}>专业技术人员</span>,
       span: 1
     },
     {
       key: '70',
-      label: '代码',
-      children: 'qd28',
+      label: <span style={{fontSize: '16px'}}>代码</span>,
+      children: <span style={{fontSize: '16px'}}>qd28</span>,
       span: 1
     },
     {
       key: '71',
-      label: '数量',
+      label: <span style={{fontSize: '16px'}}>数量</span>,
       children: <Form.Item name="Tech_Employee_45"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     }

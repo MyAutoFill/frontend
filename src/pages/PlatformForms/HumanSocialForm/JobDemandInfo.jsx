@@ -102,7 +102,7 @@ export default function HumanSocialCompanyInfo(props) {
   const items = [
     {
       key: '1',
-      label: '招聘类型',
+      label: <span style={{fontSize: '16px'}}>招聘类型</span>,
       children: 
         <Form.Item name="jobDemand1">
           <Select
@@ -130,13 +130,13 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '2',
-      label: '职位名称',
+      label: <span style={{fontSize: '16px'}}>职位名称</span>,
       children: <Form.Item name="jobDemand2"><Input placeholder='请输入职位名称（如：人力资源经理）' size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '3',
-      label: '行政区',
+      label: <span style={{fontSize: '16px'}}>行政区</span>,
       children: 
         <Form.Item name="HumanSocial_yigongdaixun_12">
           <Select
@@ -188,25 +188,25 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '4',
-      label: '具体地址',
+      label: <span style={{fontSize: '16px'}}>具体地址</span>,
       children: <Form.Item name="company_basicinfo_17"><Input placeholder='请输入具体地址' size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
     {
       key: '5',
-      label: '职位类别',
+      label: <span style={{fontSize: '16px'}}>职位类别</span>,
       children: <Form.Item name="jobDeman5"><Input size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '6',
-      label: '招聘人数',
+      label: <span style={{fontSize: '16px'}}>招聘人数</span>,
       children: <Form.Item name="jobDeman6"><Input placeholder='请输入招聘人数' size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '7',
-      label: '经验和学历 - 经验',
+      label: <span style={{fontSize: '16px'}}>经验和学历 - 经验</span>,
       children: 
         <Form.Item name="jobDeman7">
           <Select
@@ -250,7 +250,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '8',
-      label: '经验和学历 - 学历',
+      label: <span style={{fontSize: '16px'}}>经验和学历 - 学历</span>,
       children: 
         <Form.Item name="jobDeman8">
           <Select
@@ -294,7 +294,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '9',
-      label: '薪资范围',
+      label: <span style={{fontSize: '16px'}}>薪资范围</span>,
       children: 
         <>
           <Form.Item name="jobDeman9"><Input placeholder='最低薪资( 不能低于2200元 )' size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
@@ -305,13 +305,13 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '11',
-      label: '职位描述',
-      children: <Form.Item name="jobDeman11"><TextArea rows={4} placeholder="请输入职位描述" /></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>职位描述</span>,
+      children: <Form.Item name="jobDeman11"><TextArea style={{ marginLeft: '10px', marginTop: '10px' }} rows={4} placeholder="请输入职位描述" /></Form.Item>,
       span: 3
     },
     {
       key: '12',
-      label: '年龄要求',
+      label: <span style={{fontSize: '16px'}}>年龄要求</span>,
       children: 
         <Form.Item name="jobDemand12">
           <Select

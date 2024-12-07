@@ -330,7 +330,7 @@ export default function UploadSyncPage() {
   const items = [
     {
       key: '1',
-      label: '利润表',
+      label: <span style={{fontSize: '16px'}}>利润表</span>,
       children: 
         <Upload {...lrProps} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击利润表excel文件</Button>
@@ -339,7 +339,7 @@ export default function UploadSyncPage() {
     },
     {
       key: '2',
-      label: '现金流量表',
+      label: <span style={{fontSize: '16px'}}>现金流量表</span>,
       children: 
         <Upload {...xjllProps} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击现金流量表excel文件</Button>
@@ -348,7 +348,7 @@ export default function UploadSyncPage() {
     },
     {
       key: '3',
-      label: '资产负债表',
+      label: <span style={{fontSize: '16px'}}>资产负债表</span>,
       children: 
         <Upload {...zcfzProps} >
           <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击资产负债表excel文件</Button>

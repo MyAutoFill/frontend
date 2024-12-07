@@ -94,49 +94,49 @@ export default function ShangwuOperationInfo(props) {
 
   const items = [
 		{
-			label: '经营情况',
-			children: '———————————————— 以下信息为经营情况 ————————————————',
+			label: <span style={{fontSize: '16px'}}>经营情况</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为经营情况 ————————————————</span>,
 			span: 3
 		},
     {
       key: '1',
-      label: '进口额',
+      label: <span style={{fontSize: '16px'}}>进口额</span>,
       children: <Form.Item name="shangwu_operation1"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
-      label: '出口额',
+      label: <span style={{fontSize: '16px'}}>出口额</span>,
       children: <Form.Item name="Tech_EcoInfo_29"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '3',
-      label: '销售（营业）收入',
+      label: <span style={{fontSize: '16px'}}>销售（营业）收入</span>,
       children: <Form.Item name="company_runningsum_1"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '4',
-      label: '其中：主营业务收入',
+      label: <span style={{fontSize: '16px'}}>其中：主营业务收入</span>,
       children: <Form.Item name="company_runningsum_3"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '5',
-      label: '营业成本',
+      label: <span style={{fontSize: '16px'}}>营业成本</span>,
       children: <Form.Item name="company_runningsum_2"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '6',
-      label: '营业费用',
+      label: <span style={{fontSize: '16px'}}>营业费用</span>,
       children: <Form.Item name="tax_benefits_month_5"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '7',
-      label: '研发投入',
+      label: <span style={{fontSize: '16px'}}>研发投入</span>,
       children: <Form.Item name="company_runningsum_7"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
@@ -147,37 +147,37 @@ export default function ShangwuOperationInfo(props) {
     },
 		{
       key: '8',
-      label: '纳税总额',
+      label: <span style={{fontSize: '16px'}}>纳税总额</span>,
       children: <Form.Item name="GongShang_property_7"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '其中：增值税',
+      label: <span style={{fontSize: '16px'}}>其中：增值税</span>,
       children: <Form.Item name="company_runningsum_19"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
-      label: '其中：消费税',
+      label: <span style={{fontSize: '16px'}}>其中：消费税</span>,
       children: <Form.Item name="shangwu_operation10"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '11',
-      label: '其中：企业所得税',
+      label: <span style={{fontSize: '16px'}}>其中：企业所得税</span>,
       children: <Form.Item name="company_runningsum_21"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '12',
-      label: '其中：个人所得税',
+      label: <span style={{fontSize: '16px'}}>其中：个人所得税</span>,
       children: <Form.Item name="shangwu_operation12"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '13',
-      label: '其中：关税',
+      label: <span style={{fontSize: '16px'}}>其中：关税</span>,
       children: <Form.Item name="shangwu_operation13"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
@@ -188,31 +188,31 @@ export default function ShangwuOperationInfo(props) {
     },
     {
       key: '14',
-      label: '利润总额',
+      label: <span style={{fontSize: '16px'}}>利润总额</span>,
       children: <Form.Item name="company_runningsum_17"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '15',
-      label: '净利润',
+      label: <span style={{fontSize: '16px'}}>净利润</span>,
       children: <Form.Item name="GongShang_property_6"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '16',
-      label: '其中：外方股东享有的净利润',
+      label: <span style={{fontSize: '16px'}}>其中：外方股东享有的净利润</span>,
       children: <Form.Item name="shangwu_operation16"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
-      label: '其中：消分配外方股东的利润',
+      label: <span style={{fontSize: '16px'}}>其中：消分配外方股东的利润</span>,
       children: <Form.Item name="shangwu_operation17"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '18',
-      label: '其中：汇往外方股东的利润',
+      label: <span style={{fontSize: '16px'}}>其中：汇往外方股东的利润</span>,
       children: <Form.Item name="shangwu_operation18"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2,
     },
@@ -223,65 +223,65 @@ export default function ShangwuOperationInfo(props) {
     },
     {
       key: '19',
-      label: '外方股东利润转投资',
+      label: <span style={{fontSize: '16px'}}>外方股东利润转投资</span>,
       children: <Form.Item name="shangwu_operation19"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '20',
-      label: '其中：转赠本企业（机构）注册资本',
+      label: <span style={{fontSize: '16px'}}>其中：转赠本企业（机构）注册资本</span>,
       children: <Form.Item name="shangwu_operation20"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '21',
-      label: '其中：转赠其他企业（机构）注册资本',
+      label: <span style={{fontSize: '16px'}}>其中：转赠其他企业（机构）注册资本</span>,
       children: <Form.Item name="shangwu_operation21"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2,
     },
 		{
-			label: '债权、债务情况',
-			children: '———————————————— 以下信息为债权、债务情况 ————————————————',
+			label: <span style={{fontSize: '16px'}}>债权、债务情况</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为债权、债务情况 ————————————————</span>,
 			span: 3
 		},
 		{
       key: '22',
-      label: '本年外方股东贷款借款',
+      label: <span style={{fontSize: '16px'}}>本年外方股东贷款借款</span>,
       children: <Form.Item name="shangwu_operation22"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '23',
-      label: '本年外方股东贷款还款',
+      label: <span style={{fontSize: '16px'}}>本年外方股东贷款还款</span>,
       children: <Form.Item name="shangwu_operation23"><Input size='large' addonAfter='万美元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
-      label: '对境外投资者的债务合计',
+      label: <span style={{fontSize: '16px'}}>对境外投资者的债务合计</span>,
       children: <Form.Item name="shangwu_operation24"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '25',
-      label: '在境内投资者的存款合计',
+      label: <span style={{fontSize: '16px'}}>在境内投资者的存款合计</span>,
       children: <Form.Item name="shangwu_operation25"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '26',
-      label: '对境外投资者的债权合计',
+      label: <span style={{fontSize: '16px'}}>对境外投资者的债权合计</span>,
       children: <Form.Item name="shangwu_operation26"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2,
     },
 		{
-			label: '进口设备减免税情况',
-			children: '———————————————— 以下信息为进口设备减免税情况 ————————————————',
+			label: <span style={{fontSize: '16px'}}>进口设备减免税情况</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为进口设备减免税情况 ————————————————</span>,
 			span: 3
 		},
 		{
 			key: '27',
-			label: '是否享受国家规定减免税',
+			label: <span style={{fontSize: '16px'}}>是否享受国家规定减免税</span>,
 			children: 
 				<Form.Item name="shangwu_operation27">
 					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否享受国家规定的进口设备减免税:</span>
@@ -307,7 +307,7 @@ export default function ShangwuOperationInfo(props) {
 		},
 		{
 			key: '28',
-			label: '项目性质及适用产业政策条目',
+			label: <span style={{fontSize: '16px'}}>项目性质及适用产业政策条目</span>,
 			children: 
 				<Form.Item name="shangwu_operation28">
 					<Select
@@ -341,49 +341,49 @@ export default function ShangwuOperationInfo(props) {
       span: 1,
     },
 		{
-			label: '资产负债情况',
-			children: '————————————————— 以下信息为资产负债情况 —————————————————',
+			label: <span style={{fontSize: '16px'}}>资产负债情况</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为资产负债情况 —————————————————</span>,
 			span: 3
 		},
     {
       key: '29',
-      label: '资产总额',
+      label: <span style={{fontSize: '16px'}}>资产总额</span>,
       children: <Form.Item name="company_runningsum_18"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '30',
-      label: '其中：流动资产',
+      label: <span style={{fontSize: '16px'}}>其中：流动资产</span>,
       children: <Form.Item name="company_runningsum_20"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '31',
-      label: '其中：其他应收款',
+      label: <span style={{fontSize: '16px'}}>其中：其他应收款</span>,
       children: <Form.Item name="tax_debt_7"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '32',
-      label: '非流动资产',
+      label: <span style={{fontSize: '16px'}}>非流动资产</span>,
       children: <Form.Item name="Tech_EcoInfo_99"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '33',
-      label: '其中：长期股权投资',
+      label: <span style={{fontSize: '16px'}}>其中：长期股权投资</span>,
       children: <Form.Item name="tax_debt_14"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '34',
-      label: '固定资产',
+      label: <span style={{fontSize: '16px'}}>固定资产</span>,
       children: <Form.Item name="company_runningsum_22"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '35',
-      label: '无形资产',
+      label: <span style={{fontSize: '16px'}}>无形资产</span>,
       children: <Form.Item name="company_runningsum_24"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3,
     },
@@ -394,31 +394,31 @@ export default function ShangwuOperationInfo(props) {
     },
 		{
       key: '36',
-      label: '负债总额',
+      label: <span style={{fontSize: '16px'}}>负债总额</span>,
       children: <Form.Item name="company_runningsum_30"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '37',
-      label: '其中：流动负债',
+      label: <span style={{fontSize: '16px'}}>其中：流动负债</span>,
       children: <Form.Item name="company_runningsum_29"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '38',
-      label: '其中：应付外方股利',
+      label: <span style={{fontSize: '16px'}}>其中：应付外方股利</span>,
       children: <Form.Item name="tax_debt_32"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '39',
-      label: '其他应付款',
+      label: <span style={{fontSize: '16px'}}>其他应付款</span>,
       children: <Form.Item name="tax_debt_35"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '40',
-      label: '非流动负债',
+      label: <span style={{fontSize: '16px'}}>非流动负债</span>,
       children: <Form.Item name="property_29_yearEnd_2"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2,
     },
@@ -429,114 +429,114 @@ export default function ShangwuOperationInfo(props) {
     },
 		{
       key: '41',
-      label: '所有者权益合计',
+      label: <span style={{fontSize: '16px'}}>所有者权益合计</span>,
       children: <Form.Item name="company_runningsum_31"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3,
     },
 		{
       key: '42',
-      label: '其中：实收资本',
+      label: <span style={{fontSize: '16px'}}>其中：实收资本</span>,
       children: <Form.Item name="company_runningsum_32"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '43',
-      label: '资本公积',
+      label: <span style={{fontSize: '16px'}}>资本公积</span>,
       children: <Form.Item name="tax_debt_48"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '44',
-      label: '盈余公积',
+      label: <span style={{fontSize: '16px'}}>盈余公积</span>,
       children: <Form.Item name="tax_debt_49"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '45',
-      label: '未分配利润',
+      label: <span style={{fontSize: '16px'}}>未分配利润</span>,
       children: <Form.Item name="tax_debt_51"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '46',
-      label: '其他',
+      label: <span style={{fontSize: '16px'}}>其他</span>,
       children: <Form.Item name="shangwu_operation46"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2,
     },
 		{
       key: '47',
-      label: '其中：归属于外方股东的权益',
+      label: <span style={{fontSize: '16px'}}>其中：归属于外方股东的权益</span>,
       children: <Form.Item name="shangwu_operation47"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3,
     },
 		{
       key: '48',
-      label: '其中：实收资本',
+      label: <span style={{fontSize: '16px'}}>其中：实收资本</span>,
       children: <Form.Item name="company_runningsum_32"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '49',
-      label: '其中：资本公积',
+      label: <span style={{fontSize: '16px'}}>其中：资本公积</span>,
       children: <Form.Item name="shangwu_operation49"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '50',
-      label: '其中：盈余公积',
+      label: <span style={{fontSize: '16px'}}>其中：盈余公积</span>,
       children: <Form.Item name="shangwu_operation50"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '51',
-      label: '其中：未分配利润',
+      label: <span style={{fontSize: '16px'}}>其中：未分配利润</span>,
       children: <Form.Item name="shangwu_operation51"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '52',
-      label: '其他',
+      label: <span style={{fontSize: '16px'}}>其他</span>,
       children: <Form.Item name="shangwu_operation52"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2,
     },
 		{
-			label: '投资性公司子公司情况',
-			children: '————————————————— 以下信息为外商投资的投资性公司子公司情况（仅投资性公司填写） —————————————————',
+			label: <span style={{fontSize: '16px'}}>投资性公司子公司情况</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为外商投资的投资性公司子公司情况（仅投资性公司填写） —————————————————</span>,
 			span: 3
 		},
 		{
       key: '53',
-      label: '子公司应付外方股利',
+      label: <span style={{fontSize: '16px'}}>子公司应付外方股利</span>,
       children: <Form.Item name="shangwu_operation53"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3,
     },
 		{
       key: '54',
-      label: '子公司归属于外方股东的权益',
+      label: <span style={{fontSize: '16px'}}>子公司归属于外方股东的权益</span>,
       children: <Form.Item name="shangwu_operation54"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3,
     },
 		{
       key: '55',
-      label: '其中：实收资本',
+      label: <span style={{fontSize: '16px'}}>其中：实收资本</span>,
       children: <Form.Item name="shangwu_operation55"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '56',
-      label: '其中：资本公积',
+      label: <span style={{fontSize: '16px'}}>其中：资本公积</span>,
       children: <Form.Item name="shangwu_operation56"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '57',
-      label: '其中：盈余公积',
+      label: <span style={{fontSize: '16px'}}>其中：盈余公积</span>,
       children: <Form.Item name="shangwu_operation57"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
       key: '58',
-      label: '其中：未分配利润',
+      label: <span style={{fontSize: '16px'}}>其中：未分配利润</span>,
       children: <Form.Item name="shangwu_operation58"><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },

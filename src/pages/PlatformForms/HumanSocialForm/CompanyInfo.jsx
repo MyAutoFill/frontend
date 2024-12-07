@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, Select, Radio, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, Select, Modal, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
@@ -581,7 +581,7 @@ export default function HumanSocialCompanyInfo(props) {
   const items = [
     {
       key: '1',
-      label: '人员查询',
+      label: <span style={{fontSize: '16px'}}>人员查询</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_1">
           <Select
@@ -612,79 +612,79 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '2',
-      label: '证件类型',
+      label: <span style={{fontSize: '16px'}}>证件类型</span>,
       children: <Form.Item name="company_basicinfo_27"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
-      label: '证件号码',
+      label: <span style={{fontSize: '16px'}}>证件号码</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
-      label: '个人基本信息',
+      label: <span style={{fontSize: '16px'}}>个人基本信息</span>,
       children: '-',
       span: 3
     },
     {
       key: '5',
-      label: '证件号码',
+      label: <span style={{fontSize: '16px'}}>证件号码</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '6',
-      label: '姓名',
+      label: <span style={{fontSize: '16px'}}>姓名</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
-      label: '性别',
+      label: <span style={{fontSize: '16px'}}>性别</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
-      label: '民族',
+      label: <span style={{fontSize: '16px'}}>民族</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '户口性质',
+      label: <span style={{fontSize: '16px'}}>户口性质</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
-      label: '联系电话',
+      label: <span style={{fontSize: '16px'}}>联系电话</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
-      label: '户籍地地址',
+      label: <span style={{fontSize: '16px'}}>户籍地地址</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_10"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
-      label: '常住地址',
+      label: <span style={{fontSize: '16px'}}>常住地址</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '13',
-      label: '就业登记信息',
+      label: <span style={{fontSize: '16px'}}>就业登记信息</span>,
       children: '-',
       span: 3
     },
     {
       key: '14',
-      label: '业务办理区',
+      label: <span style={{fontSize: '16px'}}>业务办理区</span>,
       children: 
 				<Form.Item name="HumanSocial_CompanyInfo_12">
 					<Select
@@ -743,7 +743,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '15',
-      label: '业务办理街道',
+      label: <span style={{fontSize: '16px'}}>业务办理街道</span>,
       children: 
 				<Form.Item name="HumanSocial_CompanyInfo_13">
 					<Select
@@ -761,7 +761,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '16',
-      label: '用工形式',
+      label: <span style={{fontSize: '16px'}}>用工形式</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_14">
           <Select
@@ -808,7 +808,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '17',
-      label: '人员类别一类',
+      label: <span style={{fontSize: '16px'}}>人员类别一类</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_15">
           <Select
@@ -867,7 +867,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '18',
-      label: '人员类别二类',
+      label: <span style={{fontSize: '16px'}}>人员类别二类</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_16">
           <Select
@@ -885,7 +885,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '19',
-      label: '人员类别三类',
+      label: <span style={{fontSize: '16px'}}>人员类别三类</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_17">
           <Select
@@ -903,13 +903,13 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '20',
-      label: '工资待遇',
+      label: <span style={{fontSize: '16px'}}>工资待遇</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_18"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '21',
-      label: '是否企业法人',
+      label: <span style={{fontSize: '16px'}}>是否企业法人</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_19">
           <Select
@@ -936,31 +936,31 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '22',
-      label: '工种',
+      label: <span style={{fontSize: '16px'}}>工种</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '23',
-      label: '劳动合同类型',
+      label: <span style={{fontSize: '16px'}}>劳动合同类型</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_21"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
-      label: '合同开始日期',
+      label: <span style={{fontSize: '16px'}}>合同开始日期</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_22"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '25',
-      label: '合同终止日期',
+      label: <span style={{fontSize: '16px'}}>合同终止日期</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_23"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '26',
-      label: '是否创业',
+      label: <span style={{fontSize: '16px'}}>是否创业</span>,
       children: 
         <Form.Item name="HumanSocial_CompanyInfo_24">
           <Select
@@ -986,7 +986,7 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '27',
-      label: '单位所在区县',
+      label: <span style={{fontSize: '16px'}}>单位所在区县</span>,
       children:
         <Form.Item name="HumanSocial_CompanyInfo_25">
           <Select
@@ -1044,31 +1044,31 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '28',
-      label: '单位所在街道（镇）',
+      label: <span style={{fontSize: '16px'}}>单位所在街道（镇）</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
       key: '29',
-      label: '单位所在社区（村）',
+      label: <span style={{fontSize: '16px'}}>单位所在社区（村）</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_27"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '30',
-      label: '备注',
+      label: <span style={{fontSize: '16px'}}>备注</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_28"><Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '31',
-      label: '就失业登记证领取信息',
+      label: <span style={{fontSize: '16px'}}>就失业登记证领取信息</span>,
       children: '-',
       span: 3
     },
     {
       key: '32',
-      label: '是否领取',
+      label: <span style={{fontSize: '16px'}}>是否领取</span>,
       children:
         <Form.Item name="HumanSocial_CompanyInfo_29">
           <Select
@@ -1094,25 +1094,25 @@ export default function HumanSocialCompanyInfo(props) {
     },
     {
       key: '33',
-      label: '证书领取方式',
+      label: <span style={{fontSize: '16px'}}>证书领取方式</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '34',
-      label: '收件人姓名',
+      label: <span style={{fontSize: '16px'}}>收件人姓名</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '35',
-      label: '收件人电话',
+      label: <span style={{fontSize: '16px'}}>收件人电话</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_32"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '36',
-      label: '收件人地址',
+      label: <span style={{fontSize: '16px'}}>收件人地址</span>,
       children: <Form.Item name="HumanSocial_CompanyInfo_33"><Input disabled={disableVar} size='large' style={{ width: '870px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     }

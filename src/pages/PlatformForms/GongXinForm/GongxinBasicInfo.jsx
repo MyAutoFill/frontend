@@ -107,17 +107,17 @@ export default function GongXinBasicInfo(props) {
 
   const items = [
     {
-			label: '统一社会信用代码',
+			label: <span style={{fontSize: '16px'}}>统一社会信用代码</span>,
 			children: <Form.Item name='company_basicinfo_1' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
     },
     {
-			label: '单位详细名称',
+			label: <span style={{fontSize: '16px'}}>单位详细名称</span>,
 			children: <Form.Item name='company_basicinfo_2' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
     },
 		{
-			label: '登记注册统计类别',
+			label: <span style={{fontSize: '16px'}}>登记注册统计类别</span>,
 			children: 
 				<Form.Item name="Gongxin_basic1">
           <Select
@@ -225,62 +225,62 @@ export default function GongXinBasicInfo(props) {
 			span: 1
 		},
     {
-        label: '省自治区直辖市',
+        label: <span style={{fontSize: '16px'}}>省自治区直辖市</span>,
         children: <Form.Item name='company_basicinfo_11' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '地市州盟',
+        label: <span style={{fontSize: '16px'}}>地市州盟</span>,
         children: <Form.Item name='company_basicinfo_12' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '县市区旗',
+        label: <span style={{fontSize: '16px'}}>县市区旗</span>,
         children: <Form.Item name='company_basicinfo_13' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '乡镇街道',
+        label: <span style={{fontSize: '16px'}}>乡镇街道</span>,
         children: <Form.Item name='company_basicinfo_14' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '村居委会',
+        label: <span style={{fontSize: '16px'}}>村居委会</span>,
         children: <Form.Item name='company_basicinfo_15' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '街路门牌号',
+        label: <span style={{fontSize: '16px'}}>街路门牌号</span>,
         children: <Form.Item name='company_basicinfo_16' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '长途区号',
+        label: <span style={{fontSize: '16px'}}>长途区号</span>,
         children: <Form.Item name='company_basicinfo_32' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '行业代码(GB/T 4754-2017)',
+        label: <span style={{fontSize: '16px'}}>行业代码(GB/T 4754-2017)</span>,
         children: <Form.Item name='company_basicinfo_7' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '固定电话',
+        label: <span style={{fontSize: '16px'}}>固定电话</span>,
         children: <Form.Item name='company_basicinfo_33' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '固定电话 - 2',
+        label: <span style={{fontSize: '16px'}}>固定电话 - 2</span>,
         children: <Form.Item name='Gongxin_basic2' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '移动电话',
+        label: <span style={{fontSize: '16px'}}>移动电话</span>,
         children: <Form.Item name='company_basicinfo_36' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
 		{
-      label: '企业控股情况',
+      label: <span style={{fontSize: '16px'}}>企业控股情况</span>,
       children: 
         <Form.Item name="company_basicinfo_r8">
           {/* <span style={{ width: '200px', marginLeft: '10px' }}>请选择对应外商投资机构类型子类</span> */}
@@ -321,62 +321,62 @@ export default function GongXinBasicInfo(props) {
       span: 1
     },
     {
-        label: '软件和信息技术服务收入合计',
+        label: <span style={{fontSize: '16px'}}>软件和信息技术服务收入合计</span>,
         children: <Form.Item name='Gongxin_basic3' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '软件和信息技术服务收入合计 - 2',
+        label: <span style={{fontSize: '16px'}}>软件和信息技术服务收入合计 - 2</span>,
         children: <Form.Item name='Gongxin_basic4' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-日常运维及运营服务收入',
+        label: <span style={{fontSize: '16px'}}>其中-日常运维及运营服务收入</span>,
         children: <Form.Item name='Gongxin_basic5' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-日常运维及运营服务收入 - 2',
+        label: <span style={{fontSize: '16px'}}>其中-日常运维及运营服务收入 - 2</span>,
         children: <Form.Item name='Gongxin_basic6' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-业务出口收入',
+        label: <span style={{fontSize: '16px'}}>其中-业务出口收入</span>,
         children: <Form.Item name='Gongxin_basic7' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-业务出口收入 - 2',
+        label: <span style={{fontSize: '16px'}}>其中-业务出口收入 - 2</span>,
         children: <Form.Item name='Gongxin_basic8' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-外包出去业务对应的收入',
+        label: <span style={{fontSize: '16px'}}>其中-外包出去业务对应的收入</span>,
         children: <Form.Item name='Gongxin_basic9' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-外包出去业务对应的收入 - 2',
+        label: <span style={{fontSize: '16px'}}>其中-外包出去业务对应的收入 - 2</span>,
         children: <Form.Item name='Gongxin_basic10' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-出售给个人收入',
+        label: <span style={{fontSize: '16px'}}>其中-出售给个人收入</span>,
         children: <Form.Item name='Gongxin_basic11' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '其中-出售给个人收入 - 2',
+        label: <span style={{fontSize: '16px'}}>其中-出售给个人收入 - 2</span>,
         children: <Form.Item name='Gongxin_basic12' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '联系电话',
+        label: <span style={{fontSize: '16px'}}>联系电话</span>,
         children: <Form.Item name='Gongxin_basic13' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     },
     {
-        label: '报出日期',
+        label: <span style={{fontSize: '16px'}}>报出日期</span>,
         children: <Form.Item name='Gongxin_basic14' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1
     }

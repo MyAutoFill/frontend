@@ -101,45 +101,45 @@ export default function HighTechCompanyStat(props) {
   const items = [
     {
       key: '1',
-      label: '国家高新技术产业开发区法人基本信息表',
-      children: '（区外经各地方高新技术企业认定管理机构认定的高新技术企业同时适用）',
+      label: <span style={{fontSize: '16px'}}>国家高新技术产业开发区法人基本信息表</span>,
+      children: <span style={{fontSize: '16px'}}>（区外经各地方高新技术企业认定管理机构认定的高新技术企业同时适用）</span>,
       span: 3
     },
     {
       key: '2',
-      label: '法人姓名',
-      children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>法人姓名</span>,
+      children: <Form.Item name="company_basicinfo_26"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
       key: '10',
-      label: '企业法人性别(qd19)',
-      children: <Form.Item name="Tech_stat_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>企业法人性别(qd19)</span>,
+      children: <Form.Item name="Tech_stat_8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '15',
-      label: '移动电话(qa09)',
-      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>移动电话(qa09)</span>,
+      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '法人传真',
-      children: <Form.Item name="Tech_stat_cz"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>法人传真</span>,
+      children: <Form.Item name="Tech_stat_cz"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '法人邮箱',
-      children: <Form.Item name="Tech_stat_yx"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>法人邮箱</span>,
+      children: <Form.Item name="Tech_stat_yx"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '法人证件类型',
+      label: <span style={{fontSize: '16px'}}>法人证件类型</span>,
       children: 
         <Form.Item name="Tech_stat_frzjlx">
           <Select
             allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择法人证件类型"
             optionFilterProp="label"
@@ -158,55 +158,55 @@ export default function HighTechCompanyStat(props) {
       span: 1.5
     },
     {
-      label: '法人证件号码',
-      children: <Form.Item name="company_basicinfo_28" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>法人证件号码</span>,
+      children: <Form.Item name="company_basicinfo_28" rules={[{required: true, message: '该项必填'}]}><Input disabled={disableVar} style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '身份证有效期开始时间',
-      children: <Form.Item name="Tech_stat_IDstart"><DatePicker size='large' placeholder='身份证有效期开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>身份证有效期开始时间</span>,
+      children: <Form.Item name="Tech_stat_IDstart"><DatePicker size='large' placeholder='身份证有效期开始时间' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
-      label: '身份证有效期结束时间',
-      children: <Form.Item name="Tech_stat_IDend"><DatePicker size='large' placeholder='身份证有效期结束时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>身份证有效期结束时间</span>,
+      children: <Form.Item name="Tech_stat_IDend"><DatePicker size='large' placeholder='身份证有效期结束时间' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
       key: '3',
-      label: '统一社会信用代码(qa03)',
-      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>统一社会信用代码(qa03)</span>,
+      children: <Form.Item name="company_basicinfo_1"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '4',
-      label: '企业(单位)详细名称(qa04)',
-      children: <Form.Item name="Tech_stat_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>企业(单位)详细名称(qa04)</span>,
+      children: <Form.Item name="Tech_stat_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
-      label: '企业(单位)英文名称(sname_0)',
-      children: <Form.Item name="Tech_stat_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>企业(单位)英文名称(sname_0)</span>,
+      children: <Form.Item name="Tech_stat_3"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '单位简称',
-      children: <Form.Item name="Electric_UserInfo_2"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位简称</span>,
+      children: <Form.Item name="Electric_UserInfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '单位主页',
-      children: <Form.Item name="Electric_UserInfo_8"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位主页</span>,
+      children: <Form.Item name="Electric_UserInfo_8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '法人所在地区类型',
+      label: <span style={{fontSize: '16px'}}>法人所在地区类型</span>,
       children:         
         <Form.Item name="Tech_stat_address">
           <Select
             allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择法人所在地区类型"
             optionFilterProp="label"
@@ -229,12 +229,12 @@ export default function HighTechCompanyStat(props) {
       span: 1.5
     },
     {
-      label: '法人类型',
+      label: <span style={{fontSize: '16px'}}>法人类型</span>,
       children:         
         <Form.Item name="Tech_stat_type">
           <Select
             allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择法人类型"
             optionFilterProp="label"
@@ -265,12 +265,12 @@ export default function HighTechCompanyStat(props) {
       span: 1.5
     },
     {
-      label: '单位性质',
+      label: <span style={{fontSize: '16px'}}>单位性质</span>,
       children:         
         <Form.Item name="Tech_stat_dwxz">
           <Select
             allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="请选择单位性质"
             optionFilterProp="label"
@@ -313,73 +313,73 @@ export default function HighTechCompanyStat(props) {
       span: 1.5
     },
     {
-      label: '单位地址',
-      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位地址</span>,
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
-      label: '邮政编码',
-      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>邮政编码</span>,
+      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
-      label: '单位邮箱',
-      children: <Form.Item name="company_basicinfo_35"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位邮箱</span>,
+      children: <Form.Item name="company_basicinfo_35"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
-      label: '单位成立日期',
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位成立日期</span>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker size='large' placeholder='请选择成立日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
-      label: '单位注册资本币种',
-      children: <Form.Item name="company_basicinfo_currency"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位注册资本币种</span>,
+      children: <Form.Item name="company_basicinfo_currency"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '单位注册资金',
-      children: <Form.Item name="company_basicinfo_45"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位注册资金</span>,
+      children: <Form.Item name="company_basicinfo_45"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '单位登记机关',
-      children: <Form.Item name="company_basicinfo_djjg"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位登记机关</span>,
+      children: <Form.Item name="company_basicinfo_djjg"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '单位登记状态',
-      children: <Form.Item name="company_basicinfo_djzt"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位登记状态</span>,
+      children: <Form.Item name="company_basicinfo_djzt"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
-      label: '执照有效起始日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>执照有效起始日期</span>,
+      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5,
     },
     {
-      label: '执照有效终止日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>执照有效终止日期</span>,
+      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5,
     },
     {
-      label: '单位电话',
-      children: <Form.Item name="company_basicinfo_33"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位电话</span>,
+      children: <Form.Item name="company_basicinfo_33"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
-      label: '单位传真',
-      children: <Form.Item name="company_basicinfo_37"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>单位传真</span>,
+      children: <Form.Item name="company_basicinfo_37"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5,
     },
     {
-      label: '是否独立法人',
+      label: <span style={{fontSize: '16px'}}>是否独立法人</span>,
       children: 
         <Form.Item name="Tech_stat_dlfr">
           <Select
             showSearch
             allowClear
-            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}
             size='large'
             placeholder="是否独立法人"
             optionFilterProp="label"
@@ -399,85 +399,85 @@ export default function HighTechCompanyStat(props) {
     },
     {
       key: '6',
-      label: '行政区划代码(qa19)',
-      children: <Form.Item name="Tech_stat_4"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>行政区划代码(qa19)</span>,
+      children: <Form.Item name="Tech_stat_4"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
-      label: '法人性质(qa15)',
-      children: <Form.Item name="Tech_stat_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>法人性质(qa15)</span>,
+      children: <Form.Item name="Tech_stat_5"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '8',
-      label: '出生年份(qd20)',
-      children: <Form.Item name="Tech_stat_6"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>出生年份(qd20)</span>,
+      children: <Form.Item name="Tech_stat_6"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '9',
-      label: '学历(qd22)',
-      children: <Form.Item name="Tech_stat_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>学历(qd22)</span>,
+      children: <Form.Item name="Tech_stat_7"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '11',
-      label: '企业通讯地址(qa05) ',
-      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>企业通讯地址(qa05) </span>,
+      children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '12',
-      label: '邮政编码(qa06)',
-      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>邮政编码(qa06)</span>,
+      children: <Form.Item name="company_basicinfo_38"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '13',
-      label: '企业注册地址(qa07)',
+      label: <span style={{fontSize: '16px'}}>企业注册地址(qa07)</span>,
       children: <Form.Item name="company_basicinfo_17"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '14',
-      label: '企业负责人(qa08)',
-      children: <Form.Item name="company_basicinfo_30"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>企业负责人(qa08)</span>,
+      children: <Form.Item name="company_basicinfo_30"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '16',
-      label: '统计负责人(qa20)',
-      children: <Form.Item name="Tech_stat_14"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>统计负责人(qa20)</span>,
+      children: <Form.Item name="Tech_stat_14"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '17',
-      label: '填报人(qa11)',
-      children: <Form.Item name="Tech_stat_15"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>填报人(qa11)</span>,
+      children: <Form.Item name="Tech_stat_15"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '18',
-      label: '填报人电话(qa17)',
-      children: <Form.Item name="Tech_stat_16"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>填报人电话(qa17)</span>,
+      children: <Form.Item name="Tech_stat_16"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '19',
-      label: '填报人手机(qa17_1)',
-      children: <Form.Item name="Tech_stat_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>填报人手机(qa17_1)</span>,
+      children: <Form.Item name="Tech_stat_17"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '20',
-      label: '填报时间(qa12)',
-      children: <Form.Item name="Tech_stat_18"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>填报时间(qa12)</span>,
+      children: <Form.Item name="Tech_stat_18"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '21',
-      label: '填报人电子邮箱地址(qa13)',
+      label: <span style={{fontSize: '16px'}}>填报人电子邮箱地址(qa13)</span>,
       children: <Form.Item name="Tech_stat_19"><Input disabled={disableVar} size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     }

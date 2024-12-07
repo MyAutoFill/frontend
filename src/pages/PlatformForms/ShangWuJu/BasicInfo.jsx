@@ -105,69 +105,69 @@ export default function ShangwuBasicInfo(props) {
 
   const items = [
 		{
-			label: '企业信息',
-			children: '———————————————— 以下信息为企业信息 ————————————————',
+			label: <span style={{fontSize: '16px'}}>企业信息</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为企业信息 ————————————————</span>,
 			span: 3
 		},
     {
       key: '1',
-      label: '统一社会信用代码',
+      label: <span style={{fontSize: '16px'}}>统一社会信用代码</span>,
       children: <Form.Item name="company_basicinfo_1"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
-      label: '单位名称（中文）',
+      label: <span style={{fontSize: '16px'}}>单位名称（中文）</span>,
       children: <Form.Item name="company_basicinfo_2"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '3',
-      label: '单位名称（英文）',
+      label: <span style={{fontSize: '16px'}}>单位名称（英文）</span>,
       children: <Form.Item name="Tech_stat_3"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '4',
-      label: '联系电话',
+      label: <span style={{fontSize: '16px'}}>联系电话</span>,
       children: <Form.Item name="company_basicinfo_29"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '5',
-      label: '电子邮箱',
+      label: <span style={{fontSize: '16px'}}>电子邮箱</span>,
       children: <Form.Item name="company_basicinfo_35"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '6',
-      label: '通信地址',
+      label: <span style={{fontSize: '16px'}}>通信地址</span>,
       children: <Form.Item name="company_basicinfo_34"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '7',
-      label: '邮政编码',
+      label: <span style={{fontSize: '16px'}}>邮政编码</span>,
       children: <Form.Item name="company_basicinfo_38"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
 		{
-			label: '经营范围',
-			children: '———————————————— 以下信息为经营范围 ————————————————',
+			label: <span style={{fontSize: '16px'}}>经营范围</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为经营范围 ————————————————</span>,
 			span: 3
 		},
     {
       key: '8',
-      label: '经营范围',
+      label: <span style={{fontSize: '16px'}}>经营范围</span>,
       children: <Form.Item name="company_basicinfo_8"><Input size='large' style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      span: 3
     },
     {
 			key: '9',
-			label: '是否涉及特别管理措施',
+			label: <span style={{fontSize: '16px'}}>是否涉及特别管理措施</span>,
 			children: 
 				<Form.Item name="shangwu_basic9">
-					<span style={{ width: '200px', marginTop: '10px' }}>经营范围是否涉及国家规定实施的外商投资准入特别管理措施:</span>
+					<span style={{ fontSize:'16px', width: '200px', marginTop: '10px' }}>经营范围是否涉及国家规定实施的外商投资准入特别管理措施:</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -177,29 +177,29 @@ export default function ShangwuBasicInfo(props) {
 						options={[
 							{
 								value: '是',
-								label: '是',
+								label: <span style={{fontSize: '16px'}}>是</span>,
 							},
 							{
 								value: '否',
-								label: '否',
+								label: <span style={{fontSize: '16px'}}>否</span>,
 							}
 						]}
 					/>
 				</Form.Item>,
-			span: 1.5
+			span: 3
 		},
     {
       key: '10',
-      label: '特别管理措施',
+      label: <span style={{fontSize: '16px'}}>特别管理措施</span>,
       children: <Form.Item name="shangwu_basic10"><TextArea rows={4} placeholder="若是，请列举特别管理措施" /></Form.Item>,
       span: 3
     },
     {
 			key: '11',
-			label: '是否符合条件',
+			label: <span style={{fontSize: '16px'}}>是否符合条件</span>,
 			children: 
 				<Form.Item name="shangwu_basic11">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否符合条件的港澳投资者、服务提供者经营范围是否涉及内地与香港、澳门 《CEPA 服务贸易协议》《CEPA 投资协议》负面清单内的领域:</span>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>是否符合条件的港澳投资者、服务提供者经营范围是否涉及内地与香港、澳门 《CEPA 服务贸易协议》《CEPA 投资协议》负面清单内的领域:</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -209,11 +209,11 @@ export default function ShangwuBasicInfo(props) {
 						options={[
 							{
 								value: '是',
-								label: '是',
+								label: <span style={{fontSize: '16px'}}>是</span>,
 							},
 							{
 								value: '否',
-								label: '否',
+								label: <span style={{fontSize: '16px'}}>否</span>,
 							}
 						]}
 					/>
@@ -221,36 +221,36 @@ export default function ShangwuBasicInfo(props) {
 			span: 3
 		},
 		{
-			label: '行业许可情况',
-			children: '———————————————— 以下信息为行业许可情况 ————————————————',
+			label: <span style={{fontSize: '16px'}}>行业许可情况</span>,
+			children: <span style={{fontSize: '16px'}}>———————————————— 以下信息为行业许可情况 ————————————————</span>,
 			span: 3
 		},
     {
       key: '12',
-      label: '许可名称',
+      label: <span style={{fontSize: '16px'}}>许可名称</span>,
       children: <Form.Item name="shangwu_basic12"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '13',
-      label: '许可编号',
+      label: <span style={{fontSize: '16px'}}>许可编号</span>,
       children: <Form.Item name="shangwu_basic13"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
-      label: '许可时间',
+      label: <span style={{fontSize: '16px'}}>许可时间</span>,
       children: <Form.Item name="shangwu_basic14"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
-			label: '企业属性',
-			children: '————————————————— 以下信息为企业属性 —————————————————',
+			label: <span style={{fontSize: '16px'}}>企业属性</span>,
+			children: <span style={{fontSize: '16px'}}>————————————————— 以下信息为企业属性 —————————————————</span>,
 			span: 3
 		},
     {
 			key: '15',
-			label: '是否是上市公司',
+			label: <span style={{fontSize: '16px'}}>是否是上市公司</span>,
 			children: 
 				<Form.Item name="shangwu_basic15">
 					<Select
@@ -262,11 +262,11 @@ export default function ShangwuBasicInfo(props) {
 						options={[
 							{
 								value: '上市公司',
-								label: '上市公司',
+								label: <span style={{fontSize: '16px'}}>上市公司</span>,
 							},
 							{
 								value: '非上市的公众公司',
-								label: '非上市的公众公司',
+								label: <span style={{fontSize: '16px'}}>非上市的公众公司</span>,
 							}
 						]}
 					/>
@@ -275,7 +275,7 @@ export default function ShangwuBasicInfo(props) {
 		},
     {
       key: '16',
-      label: '若是上市公司请选择',
+      label: <span style={{fontSize: '16px'}}>若是上市公司请选择</span>,
       children: 
         <Form.Item name="shangwu_basic16">
           <Select
@@ -287,27 +287,27 @@ export default function ShangwuBasicInfo(props) {
             options={[
               {
                 value: 'A股票上市',
-                label: 'A股票上市',
+                label: <span style={{fontSize: '16px'}}>A股票上市</span>,
               },
               {
                 value: 'B股票上市',
-                label: 'B股票上市',
+                label: <span style={{fontSize: '16px'}}>B股票上市</span>,
               },
               {
                 value: 'H股票上市',
-                label: 'H股票上市',
+                label: <span style={{fontSize: '16px'}}>H股票上市</span>,
               },
               {
                 value: 'N股票上市',
-                label: 'N股票上市',
+                label: <span style={{fontSize: '16px'}}>N股票上市</span>,
               },
               {
                 value: 'S股票上市',
-                label: 'S股票上市',
+                label: <span style={{fontSize: '16px'}}>S股票上市</span>,
               },
               {
                 value: '其他证券市场上市',
-                label: '其他证券市场上市',
+                label: <span style={{fontSize: '16px'}}>其他证券市场上市</span>,
               }
             ]}
           />
@@ -316,10 +316,10 @@ export default function ShangwuBasicInfo(props) {
     },
     {
 			key: '17',
-			label: '是否是功能性机构',
+			label: <span style={{fontSize: '16px'}}>是否是功能性机构</span>,
 			children: 
 				<Form.Item name="shangwu_basic17">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>若是请选择:</span>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>若是请选择:</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -329,31 +329,31 @@ export default function ShangwuBasicInfo(props) {
 						options={[
 							{
 								value: '地区总部',
-								label: '地区总部',
+								label: <span style={{fontSize: '16px'}}>地区总部</span>,
 							},
 							{
 								value: '采购中心',
-								label: '采购中心',
+								label: <span style={{fontSize: '16px'}}>采购中心</span>,
 							},
 							{
 								value: '财务管理中心',
-								label: '财务管理中心',
+								label: <span style={{fontSize: '16px'}}>财务管理中心</span>,
 							},							
 							{
 								value: '结算中心',
-								label: '结算中心',
+								label: <span style={{fontSize: '16px'}}>结算中心</span>,
 							},
 							{
 								value: '销售中心',
-								label: '销售中心',
+								label: <span style={{fontSize: '16px'}}>销售中心</span>,
 							},
 							{
 								value: '分拨中心',
-								label: '分拨中心',
+								label: <span style={{fontSize: '16px'}}>分拨中心</span>,
 							},
 							{
 								value: '其他',
-								label: '其他',
+								label: <span style={{fontSize: '16px'}}>其他</span>,
 							}
 						]}
 					/>
@@ -362,10 +362,10 @@ export default function ShangwuBasicInfo(props) {
 		},
     {
 			key: '18',
-			label: '是否是研发中心',
+			label: <span style={{fontSize: '16px'}}>是否是研发中心</span>,
 			children: 
 				<Form.Item name="shangwu_basic18">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>若是请选择:</span>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>若是请选择:</span>
 					<Select
 						allowClear
 						style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -375,11 +375,11 @@ export default function ShangwuBasicInfo(props) {
 						options={[
 							{
 								value: '独立法人研发中心',
-								label: '独立法人研发中心',
+								label: <span style={{fontSize: '16px'}}>独立法人研发中心</span>,
 							},
 							{
 								value: '非独立法人研发中心',
-								label: '非独立法人研发中心',
+								label: <span style={{fontSize: '16px'}}>非独立法人研发中心</span>,
 							}
 						]}
 					/>
@@ -388,19 +388,19 @@ export default function ShangwuBasicInfo(props) {
 		},
     {
       key: '19',
-      label: '设立分公司研发中心',
+      label: <span style={{fontSize: '16px'}}>设立分公司研发中心</span>,
       children: <Form.Item name="shangwu_basic19"><Input size='large' addonAfter='个' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '20',
-      label: '内设独立研发部门',
+      label: <span style={{fontSize: '16px'}}>内设独立研发部门</span>,
       children: <Form.Item name="shangwu_basic20" ><Input size='large' addonAfter='个' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
 			key: '21',
-			label: '是否是外商投资公司',
+			label: <span style={{fontSize: '16px'}}>是否是外商投资公司</span>,
 			children: 
 				<Form.Item name="shangwu_basic21">
 					<Select
@@ -412,19 +412,19 @@ export default function ShangwuBasicInfo(props) {
 						options={[
 							{
 								value: '境外投资者（不属于以下投资类企业）',
-								label: '境外投资者（不属于以下投资类企业）',
+								label: <span style={{fontSize: '16px'}}>境外投资者（不属于以下投资类企业）</span>,
 							},
 							{
 								value: '外商投资的投资性公司',
-								label: '外商投资的投资性公司',
+								label: <span style={{fontSize: '16px'}}>外商投资的投资性公司</span>,
 							},
 							{
 								value: '外商投资的创业投资公司',
-								label: '外商投资的创业投资公司',
+								label: <span style={{fontSize: '16px'}}>外商投资的创业投资公司</span>,
 							},
 							{
 								value: '外商投资的以投资为主要业务的合伙企业',
-								label: '外商投资的以投资为主要业务的合伙企业',
+								label: <span style={{fontSize: '16px'}}>外商投资的以投资为主要业务的合伙企业</span>,
 							}
 						]}
 					/>
@@ -433,74 +433,74 @@ export default function ShangwuBasicInfo(props) {
 		},
     {
       key: '22',
-      label: '是否是高新技术企业',
+      label: <span style={{fontSize: '16px'}}>是否是高新技术企业</span>,
       children: 
 				<Form.Item name="shangwu_basic22">
-					<span style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}>若是请填写 <b>高新技术企业认定证号:</b></span>
+					<span style={{ fontSize:'16px', width: '250px', marginLeft: '10px', marginTop: '10px' }}>若是请填写 <b>高新技术企业认定证号:</b></span>
 					<Input placeholder='高新技术企业认定证号' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>
 				</Form.Item>,
-      span: 1,
+      span: 2,
     },
     {
       key: '23',
-      label: '是否是技术先进型服务企业',
+      label: <span style={{fontSize: '16px'}}>是否是技术先进型服务企业</span>,
       children: 
 				<Form.Item name="shangwu_basic22">
-					<span style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}>若是请填写 <b>技术先进型服务企业认定证号:</b></span>
-					<Input placeholder='技术先进型服务企业认定证号' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input>
+					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>若是请填写 <b>技术先进型服务企业认定证号:</b></span>
+					<Input placeholder='技术先进型服务企业认定证号' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input>
 				</Form.Item>,
-      span: 1,
+      span: 3,
     },
 		{
-			label: '年末从业人数',
-			children: '————————————————— 以下信息为年末从业人数 —————————————————',
+			label: <span style={{fontSize: '16px'}}>年末从业人数</span>,
+			children: <span style={{fontSize: '16px'}}>————————————————— 以下信息为年末从业人数 —————————————————</span>,
 			span: 3
 		},
     {
       key: '24',
-      label: '总计',
+      label: <span style={{fontSize: '16px'}}>总计</span>,
       children: <Form.Item name="company_employee_1"><Input size='large' addonAfter='人' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '25',
-      label: '其中：外籍职工',
+      label: <span style={{fontSize: '16px'}}>其中：外籍职工</span>,
       children: <Form.Item name="Tech_Employee_7"><Input size='large' addonAfter='人' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '26',
-      label: '大学及以上学历',
+      label: <span style={{fontSize: '16px'}}>大学及以上学历</span>,
       children: <Form.Item name="shangwu_basic26" ><Input size='large' addonAfter='人' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '27',
-      label: '本年职工薪酬',
+      label: <span style={{fontSize: '16px'}}>本年职工薪酬</span>,
       children: <Form.Item name="company_runningsum_23" ><Input size='large' addonAfter='万元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
 		{
-			label: '有效发明专利数',
-			children: '————————————————— 以下信息为有效发明专利数 —————————————————',
+			label: <span style={{fontSize: '16px'}}>有效发明专利数</span>,
+			children: <span style={{fontSize: '16px'}}>————————————————— 以下信息为有效发明专利数 —————————————————</span>,
 			span: 3
 		},
     {
       key: '28',
-      label: '境内知识产权',
+      label: <span style={{fontSize: '16px'}}>境内知识产权</span>,
       children: 
 				<Form.Item name="Tech_activity_67" >
-					<span style={{ marginLeft: '10px', marginTop: '10px' }}>境内知识产权行政部门授权数:</span>
+					<span style={{ fontSize: '16px', marginLeft: '10px', marginTop: '10px' }}>境内知识产权行政部门授权数:</span>
 					<Input size='large' addonAfter='项' style={{ width: '200px', marginLeft: '10px' }}></Input>
 				</Form.Item>,
       span: 3
     },
     {
       key: '29',
-      label: '境外知识产权',
+      label: <span style={{fontSize: '16px'}}>境外知识产权</span>,
       children: 
 				<Form.Item name="Tech_activity_69" >
-					<span style={{ marginLeft: '10px', marginTop: '10px'}}>境外知识产权行政部门授权数:</span>
+					<span style={{ fontSize: '16px', marginLeft: '10px', marginTop: '10px'}}>境外知识产权行政部门授权数:</span>
 					<Input size='large' addonAfter='项' style={{ width: '200px', marginLeft: '10px' }}></Input>
 				</Form.Item>,
       span: 3

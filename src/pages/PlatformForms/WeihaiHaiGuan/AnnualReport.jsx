@@ -97,31 +97,31 @@ export default function HaiguanAnnualReport(props) {
 
   const items = [
     {
-			label: '注册信息',
-			children: '以下信息为单位注册信息',
+			label: <span style={{fontSize: '16px'}}>注册信息</span>,
+			children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下信息为单位注册信息</span>,
 			span: 3
 		},
     {
       key: '1',
-      label: '英文名称',
+      label: <span style={{fontSize: '16px'}}>英文名称</span>,
       children: <Form.Item name="Tech_stat_3"><Input disabled={disableVar} size='large' style={{ width: '850px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '2',
-      label: '英文地址',
+      label: <span style={{fontSize: '16px'}}>英文地址</span>,
       children: <Form.Item name="haiguan1"><Input disabled={disableVar} size='large' style={{ width: '850px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {
       key: '3',
-      label: '跨境贸易电子商务企业类型',
+      label: <span style={{fontSize: '16px'}}>跨境贸易电子商务企业类型</span>,
       children: 
 				<Form.Item name="haiguan2">
 					<Select
 						showSearch
             allowClear
-						style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
+						style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}
 						size='large'
 						placeholder="请选择电子商务企业类型"
 						optionFilterProp="label"
@@ -157,106 +157,106 @@ export default function HaiguanAnnualReport(props) {
     },
     {
       key: '4',
-      label: '开户银行',
+      label: <span style={{fontSize: '16px'}}>开户银行</span>,
       children: <Form.Item name="HumanSocial_yigongdaixun_5"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '5',
-      label: '开户账号',
+      label: <span style={{fontSize: '16px'}}>开户账号</span>,
       children: <Form.Item name="company_insurance_11"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '6',
-      label: '特殊贸易区域',
+      label: <span style={{fontSize: '16px'}}>特殊贸易区域</span>,
       children: <Form.Item name="haiguan6"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '7',
-      label: '经济区划',
+      label: <span style={{fontSize: '16px'}}>经济区划</span>,
       children: <Form.Item name="haiguan7"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
     {
-      label: '关务责任人',
-      children: '以下为关务责任人信息',
+      label: <span style={{fontSize: '16px'}}>关务责任人</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下为关务责任人信息</span>,
       span: 3
     },
 		{
       key: '8',
-      label: '姓名',
+      label: <span style={{fontSize: '16px'}}>姓名</span>,
       children: <Form.Item name="haiguan8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '9',
-      label: '身份证类型',
+      label: <span style={{fontSize: '16px'}}>身份证类型</span>,
       children: <Form.Item name="haiguan9"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '10',
-      label: '身份证号',
+      label: <span style={{fontSize: '16px'}}>身份证号</span>,
       children: <Form.Item name="haiguan10"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '11',
-      label: '固定电话',
+      label: <span style={{fontSize: '16px'}}>固定电话</span>,
       children: <Form.Item name="haiguan11"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '12',
-      label: '移动电话',
+      label: <span style={{fontSize: '16px'}}>移动电话</span>,
       children: <Form.Item name="haiguan12"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '13',
-      label: '电子邮箱',
+      label: <span style={{fontSize: '16px'}}>电子邮箱</span>,
       children: <Form.Item name="haiguan13"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
-      label: '海关业务联系人',
-      children: '以下为海关业务联系人信息',
+      label: <span style={{fontSize: '16px'}}>海关业务联系人</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下为海关业务联系人信息</span>,
       span: 3
     },
 		{
       key: '14',
-      label: '姓名',
+      label: <span style={{fontSize: '16px'}}>姓名</span>,
       children: <Form.Item name="haiguan14"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '15',
-      label: '固定电话',
+      label: <span style={{fontSize: '16px'}}>固定电话</span>,
       children: <Form.Item name="haiguan15"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '16',
-      label: '移动电话',
+      label: <span style={{fontSize: '16px'}}>移动电话</span>,
       children: <Form.Item name="haiguan16"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '17',
-      label: '电子邮箱',
+      label: <span style={{fontSize: '16px'}}>电子邮箱</span>,
       children: <Form.Item name="haiguan17"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
 		{
-      label: '企业经营信息',
-      children: '以下为企业经营信息',
+      label: <span style={{fontSize: '16px'}}>企业经营信息</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'  }}>以下为企业经营信息</span>,
       span: 3
     },
     {
       key: '18',
-      label: '经营场所性质',
+      label: <span style={{fontSize: '16px'}}>经营场所性质</span>,
       children: 
         <Form.Item name="haiguan18">
           <Select
@@ -289,7 +289,7 @@ export default function HaiguanAnnualReport(props) {
     },
 		{
       key: '19',
-      label: '是否上市公司',
+      label: <span style={{fontSize: '16px'}}>是否上市公司</span>,
       children: 
         <Form.Item name="haiguan19">
           <Select
@@ -313,7 +313,7 @@ export default function HaiguanAnnualReport(props) {
     },
     {
       key: '20',
-      label: '是否实行会计电算化',
+      label: <span style={{fontSize: '16px'}}>是否实行会计电算化</span>,
       children: 
         <Form.Item name="haiguan20">
           <Select
@@ -338,13 +338,13 @@ export default function HaiguanAnnualReport(props) {
     },
     {
       key: '21',
-      label: '财务管理软件名称',
+      label: <span style={{fontSize: '16px'}}>财务管理软件名称</span>,
       children: <Form.Item name="haiguan21"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '22',
-      label: '记账方式',
+      label: <span style={{fontSize: '16px'}}>记账方式</span>,
       children: 
         <Form.Item name="haiguan22">
           <Select
@@ -369,78 +369,78 @@ export default function HaiguanAnnualReport(props) {
     },
     {
       key: '23',
-      label: '委托代理记账单位名称',
+      label: <span style={{fontSize: '16px'}}>委托代理记账单位名称</span>,
       children: <Form.Item name="haiguan23"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
-      label: '委托代理记账单位统一社会信用代码',
+      label: <span style={{fontSize: '16px'}}>委托代理记账单位统一社会信用代码</span>,
       children: <Form.Item name="haiguan24"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '25',
-      label: '委托代理记账单位地址',
+      label: <span style={{fontSize: '16px'}}>委托代理记账单位地址</span>,
       children: <Form.Item name="haiguan25"><Input disabled={disableVar} size='large' style={{ width: '620px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
 		{
       key: '26',
-      label: '委托代理记账单位联系人',
+      label: <span style={{fontSize: '16px'}}>委托代理记账单位联系人</span>,
       children: <Form.Item name="haiguan26"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '27',
-      label: '委托代理记账单位联系人电话',
+      label: <span style={{fontSize: '16px'}}>委托代理记账单位联系人电话</span>,
       children: <Form.Item name="haiguan27"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
 		{
-      label: '经营补充信息',
-      children: '币种（人民币 CNY）',
+      label: <span style={{fontSize: '16px'}}>经营补充信息</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>币种（人民币 CNY）</span>,
       span: 3
     },
 		{
       key: '28',
-      label: '存货',
+      label: <span style={{fontSize: '16px'}}>存货</span>,
       children: <Form.Item name="FinanceStatusInfo_14"><Input addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '29',
-      label: '流动负债合计',
+      label: <span style={{fontSize: '16px'}}>流动负债合计</span>,
       children: <Form.Item name="company_runningsum_29"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '30',
-      label: '流动资产合计',
+      label: <span style={{fontSize: '16px'}}>流动资产合计</span>,
       children: <Form.Item name="company_runningsum_20"><Input size='large' addonAfter='万元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '31',
-      label: '经营现金净流量',
+      label: <span style={{fontSize: '16px'}}>经营现金净流量</span>,
       children: <Form.Item name="tax_benefits_42"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '32',
-      label: '营业利润',
+      label: <span style={{fontSize: '16px'}}>营业利润</span>,
       children: <Form.Item name="company_runningsum_32"><Input size='large' addonAfter='万元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '33',
-      label: '年初所有者权益',
+      label: <span style={{fontSize: '16px'}}>年初所有者权益</span>,
       children: <Form.Item name="haiguan33"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '34',
-      label: '最近三年是否连续亏损',
+      label: <span style={{fontSize: '16px'}}>最近三年是否连续亏损</span>,
       children: 
         <Form.Item name="haiguan34">
           <Select
@@ -465,13 +465,13 @@ export default function HaiguanAnnualReport(props) {
       span: 3
     },
 		{
-      label: '企业自律管理情况',
-      children: '以下为企业自律管理情况',
+      label: <span style={{fontSize: '16px'}}>企业自律管理情况</span>,
+      children: <span style={{fontSize: '16px', marginLeft: '10px'}}>以下为企业自律管理情况</span>,
       span: 3
     },
     {
       key: '35',
-      label: '年度内是否开展内外部审计',
+      label: <span style={{fontSize: '16px'}}>年度内是否开展内外部审计</span>,
       children:
         <Form.Item name="haiguan35">
           <Select
@@ -495,62 +495,62 @@ export default function HaiguanAnnualReport(props) {
       span: 3,
     },
     {
-      label: '序号',
-      children: '1',
+      label:  <span style={{fontSize: '16px'}}>序号</span>,
+      children: <span style={{fontSize: '16px'}}>1</span>,
       span: 1,
     },
     {
       key: '36',
-      label: '审计执行机构名称',
+      label: <span style={{fontSize: '16px'}}>审计执行机构名称</span>,
       children: <Form.Item name="haiguan36"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '37',
-      label: '审计时间',
+      label: <span style={{fontSize: '16px'}}>审计时间</span>,
       children: <Form.Item name="hiaguan37"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
-      label: '序号',
-      children: '2',
+      label:  <span style={{fontSize: '16px'}}>序号</span>,
+      children: <span style={{fontSize: '16px'}}>2</span>,
       span: 1,
     },
     {
       key: '38',
-      label: '审计执行机构名称',
+      label: <span style={{fontSize: '16px'}}>审计执行机构名称</span>,
       children: <Form.Item name="haiguan38"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '39',
-      label: '审计时间',
+      label: <span style={{fontSize: '16px'}}>审计时间</span>,
       children: <Form.Item name="hiaguan39"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
-      label: '序号',
-      children: '3',
+      label:  <span style={{fontSize: '16px'}}>序号</span>,
+      children: <span style={{fontSize: '16px'}}>3</span>,
       span: 1,
     },
     {
       key: '40',
-      label: '审计执行机构名称',
+      label: <span style={{fontSize: '16px'}}>审计执行机构名称</span>,
       children: <Form.Item name="haiguan40"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '41',
-      label: '审计时间',
+      label: <span style={{fontSize: '16px'}}>审计时间</span>,
       children: <Form.Item name="hiaguan41"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '42',
-      label: '是否存在违反海关规定的问题',
+      label: <span style={{fontSize: '16px'}}>是否存在违反海关规定的问题</span>,
       children:
         <Form.Item name="haiguan42">
-					<span>在内外部审计等企业自律管理中，是否发现一般贸易业务、加工贸易及保税业务、减免税业务或其他进出口业务存在违反海关规定的问题</span>
+					<span style={{fontSize: '16px', marginLeft: '10px'}}>在内外部审计等企业自律管理中，是否发现一般贸易业务、加工贸易及保税业务、减免税业务或其他进出口业务存在违反海关规定的问题</span>
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -573,8 +573,8 @@ export default function HaiguanAnnualReport(props) {
     },
     {
       key: '43',
-      label: '具体问题',
-      children: <Form.Item name="haiguan43"><TextArea rows={4} placeholder="若选择存在，请详细写出具体问题" /></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>具体问题</span>,
+      children: <Form.Item name="haiguan43"><TextArea style={{fontSize: '16px', marginLeft: '10px'}} rows={4} placeholder="若选择存在，请详细写出具体问题" /></Form.Item>,
       span: 3
     }
   ];
