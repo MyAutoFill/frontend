@@ -37,7 +37,7 @@ export default function SyncCompanyInfoButton(props) {
 				fontSize: '22px',
 				position: 'absolute',
 				left: 80,
-				bottom: 450
+				bottom: 350
 			}}>点击按钮进行企业基本信息同步</span>
 		<ConfigProvider
 			button={{
@@ -54,7 +54,7 @@ export default function SyncCompanyInfoButton(props) {
 						fontSize: '20px',
 						position: 'absolute',
 						left: 100,
-						bottom: 400
+						bottom: 300
 					}}
 					// htmlType='submit'
 					// onClick={

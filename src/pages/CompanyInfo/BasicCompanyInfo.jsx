@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 import { requestCompanyData, reqRatioConfig, } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
-import dayjs from 'dayjs';
 
 const { TextArea } = Input;
 
@@ -292,6 +291,30 @@ export default function BasicCompanyInfo(props) {
       span: 1
     },
     {
+      key: '',
+      label: <span style={{fontSize: '16px'}}>民族</span>,
+      children: <Form.Item name="company_basicinfo_43" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '',
+      label: <span style={{fontSize: '16px'}}>出生日期</span>,
+      children: <Form.Item name="company_basicinfo_41"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 3
+    },
+    {
+      key: '',
+      label: <span style={{fontSize: '16px'}}>文化程度</span>,
+      children: <Form.Item name="company_basicinfo_44" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '15',
+      label: <span style={{fontSize: '16px'}}>国别或地区代码</span>,
+      children: <Form.Item name="company_basicinfo_c1" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
       key: '94',
       label: <span style={{fontSize: '16px'}}>法人证件类型</span>,
       children: 
@@ -383,10 +406,16 @@ export default function BasicCompanyInfo(props) {
       span: 1
     },
     {
+      key: '',
+      label: <span style={{fontSize: '16px'}}>证件有效期至</span>,
+      children: <Form.Item name="company_basicinfo_42"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      span: 1
+    },
+    {
       key: '18',
       label: <span style={{fontSize: '16px'}}>法人联系电话</span>,
       children: <Form.Item name="company_basicinfo_29" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
+      span: 2
     },
     {
       key: '19',
@@ -403,7 +432,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '21',
       label: <span style={{fontSize: '16px'}}>成立时间（所有单位填报）</span>,
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择成立时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 3
     },
     {

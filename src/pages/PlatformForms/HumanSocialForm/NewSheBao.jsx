@@ -11,6 +11,8 @@ import { BigNumber } from 'bignumber.js'
 
 export default function NewSheBao(props) {
 
+  const dateFormat = 'YYYY-MM-DD';
+
   const peopleSearchOnChange = (value) => {
     console.log(`selected ${value}`);
   };
@@ -147,13 +149,13 @@ export default function NewSheBao(props) {
     {
       key: '9',
       label: '出生日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '10',
       label: '档案出生日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择档案出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择档案出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -290,7 +292,7 @@ export default function NewSheBao(props) {
     {
       key: '32',
       label: '参加工作日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择参加工作日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择参加工作日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -395,13 +397,13 @@ export default function NewSheBao(props) {
     {
       key: '47',
       label: '出生日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
       key: '48',
       label: '档案出生日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择档案出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择档案出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
@@ -454,7 +456,7 @@ export default function NewSheBao(props) {
     {
       key: '56',
       label: '减员年月',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择减员年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择减员年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {
@@ -466,7 +468,7 @@ export default function NewSheBao(props) {
     {
       key: '58',
       label: '状态发生日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态发生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态发生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 3
     },
     {
@@ -514,13 +516,13 @@ export default function NewSheBao(props) {
     {
       key: '66',
       label: '工商登记证发证日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态发证日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态发证日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
       key: '67',
       label: '工商登记有效期（开始时间）',
-      children: <Form.Item name="HumanSocial_NewSheBao_66"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_66"><DatePicker format={dateFormat} size='large' placeholder='请选择开始时间' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -538,13 +540,13 @@ export default function NewSheBao(props) {
     {
       key: '70',
       label: '执照有效起始日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_69"><DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态起始日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
       key: '71',
       label: '执照有效终止日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_70"><DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态终止日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -556,7 +558,7 @@ export default function NewSheBao(props) {
     {
       key: '73',
       label: '批准日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -1026,7 +1028,7 @@ export default function NewSheBao(props) {
     {
       key: '83',
       label: '单位成立日期',
-      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择成立日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format={dateFormat} size='large' placeholder='请选择成立日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1.5
     },
     {
@@ -1074,7 +1076,7 @@ export default function NewSheBao(props) {
     {
       key: '91',
       label: '状态批准日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1,
     },
     {

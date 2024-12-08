@@ -4,10 +4,11 @@ import CompanyEmployedInfo from './CompanyEmployedInfo'
 import CompanyInsuranceInfo from './CompanyInsuranceInfo'
 import CompanyRunningSumInfo from './CompanyRunningSumInfo'
 import CompanyResearchInfo from './CompanyResearchInfo'
+import InvestmentInfo from './InvestmentInfo';
+import CompanySignUpInfo from './CompanySignUpInfo';
 import 'rc-banner-anim/assets/index.css';
-import { Menu, DatePicker, ConfigProvider } from 'antd';
-import { AppstoreOutlined, PaperClipOutlined, FileDoneOutlined, UserOutlined, ShopOutlined } from '@ant-design/icons';
-import dayjs from 'dayjs';
+import { Menu, ConfigProvider } from 'antd';
+import { AppstoreOutlined, PaperClipOutlined, FileDoneOutlined, UserOutlined, ShopOutlined, KeyOutlined, HddOutlined } from '@ant-design/icons';
 import { history } from '@umijs/max';
 import SyncCompanyInfoButton from './Components';
 
@@ -82,6 +83,22 @@ export default function CompanyInfo() {
     {
       type: 'divider',
     },
+    {
+      key: '9',
+      label: '投资人及出资信息',
+      icon: <KeyOutlined />,
+    },
+    {
+      type: 'divider',
+    },
+    {
+      key: '10',
+      label: '企业登记信息',
+      icon: <HddOutlined />,
+    },
+    {
+      type: 'divider',
+    },
   ];
 
   const pageMap = {
@@ -89,7 +106,9 @@ export default function CompanyInfo() {
     '2': <CompanyInsuranceInfo />,
     '3': <CompanyEmployedInfo />,
     '6': <CompanyRunningSumInfo />,
-    '8': <CompanyResearchInfo />
+    '8': <CompanyResearchInfo />,
+    '9': <InvestmentInfo />,
+    '10': <CompanySignUpInfo />
   }
 
   const logout = () => {
