@@ -7,7 +7,7 @@ import CompanyResearchInfo from './CompanyResearchInfo'
 import InvestmentInfo from './InvestmentInfo';
 import CompanySignUpInfo from './CompanySignUpInfo';
 import 'rc-banner-anim/assets/index.css';
-import { Menu, ConfigProvider } from 'antd';
+import { Menu, ConfigProvider, Row, Col } from 'antd';
 import { AppstoreOutlined, PaperClipOutlined, FileDoneOutlined, UserOutlined, ShopOutlined, KeyOutlined, HddOutlined } from '@ant-design/icons';
 import { history } from '@umijs/max';
 import SyncCompanyInfoButton from './Components';
@@ -118,9 +118,9 @@ export default function CompanyInfo() {
 
   return (
     <>
-      <div style={{height: '100vh'}}>
-        <div className="mybanner page-wrapper" >
-          <div className="page" style={{maxWidth: 2000, height: 1000}}>
+      <div style={{height: '100%'}}>
+        <div className="mybanner page-wrapper" style={{overflow: 'auto', width: '100%', overflowY: 'auto'}}>
+          <div className="page" style={{maxWidth: 2000, height: 1250}}>
             <div style={{display: 'flex', margin: '70px auto 40px'}}>
               <div className="logo" />
               <div>
@@ -150,12 +150,12 @@ export default function CompanyInfo() {
                 </ConfigProvider>
               </div>
             </div>
-            <div style={{padding: 50, height: 1000}} class="mybanner-anim">
-              <div style={{display: 'flex', height: 1000}}>
-                <div>
+            <div style={{padding: 50, height: 1050}} class="mybanner-anim">
+              <Row style={{height: 1000}}>
+                <Col span={4} style={{height: 800, overflowX: 'auto'}}>
                   <Menu
                     style={{
-                      width: 320,
+                      width: '100%',
                       fontSize: '18px'
                     }}
                     defaultSelectedKeys={['1']}
@@ -166,16 +166,16 @@ export default function CompanyInfo() {
                       setSelectedKey(key.key)
                     }}
                   />
-                </div>
-                <div>
-                  <SyncCompanyInfoButton />
-                </div>
-                <div>
-                  <div style={{marginLeft: 30, height: 700, width: 1450, overflow: 'auto'}}>
+                  <div style={{marginTop: '40px'}}>
+                    <SyncCompanyInfoButton />
+                  </div>
+                </Col>
+                <Col span={20}>
+                  <div style={{marginLeft: 30, height: 950 }}>
                     {pageMap[selectedKey]}
                   </div>
-                </div>
-              </div>
+                </Col>
+              </Row>
             </div>
           </div>
         </div>

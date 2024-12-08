@@ -459,7 +459,7 @@ export default function CompanySignUpInfo(props) {
   return (
     <>
       {contextHolder}
-      <div size='large' style={{height: 700, width: 'auto', padding: 20, overflow:'auto'}} >
+      <div size='large' style={{height: 950, width: 'auto', padding: 20, overflow:'auto'}} >
         <Form onFinish={onFinish} form={form}>
           <Descriptions style={{width: '1300px' }} title="企业登记信息" bordered items={items} />
           <FloatButton.Group

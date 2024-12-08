@@ -34,17 +34,14 @@ export default function SyncCompanyInfoButton(props) {
 	return <>
 		<span             
 			style={{
-				fontSize: '22px',
-				position: 'absolute',
-				left: 80,
-				bottom: 350
+				fontSize: '22px'
 			}}>点击按钮进行企业基本信息同步</span>
 		<ConfigProvider
 			button={{
 				className: linearGradientButton,
 			}}
 		>
-			<Space style={{marginTop: '50px'}}>
+			<br />
 				<Button 
 					type="primary" 
 					icon={<CloudSyncOutlined />} 
@@ -52,16 +49,13 @@ export default function SyncCompanyInfoButton(props) {
 					size='large' 
 					style={{
 						fontSize: '20px',
-						position: 'absolute',
-						left: 100,
-						bottom: 300
+						marginTop: '20px'
 					}}
 					// htmlType='submit'
 					// onClick={
 					//   SaveSuccess
 					// }
 				>企业基本信息数据同步</Button>
-			</Space>
 		</ConfigProvider>
 	</>
 }
