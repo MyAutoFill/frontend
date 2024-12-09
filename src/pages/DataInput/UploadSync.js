@@ -74,7 +74,7 @@ export default function UploadSyncPage() {
         if (uuid == undefined || uuid == null || uuid === '') {
           history.push('/auto_fill/user/login')
         }
-        request('/api_test/parse_table', {
+        request('/api/parse_table', {
           method: 'POST',
           data: {
             parse_data: info.file.response.data,
@@ -120,7 +120,7 @@ export default function UploadSyncPage() {
               if (uuid == undefined || uuid == null || uuid === '') {
                 history.push('/auto_fill/user/login')
               }
-              request('/api_test/save_from_excel', {
+              request('/api/save_from_excel', {
                 method: 'POST',
                 data: {
                   date: '2024-12',
@@ -154,7 +154,7 @@ export default function UploadSyncPage() {
         if (uuid == undefined || uuid == null || uuid === '') {
           history.push('/auto_fill/user/login')
         }
-        request('/api_test/parse_table', {
+        request('/api/parse_table', {
           method: 'POST',
           data: {
             parse_data: info.file.response.data,
@@ -200,7 +200,7 @@ export default function UploadSyncPage() {
               if (uuid == undefined || uuid == null || uuid === '') {
                 history.push('/auto_fill/user/login')
               }
-              request('/api_test/save_from_excel', {
+              request('/api/save_from_excel', {
                 method: 'POST',
                 data: {
                   date: '2024-12',
@@ -234,7 +234,7 @@ export default function UploadSyncPage() {
         if (uuid == undefined || uuid == null || uuid === '') {
           history.push('/auto_fill/user/login')
         }
-        request('/api_test/parse_table', {
+        request('/api/parse_table', {
           method: 'POST',
           data: {
             parse_data: info.file.response.data,
@@ -280,7 +280,7 @@ export default function UploadSyncPage() {
               if (uuid == undefined || uuid == null || uuid === '') {
                 history.push('/auto_fill/user/login')
               }
-              request('/api_test/save_from_excel', {
+              request('/api/save_from_excel', {
                 method: 'POST',
                 data: {
                   date: '2024-12',

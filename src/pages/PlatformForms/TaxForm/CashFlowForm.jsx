@@ -579,7 +579,7 @@ export default function CashFlowForm(props) {
   ];
 
   const onFinish = (values) => {
-    request('/api_test/get_ratio_config?table=CashFlowForm', {
+    request('/api/get_ratio_config?table=CashFlowForm', {
       method: 'GET',
     })
     .then(function (config) {
@@ -596,7 +596,7 @@ export default function CashFlowForm(props) {
       if (uuid == undefined || uuid == null || uuid === '') {
         history.push('/auto_fill/user/login')
       }
-      request('/api_test/save', {
+      request('/api/save', {
         method: 'POST',
         data: {
           date: props.date,

@@ -203,7 +203,7 @@ export default function CompanyInsuranceInfo(props) {
   ];
 
   const onFinish = (values) => {
-    request('/api_test/get_ratio_config?table=CompanyInsuranceInfo', {
+    request('/api/get_ratio_config?table=CompanyInsuranceInfo', {
       method: 'GET',
     })
     .then(function (config) {
@@ -220,7 +220,7 @@ export default function CompanyInsuranceInfo(props) {
       if (uuid == undefined || uuid == null || uuid === '') {
         history.push('/auto_fill/user/login')
       }
-      request('/api_test/save_company_data', {
+      request('/api/save_company_data', {
         method: 'POST',
         data: {
           data: new_res,

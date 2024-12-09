@@ -5,7 +5,7 @@ export default function Header(props) {
   
   const logout = () => {
     localStorage.removeItem('currentUser');
-    history.push('/auto_fill_test');
+    history.push('/auto_fill');
   }
 
   return (
@@ -21,7 +21,7 @@ export default function Header(props) {
           <span className="nav-title" ><a href='/auto_fill/company_info' style={{color: 'white'}}>企业基本信息</a></span>
         </Col>
         <Col key='填报客户端下载' span={6}>
-          <span className="nav-title" ><a href='https://xcyb.weihai.cn/api_test/download_exe' style={{color: 'white'}}>填报客户端下载</a></span>
+          <span className="nav-title" ><a href='https://xcyb.weihai.cn/api/download_exe' style={{color: 'white'}}>填报客户端下载</a></span>
         </Col>
       </Row>
     </header>

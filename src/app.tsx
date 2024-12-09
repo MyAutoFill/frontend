@@ -9,7 +9,7 @@ import { errorConfig } from './requestErrorConfig';
 import { currentUser as queryCurrentUser, queryCompanyInfo } from '@/services/ant-design-pro/api';
 import React from 'react';
 const isDev = process.env.NODE_ENV === 'development';
-const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill_test';
+const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill';
 const privateLoginPath = '/auto_fill/user/login'
 import sensetime_logo from '../public/images/logo_svg.svg'
 
@@ -45,7 +45,7 @@ export async function getInitialState(): Promise<{
     return undefined;
   };
   console.log(window.location.href)
-  if (window.location.href === 'https://xcyb.weihai.cn/auto_fill_test' || window.location.href === 'https://xcyb.weihai.cn/auto_fill/') {
+  if (window.location.href === 'https://xcyb.weihai.cn/auto_fill' || window.location.href === 'https://xcyb.weihai.cn/auto_fill/') {
     return {
       fetchUserInfo,
       settings: defaultSettings as Partial<LayoutSettings>,
@@ -60,7 +60,7 @@ export async function getInitialState(): Promise<{
     console.log(window.location.href);
     if (window.location.href.indexOf('cor') != -1 && window.location.href.indexOf('ticket') != -1) {
       console.log('init5')
-      history.push('/auto_fill_test');
+      history.push('/auto_fill');
     }
     const company_info = await queryCompanyInfo(JSON.parse(exist).uuid);
     if (Object.keys(company_info).length == 0) {
@@ -85,7 +85,7 @@ export async function getInitialState(): Promise<{
     console.log('init10')
     console.log(window.location.href);
     // 只要登录成功都只跳到首页
-    history.push('/auto_fill_test');
+    history.push('/auto_fill');
   }
   return {
     fetchUserInfo,

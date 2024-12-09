@@ -264,7 +264,7 @@ export default function CompanySocialSecurityInfo(props) {
   ];
 
   const onFinish = (values) => {
-    request('/api_test/get_ratio_config?table=CompanySocialSecurityInfo', {
+    request('/api/get_ratio_config?table=CompanySocialSecurityInfo', {
       method: 'GET',
     })
     .then(function (config) {
@@ -281,7 +281,7 @@ export default function CompanySocialSecurityInfo(props) {
       if (uuid == undefined || uuid == null || uuid === '') {
         history.push('/auto_fill/user/login')
       }
-      request('/api_test/save', {
+      request('/api/save', {
         method: 'POST',
         data: {
           date: props.date,
