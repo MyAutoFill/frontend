@@ -175,6 +175,10 @@ export default function ShangwuBasicInfo(props) {
 						placeholder="是/否"
 						optionFilterProp="label"
 						options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
 							{
 								value: '是',
 								label: <span style={{fontSize: '16px'}}>是</span>,
@@ -207,6 +211,10 @@ export default function ShangwuBasicInfo(props) {
 						placeholder="是/否"
 						optionFilterProp="label"
 						options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
 							{
 								value: '是',
 								label: <span style={{fontSize: '16px'}}>是</span>,
@@ -260,6 +268,10 @@ export default function ShangwuBasicInfo(props) {
 						placeholder="是/否"
 						optionFilterProp="label"
 						options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
 							{
 								value: '上市公司',
 								label: <span style={{fontSize: '16px'}}>上市公司</span>,

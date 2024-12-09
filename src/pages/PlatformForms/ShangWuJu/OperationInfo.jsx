@@ -292,6 +292,10 @@ export default function ShangwuOperationInfo(props) {
 						placeholder="是/否"
 						optionFilterProp="label"
 						options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
 							{
 								value: '是',
 								label: '是',
