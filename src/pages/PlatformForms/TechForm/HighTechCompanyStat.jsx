@@ -387,6 +387,10 @@ export default function HighTechCompanyStat(props) {
             optionFilterProp="label"
             options={[
               {
+                value: '请选择',
+                label: '请选择',
+              },
+              {
                 value: '是',
                 label: '是',
               },
