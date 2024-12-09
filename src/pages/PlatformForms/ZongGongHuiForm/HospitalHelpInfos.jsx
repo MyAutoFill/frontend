@@ -23,7 +23,7 @@ export default function HospitalHelpInfos(props) {
     const exist = localStorage.getItem("currentUser");
     const uuid = JSON.parse(exist).uuid;
     if (uuid == undefined || uuid == null || uuid === '') {
-      history.push('/auto_fill_test/user/login')
+      history.push('/auto_fill/user/login')
     }
     reqBasicData(curDate, uuid)
       .then(function (res) {
@@ -396,7 +396,7 @@ export default function HospitalHelpInfos(props) {
       const exist = localStorage.getItem("currentUser");
       const uuid = JSON.parse(exist).uuid;
       if (uuid == undefined || uuid == null || uuid === '') {
-        history.push('/auto_fill_test/user/login')
+        history.push('/auto_fill/user/login')
       }
       request('/api_test/save', {
         method: 'POST',
@@ -481,7 +481,7 @@ export default function HospitalHelpInfos(props) {
                 right: 0, 
                 bottom: 0,
               }}
-              onClick={() => {window.location.href = '/auto_fill_test/input?tab=4'}}
+              onClick={() => {window.location.href = '/auto_fill/input?tab=4'}}
             >立即填报</Button>
           </FloatButton.Group>
         </Form>

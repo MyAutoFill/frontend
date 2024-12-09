@@ -10,7 +10,7 @@ import { currentUser as queryCurrentUser, queryCompanyInfo } from '@/services/an
 import React from 'react';
 const isDev = process.env.NODE_ENV === 'development';
 const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill_test';
-const privateLoginPath = '/auto_fill_test/user/login'
+const privateLoginPath = '/auto_fill/user/login'
 import sensetime_logo from '../public/images/logo_svg.svg'
 
 /**
@@ -45,7 +45,7 @@ export async function getInitialState(): Promise<{
     return undefined;
   };
   console.log(window.location.href)
-  if (window.location.href === 'https://xcyb.weihai.cn/auto_fill_test' || window.location.href === 'https://xcyb.weihai.cn/auto_fill_test/') {
+  if (window.location.href === 'https://xcyb.weihai.cn/auto_fill_test' || window.location.href === 'https://xcyb.weihai.cn/auto_fill/') {
     return {
       fetchUserInfo,
       settings: defaultSettings as Partial<LayoutSettings>,
@@ -64,7 +64,7 @@ export async function getInitialState(): Promise<{
     }
     const company_info = await queryCompanyInfo(JSON.parse(exist).uuid);
     if (Object.keys(company_info).length == 0) {
-      history.push('/auto_fill_test/company_info');
+      history.push('/auto_fill/company_info');
     }
     return {
       fetchUserInfo,

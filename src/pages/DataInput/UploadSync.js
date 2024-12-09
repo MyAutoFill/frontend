@@ -72,7 +72,7 @@ export default function UploadSyncPage() {
         const exist = localStorage.getItem("currentUser");
         const uuid = JSON.parse(exist).uuid;
         if (uuid == undefined || uuid == null || uuid === '') {
-          history.push('/auto_fill_test/user/login')
+          history.push('/auto_fill/user/login')
         }
         request('/api_test/parse_table', {
           method: 'POST',
@@ -118,7 +118,7 @@ export default function UploadSyncPage() {
               const exist = localStorage.getItem("currentUser");
               const uuid = JSON.parse(exist).uuid;
               if (uuid == undefined || uuid == null || uuid === '') {
-                history.push('/auto_fill_test/user/login')
+                history.push('/auto_fill/user/login')
               }
               request('/api_test/save_from_excel', {
                 method: 'POST',
@@ -152,7 +152,7 @@ export default function UploadSyncPage() {
         const exist = localStorage.getItem("currentUser");
         const uuid = JSON.parse(exist).uuid;
         if (uuid == undefined || uuid == null || uuid === '') {
-          history.push('/auto_fill_test/user/login')
+          history.push('/auto_fill/user/login')
         }
         request('/api_test/parse_table', {
           method: 'POST',
@@ -198,7 +198,7 @@ export default function UploadSyncPage() {
               const exist = localStorage.getItem("currentUser");
               const uuid = JSON.parse(exist).uuid;
               if (uuid == undefined || uuid == null || uuid === '') {
-                history.push('/auto_fill_test/user/login')
+                history.push('/auto_fill/user/login')
               }
               request('/api_test/save_from_excel', {
                 method: 'POST',
@@ -232,7 +232,7 @@ export default function UploadSyncPage() {
         const exist = localStorage.getItem("currentUser");
         const uuid = JSON.parse(exist).uuid;
         if (uuid == undefined || uuid == null || uuid === '') {
-          history.push('/auto_fill_test/user/login')
+          history.push('/auto_fill/user/login')
         }
         request('/api_test/parse_table', {
           method: 'POST',
@@ -278,7 +278,7 @@ export default function UploadSyncPage() {
               const exist = localStorage.getItem("currentUser");
               const uuid = JSON.parse(exist).uuid;
               if (uuid == undefined || uuid == null || uuid === '') {
-                history.push('/auto_fill_test/user/login')
+                history.push('/auto_fill/user/login')
               }
               request('/api_test/save_from_excel', {
                 method: 'POST',
@@ -371,7 +371,7 @@ export default function UploadSyncPage() {
             }}
           >
             <Space style={{marginTop: '50px'}}>
-              <Button onClick={() => {window.location.href = '/auto_fill_test/input?tab=2&table=42'}} size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
+              <Button onClick={() => {window.location.href = '/auto_fill/input?tab=2&table=42'}} size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
             </Space>
           </ConfigProvider>
         </div>
