@@ -4,7 +4,7 @@ import { FastForwardOutlined } from '@ant-design/icons';
 
 const options = [
   // { value: '42', label: '人社局 > 单位基本信息' },
-  { value: 'https://xcyb.weihai.cn/auto_fill_test/input?tab=2', label: '人社局 > 单位基本信息' },
+  { value: 'https://xcyb.weihai.cn/auto_fill/input?tab=2', label: '人社局 > 单位基本信息' },
   { value: '36', label: '人社局 > 单位就业登记信息' },
   { value: '37', label: '人社局 > 以工代训补贴申领信息' },
   { value: '39', label: '人社局 > 单位参保信息' },
@@ -109,15 +109,15 @@ export const banner = [
         children: [
           {
             name: '企业信息',
-            link: '/auto_fill_test/company_info'
+            link: '/auto_fill/company_info'
           },
           {
             name: '开始报送',
-            link: '/auto_fill_test/input'
+            link: '/auto_fill/input'
           },
           {
             name: '数据分析',
-            link: '/auto_fill_test/analysis'
+            link: '/auto_fill/analysis'
           }
         ],
         className: 'banner-button',

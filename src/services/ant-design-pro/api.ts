@@ -9,7 +9,7 @@ export async function currentUser(ticket: any) {
 }
 
 export async function queryCompanyInfo(uuid: any) {
-  return request('/api_test/load_company_data', {
+  return request('/api/load_company_data', {
       method: 'POST',
       data: {
         uuid: uuid

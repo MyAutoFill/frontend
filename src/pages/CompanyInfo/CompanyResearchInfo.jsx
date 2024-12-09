@@ -23,7 +23,7 @@ export default function CompanyResearchInfo(props) {
     const exist = localStorage.getItem("currentUser");
     const uuid = JSON.parse(exist).uuid;
     if (uuid == undefined || uuid == null || uuid === '') {
-      history.push('/auto_fill_test/user/login')
+      history.push('/auto_fill/user/login')
     }
     requestCompanyData(uuid)
       .then(function (res) {
@@ -434,7 +434,7 @@ export default function CompanyResearchInfo(props) {
   ];
   
   const onFinish = (values) => {
-    request('/api_test/get_ratio_config?table=CompanyResearchInfo', {
+    request('/api/get_ratio_config?table=CompanyResearchInfo', {
       method: 'GET',
     })
     .then(function (config) {
@@ -449,9 +449,9 @@ export default function CompanyResearchInfo(props) {
       const exist = localStorage.getItem("currentUser");
       const uuid = JSON.parse(exist).uuid;
       if (uuid == undefined || uuid == null || uuid === '') {
-        history.push('/auto_fill_test/user/login')
+        history.push('/auto_fill/user/login')
       }
-      request('/api_test/save_company_data', {
+      request('/api/save_company_data', {
         method: 'POST',
         data: {
           data: new_res,
@@ -533,7 +533,7 @@ export default function CompanyResearchInfo(props) {
                 right: 0, 
                 bottom: 0,
               }}
-              onClick={() => {window.location.href = '/input?tab=4'}}
+              onClick={() => {window.location.href = '/auto_fill/input?tab=4'}}
             >立即填报</Button>
           </FloatButton.Group>
         </Form>

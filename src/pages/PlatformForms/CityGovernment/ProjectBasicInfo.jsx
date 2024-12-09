@@ -19,7 +19,7 @@ export default function ProjectBasicInfo(props) {
     const exist = localStorage.getItem("currentUser");
     const uuid = JSON.parse(exist).uuid;
     if (uuid == undefined || uuid == null || uuid === '') {
-      history.push('/auto_fill_test/user/login')
+      history.push('/auto_fill/user/login')
     }
     reqBasicData(curDate, uuid)
       .then(function (res) {
@@ -231,7 +231,7 @@ export default function ProjectBasicInfo(props) {
   ];
 
   const onFinish = (values) => {
-    request('/api_test/get_ratio_config?table=ProjectBasicInfo', {
+    request('/api/get_ratio_config?table=ProjectBasicInfo', {
       method: 'GET',
     })
     .then(function (config) {
@@ -246,9 +246,9 @@ export default function ProjectBasicInfo(props) {
       const exist = localStorage.getItem("currentUser");
       const uuid = JSON.parse(exist).uuid;
       if (uuid == undefined || uuid == null || uuid === '') {
-        history.push('/auto_fill_test/user/login')
+        history.push('/auto_fill/user/login')
       }
-      request('/api_test/save', {
+      request('/api/save', {
         method: 'POST',
         data: {
           date: props.date,
@@ -331,7 +331,7 @@ export default function ProjectBasicInfo(props) {
                 right: 0, 
                 bottom: 0,
               }}
-              onClick={() => {window.location.href = '/input?tab=4'}}
+              onClick={() => {window.location.href = '/auto_fill/input?tab=4'}}
             >立即填报</Button>
           </FloatButton.Group>
         </Form>
