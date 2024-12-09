@@ -212,7 +212,7 @@ export default function GongShangCompanyInfo(props) {
           <br></br>
           <span size='large' style={{ fontSize: '16px' }}>股权变更日期</span>
           <br></br>
-          <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
+          <Form.Item name="GongShang_CompanyInfo_23"><DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择股权变更日期' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>
         </>,
       span: 1.5
     },

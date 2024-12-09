@@ -1913,6 +1913,79 @@
                             "id": ""
                         }
                     }
+                },
+                {
+                    "name": "行政许可信息",
+                    "map": {
+                        "许可文件编号": {
+                            "id": "jsxzxklicno"
+                        },
+                        "许可文件名称": {
+                            "id": "jsxzxklicname"
+                        },
+                        "有效日期开始": {
+                            "id": "jsxzxkvalfrom"
+                        },
+                        "有效日期结束": {
+                            "id": "jsxzxkvalto"
+                        },
+                        "许可机关": {
+                            "id": "jsxzxklicanth"
+                        },
+                        "许可内容": {
+                            "id": "jsxzxklicitem"
+                        },
+                        "股东": {
+                            "id": "jsgqbginv"
+                        },
+                        "变更前股权比例": {
+                            "id": "jsgqbgtransamprpre"
+                        },
+                        "股权变更日期": {
+                            "id": "jsgqbgaltdate"
+                        },
+                        "变更后股权比例": {
+                            "id": "jsgqbgtransampraft"
+                        },
+                        "知识产权登记证号": {
+                            "id": "jszscqtmregno"
+                        },
+                        "名称": {
+                            "id": "jszscqtmname"
+                        },
+                        "种类": {
+                            "id": "jszscqkinds"
+                        },
+                        "出质人名称": {
+                            "id": "jszscqpledgor"
+                        },
+                        "质权人名称": {
+                            "id": "jszscqimporg"
+                        },
+                        "质权登记期限开始": {
+                            "id": "jszscqpleregperfrom"
+                        },
+                        "质权登记期限结束": {
+                            "id": "jszscqpleregperto"
+                        }
+                    }
+                },
+                {
+                    "name": "公司减少注册资本填报",
+                    "map": {
+                        "注册资本": {
+                            "id": "altafregcap"
+                        },
+                        "联系人": {
+                            "id": "name"
+                        },
+                        "联系电话": {
+                            "id": "tel"
+                        },
+                        "联系地址": {
+                            "id": "addr"
+                        }
+                    }
                 }
             ]
         },
