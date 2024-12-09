@@ -34,7 +34,7 @@ export default function SyncCompanyInfoButton(props) {
 	return <>
 		<span             
 			style={{
-				fontSize: '22px'
+				fontSize: '20px'
 			}}>点击按钮进行企业基本信息同步</span>
 		<ConfigProvider
 			button={{
@@ -49,7 +49,8 @@ export default function SyncCompanyInfoButton(props) {
 					size='large' 
 					style={{
 						fontSize: '20px',
-						marginTop: '20px'
+						marginTop: '20px',
+						marginLeft: '10px'
 					}}
 					// htmlType='submit'
 					// onClick={
