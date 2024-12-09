@@ -42,9 +42,11 @@ export default function JoinedSecurityInfo(props) {
           const new_res = JSON.parse(JSON.stringify(res));
           Object.keys(config).forEach(key => {
             if (key in new_res) {
-              let a = BigNumber(new_res[key])
-              let b = BigNumber(config[key])
-              new_res[key] = a.times(b).toString();
+              if (new_res[key] !== '') {
+                let a = BigNumber(new_res[key])
+                let b = BigNumber(config[key])
+                new_res[key] = a.times(b).toString();
+              }
             }
           });
           form.resetFields();
@@ -187,9 +189,11 @@ export default function JoinedSecurityInfo(props) {
       const new_res = JSON.parse(JSON.stringify(values));
       Object.keys(config).forEach(key => {
         if (key in new_res) {
-          let a = BigNumber(new_res[key])
-          let b = BigNumber(config[key])
-          new_res[key] = a.div(b).toString();
+          if (new_res[key] !== '') {
+            let a = BigNumber(new_res[key])
+            let b = BigNumber(config[key])
+            new_res[key] = a.div(b).toString();
+          }
         }
       });
       const exist = localStorage.getItem("currentUser");
