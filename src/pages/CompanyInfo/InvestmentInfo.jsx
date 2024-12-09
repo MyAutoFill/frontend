@@ -55,6 +55,7 @@ export default function InvestmentInfo(props) {
           new_res[key] = a.div(b).toString();
         }
       });
+      const exist = localStorage.getItem("currentUser");
       const uuid = JSON.parse(exist).uuid;
       if (uuid == undefined || uuid == null || uuid === '') {
         history.push('/auto_fill/user/login')
