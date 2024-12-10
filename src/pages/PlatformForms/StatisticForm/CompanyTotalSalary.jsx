@@ -177,7 +177,7 @@ export default function CompanyTotalSalary(props) {
     {
       key: '9',
       people_index: <span style={{fontSize: '16px'}}>中层及以上管理人员</span>,
-      people_this_year: <Form.Item name="Statisitc_salary_25"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_this_year: <Form.Item name="company_employee_5"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       people_last_year: <Form.Item name="Statisitc_salary_26"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: <span style={{fontSize: '16px'}}>中层及以上管理人员</span>,
       salary_this_year: <Form.Item name="Statisitc_salary_27"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -186,7 +186,7 @@ export default function CompanyTotalSalary(props) {
     {
       key: '10',
       people_index: <span style={{fontSize: '16px'}}>专业技术人员</span>,
-      people_this_year: <Form.Item name="Statisitc_salary_29"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      people_this_year: <Form.Item name="company_employee_7"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       people_last_year: <Form.Item name="Statisitc_salary_30"><Input disabled={true} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       salary_index: <span style={{fontSize: '16px'}}>专业技术人员</span>,
       salary_this_year: <Form.Item name="Statisitc_salary_31"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,

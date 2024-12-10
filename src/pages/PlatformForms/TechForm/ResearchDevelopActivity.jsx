@@ -210,7 +210,7 @@ export default function ResearchDevelopActivity(props) {
     {
       key: '17',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_activity_9"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_research_4"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -662,7 +662,7 @@ export default function ResearchDevelopActivity(props) {
     {
       key: '89',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_activity_57"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_research_28"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -680,7 +680,7 @@ export default function ResearchDevelopActivity(props) {
     {
       key: '92',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_activity_59"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_research_29"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

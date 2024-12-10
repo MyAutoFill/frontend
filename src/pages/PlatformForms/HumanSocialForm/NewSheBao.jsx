@@ -529,8 +529,8 @@ export default function NewSheBao(props) {
     },
     {
       key: '68',
-      label: '工商登记有效期限（年）',
-      children: <Form.Item name="company_basicinfo_9"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: '工商登记有效期限',
+      children: <Form.Item name="company_basicinfo_9"><Input disabled={disableVar} size='large' addonAfter='年' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {

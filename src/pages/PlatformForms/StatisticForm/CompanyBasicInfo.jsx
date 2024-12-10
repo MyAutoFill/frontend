@@ -367,18 +367,18 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '17',
       label: <span style={{fontSize: '16px'}}>营业收入</span>,
-      children: <Form.Item name="company_runningsum_1"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_1"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5    },
     {
       key: '18',
       label: <span style={{fontSize: '16px'}}>其中：主营业务收入</span>,
-      children: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '19',
       label: <span style={{fontSize: '16px'}}>资产总计</span>,
-      children: <Form.Item name="FinanceStatusInfo_38"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_38"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {

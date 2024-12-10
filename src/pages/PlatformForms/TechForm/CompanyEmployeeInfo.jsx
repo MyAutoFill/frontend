@@ -156,7 +156,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '8',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_3"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_1"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -282,7 +282,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '29',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_17"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_9"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -328,7 +328,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '35',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_21"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_research_28"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -346,7 +346,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '38',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_23"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_research_29"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -364,7 +364,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '41',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_25"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_research_4"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -513,7 +513,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '65',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_41"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_5"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -531,7 +531,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '68',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="company_runningsum_7"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_7"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -549,7 +549,7 @@ export default function CompanyEmployeeInfo(props) {
     {
       key: '71',
       label: <span style={{fontSize: '16px'}}>数量</span>,
-      children: <Form.Item name="Tech_Employee_45"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_employee_7"><Input disabled={disableVar} addonAfter='人' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     }
   ];

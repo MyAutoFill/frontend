@@ -182,8 +182,8 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '9',
-      label: <span style={{fontSize: '16px'}}>工商登记有效期限（年）</span>,
-      children: <Form.Item name="company_basicinfo_9" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      label: <span style={{fontSize: '16px'}}>工商登记有效期限</span>,
+      children: <Form.Item name="company_basicinfo_9" rules={[{required: true, pattern: /^-?\d+(\.\d+)?$/, message: '该项需为数字',},]}><Input size='large' addonAfter='年' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

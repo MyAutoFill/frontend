@@ -299,9 +299,9 @@ export default function HumanSocialCompanyInfo(props) {
       label: <span style={{fontSize: '16px'}}>薪资范围</span>,
       children: 
         <>
-          <Form.Item name="jobDeman9"><Input placeholder='最低薪资( 不能低于2200元 )' size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="jobDeman9"><Input placeholder='最低薪资( 不能低于2200元 )' size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
            至 
-          <Form.Item name="jobDeman10"><Input placeholder='最高薪资' size='large' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="jobDeman10"><Input placeholder='最高薪资' size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
     },
