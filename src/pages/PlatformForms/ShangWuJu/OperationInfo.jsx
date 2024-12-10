@@ -29,7 +29,12 @@ export default function ShangwuOperationInfo(props) {
   }, [props.date]);
 
   const load_data = (curDate) => {
-    reqBasicData(curDate)
+    const exist = localStorage.getItem("currentUser");
+    const uuid = JSON.parse(exist).uuid;
+    if (uuid == undefined || uuid == null || uuid === '') {
+      history.push('/auto_fill/user/login')
+    }
+    reqBasicData(curDate, uuid)
       .then(function (res) {
         reqRatioConfig('ShangwuOperationInfo')
         .then(function (config) {
@@ -563,11 +568,17 @@ export default function ShangwuOperationInfo(props) {
           }
         }
       });
+      const exist = localStorage.getItem("currentUser");
+      const uuid = JSON.parse(exist).uuid;
+      if (uuid == undefined || uuid == null || uuid === '') {
+        history.push('/auto_fill/user/login')
+      }
       request('/api/save', {
         method: 'POST',
         data: {
           date: props.date,
-          data: new_res
+          data: new_res,
+          uuid: uuid
         }
       })
     })
