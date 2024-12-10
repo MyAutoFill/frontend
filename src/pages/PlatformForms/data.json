@@ -2539,15 +2539,15 @@
                 },
                 {
                     "key": "软件产品收入",
-                    "id": "320"
+                    "id": "Gongxin_basic3"
                 },
                 {
                     "key": "基础软件收入",
-                    "id": "321"
+                    "id": "Gongxin_soft1"
                 },
                 {
                     "key": "工业软件收入",
-                    "id": "322"
+                    "id": "Gongxin_soft2"
                 },
                 {
                     "key": "信息技术服务收入",
@@ -2555,43 +2555,43 @@
                 },
                 {
                     "key": "云服务收入",
-                    "id": "324"
+                    "id": "Gongxin_soft3"
                 },
                 {
                     "key": "大数据服务收入",
-                    "id": "325"
+                    "id": "Gongxin_soft4"
                 },
                 {
                     "key": "工业互联网平台服务收入",
-                    "id": "326"
+                    "id": "Gongxin_soft5"
                 },
                 {
                     "key": "电子商务平台技术服务收入",
-                    "id": "327"
+                    "id": "Gongxin_soft6"
                 },
                 {
                     "key": "集成电路设计收入",
-                    "id": "328"
+                    "id": "Gongxin_soft7"
                 },
                 {
                     "key": "信息安全收入",
-                    "id": "329"
+                    "id": "Gongxin_soft8"
                 },
                 {
                     "key": "工控安全收入",
-                    "id": "330"
+                    "id": "Gongxin_soft9"
                 },
                 {
                     "key": "软件外包服务出口",
-                    "id": "GongXin_MonthlyReport_92"
+                    "id": "Gongxin_soft10"
                 },
                 {
                     "key": "应用嵌入式系统软件的产品出口额",
-                    "id": "GongXin_MonthlyReport_98"
+                    "id": "Gongxin_soft11"
                 },
                 {
                     "key": "其他软件业务出口",
-                    "id": "GongXin_MonthlyReport_110"
+                    "id": "Gongxin_soft12"
                 },
                 {
                     "key": "主营业务成本",
@@ -2599,7 +2599,7 @@
                 },
                 {
                     "key": "费用总额",
-                    "id": "GongXin_MonthlyReport_128"
+                    "id": "Gongxin_soft14"
                 },
                 {
                     "key": "利润总额",
@@ -2607,7 +2607,7 @@
                 },
                 {
                     "key": "研发经费",
-                    "id": "GongXin_MonthlyReport_140"
+                    "id": "Gongxin_soft15"
                 },
                 {
                     "key": "从业人员工资总额",
@@ -2615,11 +2615,11 @@
                 },
                 {
                     "key": "平均用工人数",
-                    "id": "FinanceStatusInfo_131"
+                    "id": "FinanceStatusInfo_130"
                 },
                 {
                     "key": "订单同比增长",
-                    "id": "336"
+                    "id": "Gongxin_soft16"
                 }
             ]
         },

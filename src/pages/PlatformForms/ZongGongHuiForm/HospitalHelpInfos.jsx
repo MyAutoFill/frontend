@@ -231,6 +231,10 @@ export default function HospitalHelpInfos(props) {
             optionFilterProp="label"
             options={[
               {
+                value: '请选择',
+                label: '请选择',
+              },
+              {
                 value: '是',
                 label: '是',
               },
@@ -349,6 +353,10 @@ export default function HospitalHelpInfos(props) {
             placeholder="请选择是否打印发票（是/否）"
             optionFilterProp="label"
             options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
               {
                 value: '是',
                 label: '是',

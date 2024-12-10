@@ -925,6 +925,10 @@ export default function HumanSocialCompanyInfo(props) {
             onSearch={peopleSearchOnSearch}
             options={[
               {
+                value: '请选择',
+                label: '请选择',
+              },
+              {
                 value: '是',
                 label: '是',
               },
@@ -973,6 +977,10 @@ export default function HumanSocialCompanyInfo(props) {
             placeholder="是否创业"
             optionFilterProp="label"
             options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
               {
                 value: '是',
                 label: '是',
@@ -1081,6 +1089,10 @@ export default function HumanSocialCompanyInfo(props) {
             placeholder="是否领取"
             optionFilterProp="label"
             options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
               {
                 value: '是',
                 label: '是',

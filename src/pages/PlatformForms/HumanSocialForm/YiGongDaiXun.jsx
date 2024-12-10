@@ -342,6 +342,10 @@ export default function YiGongDaiXun(props) {
             onSearch={peopleSearchOnSearch}
             options={[
               {
+                value: '请选择',
+                label: '请选择',
+              },
+              {
                 value: '是',
                 label: '是',
               },
@@ -374,6 +378,10 @@ export default function YiGongDaiXun(props) {
             onChange={peopleSearchOnChange}
             onSearch={peopleSearchOnSearch}
             options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
               {
                 value: '是',
                 label: '是',
@@ -413,6 +421,10 @@ export default function YiGongDaiXun(props) {
             onChange={peopleSearchOnChange}
             onSearch={peopleSearchOnSearch}
             options={[
+              {
+                value: '请选择',
+                label: '请选择',
+              },
               {
                 value: '是',
                 label: '是',

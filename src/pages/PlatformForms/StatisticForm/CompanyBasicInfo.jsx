@@ -137,6 +137,10 @@ export default function StatisticCompanyBasicInfo(props) {
             optionFilterProp="label"
             options={[
               {
+                value: '请选择',
+                label: '请选择',
+              },
+              {
                 value: '是',
                 label: '是',
               },
@@ -1179,6 +1183,10 @@ export default function StatisticCompanyBasicInfo(props) {
               defaultValue={HaveUpperOwner}
               options={[
                 {
+                  value: '请选择',
+                  label: '请选择',
+                },
+                {
                   value: '是',
                   label: '是',
                 },
@@ -1215,6 +1223,10 @@ export default function StatisticCompanyBasicInfo(props) {
               placeholder="本法人单位是否有下属产业活动单位"
               optionFilterProp="label"
               options={[
+                {
+                  value: '请选择',
+                  label: '请选择',
+                },
                 {
                   value: '是',
                   label: '是',
