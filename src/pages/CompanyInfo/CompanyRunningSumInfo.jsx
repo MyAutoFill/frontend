@@ -202,7 +202,7 @@ export default function CompanyRunningSumInfo(props) {
     {
       key: '21',
       label: <span style={{fontSize: '16px'}}>资产总计</span>,
-      children: <Form.Item name="company_runningsum_18"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="FinanceStatusInfo_38"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

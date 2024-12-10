@@ -590,7 +590,7 @@ export default function FinanceStatusInfo(props) {
     {
       key: '67',
       label: <span style={{fontSize: '16px'}}>研发费用</span>,
-      children: <Form.Item name="FinanceStatusInfo_68"><Input disabled={true} addonBefore='代码' defaultValue={'28'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_7"><Input disabled={true} addonBefore='代码' defaultValue={'28'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
