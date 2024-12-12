@@ -102,7 +102,7 @@ export default function SelectFormPage() {
                 <Meta title="国家企业信用信息公示系统" description="https://sd.gsxt.gov.cn/index.html"  style={{fontSize: '16px'}}/>
               </Card>
             </a>
-            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("https://tyrz.chinatorch.org.cn/hjismp/a/login") + "&select_name=火炬中心业务办理平台&uuid=" + uuid} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
+            <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("https://fuwu.most.gov.cn/") + "&select_name=科学技术部政务服务平台&uuid=" + uuid} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>
               <Card
                 hoverable
                 style={{
@@ -112,9 +112,9 @@ export default function SelectFormPage() {
                   margin: 'auto',
                   marginTop: '20px'
                 }}
-                cover={<img style={{height: 100}} alt="example" src="./images/火炬中心业务办理平台.png" />}
+                cover={<img style={{height: 100}} alt="example" src="./images/科学技术部政务服务平台.png" />}
               >
-                <Meta title="火炬中心业务办理平台" description="https://tyrz.chinatorch.org.cn/hjismp/a/login"  style={{fontSize: '16px'}}/>
+                <Meta title="科学技术部政务服务平台" description="https://fuwu.most.gov.cn/"  style={{fontSize: '16px'}}/>
               </Card>
             </a>
             <a href={"http://127.0.0.1:8088/api/data?url=" + btoa("https://ucenter.miit.gov.cn/login.jsp?toUrl=http%3A%2F%2Fxxcyqiye.miit.gov.cn%2F") + "&select_name=信息产业运行监测平台&uuid=" + uuid} target='_blank' style={{ height: 220, textAlign: 'center', marginTop: '20px', marginLeft: '10px', marginRight: '30px' }}>

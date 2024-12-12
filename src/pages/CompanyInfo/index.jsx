@@ -143,6 +143,9 @@ export default function CompanyInfo() {
                     <Menu.Item key="info">
                       <a href='/auto_fill/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
                     </Menu.Item>
+                    <Menu.Item key="message_center">
+                      <a href='/auto_fill/message_center' style={{fontSize: 25, color: 'white', fontWeight: 400}}>消息中心</a>
+                    </Menu.Item>
                     <Menu.Item key="logout">
                       <a onClick={() => {logout()}} style={{fontSize: 25, color: 'white', fontWeight: 400}}>退出登录</a>
                     </Menu.Item>

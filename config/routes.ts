@@ -42,6 +42,11 @@ export default [
     component: './CompanyInfo',
   },
   {
+    path: '/auto_fill/message_center',
+    layout: false,
+    component: './CompanyInfo',
+  },
+  {
     path: '*',
     layout: false,
     component: './404',

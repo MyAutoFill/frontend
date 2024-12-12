@@ -9,7 +9,7 @@ import UploadSyncPage from './UploadSync';
 import PreviewPage from './Preview';
 import SelectFormPage from '../DataFillOut/SelectFormPage'
 import { useSearchParams } from "react-router-dom";
-import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined, CloudUploadOutlined } from '@ant-design/icons';
+import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined, CloudUploadOutlined, KeyOutlined } from '@ant-design/icons';
 import { useEffect } from 'react';
 import { history } from '@umijs/max';
 
@@ -72,6 +72,9 @@ export default function DataInput() {
                     <Menu.Item key="info">
                       <a href='/auto_fill/company_info' style={{fontSize: 25, color: 'white', fontWeight: 400}}>企业基本信息</a>
                     </Menu.Item>
+                    <Menu.Item key="message_center">
+                      <a href='/auto_fill/message_center' style={{fontSize: 25, color: 'white', fontWeight: 400}}>消息中心</a>
+                    </Menu.Item>
                     <Menu.Item key="logout">
                       <a onClick={() => {logout()}} style={{fontSize: 25, color: 'white', fontWeight: 400}}>退出登录</a>
                     </Menu.Item>
@@ -128,6 +131,13 @@ export default function DataInput() {
                 <TabPane
                   tab={<span style={{fontSize: '18px'}}><FileSyncOutlined style={{fontSize: '20px'}}/>  数据申报</span>}
                   key="4"
+                  size="large"
+                >
+                  <SelectFormPage />
+                </TabPane>
+                <TabPane
+                  tab={<span style={{fontSize: '18px'}}><KeyOutlined style={{fontSize: '20px'}}/>  报表账户设置</span>}
+                  key="5"
                   size="large"
                 >
                   <SelectFormPage />
