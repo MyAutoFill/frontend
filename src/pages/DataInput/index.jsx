@@ -8,6 +8,7 @@ import Fill from './Fill';
 import UploadSyncPage from './UploadSync';
 import PreviewPage from './Preview';
 import SelectFormPage from '../DataFillOut/SelectFormPage'
+import AccountManagment from '../DataFillOut/AccountManagment'
 import { useSearchParams } from "react-router-dom";
 import { OrderedListOutlined, SafetyOutlined, FileSyncOutlined, CloudUploadOutlined, KeyOutlined } from '@ant-design/icons';
 import { useEffect } from 'react';
@@ -140,7 +141,7 @@ export default function DataInput() {
                   key="5"
                   size="large"
                 >
-                  <SelectFormPage />
+                  <AccountManagment />
                 </TabPane>
               </Tabs>
             </div>
