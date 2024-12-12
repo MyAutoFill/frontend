@@ -612,7 +612,7 @@ export default function BasicInfoHumanResource(props) {
     {
       key: '16',
       label: <span style={{fontSize: '16px'}}>工商登记有效期限</span>,
-      children: <Form.Item name="company_basicinfo_9" ><Input addonAfter='年' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_9" ><Input size='large' addonAfter='年' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -648,13 +648,13 @@ export default function BasicInfoHumanResource(props) {
     {
       key: '23',
       label: <span style={{fontSize: '16px'}}>经营范围</span>,
-      children: <Form.Item name="company_basicinfo_8" ><Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_8" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '24',
       label: <span style={{fontSize: '16px'}}>法人单位ID</span>,
-      children: <Form.Item name="hs_basic_3" ><Input style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="hs_basic_3" ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -757,7 +757,7 @@ export default function BasicInfoHumanResource(props) {
     {
       key: '28',
       label: <span style={{fontSize: '16px'}}>法人联系电话</span>,
-      children: <Form.Item name="company_basicinfo_29"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_31"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
