@@ -582,37 +582,6 @@ export default function HumanSocialCompanyInfo(props) {
 
   const items = [
     {
-      key: '1',
-      label: <span style={{fontSize: '16px'}}>人员查询</span>,
-      children: 
-        <Form.Item name="HumanSocial_CompanyInfo_1">
-          <Select
-            showSearch
-            style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}
-            size='large'
-            placeholder="选择或搜索您想要查找的对象"
-            optionFilterProp="label"
-            onChange={peopleSearchOnChange}
-            onSearch={peopleSearchOnSearch}
-            options={[
-              {
-                  value: '张三',
-                  label: '张三',
-              },
-              {
-                  value: '李四',
-                  label: '李四',
-              },
-              {
-                  value: '王五',
-                  label: '王五',
-              },
-            ]}
-          />
-        </Form.Item>,
-      span: 3
-    },
-    {
       key: '2',
       label: <span style={{fontSize: '16px'}}>证件类型</span>,
       children: <Form.Item name="company_basicinfo_27"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,

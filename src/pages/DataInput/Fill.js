@@ -39,6 +39,7 @@ import HaiguanAnnualReport from '../PlatformForms/WeihaiHaiGuan/AnnualReport';
 import ShangwuBasicInfo from '../PlatformForms/ShangWuJu/BasicInfo';
 import ShangwuInvestorInfo from '../PlatformForms/ShangWuJu/InvestorInfo';
 import ShangwuOperationInfo from '../PlatformForms/ShangWuJu/OperationInfo';
+import SoftwareAndServiceIncome from '../PlatformForms/StatisticForm/SoftwareAndServiceIncome';
 
 import dayjs from 'dayjs';
 import { useSearchParams } from "react-router-dom";
@@ -123,10 +124,10 @@ export default function Fill() {
               key: '42',
               label: '单位基本信息',
             },
-            // {
-            //   key: '36',
-            //   label: '单位就业登记信息',
-            // },
+            {
+              key: '36',
+              label: '单位就业登记信息',
+            },
             {
               key: '37',
               label: '以工代训补贴申领信息',
@@ -163,10 +164,10 @@ export default function Fill() {
           key: '7',
           label: '单位从业人员及工资总额信息',
         },
-        // {
-        //   key: '8',
-        //   label: '研究开发项目情况信息'
-        // },
+        {
+          key: '8',
+          label: '研究开发项目情况信息'
+        },
         // {
         //   key: '9',
         //   label: '研究开发活动及相关情况信息'
@@ -449,7 +450,7 @@ export default function Fill() {
 
     '6': <StatisticCompanyBasicInfo date={curDate} />,
     '7': <CompanyTotalSalary date={curDate} />,
-    '8': <ResearchDevelopInfo date={curDate} />,
+    '8': <SoftwareAndServiceIncome date={curDate} />,
     '9': <ResearchActivityInfo date={curDate} />,
     '10': <FinanceStatusInfo date={curDate} />,
 

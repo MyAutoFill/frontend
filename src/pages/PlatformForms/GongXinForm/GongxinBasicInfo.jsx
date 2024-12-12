@@ -321,66 +321,6 @@ export default function GongXinBasicInfo(props) {
           />
         </Form.Item>,
       span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>软件和信息技术服务收入合计</span>,
-        children: <Form.Item name='Gongxin_basic3' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>软件和信息技术服务收入合计 - 2</span>,
-        children: <Form.Item name='Gongxin_basic4' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-日常运维及运营服务收入</span>,
-        children: <Form.Item name='Gongxin_basic5' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-日常运维及运营服务收入 - 2</span>,
-        children: <Form.Item name='Gongxin_basic6' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-业务出口收入</span>,
-        children: <Form.Item name='Gongxin_basic7' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-业务出口收入 - 2</span>,
-        children: <Form.Item name='Gongxin_basic8' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-外包出去业务对应的收入</span>,
-        children: <Form.Item name='Gongxin_basic9' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-外包出去业务对应的收入 - 2</span>,
-        children: <Form.Item name='Gongxin_basic10' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-出售给个人收入</span>,
-        children: <Form.Item name='Gongxin_basic11' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>其中-出售给个人收入 - 2</span>,
-        children: <Form.Item name='Gongxin_basic12' ><Input size='large' addonAfter='元' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>联系电话</span>,
-        children: <Form.Item name='Gongxin_basic13' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
-    },
-    {
-        label: <span style={{fontSize: '16px'}}>报出日期</span>,
-        children: <Form.Item name='Gongxin_basic14' ><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-        span: 1
     }
 	];
 
