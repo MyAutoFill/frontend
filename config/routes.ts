@@ -44,7 +44,7 @@ export default [
   {
     path: '/auto_fill/message_center',
     layout: false,
-    component: './CompanyInfo',
+    component: './Message',
   },
   {
     path: '*',
