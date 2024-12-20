@@ -964,7 +964,25 @@ export default function FinanceStatusInfo(props) {
       label: <span style={{fontSize: '16px'}}>上年同期</span>,
       children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
-    }
+    },
+    {
+      key: '133',
+      label: <span style={{fontSize: '16px'}}>储备基金</span>,
+      children: <Form.Item><Input disabled={true} addonBefore='代码' defaultValue={'49'} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '134',
+      label: <span style={{fontSize: '16px'}}>本年</span>,
+      children: <Form.Item name="FinanceStatusInfo_cbjj"><Input disabled={disableVar} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
+    {
+      key: '135',
+      label: <span style={{fontSize: '16px'}}>上年同期</span>,
+      children: <Form.Item><Input disabled={true} addonAfter='千元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1
+    },
   ];
 
   const onFinish = (values) => {

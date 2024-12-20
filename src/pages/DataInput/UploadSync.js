@@ -1,12 +1,14 @@
-import { Upload, Button, Descriptions, message, ConfigProvider, Space, Table, Modal } from 'antd';
-import { UploadOutlined, FileSyncOutlined, ForwardOutlined } from '@ant-design/icons';
+import { Input, FloatButton, message, Form, Button, Descriptions, ConfigProvider, Space, Table, Modal } from 'antd';
+import { UploadOutlined, FileSyncOutlined, ForwardOutlined, DownloadOutlined, CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { css } from '@emotion/css';
 
 export default function UploadSyncPage() {
 
   const [messageApi, contextHolder] = message.useMessage();
+  const [defaultOpen, setDefaultOpen] = useState(true)
+  const [form] = Form.useForm();
 
   const clickFunction = (url, name) => {
     request('', {
@@ -329,51 +331,325 @@ export default function UploadSyncPage() {
 
   const items = [
     {
-      key: '1',
-      label: <span style={{fontSize: '16px'}}>利润表</span>,
-      children: 
-        <Upload {...lrProps} >
-          <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击利润表excel文件</Button>
-        </Upload>,
-      span: 3
+      label: <span style={{fontSize: '16px'}}>主营业务收入</span>,
+      children: <Form.Item name="company_runningsum_3"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
     },
     {
-      key: '2',
-      label: <span style={{fontSize: '16px'}}>现金流量表</span>,
-      children: 
-        <Upload {...xjllProps} >
-          <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击现金流量表excel文件</Button>
-        </Upload>,
-      span: 3
+        label: <span style={{fontSize: '16px'}}>主营业务税金及附加</span>,
+        children: <Form.Item name="FinanceStatusInfo_56"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
     },
     {
-      key: '3',
-      label: <span style={{fontSize: '16px'}}>资产负债表</span>,
-      children: 
-        <Upload {...zcfzProps} >
-          <Button size='large' type='primary' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击资产负债表excel文件</Button>
-        </Upload>,
-      span: 3
+        label: <span style={{fontSize: '16px'}}>流动资产合计</span>,
+        children: <Form.Item name="company_runningsum_20"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
     },
-  ]
+    {
+        label: <span style={{fontSize: '16px'}}>营业成本</span>,
+        children: <Form.Item name="company_runningsum_2"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>税金及附加</span>,
+        children: <Form.Item name="company_runningsum_4"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>销售费用</span>,
+        children: <Form.Item name="company_runningsum_5"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>研发费用</span>,
+        children: <Form.Item name="company_runningsum_7"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>管理费用</span>,
+        children: <Form.Item name="company_runningsum_6"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>财务费用</span>,
+        children: <Form.Item name="company_runningsum_8"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>资产减值损失</span>,
+        children: <Form.Item name="company_runningsum_9"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>投资收益</span>,
+        children: <Form.Item name="company_runningsum_12"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>其他收益</span>,
+        children: <Form.Item name="company_runningsum_13"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>营业利润</span>,
+        children: <Form.Item name="company_runningsum_14"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>利润总额</span>,
+        children: <Form.Item name="company_runningsum_17"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>应付职工薪酬</span>,
+        children: <Form.Item name="company_runningsum_23"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>应交增值税</span>,
+        children: <Form.Item name="company_runningsum_19"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>货币资金</span>,
+        children: <Form.Item name="tax_debt_1"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>储备基金</span>,
+        children: <Form.Item name="FinanceStatusInfo_cbjj"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>未分配利润</span>,
+        children: <Form.Item name="tax_debt_51"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>所有者权益合计</span>,
+        children: <Form.Item name="company_runningsum_31"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>负债及所有者权益合计</span>,
+        children: <Form.Item name="company_runningsum_31"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>研发投入</span>,
+        children: <Form.Item name="company_runningsum_7"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>盈余公积</span>,
+        children: <Form.Item name="tax_debt_49"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>其他业务利润</span>,
+        children: <Form.Item name="company_runningsum_13"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>资产总计</span>,
+        children: <Form.Item name="FinanceStatusInfo_38"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>应收帐款</span>,
+        children: <Form.Item name="FinanceStatusInfo_10"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>减：坏帐准备</span>,
+        children: <Form.Item name="company_runningsum_34"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>应收账款净额</span>,
+        children: <Form.Item name="company_runningsum_35"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>其他应收款</span>,
+        children: <Form.Item name="tax_debt_7"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>其他应收款净额</span>,
+        children: <Form.Item name="company_runningsum_36"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>存货</span>,
+        children: <Form.Item name="FinanceStatusInfo_14"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>其他流动资产</span>,
+        children: <Form.Item name="tax_debt_13"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>固定资产原值</span>,
+        children: <Form.Item name="FinanceStatusInfo_16"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>减：累计折旧</span>,
+        children: <Form.Item name="company_runningsum_26"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>固定资产净值</span>,
+        children: <Form.Item name="company_runningsum_22"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>无形资产</span>,
+        children: <Form.Item name="company_runningsum_24"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>长期待摊费用</span>,
+        children: <Form.Item name="company_research_9"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>非流动资产合计</span>,
+        children: <Form.Item name="Tech_EcoInfo_99"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>资产合计</span>,
+        children: <Form.Item name="company_runningsum_37"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>应付帐款</span>,
+        children: <Form.Item name="tax_debt_28"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>应交税金</span>,
+        children: <Form.Item name="company_runningsum_4"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>其他应付款</span>,
+        children: <Form.Item name="tax_debt_35"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>预提费用</span>,
+        children: <Form.Item name="tax_debt_36"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>流动负债合计</span>,
+        children: <Form.Item name="company_runningsum_29"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>负债合计</span>,
+        children: <Form.Item name="FinanceStatusInfo_40"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>实收资本</span>,
+        children: <Form.Item name="company_runningsum_32"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>外方投资</span>,
+        children: <Form.Item name="company_runningsum_38"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    },
+    {
+        label: <span style={{fontSize: '16px'}}>公允价值变动收益</span>,
+        children: <Form.Item name="company_runningsum_11"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        span: 1.5
+    }
+  ];
 
   return (
     <>
       {contextHolder}
       <div style={{height: 1200, overflow: 'scroll'}}>
         <br></br>
-        <span style={{fontSize:'24px'}}><b>点击下列对应按钮上传对应文件，上传完成后点击开始同步按钮开始数据同步</b></span>
-        <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1200px' }}>
-          <Descriptions style={{width: '1300px'}} title="数据文件上传" bordered items={items} />
-          <ConfigProvider
-            button={{
-              className: linearGradientButton,
+        <span style={{fontSize:'24px'}}><b>您可以点击右侧按钮下载模板，填写完成后上传进行数据同步；您也可以直接在下面表格中填写。</b></span>
+        <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<DownloadOutlined /> }>点击下载模板</Button>
+        <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1500px' }}>
+          <Descriptions style={{width: '1500px'}} title="统一报表报送系统财务状况信息同步模板" bordered items={items} />
+          <FloatButton.Group
+          open={defaultOpen}
+          trigger="click"
+          style={{
+            insetInlineEnd: 120,
+          }}
+          shape='square'
+          description="操作按钮"
+          tooltip={<div>点击展示操作按钮</div>}
+          type='primary'
+          onOpenChange={(open) => setDefaultOpen(open)}
+          icon={<ExpandAltOutlined />}
+        >
+          <Button 
+            type="primary" 
+            icon={<SaveFilled />} 
+            autoInsertSpace 
+            size='large' 
+            htmlType="submit"
+            style={{
+              position: 'absolute',
+              right: 0,
+              bottom: 210
             }}
-          >
-            <Space style={{marginTop: '50px'}}>
-              <Button onClick={() => {window.location.href = '/auto_fill/input?tab=2&table=42'}} size="large" type='primary' style={{marginLeft: '50px'}} icon={<ForwardOutlined />}>下一步</Button>
-            </Space>
-          </ConfigProvider>
+            onClick={
+              SaveSuccess
+            }
+          >保存数据</Button>
+          <Button 
+            type="primary" 
+            icon={<StopFilled />} 
+            autoInsertSpace 
+            size='large' 
+            style={{
+              position: 'absolute',
+              right: 0,
+              bottom: 140,
+            }}
+            onClick={
+              EditSuccess
+            }
+          >取消编辑</Button>
+          <Button 
+            type="primary" 
+            icon={<CheckSquareFilled />} 
+            autoInsertSpace 
+            size='large'
+            style={{
+              position: 'absolute',
+              right: 0, 
+              bottom: 70,
+            }}
+            onClick={
+              CheckSuccess
+            }
+          >检查表单</Button>
+          <Button 
+            type="primary" 
+            icon={<FastForwardOutlined />} 
+            autoInsertSpace 
+            size='large'
+            style={{
+              position: 'absolute',
+              right: 0, 
+              bottom: 0,
+            }}
+            onClick={() => {window.location.href = '/auto_fill/input?tab=4'}}
+          >立即填报</Button>
+        </FloatButton.Group>
         </div>
       </div>
     </>

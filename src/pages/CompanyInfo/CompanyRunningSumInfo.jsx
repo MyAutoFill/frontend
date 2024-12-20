@@ -288,6 +288,36 @@ export default function CompanyRunningSumInfo(props) {
       label: <span style={{fontSize: '16px'}}>-- 其中：实收资本（股本）</span>,
       children: <Form.Item name="company_runningsum_32"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
+    },
+    {
+      key: '31',
+      label: <span style={{fontSize: '16px'}}>减：坏帐准备</span>,
+      children: <Form.Item name="company_runningsum_34"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5,
+    },
+    {
+      key: '32',
+      label: <span style={{fontSize: '16px'}}>应收账款净额</span>,
+      children: <Form.Item name="company_runningsum_35"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '33',
+      label: <span style={{fontSize: '16px'}}>其他应收款净额</span>,
+      children: <Form.Item name="company_runningsum_36"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '34',
+      label: <span style={{fontSize: '16px'}}>资产合计</span>,
+      children: <Form.Item name="company_runningsum_37"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '35',
+      label: <span style={{fontSize: '16px'}}>外方投资</span>,
+      children: <Form.Item name="company_runningsum_38"><Input size='large' addonAfter='千元' disabled={disableVar} style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
     }
   ];
 
