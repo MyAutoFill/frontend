@@ -242,7 +242,7 @@ export default function YiGongDaiXun(props) {
     {
       key: '11',
       label: <span style={{fontSize: '16px'}}>补贴年月</span>,
-      children: <DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择补贴年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <DatePicker format="YYYY-MM-DD" size='large' onChange={(date, dateString) => {console.log(date, dateString)}} placeholder='请选择补贴年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

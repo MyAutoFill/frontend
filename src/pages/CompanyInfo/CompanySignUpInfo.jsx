@@ -201,7 +201,7 @@ export default function CompanySignUpInfo(props) {
     {
       key: '14',
       label: <span style={{fontSize: '16px'}}>注册号</span>,
-      children: <Form.Item name="company_basicinfo_1" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup14" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

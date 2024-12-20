@@ -122,7 +122,7 @@ export default function HighTechCompanyStat(props) {
     {
       key: '15',
       label: <span style={{fontSize: '16px'}}>移动电话(qa09)</span>,
-      children: <Form.Item name="company_basicinfo_29"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_36"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
