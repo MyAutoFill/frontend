@@ -1,4 +1,4 @@
-import { Input, FloatButton, message, Form, Button, Descriptions, ConfigProvider, Space, Table, Modal } from 'antd';
+import { Input, FloatButton, message, Form, Button, Descriptions, ConfigProvider, Upload, Table, Modal } from 'antd';
 import { UploadOutlined, FileSyncOutlined, ForwardOutlined, DownloadOutlined, CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import React, { useContext, useState } from 'react';
@@ -63,14 +63,12 @@ export default function UploadSyncPage() {
     });
   };
 
-  const zcfzProps = {
+  const uploadProps = {
     name: 'file',
-    action: '/zhby_api/excelAnalysis/excel/convert',
-    data: {
-      type: 'zcfz'
-    },
+    action: '/api/load_from_excel',
     onChange(info) {
       if (info.file.status === 'done') {
+        console.log(info.file.response)
         const exist = localStorage.getItem("currentUser");
         const uuid = JSON.parse(exist).uuid;
         if (uuid == undefined || uuid == null || uuid === '') {
@@ -79,8 +77,7 @@ export default function UploadSyncPage() {
         request('/api/parse_table', {
           method: 'POST',
           data: {
-            parse_data: info.file.response.data,
-            type: 'zcfz',
+            parse_data: info.file.response,
             uuid: uuid
           }
         })
@@ -125,174 +122,12 @@ export default function UploadSyncPage() {
               request('/api/save_from_excel', {
                 method: 'POST',
                 data: {
-                  date: '2024-12',
                   data: data,
                   uuid: uuid
                 }
               })
               .then(function (res) {
-                message.success(`资产负债表 上传成功`);
-                modal.destroy()
-              })
-            }
-          });
-        })
-      } else if (info.file.status === 'error') {
-        message.error(`${info.file.name} 文件上传失败`);
-      }
-    },
-  };
-
-  const lrProps = {
-    name: 'file',
-    action: '/zhby_api/excelAnalysis/excel/convert',
-    data: {
-      type: 'lr'
-    },
-    onChange(info) {
-      if (info.file.status === 'done') {
-        const exist = localStorage.getItem("currentUser");
-        const uuid = JSON.parse(exist).uuid;
-        if (uuid == undefined || uuid == null || uuid === '') {
-          history.push('/auto_fill/user/login')
-        }
-        request('/api/parse_table', {
-          method: 'POST',
-          data: {
-            parse_data: info.file.response.data,
-            type: 'lr',
-            uuid: uuid
-          }
-        })
-        .then(function (res) {
-          var data = res;
-          const modal = Modal.confirm({
-            width: 1000,
-            title: '确认填充项',
-            destroyOnClose: true,
-            content: <>
-            <Table
-              bordered
-              dataSource={res}
-              columns={[
-                {
-                  title: '名称',
-                  dataIndex: 'name',
-                  key: 'name',
-                },
-                {
-                  title: '现有值',
-                  dataIndex: 'old_value',
-                  key: 'old_value',
-                },
-                {
-                  title: '新值（来自文件）',
-                  dataIndex: 'new_value',
-                  key: 'new_value',
-                },
-              ]}
-            />
-            </>,
-            okText: '确认',
-            cancelText: '取消',
-            onCancel:()=>{},
-            onOk:(res)=>{
-              const exist = localStorage.getItem("currentUser");
-              const uuid = JSON.parse(exist).uuid;
-              if (uuid == undefined || uuid == null || uuid === '') {
-                history.push('/auto_fill/user/login')
-              }
-              request('/api/save_from_excel', {
-                method: 'POST',
-                data: {
-                  date: '2024-12',
-                  data: data,
-                  uuid: uuid
-                }
-              })
-              .then(function (res) {
-                message.success(`利润表 上传成功`);
-                modal.destroy()
-              })
-            }
-          });
-        })
-      } else if (info.file.status === 'error') {
-        message.error(`${info.file.name} 文件上传失败`);
-      }
-    },
-  };
-
-  const xjllProps = {
-    name: 'file',
-    action: '/zhby_api/excelAnalysis/excel/convert',
-    data: {
-      type: 'xjll'
-    },
-    onChange(info) {
-      if (info.file.status === 'done') {
-        const exist = localStorage.getItem("currentUser");
-        const uuid = JSON.parse(exist).uuid;
-        if (uuid == undefined || uuid == null || uuid === '') {
-          history.push('/auto_fill/user/login')
-        }
-        request('/api/parse_table', {
-          method: 'POST',
-          data: {
-            parse_data: info.file.response.data,
-            type: 'xjll',
-            uuid: uuid
-          }
-        })
-        .then(function (res) {
-          var data = res;
-          const modal = Modal.confirm({
-            width: 1000,
-            title: '确认填充项',
-            destroyOnClose: true,
-            content: <>
-            <Table
-              bordered
-              dataSource={res}
-              columns={[
-                {
-                  title: '名称',
-                  dataIndex: 'name',
-                  key: 'name',
-                },
-                {
-                  title: '现有值',
-                  dataIndex: 'old_value',
-                  key: 'old_value',
-                },
-                {
-                  title: '新值（来自文件）',
-                  dataIndex: 'new_value',
-                  key: 'new_value',
-                },
-              ]}
-            />
-            </>,
-            okText: '确认',
-            cancelText: '取消',
-            onCancel:()=>{},
-            onOk:(res)=>{
-              const exist = localStorage.getItem("currentUser");
-              const uuid = JSON.parse(exist).uuid;
-              if (uuid == undefined || uuid == null || uuid === '') {
-                history.push('/auto_fill/user/login')
-              }
-              request('/api/save_from_excel', {
-                method: 'POST',
-                data: {
-                  date: '2024-12',
-                  data: data,
-                  uuid: uuid
-                }
-              })
-              .then(function (res) {
-                message.success(`现金流量表 上传成功`);
-                modal.destroy()
+                message.success(`上传成功`, 3, () => {window.location.reload()});
               })
             }
           });
@@ -578,7 +413,12 @@ export default function UploadSyncPage() {
       <div style={{height: 1200, overflow: 'scroll'}}>
         <br></br>
         <span style={{fontSize:'24px'}}><b>您可以点击右侧按钮下载模板，填写完成后上传进行数据同步；您也可以直接在下面表格中填写。</b></span>
-        <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<DownloadOutlined /> }>点击下载模板</Button>
+        <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<DownloadOutlined /> }
+        onClick={() => {window.location.href='https://xcyb.weihai.cn/api/download_upload_template'}}
+        >点击下载模板</Button>
+        <Upload {...uploadProps} >
+          <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传</Button>
+        </Upload>
         <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1500px' }}>
           <Descriptions style={{width: '1500px'}} title="统一报表报送系统财务状况信息同步模板" bordered items={items} />
           <FloatButton.Group

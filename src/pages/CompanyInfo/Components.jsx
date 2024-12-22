@@ -89,7 +89,7 @@ export default function SyncCompanyInfoButton(props) {
                     key: 'old_value',
                   },
                   {
-                    title: '新值（来自文件）',
+                    title: '新值（来自接口）',
                     dataIndex: 'new_value',
                     key: 'new_value',
                   },
