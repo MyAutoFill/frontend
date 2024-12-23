@@ -4,7 +4,7 @@ import { Descriptions, Input, Select, Checkbox, DatePicker, Radio, Button, Float
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { reqBasicData, reqRatioConfig, transferDate, saveDateAsString } from '@/pages/Utils'
+import { requestCompanyData, reqRatioConfig, transferDate, saveDateAsString } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
