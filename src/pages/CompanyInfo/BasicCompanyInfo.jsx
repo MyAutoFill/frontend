@@ -167,7 +167,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '6',
       label: <span style={{fontSize: '16px'}}>主要业务活动</span>,
-      children: <Form.Item name="company_basicinfo_6" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_6"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
@@ -210,8 +210,8 @@ export default function BasicCompanyInfo(props) {
           <Form.Item name="company_basicinfo_13" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_14"><Input size='large' addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_15"><Input size='large' addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_16" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_17" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16"><Input size='large' addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17"><Input size='large' addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>,
       span: 3
     },
@@ -256,8 +256,8 @@ export default function BasicCompanyInfo(props) {
           <Form.Item name="company_basicinfo_13" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="县（市、区、旗)" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_14"><Input size='large' addonBefore="乡（镇、街道办事处）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
           <Form.Item name="company_basicinfo_15"><Input size='large' addonBefore="村（居）委会" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_16" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
-          <Form.Item name="company_basicinfo_17" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_16"><Input size='large' addonBefore="街（路）、门牌" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
+          <Form.Item name="company_basicinfo_17"><Input size='large' addonBefore="详细地址" style={{ width: '1070px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
         </>
       ),
       span: 3
@@ -304,7 +304,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '',
       label: <span style={{fontSize: '16px'}}>民族</span>,
-      children: <Form.Item name="company_basicinfo_43" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_43"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -316,13 +316,13 @@ export default function BasicCompanyInfo(props) {
     {
       key: '',
       label: <span style={{fontSize: '16px'}}>文化程度</span>,
-      children: <Form.Item name="company_basicinfo_44" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_44"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
       label: <span style={{fontSize: '16px'}}>国别或地区代码</span>,
-      children: <Form.Item name="company_basicinfo_c1" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_c1"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -413,7 +413,7 @@ export default function BasicCompanyInfo(props) {
     {
       key: '17',
       label: <span style={{fontSize: '16px'}}>法人证件号码</span>,
-      children: <Form.Item name="company_basicinfo_28" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_28"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -425,19 +425,19 @@ export default function BasicCompanyInfo(props) {
     {
       key: '18',
       label: <span style={{fontSize: '16px'}}>法人联系电话</span>,
-      children: <Form.Item name="company_basicinfo_29" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_29"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
     {
       key: '19',
       label: <span style={{fontSize: '16px'}}>企业负责人</span>,
-      children: <Form.Item name="company_basicinfo_30" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_30"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
       label: <span style={{fontSize: '16px'}}>联系电话</span>,
-      children: <Form.Item name="company_basicinfo_31" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_31"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
