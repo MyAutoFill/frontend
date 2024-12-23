@@ -111,18 +111,6 @@ export default function PersonalPaymentDetails(props) {
       span: 1.5
     },
     {
-      key: '4',
-      label: '开始年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开始年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
-      key: '5',
-      label: '截止年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择截止年月' picker="month" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
       key: '6',
       label: '缴存基数',
       children: <Form.Item name="GongJiJin_PaymentDetails_6"><Input disabled={disableVar} size='large' addonAfter='元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,

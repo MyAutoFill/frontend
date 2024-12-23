@@ -129,7 +129,7 @@ export default function ResearchDevelopActivity(props) {
     {
       key: '5',
       label: <span style={{fontSize: '16px'}}>有效期至</span>,
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginTop: '10px'}}/>,
+      children: '2025-02',
       span: 3
     },
     {
