@@ -64,6 +64,7 @@ export async function getInitialState(): Promise<{
     }
     const company_info = await queryCompanyInfo(JSON.parse(exist).uuid);
     if (Object.keys(company_info).length == 0) {
+      alert('请先填写企业基本信息！')
       history.push('/auto_fill/company_info');
     }
     return {
