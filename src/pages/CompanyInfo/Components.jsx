@@ -77,6 +77,7 @@ export default function SyncCompanyInfoButton(props) {
               <Table
                 bordered
                 dataSource={res}
+                rowKey='name'
                 columns={[
                   {
                     title: '名称',

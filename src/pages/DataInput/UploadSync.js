@@ -1,7 +1,8 @@
-import { Input, FloatButton, message, Form, Button, Descriptions, ConfigProvider, Upload, Table, Modal } from 'antd';
+import { Input, FloatButton, message, Form, Button, Descriptions, ConfigProvider, Upload, Table, Modal, Row } from 'antd';
 import { UploadOutlined, FileSyncOutlined, ForwardOutlined, DownloadOutlined, CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
 import { css } from '@emotion/css';
 
 export default function UploadSyncPage() {
@@ -55,13 +56,26 @@ export default function UploadSyncPage() {
       content: '表单检查完成',
     });
   }
-  
-  const CheckError = () => {
-    messageApi.open({
-      type: 'error',
-      content: '表单检查失败',
-    });
-  };
+
+  useEffect(() => {
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = (now.getMonth() + 1 < 10 ? "0" : "") + (now.getMonth() + 1);
+    load_data(year + '-' + month);
+  }, []);
+
+  const load_data = (curDate) => {
+    const exist = localStorage.getItem("currentUser");
+    const uuid = JSON.parse(exist).uuid;
+    if (uuid == undefined || uuid == null || uuid === '') {
+      history.push('/auto_fill/user/login')
+    }
+    reqBasicData(curDate, uuid)
+      .then(function (res) {
+        form.resetFields();
+        form.setFieldsValue(res);
+      })
+  }
 
   const uploadProps = {
     name: 'file',
@@ -91,6 +105,7 @@ export default function UploadSyncPage() {
             <Table
               bordered
               dataSource={res}
+              rowKey='name'
               columns={[
                 {
                   title: '名称',
@@ -407,10 +422,29 @@ export default function UploadSyncPage() {
     }
   ];
 
+  const onFinish = (values) => {
+    const exist = localStorage.getItem("currentUser");
+    const uuid = JSON.parse(exist).uuid;
+    if (uuid == undefined || uuid == null || uuid === '') {
+      history.push('/auto_fill/user/login')
+    }
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = (now.getMonth() + 1 < 10 ? "0" : "") + (now.getMonth() + 1);
+    request('/api/save', {
+      method: 'POST',
+      data: {
+        date: year + '-' + month,
+        data: values,
+        uuid: uuid
+      }
+    })
+  };
+
   return (
     <>
       {contextHolder}
-      <div style={{height: 1200, overflow: 'scroll'}}>
+      <Row style={{height: 800}}>
         <br></br>
         <span style={{fontSize:'24px'}}><b>您可以点击右侧按钮下载模板，填写完成后上传进行数据同步；您也可以直接在下面表格中填写。</b></span>
         <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<DownloadOutlined /> }
@@ -419,7 +453,8 @@ export default function UploadSyncPage() {
         <Upload {...uploadProps} >
           <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传</Button>
         </Upload>
-        <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1500px' }}>
+        <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1500px', overflow: 'scroll', height: '700px' }} class="banner-anim">
+        <Form onFinish={onFinish} form={form}>
           <Descriptions style={{width: '1500px'}} title="统一报表报送系统财务状况信息同步模板" bordered items={items} />
           <FloatButton.Group
           open={defaultOpen}
@@ -489,9 +524,10 @@ export default function UploadSyncPage() {
             }}
             onClick={() => {window.location.href = '/auto_fill/input?tab=4'}}
           >立即填报</Button>
-        </FloatButton.Group>
+          </FloatButton.Group>
+        </Form>
         </div>
-      </div>
+      </Row>
     </>
   );
 }

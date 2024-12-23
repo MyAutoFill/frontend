@@ -4,7 +4,7 @@ import { Descriptions, Input, Button, FloatButton, message, DatePicker, Form } f
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { reqBasicData, reqRatioConfig, transferDate, saveDateAsString } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
 
@@ -39,8 +39,9 @@ export default function OuterVouch(props) {
               }
             }
           });
+          var after = transferDate(new_res);
           form.resetFields();
-          form.setFieldsValue(new_res);
+          form.setFieldsValue(after);
         })
       })
   }
@@ -146,7 +147,8 @@ export default function OuterVouch(props) {
       method: 'GET',
     })
     .then(function (config) {
-      const new_res = JSON.parse(JSON.stringify(values));
+      var after = saveDateAsString(values);
+      const new_res = JSON.parse(JSON.stringify(after));
       Object.keys(config).forEach(key => {
         if (key in new_res) {
           if (new_res[key] !== '') {
