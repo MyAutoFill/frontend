@@ -213,12 +213,6 @@ export default function HospitalHelpInfos(props) {
       span: 1
     },
     {
-      key: '17',
-      label: '参保年份',
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
-    },
-    {
       key: '18',
       label: '发票单位名称与注册名称是否一致',
       children: 
@@ -369,12 +363,6 @@ export default function HospitalHelpInfos(props) {
             ]}
           />
         </Form.Item>,
-      span: 1
-    },
-    {
-      key: '33',
-      label: '参保年份',
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择参保年份' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
