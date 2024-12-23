@@ -123,18 +123,6 @@ export default function UserSignUpandOff(props) {
       span: 3
     },
     {
-      key: '2',
-      label: '参与交易开始时间',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择交易开始时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
-      key: '3',
-      label: '参与交易结束时间',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择交易结束时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
       key: '4',
       label: '电力批发用户参与山东省电力现货市场承诺书（模板）',
       children: 

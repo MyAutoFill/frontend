@@ -173,7 +173,7 @@ export default function ElectricUserInfo(props) {
     {
       key: '11',
       label: '成立日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择成立日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择成立日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -309,12 +309,6 @@ export default function ElectricUserInfo(props) {
       span: 1
     },
     {
-      key: '33',
-      label: '注册失效时间',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择注册失效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
-    },
-    {
       key: '34',
       label: '行业性质',
       children: <Form.Item name="company_basicinfo_5"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -372,12 +366,6 @@ export default function ElectricUserInfo(props) {
       key: '41',
       label: '定价策略类型',
       children: <Form.Item name="Electric_UserInfo_20"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '42',
-      label: '注册生效时间',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择注册生效时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {

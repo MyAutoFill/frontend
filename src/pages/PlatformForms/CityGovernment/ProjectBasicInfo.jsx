@@ -142,18 +142,6 @@ export default function ProjectBasicInfo(props) {
       span: 1.5
     },
     {
-      key: '9',
-      label: '拟开工时间',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择拟开工时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
-      key: '10',
-      label: '拟建成时间',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择拟建成时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
       key: '11',
       label: '总投资',
       children: <Form.Item name="CityGovernment_ProjectBasicInfo_11"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -193,12 +181,6 @@ export default function ProjectBasicInfo(props) {
       key: '17',
       label: '所属行业',
       children: <Form.Item name="CityGovernment_ProjectBasicInfo_17"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '18',
-      label: '申报日期',
-      children: <DatePicker format="YYYY-MM-DD" disabled={disableVar} size='large' placeholder='请选择申报日期' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {

@@ -129,7 +129,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '5',
       label: <span style={{fontSize: '16px'}}>有效期至</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginTop: '10px'}}/>,
+      children: '2025-02',
       span: 13
     },
     {
@@ -152,7 +152,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '8',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_allowed_date"><DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -260,7 +260,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '26',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_build_date"><DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择企业注册时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -524,7 +524,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '62',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_confirm_date"><DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {
@@ -543,42 +543,6 @@ export default function TechCompanyInfo(props) {
       key: '65',
       label: <span style={{fontSize: '16px'}}>内容</span>,
       children: <Form.Item name="Tech_commpanyInfo_40"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1
-    },
-    {
-      key: '66',
-      label: <span style={{fontSize: '16px'}}>指标名称</span>,
-      children: <span style={{fontSize: '16px'}}>入孵时间</span>,
-      span: 1
-    },
-    {
-      key: '67',
-      label: <span style={{fontSize: '16px'}}>代码</span>,
-      children: <span style={{fontSize: '16px'}}>qb14_1</span>,
-      span: 1
-    },
-    {
-      key: '68',
-      label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择入孵时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
-    },
-    {
-      key: '69',
-      label: <span style={{fontSize: '16px'}}>指标名称</span>,
-      children: <span style={{fontSize: '16px'}}>毕业时间</span>,
-      span: 1
-    },
-    {
-      key: '70',
-      label: <span style={{fontSize: '16px'}}>代码</span>,
-      children: <span style={{fontSize: '16px'}}>qb14_2</span>,
-      span: 1
-    },
-    {
-      key: '71',
-      label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择毕业时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1
     },
     {
@@ -632,7 +596,7 @@ export default function TechCompanyInfo(props) {
     {
       key: '80',
       label: <span style={{fontSize: '16px'}}>内容</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: <Form.Item name="company_basicinfo_ipo_date"><DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择上市时间' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1
     },
     {

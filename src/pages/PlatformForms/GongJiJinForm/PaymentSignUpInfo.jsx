@@ -124,12 +124,6 @@ export default function PaymentSignUpInfo(props) {
       span: 1.5
     },
     {
-      key: '5',
-      label: '缴至年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择缴至年月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
       key: '6',
       label: '未分配余额',
       children: <Form.Item name="GongJiJin_payment_5"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -145,18 +139,6 @@ export default function PaymentSignUpInfo(props) {
       key: '8',
       label: '账户机构',
       children: <Form.Item name="GongJiJin_payment_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '9',
-      label: '开始年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开始年月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
-      key: '10',
-      label: '终止年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择终止年月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
       span: 1.5
     },
     {

@@ -103,12 +103,6 @@ export default function GongShangCompanyInfo(props) {
 
   const items = [
     {
-      key: '1',
-      label: <span style={{fontSize: '16px'}}>报告年度</span>,
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择报告年度' picker="year" style={{ width: '250px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 3
-    },
-    {
       key: '2',
       label: <span style={{fontSize: '16px'}}>企业名称</span>,
       children: <Form.Item name="company_basicinfo_2"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,

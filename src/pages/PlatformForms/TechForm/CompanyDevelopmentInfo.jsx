@@ -129,7 +129,7 @@ export default function CompanyDevelopmentInfo(props) {
     {
       key: '5',
       label: '有效期至',
-      children: <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='有效期至' picker="year" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
+      children: '2025-02',
       span: 3
     }
   ];

@@ -150,18 +150,6 @@ export default function NewSheBao(props) {
       span: 1
     },
     {
-      key: '9',
-      label: '出生日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
-    },
-    {
-      key: '10',
-      label: '档案出生日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择档案出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
-    },
-    {
       key: '11',
       label: '文化程度',
       children: <Form.Item name="HumanSocial_NewSheBao_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -293,12 +281,6 @@ export default function NewSheBao(props) {
       span: 1
     },
     {
-      key: '32',
-      label: '参加工作日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择参加工作日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
-    },
-    {
       key: '33',
       label: '街道编号',
       children: <Form.Item name="HumanSocial_NewSheBao_33"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -398,18 +380,6 @@ export default function NewSheBao(props) {
       span: 1.5
     },
     {
-      key: '47',
-      label: '出生日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
-      key: '48',
-      label: '档案出生日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择档案出生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
       key: '49',
       label: '民族',
       children: <Form.Item name="HumanSocial_NewSheBao_49"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
@@ -457,22 +427,10 @@ export default function NewSheBao(props) {
       span: 1.5
     },
     {
-      key: '56',
-      label: '减员年月',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择减员年月' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
       key: '57',
       label: '减员原因',
       children: <Form.Item name="HumanSocial_NewSheBao_57"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
-    },
-    {
-      key: '58',
-      label: '状态发生日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态发生日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 3
     },
     {
       key: '59',
@@ -515,12 +473,6 @@ export default function NewSheBao(props) {
       label: '工商登记执照种类',
       children: <Form.Item name="HumanSocial_NewSheBao_64"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
-    },
-    {
-      key: '66',
-      label: '工商登记证发证日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态发证日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1
     },
     {
       key: '67',
@@ -1075,12 +1027,6 @@ export default function NewSheBao(props) {
       label: '联系人',
       children: <Form.Item name="HumanSocial_NewSheBao_89"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
-    },
-    {
-      key: '91',
-      label: '状态批准日期',
-      children: <DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1,
     },
     {
       key: '92',

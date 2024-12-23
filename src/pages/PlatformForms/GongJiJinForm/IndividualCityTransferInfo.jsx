@@ -176,18 +176,6 @@ export default function IndividualCityTransferInfo(props) {
       label: '新缴存基数',
       children: <Form.Item name="GongJiJin_transfer_11"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
-    },
-    {
-      key: '13',
-      label: '最后汇缴月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择最后汇缴月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
-    },
-    {
-      key: '14',
-      label: '开始缴存年月',
-      children: <DatePicker disabled={disableVar} size='large' placeholder='请选择开始缴存年月' picker="month" style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/>,
-      span: 1.5
     }
   ];
 
