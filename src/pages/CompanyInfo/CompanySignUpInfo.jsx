@@ -131,7 +131,7 @@ export default function CompanySignUpInfo(props) {
 		{
       key: '28',
       label: <span style={{fontSize: '16px'}}>纳税人识别号</span>,
-      children: <Form.Item name="investor28"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor28"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

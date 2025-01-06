@@ -1145,7 +1145,7 @@ export default function BenefitsNewRules() {
     {
       key: '2',
       label: <span style={{fontSize: '16px'}}>纳税人识别号</span>,
-      children: <Form.Item name="investor28"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor28"><Input disabled={true} size='large' style={{ width: '400px', marginLeft: '10px', marginTop: '15px' }}></Input></Form.Item>,
       span: 1.5
     },
   ];
