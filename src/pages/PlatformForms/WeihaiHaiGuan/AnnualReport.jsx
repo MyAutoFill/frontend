@@ -265,7 +265,7 @@ export default function HaiguanAnnualReport(props) {
       key: '18',
       label: <span style={{fontSize: '16px'}}>经营场所性质</span>,
       children: 
-        <Form.Item name="haiguan18">
+        <Form.Item name="company_signup32">
           <Select
             allowClear
             style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}

@@ -383,7 +383,7 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '19',
       label: <span style={{fontSize: '16px'}}>资产总计</span>,
-      children: <Form.Item name="FinanceStatusInfo_38"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_runningsum_18"><Input disabled={disableVar} addonAfter='元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {

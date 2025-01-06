@@ -162,7 +162,7 @@ export default function CaizhengBasicInfo(props) {
     {
       key: '3',
       label: <span style={{fontSize: '16px'}}>所属行政区划</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_61"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup31"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
@@ -411,7 +411,7 @@ export default function CaizhengBasicInfo(props) {
       key: '13',
       label: <span style={{fontSize: '16px'}}>经济类型明细</span>,
       children: 
-        <Form.Item name="HumanSocial_NewSheBao_77">
+        <Form.Item name="company_insurance_2">
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
@@ -637,13 +637,13 @@ export default function CaizhengBasicInfo(props) {
     {
       key: '21',
       label: <span style={{fontSize: '16px'}}>批准文号</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_71"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup43"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '22',
       label: <span style={{fontSize: '16px'}}>批准日期</span>,
-      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_signup44"><DatePicker format="YYYY-MM-DD" size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {

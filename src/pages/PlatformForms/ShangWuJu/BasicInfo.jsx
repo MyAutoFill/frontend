@@ -249,7 +249,7 @@ export default function ShangwuBasicInfo(props) {
     {
       key: '13',
       label: <span style={{fontSize: '16px'}}>许可编号</span>,
-      children: <Form.Item name="shangwu_basic13"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor11"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

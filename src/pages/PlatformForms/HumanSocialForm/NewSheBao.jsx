@@ -453,7 +453,7 @@ export default function NewSheBao(props) {
     {
       key: '62',
       label: '所属行政区划',
-      children: <Form.Item name="HumanSocial_NewSheBao_61"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup31"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
@@ -507,13 +507,13 @@ export default function NewSheBao(props) {
     {
       key: '72',
       label: '批准文号',
-      children: <Form.Item name="HumanSocial_NewSheBao_71"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup43"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '73',
       label: '批准日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_signup44"><DatePicker format={dateFormat} disabled={disableVar} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
     {
@@ -732,7 +732,7 @@ export default function NewSheBao(props) {
       key: '78',
       label: '经济类型明细',
       children: 
-        <Form.Item name="HumanSocial_NewSheBao_77">
+        <Form.Item name="company_insurance_2">
           <Select
             allowClear
             style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}

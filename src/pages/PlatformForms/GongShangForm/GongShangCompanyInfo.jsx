@@ -141,7 +141,7 @@ export default function GongShangCompanyInfo(props) {
     {
       key: '8',
       label: <span style={{fontSize: '16px'}}>企业经营状态</span>,
-      children: <Form.Item name="GongShang_CompanyInfo_8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup6"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -175,23 +175,23 @@ export default function GongShangCompanyInfo(props) {
           <span size='large' style={{ fontSize: '16px' }}>币种应与注册资本币种一致</span>
           <br></br>
           <Form.Item name="GongShang_CompanyInfo_13"><Input disabled={disableVar} size='large' addonBefore='股东' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
-          <Form.Item name="GongShang_CompanyInfo_14"><Input disabled={disableVar} size='large' addonBefore='认缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="company_investor5"><Input disabled={disableVar} size='large' addonBefore='认缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large' style={{ fontSize: '16px' }}>认缴出资时间</span>
           <br></br>
           <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择认缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_16"><Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="company_investor4"><Input disabled={disableVar} size='large' addonBefore='认缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
           <br></br>
           <span size='large' style={{ fontSize: '16px' }}>实缴出资时间</span>
           <br></br>
           <DatePicker format="YYYY" disabled={disableVar} size='large' placeholder='请选择实缴出资时间' picker="year" style={{ width: '300px', marginLeft: '10px', marginTop: '10px'}}/>
           <br></br>
-          <Form.Item name="shangwu_investor7"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="company_investor21"><Input disabled={disableVar} size='large' addonBefore='实缴出资额' addonAfter='万元' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
           <br></br>
-          <Form.Item name="GongShang_CompanyInfo_19"><Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
+          <Form.Item name="company_investor10"><Input disabled={disableVar} size='large' addonBefore='实缴出资方式' style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 1.5
     },

@@ -161,7 +161,7 @@ export default function CompanySignUpInfo(props) {
     {
       key: '6',
       label: <span style={{fontSize: '16px'}}>企业状态</span>,
-      children: <Form.Item name="GongShang_CompanyInfo_8" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup6" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
@@ -275,7 +275,7 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '26',
 			label: <span style={{fontSize: '16px'}}>网址</span>,
-			children: <Form.Item name="Electric_UserInfo_8" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup26" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -317,13 +317,13 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '31',
 			label: <span style={{fontSize: '16px'}}>经营场所行政区划</span>,
-			children: <Form.Item name="HumanSocial_NewSheBao_61" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup31" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '32',
 			label: <span style={{fontSize: '16px'}}>经营场所</span>,
-			children: <Form.Item name="haiguan18" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup32" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -389,13 +389,13 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '43',
 			label: <span style={{fontSize: '16px'}}>批准文号</span>,
-			children: <Form.Item name="HumanSocial_NewSheBao_71" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup43" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
     {
       key: '44',
       label: '批准日期',
-      children: <Form.Item name="HumanSocial_NewSheBao_72"><DatePicker format={dateFormat} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+      children: <Form.Item name="company_signup44"><DatePicker format={dateFormat} size='large' placeholder='请选择状态批准日期' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
       span: 1,
     },
 		{
@@ -413,7 +413,7 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '47',
 			label: <span style={{fontSize: '16px'}}>经营状态</span>,
-			children: <Form.Item name="GongShang_CompanyInfo_8" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup6" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{

@@ -302,7 +302,7 @@ export default function UploadSyncPage() {
     },
     {
         label: <span style={{fontSize: '16px'}}>资产总计</span>,
-        children: <Form.Item name="FinanceStatusInfo_38"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+        children: <Form.Item name="company_runningsum_18"><Input size='large' addonAfter='元' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
         span: 1.5
     },
     {

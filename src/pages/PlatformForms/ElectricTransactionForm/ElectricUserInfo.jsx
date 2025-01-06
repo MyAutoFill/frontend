@@ -281,7 +281,7 @@ export default function ElectricUserInfo(props) {
     {
       key: '29',
       label: '企业网址（选填）',
-      children: <Form.Item name="Electric_UserInfo_8"><Input disabled={disableVar} size='large' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup26"><Input disabled={disableVar} size='large' style={{ width: '800px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {

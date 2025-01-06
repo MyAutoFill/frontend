@@ -200,7 +200,7 @@ export default function HighTechCompanyStat(props) {
     },
     {
       label: <span style={{fontSize: '16px'}}>单位主页</span>,
-      children: <Form.Item name="Electric_UserInfo_8"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup26"><Input disabled={disableVar} size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {

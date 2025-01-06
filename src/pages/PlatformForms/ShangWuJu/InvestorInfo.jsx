@@ -121,7 +121,7 @@ export default function ShangwuInvestorInfo(props) {
       key: '1',
       label: <span style={{fontSize: '16px'}}>投资者中文名称</span>,
       children: 
-				<Form.Item name="shangwu_investor1" >
+				<Form.Item name="company_investor1" >
 					<span style={{ fontSize:'16px', marginLeft: '10px', marginTop: '10px' }}>投资者/合伙人/外国企业名称或姓名:</span>
 					<Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input>
 				</Form.Item>,
@@ -164,7 +164,7 @@ export default function ShangwuInvestorInfo(props) {
     {
       key: '7',
       label: <span style={{fontSize: '16px'}}>实缴出资额</span>,
-      children: <Form.Item name="shangwu_investor7"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor21"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
@@ -186,13 +186,13 @@ export default function ShangwuInvestorInfo(props) {
 		{
       key: '10',
       label: <span style={{fontSize: '16px'}}>反向投资股权投资额</span>,
-      children: <Form.Item name="shangwu_investor10"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor10"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '11',
       label: <span style={{fontSize: '16px'}}>反向投资股权比例</span>,
-      children: <Form.Item name="shangwu_investor11"><Input addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor11"><Input addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
 		{
@@ -238,7 +238,7 @@ export default function ShangwuInvestorInfo(props) {
 			key: '13',
 			label: <span style={{fontSize: '16px'}}>境内投资者</span>,
 			children: 
-				<Form.Item name="shangwu_investor13">
+				<Form.Item name="company_investor13">
 					<Select
 						allowClear
 						style={{ width: '290px', marginLeft: '10px', marginTop: '10px' }}
@@ -294,7 +294,7 @@ export default function ShangwuInvestorInfo(props) {
 			key: '15',
 			label: <span style={{fontSize: '16px'}}>境外投资者身份</span>,
 			children: 
-				<Form.Item name="shangwu_investor15">
+				<Form.Item name="company_investor15">
 					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>境外投资者是否为定居在国外的中国公民：</span>
 					<Select
 						allowClear
@@ -328,25 +328,25 @@ export default function ShangwuInvestorInfo(props) {
     {
       key: '16',
       label: <span style={{fontSize: '16px'}}>名称或姓名（中文）</span>,
-      children: <Form.Item name="shangwu_investor16"><Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor16"><Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: <span style={{fontSize: '16px'}}>名称或姓名（英文）</span>,
-      children: <Form.Item name="shangwu_investor17"><Input size='large' addonBefore='英文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor17"><Input size='large' addonBefore='英文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: <span style={{fontSize: '16px'}}>国别</span>,
-      children: <Form.Item name="shangwu_investor18"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor18"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '19',
       label: <span style={{fontSize: '16px'}}>证件类型</span>,
-      children: <Form.Item name="shangwu_investor19"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor19"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {

@@ -99,7 +99,7 @@ export default function CompanyInsuranceInfo(props) {
       key: '2',
       label: <span style={{fontSize: '16px'}}>基金来源</span>,
       children: 
-        <Form.Item name="HumanSocial_NewSheBao_77">
+        <Form.Item name="company_insurance_2">
           <Select
             allowClear
             style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}

@@ -96,7 +96,7 @@
                 },
                 {
                     "key": "企业网址",
-                    "id": "Electric_UserInfo_8"
+                    "id": "company_signup26"
                 },
                 {
                     "key": "传真号码",
@@ -192,7 +192,7 @@
                 },
                 {
                     "key": "资产总计",
-                    "id": "FinanceStatusInfo_38"
+                    "id": "company_runningsum_18"
                 },
                 {
                     "key": "负债合计",
@@ -1940,7 +1940,7 @@
                 },
                 {
                     "key": "所属行政区划",
-                    "id": "HumanSocial_NewSheBao_61"
+                    "id": "company_signup31"
                 },
                 {
                     "key": "行业小类",
@@ -1980,7 +1980,7 @@
                 },
                 {
                     "key": "经济类型明细",
-                    "id": "HumanSocial_NewSheBao_77"
+                    "id": "company_insurance_2"
                 },
                 {
                     "key": "单位类型",
@@ -2024,11 +2024,11 @@
                 },
                 {
                     "key": "批准文号",
-                    "id": "HumanSocial_NewSheBao_71"
+                    "id": "company_signup43"
                 },
                 {
                     "key": "批准日期",
-                    "id": "HumanSocial_NewSheBao_72"
+                    "id": "company_signup44"
                 },
                 {
                     "key": "经营范围",
@@ -2148,7 +2148,7 @@
                 },
                 {
                     "key": "基金来源",
-                    "id": "HumanSocial_NewSheBao_77"
+                    "id": "company_insurance_2"
                 },
                 {
                     "key": "单位主要经营地",
@@ -2463,7 +2463,7 @@
                 },
                 {
                     "key": "企业网址",
-                    "id": "Electric_UserInfo_8"
+                    "id": "company_signup26"
                 },
                 {
                     "key": "传真号码",
