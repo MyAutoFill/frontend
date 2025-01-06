@@ -27,7 +27,7 @@ class Home extends React.PureComponent {
         <Page3 key="page3" />,
         <Page4 key="page4" />,
         <Footer key="footer" />,
-        <DocumentTitle title="统一报表报送系统" key="title" />,
+        <DocumentTitle title="威海市企业统一报表服务平台" key="title" />,
       ]
     );
   }

@@ -106,19 +106,19 @@ export default function YiBaoCompanyInfo(props) {
     {
       key: '3',
       label: '单位专管员姓名',
-      children: <Form.Item name="company_insurance_4"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_4"><Input size='large' disabled={disableVar} style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '5',
       label: '单位专管员所在部门',
-      children: <Form.Item name="company_insurance_5"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_insurance_5"><Input size='large' disabled={disableVar} style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
       key: '7',
       label: '单位专管员电话',
-      children: <Form.Item name="company_basicinfo_31"><Input size='large' disabled={disableVar} style={{ width: '300px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_31"><Input size='large' disabled={disableVar} style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1.5
     },
     {
@@ -176,12 +176,12 @@ export default function YiBaoCompanyInfo(props) {
     <>
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1300px'}} title="单位参保登记信息" bordered items={items} />
+          <Descriptions style={{width: '1000px'}} title="单位参保登记信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"
             style={{
-              insetInlineEnd: 120,
+              insetInlineEnd: 0,
             }}
             shape='square'
             description="操作按钮"

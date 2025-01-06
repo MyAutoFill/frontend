@@ -2012,7 +2012,7 @@ export default function PropertyDebtNewRule() {
       title: <span style={{fontSize: '16px'}}>资产</span>,
       dataIndex: "property_name1",
       key: "property_name1",
-      width: 200,
+      width: 150,
     },
     {
       title: <span style={{fontSize: '16px'}}>行次</span>,
@@ -2033,10 +2033,10 @@ export default function PropertyDebtNewRule() {
       width: 150,
     },
     {
-      title: <span style={{fontSize: '16px'}}>负债及所有者权益(或股东权益)</span>,
+      title: <span style={{fontSize: '16px'}}>负债及所有者权益<br/>(或股东权益)</span>,
       dataIndex: "property_name2",
       key: "property_name2",
-      width: 200,
+      width: 150,
     },
     {
       title: <span style={{fontSize: '16px'}}>行次</span>,
@@ -2082,7 +2082,7 @@ export default function PropertyDebtNewRule() {
         class="banner-anim"
       >
       <Form onFinish={onFinish} form={form}>
-        <Row style={{ width: "1300px" }}>
+        <Row style={{ width: "1200px" }}>
           <Col
             span={24}
             style={{
@@ -2095,7 +2095,7 @@ export default function PropertyDebtNewRule() {
             资产负债表(适用已执行新金融准则、新收入准则和新租赁准则的一般企业)
           </Col>
         </Row>
-        <Row style={{ width: "1300px" }}>
+        <Row style={{ width: "1200px" }}>
           <Col span={12}>税款所属期间：2024-04-0'至 2024-06-31</Col>
           <Col span={12} style={{ textAlign: "right" }}>
           会企01表金额单位：元,至角分
@@ -2106,7 +2106,7 @@ export default function PropertyDebtNewRule() {
           items={items}
           column="2"
           style={{
-            width: "1300px",
+            width: "1200px",
             marginTop: "20px",
             marginBottom: "20px",
             backgroundColor: "#efefef",
@@ -2115,11 +2115,12 @@ export default function PropertyDebtNewRule() {
         />
           <Table
             dataSource={data}
-            style={{ width: "1300px" }}
+            style={{ width: "1200px" }}
             pagination={false}
             bordered
             sticky
             columns={columns}
+            size="small"
           >
             {/* <Column
                 title="资产"
@@ -2152,7 +2153,7 @@ export default function PropertyDebtNewRule() {
             open={defaultOpen}
             trigger="click"
             style={{
-              insetInlineEnd: 120,
+              insetInlineEnd: 0,
             }}
             shape="square"
             description="操作按钮"

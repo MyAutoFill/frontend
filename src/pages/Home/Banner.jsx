@@ -48,7 +48,10 @@ class Banner extends React.PureComponent {
     return (
       <div className="banner page-wrapper" >
         <div className="page">
-          <div className="logo" />
+          <div style={{width: '470px', height: '80px', margin: '86px auto 40px', display: 'flex'}}>
+            <div className='curlogo'/>
+            <span style={{color: 'white', marginLeft: '20px', fontSize: '28px', alignSelf: 'center'}}>威海市企业统一报表服务平台</span>
+          </div>
           <BannerAnim type="across" duration={550} ease="easeInOutQuint">
             {bannerChildren}
           </BannerAnim>
