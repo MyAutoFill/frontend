@@ -1,6 +1,7 @@
-import { Menu } from 'antd';
+import { Menu, Row, Col, Layout } from 'antd';
+const { Sider } = Layout;
 import { useState } from 'react';
-
+import { SolutionOutlined, BarChartOutlined, MenuUnfoldOutlined, MenuFoldOutlined, MoneyCollectOutlined, CameraOutlined, BarcodeOutlined, RobotOutlined, ScheduleOutlined, TransactionOutlined, TruckOutlined } from '@ant-design/icons';
 import PMInfo from '../PlatformForms/CityGovernment/PMInfo'
 import ProjectBasicInfo from '../PlatformForms/CityGovernment/ProjectBasicInfo'
 import ElectricUserInfo from '../PlatformForms/ElectricTransactionForm/ElectricUserInfo'
@@ -54,7 +55,8 @@ export default function PreviewPage() {
     },
     {
       key: 'platform12',
-      label: <span style={{fontSize: '16px'}}>国家税务局山东省电子税务局</span>,
+      icon: <SolutionOutlined />,
+      label: <span style={{fontSize: '16px'}}>山东省税务局</span>,
       children: [
         {
           key: 'platform12_1',
@@ -87,6 +89,7 @@ export default function PreviewPage() {
     },
     {
       key: 'platform1',
+      icon: <BarChartOutlined />,
       label: <span style={{fontSize: '16px'}}>统计局</span>,
       children: [
         // {
@@ -140,7 +143,8 @@ export default function PreviewPage() {
     },
     {
       key: 'platform2',
-      label: <span style={{fontSize: '16px'}}>山东公共就业人才服务网上服务大厅</span>,
+      icon: <MoneyCollectOutlined />,
+      label: <span style={{fontSize: '16px'}}>人才服务大厅</span>,
       children: [
         {
             key: '12',
@@ -183,7 +187,8 @@ export default function PreviewPage() {
     // },
     {
       key: 'platform5',
-      label: <span style={{fontSize: '16px'}}>国家企业信用信息公示系统</span>,
+      icon: <CameraOutlined />,
+      label: <span style={{fontSize: '16px'}}>信用公示系统</span>,
       children: [
         {
           key: '16',
@@ -308,27 +313,37 @@ export default function PreviewPage() {
 
   return (
     <>
-      <div style={{display: 'flex', overflow: 'auto', height: 1000}}>
-        <div>
-          <Menu
-            style={{
-              width: 320,
-            }}
-            defaultSelectedKeys={['platform12_1']}
-            defaultOpenKeys={['platform12_1']}
-            mode="inline"
-            items={menus}
-            onSelect={(key) => {
-              setSelectedKey(key.key)
-            }}
-          />
-        </div>
-        <div>
-          <div style={{marginLeft: 30, height: 950, width: 1400, overflow: 'auto'}}>
+      <Row style={{height: 1000}}>
+        <Col style={{height: 800, overflowX: 'auto'}}>
+          <Layout style={{height: 800, minHeight: 800, backgroundColor: 'white'}}>
+            <Sider
+              collapsible
+              trigger={null}
+              breakpoint={'xxl'}
+              collapsedWidth="40"
+              style={{height: 800, backgroundColor: 'white'}}
+            >
+              <Menu
+                style={{
+                  fontSize: '18px'
+                }}
+                defaultSelectedKeys={['platform12_1']}
+                defaultOpenKeys={['platform12_1']}
+                mode="inline"
+                items={menus}
+                onSelect={(key) => {
+                  setSelectedKey(key.key)
+                }}
+              />
+            </Sider>
+          </Layout>
+        </Col>
+        <Col xxl={20} xl={23} lg={22} md={22} sm={19} xs={19}>
+          <div style={{marginLeft: 30, height: 832 }}>
             {pageMap[selectedKey]}
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </>
   );
 }

@@ -446,21 +446,24 @@ export default function UploadSyncPage() {
       {contextHolder}
       <Row style={{height: 800}}>
         <br></br>
+        <div>
         <span style={{fontSize:'24px'}}><b>您可以点击右侧按钮下载模板，填写完成后上传进行数据同步；您也可以直接在下面表格中填写。</b></span>
+        <br/>
         <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<DownloadOutlined /> }
         onClick={() => {window.location.href='https://xcyb.weihai.cn/api/download_upload_template'}}
         >点击下载模板</Button>
         <Upload {...uploadProps} >
           <Button size='large' type='primary' style={{ width: '150px', marginLeft: '10px', marginTop: '10px' }} icon={<UploadOutlined /> }>点击上传</Button>
         </Upload>
-        <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1500px', overflow: 'scroll', height: '700px' }} class="banner-anim">
+        </div>
+        <div style={{ textAlign: 'center', margin: 'auto', marginTop: '50px', width: '1150px', overflowY: 'scroll', overflowX: 'auto', height: '700px' }} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '1500px'}} title="统一报表报送系统财务状况信息同步模板" bordered items={items} />
+          <Descriptions style={{width: '1100px'}} title="统一报表报送系统财务状况信息表" bordered items={items} />
           <FloatButton.Group
           open={defaultOpen}
           trigger="click"
           style={{
-            insetInlineEnd: 120,
+            insetInlineEnd: 0,
           }}
           shape='square'
           description="操作按钮"

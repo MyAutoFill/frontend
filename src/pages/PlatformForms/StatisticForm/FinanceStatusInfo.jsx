@@ -1024,12 +1024,12 @@ export default function FinanceStatusInfo(props) {
           <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
           <span>          </span>
           <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
-          <Descriptions style={{width: '1300px'}} title="【报表名称】财务状况信息" bordered items={items} />
+          <Descriptions style={{width: '1100px'}} title="【报表名称】财务状况信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"
             style={{
-              insetInlineEnd: 120,
+              insetInlineEnd: 0,
             }}
             shape='square'
             description="操作按钮"

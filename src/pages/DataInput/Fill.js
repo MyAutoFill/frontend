@@ -2,7 +2,8 @@ import { Menu,
   DatePicker, 
   Row, 
   Col,
-  icon } from 'antd';
+  Layout } from 'antd';
+const { Sider } = Layout;
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { SolutionOutlined, BarChartOutlined, MoneyCollectOutlined, CameraOutlined, BarcodeOutlined, RobotOutlined, ScheduleOutlined, TransactionOutlined, TruckOutlined } from '@ant-design/icons';
@@ -513,26 +514,35 @@ export default function Fill() {
   return (
     <>
       <Row style={{height: 1000}}>
-        <Col span={4} style={{height: 800, overflowX: 'auto'}}>
-          <Menu
-            style={{
-              width: '100%',
-              fontSize: '18px'
-            }}
-            openKeys={openKey}
-            selectedKeys={selectedKey}
-            mode="inline"
-            items={menus}
-            onSelect={(key) => {
-              setSelectedKey(key.key)
-            }}
-            onOpenChange={(key) => {
-              setOpenKey(key)
-            }}
-          />
-        </Col>
-        <Col span={20}>
-          <div style={{marginLeft: 30, height: 950 }}>
+        <div style={{height: 800, overflowX: 'auto'}}>
+          <Layout style={{height: 800, minHeight: 800}}>
+            <Sider
+              collapsible
+              trigger={null}
+              breakpoint={'xxl'}
+              collapsedWidth="40"
+              style={{height: 800, backgroundColor: 'white'}}
+            >
+              <Menu
+                style={{
+                  fontSize: '18px'
+                }}
+                openKeys={openKey}
+                selectedKeys={selectedKey}
+                mode="inline"
+                items={menus}
+                onSelect={(key) => {
+                  setSelectedKey(key.key)
+                }}
+                onOpenChange={(key) => {
+                  setOpenKey(key)
+                }}
+              />
+            </Sider>
+          </Layout>
+        </div>
+        <Col xxl={20} xl={23} lg={22} md={22} sm={20} xs={20}>
+          <div style={{marginLeft: 30, height: 832 }}>
             <DatePicker format="YYYY-MM-DD" defaultValue={dayjs()} onChange={onChange} picker="month"/>
             {pageMap[selectedKey]}
           </div>

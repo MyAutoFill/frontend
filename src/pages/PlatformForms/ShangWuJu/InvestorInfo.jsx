@@ -511,7 +511,7 @@ export default function ShangwuInvestorInfo(props) {
             open={defaultOpen}
             trigger="click"
             style={{
-              insetInlineEnd: 120,
+              insetInlineEnd: 0,
             }}
             shape='square'
             description="操作按钮"

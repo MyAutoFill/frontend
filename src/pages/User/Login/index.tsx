@@ -54,7 +54,6 @@ const Page = () => {
           onChange={(activeKey) => setLoginType(activeKey as LoginType)}
         >
           <Tabs.TabPane key={'account'} tab={'企业登录'} />
-          <Tabs.TabPane key={'phone'} tab={'部门登录'} />
         </Tabs>
       </LoginFormPage>
     </div>

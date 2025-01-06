@@ -1039,7 +1039,7 @@ export default function CashFlowNewRule() {
         class="banner-anim"
       >
       <Form onFinish={onFinish} form={form}>
-        <Row style={{ width: "1300px" }}>
+        <Row style={{ width: "1100px" }}>
           <Col
             span={24}
             style={{
@@ -1053,7 +1053,7 @@ export default function CashFlowNewRule() {
           </Col>
         </Row>
 
-        <Row style={{ width: "1300px" }}>
+        <Row style={{ width: "1100px" }}>
           <Col span={8}>税款所属时间:2024-01-01至2024-03-31</Col>
           <Col span={8} style={{ textAlign: "center" }}>
             报送日期:{formattedDate}
@@ -1067,7 +1067,7 @@ export default function CashFlowNewRule() {
           items={items}
           column="2"
           style={{
-            width: "1300px",
+            width: "1100px",
             marginTop: "20px",
             marginBottom: "20px",
             backgroundColor: "#efefef",
@@ -1076,7 +1076,7 @@ export default function CashFlowNewRule() {
         />
           <Table
             dataSource={data}
-            style={{ width: "1300px" }}
+            style={{ width: "1100px" }}
             pagination={false}
             bordered
             sticky
@@ -1087,7 +1087,7 @@ export default function CashFlowNewRule() {
             open={defaultOpen}
             trigger="click"
             style={{
-              insetInlineEnd: 120,
+              insetInlineEnd: 0,
             }}
             shape="square"
             description="操作按钮"

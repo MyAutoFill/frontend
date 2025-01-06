@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="page">
           <Row>
-            <Col md={4} xs={24} style={{ textAlign: 'left' }} className="mobile-hide">
+            {/* <Col md={4} xs={24} style={{ textAlign: 'left' }} className="mobile-hide">
               <a
                 rel="noopener noreferrer"
                 target="_blank"
@@ -15,9 +15,9 @@ export default function Footer() {
               >
               联系我们
               </a>
-            </Col>
+            </Col> */}
             <Col md={20} xs={24}>
-              <span
+              {/* <span
                 className="mobile-hide"
                 style={{ lineHeight: '16px', paddingRight: 12, marginRight: 11 }}
               >
@@ -35,9 +35,9 @@ export default function Footer() {
                 >
                 《客户权益保障承诺书》
                 </a>
-              </span>
-              {/* <span style={{ marginRight: 12 }}>ICP证:浙B2-20100257</span>
-              <span style={{ marginRight: 12 }}>Copyright © 2017 蚂蚁金融服务集团</span> */}
+              </span> */}
+              <span style={{ marginRight: 12 }}>ICP证:鲁ICP备05001812号-1</span>
+              {/* <span style={{ marginRight: 12 }}>Copyright © 2017 蚂蚁金融服务集团</span> */}
             </Col>
           </Row>
         </div>

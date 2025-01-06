@@ -17,6 +17,17 @@ import { history } from '@umijs/max';
 
 export default function DataInput() {
 
+  const exist = localStorage.getItem("currentUser");
+  console.log('init3')
+  console.log(exist)
+  if (exist != undefined || exist != null) {
+    console.log('init4')
+    console.log(window.location.href);
+    if (window.location.href.indexOf('cor') != -1 && window.location.href.indexOf('ticket') != -1) {
+      console.log('init5')
+      history.push('/auto_fill');
+    }
+  }
   const { TabPane } = Tabs;
   const [searchParams, setSearchParams] = useSearchParams();
   console.log(searchParams.get('tab', '1'));
@@ -45,6 +56,13 @@ export default function DataInput() {
     localStorage.removeItem('currentUser');
     history.push('/auto_fill');
   }
+
+  const steps = [
+    <UploadSyncPage />,
+    <Fill />,
+    <PreviewPage />,
+    <SelectFormPage />
+  ]
 
   return (
     <>
@@ -107,47 +125,11 @@ export default function DataInput() {
                 ]}
               />
               <Divider />
-              <Tabs destroyInactiveTabPane={true} defaultActiveKey='1' activeKey={currentKey.toString()} animated={true} type='card' size='large' onChange={tabsOnChange}>
-                <TabPane
-                  tab={<span style={{fontSize: '18px'}}><CloudUploadOutlined style={{fontSize: '20px'}}/>  上传同步</span>}
-                  key="1"
-                  size="large"
-                >
-                  <UploadSyncPage />
-                </TabPane>
-                <TabPane
-                  tab={<span style={{fontSize: '18px'}}><OrderedListOutlined style={{fontSize: '20px'}}/>  信息填写</span>}
-                  key="2"
-                  size="large"
-                >
-                  <Fill />
-                </TabPane>
-                <TabPane
-                  tab={<span style={{fontSize: '18px'}}><SafetyOutlined style={{fontSize: '20px'}}/>  填写预览</span>}
-                  key="3"
-                  size="large"
-                >
-                  <PreviewPage />
-                </TabPane>
-                <TabPane
-                  tab={<span style={{fontSize: '18px'}}><FileSyncOutlined style={{fontSize: '20px'}}/>  数据申报</span>}
-                  key="4"
-                  size="large"
-                >
-                  <SelectFormPage />
-                </TabPane>
-                <TabPane
-                  tab={<span style={{fontSize: '18px'}}><KeyOutlined style={{fontSize: '20px'}}/>  报表账户设置</span>}
-                  key="5"
-                  size="large"
-                >
-                  <AccountManagment />
-                </TabPane>
-              </Tabs>
+              <div>{steps[parseInt(currentKey) - 1]}</div>
             </div>
           </div>
         </div>
-        <DocumentTitle title="统一报表报送系统" key="title" />
+        <DocumentTitle title="威海市企业统一报表服务平台" key="title" />
       </div>
     </>
   );
