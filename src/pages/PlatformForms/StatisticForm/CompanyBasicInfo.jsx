@@ -187,7 +187,7 @@ export default function StatisticCompanyBasicInfo(props) {
     {
       key: '7',
       label: <span style={{fontSize: '16px'}}>税务登记证号</span>,
-      children: <Form.Item name="Statistic_CompanyInfo_7"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_signup53"><Input disabled={disableVar} size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {

@@ -287,13 +287,13 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '54',
 			label: <span style={{fontSize: '16px'}}>许可经营项目</span>,
-			children: <Form.Item name="company_signip54" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup54" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '55',
 			label: <span style={{fontSize: '16px'}}>一般经营项目</span>,
-			children: <Form.Item name="company_signip55" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup55" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -329,13 +329,13 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '33',
 			label: <span style={{fontSize: '16px'}}>经营场所产权</span>,
-			children: <Form.Item name="company_signip33" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup33" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '34',
 			label: <span style={{fontSize: '16px'}}>经营方式(营业)</span>,
-			children: <Form.Item name="company_signip34" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup34" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -347,25 +347,25 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '36',
 			label: <span style={{fontSize: '16px'}}>经济性质</span>,
-			children: <Form.Item name="company_signip36" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup36" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '37',
 			label: <span style={{fontSize: '16px'}}>合伙人数</span>,
-			children: <Form.Item name="company_signip37" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup37" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '38',
 			label: <span style={{fontSize: '16px'}}>合伙方式</span>,
-			children: <Form.Item name="company_signip38" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup38" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '39',
 			label: <span style={{fontSize: '16px'}}>执行人数</span>,
-			children: <Form.Item name="company_signip39" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup39" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -377,13 +377,13 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '41',
 			label: <span style={{fontSize: '16px'}}>投资总额</span>,
-			children: <Form.Item name="company_signip41" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup41" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '42',
 			label: <span style={{fontSize: '16px'}}>投资总额币种</span>,
-			children: <Form.Item name="company_signip42" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup42" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -419,19 +419,19 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '48',
 			label: <span style={{fontSize: '16px'}}>下岗失业人数</span>,
-			children: <Form.Item name="company_signip48" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup48" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '49',
 			label: <span style={{fontSize: '16px'}}>高校毕业生人数</span>,
-			children: <Form.Item name="company_signip49" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup49" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
 			key: '51',
 			label: <span style={{fontSize: '16px'}}>档案编号</span>,
-			children: <Form.Item name="company_signip51" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup51" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{
@@ -443,7 +443,7 @@ export default function CompanySignUpInfo(props) {
 		{
 			key: '53',
 			label: <span style={{fontSize: '16px'}}>税务登记证号</span>,
-			children: <Form.Item name="Statistic_CompanyInfo_7" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			children: <Form.Item name="company_signup53" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{

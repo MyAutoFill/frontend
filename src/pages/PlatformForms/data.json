@@ -104,7 +104,7 @@
                 },
                 {
                     "key": "税务登记证号",
-                    "id": "Statistic_CompanyInfo_7"
+                    "id": "company_signup53"
                 },
                 {
                     "key": "公司简称",
@@ -2471,7 +2471,7 @@
                 },
                 {
                     "key": "税务登记证号",
-                    "id": "Statistic_CompanyInfo_7"
+                    "id": "company_signup53"
                 },
                 {
                     "key": "公司简称",
