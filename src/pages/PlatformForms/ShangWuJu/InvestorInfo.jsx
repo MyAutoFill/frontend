@@ -158,7 +158,7 @@ export default function ShangwuInvestorInfo(props) {
     {
       key: '6',
       label: <span style={{fontSize: '16px'}}>认缴出资额</span>,
-      children: <Form.Item name="shangwu_investor6"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor5"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
@@ -186,13 +186,13 @@ export default function ShangwuInvestorInfo(props) {
 		{
       key: '10',
       label: <span style={{fontSize: '16px'}}>反向投资股权投资额</span>,
-      children: <Form.Item name="company_investor10"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_investor10"><Input addonAfter='万元' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
 		{
       key: '11',
       label: <span style={{fontSize: '16px'}}>反向投资股权比例</span>,
-      children: <Form.Item name="company_investor11"><Input addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_investor11"><Input addonAfter='%' size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 2
     },
 		{
@@ -238,7 +238,7 @@ export default function ShangwuInvestorInfo(props) {
 			key: '13',
 			label: <span style={{fontSize: '16px'}}>境内投资者</span>,
 			children: 
-				<Form.Item name="company_investor13">
+				<Form.Item name="shangwu_investor13">
 					<Select
 						allowClear
 						style={{ width: '290px', marginLeft: '10px', marginTop: '10px' }}
@@ -294,7 +294,7 @@ export default function ShangwuInvestorInfo(props) {
 			key: '15',
 			label: <span style={{fontSize: '16px'}}>境外投资者身份</span>,
 			children: 
-				<Form.Item name="company_investor15">
+				<Form.Item name="shangwu_investor15">
 					<span style={{ fontSize:'16px', width: '200px', marginLeft: '10px', marginTop: '10px' }}>境外投资者是否为定居在国外的中国公民：</span>
 					<Select
 						allowClear
@@ -328,31 +328,110 @@ export default function ShangwuInvestorInfo(props) {
     {
       key: '16',
       label: <span style={{fontSize: '16px'}}>名称或姓名（中文）</span>,
-      children: <Form.Item name="company_investor16"><Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_26"><Input size='large' addonBefore='中文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '17',
       label: <span style={{fontSize: '16px'}}>名称或姓名（英文）</span>,
-      children: <Form.Item name="company_investor17"><Input size='large' addonBefore='英文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="shangwu_investor17"><Input size='large' addonBefore='英文' style={{ width: '200px', marginLeft: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '18',
       label: <span style={{fontSize: '16px'}}>国别</span>,
-      children: <Form.Item name="company_investor18"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_c1"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '19',
-      label: <span style={{fontSize: '16px'}}>证件类型</span>,
-      children: <Form.Item name="company_investor19"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1,
+      label: <span style={{fontSize: '16px'}}>法人证件类型</span>,
+      children: 
+        <Form.Item name="company_basicinfo_27">
+          <Select
+            allowClear
+            style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}
+            size='large'
+            placeholder="请选择法人证件类型"
+            optionFilterProp="label"
+            options={[
+              {
+                value: '居民身份证（户口簿）',
+                label: '居民身份证（户口簿）',
+              },
+              {
+                value: '中国人民解放军军官证',
+                label: '中国人民解放军军官证',
+              },
+              {
+                value: '中国人民武装警察警官证',
+                label: '中国人民武装警察警官证',
+              },
+              {
+                value: '香港特区护照/港澳居民往来内地通行证',
+                label: '香港特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '澳门特区护照/港澳居民往来内地通行证',
+                label: '澳门特区护照/港澳居民往来内地通行证',
+              },
+              {
+                value: '台湾居民往来大陆通行证',
+                label: '台湾居民往来大陆通行证',
+              },
+              {
+                value: '外国人永久居留身份',
+                label: '外国人永久居留身份',
+              },
+              {
+                value: '护照',
+                label: '护照',
+              },
+              {
+                value: '残疾人证',
+                label: '残疾人证',
+              },
+              {
+                value: '军烈属证明',
+                label: '军烈属证明',
+              },
+              {
+                value: '外国人工作许可证',
+                label: '外国人工作许可证',
+              },
+              {
+                value: '外国常驻记者证',
+                label: '外国常驻记者证',
+              },
+              {
+                value: '回国（来华）定居专家证',
+                label: '回国（来华）定居专家证',
+              },
+              {
+                value: '港澳居民居住证',
+                label: '港澳居民居住证',
+              },
+              {
+                value: '台湾居民居住证',
+                label: '台湾居民居住证',
+              },
+              {
+                value: '社会保障卡',
+                label: '社会保障卡',
+              },
+              {
+                value: '其他身份证件',
+                label: '其他身份证件',
+              }
+            ]}
+          />
+        </Form.Item>,
+      span: 1
     },
     {
       key: '20',
       label: <span style={{fontSize: '16px'}}>证件号码</span>,
-      children: <Form.Item name="shangwu_investor20"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_28"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
 		{
