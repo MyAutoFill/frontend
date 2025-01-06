@@ -131,13 +131,13 @@ export default function InvestmentInfo(props) {
 		{
       key: '28',
       label: <span style={{fontSize: '16px'}}>纳税人识别号</span>,
-      children: <Form.Item name="investor28"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor28"><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
       label: <span style={{fontSize: '16px'}}>政治面貌</span>,
-      children: <Form.Item name="invesetor2" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor2" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -167,7 +167,7 @@ export default function InvestmentInfo(props) {
     {
       key: '7',
       label: <span style={{fontSize: '16px'}}>联系电话</span>,
-      children: <Form.Item name="investor7" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor7" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
@@ -179,7 +179,7 @@ export default function InvestmentInfo(props) {
     {
 			key: '9',
 			label: <span style={{fontSize: '16px'}}>出资日期(实缴)</span>,
-			children: <Form.Item name="investor8"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择出资日期(实缴)' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+			children: <Form.Item name="company_investor8"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择出资日期(实缴)' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
 			span: 1
 		},
     {
@@ -197,25 +197,25 @@ export default function InvestmentInfo(props) {
     {
       key: '13',
       label: <span style={{fontSize: '16px'}}>证照类型,ca50</span>,
-      children: <Form.Item name="investor13" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor13" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
       label: <span style={{fontSize: '16px'}}>证件号码</span>,
-      children: <Form.Item name="investor14" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor14" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
       label: <span style={{fontSize: '16px'}}>证件类型,cb16</span>,
-      children: <Form.Item name="investor15" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor15" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
 			key: '17',
 			label: <span style={{fontSize: '16px'}}>出资日期(认缴)</span>,
-			children: <Form.Item name="investor17"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择出资日期(认缴)' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
+			children: <Form.Item name="company_investor17"><DatePicker format={dateFormat} onChange={(date, dateString) => {console.log(date, dateString)}} size='large' placeholder='请选择出资日期(认缴)' style={{ width: '200px', marginLeft: '10px', marginTop: '10px'}}/></Form.Item>,
 			span: 1
 		},
     {
@@ -227,13 +227,13 @@ export default function InvestmentInfo(props) {
     {
       key: '19',
       label: <span style={{fontSize: '16px'}}>持股比例</span>,
-      children: <Form.Item name="investor19" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor19" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
       label: <span style={{fontSize: '16px'}}>币种</span>,
-      children: <Form.Item name="investor20" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_investor20" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     }
   ];
