@@ -2288,42 +2288,210 @@
             ]
         },
         "国家企业信用信息公示系统": {
-            "年度报告填写": [
+            "企业基本信息": [
                 {
-                    "key": "单位名称",
-                    "id": "company_basicinfo_2"
-                },
-                {
-                    "key": "单位地址",
+                    "key": "企业通信地址",
                     "id": "company_basicinfo_17"
-                },
-                {
-                    "key": "法定代表人证件号码",
-                    "id": "company_basicinfo_28"
-                },
-                {
-                    "key": "法定代表人姓名",
-                    "id": "company_basicinfo_26"
-                },
-                {
-                    "key": "法定代表人电话",
-                    "id": "company_basicinfo_29"
                 },
                 {
                     "key": "邮政编码",
                     "id": "company_basicinfo_38"
                 },
                 {
-                    "key": "电子邮件地址",
-                    "id": "company_basicinfo_35"
-                },
-                {
-                    "key": "联系电话",
+                    "key": "企业联系电话",
                     "id": "company_basicinfo_33"
                 },
                 {
-                    "key": "单位编号",
-                    "id": "300"
+                    "key": "电子邮箱",
+                    "id": "company_basicinfo_35"
+                },
+                {
+                    "key": "企业主营业务活动",
+                    "id": "company_basicinfo_8"
+                },
+                {
+                    "key": "从业人数",
+                    "id": "company_employee_1"
+                },
+                {
+                    "key": "其中女性从业人数",
+                    "id": "company_employee_3"
+                },
+                {
+                    "key": "企业经营状态",
+                    "id": "company_signup6"
+                },
+                {
+                    "key": "其中高校毕业生人数-经营者",
+                    "id": "company_signup49"
+                },
+                {
+                    "key": "其中高校毕业生人数-雇员",
+                    "id": "company_signup50"
+                },
+                {
+                    "key": "其中退役士兵人数-经营者",
+                    "id": "company_signup52"
+                },
+                {
+                    "key": "其中退役士兵人数-雇员",
+                    "id": "company_signup56"
+                },
+                {
+                    "key": "其中残疾人人数-经营者",
+                    "id": "company_signup57"
+                },
+                {
+                    "key": "其中残疾人人数-雇员",
+                    "id": "company_signup58"
+                },
+                {
+                    "key": "其中失业再就业人数-经营者",
+                    "id": "company_signup59"
+                },
+                {
+                    "key": "其中失业再就业人数-雇员",
+                    "id": "company_signup60"
+                }
+            ],
+            "股东及出资信息": [
+                {
+                    "key": "认缴出资额",
+                    "id": "company_investor5"
+                },
+                {
+                    "key": "认缴出资币种",
+                    "id": ""
+                },
+                {
+                    "key": "实缴出资额",
+                    "id": "company_investor21"
+                },
+                {
+                    "key": "实缴出资币种",
+                    "id": ""
+                }
+            ],
+            "资产状况信息": [
+                {
+                    "key": "资产总额",
+                    "id": "GongShang_property_1"    
+                },
+                {
+                    "key": "所有者权益合计",
+                    "id": "company_runningsum_31"    
+                },
+                {
+                    "key": "负债总额",
+                    "id": "company_runningsum_30"    
+                },
+                {
+                    "key": "营业总收入",
+                    "id": "GongShang_property_3"    
+                },
+                {
+                    "key": "其中主营业务收入",
+                    "id": "company_runningsum_3"    
+                },
+                {
+                    "key": "利润总额",
+                    "id": "company_runningsum_17"    
+                },
+                {
+                    "key": "净利润",
+                    "id": "GongShang_property_6"    
+                },
+                {
+                    "key": "纳税总额",
+                    "id": "GongShang_property_7"    
+                }
+            ],
+            "特种设备信息": [
+                {
+                    "key": "办理使用登记特种设备总台数",
+                    "id": "GongShang_CompanyInfo_11"
+                },
+                {
+                    "key": "检验有效期内特种设备总台数",
+                    "id": "GongShang_CompanyInfo_12"
+                }
+            ],
+            "社保年报填报": [
+                {
+                    "key": "城镇职工基本养老保险（单位：人）",
+                    "id": "GongShang_sercurity_3"
+                },
+                {
+                    "key": "失业保险（单位：人）",
+                    "id": "GongShang_sercurity_4"
+                },
+                {
+                    "key": "职工基本医疗保险（单位：人） ",
+                    "id": "GongShang_sercurity_5"
+                },
+                {
+                    "key": "工伤保险（单位：人）",
+                    "id": "GongShang_sercurity_6"
+                },
+                {
+                    "key": "生育保险（单位：人）",
+                    "id": "GongShang_sercurity_7"
+                },
+                {
+                    "key": "单位参加城镇职工基本养老保险缴费基数",
+                    "id": "GongShang_sercurity_8"
+                },
+                {
+                    "key": "单位参加失业保险缴费基数",
+                    "id": "GongShang_sercurity_9"
+                },
+                {
+                    "key": "单位参加职工基本医疗保险缴费基数",
+                    "id": "GongShang_sercurity_10"
+                },
+                {
+                    "key": "单位参加生育保险缴费基数",
+                    "id": "GongShang_sercurity_11"
+                },
+                {
+                    "key": "参加城镇职工基本养老保险本期实际缴费金额",
+                    "id": "GongShang_sercurity_12"
+                },
+                {
+                    "key": "参加失业保险本期实际缴费金额",
+                    "id": "GongShang_sercurity_13"
+                },
+                {
+                    "key": "参加职工基本医疗保险本期实际缴费金额",
+                    "id": "GongShang_sercurity_14"
+                },
+                {
+                    "key": "参加工伤保险本期实际缴费金额",
+                    "id": "GongShang_sercurity_15"
+                },
+                {
+                    "key": "参加生育保险本期实际缴费金额",
+                    "id": "GongShang_sercurity_16"
+                },
+                {
+                    "key": "单位参加城镇职工基本养老保险累计欠缴金额",
+                    "id": "GongShang_sercurity_17"
+                },
+                {
+                    "key": "单位参加失业保险累计欠缴金额",
+                    "id": "GongShang_sercurity_18"
+                },
+                {
+                    "key": "单位参加职工基本医疗保险累计欠缴金额",
+                    "id": "GongShang_sercurity_19"
+                },
+                {
+                    "key": "单位参加工伤保险累计欠缴金额",
+                    "id": "GongShang_sercurity_20"
+                },
+                {
+                    "key": "单位参加生育保险累计欠缴金额",
+                    "id": "GongShang_sercurity_21"
                 }
             ]
         },

@@ -424,8 +424,50 @@ export default function CompanySignUpInfo(props) {
 		},
 		{
 			key: '49',
-			label: <span style={{fontSize: '16px'}}>高校毕业生人数</span>,
+			label: <span style={{fontSize: '16px'}}>高校毕业生人数-经营者</span>,
 			children: <Form.Item name="company_signup49" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '50',
+			label: <span style={{fontSize: '16px'}}>高校毕业生人数-雇员</span>,
+			children: <Form.Item name="company_signup50" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '52',
+			label: <span style={{fontSize: '16px'}}>退役士兵人数-经营者</span>,
+			children: <Form.Item name="company_signup52" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '56',
+			label: <span style={{fontSize: '16px'}}>退役士兵人数-雇员</span>,
+			children: <Form.Item name="company_signup56" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '57',
+			label: <span style={{fontSize: '16px'}}>其中残疾人人数-经营者</span>,
+			children: <Form.Item name="company_signup57" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '58',
+			label: <span style={{fontSize: '16px'}}>其中残疾人人数-雇员</span>,
+			children: <Form.Item name="company_signup58" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '49',
+			label: <span style={{fontSize: '16px'}}>其中失业再就业人数-经营者</span>,
+			children: <Form.Item name="company_signup59" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+			span: 1
+		},
+    {
+			key: '50',
+			label: <span style={{fontSize: '16px'}}>其中失业再就业人数-雇员</span>,
+			children: <Form.Item name="company_signup60" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
 			span: 1
 		},
 		{

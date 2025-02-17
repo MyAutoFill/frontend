@@ -153,7 +153,7 @@ export default function GongShangCompanyInfo(props) {
     {
       key: '10',
       label: <span style={{fontSize: '16px'}}>企业主营业务活动</span>,
-      children: <Form.Item name="GongShang_CompanyInfo_10"><Input disabled={disableVar} size='large' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      children: <Form.Item name="company_basicinfo_8"><Input disabled={disableVar} size='large' style={{ width: '500px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
     {

@@ -1883,34 +1883,58 @@
             "img": "https://coscdn.htmlpage.cn/user-upload-images/7574/国家企业信用体系公示系统.png",
             "config_list": [
                 {
-                    "name": "年度报告填写",
+                    "name": "企业基本信息",
                     "map": {
-                        "单位名称": {
-                            "id": ""
-                        },
-                        "单位地址": {
-                            "id": ""
-                        },
-                        "法定代表人证件号码": {
-                            "id": ""
-                        },
-                        "法定代表人姓名": {
-                            "id": ""
-                        },
-                        "法定代表人电话": {
-                            "id": ""
+                        "企业通信地址": {
+                            "id": "jbxxaddr"
                         },
                         "邮政编码": {
-                            "id": ""
+                            "id": "jbxxpostalcode"
                         },
-                        "电子邮件地址": {
-                            "id": ""
+                        "企业联系电话": {
+                            "id": "jbxxtel"
                         },
-                        "联系电话": {
-                            "id": ""
+                        "电子邮箱": {
+                            "id": "jbxxemail"
                         },
-                        "单位编号": {
-                            "id": ""
+                        "企业主营业务活动": {
+                            "id": "nbmainbusiact"
+                        },
+                        "从业人数": {
+                            "id": "jbxxempnum"
+                        },
+                        "其中女性从业人数": {
+                            "id": "jbxxwomempnum"
+                        },
+                        "企业经营状态": {
+                            "id": "jbxxbusst"
+                        },
+                        "企业控股情况": {
+                            "id": "nbholdingsmsg"
+                        },
+                        "其中高校毕业生人数-经营者": {
+                            "id": "nbcolgranum"
+                        },
+                        "其中高校毕业生人数-雇员": {
+                            "id": "nbcolemplnum"
+                        },
+                        "其中退役士兵人数-经营者": {
+                            "id": "nbretsolnum"
+                        },
+                        "其中退役士兵人数-雇员": {
+                            "id": "nbretemplnum"
+                        },
+                        "其中残疾人人数-经营者": {
+                            "id": "nbdispernum"
+                        },
+                        "其中残疾人人数-雇员": {
+                            "id": "nbdisemplnum"
+                        },
+                        "其中失业再就业人数-经营者": {
+                            "id": "nbunenum"
+                        },
+                        "其中失业再就业人数-雇员": {
+                            "id": "nbuneemplnum"
                         }
                     }
                 },
@@ -1971,19 +1995,120 @@
                     }
                 },
                 {
-                    "name": "公司减少注册资本填报",
+                    "name": "股东及出资信息",
                     "map": {
-                        "注册资本": {
-                            "id": "altafregcap"
+                        "认缴出资额": {
+                            "id": "nbczxxlisubconam"
                         },
-                        "联系人": {
-                            "id": "name"
+                        "认缴出资币种": {
+                            "id": "subconcurrency"
                         },
-                        "联系电话": {
-                            "id": "tel"
+                        "实缴出资额": {
+                            "id": "nbczxxliacconam"
                         },
-                        "联系地址": {
-                            "id": "addr"
+                        "实缴出资币种": {
+                            "id": "acconcurrency"
+                        }
+                    }
+                },
+                {
+                    "name": "资产状况信息",
+                    "map": {
+                        "资产总额": {
+                            "id": "nbassgro"
+                        },
+                        "所有者权益合计": {
+                            "id": "nbtotequ"
+                        },
+                        "负债总额": {
+                            "id": "nbliagro"
+                        },
+                        "营业总收入": {
+                            "id": "nbvendinc"
+                        },
+                        "其中主营业务收入": {
+                            "id": "nbmaibusinc"
+                        },
+                        "利润总额": {
+                            "id": "nbprogro"
+                        },
+                        "净利润": {
+                            "id": "nbnetinc"
+                        },
+                        "纳税总额": {
+                            "id": "nbratgro"
+                        }
+                    }
+                },
+                {
+                    "特种设备信息": {
+                        "办理使用登记特种设备总台数": {
+                            "id": "speequipmentusage"
+                        },
+                        "检验有效期内特种设备总台数": {
+                            "id": "speequipmentvalid"
+                        }
+                    }
+                },
+                {
+                    "name": "社保年报填报",
+                    "map": {
+                        "城镇职工基本养老保险（单位：人）": {
+                            "id": "so110"
+                        },
+                        "失业保险（单位：人）": {
+                            "id": "so210"
+                        },
+                        "职工基本医疗保险（单位：人） ": {
+                            "id": "so310"
+                        },
+                        "工伤保险（单位：人）": {
+                            "id": "so410"
+                        },
+                        "生育保险（单位：人）": {
+                            "id": "so510"
+                        },
+                        "单位参加城镇职工基本养老保险缴费基数": {
+                            "id": "totalwagesSo110"
+                        },
+                        "单位参加失业保险缴费基数": {
+                            "id": "totalwagesSo210"
+                        },
+                        "单位参加职工基本医疗保险缴费基数": {
+                            "id": "totalwagesSo310"
+                        },
+                        "单位参加生育保险缴费基数": {
+                            "id": "totalwagesSo510"
+                        },
+                        "参加城镇职工基本养老保险本期实际缴费金额": {
+                            "id": "totalpaymentSo110"
+                        },
+                        "参加失业保险本期实际缴费金额": {
+                            "id": "totalpaymentSo210"
+                        },
+                        "参加职工基本医疗保险本期实际缴费金额": {
+                            "id": "totalpaymentSo310"
+                        },
+                        "参加工伤保险本期实际缴费金额": {
+                            "id": "totalpaymentSo410"
+                        },
+                        "参加生育保险本期实际缴费金额": {
+                            "id": "totalpaymentSo510"
+                        },
+                        "单位参加城镇职工基本养老保险累计欠缴金额": {
+                            "id": "unpaidsocialinsSo110"
+                        },
+                        "单位参加失业保险累计欠缴金额": {
+                            "id": "unpaidsocialinsSo210"
+                        },
+                        "单位参加职工基本医疗保险累计欠缴金额": {
+                            "id": "unpaidsocialinsSo310"
+                        },
+                        "单位参加工伤保险累计欠缴金额": {
+                            "id": "unpaidsocialinsSo410"
+                        },
+                        "单位参加生育保险累计欠缴金额": {
+                            "id": "unpaidsocialinsSo510"
                         }
                     }
                 }
