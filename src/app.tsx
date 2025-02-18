@@ -9,7 +9,7 @@ import { errorConfig } from './requestErrorConfig';
 import { currentUser as queryCurrentUser, queryCompanyInfo } from '@/services/ant-design-pro/api';
 import React from 'react';
 const isDev = process.env.NODE_ENV === 'development';
-const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill';
+const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jpaas-jis-sso-server/sso/entrance/auth-center?appMark=WHXCYINBQIYERONZ&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill'
 const privateLoginPath = '/auto_fill/user/login'
 import sensetime_logo from '../public/images/logo_svg.svg'
 
@@ -33,14 +33,14 @@ export async function getInitialState(): Promise<{
       if (ticket == null || ticket == undefined) {
         console.log('fetchUserInfo 3 ticket is null')
         console.log(ticket)
-        history.push(privateLoginPath);
+        history.push(loginPath)
         return undefined;
       }
       const msg = await queryCurrentUser(ticket);
       console.log(msg);
       return msg.obj;
     } catch (error) {
-      history.push(privateLoginPath);
+      history.push(loginPath);
     }
     return undefined;
   };

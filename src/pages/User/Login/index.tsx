@@ -10,7 +10,7 @@ type LoginType = 'phone' | 'account';
 
 const Page = () => {
   const [loginType, setLoginType] = useState<LoginType>('account');
-  const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jis-web/login?appMark=WUEUSVJXVC&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill';
+  const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jpaas-jis-sso-server/sso/entrance/auth-center?appMark=WHXCYINBQIYERONZ&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill';
   return (
     <div
       style={{
