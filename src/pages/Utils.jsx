@@ -27,6 +27,16 @@ export function requestCompanyData(uuid) {
   });
 }
 
+export function copyLastData(uuid, date) {
+  return request('/api/copy_last_month_data', {
+    method: 'POST',
+    data: {
+      uuid: uuid,
+      date: date
+    }
+  });
+}
+
 export function transferDate(new_res) {
   var after = {}
   const newSet = new Set(['company_basicinfo_41', 'company_basicinfo_42', 'company_basicinfo_build_date', 'company_signup44', 'company_investor8', 'company_investor17', 'HumanSocial_NewSheBao_66', 'hs_basic_4', 'HumanSocial_NewSheBao_69', 'HumanSocial_NewSheBao_70', 'GongShang_CompanyInfo_23', 'company_basicinfo_open_date', 'Tech_stat_IDstart', 'Tech_stat_IDend'])

@@ -2,12 +2,16 @@ import { Menu,
   DatePicker, 
   Row, 
   Col,
-  Layout } from 'antd';
+  Layout,
+  message,
+  Popconfirm,
+  Button,
+} from 'antd';
 const { Sider } = Layout;
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { SolutionOutlined, BarChartOutlined, MoneyCollectOutlined, CameraOutlined, BarcodeOutlined, RobotOutlined, ScheduleOutlined, TransactionOutlined, TruckOutlined } from '@ant-design/icons';
-
+import { history } from 'umi';
 import GongShangCompanyInfo from '../PlatformForms/GongShangForm/GongShangCompanyInfo'
 import JoinedSecurityInfo from '../PlatformForms/GongShangForm/JoinedSecurityInfo'
 import OuterVouch from '../PlatformForms/GongShangForm/OuterVouch'
@@ -42,6 +46,8 @@ import ShangwuInvestorInfo from '../PlatformForms/ShangWuJu/InvestorInfo';
 import ShangwuOperationInfo from '../PlatformForms/ShangWuJu/OperationInfo';
 import SoftwareAndServiceIncome from '../PlatformForms/StatisticForm/SoftwareAndServiceIncome';
 
+import { copyLastData } from '@/pages/Utils'
+
 import dayjs from 'dayjs';
 import { useSearchParams } from "react-router-dom";
 import CompanyInfoChange from '../PlatformForms/GongJiJinForm/CompanyInfoChange';
@@ -52,7 +58,7 @@ export default function Fill() {
   console.log(searchParams)
   console.log(searchParams.get('table', '42'));
   const [selectedKey, setSelectedKey] = useState(
-      searchParams.get('table') == null ? '42' : searchParams.get('table')
+      searchParams.get('table') == null || searchParams.get('table') == 'null' ? '42' : searchParams.get('table')
   );
   const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
 
@@ -511,6 +517,28 @@ export default function Fill() {
     setCurDate(e.format('YYYY-MM'));
   }
 
+  const confirm = (e) => {
+    const exist = localStorage.getItem("currentUser");
+    const uuid = JSON.parse(exist).uuid;
+    if (uuid == undefined || uuid == null || uuid === '') {
+      history.push('/auto_fill/user/login')
+    }
+    copyLastData(uuid, curDate)
+    .then(function (res) {
+      if (res.result == 1) {
+        message.success({
+          content: '同步成功，即将刷新网页！',
+          duration: 1,
+          onClose: () => {
+            window.location.href = window.location.pathname + window.location.search;
+          }
+        })
+      } else {
+        message.error('同步失败')
+      }
+    })
+  };
+
   return (
     <>
       <Row style={{height: 1000}}>
@@ -543,7 +571,16 @@ export default function Fill() {
         </div>
         <Col xxl={20} xl={23} lg={22} md={22} sm={20} xs={20}>
           <div style={{marginLeft: 30, height: 832 }}>
-            <DatePicker format="YYYY-MM-DD" defaultValue={dayjs()} onChange={onChange} picker="month"/>
+            <DatePicker format="YYYY-MM" defaultValue={dayjs()} onChange={onChange} picker="month" maxDate={dayjs()}/>
+            <Popconfirm
+              title="是否迁移上个月的数据至本月?"
+              onConfirm={confirm}
+              onCancel={() => {}}
+              okText="是"
+              cancelText="否"
+            >
+              <Button type="primary" disabled={dayjs().format('YYYY-MM') != curDate}>数据迁移</Button>
+            </Popconfirm>
             {pageMap[selectedKey]}
           </div>
         </Col>

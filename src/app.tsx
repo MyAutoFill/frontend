@@ -9,7 +9,7 @@ import { errorConfig } from './requestErrorConfig';
 import { currentUser as queryCurrentUser, queryCompanyInfo } from '@/services/ant-design-pro/api';
 import React from 'react';
 const isDev = process.env.NODE_ENV === 'development';
-const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jpaas-jis-sso-server/sso/entrance/auth-center?appMark=WHXCYINBQIYERONZ&userType=2&backUrl=https://xcyb.weihai.cn/auto_fill'
+const loginPath = 'https://tysfrz.isdapp.shandong.gov.cn/jpaas-jis-sso-server/sso/entrance/auth-center?appMark=WHXCYINBQIYERONZ&userType=2&backUrl='
 const privateLoginPath = '/auto_fill/user/login'
 import sensetime_logo from '../public/images/logo_svg.svg'
 
@@ -33,14 +33,15 @@ export async function getInitialState(): Promise<{
       if (ticket == null || ticket == undefined) {
         console.log('fetchUserInfo 3 ticket is null')
         console.log(ticket)
-        history.push(loginPath)
+        console.log(window.location.href)
+        history.push(loginPath + window.location.href)
         return undefined;
       }
       const msg = await queryCurrentUser(ticket);
       console.log(msg);
       return msg.obj;
     } catch (error) {
-      history.push(loginPath);
+      history.push(loginPath + window.location.href);
     }
     return undefined;
   };
@@ -86,7 +87,7 @@ export async function getInitialState(): Promise<{
     console.log('init10')
     console.log(window.location.href);
     // 只要登录成功都只跳到首页
-    history.push('/auto_fill');
+    history.push(window.location.pathname);
   }
   return {
     fetchUserInfo,
