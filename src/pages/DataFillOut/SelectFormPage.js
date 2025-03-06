@@ -29,7 +29,7 @@ export default function SelectFormPage() {
       <div style={{height: 1200}}>
         <br></br>
         {loading && <Spin spinning={loading}>
-          环境检测中... 请稍等... 
+          检测到本地报表助手未启动，正在启动中，请稍后...
         </Spin>}
         {!loading && 
           <>

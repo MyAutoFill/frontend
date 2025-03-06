@@ -1,30 +1,32 @@
 import React, { useState } from 'react';
 import 'rc-banner-anim/assets/index.css';
-import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
+import { Descriptions, Input, Button, FloatButton, message, Form, Popconfirm, DatePicker } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { requestCompanyData, reqRatioConfig, } from '@/pages/Utils'
+import { reqBasicData, reqRatioConfig, copyLastData } from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
+import dayjs from 'dayjs';
 
 export default function CompanyEmployedInfo(props) {
 
   const [disableVar, setDisableVar] = useState(false)
   const [defaultOpen, setDefaultOpen] = useState(true)
   const [messageApi, contextHolder] = message.useMessage();
+  const [curDate, setCurDate] = useState(dayjs().format('YYYY-MM'));
 
   useEffect(() => {
-    load_data();
-  }, []);
+    load_data(curDate);
+  }, [curDate]);
 
-  const load_data = () => {
+  const load_data = (curDate) => {
     const exist = localStorage.getItem("currentUser");
     const uuid = JSON.parse(exist).uuid;
     if (uuid == undefined || uuid == null || uuid === '') {
       history.push('/auto_fill/user/login')
     }
-    requestCompanyData(uuid)
+    reqBasicData(curDate, uuid)
       .then(function (res) {
         reqRatioConfig('CompanyEmployedInfo')
         .then(function (config) {
@@ -182,9 +184,10 @@ export default function CompanyEmployedInfo(props) {
       if (uuid == undefined || uuid == null || uuid === '') {
         history.push('/auto_fill/user/login')
       }
-      request('/api/save_company_data', {
+      request('/api/save', {
         method: 'POST',
         data: {
+          date: curDate,
           data: new_res,
           uuid: uuid
         }
@@ -192,9 +195,45 @@ export default function CompanyEmployedInfo(props) {
     })
   };
 
+  const onChange = (e) => {
+    setCurDate(e.format('YYYY-MM'));
+  }
+
+  const confirm = (e) => {
+    const exist = localStorage.getItem("currentUser");
+    const uuid = JSON.parse(exist).uuid;
+    if (uuid == undefined || uuid == null || uuid === '') {
+      history.push('/auto_fill/user/login')
+    }
+    copyLastData(uuid, curDate)
+    .then(function (res) {
+      if (res.result == 1) {
+        message.success({
+          content: '同步成功，即将刷新网页！',
+          duration: 1,
+          onClose: () => {
+            window.location.href = window.location.pathname + window.location.search;
+          }
+        })
+      } else {
+        message.error('同步失败')
+      }
+    })
+  };
+
   return (
     <>
       {contextHolder}
+      <DatePicker format="YYYY-MM" defaultValue={dayjs()} onChange={onChange} picker="month" maxDate={dayjs()}/>
+      <Popconfirm
+        title="是否迁移上个月的数据至本月?"
+        onConfirm={confirm}
+        onCancel={() => {}}
+        okText="是"
+        cancelText="否"
+      >
+        <Button type="primary" disabled={dayjs().format('YYYY-MM') != curDate}>数据迁移</Button>
+      </Popconfirm>
       <div size='large' style={{height: 950, width: 'auto', padding: 20, overflow:'auto'}} >
         <Form onFinish={onFinish} form={form}>
           <Descriptions style={{width: '1300px'}} title="企业人员信息" bordered items={items} />
