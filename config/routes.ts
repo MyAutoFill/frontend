@@ -32,6 +32,11 @@ export default [
     component: './DataInput',
   },
   {
+    path: '/auto_fill/manual',
+    layout: false,
+    component: './Manual',
+  },
+  {
     path: '/auto_fill/',
     layout: false,
     component: './Home',
