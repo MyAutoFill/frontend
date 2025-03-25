@@ -17,7 +17,7 @@ var year = today.getFullYear();
 var month = today.getMonth() + 1; // 月份从0开始，需要+1
 var day = today.getDate();
 
-const countDownDays = 15-day
+const countDownDays = 15 - day < 0 ? 45 - day : 15 - day
 
 export default function HaiguanAnnualReport(props) {
 
@@ -626,7 +626,7 @@ export default function HaiguanAnnualReport(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <span style={{ fontSize: '17px' }}>【填报日期】{fillRequiredDate}</span>
+          <span style={{ fontSize: '17px' }}>【填报截止日期】{fillRequiredDate}</span>
           <span>          </span>
           <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
           <Descriptions style={{width: '1400px'}} title="【报表名称】海关年报事项" bordered items={items} />

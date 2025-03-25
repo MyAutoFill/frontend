@@ -49,7 +49,7 @@ export default function Message() {
       key: 'table'
     },
     {
-      title: '填报日期',
+      title: '填报截止日期',
       dataIndex: 'date',
       key: 'date'
     },

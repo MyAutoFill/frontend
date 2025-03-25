@@ -60,7 +60,6 @@ export default function DataInput() {
   const steps = [
     <UploadSyncPage />,
     <Fill />,
-    <PreviewPage />,
     <SelectFormPage />
   ]
 
@@ -115,12 +114,8 @@ export default function DataInput() {
                     description: <span style={{fontSize: '14px'}}>第二步：填写对应信息</span>,
                   },
                   {
-                    title: <span style={{fontSize: '24px'}}>信息填报</span>,
-                    description: <span style={{fontSize: '14px'}}>第三步：检查预填结果</span>,
-                  },
-                  {
                     title: <span style={{fontSize: '24px'}}>数据填报</span>,
-                    description: <span style={{fontSize: '14px'}}>第四步：登录平台填报</span>,
+                    description: <span style={{fontSize: '14px'}}>第三步：登录平台填报</span>,
                   },
                 ]}
               />
