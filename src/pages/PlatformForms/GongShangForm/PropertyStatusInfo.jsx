@@ -93,51 +93,51 @@ export default function PropertyStatusInfo(props) {
   const items = [
     {
       key: '1',
-      label: '资产总额',
-      children: <Form.Item name="GongShang_property_1"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      label: <span style={{fontSize: '16px'}}>资产总额</span>,
+      children: <Form.Item name="company_runningsum_18"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     },
     {
       key: '2',
-      label: '所有者权益合计',
+      label: <span style={{fontSize: '16px'}}>所有者权益合计</span>,
       children: <Form.Item name="company_runningsum_31"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '3',
-      label: '营业总收入',
-      children: <Form.Item name="GongShang_property_3"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '4',
-      label: '其中主营业务收入',
-      children: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '5',
-      label: '利润总额',
-      children: <Form.Item name="company_runningsum_17"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '6',
-      label: '净利润',
-      children: <Form.Item name="GongShang_property_6"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
-    },
-    {
-      key: '7',
-      label: '纳税总额',
-      children: <Form.Item name="GongShang_property_7"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      span: 3
     },
     {
       key: '8',
-      label: '负债总额',
+      label: <span style={{fontSize: '16px'}}>负债总额</span>,
       children: <Form.Item name="company_runningsum_30"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
-      span: 1.5
+      span: 3
+    },
+    {
+      key: '3',
+      label: <span style={{fontSize: '16px'}}>营业总收入</span>,
+      children: <Form.Item name="GongShang_property_3"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
+    },
+    {
+      key: '4',
+      label: <span style={{fontSize: '16px'}}>其中主营业务收入</span>,
+      children: <Form.Item name="company_runningsum_3"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
+    },
+    {
+      key: '5',
+      label: <span style={{fontSize: '16px'}}>利润总额</span>,
+      children: <Form.Item name="company_runningsum_17"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
+    },
+    {
+      key: '6',
+      label: <span style={{fontSize: '16px'}}>净利润</span>,
+      children: <Form.Item name="GongShang_property_6"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
+    },
+    {
+      key: '7',
+      label: <span style={{fontSize: '16px'}}>纳税总额</span>,
+      children: <Form.Item name="GongShang_property_7"><Input disabled={disableVar} addonAfter='万元' size='large' style={{ width: '250px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 3
     }
   ];
 

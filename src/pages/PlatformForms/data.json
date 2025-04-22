@@ -2375,7 +2375,7 @@
             "资产状况信息": [
                 {
                     "key": "资产总额",
-                    "id": "GongShang_property_1"    
+                    "id": "company_runningsum_18"    
                 },
                 {
                     "key": "所有者权益合计",

@@ -235,7 +235,60 @@ export default function GongShangCompanyInfo(props) {
           <Form.Item name="GongShang_CompanyInfo_28"><Input disabled={disableVar} size='large' addonBefore='网站' style={{ width: '810px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>
         </>,
       span: 3
-    }
+    },
+    {
+      label: <span style={{fontSize: '16px'}}></span>,
+      children: '—————————— 以下信息不公示 ——————————',
+      span: 3
+    },
+    {
+      key: '49',
+      label: <span style={{fontSize: '16px'}}>高校毕业生人数-经营者</span>,
+      children: <Form.Item name="company_signup49" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '50',
+      label: <span style={{fontSize: '16px'}}>高校毕业生人数-雇员</span>,
+      children: <Form.Item name="company_signup50" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '52',
+      label: <span style={{fontSize: '16px'}}>退役士兵人数-经营者</span>,
+      children: <Form.Item name="company_signup52" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '56',
+      label: <span style={{fontSize: '16px'}}>退役士兵人数-雇员</span>,
+      children: <Form.Item name="company_signup56" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '57',
+      label: <span style={{fontSize: '16px'}}>其中残疾人人数-经营者</span>,
+      children: <Form.Item name="company_signup57" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '58',
+      label: <span style={{fontSize: '16px'}}>其中残疾人人数-雇员</span>,
+      children: <Form.Item name="company_signup58" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '49',
+      label: <span style={{fontSize: '16px'}}>其中失业再就业人数-经营者</span>,
+      children: <Form.Item name="company_signup59" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
+    {
+      key: '50',
+      label: <span style={{fontSize: '16px'}}>其中失业再就业人数-雇员</span>,
+      children: <Form.Item name="company_signup60" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
+      span: 1.5
+    },
   ];
 
   const onFinish = (values) => {

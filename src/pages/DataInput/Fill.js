@@ -211,10 +211,10 @@ export default function Fill() {
           key: '15',
           label: '企业基本信息',
         },
-        // {
-        //   key: '16',
-        //   label: '资产状况信息',
-        // },
+        {
+          key: '16',
+          label: '资产状况信息',
+        },
         // {
         //   key: '17',
         //   label: '对外提供保证担保信息',
