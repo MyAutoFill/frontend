@@ -177,7 +177,10 @@ export default function PropertyStatusInfo(props) {
       {contextHolder}
       <div size='large' style={{height: 800, padding: 10, overflow:'auto'}} class="banner-anim">
         <Form onFinish={onFinish} form={form}>
-          <Descriptions style={{width: '900px'}} title="资产状况信息" bordered items={items} />
+          <span style={{ fontSize: '17px' }}>【填报截止日期】{fillRequiredDate}</span>
+          <span>          </span>
+          <span style={{ fontSize: '17px' }}>【填充倒计时】{countDownDays}天</span>
+          <Descriptions style={{width: '1300px'}} title="【报表名称】企业基本信息" bordered items={items} />
           <FloatButton.Group
             open={defaultOpen}
             trigger="click"
