@@ -4,9 +4,20 @@ import { Descriptions, Input, Button, FloatButton, message, Form } from 'antd';
 import { CheckSquareFilled, SaveFilled, StopFilled, FastForwardOutlined, ExpandAltOutlined } from '@ant-design/icons';
 import { request } from 'umi';
 import { useEffect } from 'react';
-import { reqBasicData, reqRatioConfig, } from '@/pages/Utils'
+import { reqBasicData, reqRatioConfig, transferDate, saveDateAsString} from '@/pages/Utils'
 import { history } from 'umi';
 import { BigNumber } from 'bignumber.js'
+
+const dateFormat = 'YYYY-MM-DD';
+// 此处要根据不同表格定制
+const today = new Date();
+const fillRequiredDate = '每月15日'
+// 获取年、月、日
+var year = today.getFullYear();
+var month = today.getMonth() + 1; // 月份从0开始，需要+1
+var day = today.getDate();
+
+const countDownDays = 15 - day < 0 ? 45 - day : 15 - day
 
 
 export default function PropertyStatusInfo(props) {
@@ -27,7 +38,7 @@ export default function PropertyStatusInfo(props) {
     }
     reqBasicData(curDate, uuid)
       .then(function (res) {
-        reqRatioConfig('PropertyStatusInfo')
+        reqRatioConfig('GongShangCompanyInfo')
         .then(function (config) {
           const new_res = JSON.parse(JSON.stringify(res));
           Object.keys(config).forEach(key => {
@@ -39,11 +50,12 @@ export default function PropertyStatusInfo(props) {
               }
             }
           });
+          var after = transferDate(new_res);
           form.resetFields();
-          form.setFieldsValue(new_res);
+          form.setFieldsValue(after);
         })
       })
-  }
+    }
 
   const [form] = Form.useForm();
 
@@ -146,7 +158,8 @@ export default function PropertyStatusInfo(props) {
       method: 'GET',
     })
     .then(function (config) {
-      const new_res = JSON.parse(JSON.stringify(values));
+      var after = saveDateAsString(values);
+      const new_res = JSON.parse(JSON.stringify(after));
       Object.keys(config).forEach(key => {
         if (key in new_res) {
           if (new_res[key] !== '') {
