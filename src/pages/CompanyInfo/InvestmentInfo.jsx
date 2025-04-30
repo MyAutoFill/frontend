@@ -124,7 +124,7 @@ export default function InvestmentInfo(props) {
   const items = [
     {
       key: '1',
-      label: <span style={{fontSize: '16px'}}>投资人姓名</span>,
+      label: <span style={{fontSize: '16px'}}>投资人姓名<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor1" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -136,7 +136,7 @@ export default function InvestmentInfo(props) {
     },
     {
       key: '2',
-      label: <span style={{fontSize: '16px'}}>政治面貌</span>,
+      label: <span style={{fontSize: '16px'}}>政治面貌<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor2" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -148,7 +148,7 @@ export default function InvestmentInfo(props) {
     },
     {
       key: '4',
-      label: <span style={{fontSize: '16px'}}>实际出资方式</span>,
+      label: <span style={{fontSize: '16px'}}>实际出资方式<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor4" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -160,19 +160,19 @@ export default function InvestmentInfo(props) {
     },
     {
       key: '6',
-      label: <span style={{fontSize: '16px'}}>认缴出资比例</span>,
+      label: <span style={{fontSize: '16px'}}>认缴出资比例<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor6" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1,
     },
     {
       key: '7',
-      label: <span style={{fontSize: '16px'}}>联系电话</span>,
+      label: <span style={{fontSize: '16px'}}>联系电话<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor7" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
-      label: <span style={{fontSize: '16px'}}>实缴出资额</span>,
+      label: <span style={{fontSize: '16px'}}>实缴出资额<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor21" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -184,7 +184,7 @@ export default function InvestmentInfo(props) {
 		},
     {
       key: '10',
-      label: <span style={{fontSize: '16px'}}>实缴出资方式,ca22</span>,
+      label: <span style={{fontSize: '16px'}}>实缴出资方式,ca22<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor10" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -196,19 +196,19 @@ export default function InvestmentInfo(props) {
     },
     {
       key: '13',
-      label: <span style={{fontSize: '16px'}}>证照类型,ca50</span>,
+      label: <span style={{fontSize: '16px'}}>证照类型,ca50<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor13" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '14',
-      label: <span style={{fontSize: '16px'}}>证件号码</span>,
+      label: <span style={{fontSize: '16px'}}>证件号码<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor14" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '15',
-      label: <span style={{fontSize: '16px'}}>证件类型,cb16</span>,
+      label: <span style={{fontSize: '16px'}}>证件类型,cb16<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor15" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -220,19 +220,19 @@ export default function InvestmentInfo(props) {
 		},
     {
       key: '18',
-      label: <span style={{fontSize: '16px'}}>出资方式(认缴),ca22</span>,
+      label: <span style={{fontSize: '16px'}}>出资方式(认缴),ca22<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor4" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '19',
-      label: <span style={{fontSize: '16px'}}>持股比例</span>,
+      label: <span style={{fontSize: '16px'}}>持股比例<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor19" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '20',
-      label: <span style={{fontSize: '16px'}}>币种</span>,
+      label: <span style={{fontSize: '16px'}}>币种<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_investor20" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     }

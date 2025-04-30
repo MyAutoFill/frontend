@@ -136,13 +136,13 @@ export default function BasicCompanyInfo(props) {
   const items = [
     {
       key: '1',
-      label: <span style={{fontSize: '16px'}}>统一社会信用代码</span>,
+      label: <span style={{fontSize: '16px'}}>统一社会信用代码<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_1" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '2',
-      label: <span style={{fontSize: '16px'}}>单位名称</span>,
+      label: <span style={{fontSize: '16px'}}>单位名称<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_2" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -154,7 +154,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '4',
-      label: <span style={{fontSize: '16px'}}>行业类别</span>,
+      label: <span style={{fontSize: '16px'}}>行业类别<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_4" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -172,13 +172,13 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '7',
-      label: <span style={{fontSize: '16px'}}>行业代码</span>,
+      label: <span style={{fontSize: '16px'}}>行业代码<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_7" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
     {
       key: '8',
-      label: <span style={{fontSize: '16px'}}>经营范围</span>,
+      label: <span style={{fontSize: '16px'}}>经营范围<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_8" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
@@ -190,7 +190,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '10',
-      label: <span style={{fontSize: '16px'}}>组织机构代码</span>,
+      label: <span style={{fontSize: '16px'}}>组织机构代码<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_10" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '600px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 3
     },
@@ -202,7 +202,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '11',
-      label: <span style={{fontSize: '16px'}}>单位所在地区划及详细地址</span>,
+      label: <span style={{fontSize: '16px'}}>单位所在地区划及详细地址<span style={{color: 'red'}}> *</span></span>,
       children: 
         <>
           <Form.Item name="company_basicinfo_11" rules={[{required: true, message: '该项必填'}]}><Input size='large' addonBefore="省（自治区、直辖市）" style={{ width: '350px', marginLeft: '10px', marginTop: '10px' }}/></Form.Item>
@@ -223,7 +223,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '13',
-      label: <span style={{fontSize: '16px'}}>单位注册地区划及详细地址</span>,
+      label: <span style={{fontSize: '16px'}}>单位注册地区划及详细地址<span style={{color: 'red'}}> *</span></span>,
       children: (
         <>
           <Form.Item name="company_basicinfo_r1">
@@ -297,7 +297,7 @@ export default function BasicCompanyInfo(props) {
     },
     {
       key: '15',
-      label: <span style={{fontSize: '16px'}}>法定代表人（单位负责人）</span>,
+      label: <span style={{fontSize: '16px'}}>法定代表人（单位负责人）<span style={{color: 'red'}}> *</span></span>,
       children: <Form.Item name="company_basicinfo_26" rules={[{required: true, message: '该项必填'}]}><Input size='large' style={{ width: '200px', marginLeft: '10px', marginTop: '10px' }}></Input></Form.Item>,
       span: 1
     },
