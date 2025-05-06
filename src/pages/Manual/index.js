@@ -41,7 +41,7 @@ export default function CompanyInfo() {
                             </div>
                         </div>
                         <div style={{ padding: 50, height: 1050 }} class="mybanner-anim">
-                            <body style={{height: 950, overflowY: 'scroll'}}>
+                            <body style={{height: 950, overflowY: 'scroll' }}>
                                 <h1>
                                     <a>
                                         <span>
@@ -51,24 +51,15 @@ export default function CompanyInfo() {
                                 </h1>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        下载客户端：
+                                        1．下载客户端：
                                     </span>
                                 </p>
                                 <p>
                                     <span>
                                         在浏览器中访问系统地址
-                                    </span>
-                                    <span>
                                         <a href="https://xcyb.weihai.cn/auto_fill/">
                                             https://xcyb.weihai.cn/auto_fill/
                                         </a>
-                                    </span>
-                                    <span>
                                         ，并在进入后点击页眉处的填报客户端下载或登录页面的客户端下载按钮处点击下载客户端。
                                     </span>
                                 </p>
@@ -137,12 +128,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击企业信息按钮后进行登录操作；
+                                        1．点击企业信息按钮后进行登录操作；
                                     </span>
                                 </p>
                                 <p>
@@ -152,12 +138,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击通过山东省统一身份认证平台登录后跳转至认证平台，填写正确信息后点击登录按钮完成登录。
+                                        2．点击通过山东省统一身份认证平台登录后跳转至认证平台，填写正确信息后点击登录按钮完成登录。
                                     </span>
                                 </p>
                                 <p>
@@ -168,7 +149,7 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
-                                         第3章 企业基本信息
+                                            第3章 企业基本信息
                                         </span>
                                     </a>
                                 </h1>
@@ -184,31 +165,14 @@ export default function CompanyInfo() {
                                 </p>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    3.1
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                操作流程
-                                            </span>
+                                            3.1 操作流程
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入企业基本信息填写页面后，在左侧目录中选择想要填写的表格并点击对应表格名称前往。
+                                        1．进入企业基本信息填写页面后，在左侧目录中选择想要填写的表格并点击对应表格名称前往。
                                     </span>
                                 </p>
                                 <p>
@@ -218,12 +182,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入对应表格页面后，在右侧数据页的空格中填写正确的数据或信息。
+                                        2．进入对应表格页面后，在右侧数据页的空格中填写正确的数据或信息。
                                     </span>
                                 </p>
                                 <p>
@@ -233,12 +192,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        所有数据填充完成后，如果有其他平台报表需要填写点击保存数据后，前几页眉报表报送按钮前往报表填写页面。
+                                        3．所有数据填充完成后，如果有其他平台报表需要填写点击保存数据后，前几页眉报表报送按钮前往报表填写页面。
                                     </span>
                                 </p>
                                 <p>
@@ -253,88 +207,35 @@ export default function CompanyInfo() {
                                 </p>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    3.2
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                企业信息同步功能
-                                            </span>
+                                            3.2 企业信息同步功能
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            <span>
-                                                <span>
-                                                    1.
-                                                </span>
-                                            </span>
-                                            <span>
-                                                点击列表下的“企业基本信息数据同步”按钮，点击后通过后台接口获取数据。
-                                            </span>
-                                        </span>
+                                        1. 点击列表下的“企业基本信息数据同步”按钮，点击后通过后台接口获取数据。
                                     </span>
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            <span>
-                                                <img src="./images/manual/image024.jpg" />
-                                            </span>
-                                        </span>
+                                        <img src="./images/manual/image024.jpg" />
                                     </span>
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            <span>
-                                                <span>
-                                                    2.
-                                                </span>
-                                            </span>
-                                            <span>
-                                                点击后弹出弹窗显示新老数据对比，确认数据无误后点击确认，确认后新数据将会全量替换旧数据。
-                                            </span>
-                                            <span>
-                                                <img src="./images/manual/image026.jpg" />
-                                            </span>
-                                        </span>
+                                        2. 点击后弹出弹窗显示新老数据对比，确认数据无误后点击确认，确认后新数据将会全量替换旧数据。
+                                        <img src="./images/manual/image026.jpg" />
                                     </span>
                                 </p>
                                 <h2>
                                     <span>
-                                        <span>
-                                            <span>
-                                                <span>
-                                                    3.3
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                数据规范
-                                            </span>
-                                        </span>
+                                        3.3 数据规范
                                     </span>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        数据填写区域部分数据存在必填项校验，若该项为必填项则必须在填写完成并保存后才可进入其他页面。
+                                        1．数据填写区域部分数据存在必填项校验，若该项为必填项则必须在填写完成并保存后才可进入其他页面。
                                     </span>
                                 </p>
                                 <p>
@@ -344,22 +245,12 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        非必填项若不涉及可不填，未填写的数据将不会与其他报表填报页面进行共享，实际填写时也不会对报表数据产生影响。
+                                        2．非必填项若不涉及可不填，未填写的数据将不会与其他报表填报页面进行共享，实际填写时也不会对报表数据产生影响。
                                     </span>
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        部分数据项根据其实际业务属性需要区分单位，填写时注意单位转换；联动数据会根据不同单位自动进行转换。
+                                        3．部分数据项根据其实际业务属性需要区分单位，填写时注意单位转换；联动数据会根据不同单位自动进行转换。
                                     </span>
                                 </p>
                                 <p>
@@ -369,46 +260,22 @@ export default function CompanyInfo() {
                                 </p>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    3.4
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                信息
-                                            </span>
+                                            3.4 信息
                                         </span>
                                     </a>
                                     <span>
-                                        <span>
-                                            填报
-                                        </span>
+                                        填报
                                     </span>
                                 </h2>
                                 <h3>
                                     <span>
-                                        <span>
-                                            3.4.1
-                                            <span>
-                                                &nbsp;&nbsp;
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span>
-                                        企业基本信息
+                                        3.4.1 企业基本信息
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
                                         地址：
-                                    </span>
-                                    <span>
                                         <a href="https://xcyb.weihai.cn/auto_fill/company_info">
                                             <span>
                                                 https://xcyb.weihai.cn/auto_fill/company_info
@@ -433,22 +300,12 @@ export default function CompanyInfo() {
                                 </p>
                                 <h3>
                                     <span>
-                                        <span>
-                                            3.4.2
-                                            <span>
-                                                &nbsp;&nbsp;
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span>
-                                        企业参保信息
+                                        3.4.2 企业参保信息
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
                                         地址：
-                                    </span>
-                                    <span>
                                         <a href="https://xcyb.weihai.cn/auto_fill/company_info">
                                             <span>
                                                 https://xcyb.weihai.cn/auto_fill/company_info
@@ -473,22 +330,12 @@ export default function CompanyInfo() {
                                 </p>
                                 <h3>
                                     <span>
-                                        <span>
-                                            3.4.3
-                                            <span>
-                                                &nbsp;&nbsp;
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span>
-                                        企业从业人员信息
+                                        3.4.3 企业从业人员信息
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
                                         地址：
-                                    </span>
-                                    <span>
                                         <a href="https://xcyb.weihai.cn/auto_fill/company_info">
                                             <span>
                                                 https://xcyb.weihai.cn/auto_fill/company_info
@@ -509,11 +356,7 @@ export default function CompanyInfo() {
                                 <p>
                                     <span>
                                         企业从业人员信息为每月填写项，当时间到了每月
-                                    </span>
-                                    <span>
                                         1
-                                    </span>
-                                    <span>
                                         号数据会被保存至前一个月，通过选择不同月份查看数据。进入新月份后数据栏为空，点击数据迁移按钮后将上个月的数据迁移至新月份，手动填写保存的数据将不会被覆盖。
                                     </span>
                                 </p>
@@ -524,22 +367,12 @@ export default function CompanyInfo() {
                                 </p>
                                 <h3>
                                     <span>
-                                        <span>
-                                            3.4.4
-                                            <span>
-                                                &nbsp;&nbsp;
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span>
-                                        企业经济状况信息
+                                        3.4.4 企业经济状况信息
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
                                         地址：
-                                    </span>
-                                    <span>
                                         <a href="https://xcyb.weihai.cn/auto_fill/company_info">
                                             <span>
                                                 https://xcyb.weihai.cn/auto_fill/company_info
@@ -560,11 +393,7 @@ export default function CompanyInfo() {
                                 <p>
                                     <span>
                                         企业经济状况信息为每月填写项，当时间到了每月
-                                    </span>
-                                    <span>
                                         1
-                                    </span>
-                                    <span>
                                         号数据会被保存至前一个月，通过选择不同月份查看数据。进入新月份后数据栏为空，点击数据迁移按钮后将上个月的数据迁移至新月份，手动填写保存的数据将不会被覆盖。
                                     </span>
                                 </p>
@@ -575,22 +404,12 @@ export default function CompanyInfo() {
                                 </p>
                                 <h3>
                                     <span>
-                                        <span>
-                                            3.4.5
-                                            <span>
-                                                &nbsp;&nbsp;
-                                            </span>
-                                        </span>
-                                    </span>
-                                    <span>
-                                        企业研究开发及相关信息
+                                        3.4.5 企业研究开发及相关信息
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
                                         地址：
-                                    </span>
-                                    <span>
                                         <a href="https://xcyb.weihai.cn/auto_fill/company_info">
                                             <span>
                                                 https://xcyb.weihai.cn/auto_fill/company_info
@@ -611,11 +430,7 @@ export default function CompanyInfo() {
                                 <p>
                                     <span>
                                         企业研究开发及相关信息为每月填写项，当时间到了每月
-                                    </span>
-                                    <span>
                                         1
-                                    </span>
-                                    <span>
                                         号数据会被保存至前一个月，通过选择不同月份查看数据。进入新月份后数据栏为空，点击数据迁移按钮后将上个月的数据迁移至新月份，手动填写保存的数据将不会被覆盖。
                                     </span>
                                 </p>
@@ -627,20 +442,20 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
-                                        第4章 人社局信息填报
+                                            第4章 人社局信息填报
                                         </span>
                                     </a>
                                 </h1>
                                 <h2>
                                     <a>
                                         <span>
-                                        4.1 选择报表
+                                            4.1 选择报表
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                    1．通过在搜索框中输入“人社局”，并在搜索出的结果中选择对应的结果并点击，点击搜索结果后点击右侧立即前往即可直接前往信息填写页面。
+                                        1．通过在搜索框中输入“人社局”，并在搜索出的结果中选择对应的结果并点击，点击搜索结果后点击右侧立即前往即可直接前往信息填写页面。
                                     </span>
                                 </p>
                                 <p>
@@ -650,7 +465,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                    2．进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
+                                        2．进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
                                     </span>
                                 </p>
                                 <p>
@@ -660,7 +475,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                    3．也可以通过点击首页页眉中的报表报送或首页中部的开始报送按钮开始报表信息填报流程。
+                                        3．也可以通过点击首页页眉中的报表报送或首页中部的开始报送按钮开始报表信息填报流程。
                                     </span>
                                 </p>
                                 <p>
@@ -670,7 +485,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                    4．若选择此种方式，您会进入报表报送流程第一步“数据同步”，此处根据当前配置您可以选择上传对应的信息表格进行数据同步，若您已上传或无需上传可点击流程图中的信息填写、书签上的信息填写或页面上的下一步进入信息填写页面。
+                                        4．若选择此种方式，您会进入报表报送流程第一步“数据同步”，此处根据当前配置您可以选择上传对应的信息表格进行数据同步，若您已上传或无需上传可点击流程图中的信息填写、书签上的信息填写或页面上的下一步进入信息填写页面。
                                     </span>
                                 </p>
                                 <p>
@@ -680,7 +495,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                    5．信息填写完成后点击保存数据按钮，随后您可以通过点击流程图中的数据填报或右侧按钮中的直接填报跳转至信息填报页面。
+                                        5．信息填写完成后点击保存数据按钮，随后您可以通过点击流程图中的数据填报或右侧按钮中的直接填报跳转至信息填报页面。
                                     </span>
                                 </p>
                                 <p>
@@ -690,12 +505,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            6．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入数据填报页面后，根据人社局具体表格归属的网站，点击页面中对应的卡片前往网站。
+                                        6．进入数据填报页面后，根据人社局具体表格归属的网站，点击页面中对应的卡片前往网站。
                                     </span>
                                 </p>
                                 <p>
@@ -705,46 +515,21 @@ export default function CompanyInfo() {
                                 </p>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    4.2
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                报表指南
-                                            </span>
+                                            4.2 报表指南
                                         </span>
                                     </a>
                                 </h2>
                                 <h3>
                                     <a>
                                         <span>
-                                            <span>
-                                                4.2.1
-                                                <span>
-                                                    &nbsp;&nbsp;
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            单位就业登记
+                                            4.2.1 单位就业登记
                                         </span>
                                     </a>
                                 </h3>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击山东省公共就业人才服务网上服务大厅，通过指定方式登录。
+                                        1．点击山东省公共就业人才服务网上服务大厅，通过指定方式登录。
                                     </span>
                                 </p>
                                 <p>
@@ -754,12 +539,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        在首页点击单位就业信息或点击公共就业。
+                                        2．在首页点击单位就业信息或点击公共就业。
                                     </span>
                                 </p>
                                 <p>
@@ -770,12 +550,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        找到单位就业登记页面后点击控制台中的启动填充按钮，随后等待直到程序填充完毕。
+                                        3．找到单位就业登记页面后点击控制台中的启动填充按钮，随后等待直到程序填充完毕。
                                     </span>
                                 </p>
                                 <p>
@@ -786,33 +561,17 @@ export default function CompanyInfo() {
                                 <h3>
                                     <a>
                                         <span>
-                                            <span>
-                                                4.2.2
-                                                <span>
-                                                    &nbsp;&nbsp;
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            企业稳岗扩岗专项支持计划
-                                        </span>
-                                        <span>
+                                            4.2.2 企业稳岗扩岗专项支持计划
                                             -
                                         </span>
                                     </a>
                                     <span>
-                                        <span>
-                                            以工代训补贴申报
-                                        </span>
+                                        以工代训补贴申报
                                     </span>
                                 </h3>
                                 <p>
                                     <span>
-                                        <span>
 
-                                        </span>
-                                    </span>
-                                    <span>
                                         1．点击公共就业。
                                     </span>
                                 </p>
@@ -823,11 +582,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
 
-                                        </span>
-                                    </span>
-                                    <span>
                                         2．点击以工代训补贴查询中的办理按钮。
                                     </span>
                                 </p>
@@ -838,11 +593,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
 
-                                        </span>
-                                    </span>
-                                    <span>
                                         3．进入以工代训业务模块后，点击控制台中的启动填充按钮等待程序填充完成。
                                     </span>
                                 </p>
@@ -854,25 +605,13 @@ export default function CompanyInfo() {
                                 <h3>
                                     <a>
                                         <span>
-                                            <span>
-                                                4.2.3
-                                                <span>
-                                                    &nbsp;&nbsp;
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            单位信息维护
+                                            4.2.3 单位信息维护
                                         </span>
                                     </a>
                                 </h3>
                                 <p>
                                     <span>
-                                        <span>
 
-                                        </span>
-                                    </span>
-                                    <span>
                                         1．点击威海市人力资源与社会保障局卡片，输入用户名密码后进入页面。
                                     </span>
                                 </p>
@@ -883,11 +622,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
 
-                                        </span>
-                                    </span>
-                                    <span>
                                         2．进入页面后点击左侧单位信息变更。
                                     </span>
                                 </p>
@@ -898,11 +633,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
 
-                                        </span>
-                                    </span>
-                                    <span>
                                         3．单位信息维护窗口出现后，点击控制台的启动填充开始填充数据，该表格数据量较大，填充时间预计两分钟左右。
                                     </span>
                                 </p>
@@ -914,20 +645,14 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
+                                            第5章
                                             <span>
-                                                第5章
-                                                <span>
-                                                </span>
                                             </span>
-                                        </span>
-                                        <span>
                                             科技局信息填报
                                         </span>
                                     </a>
                                 </h1>
                                 <h2>
-                                    <a>
-                                    </a>
                                     <a>
                                         <span>
                                             5.1选择报表
@@ -946,12 +671,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
+                                        1．进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
                                     </span>
                                 </p>
                                 <p>
@@ -962,26 +682,13 @@ export default function CompanyInfo() {
                                 <h2>
                                     <a>
                                         <span>
-                                            <span>
-                                                5.2
-                                                <span>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            填报指南
+                                            5.2 填报指南
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        在数据填报页面点击火炬高技术产业开发中心，登录火炬平台并找到我的信息。
+                                        2．在数据填报页面点击火炬高技术产业开发中心，登录火炬平台并找到我的信息。
                                     </span>
                                 </p>
                                 <p>
@@ -991,12 +698,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击修改法人信息后，点击控制台的启动填充按钮完成填充。
+                                        3．点击修改法人信息后，点击控制台的启动填充按钮完成填充。
                                     </span>
                                 </p>
                                 <p>
@@ -1012,44 +714,20 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
-                                            <span>
-                                                第6章
-                                                <span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            税务局信息填报
+                                            第6章 税务局信息填报
                                         </span>
                                     </a>
                                 </h1>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    6.1
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                选择报表
-                                            </span>
+                                            6.1 选择报表
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        可以通过在搜索框中输入“税务局”，并在搜索出的结果中选择对应的结果并点击，点击搜索结果后点击右侧立即前往即可直接前往信息填写页面。
+                                        1．可以通过在搜索框中输入“税务局”，并在搜索出的结果中选择对应的结果并点击，点击搜索结果后点击右侧立即前往即可直接前往信息填写页面。
                                     </span>
                                 </p>
                                 <p>
@@ -1059,41 +737,19 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
+                                        2．进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
                                     </span>
                                 </p>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    6.2
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                填报指南
-                                            </span>
+                                            6.2 填报指南
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        第一步点击对应按钮上传财务系统导出模板可完成数据快捷同步。
+                                        1．第一步点击对应按钮上传财务系统导出模板可完成数据快捷同步。
                                     </span>
                                 </p>
                                 <p>
@@ -1103,12 +759,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        数据同步完成后点击下一步或标签页进入信息填写页面，数据填写页面中填写完所有信息后，可以点击第三个页面进行填报预览，也可以直接进入最后一页。
+                                        2．数据同步完成后点击下一步或标签页进入信息填写页面，数据填写页面中填写完所有信息后，可以点击第三个页面进行填报预览，也可以直接进入最后一页。
                                     </span>
                                 </p>
                                 <p>
@@ -1118,12 +769,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击税务局卡片后前往税务局页面
+                                        3．点击税务局卡片后前往税务局页面
                                     </span>
                                 </p>
                                 <p>
@@ -1133,12 +779,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            4．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        登录税务局
+                                        4．登录税务局
                                     </span>
                                 </p>
                                 <p>
@@ -1148,12 +789,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            5．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入季报，点击启动填报按钮完成填报，当前支持现金流量表、资产负债表、利润表。
+                                        5．进入季报，点击启动填报按钮完成填报，当前支持现金流量表、资产负债表、利润表。
                                     </span>
                                 </p>
                                 <p>
@@ -1164,44 +800,20 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
-                                            <span>
-                                                第7章
-                                                <span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            统计局信息填报
+                                            第7章 统计局信息填报
                                         </span>
                                     </a>
                                 </h1>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    7.1
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                选择报表
-                                            </span>
+                                            7.1 选择报表
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        可以通过在搜索框中输入“统计局”，并在搜索出的结果中选择对应的结果并点击，点击搜索结果后点击右侧立即前往即可直接前往信息填写页面。
+                                        1．可以通过在搜索框中输入“统计局”，并在搜索出的结果中选择对应的结果并点击，点击搜索结果后点击右侧立即前往即可直接前往信息填写页面。
                                     </span>
                                 </p>
                                 <p>
@@ -1211,12 +823,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
+                                        2．进入信息填写页面后，可通过左侧目录选择您想要填写的报表，随后在右侧进行报表部分开始填写信息。同时也可以选择不同月份进行历史数据查看。
                                     </span>
                                 </p>
                                 <p>
@@ -1226,12 +833,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击山东省统计联网直报平台卡片。
+                                        3．点击山东省统计联网直报平台卡片。
                                     </span>
                                 </p>
                                 <p>
@@ -1241,31 +843,14 @@ export default function CompanyInfo() {
                                 </p>
                                 <h2>
                                     <a>
-                                    </a>
-                                    <a>
                                         <span>
-                                            <span>
-                                                <span>
-                                                    7.2
-                                                    <span>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span>
-                                                填报指南
-                                            </span>
+                                            7.2 填报指南
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        登录统计云。
+                                        1．登录统计云。
                                     </span>
                                 </p>
                                 <p>
@@ -1275,12 +860,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        选择要填报的表格。
+                                        2．选择要填报的表格。
                                     </span>
                                 </p>
                                 <p>
@@ -1290,12 +870,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击控制台中的启动填充按钮，程序会触发当前表单的模板生成，生成的模板会下载到控制台的下载文件中。
+                                        3．点击控制台中的启动填充按钮，程序会触发当前表单的模板生成，生成的模板会下载到控制台的下载文件中。
                                     </span>
                                 </p>
                                 <p>
@@ -1310,12 +885,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            4．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击导入模板，选择刚刚生成的模板，导入成功后完成填报。
+                                        4．点击导入模板，选择刚刚生成的模板，导入成功后完成填报。
                                     </span>
                                 </p>
                                 <p>
@@ -1326,40 +896,20 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
-                                            <span>
-                                                第8章
-                                                <span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            工信局信息填报
+                                            第8章 工信局信息填报
                                         </span>
                                     </a>
                                 </h1>
                                 <h2>
                                     <a>
                                         <span>
-                                            <span>
-                                                8.1
-                                                <span>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            选择报表
+                                            8.1 选择报表
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击第四部数据填报后点击信息产业运行监测平台。
+                                        1．点击第四部数据填报后点击信息产业运行监测平台。
                                     </span>
                                 </p>
                                 <p>
@@ -1369,12 +919,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        随后弹出新浏览器页面并进入工信局登录页面，填写正确的账户密码后通过手机验证码进入工信局首页；选择要填报的表单。
+                                        2．随后弹出新浏览器页面并进入工信局登录页面，填写正确的账户密码后通过手机验证码进入工信局首页；选择要填报的表单。
                                     </span>
                                 </p>
                                 <p>
@@ -1385,37 +930,16 @@ export default function CompanyInfo() {
                                 <h2>
                                     <a>
                                         <span>
-                                            <span>
-                                                8.2
-                                                <span>
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            填报指南
+                                            8.2 填报指南
                                         </span>
                                     </a>
                                 </h2>
                                 <p>
                                     <span>
-                                        <span>
-                                            1．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入要填报的表单后点击操作台的一键启动填充，随后触发下载，带有最新数据的
-                                    </span>
-                                    <span>
+                                        1．进入要填报的表单后点击操作台的一键启动填充，随后触发下载，带有最新数据的
                                         Excel
-                                    </span>
-                                    <span>
                                         模板会被下载，点击操作台下载按钮可以找到最新下载的模板。随后点击表单页面的表单数据导入导出，点击导入
-                                    </span>
-                                    <span>
                                         Excel
-                                    </span>
-                                    <span>
                                         。
                                     </span>
                                 </p>
@@ -1426,17 +950,8 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            2．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        点击导入
-                                    </span>
-                                    <span>
+                                        2．点击导入
                                         Excel
-                                    </span>
-                                    <span>
                                         后，点击选择文件按钮选择最新模板；选择后点击上传文件完成文件上传；最后点击提交按钮完成数据填报。
                                     </span>
                                 </p>
@@ -1448,14 +963,7 @@ export default function CompanyInfo() {
                                 <h1>
                                     <a>
                                         <span>
-                                            <span>
-                                                第9章
-                                                <span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                        <span>
-                                            国家企业信息公示系统信息填报
+                                            第9章 国家企业信息公示系统信息填报
                                         </span>
                                     </a>
                                 </h1>
@@ -1488,12 +996,7 @@ export default function CompanyInfo() {
                                 </p>
                                 <p>
                                     <span>
-                                        <span>
-                                            3．
-                                        </span>
-                                    </span>
-                                    <span>
-                                        进入后选择您想要填报的表单。
+                                        3．进入后选择您想要填报的表单。
                                     </span>
                                 </p>
                                 <p>
